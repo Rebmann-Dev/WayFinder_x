@@ -68,11 +68,11 @@ make create
 ## Quick Setup
 
 1. **Install dependencies:**
-   ```bash
+```bash
   $ make create
         or
   $ make update
-   ```
+```
 
 #### Available Commands
 
