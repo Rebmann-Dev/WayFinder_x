@@ -54,8 +54,22 @@ If it is not installed, simply use brew:
 $ brew install make
 ```
 
+#### 3. Install Docker
 
-#### Step-by-step Installation
+Docker is a containerization platform that packages your application, models, and dependencies into a consistent runtime environment, ensuring your multi-agent system and flight APIs run reliably across development, testing, and deployment without environment-related failures.
+
+1. Download Docker Desktop from the official site:  
+   https://docs.docker.com/get-docker/
+
+2. Follow the installation instructions for your operating system (Mac, Windows, or Linux).
+
+3. After installation, verify Docker is running:
+```bash
+  docker --version
+```
+
+
+### Step-by-step Installation
 ```bash
 # Clone the repository
 git clone <your-repo-url>
@@ -72,6 +86,16 @@ make create
   $ make create
         or
   $ make update
+```
+
+2. **Setup API Docker Container**
+```bash
+  $ make docker-compose-up
+```
+
+3. **Run the streamlit server**
+```bash
+  $ make run
 ```
 
 #### Available Commands

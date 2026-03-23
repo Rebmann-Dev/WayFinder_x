@@ -43,3 +43,9 @@ freeze:
 verify:
 	@echo "Ensure you are in the correct conda environment. There should be an * next to the name of the current active env."
 	conda info --envs
+
+docker-compose-up:
+	docker-compose up -d
+
+run: 
+	streamlit run app/main.py
