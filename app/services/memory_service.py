@@ -12,19 +12,39 @@ class MemoryService:
 
     @classmethod
     def initialize(cls) -> None:
+        system_prompt = build_system_prompt()
+
         if cls.SESSION_KEY not in st.session_state:
             st.session_state[cls.SESSION_KEY] = [
                 ChatMessage(
                     role="system",
-                    content=build_system_prompt(),
+                    content=system_prompt,
                 ),
                 ChatMessage(
                     role="assistant",
                     content="Hi. I’m WayFinder, your travel planning assistant. Where would you like to go?",
                 ),
             ]
+        elif st.session_state[cls.SESSION_KEY]:
+            first_message = st.session_state[cls.SESSION_KEY][0]
+            if first_message.role == "system" and first_message.content != system_prompt:
+                st.session_state[cls.SESSION_KEY][0] = ChatMessage(
+                    role="system",
+                    content=system_prompt,
+                )
+
         if cls.LLM_KEY not in st.session_state:
             cls._reset_llm_thread()
+        elif st.session_state[cls.LLM_KEY]:
+            first_llm_message = st.session_state[cls.LLM_KEY][0]
+            if (
+                first_llm_message.get("role") == "system"
+                and first_llm_message.get("content") != system_prompt
+            ):
+                st.session_state[cls.LLM_KEY][0] = {
+                    "role": "system",
+                    "content": system_prompt,
+                }
 
     @classmethod
     def _reset_llm_thread(cls) -> None:

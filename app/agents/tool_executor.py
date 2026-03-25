@@ -1,8 +1,14 @@
 import json
+import logging
+import re
+from datetime import date, timedelta
 from typing import Any
 
 from services.airport_search_service import search_airports
 from services.flight_api import FlightAPIService
+
+log = logging.getLogger("wayfinder.tools")
+_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 class ToolExecutor:
@@ -10,10 +16,13 @@ class ToolExecutor:
         self._flights = FlightAPIService()
 
     def run(self, name: str, arguments: dict[str, Any]) -> str:
+        log.info("TOOL CALL  %-20s args=%s", name, json.dumps(arguments, default=str))
+
         if name == "search_airports":
             q = str(arguments.get("query", "")).strip()
             limit = int(arguments.get("limit", 12) or 12)
             rows = search_airports(q, limit=limit)
+            log.info("TOOL RESULT search_airports  count=%d top=%s", len(rows), [r["iata"] for r in rows[:5]])
             return json.dumps({"matches": rows, "count": len(rows)})
 
         if name == "search_flights":
@@ -39,15 +48,23 @@ class ToolExecutor:
             children = int(arguments.get("children", 0) or 0)
 
             if len(origin) != 3 or len(destination) != 3:
+                log.warning("TOOL REJECT search_flights  bad codes: origin=%s dest=%s", origin, destination)
                 return json.dumps(
                     {
                         "success": False,
                         "error": "origin and destination must be 3-letter IATA codes.",
                     }
                 )
-            if not departure_date:
+            if not departure_date or not _DATE_RE.match(departure_date):
+                log.warning("TOOL REJECT search_flights  bad date=%r", departure_date)
                 return json.dumps(
-                    {"success": False, "error": "departure_date (YYYY-MM-DD) is required."}
+                    {
+                        "success": False,
+                        "error": (
+                            "departure_date is required and must be YYYY-MM-DD. "
+                            "Ask the user what date they want to fly."
+                        ),
+                    }
                 )
 
             raw = self._flights.search_flights(
@@ -70,20 +87,26 @@ class ToolExecutor:
                 top = [f for f in all_flights if f.get("is_top")]
                 rest = [f for f in all_flights if not f.get("is_top")]
                 ranked = (top + rest)[:5]
+                dep_date = raw.get("departure_date", departure_date)
                 payload = {
                     "success": True,
                     "origin": raw.get("origin"),
                     "destination": raw.get("destination"),
-                    "departure_date": raw.get("departure_date"),
+                    "departure_date": dep_date,
                     "flights": ranked,
                     "total_returned": len(ranked),
-                    "note": (
-                        "These are the top results ranked by the API. "
-                        "Present ALL of them to the user. Do NOT invent extra flights."
+                    "instruction": (
+                        f"Present ALL {len(ranked)} flights below to the user as a numbered list. "
+                        f"Include the departure date ({dep_date}) in your response header. "
+                        "For each flight show: airline, departure time, arrival time, duration, stops, and price. "
+                        "Do NOT skip any. Do NOT add flights not in this list."
                     ),
                 }
+                log.info("TOOL RESULT search_flights  %s→%s date=%s flights=%d", origin, destination, dep_date, len(ranked))
                 return json.dumps(payload)
 
+            log.error("TOOL RESULT search_flights  unexpected shape: %s", str(raw)[:200])
             return json.dumps({"success": False, "error": "Unexpected API response shape."})
 
+        log.warning("TOOL CALL  unknown tool: %s", name)
         return json.dumps({"error": f"Unknown tool: {name}"})
