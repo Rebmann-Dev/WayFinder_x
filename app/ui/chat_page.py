@@ -6,8 +6,10 @@ from ui.chat_handlers import handle_assistant_response, handle_user_message
 from ui.styles import inject_global_styles
 
 
+# Bump `_cache_version` when `ModelService` API changes so Streamlit does not reuse
+# a stale cached instance from before a reload (missing new methods).
 @st.cache_resource
-def get_model_service() -> ModelService:
+def get_model_service(_cache_version: str = "v6-mps-eager-attn") -> ModelService:
     return ModelService()
 
 

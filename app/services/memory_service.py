@@ -3,25 +3,64 @@ from typing import List
 import streamlit as st
 
 from models.chat import ChatMessage
-from prompts.system_prompts import TRAVEL_AGENT_SYSTEM_PROMPT
+from prompts.system_prompts import build_system_prompt
 
 
 class MemoryService:
     SESSION_KEY = "messages"
+    LLM_KEY = "llm_messages"
 
     @classmethod
     def initialize(cls) -> None:
+        system_prompt = build_system_prompt()
+
         if cls.SESSION_KEY not in st.session_state:
             st.session_state[cls.SESSION_KEY] = [
                 ChatMessage(
                     role="system",
-                    content=TRAVEL_AGENT_SYSTEM_PROMPT,
+                    content=system_prompt,
                 ),
                 ChatMessage(
                     role="assistant",
                     content="Hi. I’m WayFinder, your travel planning assistant. Where would you like to go?",
                 ),
             ]
+        elif st.session_state[cls.SESSION_KEY]:
+            first_message = st.session_state[cls.SESSION_KEY][0]
+            if first_message.role == "system" and first_message.content != system_prompt:
+                st.session_state[cls.SESSION_KEY][0] = ChatMessage(
+                    role="system",
+                    content=system_prompt,
+                )
+
+        if cls.LLM_KEY not in st.session_state:
+            cls._reset_llm_thread()
+        elif st.session_state[cls.LLM_KEY]:
+            first_llm_message = st.session_state[cls.LLM_KEY][0]
+            if (
+                first_llm_message.get("role") == "system"
+                and first_llm_message.get("content") != system_prompt
+            ):
+                st.session_state[cls.LLM_KEY][0] = {
+                    "role": "system",
+                    "content": system_prompt,
+                }
+
+    @classmethod
+    def _reset_llm_thread(cls) -> None:
+        st.session_state[cls.LLM_KEY] = [
+            {"role": "system", "content": build_system_prompt()},
+        ]
+
+    @classmethod
+    def append_llm_user(cls, content: str) -> None:
+        cls.initialize()
+        st.session_state[cls.LLM_KEY].append({"role": "user", "content": content})
+
+    @classmethod
+    def get_llm_messages(cls) -> list:
+        cls.initialize()
+        return st.session_state[cls.LLM_KEY]
 
     @classmethod
     def get_messages(cls) -> List[ChatMessage]:
@@ -53,13 +92,14 @@ class MemoryService:
         st.session_state[cls.SESSION_KEY] = [
             ChatMessage(
                 role="system",
-                content=TRAVEL_AGENT_SYSTEM_PROMPT,
+                content=build_system_prompt(),
             ),
             ChatMessage(
                 role="assistant",
                 content="Hi. I’m WayFinder, your travel planning assistant. Where would you like to go?",
             ),
         ]
+        cls._reset_llm_thread()
 
     @classmethod
     def get_latest_user_message(cls) -> str:

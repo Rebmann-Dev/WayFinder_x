@@ -1,8 +1,11 @@
+import logging
 import os
-import requests
-
 from typing import Any, Dict, List
 from urllib.parse import urlunparse, urlencode
+
+import requests
+
+log = logging.getLogger("wayfinder.flight_api")
 
 API_BASE_URL = os.getenv(
     "API_BASE_URL", "localhost:8080"
@@ -59,20 +62,57 @@ class FlightAPIService:
             )
         )
 
-        response = requests.get(
+        try:
+            response = requests.get(
+                url,
+                timeout=30,
+            )
+        except requests.RequestException as exc:
+            log.error("Flight API request failed url=%s error=%s", url, exc)
+            return {
+                "success": False,
+                "error": (
+                    "Flight search is temporarily unavailable because the flight API "
+                    f"request failed: {exc}"
+                ),
+            }
+
+        log.info(
+            "Flight API response status=%s url=%s bytes=%d",
+            response.status_code,
             url,
-            timeout=30,
+            len(response.content),
         )
         if response.status_code != 200:
+            log.warning(
+                "Flight API non-200 status=%s body=%s",
+                response.status_code,
+                response.text[:500],
+            )
             return {
                 "success": False,
                 "error": f"API request failed with status code {response.status_code}: {response.text}",
             }
 
-        data = response.json()
+        try:
+            data = response.json()
+        except ValueError as exc:
+            log.error("Flight API invalid JSON url=%s body=%s", url, response.text[:500])
+            return {
+                "success": False,
+                "error": f"Flight API returned invalid JSON: {exc}",
+            }
+
+        flights = data.get("flights", [])
+        log.info(
+            "Flight API parsed current_price=%s flights=%d keys=%s",
+            data.get("current_price"),
+            len(flights) if isinstance(flights, list) else -1,
+            sorted(data.keys()) if isinstance(data, dict) else [],
+        )
 
         return {
-            "flights": data.get("flights", []),
+            "flights": flights if isinstance(flights, list) else [],
             "success": True,
             "origin": origin,
             "destination": destination,

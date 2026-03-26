@@ -19,7 +19,15 @@ class FlightSearchTool:
             return {
                 "success": False,
                 "missing_fields": missing,
-                "flights": [],
+                "data": {
+                    "success": False,
+                    "error": (
+                        "I need "
+                        + ", ".join(missing)
+                        + ". Use 3-letter airport codes (e.g. SEA, JFK) and a date as YYYY-MM-DD."
+                    ),
+                    "flights": [],
+                },
             }
 
         flights = self.api_service.search_flights(
