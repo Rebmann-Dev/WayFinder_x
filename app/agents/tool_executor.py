@@ -51,7 +51,7 @@ def _compact_flight(raw: dict[str, Any]) -> dict[str, str]:
 class ToolExecutor:
     def __init__(self) -> None:
         self._flights = FlightAPIService()
-        self._safety = SafetyService()          """ added for safety """
+        self._safety = SafetyService()         
         
     def run(self, name: str, arguments: dict[str, Any]) -> str:
         log.info("TOOL CALL  %-20s args=%s", name, json.dumps(arguments, default=str))
@@ -171,7 +171,7 @@ class ToolExecutor:
             log.error("TOOL RESULT search_flights  unexpected shape: %s", str(raw)[:200])
             return json.dumps({"success": False, "error": "Unexpected API response shape."})
 
-            if name == "get_safety_assessment":                        """ added saftey function """
+            if name == "get_safety_assessment":                        
                 latitude = arguments.get("latitude")
                 longitude = arguments.get("longitude")
                 country = arguments.get("country")
