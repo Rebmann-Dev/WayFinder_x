@@ -1,0 +1,31 @@
+{
+  "model_name": "safety_v1_wide_low_dropout",
+  "feature_cols": [
+    "lat",
+    "lon",
+    "crime_index",
+    "crimeindex_2020",
+    "crimeindex_2023",
+    "safetyindex_2020",
+    "age_0_14",
+    "age_15_64",
+    "age_65_plus",
+    "population",
+    "density_per_km2"
+  ],
+  "target_col": "safety_index",
+  "hidden_dims": [
+    128,
+    64
+  ],
+  "dropout": 0.1,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "batch_size": 32,
+  "n_epochs": 300,
+  "rmse": 1.0833203730663814,
+  "mae": 0.730556845664978,
+  "r2": 0.9951795339584351,
+  "data_path": "data/compiled_model_ready/MR_cities_with_country_v1.csv",
+  "random_state": 42
+}

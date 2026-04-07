@@ -1,0 +1,32 @@
+{
+  "model_name": "safety_lb_v1_deeper",
+  "feature_cols": [
+    "lat",
+    "lon",
+    "crimeindex_2020",
+    "crimeindex_2023",
+    "safetyindex_2020",
+    "age_0_14",
+    "age_15_64",
+    "age_65_plus",
+    "population",
+    "density_per_km2"
+  ],
+  "target_col": "safety_index",
+  "hidden_dims": [
+    128,
+    64,
+    32
+  ],
+  "dropout": 0.2,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "batch_size": 32,
+  "n_epochs": 300,
+  "rmse": 10.543941649372453,
+  "mae": 8.303669929504395,
+  "r2": 0.543354332447052,
+  "data_path": "data/compiled_model_ready/MR_cities_with_country_v1.csv",
+  "random_state": 42,
+  "notes": "Lower-bound safety baseline with no city-level crime feature."
+}

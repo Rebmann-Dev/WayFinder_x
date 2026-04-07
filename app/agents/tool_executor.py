@@ -5,6 +5,11 @@ from typing import Any
 
 from services.airport_search_service import search_airports
 from services.flight_api import FlightAPIService
+"""
+added below for safety function
+"""
+from services.safety_service import SafetyService
+
 
 log = logging.getLogger("wayfinder.tools")
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -46,7 +51,8 @@ def _compact_flight(raw: dict[str, Any]) -> dict[str, str]:
 class ToolExecutor:
     def __init__(self) -> None:
         self._flights = FlightAPIService()
-
+        self._safety = SafetyService()         
+        
     def run(self, name: str, arguments: dict[str, Any]) -> str:
         log.info("TOOL CALL  %-20s args=%s", name, json.dumps(arguments, default=str))
 
@@ -165,5 +171,29 @@ class ToolExecutor:
             log.error("TOOL RESULT search_flights  unexpected shape: %s", str(raw)[:200])
             return json.dumps({"success": False, "error": "Unexpected API response shape."})
 
+            if name == "get_safety_assessment":                        
+                latitude = arguments.get("latitude")
+                longitude = arguments.get("longitude")
+                country = arguments.get("country")
+                location_name = arguments.get("location_name")
+
+                result = self._safety.assess_location(
+                    latitude=latitude,
+                    longitude=longitude,
+                    country=str(country).strip() if country else None,
+                    location_name=str(location_name).strip() if location_name else None,
+                )
+
+                if not result.get("success"):
+                    return json.dumps(result)
+
+                result["instruction"] = (
+                    "Present the predicted safety score clearly and briefly. "
+                    "Explain that this is a model-based travel safety estimate, not an official crime report. "
+                    "Mention the risk band and keep the guidance practical."
+                )
+                return json.dumps(result)
+
         log.warning("TOOL CALL  unknown tool: %s", name)
         return json.dumps({"error": f"Unknown tool: {name}"})
+
