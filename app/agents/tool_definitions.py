@@ -74,40 +74,36 @@ TOOLS: list[dict] = [
             },
         },
     },
-]
-"""
-added below for saftey functions
-"""
-
-{
-    "type": "function",
-    "function": {
-        "name": "get_safety_assessment",
-        "description": (
-            "Predict a travel safety score for a geographic location using latitude and longitude. "
-            "Use this for questions about whether a destination, area, stop, waypoint, beach, or town may be safe."
-        ),
-        "parameters": {
-            "type": "object",
-            "properties": {
-                "latitude": {
-                    "type": "number",
-                    "description": "Latitude of the location."
+    {
+        "type": "function",
+        "function": {
+            "name": "get_safety_assessment",
+            "description": (
+                "Predict a travel safety score for a geographic location using latitude and longitude. "
+                "Use this for questions about whether a destination, area, stop, waypoint, beach, or town may be safe."
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "latitude": {
+                        "type": "number",
+                        "description": "Latitude of the location.",
+                    },
+                    "longitude": {
+                        "type": "number",
+                        "description": "Longitude of the location.",
+                    },
+                    "country": {
+                        "type": "string",
+                        "description": "Optional country name.",
+                    },
+                    "location_name": {
+                        "type": "string",
+                        "description": "Optional human-readable location name.",
+                    },
                 },
-                "longitude": {
-                    "type": "number",
-                    "description": "Longitude of the location."
-                },
-                "country": {
-                    "type": "string",
-                    "description": "Optional country name."
-                },
-                "location_name": {
-                    "type": "string",
-                    "description": "Optional human-readable location name."
-                }
+                "required": ["latitude", "longitude"],
             },
-            "required": ["latitude", "longitude"],
         },
     },
-}
+]

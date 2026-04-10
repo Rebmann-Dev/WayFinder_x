@@ -63,12 +63,26 @@ def _load_airports() -> list[AirportRow]:
 
 
 def search_airports(query: str, limit: int = 12) -> list[dict[str, str]]:
-    """Case-insensitive substring match over code, name, city, country."""
     q = query.strip().lower()
     if not q:
         return []
+
+    # Common city aliases that need explicit remapping
+    _ALIASES = {
+        "tokyo": "tokyo",
+        "new york": "new york",
+        "nyc": "new york",
+        "london": "london",
+        "paris": "paris",
+    }
+    q = _ALIASES.get(q, q)
+
     lim = max(1, min(limit, 30))
     all_rows = _load_airports()
+
+    # Filter out military/private bases for civilian queries
+    _MILITARY_KEYWORDS = ("air base", "air force", "army", "naval", "afb", "raf ")
+
     metro_codes = {
         row.city_code
         for row in all_rows
@@ -76,10 +90,16 @@ def search_airports(query: str, limit: int = 12) -> list[dict[str, str]]:
     }
     scored: list[tuple[int, AirportRow]] = []
     for row in all_rows:
+        # Skip military bases unless explicitly queried by code
+        name_lower = row.name.lower()
+        if any(kw in name_lower for kw in _MILITARY_KEYWORDS) and row.code.lower() != q:
+            continue
+
         hay = f"{row.code} {row.name} {row.city} {row.county} {row.state} {row.country_id}".lower()
         metro_match = bool(metro_codes and row.city_code in metro_codes)
         if q not in hay and not metro_match:
             continue
+
         is_intl = "international" in row.name.lower()
         name_has_q = q in row.name.lower()
         city_exact = row.city.lower() == q
@@ -104,6 +124,7 @@ def search_airports(query: str, limit: int = 12) -> list[dict[str, str]]:
         else:
             priority = 0
         scored.append((priority, row))
+
     scored.sort(key=lambda x: (-x[0], x[1].code))
     out: list[dict[str, str]] = []
     for _, row in scored[:lim]:

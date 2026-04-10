@@ -11,5 +11,6 @@ def build_streaming_response_html(text: str) -> str:
     """
 
 
-def build_final_response_text(text: str) -> str:
-    return text
+def build_streaming_response(buffer: str) -> str:
+    """Text shown token-by-token during streaming. Cursor appended inline."""
+    return buffer + "▌"

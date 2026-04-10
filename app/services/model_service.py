@@ -157,7 +157,25 @@ class ModelService:
             truncation=True,
             max_length=self.MAX_INPUT_TOKENS,
         ).to(self.device)
-        log.debug("Agent input tokens: %d", inputs["input_ids"].shape[1])
+
+        token_count = inputs["input_ids"].shape[1]
+
+        if token_count >= self.MAX_INPUT_TOKENS:
+            log.warning(
+                "Input truncated: %d tokens exceeds MAX_INPUT_TOKENS=%d. "
+                "Consider calling MemoryService.trim_llm_thread_for_context() before this call.",
+                token_count,
+                self.MAX_INPUT_TOKENS,
+            )
+        elif token_count >= self.MAX_INPUT_TOKENS * 0.85:
+            log.warning(
+                "Input approaching token limit: %d / %d tokens (%.0f%%)",
+                token_count,
+                self.MAX_INPUT_TOKENS,
+                100 * token_count / self.MAX_INPUT_TOKENS,
+            )
+
+        log.debug("Agent input tokens: %d", token_count)
 
         if self._uses_manual_mps_decode:
             yield from self._stream_manual_decode(

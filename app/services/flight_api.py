@@ -66,6 +66,9 @@ class FlightAPIService:
             response = requests.get(
                 url,
                 timeout=30,
+                headers={
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+                },
             )
         except requests.RequestException as exc:
             log.error("Flight API request failed url=%s error=%s", url, exc)
@@ -97,7 +100,9 @@ class FlightAPIService:
         try:
             data = response.json()
         except ValueError as exc:
-            log.error("Flight API invalid JSON url=%s body=%s", url, response.text[:500])
+            log.error(
+                "Flight API invalid JSON url=%s body=%s", url, response.text[:500]
+            )
             return {
                 "success": False,
                 "error": f"Flight API returned invalid JSON: {exc}",

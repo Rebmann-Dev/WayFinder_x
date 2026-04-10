@@ -5,6 +5,7 @@ from typing import Any
 
 from services.airport_search_service import search_airports
 from services.flight_api import FlightAPIService
+
 """
 added below for safety function
 """
@@ -51,8 +52,8 @@ def _compact_flight(raw: dict[str, Any]) -> dict[str, str]:
 class ToolExecutor:
     def __init__(self) -> None:
         self._flights = FlightAPIService()
-        self._safety = SafetyService()         
-        
+        self._safety = SafetyService()
+
     def run(self, name: str, arguments: dict[str, Any]) -> str:
         log.info("TOOL CALL  %-20s args=%s", name, json.dumps(arguments, default=str))
 
@@ -60,7 +61,11 @@ class ToolExecutor:
             q = str(arguments.get("query", "")).strip()
             limit = int(arguments.get("limit", 12) or 12)
             rows = search_airports(q, limit=limit)
-            log.info("TOOL RESULT search_airports  count=%d top=%s", len(rows), [r["iata"] for r in rows[:5]])
+            log.info(
+                "TOOL RESULT search_airports  count=%d top=%s",
+                len(rows),
+                [r["iata"] for r in rows[:5]],
+            )
             return json.dumps({"matches": rows, "count": len(rows)})
 
         if name == "search_flights":
@@ -86,7 +91,11 @@ class ToolExecutor:
             children = int(arguments.get("children", 0) or 0)
 
             if len(origin) != 3 or len(destination) != 3:
-                log.warning("TOOL REJECT search_flights  bad codes: origin=%s dest=%s", origin, destination)
+                log.warning(
+                    "TOOL REJECT search_flights  bad codes: origin=%s dest=%s",
+                    origin,
+                    destination,
+                )
                 return json.dumps(
                     {
                         "success": False,
@@ -165,35 +174,44 @@ class ToolExecutor:
                         "Do not print JSON, raw field names, nested objects, or extra technical details."
                     ),
                 }
-                log.info("TOOL RESULT search_flights  %s→%s date=%s flights=%d", origin, destination, dep_date, len(compact_ranked))
+                log.info(
+                    "TOOL RESULT search_flights  %s→%s date=%s flights=%d",
+                    origin,
+                    destination,
+                    dep_date,
+                    len(compact_ranked),
+                )
                 return json.dumps(payload)
 
-            log.error("TOOL RESULT search_flights  unexpected shape: %s", str(raw)[:200])
-            return json.dumps({"success": False, "error": "Unexpected API response shape."})
+            log.error(
+                "TOOL RESULT search_flights  unexpected shape: %s", str(raw)[:200]
+            )
+            return json.dumps(
+                {"success": False, "error": "Unexpected API response shape."}
+            )
 
-            if name == "get_safety_assessment":                        
-                latitude = arguments.get("latitude")
-                longitude = arguments.get("longitude")
-                country = arguments.get("country")
-                location_name = arguments.get("location_name")
+        if name == "get_safety_assessment":
+            latitude = arguments.get("latitude")
+            longitude = arguments.get("longitude")
+            country = arguments.get("country")
+            location_name = arguments.get("location_name")
 
-                result = self._safety.assess_location(
-                    latitude=latitude,
-                    longitude=longitude,
-                    country=str(country).strip() if country else None,
-                    location_name=str(location_name).strip() if location_name else None,
-                )
+            result = self._safety.assess_location(
+                latitude=latitude,
+                longitude=longitude,
+                country=str(country).strip() if country else None,
+                location_name=str(location_name).strip() if location_name else None,
+            )
 
-                if not result.get("success"):
-                    return json.dumps(result)
-
-                result["instruction"] = (
-                    "Present the predicted safety score clearly and briefly. "
-                    "Explain that this is a model-based travel safety estimate, not an official crime report. "
-                    "Mention the risk band and keep the guidance practical."
-                )
+            if not result.get("success"):
                 return json.dumps(result)
+
+            result["instruction"] = (
+                "Present the predicted safety score clearly and briefly. "
+                "Explain that this is a model-based travel safety estimate, not an official crime report. "
+                "Mention the risk band and keep the guidance practical."
+            )
+            return json.dumps(result)
 
         log.warning("TOOL CALL  unknown tool: %s", name)
         return json.dumps({"error": f"Unknown tool: {name}"})
-
