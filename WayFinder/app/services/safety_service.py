@@ -93,8 +93,8 @@ class SafetyService:
             try:
                 lgbt = self._predictor.predict_lgbt(req.country)
                 details["lgbt_safety"] = lgbt
-            except Exception:
-                pass
+            except Exception as e:
+                details["lgbt_safety"] = {"error": str(e), "lgbt_safety_score": None}
 
         if req.include_weather:
             try:
@@ -103,15 +103,15 @@ class SafetyService:
                 ) if self._predictor._weather else None
                 if wx:
                     details["weather_risk"] = wx
-            except Exception:
-                pass
+            except Exception as e:
+                details["weather_risk"] = {"error": str(e)}
 
         if req.include_ecuador and self._predictor._ecuador:
             try:
                 ec = self._predictor._ecuador.assess(req.latitude, req.longitude, req.country)
                 details["ecuador_risk"] = ec
-            except Exception:
-                pass
+            except Exception as e:
+                details["ecuador_risk"] = {"error": str(e)}
 
         # Peru-specific assessment
         try:

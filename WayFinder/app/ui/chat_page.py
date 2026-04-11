@@ -946,7 +946,7 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
     weather = result.get("weather_risk", {})
     ecuador = result.get("ecuador_risk", {})
     peru_r  = result.get("peru_risk", {})
-    lgbt    = result.get("lgbt_safety", {})
+    lgbt    = result.get("lgbt_safety") or result.get("details", {}).get("lgbt_safety", {})
 
     # Build tab list dynamically based on what's available
     tab_labels = ["📊 Score Details"]
@@ -956,7 +956,7 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
         tab_labels.append("🐆 Ecuador")
     if peru_r and peru_r.get("applicable"):
         tab_labels.append("🐆 Peru")
-    if lgbt and not lgbt.get("error") and lgbt.get("lgbt_safety_score"):
+    if lgbt and "lgbt_safety_score" in lgbt:
         tab_labels.append("🏳️‍🌈 LGBT")
 
     tabs = st.tabs(tab_labels)
@@ -977,6 +977,9 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
                 st.metric("Random Forest v6", f"{rf:.1f}")
             if v9b is not None:
                 st.metric("v9b MLP", f"{v9b:.1f}")
+            else:
+                st.caption("⚠️ v9b model not loaded — using v6 ensemble only")
+            st.caption(f"Active model: {result.get('model_version', '—')}")
             agreement = details.get("agreement_band", "—")
             spread = details.get("model_spread")
             st.caption(f"Model agreement: **{agreement}**" + (f" (spread: {spread:.1f})" if spread else ""))
@@ -1059,7 +1062,7 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
                 st.warning(crime_notes)
 
     # ── LGBT tab ───────────────────────────────────────────────────────────
-    if lgbt and not lgbt.get("error") and tab_idx <= len(tabs) - 1:
+    if lgbt and "lgbt_safety_score" in lgbt and tab_idx <= len(tabs) - 1:
         with tabs[tab_idx]:
             tab_idx += 1
             score_l = lgbt.get("lgbt_safety_score")
