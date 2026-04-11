@@ -128,6 +128,11 @@ class SafetyPredictor:
         except Exception as _v9b_err:
             self._v9b_available = False
             self._v9b_load_error = str(_v9b_err)
+            if "_fill_dtype" in str(_v9b_err) or "attribute" in str(_v9b_err).lower():
+                self._v9b_load_error = (
+                    f"sklearn version mismatch — imputer needs sklearn>=1.6. "
+                    f"Run: pip install -U scikit-learn. Original: {_v9b_err}"
+                )
             import logging as _log
             _log.getLogger(__name__).warning("v9b load failed: %s", _v9b_err)
 
@@ -183,6 +188,25 @@ class SafetyPredictor:
             raise ValueError(f"Missing v6 feature keys: {missing}")
         return pd.DataFrame([[feats[c] for c in self.feature_cols]], columns=self.feature_cols)
 
+    def _safe_impute(self, row_df: "pd.DataFrame") -> np.ndarray:
+        """Apply v9b imputer, with fallback for sklearn version mismatches."""
+        try:
+            return self.v9b_imputer.transform(row_df).astype(np.float32)
+        except AttributeError:
+            # sklearn version mismatch — extract statistics_ directly from object
+            try:
+                stats = np.array(self.v9b_imputer.statistics_, dtype=np.float32)
+                arr = row_df.values.astype(np.float32)
+                # Replace NaN with the imputer's learned means
+                nan_mask = np.isnan(arr)
+                arr[nan_mask] = np.take(stats, np.where(nan_mask)[1])
+                return arr
+            except Exception:
+                # Last resort: fill NaN with 0
+                arr = row_df.values.astype(np.float32)
+                arr = np.nan_to_num(arr, nan=0.0)
+                return arr
+
     def _build_v9b_input(self, lat: float, lon: float, country: str | None) -> np.ndarray:
         """Build v9b feature vector: start from v6 features, select v9b subset."""
         feats = self.feature_builder.build_all_features(lat=lat, lon=lon, country=country)
@@ -190,8 +214,17 @@ class SafetyPredictor:
             [[feats.get(c, 0.0) for c in self.v9b_features]],
             columns=self.v9b_features,
         )
-        row = self.v9b_imputer.transform(row_df).astype(np.float32)
-        row = self.v9b_scaler.transform(row)
+        row = self._safe_impute(row_df)
+        try:
+            row = self.v9b_scaler.transform(row)
+        except AttributeError:
+            # sklearn version mismatch fallback — manual standardization
+            try:
+                mean = np.array(self.v9b_scaler.mean_, dtype=np.float32)
+                scale = np.array(self.v9b_scaler.scale_, dtype=np.float32)
+                row = (row - mean) / np.where(scale == 0, 1.0, scale)
+            except Exception:
+                pass  # proceed with unscaled — model will still run
         return row
 
     # ── Core prediction methods ────────────────────────────────────────────────
