@@ -1,29 +1,16 @@
 name: wayfinder
 channels:
-  - pytorch
   - conda-forge
   - defaults
 dependencies:
   - python=3.11
   - pip
 
-  # Core ML
-  - pytorch::pytorch=2.2.2
-  - pytorch::torchvision
-  - pytorch::cpuonly
-
-  # Data
+  # Data / ML
   - numpy
   - pandas
-  - scikit-learn
+  - scikit-learn>=1.4
   - joblib
-
-  # Transformers / HuggingFace
-  - conda-forge::transformers
-  - conda-forge::tokenizers
-  - conda-forge::huggingface_hub
-  - conda-forge::datasets
-  - conda-forge::safetensors
 
   # App
   - streamlit
@@ -51,9 +38,12 @@ dependencies:
   - gitpython
   - beautifulsoup4
   - regex
+  - dateparser
 
-  # pip-only packages
+  # pip-only packages (PyTorch via pip for cross-platform compatibility)
   - pip:
+    - torch>=2.0
+    - torchvision
     - open-meteo
     - overpy
     - streamlit-folium

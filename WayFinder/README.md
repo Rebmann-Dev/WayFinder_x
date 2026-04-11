@@ -1,5 +1,27 @@
 # WayFinder
 
+## Setup (Mac, Windows, Linux)
+
+### 1. Create the conda environment
+```bash
+conda env create -f environment.yml
+conda activate wayfinder
+```
+
+### 2. Windows only — suppress OpenMP warning
+```bash
+conda env config vars set KMP_DUPLICATE_LIB_OK=TRUE -n wayfinder
+conda activate wayfinder
+```
+
+### 3. Run the app
+```bash
+cd WayFinder
+streamlit run app/main.py
+```
+
+> **Note:** PyTorch is installed via pip automatically during `conda env create`. On Apple Silicon Macs this gives you MPS acceleration. On Windows/Linux it installs the CPU build.
+
 # Installation
 
 ### Prerequisites: 
