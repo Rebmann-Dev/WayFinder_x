@@ -102,6 +102,21 @@ class SafetyService:
             except Exception:
                 pass
 
+        # Peru-specific assessment
+        try:
+            from models.safety.submodels.peru_safety import PeruSafetyModel
+            peru_model = PeruSafetyModel()
+            peru_result = peru_model.assess(
+                latitude=req.latitude,
+                longitude=req.longitude,
+                country=req.country,
+                altitude_m=0.0,
+                travel_month=getattr(req, 'travel_month', None),
+            )
+            details["peru_risk"] = peru_result
+        except Exception as e:
+            details["peru_risk"] = {"applicable": False, "error": str(e)}
+
         result = SafetyResult(
             success=True,
             safety_score=round(score, 2),

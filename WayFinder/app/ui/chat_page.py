@@ -285,60 +285,13 @@ def _render_sidebar(safety_service: SafetyService) -> None:
             if st.session_state["safety_result"] is not None:
                 result = st.session_state["safety_result"]
                 if result.get("success"):
-                    score = result.get("safety_score")
-                    band = result.get("risk_band", "—")
-                    band_color = {
-                        "low": "🟢",
-                        "moderate": "🟡",
-                        "elevated": "🟠",
-                        "high": "🔴",
-                    }.get(band, "⚪")
-                    st.metric(
-                        "Safety score", f"{score:.2f}" if score is not None else "—"
-                    )
-                    st.caption(f"{band_color} Risk band: **{band}**")
-                    with st.expander("Prediction details", expanded=False):
-                        st.json(result)
+                    _render_safety_results_panel(result)
                 else:
                     st.error(f"Scoring failed: {result.get('error')}")
 
             if _DEBUG and st.session_state.get("safety_debug") is not None:
                 with st.expander("Safety debug", expanded=False):
                     st.json(st.session_state["safety_debug"])
-
-        result = st.session_state.get("safety_result", {}) or {}
-        if result.get("success"):
-            # Weather risks
-            weather = result.get("weather_risk", {})
-            if weather and not weather.get("error"):
-                with st.expander("🌦️ Weather Risks", expanded=False):
-                    st.caption(f"Risk level: **{weather.get('weather_risk_label', '—')}** ({weather.get('weather_risk_score', '—')}/5)")
-                    st.caption(weather.get("travel_month_assessment", ""))
-                    for r in weather.get("risks", []):
-                        st.markdown(f"**{r['type'].replace('_',' ').title()}** (severity {r['severity']}/5)")
-                        st.caption(r.get("description", ""))
-
-            # Ecuador risks
-            ec = result.get("ecuador_risk", {})
-            if ec and ec.get("applicable"):
-                with st.expander("🐆 Ecuador Wildlife & Crime", expanded=False):
-                    st.caption(f"Province: **{ec.get('province','—')}** | Crime risk: {ec.get('crime_risk','—')}/5 | Wildlife risk: {ec.get('wildlife_risk','—')}/5")
-                    st.caption(ec.get("crime_notes", ""))
-                    st.markdown("**Active wildlife threats:**")
-                    for threat in ec.get("wildlife_threat_details", []):
-                        with st.expander(f"{'⚠️' if threat['risk'] >= 4 else '⚡'} {threat['name']} (risk {threat['risk']}/5)", expanded=False):
-                            st.caption(f"Type: {threat.get('type','—')} | Habitats: {', '.join(threat.get('habitats',[]))}")
-                            st.markdown(threat.get("notes", ""))
-
-            # LGBT safety
-            lgbt = result.get("lgbt_safety", {})
-            if lgbt and not lgbt.get("error"):
-                with st.expander("🏳️‍🌈 LGBT Safety", expanded=False):
-                    score = lgbt.get("lgbt_safety_score")
-                    label = {1:"Criminalized",2:"Hostile",3:"Neutral",4:"Accepting",5:"Very Safe"}.get(score, "—")
-                    st.metric("LGBT Safety", f"{score}/5 — {label}" if score else "—")
-
-        # TODO: population filter — requires global dataset integration
 
 
 ECUADOR_HIKES = [
@@ -631,6 +584,102 @@ PERU_HIKES = [
         ],
         "wildlife": ["Andean condor", "Viscacha", "Alpaca", "Spectacled bear (rare)"],
     },
+    {
+        "name": "Kuelap Fortress Trek",
+        "region": "Amazonas",
+        "lat": -6.4219, "lon": -77.9244,
+        "difficulty": "Easy-Moderate",
+        "duration": "1-2 days",
+        "elevation_m": 3000,
+        "description": "Pre-Inca Chachapoya cloud fortress perched at 3000m above the Utcubamba canyon. Often called the 'Machu Picchu of the North'. A cable car now provides easy access from Nuevo Tingo, with shorter hikes around the ruins.",
+        "tips": "Cable car from Nuevo Tingo takes 20min. Full ruins circuit takes 2-3hrs. Chachapoyas city is the base (45min from cable car). Combine with Gocta waterfall nearby.",
+        "trail_coords": [],
+        "wildlife": ["Cock-of-the-rock", "Spectacled bear (rare)", "Cloud forest birds"],
+    },
+    {
+        "name": "Gocta Waterfall Hike",
+        "region": "Amazonas",
+        "lat": -6.0069, "lon": -77.9047,
+        "difficulty": "Moderate",
+        "duration": "1 day",
+        "elevation_m": 2531,
+        "description": "One of the world's tallest waterfalls (771m total drop, two tiers). Hike through cloud forest from Cocachimba village. The upper falls are more dramatic; the lower falls are more accessible.",
+        "tips": "Two trailheads: Cocachimba (lower falls, 4km round trip) and San Pablo de Valera (upper falls, 8km). Guides available in both villages. Bring rain gear.",
+        "trail_coords": [],
+        "wildlife": ["Cock-of-the-rock", "Torrent duck", "Andean condor"],
+    },
+    {
+        "name": "Chachapoyas Cloud Forest Loop",
+        "region": "Amazonas",
+        "lat": -6.2318, "lon": -77.8686,
+        "difficulty": "Moderate",
+        "duration": "2-3 days",
+        "elevation_m": 2335,
+        "description": "Multi-day loop through the cloud forests around Chachapoyas combining Chachapoya archaeological sites, sarcophagi cliffs (Karajia), and primary cloud forest with outstanding biodiversity.",
+        "tips": "Karajia sarcophagi require a guide and short cliff-side hike. Leymebamba museum houses mummies from Laguna de los Cóndores. Rainy season Nov-Apr means muddy trails.",
+        "trail_coords": [],
+        "wildlife": ["Spectacled bear", "Cock-of-the-rock", "Yellow-tailed woolly monkey"],
+    },
+    {
+        "name": "Huascarán Basecamp Trek",
+        "region": "Ancash",
+        "lat": -9.1219, "lon": -77.6097,
+        "difficulty": "Hard",
+        "duration": "2-3 days",
+        "elevation_m": 4800,
+        "description": "Trek to the base of Huascarán (6768m), Peru's highest peak and the world's highest tropical mountain. The route passes through Llanganuco lakes (turquoise glacial lakes between Huascarán and Chopicalqui).",
+        "tips": "Start from Yungay via Llanganuco road. Acclimatize in Huaraz first (3250m). The full mountaineering ascent requires technical skill and guides. Basecamp trek is non-technical.",
+        "trail_coords": [],
+        "wildlife": ["Andean condor", "Puna hawk", "Viscacha", "White-tailed deer"],
+    },
+    {
+        "name": "Pastoruri Glacier Trek",
+        "region": "Ancash",
+        "lat": -9.9778, "lon": -77.2094,
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "elevation_m": 5240,
+        "description": "Accessible high-altitude glacier walk at 5240m in Huascarán National Park. The Puya Raimondi plants (world's largest bromeliad, blooms every 80-100 years) line the approach road. The glacier has retreated significantly but remains dramatic.",
+        "tips": "Day trip from Huaraz. Mandatory to go with tour operator. Altitude is extreme — acclimatize 2+ days in Huaraz. Warm layers essential. Horses available for part of route.",
+        "trail_coords": [],
+        "wildlife": ["Viscacha", "Puna ibis", "Andean condor", "Puya Raimondi plants"],
+    },
+    {
+        "name": "Chavin de Huantar Circuit",
+        "region": "Ancash",
+        "lat": -9.5931, "lon": -77.1772,
+        "difficulty": "Easy",
+        "duration": "1-2 days",
+        "elevation_m": 3177,
+        "description": "UNESCO World Heritage Chavín ruins combined with the Tunnel Trek — a high-mountain route crossing Kahuish Pass (4518m) between Huaraz and Chavín through pristine Andean landscape.",
+        "tips": "Tunnel Trek is 2 days each way from Huaraz. Ruins visit is easy from Chavín village. Combine with Laguna Querococha viewpoint on the way.",
+        "trail_coords": [],
+        "wildlife": ["Andean condor", "Puna hawk", "White-tailed deer"],
+    },
+    {
+        "name": "Cajamarca Highland Walk",
+        "region": "Cajamarca",
+        "lat": -7.1641, "lon": -78.5128,
+        "difficulty": "Easy",
+        "duration": "1-2 days",
+        "elevation_m": 2750,
+        "description": "Cultural highland walk around Cajamarca, site of Atahualpa's capture in 1532. Day hikes to Cumbemayo aqueduct (pre-Inca stone channel), Otuzco windows, and Santa Apolonia hill overlooking the city.",
+        "tips": "Cajamarca is Peru's best-kept secret for colonial history + mild hiking. Cumbemayo is 20km from city — mototaxi or tour recommended. Excellent dairy food in region.",
+        "trail_coords": [],
+        "wildlife": ["Andean condor", "Barn owl", "Andean fox"],
+    },
+    {
+        "name": "Kuélap to Leymebamba Multi-day",
+        "region": "Amazonas",
+        "lat": -6.6881, "lon": -77.9025,
+        "difficulty": "Hard",
+        "duration": "4-5 days",
+        "elevation_m": 3200,
+        "description": "Challenging multi-day trek connecting the Kuelap fortress to Leymebamba village via cloud forest trails, Chachapoya ruins, and the legendary Laguna de los Cóndores where 200+ mummies were discovered in 1997.",
+        "tips": "Very remote — guide and mule support essential. Trail poorly marked. Leymebamba museum is unmissable. Rainy Nov-Apr makes trails very muddy. Dry season Jun-Sep ideal.",
+        "trail_coords": [],
+        "wildlife": ["Spectacled bear", "Yellow-tailed woolly monkey", "Andean condor", "Giant otter (lake)"],
+    },
 ]
 
 COUNTRY_HIKES: dict[str, list] = {
@@ -715,6 +764,149 @@ def _render_wildlife_tab() -> None:
                 st.caption(f"Habitats: {', '.join(threat.get('habitats', []))} | Max altitude: {threat.get('altitude_max_m', 'N/A')}m")
                 st.caption(threat.get("notes", ""))
                 st.divider()
+
+
+def _render_safety_results_panel(result: dict, label: str = "") -> None:
+    """Render all safety scoring outputs as a clean tabbed panel."""
+    import datetime as _dt
+
+    score = result.get("safety_score")
+    band = result.get("risk_band", "—")
+    band_emoji = {"Low Risk": "🟢", "Moderate Risk": "🟡", "Elevated Risk": "🟠", "High Risk": "🔴"}.get(band, "⚪")
+    model_version = result.get("model_version", "—")
+
+    if label:
+        st.markdown(f"**{label}**")
+
+    # Top-line score
+    m_col1, m_col2, m_col3 = st.columns(3)
+    m_col1.metric("Safety Score", f"{score:.1f}/100" if score is not None else "—")
+    m_col2.metric("Risk Band", f"{band_emoji} {band}")
+    m_col3.metric("Model", model_version)
+
+    # Tabs for each dimension
+    details = result.get("details", {})
+    weather = result.get("weather_risk", {})
+    ecuador = result.get("ecuador_risk", {})
+    peru_r  = result.get("peru_risk", {})
+    lgbt    = result.get("lgbt_safety", {})
+
+    # Build tab list dynamically based on what's available
+    tab_labels = ["📊 Score Details"]
+    if weather and not weather.get("error"):
+        tab_labels.append("🌦️ Weather")
+    if ecuador and ecuador.get("applicable"):
+        tab_labels.append("🐆 Ecuador")
+    if peru_r and peru_r.get("applicable"):
+        tab_labels.append("🐆 Peru")
+    if lgbt and not lgbt.get("error") and lgbt.get("lgbt_safety_score"):
+        tab_labels.append("🏳️‍🌈 LGBT")
+
+    tabs = st.tabs(tab_labels)
+    tab_idx = 0
+
+    # ── Score Details tab ──────────────────────────────────────────────────
+    with tabs[tab_idx]:
+        tab_idx += 1
+        d_col1, d_col2 = st.columns(2)
+        with d_col1:
+            st.markdown("**Model breakdown**")
+            mlp = details.get("mlp_score_v6")
+            rf  = details.get("rf_score_v6")
+            v9b = details.get("v9b_score")
+            if mlp is not None:
+                st.metric("MLP v6", f"{mlp:.1f}")
+            if rf is not None:
+                st.metric("Random Forest v6", f"{rf:.1f}")
+            if v9b is not None:
+                st.metric("v9b MLP", f"{v9b:.1f}")
+            agreement = details.get("agreement_band", "—")
+            spread = details.get("model_spread")
+            st.caption(f"Model agreement: **{agreement}**" + (f" (spread: {spread:.1f})" if spread else ""))
+        with d_col2:
+            st.markdown("**Location**")
+            lat = result.get("latitude")
+            lon = result.get("longitude")
+            country = result.get("country", "—")
+            if lat and lon:
+                st.caption(f"📍 {lat:.4f}, {lon:.4f}")
+            st.caption(f"🌍 {country}")
+            feat_count = details.get("feature_count")
+            if feat_count:
+                st.caption(f"Features used: {feat_count}")
+
+    # ── Weather tab ────────────────────────────────────────────────────────
+    if weather and not weather.get("error") and tab_idx <= len(tabs) - 1:
+        with tabs[tab_idx]:
+            tab_idx += 1
+            w_score = weather.get("weather_risk_score", "—")
+            w_label = weather.get("weather_risk_label", "—")
+            st.metric("Weather Risk", f"{w_score}/5 — {w_label}")
+            assessment = weather.get("travel_month_assessment", "")
+            if assessment:
+                st.info(assessment)
+            risks = weather.get("risks", [])
+            if risks:
+                st.markdown("**Active risks this month:**")
+                for r in risks:
+                    sev = r.get("severity", 0)
+                    sev_bar = "🔴" * min(sev, 5)
+                    with st.expander(f"{r['type'].replace('_',' ').title()} {sev_bar}", expanded=sev >= 4):
+                        st.write(r.get("description", ""))
+
+    # ── Ecuador tab ────────────────────────────────────────────────────────
+    if ecuador and ecuador.get("applicable") and tab_idx <= len(tabs) - 1:
+        with tabs[tab_idx]:
+            tab_idx += 1
+            e_col1, e_col2, e_col3 = st.columns(3)
+            e_col1.metric("Overall Risk", f"{ecuador.get('overall_risk','—')}/5")
+            e_col2.metric("Crime Risk", f"{ecuador.get('crime_risk','—')}/5")
+            e_col3.metric("Wildlife Risk", f"{ecuador.get('wildlife_risk','—')}/5")
+            st.caption(f"Province: **{ecuador.get('province','—')}** · Homicide rate: {ecuador.get('homicide_rate_per_100k','—')}/100k")
+            crime_notes = ecuador.get("crime_notes","")
+            if crime_notes:
+                st.warning(crime_notes)
+            threats = ecuador.get("wildlife_threat_details", [])
+            if threats:
+                st.markdown("**Wildlife threats at this location:**")
+                for threat in sorted(threats, key=lambda x: -x.get("risk",0)):
+                    risk = threat.get("risk", 0)
+                    badge = "🔴" if risk >= 4 else "🟠" if risk == 3 else "🟡"
+                    with st.expander(f"{badge} {threat['name']} — risk {risk}/5", expanded=False):
+                        st.caption(f"Type: {threat.get('type','—')} | Habitats: {', '.join(threat.get('habitats',[]))}")
+                        st.write(threat.get("notes",""))
+
+    # ── Peru tab ───────────────────────────────────────────────────────────
+    if peru_r and peru_r.get("applicable") and tab_idx <= len(tabs) - 1:
+        with tabs[tab_idx]:
+            tab_idx += 1
+            p_col1, p_col2, p_col3 = st.columns(3)
+            p_col1.metric("Overall Risk", f"{peru_r.get('overall_risk','—')}/5")
+            p_col2.metric("Crime Risk", f"{peru_r.get('crime_risk','—')}/5")
+            p_col3.metric("Wildlife Risk", f"{peru_r.get('wildlife_risk','—')}/5")
+            st.caption(f"Region: **{peru_r.get('region','—')}** · Homicide rate: {peru_r.get('homicide_rate_per_100k','—')}/100k")
+            crime_notes = peru_r.get("crime_notes","")
+            if crime_notes:
+                st.warning(crime_notes)
+            threats = peru_r.get("wildlife_threat_details", [])
+            if threats:
+                st.markdown("**Wildlife threats at this location:**")
+                for threat in sorted(threats, key=lambda x: -x.get("risk",0)):
+                    risk = threat.get("risk", 0)
+                    badge = "🔴" if risk >= 4 else "🟠" if risk == 3 else "🟡"
+                    with st.expander(f"{badge} {threat['name']} — risk {risk}/5", expanded=False):
+                        st.caption(f"Type: {threat.get('type','—')} | Habitats: {', '.join(threat.get('habitats',[]))}")
+                        st.write(threat.get("notes",""))
+
+    # ── LGBT tab ───────────────────────────────────────────────────────────
+    if lgbt and not lgbt.get("error") and tab_idx <= len(tabs) - 1:
+        with tabs[tab_idx]:
+            tab_idx += 1
+            score_l = lgbt.get("lgbt_safety_score")
+            labels = {1:"Criminalized — serious legal risk",2:"Hostile — discrimination common",3:"Neutral — limited legal protections",4:"Accepting — legal protections exist",5:"Very Safe — full equality"}
+            label_l = labels.get(score_l, "—")
+            st.metric("LGBT Safety", f"{score_l}/5" if score_l else "—")
+            st.write(label_l)
 
 
 def _render_explore_panel() -> None:
@@ -830,6 +1022,69 @@ def _render_explore_panel() -> None:
 
         st_folium(m, use_container_width=True, height=900, key="explore_main_map")
 
+        # ── Safety scoring from explore map ────────────────────────────────
+        st.divider()
+        st.markdown("### 🛡️ Safety Score")
+        score_col1, score_col2 = st.columns([3, 1])
+        with score_col1:
+            explore_dest = st.text_input(
+                "Score a location",
+                placeholder="e.g. Quito, Cusco, Iquitos…",
+                key="explore_score_input",
+                label_visibility="collapsed",
+            )
+        with score_col2:
+            score_btn = st.button("Run Score", use_container_width=True, key="explore_run_score")
+
+        # Month selector for travel month assessment
+        month_names = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+        sel_month = st.selectbox(
+            "Travel month (for weather assessment)",
+            options=list(range(1, 13)),
+            format_func=lambda x: month_names[x-1],
+            index=datetime.date.today().month - 1,
+            key="explore_travel_month",
+        )
+
+        if score_btn and explore_dest:
+            import requests as _req
+            try:
+                geo_r = _req.get(
+                    "https://nominatim.openstreetmap.org/search",
+                    params={"q": explore_dest, "format": "json", "limit": 1},
+                    headers={"User-Agent": "WayFinder/1.0"},
+                    timeout=5,
+                )
+                if geo_r.ok and geo_r.json():
+                    geo = geo_r.json()[0]
+                    lat = float(geo["lat"])
+                    lon = float(geo["lon"])
+                    country = geo.get("display_name", "").split(",")[-1].strip()
+                    # Get safety service from cache
+                    _ss = get_safety_service()
+                    req = SafetyRequest(
+                        latitude=lat,
+                        longitude=lon,
+                        country=country,
+                        location_name=explore_dest,
+                        travel_month=sel_month,
+                    )
+                    result = _ss.assess_request(req, include_details=True)
+                    st.session_state["explore_safety_result"] = result
+                    st.session_state["explore_scored_location"] = explore_dest
+                    st.rerun()
+                else:
+                    st.warning(f"Could not find '{explore_dest}' — try a more specific name.")
+            except Exception as e:
+                st.error(f"Scoring failed: {e}")
+
+        # Display explore safety result
+        explore_result = st.session_state.get("explore_safety_result")
+        if explore_result and explore_result.get("success"):
+            _render_safety_results_panel(explore_result, label=st.session_state.get("explore_scored_location",""))
+        elif explore_result:
+            st.error(f"Scoring failed: {explore_result.get('error')}")
+
     with tab_hikes:
         st.markdown(f"### {st.session_state.get('explore_country','Ecuador')} Hikes")
         st.caption("Select a hike to see details and view it on the map.")
@@ -841,6 +1096,10 @@ def _render_explore_panel() -> None:
 
 
 def render_chat_page() -> None:
+    try:
+        st.set_page_config(layout="wide", page_title="WayFinder", page_icon="✈️")
+    except Exception:
+        pass
     st.title("✈️ WayFinder")
     inject_global_styles()
 
@@ -855,6 +1114,8 @@ def render_chat_page() -> None:
         ("safety_debug", None),
         ("explore_mode", False),
         ("explore_country", "Ecuador"),
+        ("explore_safety_result", None),
+        ("explore_scored_location", ""),
     ]:
         if key not in st.session_state:
             st.session_state[key] = default

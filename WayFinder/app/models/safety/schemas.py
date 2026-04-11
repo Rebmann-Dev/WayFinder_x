@@ -16,6 +16,7 @@ class SafetyRequest:
     country: str | None = None
     location_name: str | None = None
     travel_date: datetime.date | None = None
+    travel_month: int | None = None
     include_lgbt: bool = True
     include_weather: bool = True
     include_ecuador: bool = True
@@ -114,4 +115,9 @@ class SafetyResult:
             d["weather_risk"] = self.weather_dimension.to_dict()
         if self.ecuador_dimension:
             d["ecuador_risk"] = self.ecuador_dimension.to_dict()
+        # Promote dimension data stored in details to top-level keys
+        # so UI code can access result.get("weather_risk") etc. directly
+        for key in ("weather_risk", "ecuador_risk", "peru_risk", "lgbt_safety"):
+            if key not in d and key in self.details:
+                d[key] = self.details[key]
         return d
