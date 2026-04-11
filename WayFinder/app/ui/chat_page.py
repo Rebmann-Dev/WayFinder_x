@@ -656,7 +656,8 @@ def _render_hikes_tab() -> None:
         col1, col2 = st.columns([2, 3])
         with col1:
             st.markdown(f"### {hike['name']}")
-            st.caption(f"📍 {hike['province']} · {hike['difficulty']} · {hike['duration']}")
+            area = hike.get('province') or hike.get('region', '—')
+            st.caption(f"📍 {area} · {hike['difficulty']} · {hike['duration']}")
             st.caption(f"⛰️ Max elevation: {hike['elevation_m']:,}m")
             st.markdown(hike["description"])
             st.markdown("**Tips:**")
@@ -667,38 +668,62 @@ def _render_hikes_tab() -> None:
 
         with col2:
             m = folium.Map(location=[hike["lat"], hike["lon"]], zoom_start=11, tiles="OpenStreetMap")
-            # Draw trail polyline if coordinates available
             trail_coords = hike.get("trail_coords")
             if trail_coords and len(trail_coords) >= 2:
+                # Trail polyline
                 folium.PolyLine(
                     locations=trail_coords,
                     color="#e05c00",
-                    weight=4,
-                    opacity=0.85,
+                    weight=5,
+                    opacity=0.9,
                     tooltip=f"{hike['name']} trail",
                 ).add_to(m)
-                # Start and end markers
-                folium.Marker(
-                    trail_coords[0],
-                    popup="Start",
-                    tooltip="Start",
-                    icon=folium.Icon(color="green", icon="play", prefix="glyphicon"),
-                ).add_to(m)
-                folium.Marker(
-                    trail_coords[-1],
-                    popup="End / Summit",
-                    tooltip="End / Summit",
-                    icon=folium.Icon(color="red", icon="flag", prefix="glyphicon"),
-                ).add_to(m)
+                # Waypoint markers (intermediate points)
+                for i, coord in enumerate(trail_coords):
+                    if i == 0:
+                        folium.Marker(
+                            coord,
+                            popup=folium.Popup("<b>🟢 Trailhead / Start</b>", max_width=150),
+                            tooltip="Start",
+                            icon=folium.Icon(color="green", icon="play", prefix="glyphicon"),
+                        ).add_to(m)
+                    elif i == len(trail_coords) - 1:
+                        folium.Marker(
+                            coord,
+                            popup=folium.Popup("<b>🔴 End / Summit</b>", max_width=150),
+                            tooltip="End / Summit",
+                            icon=folium.Icon(color="red", icon="flag", prefix="glyphicon"),
+                        ).add_to(m)
+                    else:
+                        folium.CircleMarker(
+                            coord,
+                            radius=5,
+                            color="#e05c00",
+                            fill=True,
+                            fill_color="#ffffff",
+                            fill_opacity=0.9,
+                            tooltip=f"Waypoint {i}",
+                        ).add_to(m)
+                # Legend
+                legend_html = """
+                <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;
+                            background: white; padding: 10px 14px; border-radius: 8px;
+                            border: 1px solid #ccc; font-size: 13px; line-height: 1.8;">
+                    <b>Legend</b><br>
+                    <span style="color:green">&#9654;</span> Trailhead / Start<br>
+                    <span style="color:#e05c00">&#9679;</span> Waypoint<br>
+                    <span style="color:red">&#9873;</span> End / Summit<br>
+                    <span style="color:#e05c00">&#9473;&#9473;</span> Trail route
+                </div>"""
+                m.get_root().html.add_child(folium.Element(legend_html))
             else:
-                # Fallback: single point marker
                 folium.Marker(
                     [hike["lat"], hike["lon"]],
                     popup=hike["name"],
                     tooltip=hike["name"],
                     icon=folium.Icon(color="green", icon="tree-conifer", prefix="glyphicon"),
                 ).add_to(m)
-            st_folium(m, use_container_width=True, height=500, key=f"hike_map_{idx}")
+            st_folium(m, use_container_width=True, height=520, key=f"hike_map_{idx}")
 
 
 def _render_wildlife_tab() -> None:
