@@ -186,8 +186,11 @@ class SafetyPredictor:
     def _build_v9b_input(self, lat: float, lon: float, country: str | None) -> np.ndarray:
         """Build v9b feature vector: start from v6 features, select v9b subset."""
         feats = self.feature_builder.build_all_features(lat=lat, lon=lon, country=country)
-        row = np.array([feats.get(c, 0.0) for c in self.v9b_features], dtype=np.float32).reshape(1, -1)
-        row = self.v9b_imputer.transform(row)
+        row_df = pd.DataFrame(
+            [[feats.get(c, 0.0) for c in self.v9b_features]],
+            columns=self.v9b_features,
+        )
+        row = self.v9b_imputer.transform(row_df).astype(np.float32)
         row = self.v9b_scaler.transform(row)
         return row
 
