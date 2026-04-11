@@ -1,0 +1,5 @@
+services:
+  server:
+    image: omarsagoo/wayfinder:scraper-latest
+    ports:
+      - 8080:8080

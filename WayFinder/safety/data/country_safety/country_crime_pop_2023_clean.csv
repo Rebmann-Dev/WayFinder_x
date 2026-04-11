@@ -1,0 +1,134 @@
+rank,country,crime_index_2023,population_2023,country_norm
+1,Venezuela,83.76,28838499.0,venezuela
+2,Papua New Guinea,80.79,10329931.0,papua new guinea
+3,South Africa,76.86,60414495.0,south africa
+4,Afghanistan,76.31,42239854.0,afghanistan
+5,Honduras,74.54,10593798.0,honduras
+6,Guyana,68.74,813834.0,guyana
+7,El Salvador,67.79,6364943.0,el salvador
+8,Brazil,67.49,216422446.0,brazil
+9,Jamaica,67.42,2825544.0,jamaica
+10,Syria,67.18,23227014.0,syria
+11,Peru,66.72,34352719.0,peru
+12,Angola,66.48,36684202.0,angola
+13,Cameroon,65.24,28647293.0,cameroon
+14,Namibia,65.21,2604172.0,namibia
+15,Nigeria,64.06,223804632.0,nigeria
+16,Bangladesh,63.9,172954319.0,bangladesh
+17,Argentina,63.82,45773884.0,argentina
+18,Puerto Rico,62.84,3260314.0,puerto rico
+19,Bahamas,62.06,412623.0,bahamas
+20,Libya,61.78,6888388.0,libya
+21,Dominican Republic,61.02,11332972.0,dominican republic
+22,Kenya,60.14,55100586.0,kenya
+23,Belarus,59.58,9498238.0,belarus
+24,Zimbabwe,59.3,16665409.0,zimbabwe
+25,Guatemala,58.67,18092026.0,guatemala
+26,Bolivia,57.77,12388571.0,bolivia
+27,Fiji,57.62,936375.0,fiji
+28,Malaysia,57.29,34308525.0,malaysia
+29,Colombia,56.87,52085168.0,colombia
+30,Kyrgyzstan,56.87,6735347.0,kyrgyzstan
+31,Uganda,56.12,48582334.0,uganda
+32,Somalia,56.04,18143378.0,somalia
+33,Mongolia,56.01,3447157.0,mongolia
+34,Tanzania,56.0,67438106.0,tanzania
+35,Maldives,55.34,521021.0,maldives
+36,Ecuador,55.23,18190484.0,ecuador
+37,Costa Rica,54.22,5212173.0,costa rica
+38,Mexico,54.19,128455567.0,mexico
+39,Kazakhstan,53.77,19606633.0,kazakhstan
+40,Chile,53.42,19629590.0,chile
+41,Botswana,52.98,2675352.0,botswana
+42,Algeria,52.03,45606480.0,algeria
+43,France,51.99,64756584.0,france
+44,Uruguay,51.73,3423108.0,uruguay
+45,Cambodia,51.13,16944826.0,cambodia
+46,Belize,50.39,410825.0,belize
+47,Iran,49.38,89172767.0,iran
+48,Paraguay,49.37,6861524.0,paraguay
+49,Ethiopia,49.3,126527060.0,ethiopia
+50,Mauritius,48.88,1300557.0,mauritius
+51,Morocco,48.66,37840044.0,morocco
+52,Iraq,48.42,45504560.0,iraq
+53,Sweden,48.0,10612086.0,sweden
+54,Nicaragua,47.89,7046310.0,nicaragua
+55,United States,47.81,339996563.0,united states
+56,Ukraine,47.42,36744634.0,ukraine
+57,Ghana,46.98,34121985.0,ghana
+58,Egypt,46.83,112716598.0,egypt
+59,Lebanon,46.77,5353930.0,lebanon
+60,Myanmar,46.51,54577997.0,myanmar
+61,Moldova,46.35,3435931.0,moldova
+62,Vietnam,46.19,98858950.0,vietnam
+63,United Kingdom,46.07,67736802.0,united kingdom
+64,Indonesia,45.93,277534122.0,indonesia
+65,Greece,45.85,10341277.0,greece
+66,Ireland,45.51,5056935.0,ireland
+67,Panama,45.15,4468087.0,panama
+68,Italy,44.85,58870762.0,italy
+69,Belgium,44.58,11686140.0,belgium
+70,India,44.43,1428627663.0,india
+71,Palestine,43.74,5371230.0,palestine
+72,Tunisia,43.69,12458223.0,tunisia
+73,Zambia,43.62,20569737.0,zambia
+74,Australia,43.03,26439111.0,australia
+75,New Zealand,42.88,5228100.0,new zealand
+76,Albania,42.53,2832439.0,albania
+77,Pakistan,42.51,240485658.0,pakistan
+78,Philippines,42.46,117337368.0,philippines
+79,Sudan,42.34,48109006.0,sudan
+80,Canada,41.89,38781291.0,canada
+81,Sri Lanka,41.39,21893579.0,sri lanka
+82,Montenegro,41.18,626485.0,montenegro
+83,Malta,40.39,535064.0,malta
+84,Russia,39.99,144444359.0,russia
+85,Jordan,39.96,11337052.0,jordan
+86,Turkey,39.62,85816199.0,turkey
+87,Thailand,39.35,71801279.0,thailand
+88,North Macedonia,39.12,2085679.0,north macedonia
+89,Latvia,38.77,1830211.0,latvia
+90,Bulgaria,38.21,6687717.0,bulgaria
+91,Serbia,38.1,7149077.0,serbia
+92,Nepal,36.01,30896590.0,nepal
+93,Germany,35.79,83294633.0,germany
+94,Hungary,34.36,10156239.0,hungary
+95,Luxembourg,34.13,654768.0,luxembourg
+96,Norway,33.72,5474360.0,norway
+97,Uzbekistan,33.42,35163944.0,uzbekistan
+98,Kuwait,33.42,4310108.0,kuwait
+99,Lithuania,33.42,2718352.0,lithuania
+100,Spain,33.32,47519628.0,spain
+101,Azerbaijan,32.02,10412651.0,azerbaijan
+102,Israel,31.47,9174520.0,israel
+103,Cyprus,31.28,1260138.0,cyprus
+104,Poland,30.5,41026067.0,poland
+105,Slovakia,30.37,5795199.0,slovakia
+106,China,30.14,1425671352.0,china
+107,Portugal,29.91,10247605.0,portugal
+108,Brunei,29.0,452524.0,brunei
+109,Cuba,28.33,11194449.0,cuba
+110,Romania,28.3,19892812.0,romania
+111,Singapore,27.96,6014723.0,singapore
+112,Finland,27.59,5545475.0,finland
+113,Netherlands,27.16,17618299.0,netherlands
+114,South Korea,26.68,51784059.0,south korea
+115,Denmark,26.22,5910913.0,denmark
+116,Bahrain,25.64,1485509.0,bahrain
+117,Austria,25.54,8958960.0,austria
+118,Czech Republic,25.52,10495295.0,czech republic
+119,Saudi Arabia,25.23,36947025.0,saudi arabia
+120,Rwanda,24.89,14094683.0,rwanda
+121,Croatia,24.59,4008617.0,croatia
+122,Iceland,23.75,375318.0,iceland
+123,Estonia,23.71,1322765.0,estonia
+124,Georgia,23.38,3728282.0,georgia
+125,Armenia,22.79,2777970.0,armenia
+126,Slovenia,22.28,2119675.0,slovenia
+127,Japan,22.19,123294513.0,japan
+128,Hong Kong,22.0,7491609.0,hong kong
+129,Switzerland,21.62,8796669.0,switzerland
+130,Oman,20.34,4644384.0,oman
+131,Taiwan,15.46,23923276.0,taiwan
+132,United Arab Emirates,15.23,9516871.0,united arab emirates
+133,Qatar,12.13,2716391.0,qatar
