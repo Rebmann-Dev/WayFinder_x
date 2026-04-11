@@ -38,7 +38,7 @@ dependencies:
   - brotlicffi=1.2.0.0
   - bzip2=1.0.8
   - c-ares=1.34.6
-  - ca-certificates=2025.12.2
+  - ca-certificates=2026.3.19
   - cachetools=6.2.2
   - cairo=1.18.4
   - certifi=2026.01.04
@@ -47,6 +47,7 @@ dependencies:
   - click=8.2.1
   - comm=0.2.3
   - datasets=4.4.1
+  - dateparser=1.3.0
   - dav1d=1.2.1
   - debugpy=1.8.16
   - decorator=5.2.1
@@ -86,6 +87,7 @@ dependencies:
   - jansson=2.14
   - jedi=0.19.2
   - jinja2=3.1.6
+  - joblib=1.5.3
   - jpeg=9f
   - json5=0.12.1
   - jsonschema=4.25.1
@@ -170,9 +172,9 @@ dependencies:
   - notebook=7.5.3
   - notebook-shim=0.2.4
   - numexpr=2.14.1
-  - numpy=2.4.2
-  - numpy-base=2.4.2
-  - openssl=3.5.5
+  - numpy=1.26.4
+  - numpy-base=1.26.4
+  - openssl=3.5.6
   - opentelemetry-api=1.38.0
   - orc=2.2.0
   - packaging=25.0
@@ -221,6 +223,8 @@ dependencies:
   - rfc3986-validator=0.1.1
   - rpds-py=0.28.0
   - safetensors=0.7.0
+  - scikit-learn=1.8.0
+  - scipy=1.12.0
   - send2trash=1.8.3
   - setuptools=80.10.2
   - six=1.17.0
@@ -234,6 +238,7 @@ dependencies:
   - sympy=1.14.0
   - tenacity=9.1.2
   - terminado=0.18.1
+  - threadpoolctl=3.5.0
   - tinycss2=1.4.0
   - tk=8.6.15
   - tokenizers=0.22.2
@@ -245,6 +250,7 @@ dependencies:
   - typing-extensions=4.15.0
   - typing_extensions=4.15.0
   - tzdata=2026a
+  - tzlocal=5.3.1
   - urllib3=2.6.3
   - utf8proc=2.6.1
   - uvloop=0.22.1
