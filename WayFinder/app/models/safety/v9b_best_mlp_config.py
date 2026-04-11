@@ -25,7 +25,7 @@ V9B_FEATURE_PATH    = V9B_FEATURE_FILE
 V9B_MODEL_VERSION = "v9b_torch_mlp_targeted_2000max"
 
 # Architecture hyperparameters (must match training)
-V9B_HIDDEN_LAYERS  = (256, 256)
+V9B_HIDDEN_LAYERS  = (512, 256, 128)
 V9B_HIDDEN_SIZES   = V9B_HIDDEN_LAYERS   # alias
 V9B_DROPOUT        = 0.3
 V9B_ACTIVATION     = "relu"

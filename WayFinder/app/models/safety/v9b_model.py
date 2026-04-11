@@ -2,7 +2,7 @@
 v9b_model.py
 Torch MLP architecture for v9b safety model.
 Matches the exact architecture used during training (block2_mixed_feature_sets,
-hidden=(256,256), batchnorm=True, dropout=0.3, activation=relu).
+hidden=(512,256,128), batchnorm=True, dropout=0.3, activation=relu).
 """
 from __future__ import annotations
 
@@ -15,11 +15,11 @@ class TorchMLP(nn.Module):
     Fully connected MLP regressor matching the v9b training architecture.
 
     Architecture:
-        Linear -> BN -> ReLU -> Dropout -> Linear -> BN -> ReLU -> Dropout -> Linear(1)
+        Linear -> BN -> ReLU -> Dropout  (×N hidden layers)  -> Linear(1)
 
     Args:
         in_dim:       Number of input features (from v9b feature list).
-        hidden_sizes: Tuple of hidden layer sizes. Default: (256, 256).
+        hidden_sizes: Tuple of hidden layer sizes. Default: (512, 256, 128).
         dropout:      Dropout rate applied after each hidden activation. Default: 0.3.
         activation:   Activation function name ('relu' or 'gelu'). Default: 'relu'.
         use_batchnorm: Whether to apply BatchNorm1d after each linear layer. Default: True.
@@ -28,7 +28,7 @@ class TorchMLP(nn.Module):
     def __init__(
         self,
         in_dim: int,
-        hidden_sizes: tuple[int, ...] = (256, 256),
+        hidden_sizes: tuple[int, ...] = (512, 256, 128),
         dropout: float = 0.3,
         activation: str = "relu",
         use_batchnorm: bool = True,
