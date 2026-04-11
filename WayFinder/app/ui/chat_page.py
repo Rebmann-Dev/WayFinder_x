@@ -10,6 +10,7 @@ from ui.chat_handlers import handle_assistant_response, handle_user_message
 from ui.styles import inject_global_styles
 from components.location_picker import location_picker
 from models.safety.schemas import SafetyRequest
+from models.safety.submodels.peru_safety import _WILDLIFE_THREATS_PERU  # noqa — lazy import ok
 
 
 @st.cache_resource
@@ -63,7 +64,13 @@ def _render_sidebar(safety_service: SafetyService) -> None:
     with st.sidebar:
         st.header("WayFinder")
 
-        if st.button("🌿 Explore Ecuador", use_container_width=True, key="btn_explore"):
+        explore_country = st.selectbox(
+            "Explore country",
+            ["Ecuador", "Peru"],
+            key="explore_country",
+            label_visibility="collapsed",
+        )
+        if st.button("🌿 Explore", use_container_width=True, key="btn_explore"):
             st.session_state["explore_mode"] = True
             st.rerun()
 
@@ -331,6 +338,8 @@ def _render_sidebar(safety_service: SafetyService) -> None:
                     label = {1:"Criminalized",2:"Hostile",3:"Neutral",4:"Accepting",5:"Very Safe"}.get(score, "—")
                     st.metric("LGBT Safety", f"{score}/5 — {label}" if score else "—")
 
+        # TODO: population filter — requires global dataset integration
+
 
 ECUADOR_HIKES = [
     {
@@ -445,20 +454,203 @@ ECUADOR_HIKES = [
     },
 ]
 
+PERU_HIKES = [
+    {
+        "name": "Inca Trail to Machu Picchu",
+        "region": "Cusco",
+        "lat": -13.1631, "lon": -72.5450,
+        "difficulty": "Hard",
+        "duration": "4 days",
+        "elevation_m": 4215,
+        "description": "The world's most iconic trekking route. The classic 4-day, 43km trail passes Inca ruins, cloud forest, and high mountain passes before descending to Machu Picchu through the Sun Gate.",
+        "tips": "Permits sell out months in advance — book by January for high season. Altitude acclimatize in Cusco for 2+ days. Only 500 trekkers per day allowed. Guided tours mandatory.",
+        "trail_coords": [
+            [-13.5209, -71.9784],  # Km 82 start
+            [-13.3892, -72.1428],  # Llulluchayoc
+            [-13.3167, -72.2833],  # Dead Woman's Pass 4215m
+            [-13.2833, -72.3667],  # Runkurakay
+            [-13.2167, -72.4333],  # Sayacmarca
+            [-13.1944, -72.4667],  # Phuyupatamarca
+            [-13.1833, -72.5000],  # Wiñay Wayna
+            [-13.1631, -72.5450],  # Machu Picchu
+        ],
+        "wildlife": ["Spectacled bear", "Andean condor", "Cock-of-the-rock", "Mountain tapir"],
+    },
+    {
+        "name": "Salkantay Trek",
+        "region": "Cusco",
+        "lat": -13.3347, "lon": -72.5864,
+        "difficulty": "Hard",
+        "duration": "5 days",
+        "elevation_m": 4600,
+        "description": "Alternative to Inca Trail crossing beneath Salkantay mountain (6271m). Passes through glaciers, cloud forest, and coffee farms before reaching Aguas Calientes.",
+        "tips": "No permit required. Highest point 4600m — acclimatize well. Cold nights at Salkantay Pass camp. Lower cost than Inca Trail.",
+        "trail_coords": [
+            [-13.5278, -72.3069],  # Mollepata
+            [-13.4278, -72.4431],  # Soraypampa
+            [-13.3347, -72.5864],  # Salkantay Pass
+            [-13.2889, -72.6333],  # La Playa
+            [-13.2014, -72.5872],  # Aguas Calientes
+        ],
+        "wildlife": ["Andean condor", "Viscacha", "Puma (rare)", "Hummingbirds"],
+    },
+    {
+        "name": "Cordillera Blanca — Santa Cruz Trek",
+        "region": "Ancash",
+        "lat": -8.9761, "lon": -77.6294,
+        "difficulty": "Hard",
+        "duration": "4 days",
+        "elevation_m": 4750,
+        "description": "Peru's finest high-altitude circuit in the world's highest tropical mountain range. Passes glaciers, turquoise lakes, and 6000m+ peaks. Highest point: Punta Unión pass at 4750m.",
+        "tips": "Start from Cashapampa or Vaquería. Huaraz is the base — acclimatize 3+ days. Guide recommended but not mandatory. Ice axes needed for pass in wet season.",
+        "trail_coords": [
+            [-8.9344, -77.7603],   # Cashapampa
+            [-8.9447, -77.7217],   # Llamacorral
+            [-8.9761, -77.6294],   # Punta Unión 4750m
+            [-9.0139, -77.5989],   # Taullipampa
+            [-9.0683, -77.5494],   # Vaquería
+        ],
+        "wildlife": ["Andean condor", "Puma", "White-tailed deer", "Viscacha"],
+    },
+    {
+        "name": "Colca Canyon Trek",
+        "region": "Arequipa",
+        "lat": -15.5306, "lon": -71.9886,
+        "difficulty": "Moderate",
+        "duration": "2-3 days",
+        "elevation_m": 3400,
+        "description": "One of the world's deepest canyons (3270m depth). Trek down to the oasis village of Sangalle, swim in natural pools, then hike back up. Best condor viewing point at Cruz del Cóndor.",
+        "tips": "Start from Cabanaconde (3287m). Descent takes 3-4hrs, ascent 4-5hrs — start very early. Water available in Sangalle. Condors most active 8-10am.",
+        "trail_coords": [
+            [-15.6217, -71.9700],  # Cabanaconde
+            [-15.5778, -71.9833],  # Tapay trail junction
+            [-15.5306, -71.9886],  # Sangalle oasis
+        ],
+        "wildlife": ["Andean condor (abundant)", "Viscacha", "Andean fox", "Hummingbirds"],
+    },
+    {
+        "name": "Ausangate Circuit",
+        "region": "Cusco",
+        "lat": -13.7833, "lon": -71.2167,
+        "difficulty": "Hard",
+        "duration": "5-7 days",
+        "elevation_m": 5200,
+        "description": "Remote circuit around Ausangate mountain (6384m). Passes through rainbow-colored mineral mountains, glacial lakes, and high-altitude puna grasslands with traditional Quechua communities.",
+        "tips": "Highest circuit pass at 5200m — serious acclimatization required. Pack horses available. Nights below -10°C. Vinicunca (Rainbow Mountain) on southern approach.",
+        "trail_coords": [
+            [-13.7167, -71.2833],  # Tinqui
+            [-13.7500, -71.2500],  # Upispampa
+            [-13.7833, -71.2167],  # Ausangate base
+            [-13.8167, -71.1833],  # Palomani pass
+            [-13.7667, -71.1500],  # Laguna Sibinacocha
+            [-13.7167, -71.2833],  # Tinqui
+        ],
+        "wildlife": ["Andean condor", "Vicuña", "Alpaca herds", "Puma (rare)"],
+    },
+    {
+        "name": "Huayhuash Circuit",
+        "region": "Ancash / Huánuco",
+        "lat": -10.2736, "lon": -76.9039,
+        "difficulty": "Very Hard",
+        "duration": "9-12 days",
+        "elevation_m": 5450,
+        "description": "Often called the world's greatest trek. Full circuit around the Cordillera Huayhuash passes 6+ glaciated peaks over 6000m including Yerupajá (6634m). Extremely remote and demanding.",
+        "tips": "Community fees at multiple checkpoints. Ice axe and crampons recommended. Muleteers available from Chiquián or Llamac. Medical evacuation extremely difficult — do not go solo.",
+        "trail_coords": [
+            [-10.1833, -76.9833],  # Llamac
+            [-10.2167, -76.9500],  # Pocpa
+            [-10.2736, -76.9039],  # Laguna Jahuacocha
+            [-10.3500, -76.8833],  # Rondoy pass
+            [-10.4167, -76.8167],  # Laguna Carhuacocha
+            [-10.3000, -76.7500],  # Huayhuash pass
+        ],
+        "wildlife": ["Andean condor", "Vicuña", "Puma", "Giant hummingbird"],
+    },
+    {
+        "name": "Choquequirao Trek",
+        "region": "Cusco / Apurímac",
+        "lat": -13.5389, "lon": -72.8486,
+        "difficulty": "Hard",
+        "duration": "4-5 days",
+        "elevation_m": 3085,
+        "description": "The lost Inca citadel that only ~30 trekkers per day visit (vs 5000/day at Machu Picchu). Dramatic descent to Apurímac canyon and climb to the ruins. Often called 'Machu Picchu without the crowds'.",
+        "tips": "No road access — only on foot or horse. Start from Cachora. Drop 1500m to river, climb 1500m to ruins. Very hot in canyon. Camping mandatory.",
+        "trail_coords": [
+            [-13.6450, -72.7872],  # Cachora
+            [-13.5833, -72.8167],  # Chiquisca camp
+            [-13.5389, -72.8486],  # Choquequirao ruins
+        ],
+        "wildlife": ["Andean condor", "Cock-of-the-rock", "White-bellied parrot"],
+    },
+    {
+        "name": "Manu National Park Trails",
+        "region": "Madre de Dios / Cusco",
+        "lat": -11.8768, "lon": -71.4894,
+        "difficulty": "Easy",
+        "duration": "4-7 days",
+        "elevation_m": 380,
+        "description": "UNESCO Biosphere Reserve — the most biodiverse place on Earth. Guided walks from lodges to oxbow lakes, clay licks for parrots and macaws, canopy platforms, and night walks.",
+        "tips": "Only accessible by licensed operators. Entry requires pre-arranged tour from Cusco. Malaria prophylaxis essential. October-April wet season best for wildlife.",
+        "trail_coords": [
+            [-13.0583, -71.5725],  # Patria checkpoint
+            [-12.5000, -71.5000],  # Cocha Salvador
+            [-11.8768, -71.4894],  # Cocha Otorongo
+        ],
+        "wildlife": ["Jaguar", "Giant otter", "Harpy eagle", "1000+ bird species", "Giant river otter"],
+    },
+    {
+        "name": "Vinicunca Rainbow Mountain",
+        "region": "Cusco",
+        "lat": -13.8076, "lon": -71.3122,
+        "difficulty": "Moderate",
+        "duration": "1 day",
+        "elevation_m": 5200,
+        "description": "Surreal mineral-stained mountain revealing red, yellow, green, and purple stripes. One of Peru's most photogenic destinations. Day trip from Cusco via Pitumarca.",
+        "tips": "5200m — acclimatize in Cusco 3+ days first. Horses available for rent on trail. Starts at 4300m, gains 900m. Cold and windy at top. Go early for fewer crowds.",
+        "trail_coords": [
+            [-13.8600, -71.3500],  # Cusipata trailhead
+            [-13.8300, -71.3300],  # Mid-trail
+            [-13.8076, -71.3122],  # Vinicunca summit
+        ],
+        "wildlife": ["Vicuña", "Alpaca", "Andean condor", "Mountain viscacha"],
+    },
+    {
+        "name": "Lares Trek",
+        "region": "Cusco",
+        "lat": -13.0833, "lon": -72.0000,
+        "difficulty": "Moderate",
+        "duration": "3 days",
+        "elevation_m": 4400,
+        "description": "Cultural and scenic alternative to the Inca Trail through traditional Quechua weaving villages. Hot springs at Lares, 4400m passes, and ends at Ollantaytambo for train to Machu Picchu.",
+        "tips": "No permit required. Less crowded than Inca Trail. Cultural experience with local artisan communities. Horses available from Lares village.",
+        "trail_coords": [
+            [-13.0000, -72.0833],  # Lares hot springs
+            [-13.0417, -72.0417],  # Ipsaycocha pass 4400m
+            [-13.0833, -72.0000],  # Patacancha
+            [-13.2578, -72.2639],  # Ollantaytambo
+        ],
+        "wildlife": ["Andean condor", "Viscacha", "Alpaca", "Spectacled bear (rare)"],
+    },
+]
+
+COUNTRY_HIKES: dict[str, list] = {
+    "Ecuador": ECUADOR_HIKES,
+    "Peru": PERU_HIKES,
+}
+
 
 def _render_hikes_tab() -> None:
     import folium
     from streamlit_folium import st_folium
 
-    selected_hike = st.session_state.get("selected_hike_idx")
-
-    # Hike selector
-    hike_names = [h["name"] for h in ECUADOR_HIKES]
+    active_country = st.session_state.get("explore_country", "Ecuador")
+    hikes = COUNTRY_HIKES.get(active_country, ECUADOR_HIKES)
+    hike_names = [h["name"] for h in hikes]
     chosen = st.selectbox("Choose a hike:", ["— Select a hike —"] + hike_names, key="hike_selector")
 
     if chosen != "— Select a hike —":
         idx = hike_names.index(chosen)
-        hike = ECUADOR_HIKES[idx]
+        hike = hikes[idx]
         st.session_state["selected_hike_idx"] = idx
 
         col1, col2 = st.columns([2, 3])
@@ -474,22 +666,51 @@ def _render_hikes_tab() -> None:
                 st.caption(", ".join(hike["wildlife"]))
 
         with col2:
-            m = folium.Map(location=[hike["lat"], hike["lon"]], zoom_start=12, tiles="CartoDB dark_matter")
-            folium.Marker(
-                [hike["lat"], hike["lon"]],
-                popup=hike["name"],
-                tooltip=hike["name"],
-                icon=folium.Icon(color="green", icon="tree-conifer", prefix="glyphicon"),
-            ).add_to(m)
-            st_folium(m, use_container_width=True, height=400, key=f"hike_map_{idx}")
+            m = folium.Map(location=[hike["lat"], hike["lon"]], zoom_start=11, tiles="OpenStreetMap")
+            # Draw trail polyline if coordinates available
+            trail_coords = hike.get("trail_coords")
+            if trail_coords and len(trail_coords) >= 2:
+                folium.PolyLine(
+                    locations=trail_coords,
+                    color="#e05c00",
+                    weight=4,
+                    opacity=0.85,
+                    tooltip=f"{hike['name']} trail",
+                ).add_to(m)
+                # Start and end markers
+                folium.Marker(
+                    trail_coords[0],
+                    popup="Start",
+                    tooltip="Start",
+                    icon=folium.Icon(color="green", icon="play", prefix="glyphicon"),
+                ).add_to(m)
+                folium.Marker(
+                    trail_coords[-1],
+                    popup="End / Summit",
+                    tooltip="End / Summit",
+                    icon=folium.Icon(color="red", icon="flag", prefix="glyphicon"),
+                ).add_to(m)
+            else:
+                # Fallback: single point marker
+                folium.Marker(
+                    [hike["lat"], hike["lon"]],
+                    popup=hike["name"],
+                    tooltip=hike["name"],
+                    icon=folium.Icon(color="green", icon="tree-conifer", prefix="glyphicon"),
+                ).add_to(m)
+            st_folium(m, use_container_width=True, height=500, key=f"hike_map_{idx}")
 
 
 def _render_wildlife_tab() -> None:
-    from models.safety.submodels.ecuador_safety import _WILDLIFE_THREATS
+    active_country = st.session_state.get("explore_country", "Ecuador")
+    if active_country == "Peru":
+        from models.safety.submodels.peru_safety import _WILDLIFE_THREATS_PERU as threats_list
+    else:
+        from models.safety.submodels.ecuador_safety import _WILDLIFE_THREATS as threats_list
 
     # Group by type
     by_type = {}
-    for t in _WILDLIFE_THREATS:
+    for t in threats_list:
         ttype = t.get("type", "other")
         by_type.setdefault(ttype, []).append(t)
 
@@ -530,29 +751,125 @@ def _render_explore_panel() -> None:
             st.session_state["explore_mode"] = False
             st.rerun()
     with col_title:
-        st.subheader("🌿 Explore Ecuador")
+        st.subheader(f"🌿 Explore {st.session_state.get('explore_country','Ecuador')}")
 
     tab_map, tab_hikes, tab_wildlife = st.tabs(["🗺️ Map", "🥾 Hikes", "🐆 Wildlife"])
 
     with tab_map:
-        m = folium.Map(location=[-1.5, -78.0], zoom_start=7, tiles="CartoDB dark_matter")
-        # Add destination pin if selected
+        # Determine country context from selected location
+        active_country = st.session_state.get("explore_country", "Ecuador")
+        country_centers = {
+            "Ecuador": ([-1.5, -78.0], 7),
+            "Peru":    ([-9.0, -75.0], 6),
+        }
+        center, zoom = country_centers.get(active_country, ([-1.5, -78.0], 7))
+
+        # Map controls row
+        map_col1, map_col2, map_col3 = st.columns([2, 2, 3])
+        with map_col1:
+            show_wildlife = st.checkbox("🐆 Show wildlife zones", value=st.session_state.get("map_show_wildlife", False), key="map_show_wildlife")
+        with map_col2:
+            show_hikes = st.checkbox("🥾 Show hike markers", value=st.session_state.get("map_show_hikes", True), key="map_show_hikes")
+        with map_col3:
+            wildlife_risk_filter = st.slider("Min wildlife risk to show", 1, 5, st.session_state.get("wildlife_risk_filter", 3), key="wildlife_risk_filter")
+
+        m = folium.Map(location=center, zoom_start=zoom, tiles="OpenStreetMap")
+
+        # Add destination pin
         sel = st.session_state.get("selected_location")
         if sel and sel.get("lat"):
             folium.Marker(
                 [sel["lat"], sel["lon"]],
                 popup=sel.get("city", "Destination"),
+                tooltip="Your destination",
                 icon=folium.Icon(color="red", icon="map-marker"),
             ).add_to(m)
-        st_folium(m, use_container_width=True, height=700, key="explore_main_map")
+
+        # Wildlife zone circles
+        if show_wildlife:
+            if active_country == "Ecuador":
+                from models.safety.submodels.ecuador_safety import _WILDLIFE_THREATS as _wt
+                _prov_centroids = {
+                    "Guayas": (-1.83, -79.97), "Esmeraldas": (0.96, -79.65),
+                    "Sucumbíos": (0.09, -76.89), "Orellana": (-0.46, -76.99),
+                    "Napo": (-0.99, -77.81), "Pastaza": (-1.49, -78.00),
+                    "Pichincha": (-0.18, -78.47), "Manabí": (-1.05, -80.45),
+                    "Guayas coast": (-2.0, -80.0), "Amazon": (-1.0, -76.5),
+                }
+                _threat_centers = {
+                    "amazon": (-1.0, -76.5), "coastal_lowland": (-1.5, -80.5),
+                    "cloud_forest": (-0.5, -78.5), "andes": (-1.5, -78.5),
+                    "galapagos": (-0.6, -90.5), "rural": (-2.0, -79.0), "urban": (-0.2, -78.5),
+                }
+            else:
+                from models.safety.submodels.peru_safety import _WILDLIFE_THREATS_PERU as _wt
+                _threat_centers = {
+                    "amazon": (-5.0, -74.0), "coastal_lowland": (-10.0, -77.0),
+                    "cloud_forest": (-10.0, -74.0), "andes": (-13.0, -72.0),
+                    "rural": (-8.0, -75.0), "urban": (-12.0, -77.0),
+                }
+
+            risk_colors = {5: "#cc0000", 4: "#ff6600", 3: "#ffaa00", 2: "#88cc00", 1: "#00aa44"}
+            shown_threats = set()
+            for threat in _wt:
+                if threat["risk"] < wildlife_risk_filter:
+                    continue
+                habitats = threat.get("habitats", [])
+                for hab in habitats:
+                    if hab in _threat_centers:
+                        clat, clon = _threat_centers[hab]
+                        key = (threat["name"], hab)
+                        if key in shown_threats:
+                            continue
+                        shown_threats.add(key)
+                        color = risk_colors.get(threat["risk"], "#888888")
+                        folium.Circle(
+                            location=[clat, clon],
+                            radius=80000,  # 80km radius
+                            color=color,
+                            fill=True,
+                            fill_opacity=0.15,
+                            opacity=0.5,
+                            tooltip=f"{threat['name']} (risk {threat['risk']}/5)\n{threat.get('notes','')[:80]}",
+                            popup=folium.Popup(
+                                f"<b>{threat['name']}</b><br>Risk: {threat['risk']}/5<br>Type: {threat.get('type','')}<br>{threat.get('notes','')}",
+                                max_width=250
+                            ),
+                        ).add_to(m)
+                        break  # one circle per threat
+
+        # Hike markers
+        if show_hikes:
+            hikes_to_show = COUNTRY_HIKES.get(active_country, [])
+            for hike in hikes_to_show:
+                folium.Marker(
+                    [hike["lat"], hike["lon"]],
+                    popup=folium.Popup(
+                        f"<b>{hike['name']}</b><br>{hike['difficulty']} · {hike['duration']}<br>{hike['description'][:100]}...",
+                        max_width=200
+                    ),
+                    tooltip=f"🥾 {hike['name']}",
+                    icon=folium.Icon(color="green", icon="leaf", prefix="glyphicon"),
+                ).add_to(m)
+                # Draw trail polyline if available
+                if hike.get("trail_coords") and len(hike["trail_coords"]) >= 2:
+                    folium.PolyLine(
+                        locations=hike["trail_coords"],
+                        color="#006600",
+                        weight=2,
+                        opacity=0.6,
+                        tooltip=hike["name"],
+                    ).add_to(m)
+
+        st_folium(m, use_container_width=True, height=800, key="explore_main_map")
 
     with tab_hikes:
-        st.markdown("### Ecuador Hikes")
+        st.markdown(f"### {st.session_state.get('explore_country','Ecuador')} Hikes")
         st.caption("Select a hike to see details and view it on the map.")
         _render_hikes_tab()
 
     with tab_wildlife:
-        st.markdown("### Ecuador Wildlife Threats")
+        st.markdown(f"### {st.session_state.get('explore_country','Ecuador')} Wildlife Threats")
         _render_wildlife_tab()
 
 
@@ -570,6 +887,7 @@ def render_chat_page() -> None:
         ("safety_result", None),
         ("safety_debug", None),
         ("explore_mode", False),
+        ("explore_country", "Ecuador"),
     ]:
         if key not in st.session_state:
             st.session_state[key] = default
