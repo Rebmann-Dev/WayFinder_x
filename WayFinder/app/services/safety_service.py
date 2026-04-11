@@ -52,6 +52,17 @@ class SafetyService:
         # Primary prediction — prefer v9b if available, else v6
         if self._predictor._v9b_available:
             pred = self._predictor.predict_v9b(req.latitude, req.longitude, req.country)
+            # Also run v6 ensemble so all three model scores are always available
+            try:
+                pred_v6 = self._predictor.predict_with_features(req.latitude, req.longitude, req.country)
+                pred["mlp_score_v6"] = pred_v6.get("mlp_score_v6")
+                pred["rf_score_v6"] = pred_v6.get("rf_score_v6")
+                pred["model_spread"] = pred_v6.get("model_spread")
+                pred["agreement_band"] = pred_v6.get("agreement_band")
+                if include_details:
+                    pred["features"] = pred_v6.get("features")
+            except Exception:
+                pass
         else:
             pred = (
                 self._predictor.predict_with_features(req.latitude, req.longitude, req.country)

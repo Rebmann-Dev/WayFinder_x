@@ -992,6 +992,27 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
             if feat_count:
                 st.caption(f"Features used: {feat_count}")
 
+        # Feature values expander
+        features = details.get("features") or details.get("features_used") or {}
+        if features:
+            with st.expander("🔬 Feature values used in prediction", expanded=False):
+                if isinstance(features, dict):
+                    feat_rows = sorted(features.items())
+                    for fname, fval in feat_rows:
+                        try:
+                            st.caption(f"**{fname}**: {fval:.4f}" if isinstance(fval, float) else f"**{fname}**: {fval}")
+                        except Exception:
+                            st.caption(f"**{fname}**: {fval}")
+                else:
+                    st.json(features)
+
+        # Full raw result expander (replaces old debug JSON)
+        with st.expander("🗂️ Full prediction output (all fields)", expanded=False):
+            st.json({k: v for k, v in result.items() if k != "details"})
+            if details:
+                st.markdown("**details:**")
+                st.json(details)
+
     # ── Weather tab ────────────────────────────────────────────────────────
     if weather and not weather.get("error") and tab_idx <= len(tabs) - 1:
         with tabs[tab_idx]:
@@ -1042,10 +1063,32 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
         with tabs[tab_idx]:
             tab_idx += 1
             score_l = lgbt.get("lgbt_safety_score")
-            labels = {1:"Criminalized — serious legal risk",2:"Hostile — discrimination common",3:"Neutral — limited legal protections",4:"Accepting — legal protections exist",5:"Very Safe — full equality"}
+            labels = {
+                1: "Criminalized — serious legal risk",
+                2: "Hostile — discrimination common",
+                3: "Neutral — limited legal protections",
+                4: "Accepting — legal protections exist",
+                5: "Very Safe — full legal equality",
+            }
             label_l = labels.get(score_l, "—")
-            st.metric("LGBT Safety", f"{score_l}/5" if score_l else "—")
-            st.write(label_l)
+            legal_idx = lgbt.get("lgbt_legal_index")
+            confidence = lgbt.get("lgbt_confidence") or lgbt.get("confidence", "—")
+            criminalized = lgbt.get("criminalized", False)
+            death_risk = lgbt.get("death_penalty_risk", False)
+
+            l_col1, l_col2 = st.columns(2)
+            l_col1.metric("LGBT Safety Score", f"{score_l}/5" if score_l else "—")
+            if legal_idx is not None:
+                l_col2.metric("Legal Index", f"{legal_idx:.1f}/100")
+            st.markdown(f"**{label_l}**")
+            st.caption(f"Data confidence: {confidence}")
+
+            if death_risk:
+                st.error("🚨 Death penalty or corporal punishment may apply to same-sex relations in this country.")
+            elif criminalized:
+                st.warning("⚠️ Same-sex relations are criminalized in this country. Exercise extreme caution.")
+
+            st.caption("Source: ILGA World, Rainbow Map, and WayFinder LGBT classifier (1 = Criminalized → 5 = Very Safe)")
 
 
 
