@@ -1,5 +1,113 @@
 # WayFinder
 
+WayFinder is a local travel planning assistant that pairs a Streamlit chat UI
+with a locally-hosted Qwen model, a live flight search backend, and an
+ML-driven city safety scorer. Pick a destination on the map (or just type
+"flights to Vancouver"), give it a date, and the agent searches flights
+across nearby airports and reports a safety read on each destination city.
+
+## Features
+
+- **Chat-driven destination & date updates** — say "flights to Tokyo" or
+  "I want to fly next Friday" and the sidebar travel context updates in
+  place, no need to touch the date picker or map.
+- **Multi-airport flight search** — one query fans out across all airports
+  serving the destination metro and renders results grouped by airport with
+  airline, duration, stops, and price.
+- **Per-destination safety dial** — each airport card shows a compact
+  numbered gauge (0–100) with risk band (low / moderate / elevated / high),
+  pulled from a KNN-based city safety model.
+- **Deterministic safety path** — asking "Is Paris safe?" or "Safety
+  Vancouver" skips the model entirely and calls the safety assessment tool
+  directly, so results are consistent regardless of phrasing or
+  capitalization.
+- **Robust location resolution** — multi-word and qualified queries like
+  "Vancouver, BC" or "vancouver canada" fall through progressively shorter
+  prefixes until the geocoder and airport search both find a match.
+- **Token-aware context trimming** — the LLM thread is pre-trimmed to fit
+  the model's input budget, dropping oldest tool results first so long
+  conversations stay responsive.
+
+## Safety Score Model
+
+WayFinder ships with a custom ML-based safety scoring model that predicts
+a continuous safety score for any city or geographic point. The score is
+surfaced both as a standalone safety assessment and as the per-airport
+dial shown on flight results.
+
+### How it works
+
+The core is a feedforward Multilayer Perceptron (MLP) regression model
+implemented in PyTorch. The production architecture uses three fully
+connected hidden layers (128 → 64 → 32) with ReLU activations, dropout,
+and L2 weight decay to keep the model honest against a relatively small
+~500-row labeled city dataset. It's trained with MSE loss and Adam on an
+80/20 hold-out split, with early stopping based on validation RMSE.
+
+At inference, WayFinder actually runs two independently trained
+variants in parallel — a crime-aware model (uses city-level crime and
+safety indices where available) and a crime-agnostic model (geographic
+and macro features only). Comparing the two acts as a built-in
+cross-check and gracefully degrades when a queried point falls outside
+the labeled city catalog.
+
+### Features
+
+The feature vector for a given location combines several broad groups:
+
+- **City-level crime and safety indices** — Numbeo-style crime and
+  perceived-safety scores for labeled cities. The target city's own
+  crime index is strictly excluded during training to prevent target
+  leakage.
+- **KNN neighborhood aggregates** — crime and safety averages computed
+  over the nearest labeled cities (weighted and unweighted k=5 / k=10),
+  plus distance-to-nearest-labeled-city features. This is what lets the
+  model score unseen locations by interpolating from labeled neighbors.
+- **Density & gravity features** — log-transformed population counts,
+  population gravity, and city counts within 50 / 100 / 250 km radii.
+- **Country-level macro indicators** — GDP, GDP per capita,
+  unemployment, homicide rate, life expectancy, and governance signals
+  (rule of law, political stability, press freedom, Global Peace Index).
+- **Geographic base features** — latitude, longitude, and administrative
+  country identifiers.
+
+Data is sourced from open global datasets including the World Bank
+(socioeconomic and homicide data), UNODC Global Study on Homicide, the
+Global Peace Index, and Reporters Without Borders' World Press Freedom
+Index.
+
+### Handling unseen cities
+
+Most real-world queries don't land on a perfectly labeled city. For any
+point on Earth, the feature pipeline geocodes the query, finds the
+nearest labeled cities via KNN, and computes neighborhood aggregates
+plus macro context for the surrounding region. If city-level crime data
+is available for the queried point the crime-aware model runs at full
+fidelity; otherwise the score falls back to the crime-agnostic regime,
+and the returned payload flags the confidence accordingly.
+
+### Outputs
+
+Each safety assessment returns:
+
+- **`safety_score`** — a continuous 0–100 value (higher is safer).
+- **`risk_band`** — a bucketed label derived from the score:
+  - `low` (75+)
+  - `moderate` (55–74)
+  - `elevated` (35–54)
+  - `high` (<35)
+- **Factor breakdown** — the most influential city-specific signals
+  behind the score, including neighborhood crime / safety averages and
+  the nearest labeled city's own values, used to explain the result
+  conversationally in chat.
+- **Confidence indicator** — whether the crime-aware model ran with
+  full feature availability or fell back to the crime-agnostic regime.
+
+In the chat UI these outputs are rendered as a conversational markdown
+response for standalone safety queries, and as a compact numbered dial
+(`0 ├──┼──┼──┼──┤ 100` with a pointer and risk band label) on each
+airport's flight card.
+
 # Installation
 
 ### Prerequisites: 
