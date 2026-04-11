@@ -687,6 +687,38 @@ COUNTRY_HIKES: dict[str, list] = {
     "Peru": PERU_HIKES,
 }
 
+COUNTRY_FOOD = {
+    "Ecuador": {
+        "highlights": [
+            "Ceviche — fresh seafood marinated in citrus, a coastal staple",
+            "Llapingachos — pan-fried potato and cheese cakes from the Sierra",
+            "Seco de pollo — slow-cooked chicken stew with beer and cilantro",
+            "Encebollado — hearty tuna and onion soup, popular for breakfast",
+            "Fritada — deep-fried pork served with hominy, plantains, and mote",
+            "Cuy — roasted guinea pig, a traditional Andean delicacy",
+            "Patacones — twice-fried green plantain slices",
+            "Chocolate — Ecuador produces some of the world's finest cacao (Arriba Nacional variety)",
+            "Naranjilla — tart citrus-like fruit used in juices and sauces",
+        ],
+        "note": "Ecuadorian cuisine varies dramatically by region: coastal (Costa), Andean highland (Sierra), and Amazon (Oriente) each have distinct flavors and ingredients.",
+    },
+    "Peru": {
+        "highlights": [
+            "Ceviche — Peru's national dish; raw fish cured in lime juice with ají amarillo and red onion",
+            "Lomo saltado — stir-fried beef with tomatoes, onions, and french fries; a Chinese-Peruvian fusion",
+            "Ají de gallina — creamy shredded chicken in ají amarillo pepper sauce",
+            "Causa rellena — chilled layered potato cake filled with chicken or tuna",
+            "Anticuchos — grilled beef heart skewers, a popular street food",
+            "Rocoto relleno — stuffed spicy red peppers baked with meat and cheese",
+            "Tiradito — sashimi-style raw fish in a spicy citrus sauce (Japanese-Peruvian nikkei cuisine)",
+            "Pisco Sour — Peru's iconic cocktail made from Pisco brandy, lime, egg white, and bitters",
+            "Chicha morada — purple corn beverage with spices and fruit, served cold",
+            "Cuy — roasted guinea pig, a traditional Andean dish dating back to Inca times",
+        ],
+        "note": "Peru is widely regarded as having one of the world's best culinary scenes. Lima has more restaurants in the World's 50 Best Restaurants list than almost any other city.",
+    },
+}
+
 
 def _render_hikes_tab() -> None:
     import folium
@@ -802,6 +834,16 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
     if lgbt and not lgbt.get("error") and lgbt.get("lgbt_safety_score"):
         tab_labels.append("🏳️‍🌈 LGBT")
 
+    country_str = result.get("country", "")
+    food_data = None
+    for k, v in COUNTRY_FOOD.items():
+        if k.lower() in country_str.lower() or country_str.lower() in k.lower():
+            food_data = v
+            break
+
+    if food_data:
+        tab_labels.append("🍽️ Food")
+
     tabs = st.tabs(tab_labels)
     tab_idx = 0
 
@@ -889,6 +931,16 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
             label_l = labels.get(score_l, "—")
             st.metric("LGBT Safety", f"{score_l}/5" if score_l else "—")
             st.write(label_l)
+
+    # ── Food tab ───────────────────────────────────────────────────────────
+    if food_data and tab_idx <= len(tabs) - 1:
+        with tabs[tab_idx]:
+            tab_idx += 1
+            st.markdown("**Local cuisine highlights**")
+            for item in food_data["highlights"]:
+                st.markdown(f"- {item}")
+            st.caption(food_data["note"])
+            st.info("🚧 More details — restaurant recommendations, dietary notes, food safety tips, and regional breakdowns — will be added in a future update.")
 
 
 def _render_explore_panel() -> None:
