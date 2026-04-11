@@ -866,15 +866,6 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
             crime_notes = ecuador.get("crime_notes","")
             if crime_notes:
                 st.warning(crime_notes)
-            threats = ecuador.get("wildlife_threat_details", [])
-            if threats:
-                st.markdown("**Wildlife threats at this location:**")
-                for threat in sorted(threats, key=lambda x: -x.get("risk",0)):
-                    risk = threat.get("risk", 0)
-                    badge = "🔴" if risk >= 4 else "🟠" if risk == 3 else "🟡"
-                    with st.expander(f"{badge} {threat['name']} — risk {risk}/5", expanded=False):
-                        st.caption(f"Type: {threat.get('type','—')} | Habitats: {', '.join(threat.get('habitats',[]))}")
-                        st.write(threat.get("notes",""))
 
     # ── Peru tab ───────────────────────────────────────────────────────────
     if peru_r and peru_r.get("applicable") and tab_idx <= len(tabs) - 1:
@@ -888,15 +879,6 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
             crime_notes = peru_r.get("crime_notes","")
             if crime_notes:
                 st.warning(crime_notes)
-            threats = peru_r.get("wildlife_threat_details", [])
-            if threats:
-                st.markdown("**Wildlife threats at this location:**")
-                for threat in sorted(threats, key=lambda x: -x.get("risk",0)):
-                    risk = threat.get("risk", 0)
-                    badge = "🔴" if risk >= 4 else "🟠" if risk == 3 else "🟡"
-                    with st.expander(f"{badge} {threat['name']} — risk {risk}/5", expanded=False):
-                        st.caption(f"Type: {threat.get('type','—')} | Habitats: {', '.join(threat.get('habitats',[]))}")
-                        st.write(threat.get("notes",""))
 
     # ── LGBT tab ───────────────────────────────────────────────────────────
     if lgbt and not lgbt.get("error") and tab_idx <= len(tabs) - 1:
@@ -1020,7 +1002,34 @@ def _render_explore_panel() -> None:
                     icon=folium.Icon(color="green", icon="leaf", prefix="glyphicon"),
                 ).add_to(m)
 
-        st_folium(m, use_container_width=True, height=900, key="explore_main_map")
+        map_data = st_folium(m, use_container_width=True, height=900, key="explore_main_map")
+
+        # ── Capture map click and reverse-geocode ─────────────────────────
+        clicked = map_data.get("last_clicked") if map_data else None
+        if clicked and clicked.get("lat") is not None and clicked.get("lng") is not None:
+            c_lat, c_lng = clicked["lat"], clicked["lng"]
+            # Only update if coords actually changed to avoid infinite reruns
+            if (c_lat != st.session_state.get("explore_click_lat")
+                    or c_lng != st.session_state.get("explore_click_lon")):
+                st.session_state["explore_click_lat"] = c_lat
+                st.session_state["explore_click_lon"] = c_lng
+                # Reverse-geocode via Nominatim
+                import requests as _req
+                try:
+                    rg = _req.get(
+                        "https://nominatim.openstreetmap.org/reverse",
+                        params={"lat": c_lat, "lon": c_lng, "format": "json"},
+                        headers={"User-Agent": "WayFinder/1.0"},
+                        timeout=3,
+                    )
+                    if rg.ok and rg.json().get("display_name"):
+                        parts = rg.json()["display_name"].split(",")
+                        st.session_state["explore_click_name"] = parts[0].strip()
+                    else:
+                        st.session_state["explore_click_name"] = f"{c_lat:.4f}, {c_lng:.4f}"
+                except Exception:
+                    st.session_state["explore_click_name"] = f"{c_lat:.4f}, {c_lng:.4f}"
+                st.rerun()
 
         # ── Safety scoring from explore map ────────────────────────────────
         st.divider()
@@ -1031,6 +1040,7 @@ def _render_explore_panel() -> None:
                 "Score a location",
                 placeholder="e.g. Quito, Cusco, Iquitos…",
                 key="explore_score_input",
+                value=st.session_state.get("explore_click_name", ""),
                 label_visibility="collapsed",
             )
         with score_col2:
@@ -1046,37 +1056,53 @@ def _render_explore_panel() -> None:
             key="explore_travel_month",
         )
 
-        if score_btn and explore_dest:
+        if score_btn:
             import requests as _req
-            try:
-                geo_r = _req.get(
-                    "https://nominatim.openstreetmap.org/search",
-                    params={"q": explore_dest, "format": "json", "limit": 1},
-                    headers={"User-Agent": "WayFinder/1.0"},
-                    timeout=5,
-                )
-                if geo_r.ok and geo_r.json():
-                    geo = geo_r.json()[0]
-                    lat = float(geo["lat"])
-                    lon = float(geo["lon"])
-                    country = geo.get("display_name", "").split(",")[-1].strip()
-                    # Get safety service from cache
-                    _ss = get_safety_service()
+            lat = lon = country = None
+            location_name = explore_dest
+
+            if explore_dest:
+                # Forward-geocode the typed destination
+                try:
+                    geo_r = _req.get(
+                        "https://nominatim.openstreetmap.org/search",
+                        params={"q": explore_dest, "format": "json", "limit": 1},
+                        headers={"User-Agent": "WayFinder/1.0"},
+                        timeout=5,
+                    )
+                    if geo_r.ok and geo_r.json():
+                        geo = geo_r.json()[0]
+                        lat = float(geo["lat"])
+                        lon = float(geo["lon"])
+                        country = geo.get("display_name", "").split(",")[-1].strip()
+                    else:
+                        st.warning(f"Could not find '{explore_dest}' — try a more specific name.")
+                except Exception as e:
+                    st.error(f"Geocoding failed: {e}")
+            elif (st.session_state.get("explore_click_lat") is not None
+                    and st.session_state.get("explore_click_lon") is not None):
+                # Use click coordinates directly — skip forward geocode
+                lat = st.session_state["explore_click_lat"]
+                lon = st.session_state["explore_click_lon"]
+                location_name = st.session_state.get("explore_click_name", f"{lat:.4f}, {lon:.4f}")
+                country = active_country
+
+            if lat is not None and lon is not None:
+                _ss = get_safety_service()
+                try:
                     req = SafetyRequest(
                         latitude=lat,
                         longitude=lon,
                         country=country,
-                        location_name=explore_dest,
+                        location_name=location_name,
                         travel_month=sel_month,
                     )
                     result = _ss.assess_request(req, include_details=True)
                     st.session_state["explore_safety_result"] = result
-                    st.session_state["explore_scored_location"] = explore_dest
+                    st.session_state["explore_scored_location"] = location_name
                     st.rerun()
-                else:
-                    st.warning(f"Could not find '{explore_dest}' — try a more specific name.")
-            except Exception as e:
-                st.error(f"Scoring failed: {e}")
+                except Exception as e:
+                    st.error(f"Scoring failed: {e}")
 
         # Display explore safety result
         explore_result = st.session_state.get("explore_safety_result")
@@ -1116,6 +1142,9 @@ def render_chat_page() -> None:
         ("explore_country", "Ecuador"),
         ("explore_safety_result", None),
         ("explore_scored_location", ""),
+        ("explore_click_lat", None),
+        ("explore_click_lon", None),
+        ("explore_click_name", ""),
     ]:
         if key not in st.session_state:
             st.session_state[key] = default
