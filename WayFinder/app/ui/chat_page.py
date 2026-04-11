@@ -689,33 +689,158 @@ COUNTRY_HIKES: dict[str, list] = {
 
 COUNTRY_FOOD = {
     "Ecuador": {
-        "highlights": [
-            "Ceviche — fresh seafood marinated in citrus, a coastal staple",
-            "Llapingachos — pan-fried potato and cheese cakes from the Sierra",
-            "Seco de pollo — slow-cooked chicken stew with beer and cilantro",
-            "Encebollado — hearty tuna and onion soup, popular for breakfast",
-            "Fritada — deep-fried pork served with hominy, plantains, and mote",
-            "Cuy — roasted guinea pig, a traditional Andean delicacy",
-            "Patacones — twice-fried green plantain slices",
-            "Chocolate — Ecuador produces some of the world's finest cacao (Arriba Nacional variety)",
-            "Naranjilla — tart citrus-like fruit used in juices and sauces",
+        "history": (
+            "Ecuador's food culture is rooted in thousands of years of indigenous Andean tradition, "
+            "blended with Spanish colonial influences and distinct coastal, highland, and Amazonian ingredients. "
+            "The Inca empire brought techniques like freeze-drying potatoes (chuño) and preserving meats, "
+            "while Spanish colonizers introduced pork, wheat, and dairy. Today Ecuadorian cuisine varies "
+            "dramatically across its three mainland regions: the Costa (coast), Sierra (highlands), and "
+            "Oriente (Amazon). Ecuador is also one of the world's top producers of fine-flavor cacao — "
+            "the Arriba Nacional variety is prized globally and has been cultivated for over 5,000 years."
+        ),
+        "dishes": [
+            "Ceviche — fresh seafood marinated in citrus, a coastal staple served with popcorn and chifles",
+            "Llapingachos — pan-fried potato and cheese cakes from the Sierra, served with chorizo and fried egg",
+            "Seco de pollo — slow-cooked chicken stew with beer, cilantro, and achiote",
+            "Encebollado — hearty tuna and onion soup with yuca, considered Ecuador's hangover cure",
+            "Fritada — deep-fried pork served with hominy (mote), plantains, and llapingachos",
+            "Cuy — roasted guinea pig, a traditional Andean delicacy served whole on special occasions",
+            "Sopa de bolas de verde — plantain dumpling soup, a coastal comfort food",
+            "Fanesca — a rich soup made from 12 grains and salted cod, eaten only during Holy Week (Easter)",
         ],
-        "note": "Ecuadorian cuisine varies dramatically by region: coastal (Costa), Andean highland (Sierra), and Amazon (Oriente) each have distinct flavors and ingredients.",
+        "snacks_and_street_food": [
+            "Patacones — twice-fried green plantain slices, served with hogao (tomato-onion sauce) or cheese",
+            "Chifles — thin salted plantain chips, served alongside ceviche",
+            "Empanadas de viento — fried pastries filled with cheese, topped with powdered sugar",
+            "Humitas — steamed fresh corn cakes wrapped in corn husks, sweet or savory",
+            "Quimbolitos — steamed sweet corn dough with raisins, wrapped in achira leaves",
+            "Morocho — warm spiced corn drink thickened with cracked corn, popular in the Sierra",
+            "Canguil — Andean popcorn, often served alongside ceviche on the coast",
+            "Maíz tostado — toasted corn kernels, a crunchy highland snack",
+        ],
+        "drinks": [
+            "Colada morada — thick purple corn and fruit drink spiced with cinnamon and cloves, made for Day of the Dead",
+            "Chicha de jora — fermented corn beer, an ancient Andean drink still made in rural communities",
+            "Naranjilla juice — tart citrus-like fruit (lulo) blended into a bright green juice",
+            "Canelazo — hot sugarcane spirit (aguardiente) mixed with cinnamon tea, served at highland festivals",
+            "Agua de guayusa — caffeinated leaf tea from the Amazon, used ceremonially by indigenous Kichwa people",
+            "Hot chocolate — Ecuador's cacao heritage makes its hot chocolate exceptional; often served with bread and cheese for breakfast",
+        ],
+        "note": "Cuisine varies dramatically by region: coastal (Costa), Andean highland (Sierra), and Amazon (Oriente). The Sierra tends toward hearty stews and potato dishes; the coast is seafood-forward; the Oriente features yuca, plantains, and jungle game.",
     },
     "Peru": {
-        "highlights": [
-            "Ceviche — Peru's national dish; raw fish cured in lime juice with ají amarillo and red onion",
-            "Lomo saltado — stir-fried beef with tomatoes, onions, and french fries; a Chinese-Peruvian fusion",
-            "Ají de gallina — creamy shredded chicken in ají amarillo pepper sauce",
-            "Causa rellena — chilled layered potato cake filled with chicken or tuna",
-            "Anticuchos — grilled beef heart skewers, a popular street food",
-            "Rocoto relleno — stuffed spicy red peppers baked with meat and cheese",
-            "Tiradito — sashimi-style raw fish in a spicy citrus sauce (Japanese-Peruvian nikkei cuisine)",
-            "Pisco Sour — Peru's iconic cocktail made from Pisco brandy, lime, egg white, and bitters",
-            "Chicha morada — purple corn beverage with spices and fruit, served cold",
-            "Cuy — roasted guinea pig, a traditional Andean dish dating back to Inca times",
+        "history": (
+            "Peru is widely regarded as one of the world's great culinary destinations — Lima regularly "
+            "appears among the world's top restaurant cities. Peruvian food history spans 10,000+ years "
+            "of cultivation in the Andes, where the potato originated (over 3,000 native varieties still exist). "
+            "The Inca empire developed sophisticated agricultural terracing and food preservation (freeze-drying "
+            "potatoes into chuño, drying meat into charqui). Spanish colonization in the 1500s brought new "
+            "ingredients — olives, wine grapes, beef, chicken — that fused with indigenous traditions. "
+            "Later waves of African, Chinese (Chifa cuisine), Japanese (Nikkei cuisine), and Italian immigration "
+            "each added distinct layers, making modern Peruvian cuisine one of the most diverse and creative "
+            "in the world. Ceviche has been recognized by UNESCO as an Intangible Cultural Heritage."
+        ),
+        "dishes": [
+            "Ceviche — Peru's national dish; raw fish cured in lime juice with ají amarillo, red onion, and cilantro, served with choclo and sweet potato",
+            "Lomo saltado — stir-fried beef with tomatoes, onions, soy sauce, and french fries; a Chinese-Peruvian (Chifa) fusion classic",
+            "Ají de gallina — creamy shredded chicken in a rich ají amarillo and bread sauce, served over rice",
+            "Causa rellena — chilled layered yellow potato cake filled with chicken, tuna, or avocado",
+            "Anticuchos — grilled beef heart skewers marinated in cumin and ají panca, a beloved street food",
+            "Rocoto relleno — spicy red rocoto peppers stuffed with ground meat, egg, and cheese then baked",
+            "Tiradito — sashimi-style thin-sliced raw fish dressed in a spicy citrus sauce (Japanese-Peruvian Nikkei cuisine)",
+            "Pachamanca — meats, potatoes, and corn slow-cooked underground on hot stones, an ancient Andean technique",
+            "Sopa a la criolla — thin beef noodle soup with milk, egg, and ají amarillo, a Lima comfort classic",
         ],
-        "note": "Peru is widely regarded as having one of the world's best culinary scenes. Lima has more restaurants in the World's 50 Best Restaurants list than almost any other city.",
+        "snacks_and_street_food": [
+            "Picarones — pumpkin and sweet potato doughnuts drizzled with chancaca (molasses) syrup",
+            "Tamales — steamed corn dough parcels filled with chicken or pork, wrapped in banana leaves",
+            "Pan con chicharrón — fried pork belly sandwich with sweet potato and salsa criolla, a Lima breakfast staple",
+            "Choclo con queso — giant Andean corn on the cob served with fresh white cheese, sold at every highland market",
+            "Tequeños — fried cheese-stuffed bread sticks, a popular party snack",
+            "Salchipapas — sliced hot dogs with french fries, the quintessential Peruvian fast food",
+            "Canchita — toasted dried corn kernels served as a snack alongside ceviche",
+            "Mazamorra morada — purple corn pudding dessert thickened with sweet potato starch and spiced with cinnamon",
+        ],
+        "drinks": [
+            "Pisco Sour — Peru's iconic cocktail: Pisco brandy shaken with lime juice, simple syrup, egg white, and Angostura bitters",
+            "Chicha morada — non-alcoholic purple corn beverage boiled with pineapple, cinnamon, and cloves, served cold",
+            "Inca Kola — bright yellow bubble-gum-flavored Peruvian soda; more popular than Coca-Cola in Peru",
+            "Chicha de jora — ancient fermented corn beer still brewed in Andean communities, often served in ceramic cups",
+            "Emoliente — warm herbal street drink made from barley, flaxseed, and medicinal plants, sold from carts in Lima",
+            "Mate de coca — coca leaf tea, widely drunk at altitude to ease altitude sickness; legal and mild",
+        ],
+        "note": "Peru's culinary diversity spans four macro-regions: Lima (coastal, Chifa, Nikkei), the Andes (hearty potato and grain dishes), the Amazon (yuca, plantains, freshwater fish), and Arequipa (known as Peru's culinary capital with its own distinct cuisine).",
+    },
+}
+
+COUNTRY_HISTORY = {
+    "Ecuador": {
+        "summary": (
+            "Ecuador sits at the crossroads of ancient Andean civilizations, Spanish colonial empire, "
+            "and modern South American independence. Its name comes from the equator that runs through it."
+        ),
+        "timeline": [
+            ("10,000+ BCE", "Early human settlements in the Andes and coast; cultivation of crops including maize, potatoes, and quinoa"),
+            ("3,500 BCE", "Valdivia culture on the coast — one of the oldest ceramic traditions in the Americas"),
+            ("1,000–1,400 CE", "Caras, Puruhá, Cañari, and other cultures develop complex societies across the Andes"),
+            ("1463–1533", "Inca expansion northward; Quito becomes a major northern capital of the Inca Empire (Tawantinsuyu)"),
+            ("1533", "Spanish conquistador Sebastián de Belalcázar defeats the Inca and founds Spanish Quito on the ruins of the Inca city"),
+            ("1563", "Quito becomes the seat of the Royal Audiencia of Quito, a key administrative center of the Spanish colonial empire"),
+            ("1736–1744", "French Geodesic Mission confirms the Earth is an oblate spheroid by measuring near the equator in Ecuador"),
+            ("1809", "First cry of independence (Primer Grito) in Quito on August 10 — now celebrated as Independence Day"),
+            ("1822", "Battle of Pichincha: Simón Bolívar's forces under Antonio José de Sucre defeat the Spanish; Ecuador joins Gran Colombia"),
+            ("1830", "Ecuador separates from Gran Colombia and becomes an independent republic"),
+            ("1859–1875", "Gabriel García Moreno's conservative theocratic government modernizes infrastructure but suppresses liberalism"),
+            ("1895", "Liberal Revolution led by Eloy Alfaro; separation of church and state, secular education, civil marriage"),
+            ("1941", "Border war with Peru results in Ecuador losing much of its Amazon territory under the Rio Protocol (1942)"),
+            ("1972", "Oil discovered in the Amazon; Ecuador joins OPEC and experiences an oil boom that transforms the economy"),
+            ("1998", "New constitution; peace treaty with Peru finally resolves the border dispute"),
+            ("2008", "Rafael Correa's government passes a new constitution granting rights to nature (first country to do so)"),
+            ("2024", "Ecuador faces escalating gang violence and cartel activity, leading to a state of emergency and military deployments"),
+        ],
+        "key_facts": [
+            "Capital: Quito (one of the highest capitals in the world at 2,850m)",
+            "The Galápagos Islands, part of Ecuador, inspired Charles Darwin's theory of evolution (1835 visit)",
+            "Ecuador was the first country in the world to grant constitutional rights to nature (2008)",
+            "The 'Avenue of the Volcanoes' — a row of massive Andean volcanoes including Chimborazo and Cotopaxi — runs through the center of the country",
+            "Chimborazo (6,268m) is the farthest point from Earth's center due to the equatorial bulge — farther than Everest",
+        ],
+    },
+    "Peru": {
+        "summary": (
+            "Peru is home to one of the ancient world's most sophisticated civilizations — the Inca Empire — "
+            "and was the center of Spanish colonial power in South America for nearly 300 years. "
+            "Its history spans 12,000 years of continuous human habitation."
+        ),
+        "timeline": [
+            ("10,000+ BCE", "Hunter-gatherers settle the Andes and coast; earliest evidence of human habitation at Huanta caves"),
+            ("3,000 BCE", "Caral civilization emerges in the coastal valleys — one of the oldest civilizations in the Americas, contemporary with ancient Egypt"),
+            ("900–200 BCE", "Chavín culture creates a pan-Andean religious and artistic tradition centered at Chavín de Huántar"),
+            ("200 BCE–600 CE", "Nazca Lines created on the coastal desert — vast geoglyphs still not fully explained"),
+            ("600–1000 CE", "Wari (Huari) Empire expands across the Andes, precursor to Inca administrative techniques"),
+            ("1438–1533", "Inca Empire (Tawantinsuyu) at its height — stretching 4,000km from Colombia to Chile; Machu Picchu built c.1450"),
+            ("1532", "Francisco Pizarro arrives; captures Inca emperor Atahualpa at Cajamarca; Inca Empire collapses"),
+            ("1535", "Lima founded by Pizarro as Ciudad de los Reyes; becomes capital of the Viceroyalty of Peru"),
+            ("1569–1581", "Viceroy Francisco de Toledo consolidates Spanish colonial power; forced labor (mita) system established in mines"),
+            ("1780–1781", "Túpac Amaru II leads the largest indigenous rebellion against Spanish rule; defeated and executed in Cusco"),
+            ("1821", "José de San Martín declares Peruvian independence on July 28; Simón Bolívar completes liberation by 1824"),
+            ("1879–1884", "War of the Pacific against Chile; Peru loses the Tarapacá region and suffers devastating defeat"),
+            ("1911", "Hiram Bingham 'discovers' Machu Picchu (already known to locals) and brings it to world attention"),
+            ("1968–1980", "Military government of Juan Velasco Alvarado nationalizes industries and undertakes land reform"),
+            ("1980–2000", "Internal conflict with Shining Path (Sendero Luminoso) Maoist guerrillas and MRTA kills ~70,000 people"),
+            ("1990–2000", "Alberto Fujimori's authoritarian presidency; captures Shining Path leader Abimael Guzmán (1992) but ends in corruption scandal"),
+            ("2000s–present", "Democracy restored; strong economic growth driven by mining and tourism; Lima emerges as a global culinary capital"),
+            ("2021", "Pedro Castillo elected president; impeached and arrested 2022 amid political turmoil"),
+        ],
+        "key_facts": [
+            "Capital: Lima (home to over 10 million people, roughly 1/3 of Peru's population)",
+            "Machu Picchu was built c.1450 CE and abandoned ~100 years later; rediscovered by the outside world in 1911",
+            "Peru has 3 UNESCO World Heritage Sites related to the Inca: Machu Picchu, Cusco, and the Chavín archaeological site",
+            "The Amazon River begins in Peru (from the Apurímac River headwaters near Arequipa)",
+            "Lake Titicaca (shared with Bolivia) is the world's highest navigable lake at 3,812m",
+            "Peru has 84 of the world's 117 life zones (ecosystems), making it one of the most biodiverse countries on Earth",
+            "The potato originated in Peru — over 3,000 native varieties are still grown in the Andean highlands",
+        ],
     },
 }
 
@@ -834,16 +959,6 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
     if lgbt and not lgbt.get("error") and lgbt.get("lgbt_safety_score"):
         tab_labels.append("🏳️‍🌈 LGBT")
 
-    country_str = result.get("country", "")
-    food_data = None
-    for k, v in COUNTRY_FOOD.items():
-        if k.lower() in country_str.lower() or country_str.lower() in k.lower():
-            food_data = v
-            break
-
-    if food_data:
-        tab_labels.append("🍽️ Food")
-
     tabs = st.tabs(tab_labels)
     tab_idx = 0
 
@@ -932,15 +1047,6 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
             st.metric("LGBT Safety", f"{score_l}/5" if score_l else "—")
             st.write(label_l)
 
-    # ── Food tab ───────────────────────────────────────────────────────────
-    if food_data and tab_idx <= len(tabs) - 1:
-        with tabs[tab_idx]:
-            tab_idx += 1
-            st.markdown("**Local cuisine highlights**")
-            for item in food_data["highlights"]:
-                st.markdown(f"- {item}")
-            st.caption(food_data["note"])
-            st.info("🚧 More details — restaurant recommendations, dietary notes, food safety tips, and regional breakdowns — will be added in a future update.")
 
 
 def _render_explore_panel() -> None:
@@ -955,7 +1061,7 @@ def _render_explore_panel() -> None:
     with col_title:
         st.subheader(f"🌿 Explore {st.session_state.get('explore_country','Ecuador')}")
 
-    tab_map, tab_hikes, tab_wildlife = st.tabs(["🗺️ Map", "🥾 Hikes", "🐆 Wildlife"])
+    tab_map, tab_hikes, tab_wildlife, tab_food, tab_history = st.tabs(["🗺️ Map", "🥾 Hikes", "🐆 Wildlife", "🍽️ Food", "🏛️ History"])
 
     with tab_map:
         # Determine country context from selected location
@@ -1181,6 +1287,51 @@ def _render_explore_panel() -> None:
     with tab_wildlife:
         st.markdown(f"### {st.session_state.get('explore_country','Ecuador')} Wildlife Threats")
         _render_wildlife_tab()
+
+    # ── Food tab ────────────────────────────────────────────────────────────
+    with tab_food:
+        country = st.session_state.get("explore_country", "Ecuador")
+        food = COUNTRY_FOOD.get(country)
+        if food:
+            st.markdown(f"## 🍽️ {country} — Food & Cuisine")
+            st.write(food["history"])
+            st.divider()
+            col_f1, col_f2 = st.columns(2)
+            with col_f1:
+                st.markdown("### Main Dishes")
+                for item in food["dishes"]:
+                    st.markdown(f"- {item}")
+            with col_f2:
+                st.markdown("### Snacks & Street Food")
+                for item in food["snacks_and_street_food"]:
+                    st.markdown(f"- {item}")
+            st.divider()
+            st.markdown("### Drinks")
+            for item in food["drinks"]:
+                st.markdown(f"- {item}")
+            st.divider()
+            st.caption(food["note"])
+            st.info("🚧 More details — restaurant recommendations, dietary notes, food safety tips, and regional breakdowns — will be added in a future update.")
+        else:
+            st.info(f"Food information for {country} coming soon.")
+
+    # ── History tab ─────────────────────────────────────────────────────────
+    with tab_history:
+        country = st.session_state.get("explore_country", "Ecuador")
+        hist = COUNTRY_HISTORY.get(country)
+        if hist:
+            st.markdown(f"## 🏛️ {country} — History")
+            st.write(hist["summary"])
+            st.divider()
+            st.markdown("### Timeline")
+            for year, event in hist["timeline"]:
+                st.markdown(f"**{year}** — {event}")
+            st.divider()
+            st.markdown("### Key Facts")
+            for fact in hist["key_facts"]:
+                st.markdown(f"- {fact}")
+        else:
+            st.info(f"History information for {country} coming soon.")
 
 
 def render_chat_page() -> None:
