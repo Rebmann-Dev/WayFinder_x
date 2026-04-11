@@ -80,6 +80,7 @@ class SafetyService:
             "mlp_score_v6": pred.get("mlp_score_v6"),
             "rf_score_v6": pred.get("rf_score_v6"),
             "v9b_score": pred.get("safety_score") if self._predictor._v9b_available else None,
+            "v9b_error": getattr(self._predictor, "_v9b_load_error", None),
             "models_used": pred.get("models_used"),
             "input": pred.get("input"),
         }

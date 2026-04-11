@@ -116,6 +116,7 @@ class SafetyPredictor:
 
         # ── v9b stack ─────────────────────────────────────────────────────────
         self._v9b_available = False
+        self._v9b_load_error = None
         try:
             validate_artifacts()
             self.v9b_features = load_v9b_features()
@@ -124,8 +125,11 @@ class SafetyPredictor:
             self.v9b_mlp      = self._load_v9b_mlp()
             self.v9b_mlp.eval()
             self._v9b_available = True
-        except (FileNotFoundError, Exception):
+        except Exception as _v9b_err:
             self._v9b_available = False
+            self._v9b_load_error = str(_v9b_err)
+            import logging as _log
+            _log.getLogger(__name__).warning("v9b load failed: %s", _v9b_err)
 
         # ── Specialised sub-models ────────────────────────────────────────────
         self._lgbt = LGBTSafetyClassifier() if _LGBT_AVAILABLE else None
@@ -216,7 +220,10 @@ class SafetyPredictor:
     def predict_v9b(self, latitude: float, longitude: float, country: str | None = None) -> dict[str, Any]:
         """v9b Torch MLP prediction."""
         if not self._v9b_available:
-            return {"error": "v9b model not available — artifacts missing.", "model_version": V9B_MODEL_VERSION}
+            return {
+                "error": f"v9b model not available — {getattr(self, '_v9b_load_error', 'artifacts missing')}",
+                "model_version": V9B_MODEL_VERSION,
+            }
 
         X = self._build_v9b_input(latitude, longitude, country)
         with torch.no_grad():

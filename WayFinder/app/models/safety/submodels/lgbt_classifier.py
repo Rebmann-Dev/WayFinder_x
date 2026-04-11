@@ -27,7 +27,7 @@ import difflib
 import unicodedata
 from typing import Optional
 
-from lgbt_data import COUNTRY_DATA, REGIONAL_AVERAGES, REGION_MAP
+from .lgbt_data import COUNTRY_DATA, REGIONAL_AVERAGES, REGION_MAP
 
 # ---------------------------------------------------------------------------
 # Score band definitions

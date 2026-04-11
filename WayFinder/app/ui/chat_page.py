@@ -978,7 +978,8 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
             if v9b is not None:
                 st.metric("v9b MLP", f"{v9b:.1f}")
             else:
-                st.caption("⚠️ v9b model not loaded — using v6 ensemble only")
+                v9b_err = details.get("v9b_error", "artifacts missing or failed to load")
+                st.caption(f"⚠️ v9b not loaded: {v9b_err}")
             st.caption(f"Active model: {result.get('model_version', '—')}")
             agreement = details.get("agreement_band", "—")
             spread = details.get("model_spread")
