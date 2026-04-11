@@ -667,63 +667,14 @@ def _render_hikes_tab() -> None:
                 st.caption(", ".join(hike["wildlife"]))
 
         with col2:
-            m = folium.Map(location=[hike["lat"], hike["lon"]], zoom_start=11, tiles="OpenStreetMap")
-            trail_coords = hike.get("trail_coords")
-            if trail_coords and len(trail_coords) >= 2:
-                # Trail polyline
-                folium.PolyLine(
-                    locations=trail_coords,
-                    color="#e05c00",
-                    weight=5,
-                    opacity=0.9,
-                    tooltip=f"{hike['name']} trail",
-                ).add_to(m)
-                # Waypoint markers (intermediate points)
-                for i, coord in enumerate(trail_coords):
-                    if i == 0:
-                        folium.Marker(
-                            coord,
-                            popup=folium.Popup("<b>🟢 Trailhead / Start</b>", max_width=150),
-                            tooltip="Start",
-                            icon=folium.Icon(color="green", icon="play", prefix="glyphicon"),
-                        ).add_to(m)
-                    elif i == len(trail_coords) - 1:
-                        folium.Marker(
-                            coord,
-                            popup=folium.Popup("<b>🔴 End / Summit</b>", max_width=150),
-                            tooltip="End / Summit",
-                            icon=folium.Icon(color="red", icon="flag", prefix="glyphicon"),
-                        ).add_to(m)
-                    else:
-                        folium.CircleMarker(
-                            coord,
-                            radius=5,
-                            color="#e05c00",
-                            fill=True,
-                            fill_color="#ffffff",
-                            fill_opacity=0.9,
-                            tooltip=f"Waypoint {i}",
-                        ).add_to(m)
-                # Legend
-                legend_html = """
-                <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;
-                            background: white; padding: 10px 14px; border-radius: 8px;
-                            border: 1px solid #ccc; font-size: 13px; line-height: 1.8;">
-                    <b>Legend</b><br>
-                    <span style="color:green">&#9654;</span> Trailhead / Start<br>
-                    <span style="color:#e05c00">&#9679;</span> Waypoint<br>
-                    <span style="color:red">&#9873;</span> End / Summit<br>
-                    <span style="color:#e05c00">&#9473;&#9473;</span> Trail route
-                </div>"""
-                m.get_root().html.add_child(folium.Element(legend_html))
-            else:
-                folium.Marker(
-                    [hike["lat"], hike["lon"]],
-                    popup=hike["name"],
-                    tooltip=hike["name"],
-                    icon=folium.Icon(color="green", icon="tree-conifer", prefix="glyphicon"),
-                ).add_to(m)
-            st_folium(m, use_container_width=True, height=520, key=f"hike_map_{idx}")
+            m = folium.Map(location=[hike["lat"], hike["lon"]], zoom_start=10, tiles="OpenStreetMap")
+            folium.Marker(
+                [hike["lat"], hike["lon"]],
+                popup=folium.Popup(f"<b>{hike['name']}</b><br>{hike['difficulty']} · {hike['duration']}", max_width=200),
+                tooltip=hike["name"],
+                icon=folium.Icon(color="green", icon="leaf", prefix="glyphicon"),
+            ).add_to(m)
+            st_folium(m, use_container_width=True, height=600, key=f"hike_map_{idx}")
 
 
 def _render_wildlife_tab() -> None:
@@ -876,17 +827,8 @@ def _render_explore_panel() -> None:
                     tooltip=f"🥾 {hike['name']}",
                     icon=folium.Icon(color="green", icon="leaf", prefix="glyphicon"),
                 ).add_to(m)
-                # Draw trail polyline if available
-                if hike.get("trail_coords") and len(hike["trail_coords"]) >= 2:
-                    folium.PolyLine(
-                        locations=hike["trail_coords"],
-                        color="#006600",
-                        weight=2,
-                        opacity=0.6,
-                        tooltip=hike["name"],
-                    ).add_to(m)
 
-        st_folium(m, use_container_width=True, height=800, key="explore_main_map")
+        st_folium(m, use_container_width=True, height=900, key="explore_main_map")
 
     with tab_hikes:
         st.markdown(f"### {st.session_state.get('explore_country','Ecuador')} Hikes")
