@@ -158,9 +158,10 @@ class LocalToolAgent:
             date_str = sidebar_date.strftime("%Y-%m-%d")
             log.info("AGENT using sidebar date=%s", date_str)
 
-        thread.append(
-            {"role": "user", "content": f"[context: departure date is {date_str}]"}
-        )
+        if date_str:
+            thread.append(
+                {"role": "user", "content": f"[context: departure date is {date_str}]"}
+            )
         return date_str
 
     def _run_short_circuit(
@@ -252,15 +253,14 @@ class LocalToolAgent:
 
         return _generate()
 
-    def _handle_tool_calls(
+    def _check_tool_call_args(
         self,
         calls: list[dict[str, Any]],
         thread: list[dict[str, Any]],
-        messages: list[dict[str, Any]],
-    ) -> Generator[AgentStreamEvent, None, None] | None:
+    ) -> str | None:
         """
-        Executes validated tool calls. Returns a done-emitting generator
-        if the response is ready, or None to continue the agent loop.
+        Validates tool call arguments before execution.
+        Returns a clarification string if something is missing, None if all good.
         """
         explicit_dates_now = user_explicit_dates(thread)
 
@@ -285,21 +285,34 @@ class LocalToolAgent:
                 if date_msg:
                     return date_msg
 
+        return None
+
+    def _execute_tool_calls(
+        self,
+        calls: list[dict[str, Any]],
+        thread: list[dict[str, Any]],
+        messages: list[dict[str, Any]],
+    ) -> Generator[AgentStreamEvent, None, None]:
+        """
+        Executes validated tool calls and yields status/done events.
+        Only called after _check_tool_call_args returns None.
+        """
+        for call in calls:
+            name = str(call.get("name", "")).strip()
+            args = normalize_arguments(call.get("arguments", {}))
+
             yield AgentStreamEvent("status", f"Running `{name}`…")
             result_str = self._executor.run(name, args)
             tool_msg = {"role": "tool", "name": name, "content": result_str}
             thread.append(tool_msg)
             messages.append(tool_msg)
 
-            final_text = (
-                render_search_flights_result(result_str)
-                if name == "search_flights"
-                else None
-            )
-            if final_text:
-                yield AgentStreamEvent("done", final_text)
-                messages.append({"role": "assistant", "content": final_text})
-                return
+            if name == "search_flights":
+                final_text = render_search_flights_result(result_str)
+                if final_text:
+                    yield AgentStreamEvent("done", final_text)
+                    messages.append({"role": "assistant", "content": final_text})
+                    return
 
     def run(
         self,
@@ -319,6 +332,7 @@ class LocalToolAgent:
             yield from self._pre_resolve_destination(thread)
             yield from self._pre_resolve_origin(thread)
             date_str = self._pre_inject_date(thread, messages)
+            log.info("AGENT pre-resolution complete  date_str=%s", date_str)
         else:
             log.info("AGENT skipping pre-resolution, not a flight request")
 
@@ -333,28 +347,63 @@ class LocalToolAgent:
             already_searched = searched_since_last_user_message(thread)
 
             log.info(
-                "AGENT STEP %d  grounded=%s  dates=%s  roles=%s",
+                "AGENT STEP %d  grounded=%s  dates=%s  already_searched=%s  "
+                "user_wants_flights=%s  is_last=%s",
                 step + 1,
                 grounded_codes,
                 explicit_dates,
+                already_searched,
+                user_wants_flights,
+                is_last_possible,
+            )
+            log.debug(
+                "AGENT STEP %d  roles=%s",
+                step + 1,
                 [f"{m.get('role')}:{m.get('name', '')}" for m in thread],
             )
 
             # ── Short-circuit to search_flights ───────────────────────────────
-            if (
+            short_circuit_eligible = (
                 user_wants_flights
                 and len(grounded_codes) >= 2
-                and explicit_dates
+                and bool(explicit_dates)
                 and not already_searched
-            ):
+            )
+            log.info(
+                "AGENT STEP %d  short_circuit_eligible=%s  "
+                "(grounded=%d dates=%d already_searched=%s)",
+                step + 1,
+                short_circuit_eligible,
+                len(grounded_codes),
+                len(explicit_dates),
+                already_searched,
+            )
+
+            if short_circuit_eligible:
+                log.info("AGENT STEP %d  entering short-circuit", step + 1)
                 gen = self._run_short_circuit(
                     thread, messages, grounded_codes, explicit_dates, date_str
                 )
                 if gen is not None:
+                    log.info(
+                        "AGENT STEP %d  short-circuit generator active, yielding",
+                        step + 1,
+                    )
                     yield from gen
+                    log.info(
+                        "AGENT STEP %d  short-circuit complete, returning", step + 1
+                    )
+                    log.info("AGENT DONE at short-circuit")
                     return
+                else:
+                    log.info(
+                        "AGENT STEP %d  short-circuit returned None (no candidates), "
+                        "falling through to model",
+                        step + 1,
+                    )
 
             # ── Model generation ───────────────────────────────────────────
+            log.info("AGENT STEP %d  starting model generation", step + 1)
             full_text = ""
             yield AgentStreamEvent("status", "Thinking…")
 
@@ -362,7 +411,7 @@ class LocalToolAgent:
                 full_text += token
 
             log.info(
-                "AGENT STEP %d  generated %d chars  has_tool_call=%s",
+                "AGENT STEP %d  model generation complete  chars=%d  has_tool_call=%s",
                 step + 1,
                 len(full_text),
                 has_tool_call_tag(full_text),
@@ -371,10 +420,19 @@ class LocalToolAgent:
             calls = parse_tool_calls(full_text)
             visible = strip_tool_blocks(full_text) or full_text.strip()
 
+            log.info(
+                "AGENT STEP %d  parsed  calls=%d  visible_chars=%d",
+                step + 1,
+                len(calls),
+                len(visible),
+            )
+
             # ── Narration guard ────────────────────────────────────────────
             if not calls and is_narration(visible) and not is_last_possible:
                 log.info(
-                    "AGENT STEP %d  narration detected: %r", step + 1, visible[:120]
+                    "AGENT STEP %d  narration detected, looping: %r",
+                    step + 1,
+                    visible[:120],
                 )
                 yield AgentStreamEvent("status", "Searching…")
                 continue
@@ -387,39 +445,84 @@ class LocalToolAgent:
                 and _FLIGHT_HALLUCINATION_RE.search(visible)
                 and not any(m.get("name") == "search_flights" for m in thread)
             ):
-                log.warning("AGENT STEP %d  hallucination detected, looping", step + 1)
+                log.warning(
+                    "AGENT STEP %d  hallucination detected, looping: %r",
+                    step + 1,
+                    visible[:120],
+                )
                 yield AgentStreamEvent("status", "Searching…")
                 continue
 
             # ── Tool calls ─────────────────────────────────────────────────
             if calls:
+                log.info(
+                    "AGENT STEP %d  executing %d tool call(s)", step + 1, len(calls)
+                )
                 thread.append({"role": "assistant", "content": full_text})
                 yield AgentStreamEvent(
                     "status",
                     f"Searching ({len(calls)} tool call{'s' if len(calls) > 1 else ''})…",
                 )
-                result = self._handle_tool_calls(calls, thread, messages)
-                if isinstance(result, str):
-                    # Clarification message returned
+
+                clarification = self._check_tool_call_args(calls, thread)
+                if clarification:
+                    log.info(
+                        "AGENT STEP %d  clarification required: %r",
+                        step + 1,
+                        clarification[:120],
+                    )
                     thread.pop()
-                    yield AgentStreamEvent("done", result)
-                    messages.append({"role": "assistant", "content": result})
+                    yield AgentStreamEvent("done", clarification)
+                    messages.append({"role": "assistant", "content": clarification})
+                    log.info(
+                        "AGENT DONE at CLARIFICATION final reply %d chars", len(visible)
+                    )
                     return
-                if result is not None:
-                    yield from result
+
+                got_done = False
+                for event in self._execute_tool_calls(calls, thread, messages):
+                    yield event
+                    if event.kind == "done":
+                        got_done = True
+
+                if got_done:
+                    log.info(
+                        "AGENT STEP %d  tool execution produced final response, returning",
+                        step + 1,
+                    )
+                    log.info(
+                        "AGENT DONE tool execution finished. final reply %d chars",
+                        len(visible),
+                    )
                     return
+
+                log.info(
+                    "AGENT STEP %d  tool executed, no final response yet, continuing loop",
+                    step + 1,
+                )
                 continue
 
             # ── Final response ─────────────────────────────────────────────
+            log.info(
+                "AGENT STEP %d  no tool calls, no guards triggered — "
+                "treating as final response  chars=%d",
+                step + 1,
+                len(visible),
+            )
             thread.append({"role": "assistant", "content": full_text})
             messages.append({"role": "assistant", "content": full_text})
-            log.info("AGENT DONE   final reply %d chars", len(visible))
-            for token in visible:
-                yield AgentStreamEvent("token", token)
+            log.info("AGENT DONE  final reply %d chars", len(visible))
             yield AgentStreamEvent("done", visible)
             return
 
         # ── Max steps fallback ─────────────────────────────────────────────
+        log.warning(
+            "AGENT MAX STEPS REACHED  steps=%d  last_grounded=%s  last_dates=%s",
+            settings.agent_max_steps,
+            grounded_codes,
+            explicit_dates,
+        )
+
         fallback = (
             "I hit the maximum number of steps. Could you provide more specific "
             "details — like the 3-letter airport codes and departure date (YYYY-MM-DD)?"

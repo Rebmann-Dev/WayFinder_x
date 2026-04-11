@@ -82,6 +82,3 @@ def build_system_prompt() -> str:
         base += "\n".join(context_lines) + "\n"
 
     return base
-
-
-TRAVEL_AGENT_SYSTEM_PROMPT = build_system_prompt()

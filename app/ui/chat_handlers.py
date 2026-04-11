@@ -47,4 +47,5 @@ def handle_assistant_response(model_service: ModelService) -> None:
                         for i, step in enumerate(steps, 1):
                             st.caption(f"{i}. {step}")
 
+    st.session_state[MemoryService.LLM_KEY] = messages
     MemoryService.add_message("assistant", buffer)
