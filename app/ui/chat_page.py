@@ -61,16 +61,19 @@ def _location_picker_modal(safety_service: SafetyService) -> None:
 
 def _render_sidebar(safety_service: SafetyService) -> None:
     with st.sidebar:
-        st.header("WayFinder")
+        st.html(
+            '<div class="wf-brand">'
+            '<span class="wf-brand-icon">✈️</span>'
+            '<span>WayFinder</span>'
+            "</div>"
+        )
 
-        if st.button("🗑️ Clear chat", use_container_width=True):
+        if st.button("🗑️ Clear conversation", use_container_width=True):
             MemoryService.clear()
             st.rerun()
 
-        st.divider()
-
-        # ── Travel date ───────────────────────────────────────────────────────────
-        st.caption("📅 TRAVEL DATE")
+        # ── Travel date ───────────────────────────────────────────────────
+        st.html('<div class="wf-label">Travel date</div>')
 
         if "departure_date_picker" not in st.session_state:
             st.session_state["departure_date_picker"] = st.session_state.get(
@@ -96,16 +99,14 @@ def _render_sidebar(safety_service: SafetyService) -> None:
         if picked_date:
             st.session_state["departure_date"] = picked_date
             date_source = st.session_state.get("_date_from_chat")
+            prefix = "💬 From chat · " if date_source else ""
             st.caption(
-                f"{'💬 Updated from chat' if date_source else '📅'} "
-                f"**{picked_date.strftime('%A, %b %d %Y')}**"
+                f"{prefix}**{picked_date.strftime('%A, %b %d %Y')}**"
             )
             st.session_state["_date_from_chat"] = None
 
-        st.divider()
-
-        # ── Departure city ────────────────────────────────────────────────────
-        st.caption("🛫 DEPARTURE CITY")
+        # ── Departure city ────────────────────────────────────────────────
+        st.html('<div class="wf-label">Departure city</div>')
         departure_input = st.text_input(
             label="Departure city",
             label_visibility="collapsed",
@@ -164,21 +165,16 @@ def _render_sidebar(safety_service: SafetyService) -> None:
                 resolved = options[chosen_label]
                 st.success(f"✈️ **{resolved['iata']}** · {resolved['name']}")
 
-        st.divider()
-
-        # ── Location picker — opens a modal ───────────────────────────────────
-        if st.button("📍 Pick a destination", use_container_width=True):
+        # ── Destination picker ────────────────────────────────────────────
+        st.html('<div class="wf-label">Destination</div>')
+        if st.button("📍 Pick on the map", use_container_width=True):
             _location_picker_modal(safety_service)
 
-        # ── Selected location summary ─────────────────────────────────────────
+        # ── Selected location summary ─────────────────────────────────────
         if st.session_state["selected_location"]:
             fields = get_selected_location_fields()
             selected = st.session_state["selected_location"]
 
-            st.divider()
-            st.caption("📌 Selected destination")
-
-            # Show the most specific name available
             display_name = (
                 selected.get("city")
                 or selected.get("county")
@@ -186,11 +182,21 @@ def _render_sidebar(safety_service: SafetyService) -> None:
                 or selected.get("country")
                 or "Unknown location"
             )
-            st.markdown(f"**{display_name}**")
-            st.caption(
-                f"{fields['lat']:.4f}, {fields['lon']:.4f}"
-                + (f" · {fields['country']}" if fields["country"] else "")
+            coords = f"{fields['lat']:.4f}, {fields['lon']:.4f}"
+            country_suffix = (
+                f" · {fields['country']}" if fields["country"] else ""
             )
+            from_chat = st.session_state.get("_destination_from_chat")
+            title_prefix = "💬 " if from_chat else "📌 "
+            meta_prefix = "From chat · " if from_chat else ""
+            st.html(
+                f'<div class="wf-card">'
+                f'<div class="wf-card-title">{title_prefix}{display_name}</div>'
+                f'<div class="wf-card-meta">{meta_prefix}{coords}{country_suffix}</div>'
+                f"</div>"
+            )
+            if from_chat:
+                st.session_state["_destination_from_chat"] = None
 
             col1, col2 = st.columns(2)
 
@@ -212,12 +218,14 @@ def _render_sidebar(safety_service: SafetyService) -> None:
                     st.session_state["safety_result"] = None
                     st.rerun()
 
-            # ── Safety score ──────────────────────────────────────────────────
-            st.divider()
+            # ── Safety score ──────────────────────────────────────────────
+            st.html('<div class="wf-label">Safety assessment</div>')
             can_score = fields["lat"] is not None and fields["lon"] is not None
 
             if st.button(
-                "🛡️ Run safety score", disabled=not can_score, use_container_width=True
+                "🛡️ Run safety score",
+                disabled=not can_score,
+                use_container_width=True,
             ):
                 try:
                     req = SafetyRequest(
@@ -264,8 +272,26 @@ def _render_sidebar(safety_service: SafetyService) -> None:
 
 
 def render_chat_page() -> None:
-    st.title("✈️ WayFinder")
+    st.set_page_config(
+        page_title="WayFinder",
+        page_icon="✈️",
+        layout="centered",
+        initial_sidebar_state="expanded",
+    )
     inject_global_styles()
+
+    st.html(
+        '<div class="wf-hero">'
+        '<div class="wf-hero-title">'
+        '<span class="wf-hero-icon">✈️</span>'
+        "<span>WayFinder</span>"
+        "</div>"
+        '<p class="wf-hero-subtitle">'
+        "Your travel planning assistant — find flights and get safety insights "
+        "for any destination."
+        "</p>"
+        "</div>"
+    )
 
     MemoryService.initialize()
     model_service = get_model_service()
@@ -288,7 +314,9 @@ def render_chat_page() -> None:
         with st.chat_message(message.role):
             st.markdown(message.content)
 
-    user_input = st.chat_input("Ask about routes, destinations, or itineraries...")
+    user_input = st.chat_input(
+        "Ask about flights, destinations, or safety scores…"
+    )
 
     if user_input:
         handle_user_message(user_input)

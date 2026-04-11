@@ -21,6 +21,11 @@ _NON_FLIGHT_RE = re.compile(
     re.IGNORECASE,
 )
 
+_SAFETY_INTENT_RE = re.compile(
+    r"\b(safe|safety|dangerous|danger|crime|criminal|risk|risky|secure|security|hazard|hazardous)\b",
+    re.IGNORECASE,
+)
+
 _NARRATION_PATTERNS = (
     re.compile(
         r"I (will|am going to|can) (now |)(look up|search|find|check|call|use)",
@@ -48,10 +53,27 @@ def is_flight_search_intent(messages: list[dict[str, Any]]) -> bool:
     if not latest:
         return False
 
+    # Safety queries are never flight intent — even if "travel" is present
+    if _SAFETY_INTENT_RE.search(latest):
+        return False
+
     if _NON_FLIGHT_RE.search(latest) and not _FLIGHT_INTENT_RE.search(latest):
         return False
 
     return bool(_FLIGHT_INTENT_RE.search(latest))
+
+
+def is_safety_intent(messages: list[dict[str, Any]]) -> bool:
+    """
+    Returns True if the most recent real user message is asking about
+    safety, crime, or risk for a location.
+    """
+    from agents.utils.thread import latest_user_message
+
+    latest = latest_user_message(messages)
+    if not latest:
+        return False
+    return bool(_SAFETY_INTENT_RE.search(latest))
 
 
 def is_narration(text: str) -> bool:

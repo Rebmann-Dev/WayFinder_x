@@ -16,6 +16,75 @@ log = logging.getLogger("wayfinder.tools")
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
+# Only city-specific factors. Country-level macros (homicide_rate,
+# gdp_per_capita, unemployment) are deliberately excluded because they
+# are identical for every city in the same country and give a false
+# impression of specificity in the response.
+_SAFETY_FACTOR_KEYS = [
+    ("neighbourhood_crime", "avg_crime_k5"),
+    ("neighbourhood_safety", "avg_safety_k5"),
+    ("weighted_crime", "wavg_crime_k5"),
+    ("weighted_safety", "wavg_safety_k5"),
+    ("nearest_city_crime", "crime_nearest_labeled_city"),
+    ("nearest_city_safety", "safety_nearest_labeled_city"),
+]
+
+
+def _safety_factors(result: dict[str, Any]) -> dict[str, float]:
+    """Extract raw city-specific factor values from a safety result.
+
+    All returned factors are city-specific: KNN averages over the 5
+    nearest labelled cities, distance-weighted versions, and the single
+    nearest labelled city. No country-level macro features are included.
+    """
+    features = result.get("details", {}).get("features", {})
+    factors: dict[str, float] = {}
+    if not features:
+        return factors
+    for out_key, src_key in _SAFETY_FACTOR_KEYS:
+        val = features.get(src_key)
+        if val is not None:
+            factors[out_key] = float(val)
+    return factors
+
+
+def _safety_highlights(result: dict[str, Any]) -> list[str]:
+    """Human-readable factor labels (used only in the fallback instruction)."""
+    factors = _safety_factors(result)
+    out: list[str] = []
+    if "neighbourhood_crime" in factors:
+        out.append(f"neighbourhood crime index {factors['neighbourhood_crime']:.1f}/100")
+    if "neighbourhood_safety" in factors:
+        out.append(f"neighbourhood safety index {factors['neighbourhood_safety']:.1f}/100")
+    if "nearest_city_crime" in factors:
+        out.append(f"nearest-city crime index {factors['nearest_city_crime']:.1f}/100")
+    if "nearest_city_safety" in factors:
+        out.append(f"nearest-city safety index {factors['nearest_city_safety']:.1f}/100")
+    return out
+
+
+def _build_safety_instruction(result: dict[str, Any]) -> str:
+    score = result.get("safety_score", "?")
+    band = result.get("risk_band", "unknown")
+    location = result.get("location_name") or "this location"
+    highlights = _safety_highlights(result)
+
+    factor_text = f" Key factors used: {', '.join(highlights)}." if highlights else ""
+
+    return (
+        f"Present the safety assessment for {location}. "
+        f"State the safety score ({score}/100) and risk band ('{band}'). "
+        f"{factor_text} "
+        "Explain the risk band in plain language: "
+        "'low' (75+) = generally safe for most travelers; "
+        "'moderate' (55-74) = exercise normal caution; "
+        "'elevated' (35-54) = extra vigilance advised; "
+        "'high' (<35) = significant caution required. "
+        "Note this is a model-based estimate using geographic and socioeconomic data, not an official government report. "
+        "Keep the response practical and useful for a traveler."
+    )
+
+
 def _format_arrival(raw: dict[str, Any]) -> str:
     arrival = str(raw.get("arrival", "")).strip() or "Unknown arrival"
     ahead = str(raw.get("arrival_time_ahead", "")).strip()
@@ -191,26 +260,64 @@ class ToolExecutor:
             )
 
         if name == "get_safety_assessment":
+            print(arguments)
             latitude = arguments.get("latitude")
             longitude = arguments.get("longitude")
             country = arguments.get("country")
             location_name = arguments.get("location_name")
+            if location_name:
+                location_name = str(location_name).strip()
+            if country:
+                country = str(country).strip()
+
+            if latitude is None or longitude is None:
+                if not location_name:
+                    return json.dumps(
+                        {
+                            "success": False,
+                            "error": "Provide location_name (e.g. 'Los Angeles') or both latitude and longitude.",
+                        }
+                    )
+                geocoded = self._safety.geocode_place(location_name)
+                if geocoded is None:
+                    return json.dumps(
+                        {
+                            "success": False,
+                            "error": f"Could not find coordinates for '{location_name}'. Try a well-known city name.",
+                        }
+                    )
+                latitude, longitude, geocoded_country = geocoded
+                log.info(
+                    "TOOL GEOCODE  %s -> lat=%.4f lon=%.4f country=%s",
+                    location_name,
+                    latitude,
+                    longitude,
+                    geocoded_country,
+                )
+                if not country:
+                    country = geocoded_country or None
 
             result = self._safety.assess_location(
                 latitude=latitude,
                 longitude=longitude,
-                country=str(country).strip() if country else None,
-                location_name=str(location_name).strip() if location_name else None,
+                country=country,
+                location_name=location_name,
+                include_details=True,
             )
 
             if not result.get("success"):
                 return json.dumps(result)
 
-            result["instruction"] = (
-                "Present the predicted safety score clearly and briefly. "
-                "Explain that this is a model-based travel safety estimate, not an official crime report. "
-                "Mention the risk band and keep the guidance practical."
+            log.info(
+                "TOOL RESULT get_safety_assessment  %s score=%.1f band=%s",
+                location_name or f"({latitude},{longitude})",
+                result.get("safety_score", 0),
+                result.get("risk_band"),
             )
+            result["factors"] = _safety_factors(result)
+            result["key_factors"] = _safety_highlights(result)
+            result["instruction"] = _build_safety_instruction(result)
+            result.pop("details", None)  # Already distilled into factors/instruction
             return json.dumps(result)
 
         log.warning("TOOL CALL  unknown tool: %s", name)

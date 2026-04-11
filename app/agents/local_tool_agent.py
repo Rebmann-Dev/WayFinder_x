@@ -14,9 +14,12 @@ from agents.utils import (
     has_tool_call_tag,
     is_flight_search_intent,
     is_narration,
+    is_safety_intent,
+    latest_destination_mention,
     latest_explicit_date,
     ranked_destination_candidates,
     render_multi_airport_results,
+    render_safety_result,
     render_search_flights_result,
     route_place_hints,
     searched_since_last_user_message,
@@ -38,6 +41,124 @@ _FLIGHT_HALLUCINATION_RE = re.compile(
     r"(airline|departure time|arrival time|number of stops|price.*\$)",
     re.IGNORECASE,
 )
+
+# Tokens we strip off the tail of airport names when deriving a city
+# query for the safety lookup. "London Heathrow Airport" → ["London
+# Heathrow", "London"]. The substring-match geocoder only likes plain
+# city names, so we peel off descriptor tokens from the right.
+_AIRPORT_NAME_DESCRIPTORS = {
+    "airport",
+    "airfield",
+    "airbase",
+    "international",
+    "intl",
+    "intercontinental",
+    "regional",
+    "municipal",
+    "national",
+    "metropolitan",
+    "terminal",
+    "field",
+}
+
+
+# Words to strip when extracting a location from a free-form safety
+# question. Deliberately excludes "city" since it's part of real place
+# names ("New York City", "Mexico City", "Kansas City").
+_SAFETY_STRIP_RE = re.compile(
+    r"\b(?:safe|safety|dangerous|danger|crime|criminal|risk|risky|"
+    r"secure|security|hazard|hazardous|is|it|for|in|of|at|the|a|an|"
+    r"how|what|whats|about|country|destination|tell|me|to|would|i|"
+    r"travel|travell?ing|visit|visiting|going|place|like|level|rate|"
+    r"rating|score|be|currently|right|now|today)\b",
+    re.IGNORECASE,
+)
+
+
+def _extract_safety_location(text: str) -> str | None:
+    """
+    Strips safety keywords and common filler words from a free-form
+    question so only the place name remains. Handles phrasings like:
+
+      "safety Vancouver"        → "Vancouver"
+      "Safety Vancouver"        → "Vancouver"     (main target)
+      "Is Paris safe?"          → "Paris"
+      "How dangerous is Lagos?" → "Lagos"
+      "How safe is New York City" → "New York City"
+    """
+    if not text:
+        return None
+    # Drop apostrophes so "what's" → "whats" and the whole token matches
+    # the strip list as a single word.
+    cleaned = text.replace("'", "")
+    cleaned = re.sub(r"[?!.,:;]+", " ", cleaned)
+    cleaned = _SAFETY_STRIP_RE.sub(" ", cleaned)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    return cleaned or None
+
+
+def _location_query_candidates(mention: str) -> list[str]:
+    """
+    Expands a user-typed location mention into a priority-ordered list of
+    progressively shorter queries for the substring-match geocoder and
+    airport search service. Both accept only plain short city names and
+    choke on qualifiers like "Vancouver, BC" or "vancouver canada".
+
+    "Vancouver, BC"           → ["Vancouver, BC", "Vancouver"]
+    "vancouver canada"        → ["vancouver canada", "vancouver"]
+    "new york city"           → ["new york city", "new york", "new"]
+    "los angeles california"  → ["los angeles california", "los angeles", "los"]
+    """
+    if not mention:
+        return []
+
+    seen: set[str] = set()
+    out: list[str] = []
+
+    def _add(value: str) -> None:
+        value = value.strip(" ,.!?")
+        if value and value.lower() not in seen:
+            seen.add(value.lower())
+            out.append(value)
+
+    _add(mention)
+    # Strip anything after a comma — "Vancouver, BC" → "Vancouver"
+    before_comma = mention.split(",", 1)[0]
+    _add(before_comma)
+
+    # Progressively strip trailing whitespace tokens — covers "vancouver bc"
+    # and "vancouver canada" where the qualifier isn't comma-separated.
+    tokens = [t for t in before_comma.split() if t]
+    for length in range(len(tokens) - 1, 0, -1):
+        _add(" ".join(tokens[:length]))
+
+    return out
+
+
+def _city_candidates_from_airport_name(name: str) -> list[str]:
+    """
+    Derives plausible city-name queries from an airport name by peeling
+    descriptor tokens off the end. Progressively shorter prefixes are
+    returned in descending length so the first geocoder hit is usually
+    the most specific city-like prefix.
+    """
+    if not name:
+        return []
+    tokens = [t for t in re.split(r"\s+", name.strip()) if t]
+    while tokens and tokens[-1].strip(".,").lower() in _AIRPORT_NAME_DESCRIPTORS:
+        tokens.pop()
+    if not tokens:
+        return []
+
+    out: list[str] = []
+    seen: set[str] = set()
+    for length in range(len(tokens), 0, -1):
+        candidate = " ".join(tokens[:length]).strip()
+        key = candidate.lower()
+        if candidate and key not in seen:
+            seen.add(key)
+            out.append(candidate)
+    return out
 
 
 class AgentStreamEvent:
@@ -94,6 +215,179 @@ class LocalToolAgent:
                 {"role": "tool", "name": "search_airports", "content": result_str}
             )
 
+    def _airport_safety_brief(
+        self,
+        airport: dict[str, str],
+        cache: dict[str, dict[str, Any]],
+    ) -> dict[str, Any] | None:
+        """
+        Returns a per-airport safety brief ``{score, band, city, country}``
+        or None if no query candidate resolves.
+
+        Note: ``SafetyService.geocode_place`` is a substring lookup against an
+        internal city dataframe — it does not understand full airport names
+        like "London Heathrow Airport". So the strategy is:
+
+        1. Try ``airport.city`` (works for most: LAX → Los Angeles, NRT → Tokyo).
+        2. Strip common airport suffixes from ``airport.name`` and try that
+           (handles LHR where city field is "West Drayton" but name contains
+           "London").
+        3. Fall back to the user's sidebar-picked ``selected_location.city``
+           — guaranteed to be a valid city since it came from the map/chat
+           resolver.
+
+        Cached by IATA so repeats are free.
+        """
+        iata = str(airport.get("iata", "")).strip().upper()
+        if iata and iata in cache:
+            return cache[iata]
+
+        name = str(airport.get("name", "")).strip()
+        city = str(airport.get("city", "")).strip()
+        country = str(airport.get("country", "")).strip()
+
+        selected = st.session_state.get("selected_location") or {}
+        selected_city = str(
+            selected.get("city")
+            or selected.get("county")
+            or selected.get("state_region")
+            or ""
+        ).strip()
+
+        # Query candidates, most specific first. All go through the
+        # substring-match geocoder, so short city names work best.
+        queries: list[str] = []
+        if city:
+            queries.append(city)
+        for candidate in _city_candidates_from_airport_name(name):
+            if candidate and candidate not in queries:
+                queries.append(candidate)
+        if selected_city and selected_city not in queries:
+            queries.append(selected_city)
+
+        geocoded: tuple[float, float, str] | None = None
+        matched_query: str | None = None
+        for query in queries:
+            result = self._executor._safety.geocode_place(query)
+            if result is not None:
+                geocoded = result
+                matched_query = query
+                break
+
+        if geocoded is None:
+            log.info(
+                "AGENT safety-brief  geocode failed for %s (tried %s)",
+                iata or name,
+                queries,
+            )
+            if iata:
+                cache[iata] = None  # type: ignore[assignment]
+            return None
+
+        lat, lon, geocoded_country = geocoded
+        assess = self._executor._safety.assess_location(
+            latitude=lat,
+            longitude=lon,
+            country=country or geocoded_country,
+            location_name=matched_query,
+            include_details=False,
+        )
+        if not assess.get("success"):
+            log.info(
+                "AGENT safety-brief  assess failed iata=%s err=%s",
+                iata,
+                assess.get("error"),
+            )
+            if iata:
+                cache[iata] = None  # type: ignore[assignment]
+            return None
+
+        brief = {
+            "city": matched_query or city or "this destination",
+            "country": country or geocoded_country,
+            "score": assess.get("safety_score"),
+            "band": str(assess.get("risk_band", "") or "").lower(),
+            "lat": lat,
+            "lon": lon,
+        }
+        if iata:
+            cache[iata] = brief
+        log.info(
+            "AGENT safety-brief  %s via %r score=%s band=%s",
+            iata,
+            matched_query,
+            brief["score"],
+            brief["band"],
+        )
+        return brief
+
+    def _update_destination_from_chat(
+        self,
+        messages: list[dict[str, Any]],
+    ) -> bool:
+        """
+        If the latest user message names a new destination (e.g. "flights to
+        Tokyo"), geocode it and replace ``st.session_state['selected_location']``
+        so the sidebar and downstream tools pick up the chat-driven update.
+        Sets the ``_destination_from_chat`` flag for the sidebar to show a
+        'from chat' indicator on the next render.
+
+        Returns True if the destination was updated, False otherwise.
+        """
+        mention = latest_destination_mention(messages)
+        if not mention:
+            return False
+
+        current = st.session_state.get("selected_location") or {}
+        current_name = (
+            current.get("city")
+            or current.get("county")
+            or current.get("state_region")
+            or current.get("country")
+            or ""
+        )
+        if current_name and current_name.strip().lower() == mention.strip().lower():
+            return False
+
+        # The geocoder does substring matching against a city dataframe and
+        # chokes on qualifiers like "vancouver bc" or "Vancouver, Canada",
+        # so try progressively shorter candidates until one resolves.
+        candidates = _location_query_candidates(mention)
+        geocoded: tuple[float, float, str] | None = None
+        resolved_name: str | None = None
+        for candidate in candidates:
+            result = self._executor._safety.geocode_place(candidate)
+            if result is not None:
+                geocoded = result
+                resolved_name = candidate
+                break
+
+        if geocoded is None or resolved_name is None:
+            log.info(
+                "AGENT chat-destination  geocode failed for %r (tried %s)",
+                mention,
+                candidates,
+            )
+            return False
+
+        lat, lon, country = geocoded
+        st.session_state["selected_location"] = {
+            "city": resolved_name,
+            "country": country,
+            "lat": lat,
+            "lon": lon,
+        }
+        st.session_state["safety_result"] = None
+        st.session_state["_destination_from_chat"] = True
+        log.info(
+            "AGENT chat-destination  updated to %s (%.4f, %.4f) country=%s",
+            resolved_name,
+            lat,
+            lon,
+            country,
+        )
+        return True
+
     def _pre_resolve_destination(self, thread: list[dict[str, Any]]) -> Generator:
         """Resolves the map-picked destination into the thread."""
         selected = st.session_state.get("selected_location")
@@ -109,12 +403,37 @@ class LocalToolAgent:
         if not location_query:
             return
 
-        log.info("AGENT pre-resolving destination=%s", location_query)
+        # Try the primary query first, then fall back to progressively
+        # shorter candidates if search_airports returns nothing. This
+        # handles qualifiers ("Vancouver, BC") the substring search can't
+        # parse on its own.
+        candidates = _location_query_candidates(location_query)
         yield AgentStreamEvent("status", f"Resolving destination: {location_query}…")
-        result_str = self._executor.run("search_airports", {"query": location_query})
-        thread.append(
-            {"role": "tool", "name": "search_airports", "content": result_str}
-        )
+        last_result: str | None = None
+        for query in candidates:
+            log.info("AGENT pre-resolving destination=%s", query)
+            result_str = self._executor.run("search_airports", {"query": query})
+            last_result = result_str
+            try:
+                payload = json.loads(result_str)
+            except json.JSONDecodeError:
+                payload = {}
+            if payload.get("matches"):
+                thread.append(
+                    {"role": "tool", "name": "search_airports", "content": result_str}
+                )
+                return
+            log.info(
+                "AGENT pre-resolving destination=%s no matches, trying next",
+                query,
+            )
+
+        # All candidates came up empty — record the last attempt so the
+        # thread still reflects what we tried for the model's benefit.
+        if last_result is not None:
+            thread.append(
+                {"role": "tool", "name": "search_airports", "content": last_result}
+            )
 
     def _pre_resolve_origin(self, thread: list[dict[str, Any]]) -> Generator:
         """Injects the sidebar-resolved departure airport as a synthetic tool result."""
@@ -164,6 +483,82 @@ class LocalToolAgent:
             )
         return date_str
 
+    def _run_safety_short_circuit(
+        self,
+        messages: list[dict[str, Any]],
+    ) -> Generator[AgentStreamEvent, None, None] | None:
+        """
+        Deterministic safety path: when the user asks about safety, crime,
+        or risk, bypass the model and call ``get_safety_assessment``
+        ourselves. Returns a generator if the path was handled, else None.
+
+        The small Qwen model is inconsistent about emitting a tool call
+        for safety questions depending on capitalization ("safety Vancouver"
+        vs "Safety Vancouver"), so we take this path out of the model's
+        hands entirely.
+        """
+        from agents.utils.thread import latest_user_message
+
+        latest = latest_user_message(messages)
+        location = _extract_safety_location(latest) if latest else None
+
+        # Fall back to the sidebar-picked destination if we couldn't
+        # extract a place name from the message itself (e.g. the user
+        # just typed "is it safe there?").
+        if not location:
+            selected = st.session_state.get("selected_location") or {}
+            location = (
+                selected.get("city")
+                or selected.get("county")
+                or selected.get("state_region")
+                or selected.get("country")
+                or None
+            )
+
+        if not location:
+            return None
+
+        def _generate():
+            # Try the extracted phrase first, then progressively shorter
+            # prefixes so qualified input like "Vancouver, BC" still
+            # resolves through the substring-match geocoder.
+            candidates = _location_query_candidates(location)
+            resolved_result: str | None = None
+            matched_query: str | None = None
+            for query in candidates:
+                log.info("AGENT SAFETY SHORT-CIRCUIT  %s", query)
+                yield AgentStreamEvent("status", f"Checking safety for {query}…")
+                result_str = self._executor.run(
+                    "get_safety_assessment", {"location_name": query}
+                )
+                try:
+                    payload = json.loads(result_str)
+                except json.JSONDecodeError:
+                    payload = {}
+                if payload.get("success"):
+                    resolved_result = result_str
+                    matched_query = query
+                    break
+                log.info(
+                    "AGENT SAFETY SHORT-CIRCUIT  %s failed, trying next candidate",
+                    query,
+                )
+
+            if resolved_result is None:
+                final_text = (
+                    f"I couldn't find safety data for **{location}**. "
+                    "Try a well-known city name."
+                )
+            else:
+                final_text = render_safety_result(resolved_result) or (
+                    f"Got safety data for {matched_query} but couldn't render it."
+                )
+
+            yield AgentStreamEvent("done", final_text)
+            messages.append({"role": "assistant", "content": final_text})
+
+        return _generate()
+
     def _run_short_circuit(
         self,
         thread: list[dict[str, Any]],
@@ -189,8 +584,15 @@ class LocalToolAgent:
 
         def _generate():
             all_results: list[dict] = []
+            # Per-IATA safety brief cache so repeat airports are free.
+            safety_by_iata: dict[str, dict[str, Any]] = {}
 
-            for destination in candidates:
+            for candidate in candidates:
+                destination = candidate["iata"]
+                dest_name = candidate.get("name") or destination
+                dest_city = candidate.get("city") or ""
+                dest_country = candidate.get("country") or ""
+
                 args = {
                     "origin": origin,
                     "destination": destination,
@@ -203,15 +605,23 @@ class LocalToolAgent:
                     destination,
                     departure_date_str,
                 )
-                yield AgentStreamEvent("status", f"Searching {origin} → {destination}…")
+                yield AgentStreamEvent(
+                    "status",
+                    f"Searching {origin} → {destination} ({dest_name})…",
+                )
                 result_str = self._executor.run("search_flights", args)
                 tool_msg = {
                     "role": "tool",
                     "name": "search_flights",
                     "content": result_str,
                 }
+                # Only append to the ephemeral thread — the short-circuit
+                # has no preceding assistant(<tool_call>) turn, so writing
+                # raw tool messages to persisted history leaves orphaned
+                # tool results that break Qwen's chat template on the next
+                # turn. The final rendered markdown captures everything
+                # the model needs for follow-up reasoning anyway.
                 thread.append(tool_msg)
-                messages.append(tool_msg)
 
                 try:
                     payload = json.loads(result_str)
@@ -219,10 +629,17 @@ class LocalToolAgent:
                     continue
 
                 if payload.get("success") and payload.get("flights"):
+                    safety_info = self._airport_safety_brief(
+                        candidate, safety_by_iata
+                    )
                     all_results.append(
                         {
                             "origin": origin,
                             "destination": destination,
+                            "destination_name": dest_name,
+                            "destination_city": dest_city,
+                            "destination_country": dest_country,
+                            "destination_safety": safety_info,
                             "departure_date": departure_date_str,
                             "flights": payload["flights"],
                         }
@@ -241,7 +658,7 @@ class LocalToolAgent:
             if all_results:
                 final_text = render_multi_airport_results(all_results)
             else:
-                tried = ", ".join(candidates)
+                tried = ", ".join(c["iata"] for c in candidates)
                 final_text = (
                     f"I couldn't find any flights from **{origin}** to "
                     f"nearby airports ({tried}) on **{departure_date_str}**.\n\n"
@@ -314,6 +731,13 @@ class LocalToolAgent:
                     messages.append({"role": "assistant", "content": final_text})
                     return
 
+            if name == "get_safety_assessment":
+                final_text = render_safety_result(result_str)
+                if final_text:
+                    yield AgentStreamEvent("done", final_text)
+                    messages.append({"role": "assistant", "content": final_text})
+                    return
+
     def run(
         self,
         messages: list[dict[str, Any]],
@@ -322,19 +746,46 @@ class LocalToolAgent:
         yield AgentStreamEvent("status", "Thinking…")
 
         user_wants_flights = is_flight_search_intent(messages)
-        log.info("AGENT flight_intent=%s", user_wants_flights)
+        user_wants_safety = is_safety_intent(messages)
+        log.info(
+            "AGENT flight_intent=%s  safety_intent=%s",
+            user_wants_flights,
+            user_wants_safety,
+        )
 
         thread: list[dict[str, Any]] = list(messages)
         date_str: str | None = None
 
         # ── Pre-resolution (flight requests only) ──────────────────────────
         if user_wants_flights:
+            if self._update_destination_from_chat(messages):
+                yield AgentStreamEvent(
+                    "status",
+                    f"Switching destination to "
+                    f"{st.session_state['selected_location']['city']}…",
+                )
             yield from self._pre_resolve_destination(thread)
             yield from self._pre_resolve_origin(thread)
             date_str = self._pre_inject_date(thread, messages)
             log.info("AGENT pre-resolution complete  date_str=%s", date_str)
         else:
             log.info("AGENT skipping pre-resolution, not a flight request")
+
+        # ── Safety short-circuit ───────────────────────────────────────────
+        # Bypass the model for safety queries — it's case-sensitive and
+        # sometimes fails to emit a get_safety_assessment tool_call for
+        # capitalized phrasings like "Safety Vancouver".
+        if user_wants_safety and not user_wants_flights:
+            log.info("AGENT entering safety short-circuit")
+            safety_gen = self._run_safety_short_circuit(messages)
+            if safety_gen is not None:
+                yield from safety_gen
+                log.info("AGENT DONE at safety short-circuit")
+                return
+            log.info(
+                "AGENT safety short-circuit skipped (no location), "
+                "falling through to model"
+            )
 
         # ── Agent loop ─────────────────────────────────────────────────────
         for step in range(settings.agent_max_steps):
@@ -403,10 +854,17 @@ class LocalToolAgent:
                     )
 
             # ── Model generation ───────────────────────────────────────────
+            _trim_thread_to_fit(
+                thread,
+                count_tokens=self._model.count_tokens,
+                tools=TOOLS,
+                target_tokens=int(self._model.MAX_INPUT_TOKENS * 0.85),
+            )
+
             log.info("AGENT STEP %d  starting model generation", step + 1)
-            full_text = ""
             yield AgentStreamEvent("status", "Thinking…")
 
+            full_text = ""
             for token in self._model.stream_agent_turn(thread, tools=TOOLS):
                 full_text += token
 
@@ -479,6 +937,10 @@ class LocalToolAgent:
                     )
                     return
 
+                # Persist the assistant's tool-call turn so the LLM thread
+                # stays well-formed: assistant(tool_call) → tool(result)
+                messages.append({"role": "assistant", "content": full_text})
+
                 got_done = False
                 for event in self._execute_tool_calls(calls, thread, messages):
                     yield event
@@ -537,3 +999,106 @@ class LocalToolAgent:
             if event.kind == "done":
                 last = event.text
         return last
+
+
+def _last_real_user_index(thread: list[dict[str, Any]]) -> int:
+    """Index of the most recent user turn that isn't a [context:…] injection."""
+    last = -1
+    for i, m in enumerate(thread):
+        if m.get("role") != "user":
+            continue
+        if str(m.get("content", "")).startswith("[context:"):
+            continue
+        last = i
+    return last
+
+
+def _trim_thread_to_fit(
+    thread: list[dict[str, Any]],
+    *,
+    count_tokens,
+    tools: list[dict[str, Any]] | None,
+    target_tokens: int,
+) -> None:
+    """
+    Trims ``thread`` in place until its tokenized form fits under
+    ``target_tokens``. Drops oldest tool results first (bulkiest), then
+    oldest pre-current-turn messages. Preserves the system prompt and the
+    most recent real user message and everything after it.
+    """
+    try:
+        count = count_tokens(thread, tools)
+    except Exception as exc:  # tokenizer errors shouldn't block generation
+        log.warning("TRIM  count_tokens failed up front: %s", exc)
+        return
+
+    if count <= target_tokens:
+        return
+
+    initial = count
+    log.info(
+        "TRIM  start count=%d target=%d msgs=%d",
+        initial,
+        target_tokens,
+        len(thread),
+    )
+
+    # Phase 1 — drop oldest tool results (and their paired assistant
+    # tool_call turn if present) until we fit or run out of tool messages.
+    while count > target_tokens:
+        cutoff = _last_real_user_index(thread)
+        tool_idx = next(
+            (
+                i
+                for i, m in enumerate(thread)
+                if m.get("role") == "tool" and (cutoff < 0 or i < cutoff)
+            ),
+            None,
+        )
+        if tool_idx is None:
+            break
+
+        thread.pop(tool_idx)
+        # If the immediately preceding assistant turn was the tool_call
+        # that produced this result, drop it too — an orphan tool_call
+        # with no result confuses the Qwen chat template.
+        prev_idx = tool_idx - 1
+        if prev_idx >= 0 and thread[prev_idx].get("role") == "assistant":
+            prev_content = str(thread[prev_idx].get("content", "")).lower()
+            if "<tool_call>" in prev_content:
+                thread.pop(prev_idx)
+
+        try:
+            count = count_tokens(thread, tools)
+        except Exception as exc:
+            log.warning("TRIM  count_tokens failed mid-pass: %s", exc)
+            return
+
+    # Phase 2 — if still over, drop oldest non-system messages that sit
+    # before the latest real user turn, one at a time.
+    while count > target_tokens:
+        cutoff = _last_real_user_index(thread)
+        drop_idx = next(
+            (
+                i
+                for i, m in enumerate(thread)
+                if m.get("role") != "system" and (cutoff < 0 or i < cutoff)
+            ),
+            None,
+        )
+        if drop_idx is None:
+            break
+
+        thread.pop(drop_idx)
+        try:
+            count = count_tokens(thread, tools)
+        except Exception as exc:
+            log.warning("TRIM  count_tokens failed mid-pass: %s", exc)
+            return
+
+    log.info(
+        "TRIM  end count=%d (from %d) msgs=%d",
+        count,
+        initial,
+        len(thread),
+    )
