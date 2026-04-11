@@ -1046,6 +1046,16 @@ def _render_explore_panel() -> None:
         with score_col2:
             score_btn = st.button("Run Score", use_container_width=True, key="explore_run_score")
 
+        # Show clicked location info
+        click_lat = st.session_state.get("explore_click_lat")
+        click_lon = st.session_state.get("explore_click_lon")
+        click_name = st.session_state.get("explore_click_name", "")
+        if click_lat is not None:
+            st.info(
+                f"📍 **Selected from map:** {click_name}  \n"
+                f"Lat: `{click_lat:.5f}` · Lon: `{click_lon:.5f}`"
+            )
+
         # Month selector for travel month assessment
         month_names = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
         sel_month = st.selectbox(
