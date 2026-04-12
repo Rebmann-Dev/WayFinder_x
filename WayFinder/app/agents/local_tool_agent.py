@@ -193,13 +193,19 @@ class LocalToolAgent:
 
     def _airport_safety_brief(
         self,
-        airport: dict[str, str],
+        airport: dict[str, str] | str,
         cache: dict[str, dict[str, Any]],
     ) -> dict[str, Any] | None:
         """
         Returns a per-airport safety brief ``{score, band, city, country}``
         or None if no query candidate resolves.
+
+        ``airport`` may be a dict with keys like ``iata``, ``name``, ``city``,
+        ``country`` **or** a plain IATA code string (as returned by
+        ``ranked_destination_candidates``).
         """
+        if isinstance(airport, str):
+            airport = {"iata": airport}
         iata = str(airport.get("iata", "")).strip().upper()
         if iata and iata in cache:
             return cache[iata]
@@ -593,7 +599,10 @@ class LocalToolAgent:
             if all_results:
                 final_text = render_multi_airport_results(all_results)
             else:
-                tried = ", ".join(c["iata"] for c in candidates)
+                tried = ", ".join(
+                    c["iata"] if isinstance(c, dict) else c
+                    for c in candidates
+                )
                 final_text = (
                     f"I couldn't find any flights from **{origin}** to "
                     f"nearby airports ({tried}) on **{departure_date_str}**.\n\n"
