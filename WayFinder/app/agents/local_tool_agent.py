@@ -523,10 +523,16 @@ class LocalToolAgent:
             safety_by_iata: dict[str, dict[str, Any]] = {}
 
             for candidate in candidates:
-                destination = candidate["iata"]
-                dest_name = candidate.get("name") or destination
-                dest_city = candidate.get("city") or ""
-                dest_country = candidate.get("country") or ""
+                if isinstance(candidate, dict):
+                    destination = candidate["iata"]
+                    dest_name = candidate.get("name") or destination
+                    dest_city = candidate.get("city") or ""
+                    dest_country = candidate.get("country") or ""
+                else:
+                    destination = str(candidate)
+                    dest_name = destination
+                    dest_city = ""
+                    dest_country = ""
 
                 args = {
                     "origin": origin,
