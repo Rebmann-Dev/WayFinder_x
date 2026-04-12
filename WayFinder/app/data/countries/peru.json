@@ -1,0 +1,728 @@
+{
+  "meta": {
+    "last_updated": "2026-04-12",
+    "confidence_score": 0.9,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "WayFinder internal hike/food/history data",
+      "WayFinder safety submodels"
+    ],
+    "notes": "Populated from WayFinder app data and verified travel references. Null fields to be enriched via Tavily web search."
+  },
+  "identity": {
+    "name": "Peru",
+    "official_name": "Republic of Peru",
+    "code": "PE",
+    "iso3": "PER",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Lima",
+    "flag_emoji": "🇵🇪",
+    "timezones": ["UTC-05:00"],
+    "driving_side": "right",
+    "country_calling_code": "+51",
+    "internet_tld": ".pe"
+  },
+  "language_and_money": {
+    "languages": ["Spanish", "Quechua", "Aymara"],
+    "primary_language": "Spanish",
+    "english_proficiency": "Low — moderate in Lima tourist areas and Cusco. Very limited in rural areas.",
+    "currency": "PEN",
+    "currency_name": "Peruvian Sol",
+    "currency_symbol": "S/",
+    "cash_vs_card": "Cash preferred in most situations outside Lima. Cards accepted at hotels, upscale restaurants, and malls in major cities.",
+    "typical_payment_methods": ["Cash (Soles)", "Visa", "Mastercard", "Yape (mobile payment)"],
+    "atm_availability": "Widely available in cities. BCP and BBVA Continental most common. Scarce in rural highlands and Amazon. Withdraw in soles to avoid poor exchange rates.",
+    "tipping_culture": "Not mandatory. 10% service charge often included in restaurants.",
+    "tipping_etiquette": "Leave 10% if no service charge. Tip trekking porters $5-10/day. Tour guides $10-20/day. Round up taxi fares."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 183 days",
+      "visa_type": "Tourist stamp on arrival",
+      "visa_free_days": 183,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for at least 6 months beyond date of entry",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": false,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Strict on cultural artifacts — pre-Columbian items cannot be exported. No coca leaves beyond Peru.",
+    "restricted_items": ["Pre-Columbian artifacts", "Coca leaves (export)", "Narcotics", "Firearms", "Endangered species products"],
+    "duty_free_allowances": "400 cigarettes or 50 cigars, 3 liters of alcohol, gifts up to $500 value"
+  },
+  "health": {
+    "recommended_vaccines": ["Hepatitis A", "Typhoid", "Hepatitis B", "Rabies (if trekking or Amazon)", "Tetanus-Diphtheria"],
+    "required_vaccines": ["Yellow Fever (if entering Amazon regions below 2,300m)"],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Present in Amazon lowlands below 2,000m — Loreto, Madre de Dios, Ucayali, San Martín",
+    "malaria_regions": ["Loreto", "Madre de Dios", "Ucayali", "San Martín", "Amazonas", "Junín (lowlands)"],
+    "malaria_prophylaxis_info": "Atovaquone-proguanil, doxycycline, or mefloquine recommended for Amazon travel. Not needed for Lima, Cusco, Machu Picchu, or highlands.",
+    "dengue_risk": "Moderate to high in lowland areas, especially during rainy season. Present in Lima's outskirts, coastal cities, and Amazon.",
+    "altitude_sickness_risk": "HIGH — Cusco at 3,400m, Puno at 3,800m, Rainbow Mountain at 5,200m, Huaraz at 3,050m. Acclimatize 2-3 days before strenuous activity. Soroche pills and mate de coca help.",
+    "food_water_safety": "Tap water not safe to drink. Bottled water widely available. Street food generally safe at busy stalls. Raw salads risky outside upscale restaurants.",
+    "air_quality_concerns": "Lima can have poor air quality due to traffic and coastal fog (garúa). Highland cities generally good air quality.",
+    "common_travel_illnesses": ["Altitude sickness (soroche)", "Traveler's diarrhea", "Sunburn at altitude", "Mosquito-borne illness in Amazon"],
+    "pharmacy_access": "Pharmacies (farmacias/boticas) widely available. InkaFarma and MiFarma chains in every city. Many medications OTC. Limited in remote areas.",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Good private hospitals in Lima (Clínica Ricardo Palma, Clínica Anglo Americana). Limited in provinces. Cusco has basic facilities. Evacuate from remote areas for serious conditions.",
+    "emergency_medical_number": "106"
+  },
+  "safety": {
+    "travel_advisory_level_us": 2,
+    "travel_advisory_level_label": "Exercise Increased Caution",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "Petty crime high in Lima and Cusco tourist areas",
+      "Express kidnapping risk in Lima with unlicensed taxis",
+      "Drug trafficking in VRAEM region and border areas",
+      "Political protests can block roads, especially in highlands"
+    ],
+    "crime_risk": "Moderate — pickpocketing and bag snatching common in Lima (Miraflores, Centro) and Cusco. Callao is high-risk (homicide rate 35/100k). Most tourist areas are safe with precautions.",
+    "scam_risk": "Moderate — taxi overcharging, fake tour operators in Cusco, counterfeit currency, friendship bracelet scam, fake police.",
+    "transport_safety": "Use ride-hailing apps instead of street taxis in Lima. Intercity buses safe on major routes — use reputable companies (Cruz del Sur, Oltursa). Night buses generally safe on main highways.",
+    "solo_female_travel_notes": "Generally safe with precautions. Avoid walking alone at night in cities. Catcalling common. Cusco and Sacred Valley are comfortable for solo female travelers.",
+    "lgbtq_notes": "No legal recognition of same-sex relationships. Generally tolerant in Lima (Miraflores, Barranco). More conservative in provinces and highlands.",
+    "night_safety": "Avoid walking alone at night in Lima Centro, Callao, and unfamiliar neighborhoods. Tourist areas in Miraflores and Barranco are reasonably safe. Cusco's Plaza de Armas area is safe until late.",
+    "safe_areas": ["Miraflores (Lima)", "Barranco (Lima)", "San Isidro (Lima)", "Cusco historic center", "Sacred Valley", "Huaraz"],
+    "areas_to_avoid": ["Callao", "Lima Centro at night", "VRAEM region", "Huallaga Valley", "Colombia/Ecuador border region"],
+    "natural_disaster_risks": ["Earthquakes (Pacific Ring of Fire)", "Tsunamis on coast", "Landslides (huaicos) in rainy season", "Flooding in Amazon", "Volcanic activity (Misti, Ubinas)"],
+    "political_stability_notes": "Political instability and protests can occur suddenly. Road blockades (bloqueos) common in highlands during protests. Monitor local news. Avoid large gatherings.",
+    "common_scams": [
+      "Express kidnapping — unlicensed taxis, use InDriver/Cabify/Beat instead",
+      "Fake police asking to inspect wallet — real police won't do this on the street",
+      "Counterfeit soles — learn to identify real bills",
+      "Taxi overcharging — agree on price before or use apps",
+      "Friendship bracelet scam in tourist areas",
+      "Fake tour operators in Cusco — book through hotel or reputable agency",
+      "ATM skimming — use bank-attached ATMs, cover keypad"
+    ],
+    "police_reliability": "Variable. Tourist police (Policía de Turismo) in Cusco and Lima are generally helpful. File reports at comisaría. Corruption exists.",
+    "emergency_numbers": {
+      "police": "105",
+      "ambulance": "106",
+      "fire": "116",
+      "general_emergency": "105"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Lima",
+      "us_embassy_phone": "+51-1-618-2000",
+      "us_embassy_website": "https://pe.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "May to September (dry season) for highlands and trekking. December to March for coast and surfing. Amazon is hot and wet year-round.",
+    "climate_zones": [
+      "Coastal desert (Costa) — dry, mild Lima 15-28°C, hotter north",
+      "Andean highlands (Sierra) — cool, 5-20°C, distinct dry/wet seasons",
+      "Amazon basin (Selva) — hot, humid, 25-35°C, heavy rainfall",
+      "Northern coast — warmer, tropical"
+    ],
+    "dry_season": "May to September (Sierra and trekking); year-round on southern coast",
+    "rainy_season": "October to April (Sierra); November to April (Amazon, heaviest Jan-Mar)",
+    "hurricane_typhoon_season": null,
+    "surf_season": "Year-round — biggest swells April to October (southern coast); December to March (northern coast Máncora area)",
+    "trekking_best_months": ["May", "June", "July", "August", "September"],
+    "average_temp_by_month": {
+      "Lima": "15-28°C (warmest Jan-Mar, coolest Jun-Aug with garúa fog)",
+      "Cusco": "5-20°C (coldest Jun-Jul nights, warmest Oct-Nov)",
+      "Máncora": "25-33°C year-round"
+    },
+    "daylight_hours_by_season": "Near equator in the north; 11-13 hours depending on latitude and season"
+  },
+  "transport": {
+    "major_airports": [
+      "Jorge Chávez International Airport (LIM) — Lima",
+      "Alejandro Velasco Astete International Airport (CUZ) — Cusco",
+      "Rodríguez Ballón International Airport (AQP) — Arequipa",
+      "Capitán FAP Carlos Martínez de Pinillos International Airport (TRU) — Trujillo"
+    ],
+    "main_airlines": ["LATAM Peru", "Sky Airline Peru", "JetSMART Peru", "Star Perú"],
+    "airport_to_city_options": ["Airport Express Lima bus (to Miraflores, $8)", "Taxi ($15-20 to Miraflores)", "Ride-hailing apps", "Hotel transfers"],
+    "public_transit_quality": "Lima has Metropolitano BRT and Metro Line 1. Cusco has combis (minibuses). Most cities use combis and colectivos — chaotic but functional.",
+    "intercity_bus_quality": "Excellent long-distance bus network. Cruz del Sur, Oltursa, and ITTSA offer comfortable semi-cama and cama buses. Book in advance for popular routes.",
+    "train_network_quality": "Limited but scenic — PeruRail and Inca Rail to Machu Picchu (Ollantaytambo-Aguas Calientes). PeruRail Titicaca (Cusco-Puno, luxury). No practical commuter rail.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": false,
+    "road_conditions": "Main highways (Pan-American, Central Highway) are paved. Mountain roads narrow and winding with sheer drops. Amazon roads often unpaved. Landslides in rainy season.",
+    "four_x_four_needed_regions": ["Amazon jungle roads", "Remote highland passes", "Choquequirao access"],
+    "ride_hailing_apps": ["InDriver", "Cabify", "Beat"],
+    "taxi_safety_notes": "NEVER use unlicensed street taxis in Lima — express kidnapping risk. Use InDriver, Cabify, or Beat. In Cusco, use registered taxis or hotel-arranged transport.",
+    "ferry_routes": ["Puno to Bolivian islands on Lake Titicaca", "Iquitos river boats to Amazon lodges"],
+    "border_crossing_notes": "Main crossings: Desaguadero/Yunguyo (Bolivia via Titicaca), Aguas Verdes-Huaquillas (Ecuador), La Balsa (Ecuador via Jaén). Bring passport and proof of onward travel."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$35-50/day",
+    "daily_budget_midrange": "$70-120/day",
+    "daily_budget_comfort": "$150-300/day",
+    "hostel_avg": "$8-20/night",
+    "hotel_avg": "$40-100/night",
+    "meal_avg": "$3-10 (menú del día $3-5, restaurant $10-20)",
+    "coffee_avg": "$1-3",
+    "beer_avg": "$2-4",
+    "local_transport_avg": "$0.50-1.50 (combi/colectivo)",
+    "sim_card_avg": "$5-10 for 3-5GB",
+    "coworking_day_pass_avg": "$10-20",
+    "surfboard_rental_avg": "$10-15/day",
+    "value_for_money": "Excellent — affordable food, accommodation, and transport. Machu Picchu and Inca Trail permits are the main big-ticket items."
+  },
+  "connectivity": {
+    "sim_card_providers": ["Claro", "Movistar", "Entel", "Bitel"],
+    "esim_available": true,
+    "mobile_data_quality": "Good 4G in Lima, Cusco, Arequipa, and major cities. Spotty in remote highlands and Amazon. No coverage on many trekking routes.",
+    "wifi_quality": "Available in most hostels and cafes in tourist areas. Speeds variable (5-30 Mbps). Lima has best connectivity.",
+    "coworking_available": true,
+    "best_remote_work_cities": ["Lima (Miraflores, Barranco)", "Cusco", "Arequipa", "Huaraz"],
+    "power_outlet_types": ["A", "B", "C"],
+    "voltage": "220V, 60Hz",
+    "plug_adapter_needed_for_us": true,
+    "power_reliability": "Generally reliable in cities. Outages possible in rural areas. Bring power bank for trekking and Amazon."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Miraflores, Lima — safe, walkable, restaurants, ocean views",
+      "Barranco, Lima — bohemian, art galleries, nightlife",
+      "San Blas, Cusco — artsy neighborhood above Plaza de Armas",
+      "Plaza de Armas, Cusco — central, walkable to everything",
+      "Ollantaytambo — Sacred Valley base, quieter than Cusco",
+      "Máncora — northern beach/surf town"
+    ],
+    "budget_areas": ["Lima Centro", "Cusco (outside historic center)", "Huaraz", "Máncora"],
+    "family_friendly_areas": ["Miraflores (Lima)", "Sacred Valley", "Cusco", "Arequipa"],
+    "nightlife_areas": ["Barranco (Lima)", "Miraflores (Lima)", "Cusco (Plaza de Armas area)", "Máncora"],
+    "surf_towns": ["Máncora", "Huanchaco", "Punta Hermosa", "Lobitos", "Puerto Chicama"],
+    "eco_lodges_available": true,
+    "peak_booking_season": "June-August (dry season, trekking); Inca Trail permits sell out months in advance",
+    "accommodation_notes": "Book Inca Trail permits 6+ months in advance. Machu Picchu area hotels in Aguas Calientes are overpriced. Sacred Valley is a better base."
+  },
+  "culture": {
+    "local_customs": [
+      "Greet with a single kiss on the right cheek (women) or handshake (men)",
+      "Family is central to social life",
+      "Respect for Andean traditions — Pachamama (Mother Earth) is revered",
+      "Coca leaf chewing is traditional and legal — do not confuse with cocaine"
+    ],
+    "dress_expectations": "Casual but conservative in highlands. Cover shoulders in churches. Layers essential in mountains. Beachwear only at the beach.",
+    "religious_sensitivity": "Predominantly Catholic with strong Andean syncretism. Religious festivals blend Catholic saints with Inca traditions. Respect processions.",
+    "social_norms": [
+      "Punctuality is relaxed — 15-30 minutes late is culturally normal",
+      "Bargaining expected at markets, not in shops or restaurants",
+      "Always greet people when entering a small shop or room",
+      "Refusing food or drink can be seen as rude"
+    ],
+    "greeting_style": "Warm — cheek kiss for women, handshake for men. Use 'Buenos días/tardes/noches'. In Andes, 'Allillanchu' (Quechua hello).",
+    "public_behavior_notes": "PDA acceptable in moderation. Don't point at people. Blowing your nose loudly at the table is considered rude.",
+    "photography_etiquette": "Ask permission before photographing indigenous people or traditional ceremonies. Some may request a small tip (S/1-2). No photos at sacred sites without permission.",
+    "bargaining_expected": true,
+    "important_holidays": [
+      "Inti Raymi (June 24) — Festival of the Sun in Cusco, largest Andean celebration",
+      "Señor de los Milagros (October) — massive purple-robed procession in Lima",
+      "Semana Santa (Easter) — major celebrations in Ayacucho",
+      "Fiestas Patrias (July 28-29) — Independence Day, nationwide celebrations",
+      "Carnaval (February) — water fights, parades (Cajamarca is biggest)"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Must carry passport or copy at all times",
+      "Coca leaves cannot be taken out of Peru",
+      "Inca Trail requires permit booked months in advance — no walk-ups",
+      "Drone permits required in archaeological sites and national parks"
+    ]
+  },
+  "food": {
+    "signature_dishes": [
+      "Ceviche — citrus-marinated fresh fish with red onion, chili, and sweet potato. UNESCO Intangible Heritage.",
+      "Lomo saltado — stir-fried beef with onions, tomatoes, and fries. Chinese-Peruvian (chifa) fusion.",
+      "Ají de gallina — creamy shredded chicken in yellow pepper and walnut sauce",
+      "Causa rellena — layered cold mashed potato with avocado, chicken or tuna",
+      "Anticuchos — grilled beef heart skewers, popular street food",
+      "Rocoto relleno — stuffed spicy pepper, Arequipa specialty",
+      "Tiradito — sashimi-style ceviche with Nikkei (Japanese-Peruvian) influence",
+      "Pachamanca — underground earth oven with meats and potatoes, Andean tradition",
+      "Sopa a la criolla — spiced noodle soup with beef and egg"
+    ],
+    "street_food_safety": "Generally safe at busy stalls. Lima has world-class street food culture. Exercise caution with ceviche from unrefrigerated vendors.",
+    "vegetarian_friendliness": "Moderate — quinoa, potatoes (3,000 native varieties), and beans available everywhere. Dedicated vegetarian restaurants in Lima and Cusco. Many soups contain meat stock.",
+    "vegan_friendliness": "Challenging outside Lima and Cusco. Growing vegan scene in Miraflores and Barranco.",
+    "must_try_drinks": [
+      "Pisco Sour — national cocktail, egg white, lime, Angostura bitters",
+      "Chicha morada — purple corn drink with pineapple, cinnamon, cloves",
+      "Inca Kola — bright yellow soda, tastes like bubblegum/cream soda",
+      "Chicha de jora — fermented corn beer, Andean tradition",
+      "Emoliente — warm herbal drink sold on street corners",
+      "Mate de coca — coca leaf tea, helps with altitude sickness"
+    ],
+    "regional_specialties": [
+      "Lima: ceviche, Nikkei (Japanese-Peruvian), chifa (Chinese-Peruvian), anticuchos",
+      "Andes: pachamanca, cuy (guinea pig), trucha (trout), rocoto relleno",
+      "Amazon: juane (rice and chicken in bijao leaf), tacacho (smoked plantain), paiche fish",
+      "Arequipa: rocoto relleno, chupe de camarones (shrimp chowder), adobo"
+    ],
+    "drinking_water_notes": "Never drink tap water. Bottled water available everywhere (S/1-3). Verify ice is from purified water. Mate de coca is safe.",
+    "alcohol_rules": "Legal drinking age 18. No open container laws but public drunkenness can be fined. Pisco is the national spirit — do not call it Chilean."
+  },
+  "outdoors": {
+    "top_national_parks": [
+      "Manu National Park — UNESCO biosphere, Amazon biodiversity, jaguars and 1,000+ bird species",
+      "Huascarán National Park — Cordillera Blanca, Peru's highest peak (6,768m), world-class trekking",
+      "Paracas National Reserve — coastal desert, Ballestas Islands wildlife, sea lions and seabirds",
+      "Tambopata National Reserve — Amazon rainforest, macaw clay licks, giant otters",
+      "Colca Canyon — twice as deep as Grand Canyon, Andean condor viewing"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Rainbow Mountain (Vinicunca)",
+        "difficulty": "Moderate",
+        "duration": "1 day (5-6 hours hiking)",
+        "region": "Cusco",
+        "description": "Colorful striped mountain at 5,200m. Iconic Instagram destination. Vicuña and alpaca along the trail. Extremely high altitude.",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "elevation_m": 5200,
+        "notes": "Start from Cusipata (3 hours from Cusco). Acclimatize several days in Cusco first. Horse rentals available for struggling hikers. Arrive early to avoid crowds."
+      },
+      {
+        "name": "Colca Canyon Trek",
+        "difficulty": "Moderate",
+        "duration": "2-3 days",
+        "region": "Arequipa",
+        "description": "Trek into one of the world's deepest canyons. Condor viewing at Cruz del Cóndor. Hot springs at Sangalle oasis. Terraced agriculture.",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "elevation_m": 3400,
+        "notes": "Can be done as 1-day condor viewing or 2-3 day trek to oasis. The climb back up is strenuous (1,200m elevation gain). Start early."
+      },
+      {
+        "name": "Machu Picchu from Aguas Calientes",
+        "difficulty": "Moderate",
+        "duration": "1 day",
+        "region": "Cusco",
+        "description": "Hike up from Aguas Calientes to Machu Picchu (1.5 hours), explore the citadel, optionally summit Huayna Picchu or Machu Picchu Mountain for panoramic views.",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "elevation_m": 2430,
+        "notes": "Entry tickets must be purchased in advance. Huayna Picchu limited to 400/day — book early. Bus alternative available ($24 round trip)."
+      },
+      {
+        "name": "Gocta Waterfall Hike",
+        "difficulty": "Moderate",
+        "duration": "1 day (5-6 hours)",
+        "region": "Amazonas (Chachapoyas)",
+        "description": "Hike through cloud forest to one of the world's tallest waterfalls (771m, two-tier). Cock-of-the-rock and torrent duck sightings.",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "elevation_m": 2531,
+        "notes": "Two trails — upper and lower falls. Guide required. Off the beaten path — few tourists. Combine with Kuélap fortress visit."
+      },
+      {
+        "name": "Pastoruri Glacier Trek",
+        "difficulty": "Easy",
+        "duration": "1 day (2-3 hours hiking)",
+        "region": "Ancash (Huaraz)",
+        "description": "Walk to a receding tropical glacier at 5,240m. Puya Raimondi plants (world's largest bromeliad) en route. Easy but high altitude.",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "elevation_m": 5240,
+        "notes": "Part of Huascarán National Park. Glacier has receded significantly. Altitude is the main challenge — acclimatize in Huaraz first."
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Inca Trail to Machu Picchu",
+        "difficulty": "Hard",
+        "duration": "4 days",
+        "region": "Cusco",
+        "description": "The classic trek to Machu Picchu through cloud forest and Inca ruins. Dead Woman's Pass at 4,215m. Arrives at Sun Gate at sunrise on day 4.",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "elevation_m": 4215,
+        "notes": "Permit required — book 6+ months in advance. Limited to 500 people/day (200 trekkers + 300 porters/guides). Closed in February for maintenance. Licensed operator required."
+      },
+      {
+        "name": "Salkantay Trek",
+        "difficulty": "Hard",
+        "duration": "5 days",
+        "region": "Cusco",
+        "description": "Alternative to Inca Trail passing below the sacred Salkantay peak (6,271m). Diverse ecosystems from glacial to tropical. Arrives at Machu Picchu.",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "elevation_m": 4600,
+        "notes": "No permit required but book with reputable operator. More challenging than Inca Trail. Salkantay Pass at 4,600m. Can be done independently."
+      },
+      {
+        "name": "Huayhuash Circuit",
+        "difficulty": "Very Hard",
+        "duration": "9-12 days",
+        "region": "Ancash / Huánuco",
+        "description": "One of the world's greatest mountain treks. Circles the Cordillera Huayhuash with turquoise lakes, 6,000m+ peaks, and extreme isolation. Six passes above 4,500m.",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "elevation_m": 5450,
+        "notes": "Self-supported or guided. Very remote — nearest hospital is Huaraz. Community fees at checkpoints. Altitude and weather are serious challenges."
+      },
+      {
+        "name": "Santa Cruz Trek",
+        "difficulty": "Hard",
+        "duration": "4 days",
+        "region": "Ancash (Cordillera Blanca)",
+        "description": "Classic Cordillera Blanca trek through Huascarán National Park. Punta Unión pass at 4,750m with views of Alpamayo. Turquoise glacial lakes.",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "elevation_m": 4750,
+        "notes": "Start from Vaquería or Cashapampa (near Huaraz). Can be done independently with donkey support. Park entry fee required."
+      },
+      {
+        "name": "Ausangate Circuit",
+        "difficulty": "Hard",
+        "duration": "5-7 days",
+        "region": "Cusco",
+        "description": "Trek around the sacred Ausangate peak (6,384m). Rainbow-colored mountains, hot springs, herds of alpaca and vicuña. Includes Rainbow Mountain.",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "elevation_m": 5200,
+        "notes": "Very high altitude — multiple passes above 5,000m. Teahouse/lodge-to-lodge option available. Remote with limited rescue options."
+      },
+      {
+        "name": "Choquequirao Trek",
+        "difficulty": "Hard",
+        "duration": "4-5 days",
+        "region": "Cusco / Apurímac",
+        "description": "Trek to the 'other Machu Picchu' — a massive Inca ruin site with only a fraction of the visitors. Steep descent into Apurímac canyon and brutal climb back.",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "elevation_m": 3085,
+        "notes": "Round trip from Cachora. No permit needed. Very few tourists. Cable car under construction may change access. Strenuous — 1,500m elevation gain/loss each way."
+      },
+      {
+        "name": "Lares Trek",
+        "difficulty": "Moderate",
+        "duration": "3 days",
+        "region": "Cusco",
+        "description": "Cultural trek through Andean villages with hot springs, weaving communities, and mountain passes. Alternative route to Machu Picchu via Sacred Valley.",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "elevation_m": 4400,
+        "notes": "Less crowded than Inca Trail. Ends in Ollantaytambo with train to Aguas Calientes. Good interaction with local communities."
+      }
+    ],
+    "volcanoes": [
+      "Misti (5,822m) — iconic cone overlooking Arequipa, climbable in 2 days",
+      "Ubinas (5,672m) — Peru's most active volcano",
+      "Chachani (6,057m) — non-technical 6,000er near Arequipa"
+    ],
+    "waterfalls": [
+      "Gocta Falls (771m) — one of world's tallest, Chachapoyas",
+      "Yumbilla Falls (896m) — tallest in Peru, near Chachapoyas",
+      "Catarata de Perolniyoc — Sacred Valley, Inca ruins nearby"
+    ],
+    "hot_springs": [
+      "Aguas Calientes hot springs — at base of Machu Picchu",
+      "Lares hot springs — on Lares Trek route",
+      "La Calera hot springs — near Chivay, Colca Canyon",
+      "Churín hot springs — Lima highlands"
+    ],
+    "lakes": [
+      "Lake Titicaca — world's highest navigable lake (3,812m), Uros floating islands",
+      "Lake 69 — turquoise glacial lake in Cordillera Blanca",
+      "Llanganuco Lakes — twin turquoise lakes below Huascarán",
+      "Humantay Lake — turquoise glacial lake on Salkantay route"
+    ],
+    "rivers": [
+      "Amazon River — originates in Peru (Apurímac River source)",
+      "Urubamba River — Sacred Valley, whitewater rafting",
+      "Tambopata River — Amazon wildlife viewing",
+      "Colca River — running through Colca Canyon"
+    ],
+    "wildlife": [
+      "Andean condor (Colca Canyon — best viewing in world)",
+      "Jaguar (Manu, Tambopata)",
+      "Spectacled bear (cloud forest)",
+      "Giant otter (Amazon)",
+      "Vicuña (highland páramo)",
+      "Humboldt penguin (Ballestas Islands)",
+      "Sea lion (Paracas, Ballestas)",
+      "Cock-of-the-rock (cloud forest — national bird)",
+      "Harpy eagle (Amazon)",
+      "Pink river dolphin (Amazon)",
+      "Macaw (Tambopata clay licks)"
+    ],
+    "birdwatching_hotspots": [
+      "Manu National Park — 1,000+ bird species, one of highest counts anywhere",
+      "Tambopata — macaw clay licks at dawn",
+      "Abra Patricia — long-whiskered owlet (endemic, critically endangered)",
+      "Huembo Lodge — marvelous spatuletail hummingbird",
+      "Machu Picchu — Inca wren, Andean cock-of-the-rock"
+    ],
+    "stargazing_spots": [
+      "Colca Canyon — high altitude, minimal light pollution",
+      "Cusco highlands — clear skies at 4,000m+",
+      "Huacachina oasis — desert skies"
+    ],
+    "scenic_drives": [
+      "Sacred Valley — Cusco to Ollantaytambo through Inca heartland",
+      "Cusco to Puno — high plateau drive past La Raya pass (4,335m)",
+      "Nazca to Arequipa — desert and mountain transitions",
+      "Huaraz to Yungay — Cordillera Blanca views"
+    ],
+    "surf_spots": [
+      {
+        "name": "Máncora",
+        "region": "Piura (Northern Coast)",
+        "wave_type": "Left point break",
+        "difficulty": "Beginner to Intermediate",
+        "best_months": ["October", "November", "December", "January", "February", "March"],
+        "description": "Peru's most popular beach town. Warm water year-round (no wetsuit needed). Consistent left point break with long rides. Party atmosphere.",
+        "notes": "Crowded during holidays. Board rentals and lessons everywhere. Also kitesurfing and whale watching (Aug-Oct). 18-hour bus from Lima."
+      },
+      {
+        "name": "Huanchaco",
+        "region": "La Libertad (Trujillo)",
+        "wave_type": "Beach break and point break",
+        "difficulty": "Beginner to Intermediate",
+        "best_months": ["March", "April", "May", "June", "July", "August", "September"],
+        "description": "Historic fishing village famous for caballitos de totora (reed boats). Consistent waves. Rich archaeological sites nearby (Chan Chan, Huacas del Sol y Luna).",
+        "notes": "Cooler water — wetsuit needed. UNESCO-recognized reed boat fishing tradition. Combine with archaeological tourism."
+      },
+      {
+        "name": "Punta Hermosa",
+        "region": "Lima",
+        "wave_type": "Reef break and beach break",
+        "difficulty": "Intermediate to Advanced",
+        "best_months": ["April", "May", "June", "July", "August", "September", "October"],
+        "description": "Lima's premier surf destination, 40km south of the city. Multiple breaks for different levels. Hosts international competitions.",
+        "notes": "Cold water — full wetsuit required. Weekend crowds from Lima. Strong currents. Several breaks including Playa Norte and Caballeros."
+      },
+      {
+        "name": "Cerro Azul",
+        "region": "Lima (Cañete)",
+        "wave_type": "Left point break",
+        "difficulty": "Intermediate",
+        "best_months": ["April", "May", "June", "July", "August", "September"],
+        "description": "Fishing village 130km south of Lima with a reliable left point break. Long rides possible. Less crowded than Punta Hermosa.",
+        "notes": "Cold water — wetsuit needed. Good seafood restaurants. More mellow vibe than other Lima-area breaks."
+      },
+      {
+        "name": "Puerto Chicama",
+        "region": "La Libertad",
+        "wave_type": "Left point break",
+        "difficulty": "Intermediate to Advanced",
+        "best_months": ["March", "April", "May", "June", "July", "August", "September"],
+        "description": "Home to the longest left-hand wave in the world — rides up to 2km+ on perfect days. Legendary surf destination. Cold water, consistent swell.",
+        "notes": "2-hour drive from Trujillo. The wave needs a solid south swell to fully connect. Full wetsuit required. Limited infrastructure in town."
+      },
+      {
+        "name": "La Herradura",
+        "region": "Lima (Chorrillos)",
+        "wave_type": "Left reef break",
+        "difficulty": "Advanced",
+        "best_months": ["May", "June", "July", "August"],
+        "description": "Heavy left reef break in Lima. Powerful, hollow waves breaking over rock reef. For experienced surfers only. Spectators watch from the cliff.",
+        "notes": "Dangerous — sharp reef, strong currents, localism. Only surf here if experienced. Access from Chorrillos."
+      },
+      {
+        "name": "Pico Alto",
+        "region": "Lima (Punta Hermosa)",
+        "wave_type": "Big wave reef break",
+        "difficulty": "Expert only",
+        "best_months": ["May", "June", "July", "August"],
+        "description": "Peru's premier big wave spot. Waves reach 8-10m+. International big wave competitions. Tow-in surfing on biggest days.",
+        "notes": "EXPERT ONLY — life-threatening conditions. Watch from shore unless you are an experienced big wave surfer. Jet ski support recommended."
+      },
+      {
+        "name": "Lobitos",
+        "region": "Piura (Northern Coast)",
+        "wave_type": "Left point break",
+        "difficulty": "Intermediate to Advanced",
+        "best_months": ["October", "November", "December", "January", "February", "March"],
+        "description": "Remote former oil town with world-class left point breaks. Uncrowded, consistent, warm water. Growing surf community and eco-lodges.",
+        "notes": "Remote — limited infrastructure but improving. Warm water, no wetsuit needed. Multiple breaks. 1 hour south of Máncora."
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Amazon Basin — Madre de Dios",
+        "region": "Madre de Dios",
+        "key_species": ["Jaguar", "Giant otter", "Harpy eagle", "Macaw", "Caiman", "Capybara", "Tapir", "Pink river dolphin"],
+        "best_months": ["May", "June", "July", "August", "September"],
+        "notes": "Puerto Maldonado is gateway. Tambopata and Manu lodges offer 3-7 day stays. Macaw clay lick at Tambopata is world-famous."
+      },
+      {
+        "name": "Paracas National Reserve",
+        "region": "Ica",
+        "key_species": ["Humboldt penguin", "South American sea lion", "Peruvian booby", "Chilean flamingo", "Inca tern", "Bottlenose dolphin"],
+        "best_months": ["Year-round; June-November for best marine life"],
+        "notes": "Ballestas Islands boat tour ('Poor Man's Galápagos'). Combine with Nazca Lines and Huacachina sand dunes. 4 hours from Lima."
+      },
+      {
+        "name": "Manu National Park",
+        "region": "Madre de Dios / Cusco",
+        "key_species": ["Jaguar", "Giant otter", "Harpy eagle", "1,000+ bird species", "13 monkey species", "Giant river otter", "Spectacled bear"],
+        "best_months": ["May", "June", "July", "August", "September"],
+        "notes": "UNESCO World Heritage and Biosphere Reserve. One of most biodiverse places on Earth. Restricted access — must visit with licensed operator. Multi-day trips only."
+      },
+      {
+        "name": "Tambopata National Reserve",
+        "region": "Madre de Dios",
+        "key_species": ["Macaw (clay licks)", "Giant otter", "Caiman", "Jaguar", "Capybara", "Anaconda", "Harpy eagle"],
+        "best_months": ["May", "June", "July", "August", "September"],
+        "notes": "More accessible than Manu. Multiple lodge options. Macaw clay lick (collpa) at dawn is unmissable. 30-minute boat ride from Puerto Maldonado."
+      },
+      {
+        "name": "Colca Canyon",
+        "region": "Arequipa",
+        "key_species": ["Andean condor", "Viscacha", "Andean fox", "Hummingbirds", "Ibis"],
+        "best_months": ["Year-round; May-September for clearest skies and best condor viewing"],
+        "notes": "Cruz del Cóndor viewpoint is best place in the world to see condors up close. Early morning (6-9am) for condor thermals. Twice as deep as Grand Canyon."
+      },
+      {
+        "name": "Ballestas Islands",
+        "region": "Ica (off Paracas)",
+        "key_species": ["Humboldt penguin", "South American sea lion", "Peruvian booby", "Guanay cormorant", "Inca tern", "Fur seal"],
+        "best_months": ["Year-round"],
+        "notes": "Boat tour from Paracas ($15-20). Cannot land on islands. Morning tours best. Also see the Candelabra geoglyph. 'Poor Man's Galápagos'."
+      }
+    ]
+  },
+  "sports_and_activities": [
+    {
+      "name": "Surfing",
+      "popularity": "High",
+      "best_regions": ["Máncora", "Huanchaco", "Punta Hermosa", "Puerto Chicama", "Lobitos"],
+      "best_months": ["Year-round — northern coast best Oct-Mar, southern coast best Apr-Oct"],
+      "skill_levels": ["Beginner", "Intermediate", "Advanced", "Expert (Pico Alto)"],
+      "notes": "Peru has excellent surf year-round. Northern coast warm (no wetsuit), southern coast cold (full wetsuit). Puerto Chicama has world's longest left."
+    },
+    {
+      "name": "Mountaineering",
+      "popularity": "High",
+      "best_regions": ["Cordillera Blanca (Huaraz)", "Cordillera Huayhuash", "Arequipa (Misti, Chachani)"],
+      "best_months": ["May", "June", "July", "August", "September"],
+      "skill_levels": ["Intermediate", "Advanced", "Expert"],
+      "notes": "Huascarán (6,768m) is Peru's highest. Chachani (6,057m) is a non-technical 6,000er. Acclimatization essential. Hire licensed guides."
+    },
+    {
+      "name": "Trekking",
+      "popularity": "World-class",
+      "best_regions": ["Cusco (Inca Trail, Salkantay)", "Cordillera Blanca", "Cordillera Huayhuash", "Colca Canyon"],
+      "best_months": ["May", "June", "July", "August", "September"],
+      "skill_levels": ["Beginner", "Intermediate", "Advanced", "Expert"],
+      "notes": "Peru is one of the world's top trekking destinations. Inca Trail requires advance booking. Huayhuash Circuit is world-class. Altitude is the main challenge."
+    },
+    {
+      "name": "Sandboarding",
+      "popularity": "Moderate",
+      "best_regions": ["Huacachina (Ica)"],
+      "best_months": ["Year-round"],
+      "skill_levels": ["Beginner", "Intermediate"],
+      "notes": "Huacachina oasis has massive sand dunes. Combine with dune buggy tours. $20-30 for buggy + sandboarding combo. Best at sunset."
+    },
+    {
+      "name": "Paragliding",
+      "popularity": "Moderate",
+      "best_regions": ["Miraflores cliffs (Lima)", "Cusco"],
+      "best_months": ["Year-round in Lima; May-September in Cusco"],
+      "skill_levels": ["Beginner (tandem)", "Advanced"],
+      "notes": "Lima's Miraflores cliffs are iconic — tandem flights over the ocean and city ($70-90). Stunning at sunset."
+    },
+    {
+      "name": "Whitewater Rafting",
+      "popularity": "Moderate",
+      "best_regions": ["Urubamba River (Sacred Valley)", "Apurímac River", "Cotahuasi River"],
+      "best_months": ["May", "June", "July", "August", "September", "October"],
+      "skill_levels": ["Beginner", "Intermediate", "Advanced", "Expert"],
+      "notes": "Urubamba is Class II-III (Sacred Valley day trip). Apurímac is Class IV-V (multi-day). Cotahuasi is world-class Class V."
+    },
+    {
+      "name": "Birdwatching",
+      "popularity": "High",
+      "best_regions": ["Manu NP", "Tambopata", "Abra Patricia", "Machu Picchu"],
+      "best_months": ["Year-round; May-September best in Amazon"],
+      "skill_levels": ["Beginner", "Intermediate", "Expert"],
+      "notes": "Peru has 1,800+ bird species — third highest in the world. Manu alone has 1,000+ species. Tambopata macaw clay lick is iconic."
+    }
+  ],
+  "trip_styles": {
+    "good_for_backpacking": true,
+    "good_for_luxury": true,
+    "good_for_families": true,
+    "good_for_couples": true,
+    "good_for_solo_travel": true,
+    "good_for_digital_nomads": true,
+    "good_for_adventure_travel": true,
+    "good_for_food_travel": true,
+    "good_for_road_trips": false,
+    "good_for_short_trips": false,
+    "good_for_long_stays": true
+  },
+  "destinations": {
+    "top_cities": ["Lima", "Cusco", "Arequipa", "Huaraz", "Trujillo"],
+    "top_towns": ["Ollantaytambo", "Aguas Calientes", "Máncora", "Huacachina", "Chachapoyas", "Puno"],
+    "top_regions": ["Sacred Valley", "Cordillera Blanca", "Amazon Basin", "Colca Canyon", "Lake Titicaca"],
+    "top_islands": ["Uros Floating Islands (Titicaca)", "Taquile Island (Titicaca)", "Amantaní Island (Titicaca)", "Ballestas Islands"],
+    "sample_itineraries": {
+      "one_week": "Lima (2 days) → Cusco (2 days acclimatize) → Sacred Valley (1 day) → Machu Picchu (1 day) → Lima (1 day)",
+      "two_week": "Lima (2 days) → Cusco (2 days) → Sacred Valley + Machu Picchu (3 days) → Puno/Lake Titicaca (2 days) → Arequipa (2 days) → Colca Canyon (2 days) → Lima (1 day)",
+      "classic_route": "Lima → Cusco → Sacred Valley → Machu Picchu → Lake Titicaca → Arequipa",
+      "offbeat_route": "Lima → Huaraz (Santa Cruz Trek) → Chachapoyas (Kuélap, Gocta) → Tarapoto → Iquitos (Amazon)"
+    }
+  },
+  "practical_info": {
+    "arrival_tips": "Lima airport (LIM) has authorized taxi counters in arrivals — use Green Taxi or Airport Express bus to Miraflores. Do not accept rides from strangers. ATMs in arrivals hall.",
+    "airport_scam_notes": "Unlicensed taxi drivers approach aggressively in arrivals. Only use official airport taxi counter or pre-booked transfers. Express kidnapping risk with unlicensed taxis.",
+    "local_sim_where_to_buy": "Claro, Movistar, or Entel SIM cards at airport kiosks or city shops. Bring passport. $5-10 for data plan. Claro has best coverage.",
+    "money_exchange_notes": "Exchange at banks or licensed casas de cambio. Street money changers exist but risk counterfeit bills. ATMs give best rate — use BCP or BBVA. Carry small bills.",
+    "language_helpful_phrases": {
+      "hello": "Hola",
+      "thank_you": "Gracias",
+      "how_much": "¿Cuánto cuesta?",
+      "where_is": "¿Dónde está...?",
+      "i_dont_speak_spanish": "No hablo español",
+      "the_bill_please": "La cuenta, por favor",
+      "help": "¡Ayuda!",
+      "cheers": "¡Salud!",
+      "altitude_sickness": "Mal de altura / Soroche",
+      "mate_de_coca_please": "Un mate de coca, por favor"
+    },
+    "offline_maps_recommended": ["Maps.me", "Google Maps (offline)"],
+    "apps_useful_locally": ["InDriver (ride-hailing)", "Cabify (ride-hailing)", "Beat (ride-hailing)", "WhatsApp (essential)", "PeruRail app (train bookings)", "Maps.me (offline maps)"]
+  },
+  "laws": {
+    "drug_laws_strictness": "Very strict — possession of any amount of cocaine or marijuana above small personal use threshold carries severe prison sentences. Peru is a transit country — do not accept packages from strangers.",
+    "alcohol_laws": "Legal age 18. No open container enforcement generally but public drunkenness can cause issues. Ley seca during elections.",
+    "drone_rules": "Registration required. Prohibited over archaeological sites (Machu Picchu, Nazca, etc.) and in national parks without special permit. Altitude limit 120m.",
+    "wild_camping_rules": "Generally permitted in rural areas. Not allowed in archaeological sites or national parks without designated camping areas. Community fees on popular trekking routes.",
+    "protected_area_rules": "National park/reserve entry fees apply. Inca Trail strictly regulated — permits required. Manu requires licensed operator. Stay on marked trails at archaeological sites.",
+    "fishing_license_required": true,
+    "photography_restricted_sites": ["Military installations", "Some archaeological sites charge photo fees", "Interior of certain churches"],
+    "lgbtq_legal_status": "No legal recognition of same-sex relationships. No anti-discrimination protections. Varying social acceptance — Lima most tolerant.",
+    "marijuana_legality": "Small amounts (up to 8g) for personal use not prosecuted. Sale, cultivation, and transport illegal. Do not carry.",
+    "prescription_medication_rules": "Bring prescriptions in original packaging with doctor's letter. Controlled substances require additional documentation. Coca leaf products cannot be exported."
+  },
+  "family_travel": {
+    "kid_friendly": true,
+    "stroller_friendly": false,
+    "car_seat_rules": "Required for children but not consistently enforced. Bring your own for car rentals.",
+    "family_activities": [
+      "Ballestas Islands boat tour — sea lions, penguins, seabirds",
+      "Sacred Valley — Ollantaytambo ruins, weaving demonstrations, corn mazes",
+      "Huacachina — dune buggy rides and sandboarding",
+      "Cusco chocolate and coffee workshops",
+      "Lake Titicaca — visiting Uros floating islands"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Very limited — cobblestone streets in Cusco, uneven sidewalks, steep terrain. Lima (Miraflores) has some accessible infrastructure. Archaeological sites mostly inaccessible.",
+    "accessible_transport": "Lima Metropolitano BRT has some accessibility. Most intercity buses are not wheelchair accessible. Private transfers recommended.",
+    "accessible_attractions": ["Lima Malecón boardwalk (Miraflores)", "Some Lima museums", "Ballestas Islands boat tours (varies by boat)"]
+  },
+  "gear": {
+    "bring_wetsuit": true,
+    "bring_hiking_boots": true,
+    "bring_layers": true,
+    "bring_bug_spray": true,
+    "bring_sunscreen": true,
+    "cold_weather_gear_needed": true,
+    "rental_gear_easy_to_find": true,
+    "outdoor_gear_shops": [
+      "Tatoo Adventure Gear (Lima, Cusco, Huaraz)",
+      "The North Face (Lima, Cusco)",
+      "Cordillera Blanca gear rental shops (Huaraz)"
+    ]
+  }
+}
