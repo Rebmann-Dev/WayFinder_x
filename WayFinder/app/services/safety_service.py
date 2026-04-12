@@ -175,13 +175,18 @@ class SafetyService:
         return None
 
     def _score_to_band(self, score: float) -> str:
-        if score >= 75:
-            return "Low"
-        if score >= 55:
-            return "Moderate"
-        if score >= 35:
-            return "High"
-        return "Very high"
+        """Map a 0-100 safety score to a risk band.  Lower score = more dangerous."""
+        if score is None:
+            return "unknown"
+        if score >= 86:
+            return "very low"
+        if score >= 66:
+            return "low"
+        if score >= 46:
+            return "moderate"
+        if score >= 26:
+            return "high"
+        return "very high"
 
     def _clean_optional_str(self, v: Any) -> str | None:
         if v is None:
