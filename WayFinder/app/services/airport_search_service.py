@@ -21,9 +21,16 @@ def _default_csv_path() -> Path:
     env = os.getenv("AIRPORTS_CSV")
     if env:
         return Path(env)
-    # WayFinder/app/services -> parents[2] = WayFinder
-    wayfinder_root = Path(__file__).resolve().parents[2]
-    return wayfinder_root.parent / "ScraperAPI" / "flights" / "data" / "airports.csv"
+    # Primary: WayFinder/app/data/airports.csv (lives inside the repo)
+    # Path(__file__) = WayFinder/app/services/airport_search_service.py
+    # parents[0] = services/, parents[1] = app/, parents[2] = WayFinder/
+    here = Path(__file__).resolve()
+    candidate = here.parents[1] / "data" / "airports.csv"
+    if candidate.is_file():
+        return candidate
+    # Fallback: legacy ScraperAPI location (older local setups)
+    wayfinder_root = here.parents[2]
+    return wayfinder_root.parent / "ScraperAPI" / "ScraperAPI-main" / "flights" / "data" / "airports.csv"
 
 
 @lru_cache(maxsize=1)
