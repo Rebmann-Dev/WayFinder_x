@@ -176,12 +176,12 @@ class SafetyService:
 
     def _score_to_band(self, score: float) -> str:
         if score >= 75:
-            return "Low Risk"
+            return "Low"
         if score >= 55:
-            return "Moderate Risk"
+            return "Moderate"
         if score >= 35:
-            return "High Risk"
-        return "Very High Risk"
+            return "High"
+        return "Very high"
 
     def _clean_optional_str(self, v: Any) -> str | None:
         if v is None:

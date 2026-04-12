@@ -3,12 +3,10 @@ import logging
 import re
 from typing import Any
 
+import streamlit as st
+
 from services.airport_search_service import search_airports
 from services.flight_api import FlightAPIService
-
-"""
-added below for safety function
-"""
 from services.safety_service import SafetyService
 
 
@@ -191,17 +189,22 @@ class ToolExecutor:
             )
 
         if name == "get_safety_assessment":
-            latitude = arguments.get("latitude")
-            longitude = arguments.get("longitude")
-            country = arguments.get("country")
-            location_name = arguments.get("location_name")
+            # Re-use the sidebar-computed safety result when available
+            cached = st.session_state.get("safety_result")
+            if cached and cached.get("success"):
+                result = dict(cached)
+            else:
+                latitude = arguments.get("latitude")
+                longitude = arguments.get("longitude")
+                country = arguments.get("country")
+                location_name = arguments.get("location_name")
 
-            result = self._safety.assess_location(
-                latitude=latitude,
-                longitude=longitude,
-                country=str(country).strip() if country else None,
-                location_name=str(location_name).strip() if location_name else None,
-            )
+                result = self._safety.assess_location(
+                    latitude=latitude,
+                    longitude=longitude,
+                    country=str(country).strip() if country else None,
+                    location_name=str(location_name).strip() if location_name else None,
+                )
 
             if not result.get("success"):
                 return json.dumps(result)
@@ -209,7 +212,7 @@ class ToolExecutor:
             result["instruction"] = (
                 "Present the predicted safety score clearly and briefly. "
                 "Explain that this is a model-based travel safety estimate, not an official crime report. "
-                "Mention the risk band and keep the guidance practical."
+                "Mention the risk level and keep the guidance practical."
             )
             return json.dumps(result)
 

@@ -7,17 +7,20 @@ _FLIGHT_INTENT_RE = re.compile(
     r"""
     \b(
         flight|flights|fly|flying|airfare|ticket|tickets|
-        search|find|look\s*up|show\s*me|get\s*me|book|
-        depart|departure|leave|leaving|travel|trip
+        search\s+flights|find\s+flights|look\s*up\s+flights|
+        show\s*me\s+flights|get\s*me\s+flights|book\s+flights|
+        depart|departure
     )\b
     """,
     re.IGNORECASE | re.VERBOSE,
 )
 
 _NON_FLIGHT_RE = re.compile(
-    r"\b(tell\s*me\s*about|what\s*is|what's|describe|info|information|"
-    r"weather|hotel|hotels|restaurant|things\s*to\s*do|attraction|"
-    r"safe|safety|visa|currency|culture|language|timezone)\b",
+    r"\b(tell\s*me\s*about|what\s*is|what's|what\s*are|describe|info|information|"
+    r"weather|hotel|hotels|restaurant|things\s*to\s*do|attractions?|"
+    r"safe|safety|visa|currency|culture|language|timezone|"
+    r"hike|hikes|hiking|wildlife|food|cuisine|tips|history|"
+    r"activities|sights?|explore|nightlife)\b",
     re.IGNORECASE,
 )
 
@@ -40,7 +43,7 @@ def is_flight_search_intent(messages: list[dict[str, Any]]) -> bool:
     """
     Returns True only if the most recent real user message is asking
     for a flight search. Prevents pre-resolution firing on general
-    travel questions like 'tell me about LA'.
+    travel questions like 'tell me about LA' or 'tell me about hikes'.
     """
     from agents.utils.thread import latest_user_message
 
@@ -48,10 +51,15 @@ def is_flight_search_intent(messages: list[dict[str, Any]]) -> bool:
     if not latest:
         return False
 
-    if _NON_FLIGHT_RE.search(latest) and not _FLIGHT_INTENT_RE.search(latest):
-        return False
+    has_flight = bool(_FLIGHT_INTENT_RE.search(latest))
+    has_non_flight = bool(_NON_FLIGHT_RE.search(latest))
 
-    return bool(_FLIGHT_INTENT_RE.search(latest))
+    # If the message contains general/non-flight keywords, only treat
+    # as flight intent if there is also an explicit flight keyword
+    if has_non_flight:
+        return has_flight
+
+    return has_flight
 
 
 def is_narration(text: str) -> bool:

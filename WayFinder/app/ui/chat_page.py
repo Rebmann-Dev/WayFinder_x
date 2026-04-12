@@ -929,7 +929,7 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
 
     score = result.get("safety_score")
     band = result.get("risk_band", "—")
-    band_emoji = {"Low Risk": "🟢", "Moderate Risk": "🟡", "Elevated Risk": "🟠", "High Risk": "🔴"}.get(band, "⚪")
+    band_emoji = {"Low": "🟢", "Moderate": "🟡", "High": "🟠", "Very high": "🔴"}.get(band, "⚪")
     model_version = result.get("model_version", "—")
 
     if label:
