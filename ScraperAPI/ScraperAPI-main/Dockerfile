@@ -1,7 +1,8 @@
 # Multi-stage build: small final image, works on any platform (amd64, arm64).
 # Replaces the ARM-only omarsagoo/wayfinder:scraper-latest image.
 
-FROM golang:1.24-alpine AS builder
+FROM golang:1.26-alpine AS builder
+ENV GOTOOLCHAIN=auto
 
 WORKDIR /src
 COPY go.mod go.sum ./
