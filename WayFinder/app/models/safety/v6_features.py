@@ -381,6 +381,40 @@ class SafetyV6FeatureBuilder:
             "tourists": float(meds["tourists"]),
         }
 
+    # ---------- Geocoding ----------
+
+    _US_STATE_CODES = frozenset({
+        "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
+        "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
+        "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
+        "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
+        "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY",
+        "DC",
+    })
+
+    def geocode_place(self, location_name: str) -> "tuple[float, float, str] | None":
+        """Return (lat, lon, country) for the closest matching city name, or None."""
+        q = location_name.strip().lower()
+        if not q or "city" not in self.city_df.columns:
+            return None
+
+        city_lower = self.city_df["city"].str.strip().str.lower()
+
+        for mask in (
+            city_lower == q,
+            city_lower.str.startswith(q),
+            city_lower.str.contains(q, na=False, regex=False),
+        ):
+            if mask.any():
+                row = self.city_df[mask].iloc[0]
+                country_val = str(row["country"]) if "country" in row.index else ""
+                # Normalize US state codes → "United States" for macro feature lookup
+                if country_val.upper() in self._US_STATE_CODES:
+                    country_val = "United States"
+                return float(row["lat"]), float(row["lon"]), country_val
+
+        return None
+
     # ---------- Public API ----------
 
     def build_all_features(

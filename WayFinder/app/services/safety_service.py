@@ -189,6 +189,10 @@ class SafetyService:
         s = str(v).strip()
         return s if s else None
 
+    def geocode_place(self, location_name: str) -> "tuple[float, float, str] | None":
+        """Return (lat, lon, country) for a city/place name, or None if not found."""
+        return self._predictor.feature_builder.geocode_place(location_name)
+
     def _is_number_like(self, v: Any) -> bool:
         try:
             float(v)
