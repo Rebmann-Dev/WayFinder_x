@@ -237,6 +237,50 @@ def _render_sidebar(safety_service: SafetyService) -> None:
                 + (f" · {fields['country']}" if fields["country"] else "")
             )
 
+            # ── Destination airport confirmation ──────────────────────────────
+            dest_key = "destination_city_candidates"
+            dest_resolved_key = "destination_city_resolved"
+
+            if st.session_state.get("_last_dest_city") != display_name:
+                from services.airport_search_service import search_airports as _asearch
+                matches = _asearch(display_name, limit=5)
+                st.session_state[dest_key] = matches
+                st.session_state[dest_resolved_key] = matches[0] if len(matches) == 1 else None
+                st.session_state["_last_dest_city"] = display_name
+
+            dest_candidates = st.session_state.get(dest_key, [])
+            if not dest_candidates:
+                st.caption("⚠️ No airport found near this destination")
+            elif len(dest_candidates) == 1:
+                st.session_state[dest_resolved_key] = dest_candidates[0]
+                r = dest_candidates[0]
+                st.success(f"✈️ **{r['iata']}** · {r['name']}")
+            else:
+                dest_options = {
+                    f"{c['iata']} — {c['name']} ({c['city']})": c
+                    for c in dest_candidates
+                }
+                dest_resolved = st.session_state.get(dest_resolved_key)
+                current_dest_label = next(
+                    (
+                        lbl
+                        for lbl, c in dest_options.items()
+                        if dest_resolved and c["iata"] == dest_resolved.get("iata")
+                    ),
+                    list(dest_options.keys())[0],
+                )
+                st.caption("Which destination airport?")
+                chosen_dest_label = st.selectbox(
+                    "Destination airport",
+                    list(dest_options.keys()),
+                    index=list(dest_options.keys()).index(current_dest_label),
+                    label_visibility="collapsed",
+                    key="destination_airport_select",
+                )
+                st.session_state[dest_resolved_key] = dest_options[chosen_dest_label]
+                r = dest_options[chosen_dest_label]
+                st.success(f"✈️ **{r['iata']}** · {r['name']}")
+
             col1, col2 = st.columns(2)
 
             with col1:
