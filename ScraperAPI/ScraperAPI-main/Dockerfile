@@ -1,26 +1,23 @@
-# Golang version - Docker Hub (hub.docker.com)
-FROM golang:1.26-alpine3.23
+# Multi-stage build: small final image, works on any platform (amd64, arm64).
+# Replaces the ARM-only omarsagoo/wayfinder:scraper-latest image.
 
-# Enviornment variables
-ENV APP_NAME scraper
-ENV PORT 8080
+FROM golang:1.24-alpine AS builder
 
-# Set open file limit
-RUN ulimit -n 100000
-
-# Open system port
-EXPOSE ${PORT}
-
-# Working directory
-WORKDIR /${APP_NAME}
-
-COPY . /${APP_NAME}
-
-# Install dependecies from mod file
+WORKDIR /src
+COPY go.mod go.sum ./
 RUN go mod download
 
-# Build application
-RUN go build -o ${APP_NAME}
+COPY . .
+RUN CGO_ENABLED=0 go build -o /scraper .
 
-# Run application
-CMD ./${APP_NAME}
+# --- runtime ---
+FROM alpine:3.20
+
+RUN apk add --no-cache ca-certificates
+WORKDIR /app
+
+COPY --from=builder /scraper .
+COPY --from=builder /src/flights/data/ ./flights/data/
+
+EXPOSE 8080
+CMD ["./scraper"]
