@@ -1,0 +1,417 @@
+Rank,city,country,crime_index,safety_index,year,city_norm,country_norm
+1,Caracas, Venezuela,83.6,16.4,2023,caracas,venezuela
+2,Pretoria, South Africa,82.0,18.0,2023,pretoria,south africa
+3,Durban, South Africa,81.0,19.0,2023,durban,south africa
+4,Port Moresby, Papua New Guinea,80.7,19.3,2023,port moresby,papua new guinea
+5,Johannesburg, South Africa,80.7,19.3,2023,johannesburg,south africa
+6,San Pedro Sula, Honduras,80.5,19.5,2023,san pedro sula,honduras
+7,Kabul, Afghanistan,79.8,20.2,2023,kabul,afghanistan
+8,Rio de Janeiro, Brazil,77.6,22.4,2023,rio de janeiro,brazil
+9,Fortaleza, Brazil,77.3,22.7,2023,fortaleza,brazil
+10,Natal, Brazil,77.2,22.8,2023,natal,brazil
+11,Port Elizabeth, South Africa,76.9,23.1,2023,port elizabeth,south africa
+12,Salvador, Brazil,76.6,23.4,2023,salvador,brazil
+13,Recife, Brazil,76.4,23.6,2023,recife,brazil
+14,Port of Spain, Trinidad And Tobago,76.2,23.8,2023,port of spain,trinidad and tobago
+15,Baltimore, MD,75.5,24.5,2023,baltimore,md
+16,Rosario, Argentina,75.2,24.8,2023,rosario,argentina
+17,Alice Springs, Australia,74.8,25.2,2023,alice springs,australia
+18,Memphis, TN,74.8,25.2,2023,memphis,tn
+19,Detroit, MI,74.1,25.9,2023,detroit,mi
+20,Cape Town, South Africa,73.6,26.4,2023,cape town,south africa
+21,Porto Alegre, Brazil,72.4,27.6,2023,porto alegre,brazil
+22,Guayaquil, Ecuador,71.6,28.4,2023,guayaquil,ecuador
+23,Albuquerque, NM,71.5,28.5,2023,albuquerque,nm
+24,Tijuana, Mexico,71.4,28.6,2023,tijuana,mexico
+25,Lima, Peru,70.9,29.1,2023,lima,peru
+26,Kingston, Jamaica,70.9,29.1,2023,kingston,jamaica
+27,Saint Louis, MO,70.6,29.4,2023,saint louis,mo
+28,Sao Paulo, Brazil,70.5,29.5,2023,sao paulo,brazil
+29,Cali, Colombia,70.2,29.8,2023,cali,colombia
+30,Damascus, Syria,70.0,30.0,2023,damascus,syria
+31,Bradford, United Kingdom,69.2,30.8,2023,bradford,united kingdom
+32,Windhoek, Namibia,68.6,31.4,2023,windhoek,namibia
+33,Mexico City, Mexico,68.5,31.5,2023,mexico city,mexico
+34,San Juan, Puerto Rico,68.4,31.6,2023,san juan,puerto rico
+35,New Orleans, LA,67.6,32.4,2023,new orleans,la
+36,Rockhampton, Australia,67.6,32.4,2023,rockhampton,australia
+37,Lagos, Nigeria,67.5,32.5,2023,lagos,nigeria
+38,Oakland, CA,67.4,32.6,2023,oakland,ca
+39,Santo Domingo, Dominican Republic,67.2,32.8,2023,santo domingo,dominican republic
+40,Milwaukee, WI,67.1,32.9,2023,milwaukee,wi
+41,Campinas, Brazil,66.8,33.2,2023,campinas,brazil
+42,San Salvador, El Salvador,66.2,33.8,2023,san salvador,el salvador
+43,Chicago, IL,66.1,33.9,2023,chicago,il
+44,Bogota, Colombia,66.0,34.0,2023,bogota,colombia
+45,Manila, Philippines,65.4,34.6,2023,manila,philippines
+46,Philadelphia, PA,64.9,35.1,2023,philadelphia,pa
+47,Marseille, France,64.7,35.3,2023,marseille,france
+48,Cleveland, OH,64.0,36.0,2023,cleveland,oh
+49,Catania, Italy,63.9,36.1,2023,catania,italy
+50,Houston, TX,63.8,36.2,2023,houston,tx
+51,Guatemala City, Guatemala,63.8,36.2,2023,guatemala city,guatemala
+52,Belo Horizonte, Brazil,63.7,36.3,2023,belo horizonte,brazil
+53,Coventry, United Kingdom,63.6,36.4,2023,coventry,united kingdom
+54,Atlanta, GA,63.5,36.5,2023,atlanta,ga
+55,Buenos Aires, Argentina,63.3,36.7,2023,buenos aires,argentina
+56,Almaty, Kazakhstan,63.3,36.7,2023,almaty,kazakhstan
+57,Quezon City, Philippines,63.2,36.8,2023,quezon city,philippines
+58,Dhaka, Bangladesh,63.2,36.8,2023,dhaka,bangladesh
+59,Lethbridge, AB,63.1,36.9,2023,lethbridge,ab
+60,Kuala Lumpur, Malaysia,63.0,37.0,2023,kuala lumpur,malaysia
+61,Surrey, Canada,63.0,37.0,2023,surrey,canada
+62,Nantes, France,62.9,37.1,2023,nantes,france
+63,Guadalajara, Mexico,62.7,37.3,2023,guadalajara,mexico
+64,Male, Maldives,62.6,37.4,2023,male,maldives
+65,Birmingham, United Kingdom,62.6,37.4,2023,birmingham,united kingdom
+66,Curitiba, Brazil,62.5,37.5,2023,curitiba,brazil
+67,Tripoli, Libya,62.5,37.5,2023,tripoli,libya
+68,Anchorage, AK,62.3,37.7,2023,anchorage,ak
+69,Cairns, Australia,61.7,38.3,2023,cairns,australia
+70,Kelowna, Canada,61.7,38.3,2023,kelowna,canada
+71,Naples, Italy,61.7,38.3,2023,naples,italy
+72,Red Deer, Canada,61.6,38.4,2023,red deer,canada
+73,Quito, Ecuador,61.5,38.5,2023,quito,ecuador
+74,Cordoba, Argentina,61.2,38.8,2023,cordoba,argentina
+75,Santiago, Chile,61.2,38.8,2023,santiago,chile
+76,San Francisco, CA,61.1,38.9,2023,san francisco,ca
+77,Harare, Zimbabwe,60.6,39.4,2023,harare,zimbabwe
+78,Montpellier, France,60.5,39.5,2023,montpellier,france
+79,Darwin, Australia,60.4,39.6,2023,darwin,australia
+80,Liege, Belgium,60.4,39.6,2023,liege,belgium
+81,Sudbury, Canada,60.2,39.8,2023,sudbury,canada
+82,Ghaziabad, India,60.1,39.9,2023,ghaziabad,india
+83,Washington, DC,60.1,39.9,2023,washington,dc
+84,Nice, France,60.1,39.9,2023,nice,france
+85,Brasilia, Brazil,59.9,40.1,2023,brasilia,brazil
+86,Puebla, Mexico,59.7,40.3,2023,puebla,mexico
+87,Nairobi, Kenya,59.3,40.7,2023,nairobi,kenya
+88,Delhi, India,59.2,40.8,2023,delhi,india
+89,Indianapolis, IN,58.9,41.1,2023,indianapolis,in
+90,Sault Ste. Marie, Canada,58.9,41.1,2023,sault ste. marie,canada
+91,Baghdad, Iraq,58.9,41.1,2023,baghdad,iraq
+92,Winnipeg, Canada,58.8,41.2,2023,winnipeg,canada
+93,Klang, Malaysia,58.4,41.6,2023,klang,malaysia
+94,Kansas City, MO,58.1,41.9,2023,kansas city,mo
+95,Minsk, Belarus,57.7,42.3,2023,minsk,belarus
+96,Townsville, Australia,57.4,42.6,2023,townsville,australia
+97,Grenoble, France,57.4,42.6,2023,grenoble,france
+98,Louisville, KY,57.3,42.7,2023,louisville,ky
+99,Jacksonville, FL,57.1,42.9,2023,jacksonville,fl
+100,Cancun, Mexico,56.9,43.1,2023,cancun,mexico
+101,Paris, France,56.9,43.1,2023,paris,france
+102,Oshawa, Canada,56.5,43.5,2023,oshawa,canada
+103,Toowoomba, Australia,56.4,43.6,2023,toowoomba,australia
+104,Tehran, Iran,55.9,44.1,2023,tehran,iran
+105,Athens, Greece,55.9,44.1,2023,athens,greece
+106,Montevideo, Uruguay,55.8,44.2,2023,montevideo,uruguay
+107,San Jose, Costa Rica,55.7,44.3,2023,san jose,costa rica
+108,Malmo, Sweden,55.7,44.3,2023,malmo,sweden
+109,Geelong, Australia,55.6,44.4,2023,geelong,australia
+110,Phnom Penh, Cambodia,55.4,44.6,2023,phnom penh,cambodia
+111,Manchester, United Kingdom,55.4,44.6,2023,manchester,united kingdom
+112,Hamilton, Canada,55.3,44.7,2023,hamilton,canada
+113,Minneapolis, MN,55.3,44.7,2023,minneapolis,mn
+114,Noida, India,55.3,44.7,2023,noida,india
+115,Medellin, Colombia,55.2,44.8,2023,medellin,colombia
+116,Las Vegas, NV,55.2,44.8,2023,las vegas,nv
+117,Johor Bahru, Malaysia,54.9,45.1,2023,johor bahru,malaysia
+118,Brampton, Canada,54.8,45.2,2023,brampton,canada
+119,Casablanca, Morocco,54.6,45.4,2023,casablanca,morocco
+120,Ulaanbaatar, Mongolia,54.6,45.4,2023,ulaanbaatar,mongolia
+121,Brussels, Belgium,54.6,45.4,2023,brussels,belgium
+122,Bangalore, India,54.6,45.4,2023,bangalore,india
+123,Portland, OR,54.6,45.4,2023,portland,or
+124,Kamloops, Canada,54.6,45.4,2023,kamloops,canada
+125,Amadora, Portugal,54.6,45.4,2023,amadora,portugal
+126,Karachi, Pakistan,54.5,45.5,2023,karachi,pakistan
+127,Gurgaon, India,54.3,45.7,2023,gurgaon,india
+128,London, United Kingdom,53.8,46.2,2023,london,united kingdom
+129,Drogheda, Ireland,53.6,46.4,2023,drogheda,ireland
+130,Phoenix, AZ,53.6,46.4,2023,phoenix,az
+131,Thessaloniki, Greece,53.5,46.5,2023,thessaloniki,greece
+132,Ballarat, Australia,53.2,46.8,2023,ballarat,australia
+133,Odessa (Odesa), Ukraine,53.1,46.9,2023,odessa (odesa),ukraine
+134,Bilbao, Spain,53.0,47.0,2023,bilbao,spain
+135,London, Canada,53.0,47.0,2023,london,canada
+136,Rome, Italy,53.0,47.0,2023,rome,italy
+137,Lyon, France,52.8,47.2,2023,lyon,france
+138,Seattle, WA,52.8,47.2,2023,seattle,wa
+139,Jakarta, Indonesia,52.7,47.3,2023,jakarta,indonesia
+140,Dnipro, Ukraine,52.7,47.3,2023,dnipro,ukraine
+141,Algiers, Algeria,52.6,47.4,2023,algiers,algeria
+142,Miami, FL,52.6,47.4,2023,miami,fl
+143,Regina, Canada,52.5,47.5,2023,regina,canada
+144,Ho Chi Minh City, Vietnam,52.5,47.5,2023,ho chi minh city,vietnam
+145,Los Angeles, CA,52.2,47.8,2023,los angeles,ca
+146,Dublin, Ireland,52.1,47.9,2023,dublin,ireland
+147,Turin, Italy,52.1,47.9,2023,turin,italy
+148,Lille, France,51.9,48.1,2023,lille,france
+149,Cebu, Philippines,51.9,48.1,2023,cebu,philippines
+150,San Miguel de Allende, Mexico,51.8,48.2,2023,san miguel de allende,mexico
+151,Wollongong, Australia,51.7,48.3,2023,wollongong,australia
+152,Asuncion, Paraguay,51.6,48.4,2023,asuncion,paraguay
+153,Orlando, FL,51.5,48.5,2023,orlando,fl
+154,Tucson, AZ,51.5,48.5,2023,tucson,az
+155,Rennes, France,51.3,48.7,2023,rennes,france
+156,Dallas, TX,51.1,48.9,2023,dallas,tx
+157,Nanaimo, BC,50.9,49.1,2023,nanaimo,bc
+158,Bari, Italy,50.7,49.3,2023,bari,italy
+159,Petaling Jaya, Malaysia,50.4,49.6,2023,petaling jaya,malaysia
+160,Nottingham, United Kingdom,50.4,49.6,2023,nottingham,united kingdom
+161,Florianopolis, Brazil,50.2,49.8,2023,florianopolis,brazil
+162,Toulouse, France,50.1,49.9,2023,toulouse,france
+163,Cairo, Egypt,50.0,50.0,2023,cairo,egypt
+164,Rawalpindi, Pakistan,49.9,50.1,2023,rawalpindi,pakistan
+165,Barcelona, Spain,49.8,50.2,2023,barcelona,spain
+166,Hamilton, New Zealand,49.7,50.3,2023,hamilton,new zealand
+167,Craiova, Romania,49.6,50.4,2023,craiova,romania
+168,Saskatoon, Canada,49.4,50.6,2023,saskatoon,canada
+169,Sacramento, CA,49.4,50.6,2023,sacramento,ca
+170,San Antonio, TX,49.4,50.6,2023,san antonio,tx
+171,Addis Ababa, Ethiopia,49.3,50.7,2023,addis ababa,ethiopia
+172,New York, NY,49.1,50.9,2023,new york,ny
+173,Indore, India,48.8,51.2,2023,indore,india
+174,Milan, Italy,48.7,51.3,2023,milan,italy
+175,Kharkiv, Ukraine,48.6,51.4,2023,kharkiv,ukraine
+176,Monterrey, Mexico,48.3,51.7,2023,monterrey,mexico
+177,Bali, Indonesia,48.2,51.8,2023,bali,indonesia
+178,Auckland, New Zealand,48.2,51.8,2023,auckland,new zealand
+179,Cincinnati, OH,48.1,51.9,2023,cincinnati,oh
+180,Newcastle, Australia,48.1,51.9,2023,newcastle,australia
+181,Tunis, Tunisia,47.8,52.2,2023,tunis,tunisia
+182,Novosibirsk, Russia,47.7,52.3,2023,novosibirsk,russia
+183,Panama City, Panama,47.7,52.3,2023,panama city,panama
+184,San Jose, CA,47.7,52.3,2023,san jose,ca
+185,Bologna, Italy,47.6,52.4,2023,bologna,italy
+186,Istanbul, Turkey,47.5,52.5,2023,istanbul,turkey
+187,Liverpool, United Kingdom,47.5,52.5,2023,liverpool,united kingdom
+188,Moncton, Canada,47.3,52.7,2023,moncton,canada
+189,Honolulu, HI,47.3,52.7,2023,honolulu,hi
+190,Columbus, OH,47.2,52.8,2023,columbus,oh
+191,Skopje, North Macedonia,46.9,53.1,2023,skopje,north macedonia
+192,Bordeaux, France,46.8,53.2,2023,bordeaux,france
+193,Charlotte, NC,46.7,53.3,2023,charlotte,nc
+194,Kolkata, India,46.6,53.4,2023,kolkata,india
+195,Gothenburg, Sweden,46.6,53.4,2023,gothenburg,sweden
+196,Lucknow (Lakhnau), India,46.6,53.4,2023,lucknow (lakhnau),india
+197,Yekaterinburg, Russia,46.4,53.6,2023,yekaterinburg,russia
+198,Beirut, Lebanon,46.3,53.7,2023,beirut,lebanon
+199,Tampa, FL,46.3,53.7,2023,tampa,fl
+200,Constanta, Romania,46.2,53.8,2023,constanta,romania
+201,Gold Coast, Australia,46.2,53.8,2023,gold coast,australia
+202,Stockholm, Sweden,46.1,53.9,2023,stockholm,sweden
+203,Sarajevo, Bosnia And Herzegovina,45.9,54.1,2023,sarajevo,bosnia and herzegovina
+204,Edmonton, Canada,45.9,54.1,2023,edmonton,canada
+205,St.Catharines, Canada,45.8,54.2,2023,st.catharines,canada
+206,Pattaya, Thailand,45.5,54.5,2023,pattaya,thailand
+207,Windsor, Canada,45.5,54.5,2023,windsor,canada
+208,Belfast, United Kingdom,45.4,54.6,2023,belfast,united kingdom
+209,Glasgow, United Kingdom,45.3,54.7,2023,glasgow,united kingdom
+210,Denver, CO,45.3,54.7,2023,denver,co
+211,Palermo, Italy,45.2,54.8,2023,palermo,italy
+212,Kiev (Kyiv), Ukraine,45.2,54.8,2023,kiev (kyiv),ukraine
+213,Mumbai, India,45.0,55.0,2023,mumbai,india
+214,Brooklyn, NY,45.0,55.0,2023,brooklyn,ny
+215,Kristiansand, Norway,44.8,55.2,2023,kristiansand,norway
+216,Frankfurt, Germany,44.7,55.3,2023,frankfurt,germany
+217,Cuenca, Ecuador,44.6,55.4,2023,cuenca,ecuador
+218,Alexandria, Egypt,44.5,55.5,2023,alexandria,egypt
+219,Genoa, Italy,44.4,55.6,2023,genoa,italy
+220,Christchurch, New Zealand,44.3,55.7,2023,christchurch,new zealand
+221,Bremen, Germany,44.3,55.7,2023,bremen,germany
+222,Melbourne, Australia,44.0,56.0,2023,melbourne,australia
+223,Chisinau, Moldova,43.9,56.1,2023,chisinau,moldova
+224,Sheffield, United Kingdom,43.5,56.5,2023,sheffield,united kingdom
+225,Berlin, Germany,43.2,56.8,2023,berlin,germany
+226,Hyderabad, India,43.2,56.8,2023,hyderabad,india
+227,Chandigarh, India,43.1,56.9,2023,chandigarh,india
+228,Vaughan, Canada,42.9,57.1,2023,vaughan,canada
+229,Leeds, United Kingdom,42.8,57.2,2023,leeds,united kingdom
+230,Hamburg, Germany,42.6,57.4,2023,hamburg,germany
+231,Mississauga, Canada,42.5,57.5,2023,mississauga,canada
+232,Tirana, Albania,42.3,57.7,2023,tirana,albania
+233,Toronto, Canada,42.2,57.8,2023,toronto,canada
+234,Cologne, Germany,42.0,58.0,2023,cologne,germany
+235,Sofia, Bulgaria,41.9,58.1,2023,sofia,bulgaria
+236,Bristol, United Kingdom,41.7,58.3,2023,bristol,united kingdom
+237,Perth, Australia,41.7,58.3,2023,perth,australia
+238,Colombo, Sri Lanka,41.6,58.4,2023,colombo,sri lanka
+239,Leipzig, Germany,41.6,58.4,2023,leipzig,germany
+240,Pune, India,41.6,58.4,2023,pune,india
+241,Iloilo, Philippines,41.5,58.5,2023,iloilo,philippines
+242,Kitchener, Canada,41.2,58.8,2023,kitchener,canada
+243,Lodz, Poland,41.1,58.9,2023,lodz,poland
+244,Halifax, Canada,41.0,59.0,2023,halifax,canada
+245,Novi Sad, Serbia,40.9,59.1,2023,novi sad,serbia
+246,Hanover, Germany,40.9,59.1,2023,hanover,germany
+247,Bonn, Germany,40.5,59.5,2023,bonn,germany
+248,Bangkok, Thailand,40.5,59.5,2023,bangkok,thailand
+249,San Diego, CA,40.4,59.6,2023,san diego,ca
+250,Austin, TX,40.3,59.7,2023,austin,tx
+251,Chennai, India,40.2,59.8,2023,chennai,india
+252,Kochi, India,40.0,60.0,2023,kochi,india
+253,Antwerp, Belgium,40.0,60.0,2023,antwerp,belgium
+254,Saint Petersburg, Russia,39.7,60.3,2023,saint petersburg,russia
+255,Victoria, Canada,39.6,60.4,2023,victoria,canada
+256,Vancouver, Canada,39.6,60.4,2023,vancouver,canada
+257,Limerick, Ireland,39.5,60.5,2023,limerick,ireland
+258,Ankara, Turkey,39.5,60.5,2023,ankara,turkey
+259,Boston, MA,39.4,60.6,2023,boston,ma
+260,Riverside, CA,39.4,60.6,2023,riverside,ca
+261,Thiruvananthapuram, India,39.0,61.0,2023,thiruvananthapuram,india
+262,Strasbourg, France,39.0,61.0,2023,strasbourg,france
+263,Lviv, Ukraine,39.0,61.0,2023,lviv,ukraine
+264,Amman, Jordan,38.8,61.2,2023,amman,jordan
+265,Makati, Philippines,38.8,61.2,2023,makati,philippines
+266,Newcastle upon Tyne, United Kingdom,38.7,61.3,2023,newcastle upon tyne,united kingdom
+267,Pittsburgh, PA,38.5,61.5,2023,pittsburgh,pa
+268,Riga, Latvia,38.5,61.5,2023,riga,latvia
+269,Florence, Italy,38.4,61.6,2023,florence,italy
+270,Raleigh, NC,38.3,61.7,2023,raleigh,nc
+271,Kaunas, Lithuania,38.3,61.7,2023,kaunas,lithuania
+272,Visakhapatnam, India,38.2,61.8,2023,visakhapatnam,india
+273,Cardiff, United Kingdom,38.0,62.0,2023,cardiff,united kingdom
+274,Belgrade, Serbia,37.9,62.1,2023,belgrade,serbia
+275,Queretaro (Santiago de Querétaro), Mexico,37.6,62.4,2023,queretaro (santiago de querétaro),mexico
+276,Hanoi, Vietnam,37.6,62.4,2023,hanoi,vietnam
+277,Karlsruhe, Germany,37.5,62.5,2023,karlsruhe,germany
+278,Brighton, United Kingdom,37.4,62.6,2023,brighton,united kingdom
+279,Kingston, Canada,37.2,62.8,2023,kingston,canada
+280,Kathmandu, Nepal,37.0,63.0,2023,kathmandu,nepal
+281,Navi Mumbai, India,36.9,63.1,2023,navi mumbai,india
+282,Moscow, Russia,36.8,63.2,2023,moscow,russia
+283,Jerusalem, Israel,36.8,63.2,2023,jerusalem,israel
+284,Calgary, Canada,36.7,63.3,2023,calgary,canada
+285,Varna, Bulgaria,36.7,63.3,2023,varna,bulgaria
+286,Lahore, Pakistan,36.4,63.6,2023,lahore,pakistan
+287,Cagliari, Italy,35.9,64.1,2023,cagliari,italy
+288,Boise, ID,35.7,64.3,2023,boise,id
+289,Cork, Ireland,35.6,64.4,2023,cork,ireland
+290,Brisbane, Australia,35.5,64.5,2023,brisbane,australia
+291,Rabat, Morocco,35.4,64.6,2023,rabat,morocco
+292,Dusseldorf, Germany,35.4,64.6,2023,dusseldorf,germany
+293,Porto, Portugal,35.2,64.8,2023,porto,portugal
+294,Puerto Vallarta, Mexico,35.1,64.9,2023,puerto vallarta,mexico
+295,Oulu, Finland,35.1,64.9,2023,oulu,finland
+296,Jaipur, India,35.1,64.9,2023,jaipur,india
+297,Guelph, Canada,34.9,65.1,2023,guelph,canada
+298,Nuremberg, Germany,34.9,65.1,2023,nuremberg,germany
+299,Budapest, Hungary,34.8,65.2,2023,budapest,hungary
+300,Banja Luka, Bosnia And Herzegovina,34.4,65.6,2023,banja luka,bosnia and herzegovina
+301,Madison, WI,34.4,65.6,2023,madison,wi
+302,Surat, India,34.2,65.8,2023,surat,india
+303,Oslo, Norway,34.1,65.9,2023,oslo,norway
+304,Astana (Nur-Sultan), Kazakhstan,33.9,66.1,2023,astana (nur-sultan),kazakhstan
+305,Sydney, Australia,33.9,66.1,2023,sydney,australia
+306,Aberdeen, United Kingdom,33.8,66.2,2023,aberdeen,united kingdom
+307,Salt Lake City, UT,33.7,66.3,2023,salt lake city,ut
+308,Lund, Sweden,33.5,66.5,2023,lund,sweden
+309,Penang, Malaysia,33.5,66.5,2023,penang,malaysia
+310,Limassol, Cyprus,33.2,66.8,2023,limassol,cyprus
+311,Osaka, Japan,33.1,66.9,2023,osaka,japan
+312,Rotterdam, Netherlands,32.9,67.1,2023,rotterdam,netherlands
+313,Seville (Sevilla), Spain,32.7,67.3,2023,seville (sevilla),spain
+314,Wellington, New Zealand,32.4,67.6,2023,wellington,new zealand
+315,Hobart, Australia,32.3,67.7,2023,hobart,australia
+316,Guangzhou, China,32.3,67.7,2023,guangzhou,china
+317,Split, Croatia,32.3,67.7,2023,split,croatia
+318,Ahmedabad, India,32.1,67.9,2023,ahmedabad,india
+319,Havana, Cuba,32.0,68.0,2023,havana,cuba
+320,Amsterdam, Netherlands,32.0,68.0,2023,amsterdam,netherlands
+321,Valencia, Spain,31.8,68.2,2023,valencia,spain
+322,Vadodara, India,31.8,68.2,2023,vadodara,india
+323,Montreal, Canada,31.8,68.2,2023,montreal,canada
+324,Izmir, Turkey,31.4,68.6,2023,izmir,turkey
+325,Stuttgart, Germany,31.4,68.6,2023,stuttgart,germany
+326,Islamabad, Pakistan,31.2,68.8,2023,islamabad,pakistan
+327,Adelaide, Australia,31.1,68.9,2023,adelaide,australia
+328,Dresden, Germany,31.0,69.0,2023,dresden,germany
+329,Edinburgh, United Kingdom,30.9,69.1,2023,edinburgh,united kingdom
+330,Iasi, Romania,30.7,69.3,2023,iasi,romania
+331,Bratislava, Slovakia,30.6,69.4,2023,bratislava,slovakia
+332,Shanghai, China,30.6,69.4,2023,shanghai,china
+333,Baku, Azerbaijan,30.5,69.5,2023,baku,azerbaijan
+334,Nicosia, Cyprus,30.5,69.5,2023,nicosia,cyprus
+335,Gdansk, Poland,30.5,69.5,2023,gdansk,poland
+336,Kuwait City, Kuwait,30.4,69.6,2023,kuwait city,kuwait
+337,Freiburg im Breisgau, Germany,30.2,69.8,2023,freiburg im breisgau,germany
+338,Burlington, Canada,30.1,69.9,2023,burlington,canada
+339,Madrid, Spain,30.1,69.9,2023,madrid,spain
+340,Galway, Ireland,29.8,70.2,2023,galway,ireland
+341,Geneva, Switzerland,29.7,70.3,2023,geneva,switzerland
+342,Lisbon, Portugal,29.6,70.4,2023,lisbon,portugal
+343,Alicante, Spain,29.4,70.6,2023,alicante,spain
+344,Singapore, Singapore,29.2,70.8,2023,singapore,singapore
+345,Bursa, Turkey,29.1,70.9,2023,bursa,turkey
+346,Shenzhen, China,28.9,71.1,2023,shenzhen,china
+347,Nizhny Novgorod, Russia,28.7,71.3,2023,nizhny novgorod,russia
+348,Luxembourg, Luxembourg,28.7,71.3,2023,luxembourg,luxembourg
+349,Beijing, China,28.4,71.6,2023,beijing,china
+350,Ottawa, Canada,28.3,71.7,2023,ottawa,canada
+351,Poznan, Poland,28.2,71.8,2023,poznan,poland
+352,Bucharest, Romania,28.2,71.8,2023,bucharest,romania
+353,Markham, Canada,28.2,71.8,2023,markham,canada
+354,Jeddah (Jiddah), Saudi Arabia,28.1,71.9,2023,jeddah (jiddah),saudi arabia
+355,Richmond Hill, Canada,28.0,72.0,2023,richmond hill,canada
+356,Vilnius, Lithuania,27.6,72.4,2023,vilnius,lithuania
+357,Davao, Philippines,27.6,72.4,2023,davao,philippines
+358,Malaga, Spain,27.1,72.9,2023,malaga,spain
+359,Antalya, Turkey,27.1,72.9,2023,antalya,turkey
+360,Trieste, Italy,27.0,73.0,2023,trieste,italy
+361,Tel Aviv-Yafo, Israel,27.0,73.0,2023,tel aviv-yafo,israel
+362,Brasov, Romania,26.9,73.1,2023,brasov,romania
+363,Vienna, Austria,26.9,73.1,2023,vienna,austria
+364,Riyadh, Saudi Arabia,26.8,73.2,2023,riyadh,saudi arabia
+365,Copenhagen, Denmark,26.5,73.5,2023,copenhagen,denmark
+366,Gent, Belgium,26.5,73.5,2023,gent,belgium
+367,Graz, Austria,26.3,73.7,2023,graz,austria
+368,Wroclaw, Poland,26.3,73.7,2023,wroclaw,poland
+369,Lausanne, Switzerland,26.2,73.8,2023,lausanne,switzerland
+370,Brno, Czech Republic,26.1,73.9,2023,brno,czech republic
+371,Merida, Mexico,26.1,73.9,2023,merida,mexico
+372,Warsaw, Poland,26.1,73.9,2023,warsaw,poland
+373,Mangalore, India,26.1,73.9,2023,mangalore,india
+374,Tbilisi, Georgia,25.9,74.1,2023,tbilisi,georgia
+375,Oakville, Canada,25.8,74.2,2023,oakville,canada
+376,Krakow (Cracow), Poland,25.8,74.2,2023,krakow (cracow),poland
+377,Bergen, Norway,25.7,74.3,2023,bergen,norway
+378,Rijeka, Croatia,25.2,74.8,2023,rijeka,croatia
+379,Helsinki, Finland,24.8,75.2,2023,helsinki,finland
+380,Aalborg, Denmark,24.8,75.2,2023,aalborg,denmark
+381,Seoul, South Korea,24.7,75.3,2023,seoul,south korea
+382,Prague, Czech Republic,24.7,75.3,2023,prague,czech republic
+383,Tallinn, Estonia,24.7,75.3,2023,tallinn,estonia
+384,Tokyo, Japan,24.6,75.4,2023,tokyo,japan
+385,Chiang Mai, Thailand,24.5,75.5,2023,chiang mai,thailand
+386,Timisoara, Romania,24.4,75.6,2023,timisoara,romania
+387,Reykjavik, Iceland,23.8,76.2,2023,reykjavik,iceland
+388,Coquitlam, Canada,23.3,76.7,2023,coquitlam,canada
+389,Stavanger, Norway,23.3,76.7,2023,stavanger,norway
+390,Canberra, Australia,23.2,76.8,2023,canberra,australia
+391,Eindhoven, Netherlands,22.8,77.2,2023,eindhoven,netherlands
+392,Cluj-Napoca, Romania,22.5,77.5,2023,cluj-napoca,romania
+393,Zagreb, Croatia,22.4,77.6,2023,zagreb,croatia
+394,Tampere, Finland,22.3,77.7,2023,tampere,finland
+395,Irvine, CA,22.3,77.7,2023,irvine,ca
+396,Groningen, Netherlands,22.1,77.9,2023,groningen,netherlands
+397,Yerevan, Armenia,21.9,78.1,2023,yerevan,armenia
+398,Ljubljana, Slovenia,21.8,78.2,2023,ljubljana,slovenia
+399,Basel, Switzerland,21.6,78.4,2023,basel,switzerland
+400,Hong Kong, Hong Kong (China),21.5,78.5,2023,hong kong,hong kong (china)
+401,The Hague (Den Haag), Netherlands,21.2,78.8,2023,the hague (den haag),netherlands
+402,Tartu, Estonia,21.0,79.0,2023,tartu,estonia
+403,Muscat, Oman,20.1,79.9,2023,muscat,oman
+404,Trondheim, Norway,19.1,80.9,2023,trondheim,norway
+405,Munich, Germany,18.8,81.2,2023,munich,germany
+406,Zurich, Switzerland,18.3,81.7,2023,zurich,switzerland
+407,Eskisehir, Turkey,18.1,81.9,2023,eskisehir,turkey
+408,Bern, Switzerland,17.7,82.3,2023,bern,switzerland
+409,San Sebastian, Spain,16.9,83.1,2023,san sebastian,spain
+410,Dubai, United Arab Emirates,16.4,83.6,2023,dubai,united arab emirates
+411,Quebec City, Canada,16.1,83.9,2023,quebec city,canada
+412,Sharjah, United Arab Emirates,15.9,84.1,2023,sharjah,united arab emirates
+413,Ajman, United Arab Emirates,15.5,84.5,2023,ajman,united arab emirates
+414,Taipei, Taiwan,15.1,84.9,2023,taipei,taiwan
+415,Doha, Qatar,14.5,85.5,2023,doha,qatar
+416,Abu Dhabi, United Arab Emirates,11.2,88.8,2023,abu dhabi,united arab emirates

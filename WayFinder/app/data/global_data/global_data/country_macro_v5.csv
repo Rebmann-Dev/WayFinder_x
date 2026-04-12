@@ -1,0 +1,209 @@
+name,iso2,region,country_norm,gdp,gdp_per_capita,unemployment,homicide_rate,life_expectancy_male,life_expectancy_female,infant_mortality,urban_population_growth,tourists
+Afghanistan,AF,Southern Asia,afghanistan,20514.0,551.9,11.2,6.7,62.8,65.8,51.7,4.0,7.0
+Albania,AL,Southern Europe,albania,15059.0,5223.8,12.8,2.3,76.7,80.1,8.0,1.8,5340.0
+Algeria,DZ,Northern Africa,algeria,173757.0,4114.7,11.5,1.4,75.4,77.8,21.2,2.9,2657.0
+Andorra,AD,Southern Europe,andorra,3238.0,42051.6,,0.0,,,,-1.7,3042.0
+Angola,AO,Middle Africa,angola,105902.0,3437.3,6.8,4.8,57.8,63.4,61.5,4.7,218.0
+Antigua And Barbuda,AG,Caribbean,antigua and barbuda,1611.0,16727.0,,11.1,75.7,77.9,5.2,0.1,269.0
+Argentina,AR,South America,argentina,518475.0,11687.6,10.4,5.3,73.0,79.8,10.2,1.2,6942.0
+Armenia,AM,Western Asia,armenia,12433.0,4212.1,16.6,1.7,71.1,78.3,10.8,0.2,1652.0
+Australia,AU,Oceania,australia,1453871.0,58392.7,5.3,0.9,81.2,85.2,3.1,1.6,9246.0
+Austria,AT,Western Europe,austria,455508.0,51230.3,4.8,1.0,78.9,83.8,3.2,0.7,30816.0
+Afghanistan,AF,Southern Asia,afghanistan,20514.0,551.9,11.2,6.7,62.8,65.8,51.7,4.0,7.0
+Albania,AL,Southern Europe,albania,15059.0,5223.8,12.8,2.3,76.7,80.1,8.0,1.8,5340.0
+Algeria,DZ,Northern Africa,algeria,173757.0,4114.7,11.5,1.4,75.4,77.8,21.2,2.9,2657.0
+Andorra,AD,Southern Europe,andorra,3238.0,42051.6,,0.0,,,,-1.7,3042.0
+Angola,AO,Middle Africa,angola,105902.0,3437.3,6.8,4.8,57.8,63.4,61.5,4.7,218.0
+Antigua And Barbuda,AG,Caribbean,antigua and barbuda,1611.0,16727.0,,11.1,75.7,77.9,5.2,0.1,269.0
+Argentina,AR,South America,argentina,518475.0,11687.6,10.4,5.3,73.0,79.8,10.2,1.2,6942.0
+Armenia,AM,Western Asia,armenia,12433.0,4212.1,16.6,1.7,71.1,78.3,10.8,0.2,1652.0
+Australia,AU,Oceania,australia,1453871.0,58392.7,5.3,0.9,81.2,85.2,3.1,1.6,9246.0
+Austria,AT,Western Europe,austria,455508.0,51230.3,4.8,1.0,78.9,83.8,3.2,0.7,30816.0
+Azerbaijan,AZ,Western Asia,azerbaijan,46939.0,4717.7,6.0,2.2,70.3,75.3,20.8,1.7,2633.0
+Bahamas,BS,Caribbean,bahamas,12424.0,32218.1,11.3,32.0,71.5,75.9,5.9,1.5,1633.0
+Bahrain,BH,Western Asia,bahrain,37876.0,24133.5,0.8,0.5,76.2,78.2,6.0,2.1,12045.0
+Bangladesh,BD,Southern Asia,bangladesh,269628.0,1670.8,4.2,2.4,70.5,74.1,26.8,3.5,1026.0
+Barbados,BB,Caribbean,barbados,5087.0,17745.9,10.9,9.8,77.6,80.4,10.0,-0.1,680.0
+Belarus,BY,Eastern Europe,belarus,59662.0,6311.7,4.6,2.4,69.3,79.3,3.0,0.7,11502.0
+Belgium,BE,Western Europe,belgium,543026.0,47293.0,5.7,1.7,79.0,83.7,2.8,0.7,9119.0
+Belize,BZ,Central America,belize,1871.0,4884.7,6.4,37.8,71.4,77.6,12.8,2.3,489.0
+Benin,BJ,Western Africa,benin,10412.0,906.5,2.0,1.1,59.8,62.8,61.1,4.0,295.0
+Bhutan,BT,Southern Asia,bhutan,2658.0,3523.8,2.4,1.2,71.0,71.6,24.1,3.7,274.0
+"Bolivia, Plurinational State Of",BO,South America,"bolivia, plurinational state of",40288.0,3548.6,3.4,6.2,68.3,74.0,29.7,2.1,1142.0
+Bosnia And Herzegovina,BA,Southern Europe,bosnia and herzegovina,19782.0,5951.4,18.4,1.2,74.6,79.6,6.0,-0.3,1053.0
+Botswana,BW,Southern Africa,botswana,18615.0,8258.2,18.7,15.2,66.0,71.9,30.2,3.3,1623.0
+Brazil,BR,South America,brazil,1868613.0,8920.7,12.0,27.4,71.9,79.3,13.0,1.2,6621.0
+Brunei Darussalam,BN,South-Eastern Asia,brunei darussalam,13567.0,31627.2,9.0,0.5,74.5,76.9,7.9,1.9,278.0
+Bulgaria,BG,Eastern Europe,bulgaria,66199.0,9387.8,3.8,1.3,71.3,78.5,6.3,-0.2,9273.0
+Burkina Faso,BF,Western Africa,burkina faso,16200.0,820.2,6.4,1.3,60.1,61.6,54.2,5.2,144.0
+Burundi,BI,Eastern Africa,burundi,3285.0,294.0,1.4,6.1,59.2,62.8,42.4,5.6,299.0
+Cape Verde,CV,Western Africa,cape verde,1977.0,3635.4,12.3,6.8,69.2,75.9,16.9,2.0,710.0
+Cambodia,KH,South-Eastern Asia,cambodia,24572.0,1512.1,0.7,1.8,67.2,71.5,23.7,3.4,6201.0
+Cameroon,CM,Middle Africa,cameroon,38694.0,1534.5,3.4,1.4,57.5,60.0,61.2,3.8,1081.0
+Canada,CA,Northern America,canada,1712562.0,46192.4,5.4,1.8,80.2,84.2,4.5,1.1,21134.0
+Central African Republic,CF,Middle Africa,central african republic,2243.0,480.7,3.7,20.1,50.5,54.9,81.9,1.1,107.0
+Chad,TD,Middle Africa,chad,11387.0,735.7,1.9,,52.4,55.2,74.5,3.8,87.0
+Chile,CL,South America,chile,298231.0,15923.4,7.1,4.4,77.4,82.3,6.7,1.0,5723.0
+China,CN,Eastern Asia,china,18743800000000.0,13303.0,5.1,0.44,74.5,79.0,9.9,2.9,62900.0
+Colombia,CO,South America,colombia,330228.0,6649.6,9.7,25.3,74.2,79.8,12.6,1.4,3904.0
+Comoros,KM,Eastern Africa,comoros,1166.0,1400.5,4.4,,62.3,65.8,53.1,2.7,36.0
+Congo,CG,Middle Africa,congo,14173.0,2702.6,9.3,,62.7,65.6,35.3,3.3,156.0
+"Congo, The Democratic Republic Of The",CD,Middle Africa,"congo, the democratic republic of the",47146.0,560.8,4.2,,58.7,61.7,64.9,4.6,351.0
+Costa Rica,CR,Central America,costa rica,60126.0,12026.5,12.7,11.3,77.4,82.7,7.3,2.5,3017.0
+Croatia,HR,Southern Europe,croatia,60991.0,14674.0,7.1,0.6,75.0,81.4,4.0,-0.1,16645.0
+Cuba,CU,Caribbean,cuba,100023.0,8821.8,1.6,5.0,76.7,80.7,4.5,0.3,4684.0
+Cyprus,CY,Western Asia,cyprus,24963.0,28967.6,7.2,1.3,78.6,82.8,3.5,0.7,3939.0
+Czech Republic,CZ,Eastern Europe,czech republic,245226.0,22992.1,1.9,0.6,76.5,81.8,2.3,0.2,13665.0
+Denmark,DK,Northern Europe,denmark,355675.0,61833.7,4.8,1.0,78.7,82.7,3.1,0.6,12749.0
+Djibouti,DJ,Eastern Africa,djibouti,2923.0,3048.6,10.3,,64.6,68.7,33.4,1.8,63.0
+Dominica,DM,Caribbean,dominica,551.0,7691.3,,26.6,73.8,78.2,,0.9,63.0
+Dominican Republic,DO,Caribbean,dominican republic,81299.0,7650.1,5.9,10.0,70.7,77.1,25.9,2.5,6569.0
+Timor-Leste,TL,South-Eastern Asia,timor-leste,2581.0,2035.5,4.6,4.1,67.2,71.3,37.3,3.5,75.0
+Ecuador,EC,South America,ecuador,108398.0,6344.9,4.2,5.8,74.0,79.6,13.6,1.8,2535.0
+Egypt,EG,Northern Africa,egypt,249751.0,2537.5,10.1,2.6,69.5,74.1,15.6,2.1,11196.0
+El Salvador,SV,Central America,el salvador,26057.0,4058.2,4.2,52.0,68.1,77.5,14.6,1.7,1677.0
+Equatorial Guinea,GQ,Middle Africa,equatorial guinea,13324.0,10179.2,6.5,,57.3,59.4,66.1,5.6,
+Eritrea,ER,Eastern Africa,eritrea,6855.0,1985.4,5.2,,63.6,68.0,34.7,3.6,142.0
+Estonia,EE,Northern Europe,estonia,30747.0,23241.9,5.4,2.1,74.0,82.5,2.0,-0.2,3234.0
+Swaziland,SZ,Southern Africa,swaziland,4711.0,4145.7,22.0,11.6,55.2,63.9,41.4,2.6,782.0
+Ethiopia,ET,Eastern Africa,ethiopia,80292.0,735.1,2.1,8.8,64.1,67.9,37.0,4.9,849.0
+Fiji,FJ,Melanesia,fiji,5537.0,6267.0,4.1,2.3,65.6,69.1,20.3,1.7,870.0
+Finland,FI,Northern Europe,finland,276878.0,50135.7,6.7,1.6,78.8,84.5,1.7,0.8,3224.0
+France,FR,Western Europe,france,2778892.0,41358.1,8.3,1.2,79.4,85.4,3.0,0.8,89322.0
+Gabon,GA,Middle Africa,gabon,16994.0,8018.8,20.2,,64.0,68.2,35.3,3.9,269.0
+Gambia,GM,Western Africa,gambia,1633.0,716.1,9.1,,60.2,63.0,44.8,4.4,552.0
+Georgia,GE,Western Asia,georgia,17600.0,4396.7,14.7,2.2,69.1,77.9,9.4,-0.7,4757.0
+Germany,DE,Western Europe,germany,3949549.0,47513.7,3.0,0.9,78.7,83.6,3.2,0.3,38881.0
+Ghana,GH,Western Africa,ghana,65535.0,2201.6,4.5,2.1,62.6,64.7,35.6,3.6,897.0
+Greece,GR,Southern Europe,greece,218139.0,20731.2,15.5,0.9,79.5,84.5,2.8,0.1,30123.0
+Grenada,GD,Caribbean,grenada,1169.0,10485.9,,10.8,70.1,75.0,15.0,0.5,185.0
+Guatemala,GT,Central America,guatemala,78461.0,4549.0,2.5,22.5,71.0,76.8,20.7,2.7,1781.0
+Guinea,GN,Western Africa,guinea,11640.0,937.6,4.3,,60.3,61.5,51.6,3.1,99.0
+Guinea-Bissau,GW,Western Africa,guinea-bissau,1459.0,778.4,2.5,1.1,55.8,59.7,57.1,3.6,45.0
+Guyana,GY,South America,guyana,3818.0,4900.8,11.8,14.2,66.7,72.9,26.8,0.4,287.0
+Haiti,HT,Caribbean,haiti,9287.0,834.9,13.9,6.7,61.4,65.7,54.3,3.3,447.0
+Honduras,HN,Central America,honduras,23970.0,2500.1,5.2,38.9,72.7,77.3,15.0,3.0,851.0
+Hungary,HU,Eastern Europe,hungary,157883.0,16264.0,3.5,2.5,73.0,80.1,4.1,0.2,17552.0
+Iceland,IS,Northern Europe,iceland,25882.0,76867.3,3.2,0.9,81.2,84.3,1.3,0.6,2344.0
+India,IN,Southern Asia,india,2779352.0,2054.8,5.4,3.1,68.1,70.5,32.0,2.4,17423.0
+Indonesia,ID,South-Eastern Asia,indonesia,1042173.0,3893.5,4.8,0.4,69.3,73.6,18.9,2.6,15810.0
+"Iran, Islamic Republic Of",IR,Southern Asia,"iran, islamic republic of",473091.0,5783.5,11.2,2.5,75.3,77.6,12.8,2.0,7295.0
+Iraq,IQ,Western Asia,iraq,212272.0,5523.1,12.8,10.1,68.3,72.4,24.1,3.4,892.0
+Ireland,IE,Northern Europe,ireland,382674.0,79414.6,5.2,0.9,80.4,83.7,2.7,0.6,10926.0
+Israel,IL,Western Asia,israel,370588.0,44214.9,3.8,1.5,81.0,84.3,2.7,1.7,4121.0
+Italy,IT,Southern Europe,italy,2084882.0,34388.5,9.8,0.6,81.0,85.4,2.6,0.3,61567.0
+Cote D'ivoire,CI,Western Africa,cote d'ivoire,43028.0,1716.4,3.4,,56.1,58.6,60.4,3.4,1965.0
+Jamaica,JM,Caribbean,jamaica,15714.0,5354.3,8.0,43.9,72.8,75.9,11.8,0.8,2473.0
+Japan,JP,Eastern Asia,japan,4971323.0,39082.1,2.3,0.3,81.3,87.5,1.8,0.0,31192.0
+Jordan,JO,Western Asia,jordan,42231.0,4237.8,14.6,1.4,72.7,76.1,14.6,5.8,4150.0
+Kazakhstan,KZ,Central Asia,kazakhstan,179340.0,9789.5,4.6,5.1,68.8,77.4,7.7,1.7,4560.0
+Kenya,KE,Eastern Africa,kenya,87906.0,1710.5,2.6,4.9,63.8,68.5,36.3,4.4,1364.0
+Kiribati,KI,Micronesia,kiribati,189.0,1627.4,30.6,7.5,63.9,72.0,43.0,3.5,7.0
+"Korea, Democratic People's Republic Of",KP,Eastern Asia,"korea, democratic people's republic of",17487.0,687.9,2.8,,68.3,75.4,13.9,0.8,
+"Korea, Republic Of",KR,Eastern Asia,"korea, republic of",1720489.0,33621.9,4.6,0.6,79.6,85.7,2.1,0.3,15347.0
+Kuwait,KW,Western Asia,kuwait,141698.0,34248.8,2.3,1.8,74.6,76.4,7.1,5.4,8508.0
+Kyrgyzstan,KG,Central Asia,kyrgyzstan,8093.0,1283.8,6.6,2.2,67.2,75.4,15.5,1.8,6947.0
+Lao People's Democratic Republic,LA,South-Eastern Asia,lao people's democratic republic,17954.0,2542.5,0.6,,65.7,69.2,38.8,3.2,3770.0
+Latvia,LV,Northern Europe,latvia,34426.0,17851.6,6.5,4.4,69.9,79.8,3.3,-1.2,1946.0
+Lebanon,LB,Western Asia,lebanon,56409.0,8223.7,6.3,2.5,77.0,80.8,9.4,6.2,1964.0
+Lesotho,LS,Southern Africa,lesotho,2631.0,1248.0,22.8,43.6,50.4,56.8,62.3,2.9,1173.0
+Liberia,LR,Western Africa,liberia,2122.0,440.3,2.7,3.3,62.2,65.0,54.1,3.4,
+Libya,LY,Northern Africa,libya,34377.0,5147.3,18.6,3.7,69.9,75.7,10.5,0.5,34.0
+Liechtenstein,LI,Western Europe,liechtenstein,6796.0,179258.2,2.6,2.6,,,,0.5,85.0
+Lithuania,LT,Northern Europe,lithuania,53455.0,19082.5,6.3,4.6,70.0,81.1,4.0,-1.1,2825.0
+Luxembourg,LU,Western Europe,luxembourg,70920.0,117369.5,5.2,0.3,79.8,84.2,2.9,2.6,1018.0
+Madagascar,MG,Eastern Africa,madagascar,13851.0,527.4,1.8,,64.9,68.1,29.0,4.7,291.0
+Malawi,MW,Eastern Africa,malawi,7196.0,396.6,5.7,1.8,60.3,66.6,41.3,3.9,871.0
+Malaysia,MY,South-Eastern Asia,malaysia,358579.0,11373.3,3.4,2.1,74.0,78.1,5.9,2.7,25832.0
+Maldives,MV,Southern Asia,maldives,5327.0,10330.6,6.4,0.7,77.1,80.4,6.8,3.9,1484.0
+Mali,ML,Western Africa,mali,17172.0,900.1,7.3,,58.0,59.5,65.8,5.0,193.0
+Malta,MT,Southern Europe,malta,14549.0,33122.8,3.4,1.6,80.4,84.1,5.0,0.6,2599.0
+Marshall Islands,MH,Micronesia,marshall islands,214.0,3666.9,4.7,,71.3,72.5,25.4,0.8,7.0
+Mauritania,MR,Western Africa,mauritania,7620.0,1730.4,9.6,,63.0,66.2,53.4,4.8,
+Turkey,TR,Western Asia,turkey,771355.0,9367.9,12.9,2.6,74.3,80.2,8.9,2.4,45768.0
+Mexico,MX,Central America,mexico,1223401.0,9694.9,3.6,29.1,72.1,77.8,13.5,1.8,41313.0
+"Micronesia, Federated States Of",FM,Micronesia,"micronesia, federated states of",371.0,3296.4,,,66.1,69.4,23.5,0.3,19.0
+"Moldova, Republic Of",MD,Eastern Europe,"moldova, republic of",11309.0,2791.0,5.4,4.1,67.4,75.9,12.4,-0.2,160.0
+Monaco,MC,Western Europe,monaco,7188.0,185835.0,,0.0,,,,0.6,347.0
+Mongolia,MN,Eastern Asia,mongolia,13010.0,4103.7,6.0,6.2,65.5,73.8,18.1,2.1,529.0
+Montenegro,ME,Southern Europe,montenegro,5507.0,8771.7,14.8,2.2,74.2,79.1,2.8,0.6,2077.0
+Morocco,MA,Northern Africa,morocco,117921.0,3272.9,9.0,1.4,75.1,77.5,19.9,2.4,12289.0
+Mozambique,MZ,Eastern Africa,mozambique,14717.0,498.9,3.2,3.5,57.0,62.8,53.9,4.5,2743.0
+Myanmar,MM,South-Eastern Asia,myanmar,72745.0,1354.4,1.7,2.3,63.7,69.8,38.4,1.5,3551.0
+Namibia,,Southern Africa,namibia,14519.0,5930.1,20.6,17.7,60.0,65.8,33.4,4.6,1499.0
+Nauru,NR,Micronesia,nauru,127.0,11875.9,23.0,,57.8,64.8,18.0,2.3,
+Nepal,NP,Southern Asia,nepal,27830.0,990.6,1.5,2.3,68.8,71.7,27.9,3.2,1173.0
+Netherlands,NL,Western Europe,netherlands,914105.0,53583.1,3.0,0.6,80.3,83.8,2.5,1.0,18780.0
+New Zealand,NZ,Oceania,new zealand,207921.0,43836.2,4.0,0.7,80.3,83.8,3.8,1.1,3686.0
+Nicaragua,NI,Central America,nicaragua,13118.0,2028.9,7.4,7.2,70.6,77.7,16.8,1.5,1256.0
+Niger,NE,Western Africa,niger,12821.0,571.3,0.5,4.4,60.7,63.0,46.3,3.9,157.0
+Nigeria,NG,Western Africa,nigeria,421821.0,2153.5,8.0,34.5,53.3,55.1,62.1,4.6,1889.0
+"Macedonia, The Former Yugoslav Republic Of",MK,Southern Europe,"macedonia, the former yugoslav republic of",12629.0,6062.9,16.4,1.2,73.6,77.6,10.7,0.2,707.0
+France,FR,Western Europe,france,2778892.0,41358.1,8.3,1.2,79.4,85.4,3.0,0.8,89322.0
+Oman,OM,Western Asia,oman,92111.0,19072.8,2.6,0.3,75.8,80.0,7.3,8.0,2301.0
+Pakistan,PK,Southern Asia,pakistan,282346.0,1330.4,4.4,3.9,66.1,68.0,61.3,2.7,966.0
+Palau,PW,Micronesia,palau,284.0,15859.4,4.2,11.2,68.1,77.8,13.3,1.7,106.0
+Panama,PA,Central America,panama,65055.0,15575.1,3.8,9.4,75.1,81.5,14.1,2.2,1785.0
+Papua New Guinea,PG,Melanesia,papua new guinea,23077.0,2681.4,2.5,9.8,62.9,65.4,41.9,2.2,140.0
+Paraguay,PY,South America,paraguay,40307.0,5794.6,4.8,7.1,72.1,76.2,19.0,1.8,1181.0
+Peru,PE,South America,peru,222237.0,6947.3,3.2,7.9,73.7,79.2,12.8,1.6,4419.0
+Philippines,PH,South-Eastern Asia,philippines,330910.0,3102.7,2.2,6.5,67.1,75.3,19.7,2.1,7168.0
+Poland,PL,Eastern Europe,poland,585661.0,15444.0,3.0,0.7,74.5,82.4,3.3,-0.2,19622.0
+Portugal,PT,Southern Europe,portugal,240792.0,23477.7,5.9,0.8,78.7,84.6,3.0,0.5,16186.0
+Qatar,QA,Western Asia,qatar,191362.0,68793.7,0.1,0.4,78.9,81.8,6.3,6.7,1819.0
+Romania,RO,Eastern Europe,romania,239552.0,12280.8,3.9,1.3,72.4,79.3,6.7,-0.5,11720.0
+Russian Federation,RU,Eastern Europe,russian federation,1660514.0,11394.1,4.4,8.2,66.8,77.5,5.8,0.2,24551.0
+Rwanda,RW,Eastern Africa,rwanda,9510.0,773.0,1.0,2.6,66.3,70.5,29.2,2.6,932.0
+Saint Kitts And Nevis,KN,Caribbean,saint kitts and nevis,1011.0,19275.4,,36.1,,,,0.8,125.0
+Saint Lucia,LC,Caribbean,saint lucia,1922.0,10566.0,20.2,21.4,74.7,77.4,12.5,0.6,395.0
+Saint Vincent And The Grenadines,VC,Caribbean,saint vincent and the grenadines,811.0,7361.3,18.9,36.5,70.1,74.9,14.6,0.8,80.0
+Samoa,WS,Polynesia,samoa,833.0,4249.6,8.4,3.1,71.1,75.2,13.4,-0.4,164.0
+San Marino,SM,Southern Europe,san marino,1638.0,48472.7,6.6,0.0,81.7,86.4,,1.4,84.0
+Sao Tome And Principe,ST,Middle Africa,sao tome and principe,411.0,1948.1,13.7,3.3,67.7,72.4,26.4,3.8,33.0
+Saudi Arabia,SA,Western Asia,saudi arabia,782483.0,23217.2,5.9,1.3,73.7,76.5,6.3,3.1,15334.0
+Senegal,SN,Western Africa,senegal,23809.0,1501.7,6.7,0.3,65.3,69.4,32.7,3.9,1365.0
+Serbia,RS,Southern Europe,serbia,50597.0,7208.8,12.7,1.2,73.2,78.4,4.9,-0.1,1711.0
+Seychelles,SC,Eastern Africa,seychelles,1590.0,16377.9,4.1,12.5,69.8,77.3,10.9,1.3,362.0
+Sierra Leone,SL,Western Africa,sierra leone,4101.0,536.1,4.4,1.7,53.2,54.8,80.8,3.3,57.0
+Singapore,SG,South-Eastern Asia,singapore,361115.0,62720.9,4.4,0.2,81.2,85.5,1.6,1.7,14673.0
+Slovakia,SK,Eastern Europe,slovakia,105956.0,19430.8,5.1,1.1,73.7,80.8,4.8,-0.2,2256.0
+Slovenia,SI,Southern Europe,slovenia,54034.0,26005.1,3.8,0.5,78.2,83.8,1.9,0.7,4425.0
+Solomon Islands,SB,Melanesia,solomon islands,1271.0,1946.9,0.5,3.8,71.1,74.6,15.5,4.3,28.0
+Somalia,SO,Eastern Africa,somalia,1494.0,99.6,11.4,,55.3,58.7,69.3,4.8,
+South Africa,ZA,Southern Africa,south africa,368094.0,6369.2,28.5,36.4,60.2,67.1,27.2,2.2,10472.0
+South Sudan,SS,Eastern Africa,south sudan,8207.0,747.7,12.3,14.9,56.0,58.9,64.4,4.4,
+Spain,ES,Southern Europe,spain,1419735.0,30405.8,13.0,0.6,80.6,86.0,2.3,0.1,82773.0
+Sri Lanka,LK,Southern Asia,sri lanka,88942.0,4189.7,4.2,2.4,73.3,80.0,7.6,0.5,2334.0
+Sudan,SD,Northern Africa,sudan,50515.0,1208.4,16.6,5.1,63.1,66.8,42.9,2.8,836.0
+Suriname,SR,South America,suriname,3458.0,6003.7,7.5,5.4,68.3,74.8,17.5,0.9,278.0
+Sweden,SE,Northern Europe,sweden,556086.0,55766.8,6.7,1.1,80.8,84.4,2.0,1.1,7440.0
+Switzerland,CH,Western Europe,switzerland,705141.0,82708.5,4.8,0.6,81.6,85.4,3.4,1.2,10362.0
+Syrian Arab Republic,SY,Western Asia,syrian arab republic,16628.0,981.3,8.4,0.9,65.9,77.7,15.5,-3.6,5070.0
+Tajikistan,TJ,Central Asia,tajikistan,7523.0,826.6,11.0,1.6,68.6,73.0,29.3,2.4,1035.0
+"Tanzania, United Republic Of",TZ,Eastern Africa,"tanzania, united republic of",57145.0,1044.1,2.0,6.5,63.0,66.6,41.2,5.5,1378.0
+Thailand,TH,South-Eastern Asia,thailand,504992.0,7273.6,0.8,2.6,73.1,80.6,7.8,2.1,38178.0
+Togo,TG,Western Africa,togo,5165.0,654.8,2.0,,59.7,61.4,49.7,4.0,573.0
+Tonga,TO,Polynesia,tonga,504.0,4885.8,1.2,1.0,68.8,72.7,12.5,0.3,54.0
+Trinidad And Tobago,TT,Caribbean,trinidad and tobago,23808.0,17130.3,2.8,30.6,70.7,76.0,22.0,0.2,375.0
+Tunisia,TN,Northern Africa,tunisia,39895.0,3449.6,16.2,3.1,74.4,78.5,12.7,1.6,8299.0
+Turkey,TR,Western Asia,turkey,771355.0,9367.9,12.9,2.6,74.3,80.2,8.9,2.4,45768.0
+Turkmenistan,TM,Central Asia,turkmenistan,40749.0,6964.6,4.1,4.2,64.5,71.5,43.3,2.5,8.0
+Tuvalu,TV,Polynesia,tuvalu,46.0,4000.6,6.5,18.6,67.4,71.9,10.3,2.6,3.0
+Uganda,UG,Eastern Africa,uganda,30098.0,704.4,1.9,10.5,60.4,65.0,46.1,6.0,1402.0
+Ukraine,UA,Eastern Europe,ukraine,130832.0,2956.9,8.9,6.2,66.8,76.6,7.2,-0.4,14104.0
+United Arab Emirates,AE,Western Asia,united arab emirates,414179.0,43005.0,2.4,0.5,77.1,79.1,5.5,2.4,21286.0
+United Kingdom,GB,Northern Europe,united kingdom,2855297.0,42526.4,4.1,1.2,79.4,82.9,3.8,1.0,36316.0
+United States,US,Northern America,united states,20580223.0,62917.9,3.9,5.0,76.3,81.3,5.8,0.9,79746.0
+Uruguay,UY,South America,uruguay,59597.0,17278.1,8.8,12.1,73.9,81.3,8.7,0.5,3469.0
+Uzbekistan,UZ,Central Asia,uzbekistan,50500.0,1555.0,6.1,1.1,69.4,73.6,20.8,1.5,5346.0
+Vanuatu,VU,Melanesia,vanuatu,889.0,3037.2,4.4,,68.8,71.9,22.4,2.7,116.0
+Holy See (Vatican City State),VA,Southern Europe,holy see (vatican city state),,,,0.0,,,,0.2,
+"Venezuela, Bolivarian Republic Of",VE,South America,"venezuela, bolivarian republic of",208338.0,7212.2,9.4,36.7,68.4,76.1,25.7,1.4,427.0
+Viet Nam,VN,South-Eastern Asia,viet nam,244901.0,2563.2,2.0,1.5,71.2,79.4,16.7,3.2,15498.0
+Yemen,YE,Western Asia,yemen,26672.0,935.9,12.8,6.8,64.4,67.7,43.2,4.4,367.0
+Zambia,ZM,Eastern Africa,zambia,27283.0,1572.3,11.4,5.4,60.3,66.2,45.6,4.3,1072.0
+Zimbabwe,ZW,Eastern Africa,zimbabwe,24312.0,1683.8,5.0,7.5,59.2,62.2,38.7,1.8,2580.0
+Norway,NO,Northern Europe,sweden,579000000000.0,104000.0,4.0,0.72,80.8,84.4,2.0,1.1,7440.0
+Puerto Rico,PR,Northern America,united states,154000000000.0,39344.0,5.6,15.3,76.3,81.3,5.8,0.9,79746.0
+Taiwan,TW,Eastern Asia,china,793000000000.0,33000.0,3.38,0.8,74.5,79.0,9.9,2.9,62900.0
+Hong Kong (China),HK,Eastern Asia,china,407100000000.0,44725.0,3.3,0.38,74.5,79.0,9.9,2.9,62900.0

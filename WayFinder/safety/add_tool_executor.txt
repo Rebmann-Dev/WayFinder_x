@@ -1,0 +1,37 @@
+In tool_executor.py, mirror the flight pattern:
+
+python
+from services.safety_service import SafetyService
+In __init__:
+
+python
+self._safety = SafetyService()
+In run():
+
+python
+if name == "get_safety_assessment":
+    try:
+        latitude = float(arguments.get("latitude"))
+        longitude = float(arguments.get("longitude"))
+    except (TypeError, ValueError):
+        return json.dumps({
+            "success": False,
+            "error": "latitude and longitude must be valid numbers."
+        })
+
+    country = arguments.get("country")
+    location_name = arguments.get("location_name")
+
+    result = self._safety.assess_location(
+        latitude=latitude,
+        longitude=longitude,
+        country=str(country).strip() if country else None,
+        location_name=str(location_name).strip() if location_name else None,
+    )
+
+    result["instruction"] = (
+        "Present the predicted safety score clearly. "
+        "Explain that this is a model-based travel safety estimate, not an official crime report. "
+        "Keep the explanation short and practical."
+    )
+    return json.dumps(result)

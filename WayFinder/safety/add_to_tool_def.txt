@@ -1,0 +1,32 @@
+{
+    "type": "function",
+    "function": {
+        "name": "get_safety_assessment",
+        "description": (
+            "Predict a travel safety score for a latitude/longitude location. "
+            "Use this for questions about how safe a destination, stop, area, or waypoint may be."
+        ),
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "latitude": {
+                    "type": "number",
+                    "description": "Latitude of the location."
+                },
+                "longitude": {
+                    "type": "number",
+                    "description": "Longitude of the location."
+                },
+                "country": {
+                    "type": "string",
+                    "description": "Optional country name for the location."
+                },
+                "location_name": {
+                    "type": "string",
+                    "description": "Optional human-readable name for the location."
+                }
+            },
+            "required": ["latitude", "longitude"]
+        }
+    }
+}
