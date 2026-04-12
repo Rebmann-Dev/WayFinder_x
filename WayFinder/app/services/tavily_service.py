@@ -47,6 +47,53 @@ def _resolve_dotpath(data: dict, path: str):
 
 _CONTINENT_FOLDERS = ["south_america", "north_america", "europe", "asia", "africa", "oceania"]
 
+# ISO 3166-1 alpha-2 → continent subfolder
+COUNTRY_TO_CONTINENT: dict[str, str] = {
+    "ec": "south_america",
+    "pe": "south_america",
+    "co": "south_america",
+    "br": "south_america",
+    "ar": "south_america",
+    "cl": "south_america",
+    "mx": "north_america",
+    "us": "north_america",
+    "ca": "north_america",
+    "cr": "north_america",
+    "pa": "north_america",
+    "es": "europe",
+    "fr": "europe",
+    "it": "europe",
+    "de": "europe",
+    "pt": "europe",
+    "th": "asia",
+    "jp": "asia",
+    "id": "asia",
+    "vn": "asia",
+    "au": "oceania",
+    "nz": "oceania",
+    "za": "africa",
+    "ke": "africa",
+    "ma": "africa",
+}
+
+_BLANK_COUNTRY_TEMPLATE: dict = {
+    "meta": {
+        "country_code": "",
+        "country_name": "",
+        "last_updated": "",
+    },
+    "outdoors": {},
+    "food": {},
+    "entry_and_border": {},
+    "health": {},
+    "safety": {},
+    "budget": {},
+    "accommodation": {},
+    "weather_and_seasonality": {},
+    "transport": {},
+    "culture": {},
+}
+
 
 def _find_country_json(country_code: str) -> Path | None:
     """Locate a country JSON file by code or name prefix, checking continent subfolders."""
@@ -194,10 +241,17 @@ class TavilyService:
         return None
 
     def _enrich_country_json(self, country_code: str, category: str, data: dict):
-        """Read country JSON, merge new data into the category field, write back."""
+        """Read country JSON, merge new data into the category field, write back.
+
+        If no JSON file exists for the country yet, create a minimal skeleton
+        under the appropriate continent subfolder (or ``unknown/`` if the
+        country code isn't in ``COUNTRY_TO_CONTINENT``).
+        """
         json_path = _find_country_json(country_code)
         if json_path is None:
-            return
+            json_path = self._create_country_json(country_code)
+            if json_path is None:
+                return
 
         try:
             country_data = json.loads(json_path.read_text(encoding="utf-8"))
@@ -232,6 +286,33 @@ class TavilyService:
             log.info("Enriched %s with %s data", json_path.name, category)
         except OSError as e:
             log.error("Failed to write enriched JSON: %s", e)
+
+    @staticmethod
+    def _create_country_json(country_code: str) -> Path | None:
+        """Create a blank country JSON skeleton and return its path."""
+        cc = country_code.strip().lower()
+        continent = COUNTRY_TO_CONTINENT.get(cc, "unknown")
+        target_dir = _COUNTRIES_DIR / continent
+        try:
+            target_dir.mkdir(parents=True, exist_ok=True)
+        except OSError as e:
+            log.error("Failed to create continent dir %s: %s", target_dir, e)
+            return None
+
+        json_path = target_dir / f"{cc}.json"
+        skeleton = json.loads(json.dumps(_BLANK_COUNTRY_TEMPLATE))
+        skeleton["meta"]["country_code"] = cc
+        skeleton["meta"]["last_updated"] = datetime.now(timezone.utc).isoformat()
+        try:
+            json_path.write_text(
+                json.dumps(skeleton, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            log.info("Created new country JSON: %s", json_path)
+            return json_path
+        except OSError as e:
+            log.error("Failed to write new country JSON %s: %s", json_path, e)
+            return None
 
     def _log_query(self, query: str, country_code: str, source: str, result_preview: str):
         """Append a JSON line to the query log."""
