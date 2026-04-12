@@ -38,15 +38,15 @@ def searched_since_last_user_message(messages: list[dict[str, Any]]) -> bool:
 def ranked_destination_candidates(
     messages: list[dict[str, Any]],
     exclude: str,
-) -> list[str]:
+) -> list[dict[str, str]]:
     """
-    Returns destination IATA codes in priority order from search_airports
-    tool results, excluding the origin code. Preserves the search service's
-    ranking (international airports first) rather than pulling from the
-    unordered grounded_codes set.
+    Returns destination airport dicts (iata, name, city, country) in
+    priority order from search_airports tool results, excluding the origin
+    code. Preserves the search service's ranking (international airports
+    first) rather than pulling from the unordered grounded_codes set.
     """
     seen: set[str] = set()
-    candidates: list[str] = []
+    candidates: list[dict[str, str]] = []
 
     for m in messages:
         if m.get("role") != "tool" or m.get("name") != "search_airports":
@@ -61,6 +61,13 @@ def ranked_destination_candidates(
             code = str(match.get("iata", "")).strip().upper()
             if len(code) == 3 and code != exclude and code not in seen:
                 seen.add(code)
-                candidates.append(code)
+                candidates.append(
+                    {
+                        "iata": code,
+                        "name": str(match.get("name", "")).strip(),
+                        "city": str(match.get("city", "")).strip(),
+                        "country": str(match.get("country", "")).strip(),
+                    }
+                )
 
     return candidates

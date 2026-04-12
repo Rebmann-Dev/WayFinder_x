@@ -79,30 +79,31 @@ TOOLS: list[dict] = [
         "function": {
             "name": "get_safety_assessment",
             "description": (
-                "Predict a travel safety score for a geographic location using latitude and longitude. "
-                "Use this for questions about whether a destination, area, stop, waypoint, beach, or town may be safe."
+                "Predict a travel safety score for a city or location. "
+                "Pass the city or place name as location_name — no coordinates required. "
+                "Use this whenever the user asks about safety, crime, or risk level for any destination, city, or country."
             ),
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "latitude": {
-                        "type": "number",
-                        "description": "Latitude of the location.",
-                    },
-                    "longitude": {
-                        "type": "number",
-                        "description": "Longitude of the location.",
+                    "location_name": {
+                        "type": "string",
+                        "description": "City or place name, e.g. 'Los Angeles', 'Bangkok', 'Paris'.",
                     },
                     "country": {
                         "type": "string",
-                        "description": "Optional country name.",
+                        "description": "Country name to improve accuracy, e.g. 'United States', 'Thailand'.",
                     },
-                    "location_name": {
-                        "type": "string",
-                        "description": "Optional human-readable location name.",
+                    "latitude": {
+                        "type": "number",
+                        "description": "Latitude — only provide if you already have exact coordinates.",
+                    },
+                    "longitude": {
+                        "type": "number",
+                        "description": "Longitude — only provide if you already have exact coordinates.",
                     },
                 },
-                "required": ["latitude", "longitude"],
+                "required": ["location_name"],
             },
         },
     },

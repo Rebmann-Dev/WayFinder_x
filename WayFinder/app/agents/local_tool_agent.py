@@ -193,19 +193,13 @@ class LocalToolAgent:
 
     def _airport_safety_brief(
         self,
-        airport: dict[str, str] | str,
+        airport: dict[str, str],
         cache: dict[str, dict[str, Any]],
     ) -> dict[str, Any] | None:
         """
         Returns a per-airport safety brief ``{score, band, city, country}``
         or None if no query candidate resolves.
-
-        ``airport`` may be a dict with keys like ``iata``, ``name``, ``city``,
-        ``country`` **or** a plain IATA code string (as returned by
-        ``ranked_destination_candidates``).
         """
-        if isinstance(airport, str):
-            airport = {"iata": airport}
         iata = str(airport.get("iata", "")).strip().upper()
         if iata and iata in cache:
             return cache[iata]
@@ -529,16 +523,10 @@ class LocalToolAgent:
             safety_by_iata: dict[str, dict[str, Any]] = {}
 
             for candidate in candidates:
-                if isinstance(candidate, dict):
-                    destination = candidate["iata"]
-                    dest_name = candidate.get("name") or destination
-                    dest_city = candidate.get("city") or ""
-                    dest_country = candidate.get("country") or ""
-                else:
-                    destination = str(candidate)
-                    dest_name = destination
-                    dest_city = ""
-                    dest_country = ""
+                destination = candidate["iata"]
+                dest_name = candidate.get("name") or destination
+                dest_city = candidate.get("city") or ""
+                dest_country = candidate.get("country") or ""
 
                 args = {
                     "origin": origin,
@@ -599,10 +587,7 @@ class LocalToolAgent:
             if all_results:
                 final_text = render_multi_airport_results(all_results)
             else:
-                tried = ", ".join(
-                    c["iata"] if isinstance(c, dict) else c
-                    for c in candidates
-                )
+                tried = ", ".join(c["iata"] for c in candidates)
                 final_text = (
                     f"I couldn't find any flights from **{origin}** to "
                     f"nearby airports ({tried}) on **{departure_date_str}**.\n\n"
@@ -712,9 +697,7 @@ class LocalToolAgent:
         thread: list[dict[str, Any]] = list(messages)
         date_str: str | None = None
 
-        # ── Pre-resolution (ALL query types) ──────────────────────────────
-        # Context injection: destination, origin, and date are always
-        # injected so the LLM sees sidebar state regardless of intent.
+        # ── Pre-resolution (flight requests only) ──────────────────────────
         if user_wants_flights:
             if self._update_destination_from_chat(messages):
                 yield AgentStreamEvent(
@@ -722,10 +705,12 @@ class LocalToolAgent:
                     f"Switching destination to "
                     f"{st.session_state['selected_location']['city']}…",
                 )
-        yield from self._pre_resolve_destination(thread)
-        yield from self._pre_resolve_origin(thread)
-        date_str = self._pre_inject_date(thread, messages)
-        log.info("AGENT pre-resolution complete  date_str=%s", date_str)
+            yield from self._pre_resolve_destination(thread)
+            yield from self._pre_resolve_origin(thread)
+            date_str = self._pre_inject_date(thread, messages)
+            log.info("AGENT pre-resolution complete  date_str=%s", date_str)
+        else:
+            log.info("AGENT skipping pre-resolution, not a flight request")
 
         # ── Safety short-circuit ───────────────────────────────────────────
         if user_wants_safety and not user_wants_flights:
@@ -807,6 +792,13 @@ class LocalToolAgent:
                     )
 
             # ── Model generation ───────────────────────────────────────────
+            _trim_thread_to_fit(
+                thread,
+                count_tokens=self._model.count_tokens,
+                tools=TOOLS,
+                target_tokens=int(self._model.MAX_INPUT_TOKENS * 0.85),
+            )
+
             log.info("AGENT STEP %d  starting model generation", step + 1)
             full_text = ""
             yield AgentStreamEvent("status", "Analyzing results…")
@@ -949,3 +941,106 @@ class LocalToolAgent:
             if event.kind == "done":
                 last = event.text
         return last
+
+
+def _last_real_user_index(thread: list[dict[str, Any]]) -> int:
+    """Index of the most recent user turn that isn't a [context:…] injection."""
+    last = -1
+    for i, m in enumerate(thread):
+        if m.get("role") != "user":
+            continue
+        if str(m.get("content", "")).startswith("[context:"):
+            continue
+        last = i
+    return last
+
+
+def _trim_thread_to_fit(
+    thread: list[dict[str, Any]],
+    *,
+    count_tokens,
+    tools: list[dict[str, Any]] | None,
+    target_tokens: int,
+) -> None:
+    """
+    Trims ``thread`` in place until its tokenized form fits under
+    ``target_tokens``. Drops oldest tool results first (bulkiest), then
+    oldest pre-current-turn messages. Preserves the system prompt and the
+    most recent real user message and everything after it.
+    """
+    try:
+        count = count_tokens(thread, tools)
+    except Exception as exc:  # tokenizer errors shouldn't block generation
+        log.warning("TRIM  count_tokens failed up front: %s", exc)
+        return
+
+    if count <= target_tokens:
+        return
+
+    initial = count
+    log.info(
+        "TRIM  start count=%d target=%d msgs=%d",
+        initial,
+        target_tokens,
+        len(thread),
+    )
+
+    # Phase 1 — drop oldest tool results (and their paired assistant
+    # tool_call turn if present) until we fit or run out of tool messages.
+    while count > target_tokens:
+        cutoff = _last_real_user_index(thread)
+        tool_idx = next(
+            (
+                i
+                for i, m in enumerate(thread)
+                if m.get("role") == "tool" and (cutoff < 0 or i < cutoff)
+            ),
+            None,
+        )
+        if tool_idx is None:
+            break
+
+        thread.pop(tool_idx)
+        # If the immediately preceding assistant turn was the tool_call
+        # that produced this result, drop it too — an orphan tool_call
+        # with no result confuses the Qwen chat template.
+        prev_idx = tool_idx - 1
+        if prev_idx >= 0 and thread[prev_idx].get("role") == "assistant":
+            prev_content = str(thread[prev_idx].get("content", "")).lower()
+            if "<tool_call>" in prev_content:
+                thread.pop(prev_idx)
+
+        try:
+            count = count_tokens(thread, tools)
+        except Exception as exc:
+            log.warning("TRIM  count_tokens failed mid-pass: %s", exc)
+            return
+
+    # Phase 2 — if still over, drop oldest non-system messages that sit
+    # before the latest real user turn, one at a time.
+    while count > target_tokens:
+        cutoff = _last_real_user_index(thread)
+        drop_idx = next(
+            (
+                i
+                for i, m in enumerate(thread)
+                if m.get("role") != "system" and (cutoff < 0 or i < cutoff)
+            ),
+            None,
+        )
+        if drop_idx is None:
+            break
+
+        thread.pop(drop_idx)
+        try:
+            count = count_tokens(thread, tools)
+        except Exception as exc:
+            log.warning("TRIM  count_tokens failed mid-pass: %s", exc)
+            return
+
+    log.info(
+        "TRIM  end count=%d (from %d) msgs=%d",
+        count,
+        initial,
+        len(thread),
+    )

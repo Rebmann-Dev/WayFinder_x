@@ -138,6 +138,25 @@ class ModelService:
                 dim=1,
             )
 
+    def count_tokens(
+        self,
+        messages: list[dict[str, Any]],
+        tools: list[dict[str, Any]] | None = None,
+    ) -> int:
+        """
+        Returns the number of tokens ``messages`` (with ``tools``) expands to
+        after the chat template is applied. Used by the agent to trim the
+        working thread before calling the model.
+        """
+        text = self.tokenizer.apply_chat_template(
+            messages,
+            tools=tools,
+            tokenize=False,
+            add_generation_prompt=True,
+        )
+        ids = self.tokenizer(text, add_special_tokens=False).input_ids
+        return len(ids)
+
     def stream_agent_turn(
         self,
         messages: list[dict[str, Any]],
