@@ -458,75 +458,153 @@
     "surf_spots": [
       {
         "name": "Montañita",
-        "region": "Santa Elena Province",
-        "wave_type": "Right point break",
-        "difficulty": "Intermediate to Advanced",
+        "region": "Santa Elena Province, Guayas Coast",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to advanced",
         "best_months": ["December", "January", "February", "March", "April"],
-        "description": "Ecuador's most famous surf town. Consistent right point break with powerful waves. International competitions held here. Vibrant nightlife.",
-        "notes": "Crowded during holidays. Board rentals and lessons readily available. Party town atmosphere."
+        "typical_wave_size": {
+          "peak_season": "4–8 ft (Dec–Apr)",
+          "off_season": "2–4 ft (May–Nov)"
+        },
+        "description": "Ecuador's most famous surf town. Fast, powerful beach break with both lefts and rights. Consistent swell year-round, biggest and most powerful December through April when NW swells arrive. Strong rip currents — not ideal for absolute beginners when overhead.",
+        "crowd_level": "High (popular backpacker town)",
+        "notes": "Town has full surf infrastructure — rentals, lessons, multiple schools. Best surfed at mid to high tide."
       },
       {
         "name": "Ayampe",
         "region": "Manabí Province",
-        "wave_type": "Beach break, left and right",
-        "difficulty": "Beginner to Intermediate",
-        "best_months": ["December", "January", "February", "March", "April"],
-        "description": "Mellow beach break in a quiet fishing village. Great for learning and intermediate surfers. Eco-lodges and yoga retreats.",
-        "notes": "Much quieter than Montañita. Growing surf scene. Good for those wanting to escape the party."
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["December", "January", "February", "March"],
+        "typical_wave_size": {
+          "peak_season": "3–6 ft (Dec–Mar)",
+          "off_season": "1–3 ft (May–Nov)"
+        },
+        "description": "Mellow, forgiving beach break just north of Montañita. Long, rideable waves perfect for longboarding and beginners. Much less crowded than Montañita. Small village feel with a few surf camps.",
+        "crowd_level": "Low",
+        "notes": "Great for learners. Consistent sandbars. Gentle shore break."
       },
       {
         "name": "Canoa",
         "region": "Manabí Province",
-        "wave_type": "Beach break",
-        "difficulty": "Beginner to Intermediate",
-        "best_months": ["December", "January", "February", "March", "April"],
-        "description": "Long wide beach with gentle waves ideal for beginners. Laid-back town rebuilding after 2016 earthquake. Paragliding also popular.",
-        "notes": "Rebuilding infrastructure. Budget-friendly. Good for longboarding."
-      },
-      {
-        "name": "Los Frailes",
-        "region": "Manabí Province (Machalilla NP)",
-        "wave_type": "Beach break",
-        "difficulty": "Intermediate",
-        "best_months": ["December", "January", "February", "March", "April"],
-        "description": "Beautiful crescent beach inside Machalilla National Park. Less consistent surf but stunning setting. Whale watching in season.",
-        "notes": "National park entry fee. Limited facilities. Combine with Isla de la Plata ('Poor Man's Galápagos')."
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["January", "February", "March", "April"],
+        "typical_wave_size": {
+          "peak_season": "3–6 ft (Jan–Apr)",
+          "off_season": "1–3 ft"
+        },
+        "description": "Long beach with multiple peaks spread over several kilometers. Mostly rights with some lefts. Great for beginners — waves are generally softer and slower than Montañita. Good kite surfing as well due to consistent winds.",
+        "crowd_level": "Low to medium",
+        "notes": "Wind picks up in afternoons, making mornings best for surfing. Long beach means peaks spread out."
       },
       {
         "name": "Mompiche",
-        "region": "Esmeraldas Province",
-        "wave_type": "Left point break",
-        "difficulty": "Intermediate to Advanced",
-        "best_months": ["December", "January", "February", "March", "April", "May"],
-        "description": "Powerful left point break in a remote Afro-Ecuadorian fishing village. Long rides possible. One of Ecuador's best waves when working.",
-        "notes": "Remote — limited infrastructure. Check safety situation in Esmeraldas province. Mosquitoes."
+        "region": "Esmeraldas Province (north coast)",
+        "break_type": "Point break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["December", "January", "February", "March"],
+        "typical_wave_size": {
+          "peak_season": "5–10 ft (Dec–Mar)",
+          "off_season": "2–4 ft"
+        },
+        "description": "Ecuador's best point break. Long, mechanical lefts that can hold well overhead surf. One of the most perfect waves in the country when it's on — long walls, predictable peel. Remote location keeps crowds low.",
+        "crowd_level": "Low",
+        "notes": "Getting there requires travel on rough roads or boat. Worth it for the wave quality. Bring supplies."
       },
       {
-        "name": "San Lorenzo (Manta area)",
-        "region": "Manabí Province",
-        "wave_type": "Point break, left and right",
-        "difficulty": "Intermediate to Advanced",
-        "best_months": ["December", "January", "February", "March", "April"],
-        "description": "Reef and point breaks near the port city of Manta. More consistent than many spots. Local surf community.",
-        "notes": "Near Manta with good infrastructure. Multiple breaks in the area. Can be hollow and powerful."
+        "name": "San Lorenzo",
+        "region": "Esmeraldas Province (far north)",
+        "break_type": "Beach break and river mouth",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["December", "January", "February"],
+        "typical_wave_size": {
+          "peak_season": "4–8 ft",
+          "off_season": "Flat to 2 ft"
+        },
+        "description": "Powerful river mouth break in Ecuador's most remote surf zone. Hollow lefts with heavy lips. Strong currents from river outflow. Largely unexplored — very few surfers make it here.",
+        "crowd_level": "Very low",
+        "notes": "Requires logistical effort to reach. Bring a guide. Water can be murky near river mouth."
       },
       {
         "name": "Salinas",
         "region": "Santa Elena Province",
-        "wave_type": "Beach break and reef break",
-        "difficulty": "Beginner to Intermediate",
-        "best_months": ["December", "January", "February", "March"],
-        "description": "Popular resort town with several surf breaks. Chipipe beach good for beginners. Punta Carnero has bigger waves nearby.",
-        "notes": "Most touristy beach town in Ecuador. Better infrastructure than other surf spots. Crowded on weekends."
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["January", "February", "March"],
+        "typical_wave_size": {
+          "peak_season": "2–5 ft",
+          "off_season": "1–2 ft"
+        },
+        "description": "Ecuador's most popular beach resort town. Multiple beach breaks across the bay. Waves are generally small and forgiving — better for beginners than advanced surfers. Good infrastructure, calm water in the main bay.",
+        "crowd_level": "High (popular resort area)",
+        "notes": "Main beach is sheltered — head to the outer points for bigger surf. Best in the morning before wind picks up."
       },
       {
         "name": "Puerto Cayo",
         "region": "Manabí Province",
-        "wave_type": "Beach break",
-        "difficulty": "Beginner to Intermediate",
-        "best_months": ["December", "January", "February", "March", "April"],
-        "description": "Small fishing town with uncrowded beach breaks. Whale watching from June to September. Growing surf scene.",
-        "notes": "Quiet and off the beaten path. Limited services. Good base for exploring Machalilla NP."
+        "break_type": "Beach break and point",
+        "wave_direction": "Right",
+        "difficulty": "Intermediate",
+        "best_months": ["December", "January", "February", "March"],
+        "typical_wave_size": {
+          "peak_season": "4–7 ft",
+          "off_season": "1–3 ft"
+        },
+        "description": "Underrated right-hander off a rocky point with a sand-bottom beach break as backup. Consistent during swell season. Small fishing village with minimal surf crowd. Near Machalilla National Park.",
+        "crowd_level": "Very low",
+        "notes": "Check the point at mid to low tide for the best shape. Beach break works at all tides."
+      },
+      {
+        "name": "Los Frailes",
+        "region": "Manabí Province (Machalilla National Park)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["January", "February", "March"],
+        "typical_wave_size": {
+          "peak_season": "2–5 ft",
+          "off_season": "1–2 ft"
+        },
+        "description": "Protected beach inside Machalilla National Park. Crystal clear water, beautiful setting. Waves are generally gentle — more of a scenic surf experience than a high-performance one. Entry fee to the national park required.",
+        "crowd_level": "Low (park entry limits crowds)",
+        "notes": "Park entry fee applies. No commercial surf infrastructure — bring your own board. Snorkeling is excellent here too."
+      },
+      {
+        "name": "Atacames",
+        "region": "Esmeraldas Province",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner",
+        "best_months": ["January", "February", "March"],
+        "typical_wave_size": {
+          "peak_season": "2–4 ft",
+          "off_season": "1–2 ft"
+        },
+        "description": "Lively beach town with consistent but small surf. More of a beach holiday destination than a serious surf spot. Good for absolute first-timers. Loud nightlife scene.",
+        "crowd_level": "High",
+        "notes": "Best for beginners wanting a social scene alongside surf. Water can be rough from boat traffic."
+      },
+      {
+        "name": "Tortuga Bay (Galápagos)",
+        "region": "Santa Cruz Island, Galápagos",
+        "break_type": "Beach break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["December", "January", "February", "March"],
+        "typical_wave_size": {
+          "peak_season": "4–8 ft",
+          "off_season": "2–4 ft"
+        },
+        "description": "World-class left-hand beach break in one of the most unique surfing environments on earth. Surfing alongside sea lions and marine iguanas. Long, peeling lefts on a pristine white sand beach.",
+        "crowd_level": "Very low (remote, park regulations)",
+        "notes": "Galápagos National Park rules apply — no surf camps or instructors operate here. Access by foot only (45 min walk from Puerto Ayora). Special experience due to wildlife."
       }
     ],
     "wildlife_zones": [

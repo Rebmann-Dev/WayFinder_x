@@ -463,75 +463,99 @@
     "surf_spots": [
       {
         "name": "Máncora",
-        "region": "Piura (Northern Coast)",
-        "wave_type": "Left point break",
-        "difficulty": "Beginner to Intermediate",
-        "best_months": ["October", "November", "December", "January", "February", "March"],
-        "description": "Peru's most popular beach town. Warm water year-round (no wetsuit needed). Consistent left point break with long rides. Party atmosphere.",
-        "notes": "Crowded during holidays. Board rentals and lessons everywhere. Also kitesurfing and whale watching (Aug-Oct). 18-hour bus from Lima."
+        "region": "Piura Region (far north coast)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["December", "January", "February", "March", "April"],
+        "typical_wave_size": {"peak_season": "3–6 ft (Dec–Apr)", "off_season": "1–3 ft"},
+        "description": "Peru's most famous surf and beach resort town. Consistent beach break with mellow waves year-round. Warm water (rare for Peru) due to northerly location above the Humboldt Current. Perfect for beginners and a great social scene.",
+        "crowd_level": "High",
+        "notes": "Warmest water in Peru — no wetsuit needed Dec–Apr. Strong rip currents at some peaks."
+      },
+      {
+        "name": "Puerto Chicama (Puerto Malabrigo)",
+        "region": "La Libertad Region",
+        "break_type": "Point break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["April", "May", "June", "July", "August", "September"],
+        "typical_wave_size": {"peak_season": "4–10 ft (May–Sep)", "off_season": "2–4 ft"},
+        "description": "The longest left-hand point break in the world — waves can reach over 2km in length on a big day. Mechanical, peeling left that allows hundreds of meters of riding. A bucket-list wave for any surfer. Cold water, consistent swell April–September.",
+        "crowd_level": "Medium (pilgrimage spot — surfers come from worldwide)",
+        "notes": "Bring a 3/2mm wetsuit — water is cold year-round (16–20°C). Best at mid tide. The wave requires paddling back up the point after each ride."
       },
       {
         "name": "Huanchaco",
-        "region": "La Libertad (Trujillo)",
-        "wave_type": "Beach break and point break",
-        "difficulty": "Beginner to Intermediate",
-        "best_months": ["March", "April", "May", "June", "July", "August", "September"],
-        "description": "Historic fishing village famous for caballitos de totora (reed boats). Consistent waves. Rich archaeological sites nearby (Chan Chan, Huacas del Sol y Luna).",
-        "notes": "Cooler water — wetsuit needed. UNESCO-recognized reed boat fishing tradition. Combine with archaeological tourism."
+        "region": "La Libertad Region (near Trujillo)",
+        "break_type": "Point break and beach break",
+        "wave_direction": "Left",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["April", "May", "June", "July", "August"],
+        "typical_wave_size": {"peak_season": "3–6 ft", "off_season": "1–3 ft"},
+        "description": "Historic fishing village famous for totora reed boats (caballitos de totora) still used by local fishermen — one of the oldest surfing traditions in the world. Consistent left point break with easy access. Great cultural experience alongside surfing.",
+        "crowd_level": "Medium",
+        "notes": "Cold water — wetsuit required. Watch for fishermen on reed boats in the lineup. UNESCO-recognized fishing tradition."
       },
       {
         "name": "Punta Hermosa",
-        "region": "Lima",
-        "wave_type": "Reef break and beach break",
-        "difficulty": "Intermediate to Advanced",
-        "best_months": ["April", "May", "June", "July", "August", "September", "October"],
-        "description": "Lima's premier surf destination, 40km south of the city. Multiple breaks for different levels. Hosts international competitions.",
-        "notes": "Cold water — full wetsuit required. Weekend crowds from Lima. Strong currents. Several breaks including Playa Norte and Caballeros."
-      },
-      {
-        "name": "Cerro Azul",
-        "region": "Lima (Cañete)",
-        "wave_type": "Left point break",
-        "difficulty": "Intermediate",
+        "region": "Lima Region (south of Lima)",
+        "break_type": "Point break and beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Intermediate to advanced",
         "best_months": ["April", "May", "June", "July", "August", "September"],
-        "description": "Fishing village 130km south of Lima with a reliable left point break. Long rides possible. Less crowded than Punta Hermosa.",
-        "notes": "Cold water — wetsuit needed. Good seafood restaurants. More mellow vibe than other Lima-area breaks."
-      },
-      {
-        "name": "Puerto Chicama",
-        "region": "La Libertad",
-        "wave_type": "Left point break",
-        "difficulty": "Intermediate to Advanced",
-        "best_months": ["March", "April", "May", "June", "July", "August", "September"],
-        "description": "Home to the longest left-hand wave in the world — rides up to 2km+ on perfect days. Legendary surf destination. Cold water, consistent swell.",
-        "notes": "2-hour drive from Trujillo. The wave needs a solid south swell to fully connect. Full wetsuit required. Limited infrastructure in town."
-      },
-      {
-        "name": "La Herradura",
-        "region": "Lima (Chorrillos)",
-        "wave_type": "Left reef break",
-        "difficulty": "Advanced",
-        "best_months": ["May", "June", "July", "August"],
-        "description": "Heavy left reef break in Lima. Powerful, hollow waves breaking over rock reef. For experienced surfers only. Spectators watch from the cliff.",
-        "notes": "Dangerous — sharp reef, strong currents, localism. Only surf here if experienced. Access from Chorrillos."
+        "typical_wave_size": {"peak_season": "4–10 ft (May–Aug)", "off_season": "2–4 ft"},
+        "description": "Lima's top surf destination, home to multiple world-class breaks. Caballeros is a powerful left point; Señoritas is a more forgiving right. Has hosted major competitions including ISA World Championships. Easy access from Lima (45 min).",
+        "crowd_level": "High (Lima surfers)",
+        "notes": "Wetsuit essential — cold Humboldt current. Rocky bottom at some breaks. Locals can be territorial at main peaks."
       },
       {
         "name": "Pico Alto",
-        "region": "Lima (Punta Hermosa)",
-        "wave_type": "Big wave reef break",
-        "difficulty": "Expert only",
+        "region": "Lima Region (Punta Hermosa area)",
+        "break_type": "Reef break",
+        "wave_direction": "Left",
+        "difficulty": "Advanced to expert",
         "best_months": ["May", "June", "July", "August"],
-        "description": "Peru's premier big wave spot. Waves reach 8-10m+. International big wave competitions. Tow-in surfing on biggest days.",
-        "notes": "EXPERT ONLY — life-threatening conditions. Watch from shore unless you are an experienced big wave surfer. Jet ski support recommended."
+        "typical_wave_size": {"peak_season": "8–20 ft (May–Aug)", "off_season": "Flat to 4 ft"},
+        "description": "Peru's big wave spot. A massive left-hand reef break that can reach 20+ feet during peak swell events. Hosts the annual Pico Alto Big Wave Invitational. Not for the faint-hearted — heavy, consequences reef below.",
+        "crowd_level": "Low (experts only)",
+        "notes": "Only surfed on large swells. Requires jet ski rescue capability for big days. Water temperature 15–18°C — 4/3mm wetsuit needed."
+      },
+      {
+        "name": "Cerro Azul",
+        "region": "Cañete Province (south of Lima)",
+        "break_type": "Point break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate",
+        "best_months": ["April", "May", "June", "July", "August"],
+        "typical_wave_size": {"peak_season": "3–7 ft", "off_season": "1–3 ft"},
+        "description": "Classic Peruvian left point break. Long, walling lefts that peel consistently during swell season. A favorite escape from Lima crowds with a more relaxed vibe than Punta Hermosa.",
+        "crowd_level": "Low to medium",
+        "notes": "Wetsuit needed. Small town with basic amenities. Best on S or SW swell."
+      },
+      {
+        "name": "La Herradura",
+        "region": "Lima (Chorrillos district)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["April", "May", "June", "July"],
+        "typical_wave_size": {"peak_season": "3–6 ft", "off_season": "1–3 ft"},
+        "description": "Lima's most accessible surf beach, inside a sheltered crescent bay. Multiple peaks across the beach. Popular with Lima surf schools and beginners due to easier access and wave consistency.",
+        "crowd_level": "High (Lima residents)",
+        "notes": "Cold water — wetsuit required. Crowded on weekends. Good for lessons."
       },
       {
         "name": "Lobitos",
-        "region": "Piura (Northern Coast)",
-        "wave_type": "Left point break",
-        "difficulty": "Intermediate to Advanced",
-        "best_months": ["October", "November", "December", "January", "February", "March"],
-        "description": "Remote former oil town with world-class left point breaks. Uncrowded, consistent, warm water. Growing surf community and eco-lodges.",
-        "notes": "Remote — limited infrastructure but improving. Warm water, no wetsuit needed. Multiple breaks. 1 hour south of Máncora."
+        "region": "Piura Region (north coast, near Talara)",
+        "break_type": "Point break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["December", "January", "February", "March", "April", "May"],
+        "typical_wave_size": {"peak_season": "4–8 ft (Dec–May)", "off_season": "2–4 ft"},
+        "description": "Forgotten gem — a former oil company ghost town that has become a surf haven. Long, consistent lefts with multiple breaks along the point. Growing community of surfers and digital nomads. Warmer water than central Peru.",
+        "crowd_level": "Low",
+        "notes": "Remote feel despite improving infrastructure. Surf camps and hostels available. Bring supplies — town is basic."
       }
     ],
     "wildlife_zones": [
