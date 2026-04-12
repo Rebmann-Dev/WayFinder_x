@@ -234,3 +234,34 @@ def route_place_hints(messages: list[dict[str, Any]]) -> dict[str, list[str]]:
                 if value and value not in hints[key]:
                     hints[key].append(value)
     return hints
+
+
+# Matches chat mentions of a destination after a flight/travel verb.
+_CHAT_DEST_RE = re.compile(
+    r"""
+    \b(?:flights?|fly(?:ing)?|trip|travell?ing|head(?:ing)?|
+        go(?:ing)?|visit(?:ing)?|vacation|holiday)
+    \s+(?:\w+\s+){0,3}?to\s+
+    (?P<dest>[^,.!?\n]+?)
+    (?=$|[,.!?]|\s+(?:on|for|from|this|next|in|by|at|around|tomorrow|today|\d{4}-))
+    """,
+    re.IGNORECASE | re.VERBOSE,
+)
+
+
+def latest_destination_mention(messages: list[dict[str, Any]]) -> str | None:
+    """
+    Extracts a destination place name from the most recent real user
+    message. Returns the place name as the user wrote it (normalized),
+    or None if no flight-intent destination phrase is present.
+    """
+    from agents.utils.thread import latest_user_message
+
+    latest = latest_user_message(messages)
+    if not latest:
+        return None
+    match = _CHAT_DEST_RE.search(latest)
+    if not match:
+        return None
+    normalized = _normalize_place_hint(match.group("dest"))
+    return normalized or None
