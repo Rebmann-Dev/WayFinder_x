@@ -1,0 +1,1084 @@
+{
+  "meta": {
+    "last_updated": "2026-04-12",
+    "confidence_score": 0.91,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "Surfline La Paloma surf guide",
+      "IGLTA Uruguay LGBT travel guide",
+      "National Parks Association Uruguay",
+      "Guru'Guay Uruguay travel guides",
+      "Bodega Garzón Uruguay festivals",
+      "Seven Corners Uruguay surfing guide",
+      "Uruguay Natural Ministry of Tourism"
+    ],
+    "notes": "Uruguay is the most progressive country in South America — same-sex marriage (2013), cannabis legalization (2013), abortion rights (2012). Carnaval of Montevideo is recognized as the world's longest carnival by UNESCO."
+  },
+  "identity": {
+    "name": "Uruguay",
+    "official_name": "Oriental Republic of Uruguay",
+    "code": "UY",
+    "iso3": "URY",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Montevideo",
+    "flag_emoji": "🇺🇾",
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "driving_side": "right",
+    "country_calling_code": "+598",
+    "internet_tld": ".uy"
+  },
+  "language_and_money": {
+    "languages": [
+      "Spanish"
+    ],
+    "primary_language": "Spanish",
+    "english_proficiency": "Moderate — English widely spoken in Punta del Este, high-end hotels, and tourism industry. Limited in smaller towns and among older Uruguayans. Better than most South American countries in tourist areas.",
+    "currency": "UYU",
+    "currency_name": "Uruguayan Peso",
+    "currency_symbol": "$U",
+    "cash_vs_card": "Cards widely accepted in Montevideo, Punta del Este, and most restaurants and hotels. Cash needed for smaller towns, buses, markets, and small businesses. USD accepted in Punta del Este.",
+    "typical_payment_methods": [
+      "Cash (Uruguayan Pesos)",
+      "Visa",
+      "Mastercard",
+      "Mercado Pago (mobile)"
+    ],
+    "atm_availability": "ATMs (Redbanc, Abitab) widely available in Montevideo, Punta del Este, and all major cities. Available in most tourist towns. Use ATMs inside bank branches for security.",
+    "tipping_culture": "10% at restaurants customary if not included. Tip taxi drivers by rounding up. Tip tour guides and gaucho hosts at estancias.",
+    "tipping_etiquette": "10% at restaurants. Round up taxis. Tip estancia staff $5-10/day. Tip surf instructors $5-10 if pleased."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days",
+      "visa_type": "Stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid during intended stay — no specific 6-month rule, but 6 months recommended",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": false,
+    "proof_of_funds_required": false,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Standard agricultural restrictions. No meat, fresh fruit, or plants without declaration. Normal limits on tobacco and alcohol.",
+    "restricted_items": [
+      "Firearms without permit",
+      "Narcotics",
+      "Agricultural products without declaration",
+      "Counterfeit goods"
+    ],
+    "duty_free_allowances": "400 cigarettes or 50 cigars, 3 liters of spirits, gifts up to $500 value"
+  },
+  "health": {
+    "recommended_vaccines": [
+      "Hepatitis A",
+      "Typhoid",
+      "Hepatitis B",
+      "Tetanus-Diphtheria"
+    ],
+    "required_vaccines": [],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": false,
+    "malaria_risk": "None — Uruguay has no malaria risk",
+    "malaria_regions": [],
+    "malaria_prophylaxis_info": "Not required",
+    "dengue_risk": "Low — occasional dengue cases in warmer months but not a major risk compared to tropical neighbors",
+    "altitude_sickness_risk": "None — Uruguay is flat with no significant elevation. Highest point (Cerro Catedral) is only 513m.",
+    "food_water_safety": "Tap water is safe to drink in Montevideo and all major cities. Uruguay has excellent water quality. Food safety standards are high.",
+    "air_quality_concerns": "Generally excellent. Montevideo's air quality is good. Open countryside has pristine air.",
+    "common_travel_illnesses": [
+      "Traveler's diarrhea (less common than in tropical South America)",
+      "Sunburn (powerful southern hemisphere sun)",
+      "Cold exposure (winters can be cold and damp)"
+    ],
+    "pharmacy_access": "Excellent — pharmacies (farmacias) widely available, open long hours. Many medications available OTC. Uruguay has a universal healthcare system.",
+    "tap_water_safe": true,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Very good — Uruguay has one of the best healthcare systems in South America. Private clinics and public hospitals available. Hospital Británico in Montevideo has English-speaking staff.",
+    "emergency_medical_number": "105"
+  },
+  "safety": {
+    "overall_score": 68,
+    "travel_advisory_level_us": 1,
+    "travel_advisory_level_label": "Exercise Normal Precautions",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "Petty theft in Montevideo City Centre and Pocitos",
+      "Street crime has increased in some areas of Montevideo",
+      "Punta del Este and coastal towns are very safe",
+      "Overall crime rates significantly lower than most of South America"
+    ],
+    "crime_risk": "Low-moderate. Uruguay is one of the safest countries in South America. Petty theft (pickpocketing, bag snatching) occurs in Montevideo's Ciudad Vieja and Cerro neighborhoods. Punta del Este, La Paloma, and most coastal areas are very safe.",
+    "scam_risk": "Low — Uruguay has little organized tourist scam activity. Occasional taxi overcharging.",
+    "transport_safety": "Generally very safe. Buses (CUTCSA in Montevideo, inter-city COT and Turil) are reliable. Roads are well-maintained. Driving is orderly by South American standards.",
+    "solo_female_travel_notes": "One of the best solo female travel destinations in South America. Very safe by the standards of the region. LGBTQ travelers also extremely welcome.",
+    "lgbtq_notes": "Uruguay is the most LGBTQ-friendly country in South America and among the top 5 in the world according to the Spartacus Gay Travel Guide. Same-sex marriage legal since 2013. Equal age of consent since 1934. Anti-discrimination laws since 2004. Openly gay couples are a normal sight in Montevideo.",
+    "night_safety": "Punta del Este and Carrasco (Montevideo) are safe at night. Exercise caution in Ciudad Vieja and some Montevideo central neighborhoods after midnight. The Rambla (Montevideo promenade) is generally safe.",
+    "safe_areas": [
+      "Pocitos (Montevideo)",
+      "Carrasco (Montevideo)",
+      "Punta del Este",
+      "José Ignacio",
+      "Colonia del Sacramento",
+      "Coastal towns generally"
+    ],
+    "areas_to_avoid": [
+      "Cerro and surroundings (Montevideo)",
+      "Some central Montevideo streets late at night"
+    ],
+    "natural_disaster_risks": [
+      "Severe thunderstorms in summer (December-March)",
+      "Occasional coastal flooding",
+      "No earthquake or volcanic risk"
+    ],
+    "political_stability_notes": "One of South America's most stable democracies — consistently high on democracy indices. Political transitions are peaceful.",
+    "common_scams": [
+      "Taxi overcharging — use Uber or agree fare in advance",
+      "Fake currency — rare but check bills received",
+      "Distraction pickpocketing in Ciudad Vieja"
+    ],
+    "police_reliability": "Generally reliable and professional. Tourist police available at major attractions.",
+    "emergency_numbers": {
+      "police": "911",
+      "ambulance": "105",
+      "fire": "104",
+      "general_emergency": "911"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Montevideo",
+      "us_embassy_phone": "+598-1770-2000",
+      "us_embassy_website": "https://uy.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "December to March for beach, surfing, and warm weather. October and November for pleasant temperatures without crowds. Carnival (late January to March) is Montevideo's cultural highlight. April to September for wine tours, estancia visits, and low-season tranquility.",
+    "climate_zones": [
+      "Temperate oceanic climate — no distinct dry/wet seasons",
+      "Montevideo coast — 8-30°C, Atlantic breezes, fog in winter",
+      "Interior — more extreme temperature range, hotter summers, colder winters",
+      "Punta del Este — beach town, 10-30°C"
+    ],
+    "dry_season": "No pronounced dry season — rain distributed year-round. Summer (December-March) tends to have less rain but no guarantee.",
+    "rainy_season": "No distinct rainy season — Uruguay receives rain year-round. May and October can be rainier.",
+    "hurricane_typhoon_season": "No hurricane risk — Uruguay is too far south and landlocked from the main hurricane zone",
+    "surf_season": "March to November for best Atlantic swells. May to September are peak months for consistent surf. Summer (December-February) can have good days but winds are more variable.",
+    "trekking_best_months": [
+      "September",
+      "October",
+      "November",
+      "March",
+      "April"
+    ],
+    "average_temp_by_month": {
+      "Montevideo": "8-30°C (warmest Jan-Feb ~28°C, coldest Jun-Jul ~12°C)",
+      "Punta del Este": "Similar to Montevideo — warmer in summer, mild winters",
+      "Interior (Tacuarembó)": "Slightly more extreme — 5-35°C range"
+    },
+    "daylight_hours_by_season": "Summer (Dec-Jan) 14+ hours daylight; winter (Jun-Jul) 10 hours daylight"
+  },
+  "transport": {
+    "major_airports": [
+      "Carrasco International Airport (MVD) — Montevideo, 17km from city center",
+      "Laguna del Sauce Airport (PDP) — Punta del Este (Maldonado)"
+    ],
+    "main_airlines": [
+      "LATAM Uruguay",
+      "Aerolíneas Argentinas",
+      "Gol",
+      "Copa Airlines",
+      "American Airlines",
+      "Air Europa"
+    ],
+    "airport_to_city_options": [
+      "Taxi ($15-25 to Montevideo center, 20 min)",
+      "Uber ($12-20)",
+      "COT/Turil bus ($3-5 to terminal, 30 min)",
+      "Hotel transfers"
+    ],
+    "public_transit_quality": "Montevideo has an excellent CUTCSA bus network covering the entire city. Easy to use with Google Maps. Punta del Este has local buses. Inter-city Turbus, COT, Turil, and CITA buses connect all major destinations.",
+    "intercity_bus_quality": "Excellent — frequent, comfortable, and on time. Montevideo to Punta del Este (2 hours, $8-12); Montevideo to Colonia (2.5 hours, $8-12); Montevideo to Salto (5-6 hours, $15-20). Terminal Tres Cruces in Montevideo is the main hub.",
+    "train_network_quality": "No practical passenger rail for tourists",
+    "domestic_flights_useful": false,
+    "car_rental_recommended": true,
+    "road_conditions": "Excellent — Uruguay has the best road network in South America outside Chile. Major routes are paved and well-maintained. Ruta 1 (Montevideo-Colonia), Ruta 9 (Coastal road) are excellent.",
+    "four_x_four_needed_regions": [
+      "Cabo Polonio (4x4 required to reach the village — no road, 4x4 trucks provided locally)",
+      "Some rural estancia tracks"
+    ],
+    "ride_hailing_apps": [
+      "Uber",
+      "Cabify"
+    ],
+    "taxi_safety_notes": "Taxis are metered and regulated — generally safe. Uber and Cabify are widely used and reliable in Montevideo.",
+    "ferry_routes": [
+      "Buquebus ferry: Montevideo-Buenos Aires (2-3 hours, daily, with car options)",
+      "Colonia-Buenos Aires ferry (1.5 hours, Buquebus and Seacat)",
+      "Colonia is the fastest Buenos Aires-Uruguay connection"
+    ],
+    "border_crossing_notes": "Main land crossings: Rivera (to Livramento, Brazil, walk-across border), Chuy (to Chuí, Brazil, beach town border), Fray Bentos (to Gualeguaychú, Argentina, via bridge)."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$45-70/day",
+    "daily_budget_midrange": "$90-150/day",
+    "daily_budget_comfort": "$180-400/day",
+    "hostel_avg": "$15-30/night",
+    "hotel_avg": "$60-150/night",
+    "meal_avg": "$8-15 (parrilla lunch $10-18, restaurant $15-30 in Punta del Este)",
+    "coffee_avg": "$2-4",
+    "beer_avg": "$3-5 (Patricia Beer is local brand)",
+    "local_transport_avg": "$0.50-1 (city bus), $5-10 (Uber)",
+    "sim_card_avg": "$10-20 for data package",
+    "coworking_day_pass_avg": "$15-30",
+    "surfboard_rental_avg": "$20-35/day",
+    "value_for_money": "Good in general; Punta del Este is expensive (comparable to Buenos Aires high season). Montevideo and smaller towns are very affordable. Wine and beef are excellent value."
+  },
+  "connectivity": {
+    "sim_card_providers": [
+      "Antel",
+      "Movistar",
+      "Claro"
+    ],
+    "esim_available": true,
+    "mobile_data_quality": "Excellent 4G/LTE coverage nationwide — one of the best-connected countries in South America. Uruguay was the first country in the world with nationwide free school WiFi (Plan Ceibal).",
+    "wifi_quality": "Very good — available in virtually all accommodations, restaurants, and public spaces. Speeds often 20-50 Mbps.",
+    "coworking_available": true,
+    "best_remote_work_cities": [
+      "Montevideo (Pocitos, Ciudad Vieja)",
+      "Punta del Este (off-season is ideal for remote workers)"
+    ],
+    "power_outlet_types": [
+      "C",
+      "F",
+      "L"
+    ],
+    "voltage": "220V, 50Hz",
+    "plug_adapter_needed_for_us": true,
+    "power_reliability": "Excellent — Uruguay runs almost entirely on renewable energy (wind, solar, hydro). Power outages extremely rare."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Pocitos, Montevideo — modern, beachfront, restaurants, safe",
+      "Ciudad Vieja, Montevideo — historic, bohemian, walking distance to port and Old Town",
+      "Punta del Este peninsula — luxury, yacht club, glamour, beaches",
+      "La Barra — boutique, artsy, north of Punta del Este",
+      "José Ignacio — ultra-luxury, boutique, Argentina's elite summer",
+      "La Paloma — surf town, budget-friendly, genuine beach vibe",
+      "Punta del Diablo — small fishing village, surfer's paradise"
+    ],
+    "budget_areas": [
+      "Ciudad Vieja (Montevideo)",
+      "La Paloma",
+      "Punta del Diablo"
+    ],
+    "family_friendly_areas": [
+      "Pocitos (Montevideo)",
+      "Punta del Este (resort area)",
+      "Santa Teresa National Park camping"
+    ],
+    "nightlife_areas": [
+      "Punta del Este (summer)",
+      "Pocitos and Ciudad Vieja (Montevideo year-round)"
+    ],
+    "surf_towns": [
+      "La Paloma",
+      "La Pedrera",
+      "Punta del Diablo",
+      "Cabo Polonio",
+      "Punta del Este (La Barra area)"
+    ],
+    "eco_lodges_available": true,
+    "peak_booking_season": "December to March (summer/beach season) — Punta del Este and coastal towns must be booked months ahead; prices 2-3x higher in high season",
+    "accommodation_notes": "Punta del Este January-February is extremely expensive and crowded — consider nearby La Paloma, José Ignacio, or La Pedrera as lower-cost alternatives with similar surf and beach access."
+  },
+  "culture": {
+    "local_customs": [
+      "Mate is the national ritual — Uruguayans carry their mate thermos and gourd everywhere, including to work and the beach",
+      "Asado is a deeply social institution — Sunday family asados are sacred",
+      "Gaucho heritage is celebrated and alive — horsemanship, leather goods, and folk music are proudly maintained",
+      "Uruguayans are reserved at first but warm once comfortable — don't mistake reserve for unfriendliness",
+      "Secular, educated society — one of Latin America's most literate and secular countries"
+    ],
+    "dress_expectations": "Casual and stylish. Punta del Este in summer is relatively fashionable — nice casual wear appropriate. Beach towns are very casual. Buenos Aires fashion influence is visible in Montevideo.",
+    "religious_sensitivity": "Uruguay is the most secular country in Latin America — church and state are constitutionally separated. Religious festivals exist but are not dominant. Respect for all religions in this tolerant society.",
+    "social_norms": [
+      "Greet with a single cheek kiss even between new acquaintances",
+      "Uruguayans are punctual by South American standards — be on time for business meetings",
+      "Offering mate is a gesture of friendship and hospitality",
+      "Vegetarians should note that refusing meat at an asado is socially significant — be tactful"
+    ],
+    "greeting_style": "One cheek kiss for everyone (men and women) upon greeting. Handshakes in formal business contexts. 'Hola, ¿cómo andás?' is the typical informal greeting.",
+    "public_behavior_notes": "Very liberal society — PDA is completely normal, including same-sex couples. Modest dress for churches.",
+    "photography_etiquette": "No major restrictions. Ask permission before photographing individuals. Military and police installations restricted.",
+    "bargaining_expected": false,
+    "important_holidays": [
+      "Carnaval of Montevideo — January to March (40+ days, the longest carnival in the world, recognized by UNESCO). Murgas (satirical singing/dancing troupes), comparsas (Afro-Uruguayan candombe drumming), and elaborate parades fill the city for weeks",
+      "Semana Criolla — Easter week, Rural del Prado fairground, Montevideo — gauchos on horseback, jineteadas (wild horse riding), folk music, traditional food. Over a century old and beloved by locals",
+      "Patria Gaucha Festival — first week of March, Tacuarembó — the most important gaucho gathering in the country, 3,000+ horses in grand parade, rodeo, and folk music",
+      "Día del Gaucho — October 12, national public holiday celebrating cowboy heritage with events throughout the country",
+      "National Folklore Festival — first weekend of February, Durazno — Uruguay's most important folk music contest"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Cannabis is legal for Uruguayan residents — tourists cannot legally purchase from pharmacies, only from private Uruguayan friends or cannabis clubs with residency",
+      "Surfing alcohol restrictions on beaches — some municipalities limit alcohol on public beaches during peak season",
+      "Standard traffic laws strictly enforced"
+    ]
+  },
+  "food": {
+    "dishes": [
+      {
+        "name": "Asado",
+        "description": "The national ritual — slow-grilled beef over hardwood charcoal at a parrilla (grill). Whole ribs, short ribs, entraña (skirt steak), chorizo, morcilla (blood sausage), and chinchulines (intestines) are common cuts. The technique prioritizes long, slow cooking over direct heat. Served with chimichurri sauce and a simple salad. Weekend asados are sacred family events.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Chivito",
+        "description": "The national sandwich and one of South America's great street foods — a thick beef tenderloin steak (churrasco) on a soft bun with mozzarella, ham, bacon, lettuce, tomato, mayonnaise, and often a fried egg. Rich, generous, and deeply satisfying. Created in Punta del Este in the 1940s when a customer requested 'chivito' (goat) and the chef improvised with beef.",
+        "region": "Nationwide (created in Punta del Este)"
+      },
+      {
+        "name": "Parrillada Completa",
+        "description": "A full spread from the parrilla grill — served at Uruguay's famous parrilla restaurants. Includes multiple cuts of beef, lamb, pork, sausages, kidneys, and offal, all slow-grilled to perfection. Sharing a parrillada completa with a group is the quintessential Uruguayan dining experience.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Matambre Relleno",
+        "description": "A rolled and stuffed flank steak — thin beef is spread with hard-boiled eggs, roasted peppers, carrots, herbs, and spices, then rolled tight, tied, and slow-roasted or poached. Sliced cold into spiraled rounds. A traditional appetizer that showcases Uruguayan beef and Italian-Spanish culinary influences.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Milanesa",
+        "description": "Breaded and fried beef or chicken cutlet — Uruguay's Italian-heritage comfort food. Available everywhere from school cafeterias to upscale restaurants. A 'milanesa napolitana' adds tomato sauce, ham, and melted cheese on top. One of the most consumed daily dishes in Uruguay.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Torta Frita",
+        "description": "Fried dough circles cooked outdoors over fire during rain — a uniquely Uruguayan tradition. Made from flour, salt, and lard, fried in oil or fat. Served hot sprinkled with powdered sugar or savory with cheese. The sound of rain in Uruguay triggers an instinct to make tortas fritas.",
+        "region": "Nationwide (rain-day tradition)"
+      },
+      {
+        "name": "Alfajores with Dulce de Leche",
+        "description": "Two delicate shortbread or cornstarch biscuits sandwiched around thick, creamy dulce de leche, often rolled in coconut or dipped in chocolate. Uruguay and Argentina share this beloved treat. Every bakery, service station, and corner shop sells alfajores. Havanna is the most famous brand.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Gnocchi del 29",
+        "description": "Every 29th of the month, Uruguayans eat gnocchi (potato pasta dumplings) with a bill placed under the plate for good financial luck — an Italian tradition deeply embedded in Uruguayan culture. Restaurants fill up on the 29th. Made with potato, flour, and egg, served with a tomato or cream sauce.",
+        "region": "Nationwide (Italian tradition)"
+      },
+      {
+        "name": "Chaja",
+        "description": "Uruguay's iconic dessert — layers of sponge cake, peaches, meringue pieces, whipped cream, and peach syrup, assembled into a dramatic tower. Named after the chaJá bird of the Uruguayan wetlands. Created in 1927 at Hotel Los Cisnes in Paysandú. Available at every confitería (pastry shop) in the country.",
+        "region": "Nationwide (created in Paysandú)"
+      },
+      {
+        "name": "Brotola a la Plancha",
+        "description": "Fresh brotola (a firm white fish similar to cod) grilled on the plancha with olive oil, lemon, garlic, and fresh herbs. The most traditional fish dish of the Uruguayan coast and River Plate. Served with a simple salad and fried potatoes. Uruguay's coastal fishing villages serve exceptional fresh fish.",
+        "region": "Coastal and riverside towns"
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Mate",
+        "description": "The national drink and social ritual — dried yerba mate leaves steeped in a gourd (mate), sipped through a metal bombilla straw. Hot water poured from a thermos (termo). Uruguayans carry mate everywhere — on the street, at work, at the beach. Sharing a mate with someone means trust and friendship."
+      },
+      {
+        "name": "Tannat Wine",
+        "description": "Uruguay's flagship grape variety — a deeply colored, tannic red wine with notes of dark fruit, leather, and spice. The Canelones and Carmelo wine regions produce world-class Tannat. Bodega Garzón (José Ignacio) is the premier winery. Uruguay's wine has gained international recognition."
+      },
+      {
+        "name": "Grappamiel",
+        "description": "Uruguay's traditional honey grappa — a clear or amber spirit distilled from grape pomace and blended with local wildflower honey. Typically aged in oak. A unique artisan spirit found at traditional bars and estancias."
+      },
+      {
+        "name": "Patricia Beer",
+        "description": "The national lager, brewed in Montevideo. Light, refreshing, and widely available. A cornerstone of the asado experience alongside local wine."
+      },
+      {
+        "name": "Medio y Medio",
+        "description": "A quintessentially Uruguayan drink — a mix of still white wine and sparkling white wine (or sometimes champagne), served in a large pitcher to share. First created in Montevideo's Ciudad Vieja. Order it at any traditional bar in the old town."
+      },
+      {
+        "name": "Clericó",
+        "description": "A summer punch of white wine, fresh fruit (peaches, strawberries, oranges), sugar, and soda water or orange juice. The go-to summer party drink at asados, beach gatherings, and Carnival events."
+      }
+    ],
+    "street_food_safety": "Excellent food safety standards. Uruguay has strict health regulations. Street food and parrilla food is very safe.",
+    "vegetarian_friendliness": "Challenging — Uruguay's food culture is deeply centered on beef. Vegetarians can find pasta, pizza, and salads everywhere, but dedicated vegetarian restaurants are limited outside Montevideo and Punta del Este.",
+    "vegan_friendliness": "Difficult in traditional restaurants. Montevideo's centro area has some vegan options. Growing awareness among younger Uruguayans.",
+    "must_try_drinks": [
+      "Mate (hot or cold)",
+      "Tannat wine",
+      "Medio y Medio",
+      "Patricia Beer",
+      "Grappamiel"
+    ],
+    "regional_specialties": [
+      "Montevideo: Chivito, parrilla, gnocchi, Italian-influenced pasta and desserts",
+      "Punta del Este: Seafood, international cuisine, boutique restaurants",
+      "Interior (Tacuarembó, Salto): Traditional gaucho asado, wine from Salto wine country",
+      "Colonia del Sacramento: River fish, Spanish colonial-style cuisine"
+    ],
+    "drinking_water_notes": "Tap water is safe to drink throughout Uruguay — among the best water quality in South America.",
+    "alcohol_rules": "Legal drinking age 18. Cannabis is legal for Uruguayan residents (not tourists). No open container laws for non-driving situations.",
+    "signature_dishes": [
+      {
+        "name": "Asado",
+        "description": "The national ritual — slow-grilled beef over hardwood charcoal at a parrilla (grill). Whole ribs, short ribs, entraña (skirt steak), chorizo, morcilla (blood sausage), and chinchulines (intestines) are common cuts. The technique prioritizes long, slow cooking over direct heat. Served with chimichurri sauce and a simple salad. Weekend asados are sacred family events.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Chivito",
+        "description": "The national sandwich and one of South America's great street foods — a thick beef tenderloin steak (churrasco) on a soft bun with mozzarella, ham, bacon, lettuce, tomato, mayonnaise, and often a fried egg. Rich, generous, and deeply satisfying. Created in Punta del Este in the 1940s when a customer requested 'chivito' (goat) and the chef improvised with beef.",
+        "region": "Nationwide (created in Punta del Este)"
+      },
+      {
+        "name": "Parrillada Completa",
+        "description": "A full spread from the parrilla grill — served at Uruguay's famous parrilla restaurants. Includes multiple cuts of beef, lamb, pork, sausages, kidneys, and offal, all slow-grilled to perfection. Sharing a parrillada completa with a group is the quintessential Uruguayan dining experience.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Matambre Relleno",
+        "description": "A rolled and stuffed flank steak — thin beef is spread with hard-boiled eggs, roasted peppers, carrots, herbs, and spices, then rolled tight, tied, and slow-roasted or poached. Sliced cold into spiraled rounds. A traditional appetizer that showcases Uruguayan beef and Italian-Spanish culinary influences.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Milanesa",
+        "description": "Breaded and fried beef or chicken cutlet — Uruguay's Italian-heritage comfort food. Available everywhere from school cafeterias to upscale restaurants. A 'milanesa napolitana' adds tomato sauce, ham, and melted cheese on top. One of the most consumed daily dishes in Uruguay.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Torta Frita",
+        "description": "Fried dough circles cooked outdoors over fire during rain — a uniquely Uruguayan tradition. Made from flour, salt, and lard, fried in oil or fat. Served hot sprinkled with powdered sugar or savory with cheese. The sound of rain in Uruguay triggers an instinct to make tortas fritas.",
+        "region": "Nationwide (rain-day tradition)"
+      },
+      {
+        "name": "Alfajores with Dulce de Leche",
+        "description": "Two delicate shortbread or cornstarch biscuits sandwiched around thick, creamy dulce de leche, often rolled in coconut or dipped in chocolate. Uruguay and Argentina share this beloved treat. Every bakery, service station, and corner shop sells alfajores. Havanna is the most famous brand.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Gnocchi del 29",
+        "description": "Every 29th of the month, Uruguayans eat gnocchi (potato pasta dumplings) with a bill placed under the plate for good financial luck — an Italian tradition deeply embedded in Uruguayan culture. Restaurants fill up on the 29th. Made with potato, flour, and egg, served with a tomato or cream sauce.",
+        "region": "Nationwide (Italian tradition)"
+      },
+      {
+        "name": "Chaja",
+        "description": "Uruguay's iconic dessert — layers of sponge cake, peaches, meringue pieces, whipped cream, and peach syrup, assembled into a dramatic tower. Named after the chaJá bird of the Uruguayan wetlands. Created in 1927 at Hotel Los Cisnes in Paysandú. Available at every confitería (pastry shop) in the country.",
+        "region": "Nationwide (created in Paysandú)"
+      },
+      {
+        "name": "Brotola a la Plancha",
+        "description": "Fresh brotola (a firm white fish similar to cod) grilled on the plancha with olive oil, lemon, garlic, and fresh herbs. The most traditional fish dish of the Uruguayan coast and River Plate. Served with a simple salad and fried potatoes. Uruguay's coastal fishing villages serve exceptional fresh fish.",
+        "region": "Coastal and riverside towns"
+      }
+    ]
+  },
+  "outdoors": {
+    "surf_spots": [
+      {
+        "name": "Playa Brava, Punta del Este",
+        "region": "Maldonado department",
+        "difficulty": "Intermediate",
+        "wave_type": "Beach break",
+        "break_type": "Beach break",
+        "swell_direction": "South-Southwest",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "description": "The iconic ocean-facing beach of the Punta del Este peninsula, where the Atlantic coast begins as the Río de la Plata opens into the sea. Consistent and powerful beach break with both lefts and rights. More exposed to South Atlantic swell than other spots. The famous 'La Mano' sculpture (Manó en la Arena) stands at the southern end of the beach. Beach break shifts with sandbanks. Best in autumn-winter swells."
+      },
+      {
+        "name": "La Barra (Boca de la Barra)",
+        "region": "Maldonado department",
+        "difficulty": "Intermediate to Advanced",
+        "wave_type": "Beach break and tidal bar",
+        "break_type": "Beach break",
+        "swell_direction": "South to Southeast",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "description": "Just north of Punta del Este proper, La Barra is a quality beach break at the mouth of the Maldonado lagoon where tidal flows create shifting sandbars and powerful, barreling waves. More consistent than Playa Brava. Popular with intermediate and advanced surfers. The surrounding area has Uruguay's best beach bars and boutique restaurants, making it a natural hub for surf culture."
+      },
+      {
+        "name": "La Paloma",
+        "region": "Rocha department",
+        "difficulty": "Beginner to Intermediate",
+        "wave_type": "Beach break and point break",
+        "break_type": "Beach break",
+        "swell_direction": "South to East",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "description": "Uruguay's most consistent and celebrated surf town, 220km east of Montevideo. Multiple beach breaks including Los Botes, Corumbá, and La Aguada offer waves for all levels. Less crowded than Punta del Este with a relaxed, authentic surf vibe. Small-town atmosphere with excellent local surfers. Uruguay's surf school scene is concentrated here. Clean water, reliable swells, and excellent local surf culture make this the best all-around surf destination in Uruguay."
+      },
+      {
+        "name": "La Pedrera",
+        "region": "Rocha department",
+        "difficulty": "Intermediate",
+        "wave_type": "Beach break",
+        "break_type": "Beach break",
+        "swell_direction": "South-Southeast",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "description": "15 minutes from La Paloma, La Pedrera is a slightly more exposed and powerful beach break for intermediate surfers. The cliff-top town overlooks Playa La Pedrera — a dramatic setting with excellent views of incoming swells. Popular with surfers from Montevideo escaping city life. Quieter and more rustic than La Paloma."
+      },
+      {
+        "name": "Cabo Polonio",
+        "region": "Rocha department",
+        "difficulty": "Intermediate to Advanced",
+        "wave_type": "Beach break",
+        "break_type": "Beach break",
+        "swell_direction": "South to East",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August"
+        ],
+        "description": "A wild, remote surf spot within the Cabo Polonio National Park — accessible only by 4x4 trucks across sand dunes (no road). The beach at Cabo Polonio faces south and receives powerful, unimpeded South Atlantic swell. Adjacent sea lion colony (1,500+ animals) adds to the atmosphere. No electricity, very limited facilities — the most off-the-grid surf experience in Uruguay. Stay overnight in the village for dawn surf sessions."
+      },
+      {
+        "name": "Punta del Diablo",
+        "region": "Rocha department",
+        "difficulty": "Beginner to Intermediate",
+        "wave_type": "Beach break",
+        "break_type": "Beach break",
+        "swell_direction": "South to Northeast",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "description": "A fishing village turned surf haven near the Brazilian border. La Viuda beach at Punta del Diablo receives consistent swells from multiple directions. Year-round population of only 500 makes this a true escape. The famous Pesqueros break inside nearby Santa Teresa National Park is another excellent option. Strong surf community, simple rented cabins, and excellent fresh fish at local restaurants."
+      }
+    ],
+    "hikes": [
+      {
+        "name": "Cabo Polonio Sand Dune Trek",
+        "region": "Rocha (Cabo Polonio National Park)",
+        "difficulty": "Easy to Moderate",
+        "distance_km": 6,
+        "duration_days": 1,
+        "elevation_gain_m": 40,
+        "description": "Walk across the dramatic sand dune system surrounding Cabo Polonio village — the dunes reach up to 30m and shift constantly. The 4x4 truck drops you at the edge; you can choose to walk in (1.5-2 hours each way across dunes and beach) or take the truck. The village has a lighthouse, sea lion colony (1,500+ animals), and small community of artists and fishermen. No electricity, cell service, or roads — utterly unique.",
+        "best_months": [
+          "October",
+          "November",
+          "December",
+          "March",
+          "April"
+        ]
+      },
+      {
+        "name": "Quebrada de los Cuervos Circuit",
+        "region": "Treinta y Tres department",
+        "difficulty": "Moderate",
+        "distance_km": 15,
+        "duration_days": 1,
+        "elevation_gain_m": 150,
+        "description": "A dramatic canyon hike through Uruguay's native Atlantic Forest — the 5km ravine reaches 150m depth through rugged hills, streams, and native woodland. Black vultures (cuervos) soar above the cliffs. The Sendero del Indio trail descends to the canyon floor. Ojo del Tigre waterfall and excellent birdwatching. Camping available. One of Uruguay's most scenic outdoor experiences.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "March",
+          "April",
+          "May"
+        ]
+      },
+      {
+        "name": "Santa Teresa National Park Coastal Walk",
+        "region": "Rocha",
+        "difficulty": "Easy",
+        "distance_km": 10,
+        "duration_days": 1,
+        "elevation_gain_m": 30,
+        "description": "Walk along Playa Grande and the forested interior of Santa Teresa National Park, passing the impressive 18th-century Santa Teresa Fortress. The park contains native forest, wetlands, and Atlantic beach. Capybaras are commonly spotted near the wetlands at dawn and dusk. Excellent birding including rheas in open areas.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "December",
+          "March",
+          "April"
+        ]
+      },
+      {
+        "name": "Cerro Catedral Summit Walk",
+        "region": "Lavalleja department",
+        "difficulty": "Easy",
+        "distance_km": 6,
+        "duration_days": 1,
+        "elevation_gain_m": 210,
+        "description": "The walk to Uruguay's highest point (513m) through the Valle del Lunarejo landscape of gentle hills and native forest. Not challenging by Andean standards but offers panoramic views across Uruguay's rolling landscape. Combined with a visit to the picturesque Minas valley below.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "March",
+          "April",
+          "May"
+        ]
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Cabo Polonio — Sea Lion Colony",
+        "region": "Rocha",
+        "species": [
+          "South American Sea Lion",
+          "South American Fur Seal",
+          "Magellanic Penguin (winter)",
+          "Dolphins",
+          "Southern Right Whale (offshore, winter)"
+        ],
+        "description": "A large, accessible sea lion colony at the Cabo Polonio lighthouse — 1,500+ sea lions haul out on the rocks year-round. Fur seals also present. Winter months (June-September) bring Magellanic Penguins. Southern Right Whales (balleneras) are occasionally seen offshore in winter. One of Uruguay's most spectacular wildlife encounters.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "June",
+          "July",
+          "August"
+        ]
+      },
+      {
+        "name": "Esteros de Farrapos National Park",
+        "region": "Río Negro / Paysandú",
+        "species": [
+          "Capybara",
+          "Giant Otter",
+          "Caiman",
+          "Marsh Deer",
+          "Marsh Seedeater (endangered)",
+          "Jabiru Stork",
+          "Maned Wolf",
+          "Otter"
+        ],
+        "description": "Uruguay's most important wetland — a system of islands, riparian forest, and seasonal marshes along the Uruguay River. The park protects the endangered Marsh Seedeater and is one of the best birdwatching sites in Uruguay with 200+ species. Accessible by boat tours from Nuevo Berlín.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "March",
+          "April"
+        ]
+      },
+      {
+        "name": "Laguna de Rocha and Laguna de Castillos",
+        "region": "Rocha",
+        "species": [
+          "Flamingo (seasonal)",
+          "Black-necked Swan",
+          "Coypu",
+          "Caiman",
+          "Capybara",
+          "Pampas Deer",
+          "Neotropical Cormorant",
+          "Roseate Spoonbill"
+        ],
+        "description": "The coastal lagoon system of the Rocha department is one of Uruguay's most biodiverse areas — protected wetlands with flamingos (October-April), Black-necked Swans, caimans, and rare Pampas Deer. The Laguna de Castillos hosts the only luceros de venado formation in South America (an ancient line of native Ombú trees).",
+        "best_months": [
+          "October",
+          "November",
+          "March",
+          "April"
+        ]
+      }
+    ],
+    "national_parks": [
+      {
+        "name": "Cabo Polonio National Park",
+        "region": "Rocha",
+        "area_km2": 70,
+        "description": "Uruguay's most famous park — a wild, remote coastal wilderness of towering sand dunes, rugged beaches, and an authentic fishing village with no road access, no electricity grid, and a permanent colony of sea lions. Reached by 4x4 truck across the dunes. A unique experience that has become one of Uruguay's most distinctive destinations.",
+        "highlights": [
+          "Sea lion colony (1,500+ animals) at the lighthouse",
+          "Wild sand dune landscapes",
+          "No road access — 4x4 dune crossing or walking",
+          "Overnight stay in village with stargazing (no light pollution)",
+          "Magellanic penguins (June-September)",
+          "Off-grid surf beach breaks"
+        ]
+      },
+      {
+        "name": "Santa Teresa National Park",
+        "region": "Rocha (Atlantic coast)",
+        "area_km2": 37,
+        "description": "Uruguay's most visited national park combines historical landmarks (Santa Teresa Fortress, 18th century) with Atlantic Forest, wetlands, and excellent Atlantic beaches including Playa Grande and Playa Pescadores. The park is immediately north of Punta del Diablo surf town. Very well-maintained facilities including camping and lodges.",
+        "highlights": [
+          "Santa Teresa Fortress (1762)",
+          "Atlantic beaches Playa Grande and Playa Pescadores",
+          "Native forest with capybaras and foxes",
+          "Pesqueros surf break (within park)",
+          "Birdwatching trail (200+ species)",
+          "Camping facilities"
+        ]
+      },
+      {
+        "name": "Esteros de Farrapos e Islas del Río Uruguay National Park",
+        "region": "Río Negro / Paysandú",
+        "area_km2": 450,
+        "description": "Uruguay's largest national park — a Ramsar-listed wetland on the Uruguay River bordering Argentina. Islands, riparian forests, and seasonal marshes provide critical habitat for 200+ bird species including the endangered Marsh Seedeater. Accessible by boat from Nuevo Berlín or Fray Bentos.",
+        "highlights": [
+          "200+ bird species",
+          "Endangered Marsh Seedeater",
+          "Boat tours through wetland islands",
+          "Giant Otter sightings",
+          "Caiman and capybara",
+          "Pristine river island exploration"
+        ]
+      },
+      {
+        "name": "San Miguel National Park",
+        "region": "Rocha (near Brazilian border)",
+        "area_km2": 53,
+        "description": "Established in 1937 — Uruguay's oldest national park, centered on the Fortaleza de San Miguel, a 18th-century Portuguese colonial fortress. Surrounding wetlands, grasslands, and native forest are home to capybaras, foxes, armadillos, and rich birdlife near the Brazilian border.",
+        "highlights": [
+          "Fortaleza de San Miguel (18th century Portuguese fortress)",
+          "Capybara and marsh deer in wetlands",
+          "Border landscapes with southern Brazil",
+          "Birdwatching (flamingos at nearby lagoons)"
+        ]
+      }
+    ],
+    "danger_zones": [
+      {
+        "name": "Cabo Polonio surf beach in large swell",
+        "region": "Rocha",
+        "risk_level": "Moderate",
+        "description": "During large South Atlantic swells (May-August), Cabo Polonio beach can produce powerful and unpredictable shore break. Weak swimmers and inexperienced surfers should exercise caution."
+      }
+    ],
+    "top_national_parks": [
+      "Cabo Polonio — wild dunes, sea lions, off-grid village",
+      "Santa Teresa — Atlantic coast beaches, historical fortress, surf",
+      "Esteros de Farrapos — Uruguay River wetlands, birding",
+      "San Miguel — historical fortress, wetland wildlife"
+    ],
+    "waterfalls": [
+      "Salto del Penitente — Lavalleja, 50m waterfall in native forest",
+      "Ojo del Tigre — Quebrada de los Cuervos park",
+      "Cascadas de Yerbal — Cerro Largo, natural springs"
+    ],
+    "hot_springs": [
+      "Termas de Daymán — near Salto, highly developed hot spring resort complex",
+      "Termas de Arapey — Salto department, natural thermal pools",
+      "Termas del Almirón — Paysandú, open-air thermal baths"
+    ],
+    "rivers": [
+      "Uruguay River — western border with Argentina, 1,800km long",
+      "Río Negro — crosses the country east-west, dammed at Rincón del Bonete (one of South America's largest lakes)",
+      "Río de la Plata — massive estuary between Uruguay and Argentina, 220km wide at its mouth"
+    ],
+    "wildlife": [
+      "South American Sea Lion — Cabo Polonio (year-round colony)",
+      "Capybara — widespread in wetlands and parks",
+      "Giant Otter — Esteros de Farrapos",
+      "Pampas Deer — coastal lagoons of Rocha",
+      "Rhea — open grasslands (nandu in Spanish)",
+      "Flamingo — seasonal, coastal lagoons October-April",
+      "Magellanic Penguin — winter visitor to southern coast",
+      "Armadillo — widespread"
+    ],
+    "birdwatching_hotspots": [
+      "Esteros de Farrapos — Uruguay River, 200+ species, Marsh Seedeater",
+      "Laguna de Rocha — flamingos, Black-necked Swans",
+      "Bañados del Este (RAMSAR site) — rare wetland birds",
+      "Cabo Polonio — seabirds, penguins in winter",
+      "Uruguay Wine Country (Canelones) — open country birds, raptors"
+    ],
+    "stargazing_spots": [
+      "Cabo Polonio — no electricity, extraordinarily dark skies",
+      "Interior (Tacuarembó, Cerro Largo) — open pampa with minimal light pollution",
+      "Bodega Garzón / José Ignacio region — astronomically dark clear nights"
+    ],
+    "scenic_drives": [
+      "Ruta 9 — coastal road from Montevideo to Brazilian border through Rocha beach towns",
+      "Valle del Lunarejo (Ruta 30) — northern Uruguay's most scenic route through rocky hills",
+      "Colonia del Sacramento to Montevideo — historic colonial route along Río de la Plata",
+      "Wine Route — Canelones wine country, 30 wineries within an hour of Montevideo"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Cabo Polonio Sand Dune Trek",
+        "difficulty": "Easy to Moderate",
+        "duration": "1 day",
+        "region": "Rocha (Cabo Polonio National Park)",
+        "description": "Walk across the dramatic sand dune system surrounding Cabo Polonio village — the dunes reach up to 30m and shift constantly. The 4x4 truck drops you at the edge; you can choose to walk in (1.5-2 hours each way across dunes and beach) or take the truck. The village has a lighthouse, sea lion colony (1,500+ animals), and small community of artists and fishermen. No electricity, cell service, or roads — utterly unique.",
+        "best_months": [
+          "October",
+          "November",
+          "December",
+          "March",
+          "April"
+        ],
+        "elevation_m": 40,
+        "notes": "",
+        "distance_km": 6,
+        "duration_days": 1
+      },
+      {
+        "name": "Quebrada de los Cuervos Circuit",
+        "difficulty": "Moderate",
+        "duration": "1 day",
+        "region": "Treinta y Tres department",
+        "description": "A dramatic canyon hike through Uruguay's native Atlantic Forest — the 5km ravine reaches 150m depth through rugged hills, streams, and native woodland. Black vultures (cuervos) soar above the cliffs. The Sendero del Indio trail descends to the canyon floor. Ojo del Tigre waterfall and excellent birdwatching. Camping available. One of Uruguay's most scenic outdoor experiences.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "March",
+          "April",
+          "May"
+        ],
+        "elevation_m": 150,
+        "notes": "",
+        "distance_km": 15,
+        "duration_days": 1
+      },
+      {
+        "name": "Santa Teresa National Park Coastal Walk",
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "region": "Rocha",
+        "description": "Walk along Playa Grande and the forested interior of Santa Teresa National Park, passing the impressive 18th-century Santa Teresa Fortress. The park contains native forest, wetlands, and Atlantic beach. Capybaras are commonly spotted near the wetlands at dawn and dusk. Excellent birding including rheas in open areas.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "December",
+          "March",
+          "April"
+        ],
+        "elevation_m": 30,
+        "notes": "",
+        "distance_km": 10,
+        "duration_days": 1
+      },
+      {
+        "name": "Cerro Catedral Summit Walk",
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "region": "Lavalleja department",
+        "description": "The walk to Uruguay's highest point (513m) through the Valle del Lunarejo landscape of gentle hills and native forest. Not challenging by Andean standards but offers panoramic views across Uruguay's rolling landscape. Combined with a visit to the picturesque Minas valley below.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "March",
+          "April",
+          "May"
+        ],
+        "elevation_m": 210,
+        "notes": "",
+        "distance_km": 6,
+        "duration_days": 1
+      }
+    ],
+    "multi_day_treks": []
+  },
+  "sports_and_activities": {
+    "surfing": "Uruguay has a developed surf scene centered on La Paloma, La Pedrera, Punta del Diablo, and Punta del Este. Best April-October for Atlantic swell.",
+    "wine_tasting": "World-class Tannat wines from Canelones, Carmelo, and Garzón wine regions. Dozens of boutique wineries offer tastings and tours.",
+    "horse_riding": "Estancia stays throughout the interior offer horseback riding in authentic gaucho tradition",
+    "fishing": "Dorado fishing in Uruguay River; sea fishing off the Atlantic coast",
+    "kayaking_canoeing": "Rio Negro reservoirs, Uruguay River, coastal lagoons",
+    "birdwatching": "Growing ecotourism sector — specialized tours for wetland birds",
+    "football": "Attending a Nacional or Peñarol match in Montevideo's Estadio Centenario is a passionate cultural experience",
+    "golf": "Excellent courses at Cantegril Country Club (Punta del Este) and Club de Golf del Uruguay",
+    "diving": "Limited — Isla de Lobos off Punta del Este for sea life"
+  },
+  "trip_styles": {
+    "beach_surf": "Atlantic coast beaches and surf towns from Punta del Este to Punta del Diablo",
+    "wine_food": "World-class Tannat wine country, exceptional parrilla restaurants, José Ignacio gourmet scene",
+    "culture": "Montevideo's Carnaval, gaucho traditions, Colonia del Sacramento colonial heritage",
+    "lgbt_friendly": "Most LGBTQ-friendly destination in South America — same-sex marriage, anti-discrimination laws, and welcoming culture",
+    "luxury": "José Ignacio ultra-luxury, Punta del Este yachting lifestyle, Bodega Garzón wine resort",
+    "backpacker": "Very feasible — La Paloma, Punta del Diablo, and hostels in Montevideo offer affordable authentic Uruguay",
+    "eco_tourism": "Cabo Polonio, Esteros de Farrapos, and coastal lagoons"
+  },
+  "destinations": [
+    {
+      "name": "Montevideo",
+      "region": "Montevideo department",
+      "description": "One of South America's most livable and underrated capitals. Must-sees: Mercado del Puerto (Sunday asado market), Ciudad Vieja historic district, the 25km Rambla waterfront promenade, Teatro Solís, and the bohemian Palermo neighborhood. Carnaval transforms the city January-March with murgas, candombe, and parades."
+    },
+    {
+      "name": "Punta del Este",
+      "region": "Maldonado department",
+      "description": "South America's most glamorous beach resort — the 'Monaco of South America.' Two contrasting beaches: Playa Mansa (calm, river side) and Playa Brava (ocean side, surf). The 'La Mano' sculpture, Casapueblo (artist Carlos Páez Vilaró's architectural home-gallery), and a world-class marina and nightlife scene."
+    },
+    {
+      "name": "Colonia del Sacramento",
+      "region": "Colonia department",
+      "description": "A UNESCO World Heritage colonial city on the Río de la Plata, founded by Portugal in 1680. Cobblestone streets, Portuguese and Spanish architecture, charming boutique hotels, and river views. 2.5 hours from Montevideo or 1.5 hours by ferry from Buenos Aires. Perfect for a romantic weekend."
+    },
+    {
+      "name": "La Paloma",
+      "region": "Rocha department",
+      "description": "Uruguay's surf capital — multiple consistent beach breaks, a relaxed town atmosphere, surf schools, and excellent fresh seafood. The department of Rocha surrounding La Paloma has Uruguay's most pristine coastal ecology including Cabo Polonio, Laguna de Rocha, and La Pedrera."
+    },
+    {
+      "name": "José Ignacio",
+      "region": "Maldonado department",
+      "description": "A chic seaside hamlet that has become one of South America's top luxury destinations — South American celebrities, Argentine millionaires, and international travelers converge here in January. Low-key boutique hotels, Parador La Huella beach restaurant, Bodega Garzón winery nearby. Excellent surf at adjacent beaches."
+    },
+    {
+      "name": "Tacuarembó",
+      "region": "Tacuarembó department",
+      "description": "The gaucho heartland of Uruguay — cowboys, horse culture, folk music, and the annual Patria Gaucha Festival (first week of March). Also the claimed birthplace of Carlos Gardel (the tango legend). The Valle del Lunarejo nearby is one of Uruguay's most scenic natural landscapes."
+    }
+  ],
+  "practical_info": {
+    "calling_code": "+598",
+    "emergency_numbers": {
+      "police": "911",
+      "ambulance": "105",
+      "fire": "104"
+    },
+    "public_holidays": [
+      "New Year's Day (Jan 1)",
+      "Epiphany/Day of the Kings (Jan 6)",
+      "Carnival (Feb/Mar, 2 days)",
+      "Semana de Turismo/Semana Santa (Easter week)",
+      "Landing of the 33 Orientals (Apr 19)",
+      "Labour Day (May 1)",
+      "Battle of Las Piedras (May 18)",
+      "Artigas Birthday (Jun 19)",
+      "Constitution Day (Jul 18)",
+      "Independence Day (Aug 25)",
+      "Columbus Day/Day of Race (Oct 12)",
+      "All Souls Day (Nov 2)",
+      "Christmas Day (Dec 25)"
+    ],
+    "business_hours": "Mon-Fri 9am-6pm. Banks 9am-3pm. Many businesses take a long lunch. Shops in Montevideo open until 8pm.",
+    "post_office": "Correo Uruguayo is reliable for international mail and parcels.",
+    "useful_apps": [
+      "Uber (Montevideo)",
+      "Cabify",
+      "Google Maps",
+      "Buquebus app (ferry to Buenos Aires)"
+    ]
+  },
+  "laws": {
+    "lgbt_legal": true,
+    "lgbt_details": "Uruguay has among the most comprehensive LGBTQ protections in the world. Same-sex activity legal since 1934 (equal age of consent). Anti-discrimination laws since 2004. Civil unions since 2008. Same-sex marriage since 2013. Joint adoption allowed. Gays and lesbians serve openly in the military. Transgender people can change legal gender since 2009. Ranked 5th most LGBTQ-friendly country globally by Spartacus Gay Travel Guide.",
+    "drug_laws": "Cannabis is legal for Uruguayan citizens and permanent residents — sales through pharmacies. Tourists cannot legally purchase from pharmacies. Possession of small amounts is decriminalized. Hard drugs carry standard penalties.",
+    "alcohol_legal_age": 18,
+    "smoking_rules": "Banned in all enclosed public spaces, restaurants, and workplaces — Uruguay was the first Latin American country to implement comprehensive smoking bans.",
+    "photography_laws": "No significant restrictions outside military installations.",
+    "currency_import_export": "Declare amounts over USD $10,000.",
+    "unusual_laws": [
+      "Cannabis is legal for residents but technically not for tourists from pharmacies — a nuanced situation",
+      "Uruguay has one of the most restrictive anti-tobacco laws in the world",
+      "Gambling is legal and common — state-run casinos throughout the country"
+    ]
+  },
+  "family_travel": {
+    "overall_rating": "Excellent — Uruguay is one of the best family travel destinations in South America. Safe, clean, with excellent infrastructure.",
+    "child_friendly_attractions": [
+      "Punta del Este beaches",
+      "Cabo Polonio sea lions",
+      "Santa Teresa National Park capybaras",
+      "Montevideo Rambla walk"
+    ],
+    "stroller_friendliness": "Good in Montevideo and Punta del Este. Poor in historic districts and sand beaches.",
+    "baby_supplies_availability": "Excellent — pharmacies and supermarkets well-stocked.",
+    "family_accommodation_notes": "Family rooms widely available. Coastal towns have excellent family-friendly rentals. Estancias offer memorable family experiences.",
+    "health_considerations_for_families": "Tap water safe. No malaria or yellow fever risk. Standard vaccine precautions apply."
+  },
+  "accessibility": {
+    "overall_rating": "Moderate — improving in Montevideo and Punta del Este",
+    "wheelchair_accessibility": "Montevideo has accessible buses (STM buses have ramps) and some accessible sidewalks. Punta del Este has beach wheelchair options. Historic districts (Ciudad Vieja, Colonia) are challenging.",
+    "visual_impairment_services": "Limited but more available than most of South America.",
+    "hearing_impairment_services": "Limited.",
+    "accessible_attractions": [
+      "Montevideo Rambla promenade (mostly flat)",
+      "Mercado del Puerto (accessible)"
+    ],
+    "accessible_accommodation": "Several Montevideo and Punta del Este hotels have accessible rooms."
+  },
+  "gear": {
+    "essentials": [
+      "Layers for variable weather (Uruguay can be cold and windy even in summer)",
+      "Wetsuit for surfing (recommended 3/2mm for April-October)",
+      "Sunscreen (strong UV)",
+      "Windbreaker or rain jacket",
+      "Comfortable walking shoes"
+    ],
+    "nice_to_have": [
+      "Binoculars for birdwatching and sea lion viewing",
+      "Mate gourd and thermos to participate in the national ritual",
+      "Surfboard (or rent locally)",
+      "Wine opener"
+    ],
+    "what_not_to_bring": [
+      "Excessive valuables in Montevideo",
+      "Wrong expectations about vegetarian food availability"
+    ],
+    "gear_rental_available": true,
+    "local_gear_shopping": "Surfboards available for rent in La Paloma, La Pedrera, and Punta del Este. Wetsuits available. Mate gourds and bombillas available everywhere as souvenirs."
+  },
+  "history": [
+    {
+      "title": "Banda Oriental & Charrúa People",
+      "content": "Uruguay's territory — the 'Banda Oriental' (East Bank of the Uruguay River) — was home to the Charrúa, Chaná, and Guaraní peoples. The Charrúa were renowned for their fierce resistance to colonization. In a notorious 1831 massacre (Salsipuedes), the Uruguayan government killed or captured nearly the entire remaining Charrúa population."
+    },
+    {
+      "title": "Colonial Struggle",
+      "content": "Uruguay was disputed between Spain and Portugal for 150 years. Montevideo was founded by Spain in 1724 specifically as a military counter to Portuguese Colônia do Sacramento. The territory changed hands repeatedly until Uruguayan independence created a buffer state between Argentina and Brazil."
+    },
+    {
+      "title": "Independence & Artigas",
+      "content": "José Gervasio Artigas led the 'Orientales' (Uruguayans) in their struggle for independence and autonomy, becoming Uruguay's national hero. After years of fighting Spain, Buenos Aires, and Brazil, Uruguay gained independence on August 25, 1825 (celebrated as Independence Day), ratified by treaty in 1828. Artigas died in exile in Paraguay, never returning to the country he founded."
+    },
+    {
+      "title": "Batllismo & the Welfare State",
+      "content": "Uruguay under President José Batlle y Ordóñez (1903–1907, 1911–1915) became a pioneer of social reform: an 8-hour workday (1915), women's suffrage (1927), free universal education, public healthcare, and separation of church and state. Uruguay was called 'the Switzerland of South America' and 'the first welfare state in the Americas.'"
+    },
+    {
+      "title": "Military Dictatorship & Progressive Return",
+      "content": "The military dictatorship (1973–1985) imprisoned one in 50 Uruguayans — one of the highest rates in the world relative to population. Democracy returned in 1985. Uruguay has since become Latin America's most progressive country: marijuana legalization (2013, the world's first national system), same-sex marriage (2013), and abortion rights (2012). Former president José Mujica (2010–2015), who lived on a farm on a presidential salary of $800/month, became an international icon of anti-consumerism."
+    }
+  ]
+}

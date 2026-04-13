@@ -1,0 +1,1240 @@
+{
+  "meta": {
+    "last_updated": "2026-04-12",
+    "confidence_score": 0.9,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "WayFinder internal hike/food/history data",
+      "WayFinder safety submodels"
+    ],
+    "notes": "Populated from WayFinder app data and verified travel references. Null fields to be enriched via Tavily web search."
+  },
+  "identity": {
+    "name": "Ecuador",
+    "official_name": "Republic of Ecuador",
+    "code": "EC",
+    "iso3": "ECU",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Quito",
+    "flag_emoji": "🇪🇨",
+    "timezones": [
+      "UTC-05:00",
+      "UTC-06:00"
+    ],
+    "driving_side": "right",
+    "country_calling_code": "+593",
+    "internet_tld": ".ec"
+  },
+  "language_and_money": {
+    "languages": [
+      "Spanish",
+      "Kichwa",
+      "Shuar"
+    ],
+    "primary_language": "Spanish",
+    "english_proficiency": "Low — limited outside tourist areas and major hotels",
+    "currency": "USD",
+    "currency_name": "United States Dollar",
+    "currency_symbol": "$",
+    "cash_vs_card": "Cash dominant, especially outside Quito and Guayaquil. Cards accepted at hotels, upscale restaurants, and malls.",
+    "typical_payment_methods": [
+      "Cash (USD)",
+      "Visa",
+      "Mastercard"
+    ],
+    "atm_availability": "Widely available in cities; scarce in rural and Amazon areas. Banco Pichincha and Banco del Pacífico are most common.",
+    "tipping_culture": "Not mandatory but appreciated. 10% service charge often included in restaurant bills.",
+    "tipping_etiquette": "Round up taxi fares. Tip tour guides $5-10/day. Restaurants include 10% servicio but extra 5-10% appreciated for good service."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days",
+      "visa_type": "Tourist stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for at least 6 months beyond date of entry",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": false,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Strict limits on plant and animal products, especially from Galápagos. No narcotics.",
+    "restricted_items": [
+      "Narcotics",
+      "Firearms",
+      "Fresh produce without permit",
+      "Galápagos wildlife products"
+    ],
+    "duty_free_allowances": "400 cigarettes or 50 cigars, 1 liter of alcohol, gifts up to $500 value"
+  },
+  "health": {
+    "recommended_vaccines": [
+      "Hepatitis A",
+      "Typhoid",
+      "Hepatitis B",
+      "Rabies (if trekking or Amazon)",
+      "Tetanus-Diphtheria"
+    ],
+    "required_vaccines": [
+      "Yellow Fever (if arriving from endemic country)"
+    ],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Present in lowland areas below 1500m, especially Amazon basin and coastal regions",
+    "malaria_regions": [
+      "Orellana",
+      "Sucumbíos",
+      "Esmeraldas",
+      "Morona Santiago",
+      "Pastaza",
+      "Napo"
+    ],
+    "malaria_prophylaxis_info": "Atovaquone-proguanil, doxycycline, or mefloquine recommended for Amazon travel",
+    "dengue_risk": "Moderate — present in lowland cities and coastal areas, especially during rainy season",
+    "altitude_sickness_risk": "High in highland regions. Quito at 2,850m. Cotopaxi base at 4,500m. Chimborazo summit at 6,263m. Acclimatize before strenuous activity.",
+    "food_water_safety": "Tap water not safe to drink. Use bottled or purified water. Street food generally safe in busy stalls; exercise caution with raw shellfish on coast.",
+    "air_quality_concerns": "Quito can have poor air quality due to traffic and altitude. Volcanic ash possible near active volcanoes.",
+    "common_travel_illnesses": [
+      "Traveler's diarrhea",
+      "Altitude sickness",
+      "Sunburn at altitude",
+      "Mosquito-borne illness in lowlands"
+    ],
+    "pharmacy_access": "Pharmacies (farmacias) widely available in cities. Many medications available OTC. Limited in rural areas.",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Good in Quito and Guayaquil private hospitals. Limited in rural areas and Amazon. Evacuate for serious conditions.",
+    "emergency_medical_number": "911"
+  },
+  "safety": {
+    "travel_advisory_level_us": 2,
+    "travel_advisory_level_label": "Exercise Increased Caution",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "Crime risk moderate-high in Guayaquil and Esmeraldas",
+      "Drug trafficking along Colombian border",
+      "Petty theft in tourist areas",
+      "Political protests can cause road blockades"
+    ],
+    "crime_risk": "Moderate-high in cities, especially Guayaquil (risk 5, homicide rate 42/100k) and Esmeraldas (risk 5, homicide rate 85/100k). Low in highlands and Galápagos.",
+    "scam_risk": "Moderate — taxi overcharging, ATM skimming, fake tour operators, distraction theft",
+    "transport_safety": "Intercity buses generally safe on main routes. Avoid night travel. Use registered taxis or ride-hailing apps.",
+    "solo_female_travel_notes": "Generally manageable with normal precautions. Avoid walking alone at night in cities. Catcalling common but rarely escalates.",
+    "lgbtq_notes": "Same-sex marriage legal since 2019. Generally tolerant in Quito and Cuenca. More conservative in rural areas.",
+    "night_safety": "Avoid walking alone at night in Guayaquil, south Quito, and Esmeraldas. Tourist areas in Quito (La Mariscal) are reasonably safe until late evening.",
+    "safe_areas": [
+      "La Mariscal (Quito)",
+      "Cuenca old town",
+      "Salinas",
+      "Galápagos Islands",
+      "Baños",
+      "Mindo",
+      "Otavalo"
+    ],
+    "areas_to_avoid": [
+      "Esmeraldas province border areas",
+      "South Guayaquil",
+      "Sucumbíos border region",
+      "Los Ríos rural areas"
+    ],
+    "natural_disaster_risks": [
+      "Volcanic eruptions (Cotopaxi, Tungurahua, Reventador)",
+      "Earthquakes",
+      "Landslides in rainy season",
+      "Flooding in coastal lowlands",
+      "Tsunamis on coast"
+    ],
+    "political_stability_notes": "Political protests and strikes can occur with limited notice. Road blockades possible in highlands. Monitor local news.",
+    "common_scams": [
+      "Taxi overcharging — use meters or agree on price before riding",
+      "ATM skimming — use bank-attached ATMs only",
+      "Fake police asking to inspect wallet",
+      "Mustard/bird dropping distraction theft",
+      "Counterfeit US bills in change",
+      "Fake tour operators in La Mariscal"
+    ],
+    "police_reliability": "Variable. Tourist police (Policía de Turismo) in major cities are generally helpful. Report crimes at fiscalía.",
+    "emergency_numbers": {
+      "police": "101",
+      "ambulance": "131",
+      "fire": "102",
+      "general_emergency": "911"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Quito",
+      "us_embassy_phone": "+593-2-398-5000",
+      "us_embassy_website": "https://ec.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "June to September for highlands; December to May for coast and Galápagos; year-round for Amazon",
+    "climate_zones": [
+      "Coastal lowlands (Costa) — tropical, warm year-round",
+      "Andean highlands (Sierra) — temperate, cool nights, 10-20°C",
+      "Amazon basin (Oriente) — hot, humid, heavy rainfall",
+      "Galápagos — subtropical dry and warm, two distinct seasons"
+    ],
+    "dry_season": "June to September (Sierra); June to November (Galápagos garúa season)",
+    "rainy_season": "October to May (Sierra); January to May (Costa); year-round in Amazon",
+    "hurricane_typhoon_season": null,
+    "surf_season": "December to April (biggest swells); surfable year-round",
+    "trekking_best_months": [
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
+    "average_temp_by_month": {
+      "Quito": "15°C year-round (8-21°C range)",
+      "Guayaquil": "25-28°C year-round",
+      "Galápagos": "22-30°C year-round"
+    },
+    "daylight_hours_by_season": "Near equator — approximately 12 hours year-round"
+  },
+  "transport": {
+    "major_airports": [
+      "Mariscal Sucre International Airport (UIO) — Quito",
+      "José Joaquín de Olmedo International Airport (GYE) — Guayaquil",
+      "Seymour Airport (GPS) — Galápagos (Baltra)"
+    ],
+    "main_airlines": [
+      "LATAM Ecuador",
+      "Avianca",
+      "Equair"
+    ],
+    "airport_to_city_options": [
+      "Airport bus (Quito — Aeroservicios)",
+      "Taxi ($25-30 UIO to old town)",
+      "Ride-hailing apps"
+    ],
+    "public_transit_quality": "Quito has BRT (Ecovía, Metrobús, Trolebús) and new Metro line. Guayaquil has Metrovía BRT. Limited elsewhere.",
+    "intercity_bus_quality": "Extensive and affordable bus network. Long-haul buses range from basic to semi-cama. Major terminals in every city.",
+    "train_network_quality": "Limited — Tren Ecuador operates scenic tourist routes (Nariz del Diablo, Quito-Otavalo). Not practical for transport.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": false,
+    "road_conditions": "Main highways paved and decent. Mountain roads can be narrow and winding. Amazon roads often unpaved. Landslides in rainy season.",
+    "four_x_four_needed_regions": [
+      "Amazon lowlands",
+      "Remote highland villages",
+      "Esmeraldas coast unpaved sections"
+    ],
+    "ride_hailing_apps": [
+      "InDriver",
+      "Cabify"
+    ],
+    "taxi_safety_notes": "Use registered taxis (yellow with orange strip in Quito) or ride-hailing apps. Agree on fare before getting in if no meter.",
+    "ferry_routes": [
+      "Guayaquil to Galápagos (via flight only)",
+      "Inter-island boats in Galápagos ($30 between main islands)"
+    ],
+    "border_crossing_notes": "Main crossings: Tulcán-Ipiales (Colombia), Huaquillas-Aguas Verdes (Peru), Macará-La Tina (Peru). Bring passport and proof of onward travel."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$30-45/day",
+    "daily_budget_midrange": "$60-100/day",
+    "daily_budget_comfort": "$120-200/day",
+    "hostel_avg": "$10-20/night",
+    "hotel_avg": "$40-80/night",
+    "meal_avg": "$3-8 (local almuerzo $2.50-4, restaurant $8-15)",
+    "coffee_avg": "$1-2",
+    "beer_avg": "$2-3",
+    "local_transport_avg": "$0.25-0.35 (city bus)",
+    "sim_card_avg": "$5-10 for 3-5GB",
+    "coworking_day_pass_avg": "$8-15",
+    "surfboard_rental_avg": "$10-15/day",
+    "value_for_money": "Excellent — USD economy means no exchange hassle. One of South America's most affordable countries."
+  },
+  "connectivity": {
+    "sim_card_providers": [
+      "Claro",
+      "Movistar",
+      "CNT"
+    ],
+    "esim_available": true,
+    "mobile_data_quality": "Good 4G in cities and towns. Spotty in Amazon and remote highlands. No coverage in deep jungle.",
+    "wifi_quality": "Available in most hostels, cafes, and restaurants in tourist areas. Speeds vary (5-30 Mbps typical).",
+    "coworking_available": true,
+    "best_remote_work_cities": [
+      "Quito",
+      "Cuenca",
+      "Baños",
+      "Montañita"
+    ],
+    "power_outlet_types": [
+      "A",
+      "B"
+    ],
+    "voltage": "120V, 60Hz",
+    "plug_adapter_needed_for_us": false,
+    "power_reliability": "Generally reliable in cities. Outages possible in rural areas and Amazon. Bring power bank for trekking."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "La Mariscal, Quito — backpacker hub with restaurants and nightlife",
+      "Cuenca old town — colonial charm, safe, walkable",
+      "Baños — adventure sports base",
+      "Montañita — surf and party town",
+      "Puerto Ayora, Galápagos — main base for island exploration"
+    ],
+    "budget_areas": [
+      "La Mariscal (Quito)",
+      "Montañita",
+      "Baños",
+      "Canoa"
+    ],
+    "family_friendly_areas": [
+      "Cuenca",
+      "Quito historic center",
+      "Galápagos",
+      "Mindo"
+    ],
+    "nightlife_areas": [
+      "La Mariscal (Quito)",
+      "Montañita",
+      "La Zona Rosa (Guayaquil)"
+    ],
+    "surf_towns": [
+      "Montañita",
+      "Canoa",
+      "Ayampe",
+      "Mompiche",
+      "San Lorenzo"
+    ],
+    "eco_lodges_available": true,
+    "peak_booking_season": "June-September (highlands); December-January (Galápagos, holidays)",
+    "accommodation_notes": "Galápagos accommodation is significantly more expensive. Book Galápagos and popular highland lodges well in advance."
+  },
+  "culture": {
+    "local_customs": [
+      "Greet with a single kiss on the right cheek (women) or handshake (men)",
+      "Family is central — Sunday family gatherings are important",
+      "Respect for elders — use 'usted' form of address",
+      "Remove shoes when entering some homes"
+    ],
+    "dress_expectations": "Casual but conservative in highlands. Beachwear only at the beach. Cover shoulders when entering churches.",
+    "religious_sensitivity": "Predominantly Catholic. Religious festivals are important cultural events. Respect processions and church services.",
+    "social_norms": [
+      "Punctuality is relaxed — 15-30 minutes late is normal socially",
+      "Bargaining expected at markets but not in shops",
+      "Conversation is warm — ask about family before business"
+    ],
+    "greeting_style": "Warm — cheek kiss for women, handshake for men. Use 'Buenos días/tardes/noches'.",
+    "public_behavior_notes": "PDA is acceptable in moderation. Loud behavior in public is frowned upon. Don't point with fingers — use lips or chin.",
+    "photography_etiquette": "Always ask permission before photographing indigenous people. Some may request a small tip. No photos in military areas.",
+    "bargaining_expected": true,
+    "important_holidays": [
+      "Carnival (February-March) — water fights nationwide",
+      "Semana Santa (Easter week)",
+      "Inti Raymi (June 21-24) — Andean summer solstice",
+      "Quito Fiestas (first week of December)",
+      "Día de los Difuntos (November 2) — colada morada and guaguas de pan"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Must carry passport or copy at all times",
+      "Galápagos has strict national park rules — stay on marked trails, no touching wildlife",
+      "Drone permits required in national parks"
+    ]
+  },
+  "food": {
+    "signature_dishes": [
+      "Ceviche — citrus-marinated shrimp or fish, especially on coast",
+      "Llapingachos — mashed potato patties with cheese, served with peanut sauce",
+      "Seco de pollo — chicken stew with beer and cilantro",
+      "Encebollado — tuna and yuca soup, hangover cure of Guayaquil",
+      "Fritada — slow-cooked pork with mote (hominy) and llapingachos",
+      "Cuy — roasted guinea pig, highland delicacy",
+      "Sopa de bolas de verde — green plantain dumpling soup",
+      "Fanesca — rich Easter soup with 12 grains and salt cod"
+    ],
+    "street_food_safety": "Generally safe at busy stalls. Avoid raw shellfish from unrefrigerated vendors. Stick to cooked and hot items.",
+    "vegetarian_friendliness": "Moderate — rice, beans, and potatoes are abundant. Dedicated vegetarian restaurants in Quito and Cuenca. Many soups contain meat stock.",
+    "vegan_friendliness": "Challenging outside major cities. Growing vegan scene in Quito.",
+    "must_try_drinks": [
+      "Colada morada — purple corn and berry drink (Día de Difuntos)",
+      "Chicha de jora — fermented corn beer",
+      "Naranjilla juice — tart Andean fruit",
+      "Canelazo — warm cinnamon-sugar aguardiente cocktail",
+      "Agua de guayusa — Amazonian caffeinated tea",
+      "Hot chocolate — made with real Ecuadorian cacao"
+    ],
+    "regional_specialties": [
+      "Costa: ceviche, encebollado, green plantain dishes",
+      "Sierra: cuy, locro de papa, fritada, llapingachos",
+      "Oriente: maito (fish wrapped in bijao leaf), chontaduro fruit",
+      "Galápagos: fresh lobster (seasonal), ceviche de canchalagua"
+    ],
+    "drinking_water_notes": "Never drink tap water. Bottled water available everywhere ($0.50-1). Verify ice is from purified water in restaurants.",
+    "alcohol_rules": "Legal drinking age 18. Ley seca (dry law) prohibits alcohol sales during elections and some holidays."
+  },
+  "outdoors": {
+    "top_national_parks": [
+      "Galápagos National Park — unique endemic wildlife, marine reserves, iconic islands",
+      "Cotopaxi National Park — snow-capped volcano (5,897m), páramo hiking",
+      "El Cajas National Park — 230+ alpine lakes, páramo trails, near Cuenca",
+      "Machalilla National Park — coastal dry forest, whale watching, Los Frailes beach",
+      "Yasuní National Park — most biodiverse place on Earth, Amazon rainforest",
+      "Podocarpus National Park — cloud forest, 600+ bird species"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Rucu Pichincha",
+        "difficulty": "Moderate",
+        "duration": "4-6 hours round trip",
+        "region": "Pichincha",
+        "description": "Hike above Quito via TelefériQo cable car to the summit of Rucu Pichincha volcano at 4,696m. Stunning views of the city and surrounding volcanoes.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 4696,
+        "notes": "Take TelefériQo up to 4,100m then hike. Altitude can be challenging — acclimatize first. Weather changes fast."
+      },
+      {
+        "name": "Pasochoa Wildlife Refuge",
+        "difficulty": "Moderate",
+        "duration": "4-5 hours",
+        "region": "Pichincha",
+        "description": "Extinct volcano crater with native Andean forest. Excellent birdwatching. One of few remaining intact highland forests near Quito.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 4199,
+        "notes": "Entry fee required. Less crowded than Cotopaxi. Good acclimatization hike."
+      },
+      {
+        "name": "Mindo Cloud Forest Trails",
+        "difficulty": "Easy",
+        "duration": "1-3 days",
+        "region": "Pichincha",
+        "description": "Network of trails through cloud forest. World-class birdwatching — Cock-of-the-rock, Toucan Barbet, glass frogs. Waterfalls and butterfly gardens.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "elevation_m": 1250,
+        "notes": "Can be combined with zip-lining and chocolate tours. Expect rain year-round. 2 hours from Quito."
+      },
+      {
+        "name": "El Cajas National Park Circuit",
+        "difficulty": "Moderate",
+        "duration": "1-3 days",
+        "region": "Azuay",
+        "description": "High-altitude páramo hiking among 230+ glacial lakes. Spectacled bear and Andean condor habitat. Polylepis forest.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 4450,
+        "notes": "30 minutes from Cuenca. Weather extremely changeable — bring layers. Register at park entrance."
+      },
+      {
+        "name": "Sierra Negra Volcano — Galápagos",
+        "difficulty": "Moderate",
+        "duration": "1 day (6-8 hours)",
+        "region": "Galápagos (Isabela Island)",
+        "description": "Hike to the rim of one of the world's largest volcanic calderas. Giant tortoises, marine iguanas, and lava fields.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November"
+        ],
+        "elevation_m": 1124,
+        "notes": "Must go with licensed guide. $100 Galápagos National Park fee. Last erupted 2018."
+      },
+      {
+        "name": "Tungurahua Volcano Viewpoint",
+        "difficulty": "Moderate",
+        "duration": "1 day",
+        "region": "Tungurahua",
+        "description": "Trek to viewpoints of the active Tungurahua volcano from Baños. Páramo landscapes with hummingbirds and condors.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 5023,
+        "notes": "Check volcanic activity status before hiking. Multiple routes of varying difficulty from Baños."
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Quilotoa Loop",
+        "difficulty": "Moderate",
+        "duration": "3-4 days",
+        "region": "Cotopaxi",
+        "description": "Classic highland trek through indigenous villages to the stunning turquoise Quilotoa crater lake at 3,914m. Andean condors and páramo landscapes.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 3914,
+        "notes": "Can be shortened to 2 days. Basic guesthouses in villages along route. Carry cash — no ATMs on route."
+      },
+      {
+        "name": "Cotopaxi Volcano Trek",
+        "difficulty": "Hard",
+        "duration": "1-2 days",
+        "region": "Cotopaxi",
+        "description": "Trek to the José Ribas refuge at 4,800m on one of the world's highest active volcanoes. Summit attempt requires mountaineering experience and guide.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September",
+          "December",
+          "January"
+        ],
+        "elevation_m": 5897,
+        "notes": "Summit requires crampons, ice axe, and licensed guide. Altitude acclimatization essential. Park entry fee $15."
+      },
+      {
+        "name": "Chimborazo",
+        "difficulty": "Very Hard",
+        "duration": "1-2 days",
+        "region": "Chimborazo",
+        "description": "Ecuador's highest peak and the point on Earth's surface farthest from the center. Refuge hike is moderate; summit requires mountaineering skills.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September",
+          "December",
+          "January"
+        ],
+        "elevation_m": 6263,
+        "notes": "Two refuges: first at 4,800m (moderate hike), second at 5,000m. Summit is technical. Vicuñas visible on lower slopes."
+      },
+      {
+        "name": "Illiniza Norte",
+        "difficulty": "Hard",
+        "duration": "1-2 days",
+        "region": "Pichincha / Cotopaxi",
+        "description": "Non-technical summit of Illiniza Norte (5,126m) with views of Cotopaxi and the Avenue of Volcanoes. Good preparation for higher peaks.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 5126,
+        "notes": "Refuge available at 4,650m. Illiniza Sur (5,248m) requires technical climbing. Scrambling near summit — not a walk-up."
+      },
+      {
+        "name": "Antisana",
+        "difficulty": "Hard",
+        "duration": "1-2 days",
+        "region": "Napo",
+        "description": "Remote volcanic peak with glaciers. Excellent wildlife — Andean condors are frequently spotted. Less crowded than Cotopaxi.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 5753,
+        "notes": "Access road can be rough. Condor viewing possible without summiting. Ecological reserve entry required."
+      },
+      {
+        "name": "Podocarpus National Park Trek",
+        "difficulty": "Moderate",
+        "duration": "2-4 days",
+        "region": "Loja / Zamora-Chinchipe",
+        "description": "Cloud forest and páramo trails with extraordinary bird diversity (600+ species). Spectacled bears and mountain tapir habitat.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "elevation_m": 3700,
+        "notes": "Two main entrances: Cajanuma (high altitude) and Bombuscaro (lowland). The Royal Sunangel hummingbird is endemic to this area."
+      }
+    ],
+    "volcanoes": [
+      "Cotopaxi (5,897m) — active, iconic snow-capped cone",
+      "Chimborazo (6,263m) — highest peak, farthest point from Earth's center",
+      "Tungurahua (5,023m) — active, viewable from Baños",
+      "Reventador (3,562m) — one of the most active in Ecuador",
+      "Sangay (5,230m) — remote, UNESCO World Heritage, constantly active",
+      "Cayambe (5,790m) — highest point on the equator with a glacier"
+    ],
+    "waterfalls": [
+      "Pailón del Diablo — Baños, dramatic 80m waterfall in gorge",
+      "San Rafael Falls — highest waterfall in Ecuador (150m, reduced flow since 2020)",
+      "Mindo waterfalls — multiple falls accessible by tarabita (cable car)"
+    ],
+    "hot_springs": [
+      "Termas de Papallacta — highland hot springs at 3,300m, near Quito",
+      "Baños de Agua Santa — thermal baths at base of Tungurahua",
+      "Chachimbiro hot springs — Imbabura province"
+    ],
+    "lakes": [
+      "Quilotoa — stunning turquoise crater lake",
+      "Cuicocha — crater lake with islands, Imbabura",
+      "El Cajas lakes — 230+ glacial lakes in páramo",
+      "Lake San Pablo — largest lake in Ecuador, Otavalo area"
+    ],
+    "rivers": [
+      "Napo River — major Amazon tributary, wildlife viewing",
+      "Toachi River — whitewater rafting",
+      "Blanco River — whitewater rafting near Baños",
+      "Pastaza River — canyon views and rafting from Baños"
+    ],
+    "wildlife": [
+      "Giant tortoise (Galápagos)",
+      "Marine iguana (Galápagos)",
+      "Blue-footed booby (Galápagos)",
+      "Andean condor (highlands)",
+      "Spectacled bear (cloud forest, páramo)",
+      "Jaguar (Amazon)",
+      "Giant otter (Amazon)",
+      "Harpy eagle (Amazon)",
+      "Cock-of-the-rock (Mindo)",
+      "Humpback whale (coast, June-September)",
+      "Pink river dolphin (Amazon)"
+    ],
+    "birdwatching_hotspots": [
+      "Mindo Cloud Forest — 500+ species, Cock-of-the-rock leks",
+      "Tandayapa Valley — hummingbird feeders, tanagers",
+      "Podocarpus NP — 600+ species, Royal Sunangel endemic",
+      "Yasuní NP — 600+ species including harpy eagle",
+      "El Cajas NP — Andean species, violet-throated metaltail"
+    ],
+    "stargazing_spots": [
+      "Cotopaxi National Park — high altitude, minimal light pollution",
+      "El Cajas NP — 4,000m+ elevation, clear skies"
+    ],
+    "scenic_drives": [
+      "Avenue of the Volcanoes — Pan-American Highway through Andean valley flanked by volcanoes",
+      "Ruta del Spondylus — coastal highway from Esmeraldas to Santa Elena",
+      "Baños to Puyo — Ruta de las Cascadas waterfall route"
+    ],
+    "surf_spots": [
+      {
+        "name": "Montañita",
+        "region": "Santa Elena Province, Guayas Coast",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to advanced",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March",
+          "April"
+        ],
+        "typical_wave_size": {
+          "peak_season": "4–8 ft (Dec–Apr)",
+          "off_season": "2–4 ft (May–Nov)"
+        },
+        "description": "Ecuador's most famous surf town. Fast, powerful beach break with both lefts and rights. Consistent swell year-round, biggest and most powerful December through April when NW swells arrive. Strong rip currents — not ideal for absolute beginners when overhead.",
+        "crowd_level": "High (popular backpacker town)",
+        "notes": "Town has full surf infrastructure — rentals, lessons, multiple schools. Best surfed at mid to high tide."
+      },
+      {
+        "name": "Ayampe",
+        "region": "Manabí Province",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "typical_wave_size": {
+          "peak_season": "3–6 ft (Dec–Mar)",
+          "off_season": "1–3 ft (May–Nov)"
+        },
+        "description": "Mellow, forgiving beach break just north of Montañita. Long, rideable waves perfect for longboarding and beginners. Much less crowded than Montañita. Small village feel with a few surf camps.",
+        "crowd_level": "Low",
+        "notes": "Great for learners. Consistent sandbars. Gentle shore break."
+      },
+      {
+        "name": "Canoa",
+        "region": "Manabí Province",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": [
+          "January",
+          "February",
+          "March",
+          "April"
+        ],
+        "typical_wave_size": {
+          "peak_season": "3–6 ft (Jan–Apr)",
+          "off_season": "1–3 ft"
+        },
+        "description": "Long beach with multiple peaks spread over several kilometers. Mostly rights with some lefts. Great for beginners — waves are generally softer and slower than Montañita. Good kite surfing as well due to consistent winds.",
+        "crowd_level": "Low to medium",
+        "notes": "Wind picks up in afternoons, making mornings best for surfing. Long beach means peaks spread out."
+      },
+      {
+        "name": "Mompiche",
+        "region": "Esmeraldas Province (north coast)",
+        "break_type": "Point break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "typical_wave_size": {
+          "peak_season": "5–10 ft (Dec–Mar)",
+          "off_season": "2–4 ft"
+        },
+        "description": "Ecuador's best point break. Long, mechanical lefts that can hold well overhead surf. One of the most perfect waves in the country when it's on — long walls, predictable peel. Remote location keeps crowds low.",
+        "crowd_level": "Low",
+        "notes": "Getting there requires travel on rough roads or boat. Worth it for the wave quality. Bring supplies."
+      },
+      {
+        "name": "San Lorenzo",
+        "region": "Esmeraldas Province (far north)",
+        "break_type": "Beach break and river mouth",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": [
+          "December",
+          "January",
+          "February"
+        ],
+        "typical_wave_size": {
+          "peak_season": "4–8 ft",
+          "off_season": "Flat to 2 ft"
+        },
+        "description": "Powerful river mouth break in Ecuador's most remote surf zone. Hollow lefts with heavy lips. Strong currents from river outflow. Largely unexplored — very few surfers make it here.",
+        "crowd_level": "Very low",
+        "notes": "Requires logistical effort to reach. Bring a guide. Water can be murky near river mouth."
+      },
+      {
+        "name": "Salinas",
+        "region": "Santa Elena Province",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": [
+          "January",
+          "February",
+          "March"
+        ],
+        "typical_wave_size": {
+          "peak_season": "2–5 ft",
+          "off_season": "1–2 ft"
+        },
+        "description": "Ecuador's most popular beach resort town. Multiple beach breaks across the bay. Waves are generally small and forgiving — better for beginners than advanced surfers. Good infrastructure, calm water in the main bay.",
+        "crowd_level": "High (popular resort area)",
+        "notes": "Main beach is sheltered — head to the outer points for bigger surf. Best in the morning before wind picks up."
+      },
+      {
+        "name": "Puerto Cayo",
+        "region": "Manabí Province",
+        "break_type": "Beach break and point",
+        "wave_direction": "Right",
+        "difficulty": "Intermediate",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "typical_wave_size": {
+          "peak_season": "4–7 ft",
+          "off_season": "1–3 ft"
+        },
+        "description": "Underrated right-hander off a rocky point with a sand-bottom beach break as backup. Consistent during swell season. Small fishing village with minimal surf crowd. Near Machalilla National Park.",
+        "crowd_level": "Very low",
+        "notes": "Check the point at mid to low tide for the best shape. Beach break works at all tides."
+      },
+      {
+        "name": "Los Frailes",
+        "region": "Manabí Province (Machalilla National Park)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": [
+          "January",
+          "February",
+          "March"
+        ],
+        "typical_wave_size": {
+          "peak_season": "2–5 ft",
+          "off_season": "1–2 ft"
+        },
+        "description": "Protected beach inside Machalilla National Park. Crystal clear water, beautiful setting. Waves are generally gentle — more of a scenic surf experience than a high-performance one. Entry fee to the national park required.",
+        "crowd_level": "Low (park entry limits crowds)",
+        "notes": "Park entry fee applies. No commercial surf infrastructure — bring your own board. Snorkeling is excellent here too."
+      },
+      {
+        "name": "Atacames",
+        "region": "Esmeraldas Province",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner",
+        "best_months": [
+          "January",
+          "February",
+          "March"
+        ],
+        "typical_wave_size": {
+          "peak_season": "2–4 ft",
+          "off_season": "1–2 ft"
+        },
+        "description": "Lively beach town with consistent but small surf. More of a beach holiday destination than a serious surf spot. Good for absolute first-timers. Loud nightlife scene.",
+        "crowd_level": "High",
+        "notes": "Best for beginners wanting a social scene alongside surf. Water can be rough from boat traffic."
+      },
+      {
+        "name": "Tortuga Bay (Galápagos)",
+        "region": "Santa Cruz Island, Galápagos",
+        "break_type": "Beach break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "typical_wave_size": {
+          "peak_season": "4–8 ft",
+          "off_season": "2–4 ft"
+        },
+        "description": "World-class left-hand beach break in one of the most unique surfing environments on earth. Surfing alongside sea lions and marine iguanas. Long, peeling lefts on a pristine white sand beach.",
+        "crowd_level": "Very low (remote, park regulations)",
+        "notes": "Galápagos National Park rules apply — no surf camps or instructors operate here. Access by foot only (45 min walk from Puerto Ayora). Special experience due to wildlife."
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Galápagos Islands",
+        "region": "Galápagos Province",
+        "key_species": [
+          "Giant tortoise",
+          "Marine iguana",
+          "Blue-footed booby",
+          "Galápagos penguin",
+          "Flightless cormorant",
+          "Galápagos sea lion",
+          "Waved albatross",
+          "Frigatebird",
+          "Galápagos hawk",
+          "Sea turtle"
+        ],
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November"
+        ],
+        "notes": "UNESCO World Heritage. $100 park fee + $20 transit card. Must visit with licensed naturalist guide. Book well in advance."
+      },
+      {
+        "name": "Yasuní National Park",
+        "region": "Orellana / Pastaza (Amazon)",
+        "key_species": [
+          "Jaguar",
+          "Giant otter",
+          "Harpy eagle",
+          "Pink river dolphin",
+          "Howler monkey",
+          "400+ bird species",
+          "Black caiman",
+          "Anaconda"
+        ],
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "December"
+        ],
+        "notes": "Most biodiverse place on Earth per hectare. Access via Coca (Puerto Francisco de Orellana). Multi-day lodge stays. Napo Wildlife Center is top option."
+      },
+      {
+        "name": "Mindo-Nambillo Cloud Forest",
+        "region": "Pichincha",
+        "key_species": [
+          "Cock-of-the-rock",
+          "Toucan Barbet",
+          "Plate-billed Mountain-toucan",
+          "Glass frog",
+          "Spectacled bear",
+          "Puma"
+        ],
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "notes": "500+ bird species. 2 hours from Quito. Multiple lodges with hummingbird feeders. Cock-of-the-rock lek viewing at dawn."
+      },
+      {
+        "name": "Cayambe-Coca Ecological Reserve",
+        "region": "Napo / Sucumbíos / Pichincha",
+        "key_species": [
+          "Andean condor",
+          "Spectacled bear",
+          "Mountain tapir",
+          "Puma",
+          "Páramo rabbit"
+        ],
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "notes": "Protects páramo to cloud forest. Includes Papallacta hot springs area. Condor sightings at Antisana. Less visited than Cotopaxi."
+      },
+      {
+        "name": "Cuyabeno Wildlife Reserve",
+        "region": "Sucumbíos (Amazon)",
+        "key_species": [
+          "Pink river dolphin",
+          "Giant otter",
+          "Caiman",
+          "Anaconda",
+          "Howler monkey",
+          "Toucans",
+          "Piranha"
+        ],
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "March",
+          "April"
+        ],
+        "notes": "Flooded forest ecosystem. Canoe-based exploration. More affordable than Yasuní. 4-5 day tours from Lago Agrio. Check security in Sucumbíos."
+      }
+    ]
+  },
+  "sports_and_activities": [
+    {
+      "name": "Surfing",
+      "popularity": "High",
+      "best_regions": [
+        "Montañita",
+        "Ayampe",
+        "Canoa",
+        "Mompiche"
+      ],
+      "best_months": [
+        "December",
+        "January",
+        "February",
+        "March",
+        "April"
+      ],
+      "skill_levels": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ],
+      "notes": "Biggest swells December-April. Board rentals $10-15/day. Lessons $20-30."
+    },
+    {
+      "name": "Mountaineering",
+      "popularity": "High",
+      "best_regions": [
+        "Cotopaxi",
+        "Chimborazo",
+        "Cayambe",
+        "Illiniza"
+      ],
+      "best_months": [
+        "June",
+        "July",
+        "August",
+        "September",
+        "December",
+        "January"
+      ],
+      "skill_levels": [
+        "Intermediate",
+        "Advanced"
+      ],
+      "notes": "Avenue of the Volcanoes offers multiple 5,000m+ peaks. Licensed guide required for most summits. Acclimatization essential."
+    },
+    {
+      "name": "Mountain Biking",
+      "popularity": "Moderate",
+      "best_regions": [
+        "Cotopaxi",
+        "Baños",
+        "Chimborazo",
+        "Mindo"
+      ],
+      "best_months": [
+        "June",
+        "July",
+        "August",
+        "September"
+      ],
+      "skill_levels": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ],
+      "notes": "Cotopaxi descent from 4,500m is iconic. Baños has multiple downhill routes. Bike rentals $10-20/day."
+    },
+    {
+      "name": "Kayaking",
+      "popularity": "Moderate",
+      "best_regions": [
+        "Amazon rivers",
+        "Baños area",
+        "Galápagos (sea kayaking)"
+      ],
+      "best_months": [
+        "June",
+        "July",
+        "August",
+        "September",
+        "October"
+      ],
+      "skill_levels": [
+        "Beginner",
+        "Intermediate"
+      ],
+      "notes": "Sea kayaking with sea lions in Galápagos. River kayaking in Amazon tributaries. Whitewater kayaking near Baños."
+    },
+    {
+      "name": "Birdwatching",
+      "popularity": "High",
+      "best_regions": [
+        "Mindo",
+        "Tandayapa",
+        "Podocarpus NP",
+        "Yasuní NP",
+        "El Cajas NP"
+      ],
+      "best_months": [
+        "Year-round; June-September best in highlands"
+      ],
+      "skill_levels": [
+        "Beginner",
+        "Intermediate",
+        "Expert"
+      ],
+      "notes": "Ecuador has the world's highest bird diversity per unit area — 1,600+ species. Top destination globally for birding."
+    },
+    {
+      "name": "Whitewater Rafting",
+      "popularity": "Moderate",
+      "best_regions": [
+        "Toachi River",
+        "Blanco River",
+        "Pastaza River (Baños)"
+      ],
+      "best_months": [
+        "October",
+        "November",
+        "December",
+        "January",
+        "February"
+      ],
+      "skill_levels": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ],
+      "notes": "Class III-IV rapids on Toachi and Blanco. Day trips from Quito or Baños. $50-80 for full-day trips."
+    },
+    {
+      "name": "Paragliding",
+      "popularity": "Moderate",
+      "best_regions": [
+        "Baños",
+        "Canoa",
+        "Ibarra"
+      ],
+      "best_months": [
+        "June",
+        "July",
+        "August",
+        "September"
+      ],
+      "skill_levels": [
+        "Beginner (tandem)",
+        "Advanced"
+      ],
+      "notes": "Tandem flights available in Baños and Canoa. $30-50 for tandem flights. Thermals good in dry season."
+    }
+  ],
+  "trip_styles": {
+    "good_for_backpacking": true,
+    "good_for_luxury": true,
+    "good_for_families": true,
+    "good_for_couples": true,
+    "good_for_solo_travel": true,
+    "good_for_digital_nomads": true,
+    "good_for_adventure_travel": true,
+    "good_for_food_travel": true,
+    "good_for_road_trips": false,
+    "good_for_short_trips": true,
+    "good_for_long_stays": true
+  },
+  "destinations": {
+    "top_cities": [
+      "Quito",
+      "Guayaquil",
+      "Cuenca"
+    ],
+    "top_towns": [
+      "Baños",
+      "Otavalo",
+      "Montañita",
+      "Mindo",
+      "Vilcabamba",
+      "Puerto López"
+    ],
+    "top_regions": [
+      "Galápagos Islands",
+      "Avenue of the Volcanoes",
+      "Amazon Basin",
+      "Northern Highlands"
+    ],
+    "top_islands": [
+      "Santa Cruz (Galápagos)",
+      "Isabela (Galápagos)",
+      "San Cristóbal (Galápagos)",
+      "Isla de la Plata"
+    ],
+    "sample_itineraries": {
+      "one_week": "Quito (2 days) → Otavalo market (1 day) → Cotopaxi (1 day) → Baños (2 days) → Quito (1 day)",
+      "two_week": "Quito (2 days) → Mindo (2 days) → Quilotoa Loop (3 days) → Baños (2 days) → Cuenca (2 days) → Guayaquil (1 day) → Montañita (2 days)",
+      "classic_route": "Quito → Avenue of Volcanoes → Baños → Cuenca → Coast → Galápagos",
+      "offbeat_route": "Quito → Mindo → Mompiche surf → Cuyabeno Amazon → Tena → Baños"
+    }
+  },
+  "practical_info": {
+    "arrival_tips": "Quito airport (UIO) is 30-45 min from city center. Arrange airport transfer in advance or use authorized taxi. Register at STEP before travel.",
+    "airport_scam_notes": "Only use authorized airport taxis from the official taxi counter. Unofficial taxis may overcharge or worse.",
+    "local_sim_where_to_buy": "Claro or Movistar SIM cards available at airport kiosks and city shops. Bring passport. $5-10 for data plan.",
+    "money_exchange_notes": "Ecuador uses USD — no exchange needed for US travelers. Carry small bills ($1, $5, $10) as change is scarce. $50 and $100 bills often refused.",
+    "language_helpful_phrases": {
+      "hello": "Hola",
+      "thank_you": "Gracias",
+      "how_much": "¿Cuánto cuesta?",
+      "where_is": "¿Dónde está...?",
+      "i_dont_speak_spanish": "No hablo español",
+      "the_bill_please": "La cuenta, por favor",
+      "help": "¡Ayuda!",
+      "cheers": "¡Salud!"
+    },
+    "offline_maps_recommended": [
+      "Maps.me",
+      "Google Maps (offline)"
+    ],
+    "apps_useful_locally": [
+      "InDriver (ride-hailing)",
+      "Cabify (ride-hailing)",
+      "WhatsApp (essential for communication)",
+      "Maps.me (offline maps)"
+    ]
+  },
+  "laws": {
+    "drug_laws_strictness": "Strict — possession of small amounts decriminalized but amounts above threshold carry severe penalties. Do not carry drugs.",
+    "alcohol_laws": "Legal age 18. Ley seca during elections and some holidays — alcohol sales prohibited. Public drunkenness can result in fines.",
+    "drone_rules": "Registration required with DGAC. Prohibited in Galápagos NP and over populated areas without permit. Altitude limit 120m.",
+    "wild_camping_rules": "Generally permitted in rural areas with landowner permission. Not allowed in national parks without specific camping zones.",
+    "protected_area_rules": "National park fees apply. Galápagos has strict rules — stay on trails, no touching wildlife, certified guide required.",
+    "fishing_license_required": true,
+    "photography_restricted_sites": [
+      "Military installations",
+      "Some indigenous communities without permission"
+    ],
+    "lgbtq_legal_status": "Same-sex marriage legal since June 2019. Anti-discrimination protections exist.",
+    "marijuana_legality": "Small amounts (up to 10g) decriminalized. Sale and cultivation illegal.",
+    "prescription_medication_rules": "Bring prescriptions in original packaging with doctor's letter. Controlled substances may require additional documentation."
+  },
+  "family_travel": {
+    "kid_friendly": true,
+    "stroller_friendly": false,
+    "car_seat_rules": "Required for children under 12 in front seat. Not always enforced. Bring your own — rentals unreliable.",
+    "family_activities": [
+      "Galápagos wildlife watching — snorkeling with sea lions, tortoise breeding centers",
+      "Mindo cloud forest — chocolate tours, zip-lining, butterfly gardens",
+      "Mitad del Mundo (equator monument) — interactive science museum",
+      "Baños — waterfalls route, taffy (melcocha) making",
+      "Otavalo market — colorful indigenous crafts market"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Limited — Quito and Cuenca have some accessible infrastructure but uneven sidewalks common. Galápagos boats vary. Most rural areas inaccessible.",
+    "accessible_transport": "Quito Metro has accessibility features. Most buses are not wheelchair accessible. Private transfers recommended.",
+    "accessible_attractions": [
+      "Mitad del Mundo",
+      "Quito TelefériQo (partial)",
+      "Some Galápagos visitor sites with boardwalks"
+    ]
+  },
+  "gear": {
+    "bring_wetsuit": true,
+    "bring_hiking_boots": true,
+    "bring_layers": true,
+    "bring_bug_spray": true,
+    "bring_sunscreen": true,
+    "cold_weather_gear_needed": true,
+    "rental_gear_easy_to_find": true,
+    "outdoor_gear_shops": [
+      "The Explorer (Quito — La Mariscal)",
+      "Tatoo Adventure Gear (Quito)",
+      "Marathon Sports (nationwide chain)"
+    ]
+  },
+  "history": [
+    {
+      "title": "Pre-Columbian Era",
+      "content": "Ecuador's highlands were home to the Quitu-Cara people and later absorbed into the Inca Empire (Tawantinsuyu) around 1463 under Tupac Yupanqui. The city of Quito became a northern Inca capital. The region was called Quito and Tomebamba (modern Cuenca) were key administrative centers."
+    },
+    {
+      "title": "Spanish Conquest",
+      "content": "In 1534 Sebastián de Belalcázar founded Quito after the Inca general Rumiñahui burned it to prevent Spanish capture. Ecuador became part of the Viceroyalty of Peru, then the Viceroyalty of New Granada in 1717."
+    },
+    {
+      "title": "Independence",
+      "content": "Ecuador's independence movement began with the Primer Grito de Independencia on August 10, 1809 — now celebrated as Independence Day. Full independence from Spain came on May 24, 1822 at the Battle of Pichincha. Ecuador briefly joined Simón Bolívar's Gran Colombia before becoming an independent republic in 1830."
+    },
+    {
+      "title": "Modern Era",
+      "content": "The 20th century saw political instability with numerous coups and transitions. Oil was discovered in the Amazon in the 1960s, transforming the economy. Ecuador joined OPEC in 1973. The 2008 constitution was the first in the world to grant rights to nature (Pachamama)."
+    },
+    {
+      "title": "Galápagos Legacy",
+      "content": "Charles Darwin's 1835 visit to the Galápagos Islands — Ecuadorian territory since 1832 — inspired his theory of natural selection, published in On the Origin of Species (1859). The islands remain one of the world's premier living laboratories of evolution."
+    }
+  ]
+}

@@ -1,0 +1,1305 @@
+{
+  "meta": {
+    "last_updated": "2026-04-12",
+    "confidence_score": 0.91,
+    "sources": [
+      "US State Department travel advisory (updated May 2025)",
+      "CDC health advisories",
+      "Brazil Ministry of Tourism",
+      "WayFinder internal hike/food/history data"
+    ],
+    "notes": "US State Dept Level 2: Exercise Increased Caution. Favelas are Do Not Enter at any time. Border zones within 160km have elevated caution."
+  },
+  "identity": {
+    "name": "Brazil",
+    "official_name": "Federative Republic of Brazil",
+    "code": "BR",
+    "iso3": "BRA",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Brasília",
+    "flag_emoji": "🇧🇷",
+    "timezones": [
+      "UTC-05:00 (Acre)",
+      "UTC-04:00 (Amazon)",
+      "UTC-03:00 (Brasília/East coast)",
+      "UTC-02:00 (Fernando de Noronha)"
+    ],
+    "driving_side": "right",
+    "country_calling_code": "+55",
+    "internet_tld": ".br"
+  },
+  "language_and_money": {
+    "languages": [
+      "Portuguese"
+    ],
+    "primary_language": "Portuguese",
+    "english_proficiency": "Low to moderate — reasonable in Rio de Janeiro (Ipanema/Copacabana), São Paulo business districts, and tourist areas. Very limited in the Amazon, northeast, and rural areas.",
+    "currency": "BRL",
+    "currency_name": "Brazilian Real",
+    "currency_symbol": "R$",
+    "cash_vs_card": "Cards widely accepted in cities and tourist areas. Cash needed in rural areas, street markets, and beaches. PIX (instant payment app) is ubiquitous — download before you arrive.",
+    "typical_payment_methods": [
+      "PIX (mobile payment)",
+      "Visa",
+      "Mastercard",
+      "Cash (BRL)",
+      "Elo (local card)"
+    ],
+    "atm_availability": "Widely available in cities. Bradesco, Banco do Brasil, and Caixa Econômica Federal most common. Itaú machines often lowest fees. Use indoor, bank-attached ATMs only — outdoor ATMs have skimming risk.",
+    "tipping_culture": "10% service charge (taxa de serviço) usually included automatically in restaurant bills. If not included, 10% is customary. Taxi: round up fare.",
+    "tipping_etiquette": "Check bill for 'taxa de serviço' — if listed, additional tip optional. Hotel porters R$5-10/bag. Tour guides R$30-50/day. Amazon guides R$50-100/day."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days (bilateral visa exemption agreement signed 2023)",
+      "visa_type": "Tourist stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for the duration of stay. 6 months validity beyond entry recommended.",
+    "blank_passport_pages_required": 2,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": false,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Strict on medications — carry prescriptions in original packaging. Agricultural products subject to inspection. No Cuban cigars in excess of personal use.",
+    "restricted_items": [
+      "Firearms (without permit)",
+      "Narcotics",
+      "Medications without prescription (certain types)",
+      "Items from endangered species"
+    ],
+    "duty_free_allowances": "400 cigarettes, 25 cigars, 3 liters of alcohol, up to $500 USD value in goods"
+  },
+  "health": {
+    "recommended_vaccines": [
+      "Hepatitis A",
+      "Typhoid",
+      "Hepatitis B",
+      "Rabies (Amazon or wildlife exposure)",
+      "Tetanus-Diphtheria",
+      "Yellow Fever (if going to Amazon or certain interior regions)"
+    ],
+    "required_vaccines": [
+      "Yellow Fever (recommended and required for entry from some countries; required for entry into some Brazilian states)"
+    ],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Present in the Amazon region — Pará, Amazonas, Roraima, Acre, Rondônia, Amapá. Not present in Rio de Janeiro, São Paulo, Salvador, Fortaleza, or southern Brazil.",
+    "malaria_regions": [
+      "Amazonas state",
+      "Pará state",
+      "Acre",
+      "Rondônia",
+      "Roraima",
+      "Amapá",
+      "Western Mato Grosso"
+    ],
+    "malaria_prophylaxis_info": "Atovaquone-proguanil (Malarone) or doxycycline recommended for Amazon travel. Not needed for coastal cities, Rio de Janeiro, São Paulo, Florianópolis, or northeastern beaches.",
+    "dengue_risk": "High — Brazil has some of the world's highest dengue rates. Active transmission in cities year-round, spiking November to May. Urban outbreaks in Rio de Janeiro, São Paulo, and across the northeast. Use mosquito repellent (DEET 30%+) at all times in urban areas.",
+    "altitude_sickness_risk": "LOW — Brazil is mostly at sea level or low elevation. No significant altitude concern for the vast majority of destinations.",
+    "food_water_safety": "Tap water safe to drink in Rio de Janeiro and São Paulo. Use bottled water in smaller cities and rural areas. Street food generally safe at busy stalls — churrasco and açaí are safe. Exercise caution with raw shellfish (northeast coast).",
+    "air_quality_concerns": "São Paulo has significant air pollution from traffic. Wildfire smoke from Amazon deforestation affects Mato Grosso and Amazon states in dry season (August-October).",
+    "common_travel_illnesses": [
+      "Dengue fever (nationwide risk)",
+      "Traveler's diarrhea",
+      "Zika virus (low-level, ongoing)",
+      "Leptospirosis (after flooding, contact with floodwater)",
+      "Malaria (Amazon only)"
+    ],
+    "pharmacy_access": "Excellent in cities — Farmácias Drogasil, Raia, and Pacheco chains everywhere. Many medications available OTC. Prescription required for antibiotics. Very limited in Amazon towns.",
+    "tap_water_safe": true,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Excellent private hospitals in São Paulo (Hospital Albert Einstein, Hospital Sírio-Libanês) and Rio de Janeiro (Clínica São Vicente, Hospital Copa D'Or). Public system (SUS) is overstretched. In Amazon, care is very limited — evacuation required for serious conditions.",
+    "emergency_medical_number": "192"
+  },
+  "safety": {
+    "overall_score": 48,
+    "travel_advisory_level_us": 2,
+    "travel_advisory_level_label": "Exercise Increased Caution",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "Violent crime prevalent including murder, armed robbery, and carjacking in urban areas",
+      "Organized crime and gangs widespread",
+      "Favelas and informal housing: Do Not Enter at any time",
+      "Border zones within 160km: Level 2-4 elevated caution (except Iguaçu NP and Pantanal NP)",
+      "Drug facilitation in Rio de Janeiro nightlife venues"
+    ],
+    "crime_risk": "High in urban areas — Brazil has one of the world's highest homicide rates. Rio de Janeiro and Salvador have notorious violent crime records. However, most violent crime occurs in favelas and areas tourists don't typically visit. Tourist zones (Ipanema, Copacabana, Buzios) are manageable with precautions.",
+    "scam_risk": "High — 'pigeon drop' scams, distraction theft, fake police, Tinder/dating app drugging in Rio, overcharging taxis, 'boa noite Cinderela' (drink spiking with scopolamine in Rio).",
+    "transport_safety": "Use Uber exclusively — do not flag street taxis in cities. Public buses are high-pickpocket risk. In São Paulo, the Metro is generally safe. Never use public buses at night in Rio.",
+    "solo_female_travel_notes": "Exercise heightened caution. Brazil has a significant gender-based violence problem. Do not walk alone at night. Use Uber. In Rio, catcalling is common. In smaller beach towns (Florianópolis, Itacaré), solo female travel is more manageable. Never accept drinks from strangers.",
+    "lgbtq_notes": "Brazil has strong legal protections (same-sex marriage since 2013, anti-discrimination laws) and a vibrant LGBTQ+ scene in São Paulo (Paulista Avenue Pride is the world's largest). Rio and Florianópolis are also LGBTQ+ friendly. Conservative attitudes in rural areas and the interior.",
+    "night_safety": "Avoid walking at night in Rio outside Ipanema/Copacabana tourist zones. In São Paulo, Jardins and Vila Madalena are relatively safe until late. Never walk on beaches at night — mugging risk.",
+    "safe_areas": [
+      "Ipanema (Rio)",
+      "Leblon (Rio)",
+      "Jardins/Jardim Paulista (São Paulo)",
+      "Pinheiros (São Paulo)",
+      "Lagoa area (Florianópolis)",
+      "Morro de São Paulo (Bahia)"
+    ],
+    "areas_to_avoid": [
+      "Favelas anywhere in Brazil (at any time, including guided tours)",
+      "Lapa (Rio) late at night",
+      "Centro (Rio) after dark",
+      "Brasília satellite cities at night",
+      "Border regions within 160km (except Iguaçu and Pantanal)"
+    ],
+    "natural_disaster_risks": [
+      "Flooding and mudslides (Rio de Janeiro — December to March extreme events)",
+      "Flash floods in Amazon",
+      "Extreme heat in interior",
+      "Wildfires in Amazon and Pantanal (dry season)"
+    ],
+    "political_stability_notes": "Brazil is politically polarized but generally stable. Protests occasionally occur in major cities. Elections can be contentious. Monitor local news.",
+    "common_scams": [
+      "Boa noite Cinderela (Good Night Cinderella) — drink spiking with GHB or scopolamine in Rio nightlife/dating apps",
+      "Distraction theft on Ipanema/Copacabana beach",
+      "Street ATM skimming — use bank-attached ATMs inside only",
+      "Taxi overcharging — use Uber exclusively",
+      "Fake police demanding documents",
+      "Jet ski rental 'damaged equipment' scam in northeast beaches",
+      "Token selling scams on São Paulo Metro"
+    ],
+    "police_reliability": "Variable — Military Police (BOPE) can be aggressive. Tourist Police (Delegacia do Turista) in Rio and SP are helpful. File reports at tourist police stations.",
+    "emergency_numbers": {
+      "police": "190",
+      "ambulance": "192",
+      "fire": "193",
+      "general_emergency": "190"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Brasília",
+      "us_embassy_phone": "+55-61-3312-7000",
+      "us_embassy_website": "https://br.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "April to June and August to October for Rio and the south (avoiding peak summer heat/crowds and winter cold). November to March for northeast and Fernando de Noronha surf. June to September for Pantanal wildlife (dry season).",
+    "climate_zones": [
+      "Southeast coast (Rio, SP) — tropical savanna, hot summers 25-40°C, mild dry winters 15-25°C",
+      "Northeast (Fortaleza, Natal, Recife) — tropical, hot year-round, 28-35°C, trade winds",
+      "Amazon basin — equatorial, hot and humid year-round, 28-35°C, heavy rainfall",
+      "South (Florianópolis, Porto Alegre) — humid subtropical, hot summers, cool winters with occasional frost",
+      "Center-west (Pantanal) — tropical wet-dry, dramatic flood and drought cycles"
+    ],
+    "dry_season": "April to September in most of Brazil. May to October in Amazon (lowest water, best wildlife viewing).",
+    "rainy_season": "October to March for most of Brazil. Extreme events in Rio (December-March).",
+    "hurricane_typhoon_season": "Rarely affected — one historical hurricane hit Santa Catarina in 2004.",
+    "surf_season": "November to March for northeast and Fernando de Noronha. March to October for southeast (Florianópolis, Saquarema, Ubatuba). Year-round for experienced surfers.",
+    "trekking_best_months": [
+      "May",
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
+    "average_temp_by_month": {
+      "Rio de Janeiro": "22-40°C (hottest Jan-Feb, mildest Jun-Aug)",
+      "Florianópolis": "15-35°C (warmest Dec-Mar, coolest Jun-Jul)",
+      "Manaus (Amazon)": "26-34°C year-round with distinct wet/dry seasons",
+      "Fortaleza": "28-34°C year-round, lowest humidity May-November"
+    },
+    "daylight_hours_by_season": "Near equator in the Amazon: 11-13 hours year-round. South Brazil: 9-14 hours depending on season."
+  },
+  "transport": {
+    "major_airports": [
+      "Guarulhos International Airport (GRU) — São Paulo, main international hub",
+      "Galeão International Airport (GIG) — Rio de Janeiro",
+      "Santos Dumont Airport (SDU) — Rio de Janeiro (domestic)",
+      "Congonhas Airport (CGH) — São Paulo (domestic)",
+      "Tancredo Neves International Airport (CNF) — Belo Horizonte",
+      "Augusto Severo International Airport (NAT) — Natal",
+      "Eduardo Gomes International Airport (MAO) — Manaus (Amazon gateway)"
+    ],
+    "main_airlines": [
+      "LATAM Brasil",
+      "Gol",
+      "Azul",
+      "Avianca Brasil"
+    ],
+    "airport_to_city_options": [
+      "Aeroexpress bus (GRU to Paulista, R$25)",
+      "Guarucoop radio taxi (GRU, R$100-150 to city)",
+      "Uber (most reliable)",
+      "Super Shuttle shared van"
+    ],
+    "public_transit_quality": "São Paulo Metro is excellent (6 lines, well-maintained, safe). Rio Metro is limited (4 lines). Bus Rapid Transit (BRT) in Rio. Buses in most cities but high petty crime risk on buses.",
+    "intercity_bus_quality": "Good — comfortable long-distance buses (leito class = lie-flat) connect all major cities. Comfortbus, Gontijo, JBL. Long distances between cities; flights often better for time.",
+    "train_network_quality": "Very limited — no intercity passenger rail. São Paulo CPTM commuter rail and Metro are functional. No coastal train routes.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": false,
+    "road_conditions": "Variable — highways (BR-101 coastal, Rodovias Estaduais) well-maintained but congested in cities. Toll roads are common and add up. Rural roads can be very poor. Driving in Rio and São Paulo is extremely stressful — use Uber instead.",
+    "four_x_four_needed_regions": [
+      "Amazon interior roads (rainy season)",
+      "Lençóis Maranhenses lagoons",
+      "Chapada Diamantina remote trails",
+      "Northern Pantanal dirt roads"
+    ],
+    "ride_hailing_apps": [
+      "Uber",
+      "99 (local app)",
+      "inDriver"
+    ],
+    "taxi_safety_notes": "Use ONLY Uber or 99 (app-based) in Brazilian cities — never flag a street taxi. Taxi scams and express kidnapping risk with unauthorized taxis in Rio and São Paulo.",
+    "ferry_routes": [
+      "Manaus river cruises (Amazon River, 4-7 days to Belém or Santarém)",
+      "Angra dos Reis to Ilha Grande (Rio)",
+      "Rio de Janeiro to Niterói (ferry across Guanabara Bay)",
+      "Morro de São Paulo access by catamaran from Salvador"
+    ],
+    "border_crossing_notes": "Foz do Iguaçu (Argentina/Paraguay), Santarém area (border zones), Leticia/Tabatinga (Colombia). US citizens now visa-free. Carry yellow fever vaccination card when traveling in Amazon or to neighboring countries."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$40-65/day",
+    "daily_budget_midrange": "$90-160/day",
+    "daily_budget_comfort": "$200-500/day",
+    "hostel_avg": "$12-25/night",
+    "hotel_avg": "$60-150/night",
+    "meal_avg": "$5-15 (prato feito R$20-40, restaurant R$40-100)",
+    "coffee_avg": "$1-3",
+    "beer_avg": "$2-5",
+    "local_transport_avg": "$1-3 (Metro/Uber minimum)",
+    "sim_card_avg": "$5-12 for 5-15GB",
+    "coworking_day_pass_avg": "$15-30",
+    "surfboard_rental_avg": "$15-30/day",
+    "value_for_money": "Moderate — Brazil is more expensive than Peru or Bolivia but offers incredible value at the top end. Pousadas (guesthouses) on the northeast coast offer stunning tropical accommodation affordably. São Paulo and Rio are relatively expensive for a developing country."
+  },
+  "connectivity": {
+    "sim_card_providers": [
+      "Vivo",
+      "Claro",
+      "TIM",
+      "Oi"
+    ],
+    "esim_available": true,
+    "mobile_data_quality": "Excellent 4G/5G in São Paulo, Rio, and major cities. Good coverage along the coast. Limited in Amazon interior and remote areas.",
+    "wifi_quality": "Good in most hotels and hostels. São Paulo co-working scene is world-class. Limited in small beach towns and Amazon lodges.",
+    "coworking_available": true,
+    "best_remote_work_cities": [
+      "São Paulo (Pinheiros, Vila Madalena, Faria Lima)",
+      "Rio de Janeiro (Ipanema, Botafogo)",
+      "Florianópolis",
+      "Belo Horizonte"
+    ],
+    "power_outlet_types": [
+      "N (NBR 14136 — two round pins + ground, unique to Brazil)"
+    ],
+    "voltage": "220V (most cities), 110V (Manaus, some areas), 60Hz",
+    "plug_adapter_needed_for_us": true,
+    "power_reliability": "Reliable in cities. Amazon lodges use generators (limited hours). Northeast rural areas have occasional outages."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Ipanema/Leblon, Rio de Janeiro — safest beach neighborhoods, great restaurants",
+      "Botafogo, Rio de Janeiro — hip, local, good value",
+      "Jardins/Jardim Paulista, São Paulo — safest, walkable, excellent restaurants",
+      "Lagoa da Conceição, Florianópolis — lagoon views, surf access, nightlife",
+      "Pelourinho, Salvador — UNESCO historic center, but extra caution at night",
+      "Pipa, Rio Grande do Norte — laid-back beach town, great surf and food"
+    ],
+    "budget_areas": [
+      "Santa Teresa (Rio — bohemian but extra caution needed)",
+      "Glória/Catete (Rio)",
+      "Vila Madalena (São Paulo — budget but trendy)",
+      "Hostel districts in Florianópolis"
+    ],
+    "family_friendly_areas": [
+      "Ipanema/Leblon (Rio)",
+      "Jardins (São Paulo)",
+      "Costão do Santinho (Florianópolis)",
+      "Gramado (Rio Grande do Sul — mountain resort town)"
+    ],
+    "nightlife_areas": [
+      "Lapa (Rio — vibrant but unsafe late)",
+      "Pinheiros/Vila Madalena (São Paulo)",
+      "Lagoa da Conceição (Florianópolis)",
+      "Pelourinho (Salvador)"
+    ],
+    "surf_towns": [
+      "Florianópolis",
+      "Ubatuba",
+      "Saquarema",
+      "Itacaré (Bahia)",
+      "Jericoacoara",
+      "Fernando de Noronha",
+      "Praia do Rosa",
+      "Pipa"
+    ],
+    "eco_lodges_available": true,
+    "peak_booking_season": "December to February (Carnival period, especially Rio). July school holidays. Fernando de Noronha requires advance booking year-round.",
+    "accommodation_notes": "Book Rio hotels 6+ months ahead for Carnival (February/March). Fernando de Noronha has a daily visitor cap — book Noronha pass (taxa de preservação ambiental) well in advance. Amazon lodges require advance booking and arrange all transport."
+  },
+  "culture": {
+    "local_customs": [
+      "Greet with a kiss on the right cheek (women), handshake between men",
+      "Brazilians are warm, physical, and expressive — close personal space is normal",
+      "Futebol (football/soccer) transcends all social boundaries — passion is absolute",
+      "Jeitinho brasileiro — the creative Brazilian way of finding solutions and working around obstacles",
+      "Punctuality is relaxed socially — arrive 30-60 minutes late to social events. Professional meetings are more punctual."
+    ],
+    "dress_expectations": "Casual at beaches and in the city. Fio dental (thong bikinis) are normal on Rio beaches — fit in, not provocative. Smart casual for fine dining. Revealing clothing is culturally acceptable on beaches but not in churches or rural areas.",
+    "religious_sensitivity": "Predominantly Catholic with significant evangelical Christian and Afro-Brazilian religious communities (Candomblé, Umbanda). Candomblé ceremonies require invitation; observe respectfully if attending.",
+    "social_norms": [
+      "Never refuse food or drink offered in a home setting",
+      "Football clubs are deeply tribal — avoid wearing rival club colors",
+      "Brazilian Portuguese differs significantly from European Portuguese",
+      "Be careful discussing favelas as a tourist talking point — sensitive subject",
+      "Thumbs up is positive and widely used"
+    ],
+    "greeting_style": "Kiss on right cheek (one only, in most states) between women and mixed groups. Handshake between men. Very warm and physical — touching is normal in conversation.",
+    "public_behavior_notes": "PDA is completely normal. Beaches are social spaces — people dance, play volleyball, and socialize openly. Flash expensive devices minimally.",
+    "photography_etiquette": "Ask before photographing people in informal settlements or communities. Carnival is photographed extensively. Photography restricted in some indigenous areas.",
+    "bargaining_expected": true,
+    "important_holidays": [
+      "Carnaval — February/March — four days before Ash Wednesday; Rio's samba parades (Sambódromo) are the world's greatest spectacle; Salvador's axé and blocos street parties; Olinda's giant puppets. World's largest festival.",
+      "Festa Junina — June — celebrating Saints' Anthony, John, and Peter with forró music, quadrilha dancing, corn-based foods, and mock-weddings. Major throughout northeast and interior.",
+      "São João (Midsummer Festival) — June 23-24 — largest celebration of this type in Caruaru and Campina Grande; fireworks and forró all night",
+      "New Year's Eve (Réveillon) — December 31 — Copacabana beach hosts 2-3 million people in white, releasing flowers into the sea as offerings to Iemanjá (goddess of the sea). The world's greatest New Year beach party.",
+      "Boi Bumbá — June/July, Parintins (Amazon) — 72-hour folk musical contest between two competing folk troupes (Garantido and Caprichoso), one of Brazil's most unique festivals"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Bikini tops required when entering shops and restaurants near beaches",
+      "Smoking banned in all enclosed public spaces",
+      "Environmental permits required for Fernando de Noronha (daily visitor quota)",
+      "Photography of military installations prohibited"
+    ]
+  },
+  "food": {
+    "dishes": [
+      {
+        "name": "Feijoada",
+        "description": "Brazil's national dish — a rich black bean stew slowly cooked with smoked pork, beef, salted ribs, linguiça, and dried meat. Served with white rice, collard greens (couve), farofa (toasted manioc), orange slices, and hot pepper sauce. Traditionally served on Wednesdays and Saturdays.",
+        "region": "Nationwide, originated in Rio de Janeiro"
+      },
+      {
+        "name": "Churrasco",
+        "description": "Brazilian barbecue — various cuts of beef (picanha/rump cap, fraldinha, costela), pork, chicken, and sausage grilled over charcoal. Served churrascaria-style where waiters bring skewers tableside in an endless parade. Picanha (rump cap with fat cap) is the prized cut.",
+        "region": "Nationwide, especially Rio Grande do Sul (gaúcho tradition)"
+      },
+      {
+        "name": "Moqueca",
+        "description": "A fragrant seafood stew — shrimp, fish, or crab cooked in coconut milk, dendê (red palm oil), onions, tomatoes, and coriander. Served in a clay pot. Two main versions: Moqueca Baiana (richer, with coconut milk and palm oil) and Moqueca Capixaba (lighter, no palm oil).",
+        "region": "Bahia (Baiana version) and Espírito Santo (Capixaba version)"
+      },
+      {
+        "name": "Açaí",
+        "description": "Thick purple smoothie from Amazon açaí palm berries — served frozen in a bowl topped with granola, banana, and honey. Rich in antioxidants. The original superfood, eaten daily in the Amazon as a staple. Very different from the thin commercial versions outside Brazil.",
+        "region": "Amazon origin (Pará state), now nationwide"
+      },
+      {
+        "name": "Coxinha",
+        "description": "Brazil's most iconic street snack — shredded chicken (or chicken and catupiry cream cheese) encased in a teardrop-shaped dough, breaded and deep-fried. Found in every padaria (bakery) in Brazil. Perfect paired with cold Brahma beer.",
+        "region": "São Paulo origin, nationwide"
+      },
+      {
+        "name": "Pão de Queijo",
+        "description": "Addictively chewy cheese bread balls made from tapioca flour and queijo minas (mild white cheese). Gluten-free, light, and irresistible. Eaten for breakfast or as a snack throughout the day. The Mineiro contribution to Brazilian food culture.",
+        "region": "Minas Gerais origin, nationwide"
+      },
+      {
+        "name": "Acarajé",
+        "description": "Salvador's street food icon — black-eyed pea fritter deep-fried in dendê palm oil by Baianas in white dresses. Split and filled with vatapá (shrimp and peanut paste), caruru (okra), and salad. A living piece of Afro-Brazilian culinary heritage, UNESCO recognized.",
+        "region": "Bahia (Salvador), Afro-Brazilian tradition"
+      },
+      {
+        "name": "Baião de Dois",
+        "description": "Northeastern comfort food — rice and beans cooked together with dried beef (charque), queijo coalho (grilling cheese), butter, and coriander. A staple of Sertão (hinterland) culture, representing resilience and simplicity.",
+        "region": "Northeast Brazil (Ceará, Piauí, Rio Grande do Norte)"
+      },
+      {
+        "name": "Vatapá",
+        "description": "A rich, creamy paste from Bahia — made from stale bread, dried shrimp, roasted peanuts, cashews, coconut milk, and dendê palm oil. Served as a filling or side dish. Deeply Afro-Brazilian in its flavor profile.",
+        "region": "Bahia"
+      },
+      {
+        "name": "Brigadeiro",
+        "description": "Brazil's beloved chocolate truffle — condensed milk, cocoa powder, and butter cooked until thick, then rolled in chocolate sprinkles. Present at every birthday party. The quintessential Brazilian sweet — simple, rich, and irresistible.",
+        "region": "Nationwide"
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Caipirinha",
+        "description": "Brazil's national cocktail — lime (limão galego), sugar, and cachaça (sugarcane spirit) muddled together over ice. Simple, potent, and delicious. The standard measure in Brazil is generous by international standards."
+      },
+      {
+        "name": "Cachaça",
+        "description": "Brazil's national spirit — distilled from fermented fresh sugarcane juice. Aged varieties (cachaça envelhecida) are world-class spirits. Artisanal producers in Minas Gerais, Bahia, and Santa Catarina. Not rum — made from fresh cane juice, not molasses."
+      },
+      {
+        "name": "Guaraná Antarctica",
+        "description": "Brazil's most iconic soda — made from the Amazonian guaraná berry. Sweet, lightly caffeinated, with a flavor unlike any other soda. The Brazilian alternative to Coca-Cola. Available everywhere."
+      },
+      {
+        "name": "Água de Coco",
+        "description": "Fresh coconut water, drunk straight from the green coconut with a straw. Found at beach stands throughout the northeast and tropical coast. Naturally hydrating, fresh, and isotonic. The perfect beach drink."
+      },
+      {
+        "name": "Chopp",
+        "description": "Draft beer (chope/chopp) — always served ice-cold, often in frosted mugs. Brazil takes draft beer very seriously — Brahma, Skol, and Heineken on draft. Served at -2°C in the best choppeiras."
+      },
+      {
+        "name": "Vitamina de Açaí",
+        "description": "Thick açaí smoothie — a powerful Amazon energy drink blended with banana. Consumed daily by Amazon residents as a complete meal. Completely different from watered-down açaí elsewhere in the world."
+      }
+    ],
+    "street_food_safety": "Generally safe at busy, well-patronized stalls. Coxinhas, pastéis, and grilled items are very safe. Be cautious with raw shellfish at northeast beach stands. Avoid cut fruit with ice in smaller towns.",
+    "vegetarian_friendliness": "Good in São Paulo and Rio (extensive vegetarian restaurants). More challenging in the interior and northeast where meat dominates. Ask for 'sem carne' and verify no meat stock in beans.",
+    "vegan_friendliness": "Very good in São Paulo (one of the world's best vegan food scenes) and Rio. Difficult elsewhere. Prato feito (daily set meal) almost always has meat.",
+    "must_try_drinks": [
+      "Caipirinha",
+      "Chopp",
+      "Água de Coco",
+      "Guaraná Antarctica",
+      "Cachaça envelhecida",
+      "Vitamina de Açaí"
+    ],
+    "regional_specialties": [
+      "Rio de Janeiro: feijoada, churrasco, pão de queijo, carioca black beans",
+      "Bahia: moqueca baiana, acarajé, vatapá, caruru, bobó de camarão",
+      "São Paulo: pastéis, coxinhas, Japanese-Brazilian cuisine (best outside Japan), immigrant cuisine",
+      "Amazon: açaí, tacacá, pato no tucupi (duck in manioc sauce), tambaqui fish",
+      "Northeast: baião de dois, carne de sol, tapioca crepes, caju juice"
+    ],
+    "drinking_water_notes": "Tap water safe in Rio and São Paulo. Use bottled water in smaller cities and the Amazon. Verify ice is purified in northeastern beach towns.",
+    "alcohol_rules": "Legal drinking age 18. Open container tolerated on beaches. Driving under influence: zero tolerance — serious legal consequences.",
+    "signature_dishes": [
+      {
+        "name": "Feijoada",
+        "description": "Brazil's national dish — a rich black bean stew slowly cooked with smoked pork, beef, salted ribs, linguiça, and dried meat. Served with white rice, collard greens (couve), farofa (toasted manioc), orange slices, and hot pepper sauce. Traditionally served on Wednesdays and Saturdays.",
+        "region": "Nationwide, originated in Rio de Janeiro"
+      },
+      {
+        "name": "Churrasco",
+        "description": "Brazilian barbecue — various cuts of beef (picanha/rump cap, fraldinha, costela), pork, chicken, and sausage grilled over charcoal. Served churrascaria-style where waiters bring skewers tableside in an endless parade. Picanha (rump cap with fat cap) is the prized cut.",
+        "region": "Nationwide, especially Rio Grande do Sul (gaúcho tradition)"
+      },
+      {
+        "name": "Moqueca",
+        "description": "A fragrant seafood stew — shrimp, fish, or crab cooked in coconut milk, dendê (red palm oil), onions, tomatoes, and coriander. Served in a clay pot. Two main versions: Moqueca Baiana (richer, with coconut milk and palm oil) and Moqueca Capixaba (lighter, no palm oil).",
+        "region": "Bahia (Baiana version) and Espírito Santo (Capixaba version)"
+      },
+      {
+        "name": "Açaí",
+        "description": "Thick purple smoothie from Amazon açaí palm berries — served frozen in a bowl topped with granola, banana, and honey. Rich in antioxidants. The original superfood, eaten daily in the Amazon as a staple. Very different from the thin commercial versions outside Brazil.",
+        "region": "Amazon origin (Pará state), now nationwide"
+      },
+      {
+        "name": "Coxinha",
+        "description": "Brazil's most iconic street snack — shredded chicken (or chicken and catupiry cream cheese) encased in a teardrop-shaped dough, breaded and deep-fried. Found in every padaria (bakery) in Brazil. Perfect paired with cold Brahma beer.",
+        "region": "São Paulo origin, nationwide"
+      },
+      {
+        "name": "Pão de Queijo",
+        "description": "Addictively chewy cheese bread balls made from tapioca flour and queijo minas (mild white cheese). Gluten-free, light, and irresistible. Eaten for breakfast or as a snack throughout the day. The Mineiro contribution to Brazilian food culture.",
+        "region": "Minas Gerais origin, nationwide"
+      },
+      {
+        "name": "Acarajé",
+        "description": "Salvador's street food icon — black-eyed pea fritter deep-fried in dendê palm oil by Baianas in white dresses. Split and filled with vatapá (shrimp and peanut paste), caruru (okra), and salad. A living piece of Afro-Brazilian culinary heritage, UNESCO recognized.",
+        "region": "Bahia (Salvador), Afro-Brazilian tradition"
+      },
+      {
+        "name": "Baião de Dois",
+        "description": "Northeastern comfort food — rice and beans cooked together with dried beef (charque), queijo coalho (grilling cheese), butter, and coriander. A staple of Sertão (hinterland) culture, representing resilience and simplicity.",
+        "region": "Northeast Brazil (Ceará, Piauí, Rio Grande do Norte)"
+      },
+      {
+        "name": "Vatapá",
+        "description": "A rich, creamy paste from Bahia — made from stale bread, dried shrimp, roasted peanuts, cashews, coconut milk, and dendê palm oil. Served as a filling or side dish. Deeply Afro-Brazilian in its flavor profile.",
+        "region": "Bahia"
+      },
+      {
+        "name": "Brigadeiro",
+        "description": "Brazil's beloved chocolate truffle — condensed milk, cocoa powder, and butter cooked until thick, then rolled in chocolate sprinkles. Present at every birthday party. The quintessential Brazilian sweet — simple, rich, and irresistible.",
+        "region": "Nationwide"
+      }
+    ]
+  },
+  "outdoors": {
+    "surf_spots": [
+      {
+        "name": "Fernando de Noronha — Cacimba do Padre",
+        "region": "Pernambuco (Atlantic archipelago, 545km from Recife)",
+        "difficulty": "Advanced",
+        "wave_type": "Beach break with reef elements",
+        "break_type": "Powerful beach break over volcanic rock",
+        "swell_direction": "North and northeast Atlantic swell",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March",
+          "April"
+        ],
+        "description": "Brazil's most spectacular surf destination — a UNESCO World Heritage island with strict visitor caps that keep it pristine. Cacimba do Padre produces hollow, powerful waves from North Atlantic swells, sometimes reaching 4m. Warm crystal-clear water, sea turtles, and spinner dolphins as surf companions. Annual WQS contest in February. Environmental permit (Noronha Pass) required — book months in advance."
+      },
+      {
+        "name": "Florianópolis — Praia Mole / Joaquina",
+        "region": "Santa Catarina (southern Brazil)",
+        "difficulty": "Intermediate to Advanced",
+        "wave_type": "Beach break",
+        "break_type": "Exposed beach break over sand with dunes backdrop",
+        "swell_direction": "South and southeast",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "description": "Florianópolis is Brazil's premier surf city — an island with over 40 beaches and multiple world-class breaks. Praia Mole produces consistent, punchy beach break waves; Joaquina hosts Brazilian surfing championships with powerful, hollow peaks. Backed by dramatic sand dunes. Good water temperature for Brazil's south (18-25°C). Strong local surf culture."
+      },
+      {
+        "name": "Itacaré, Bahia",
+        "region": "Bahia (southern Bahia coast)",
+        "difficulty": "Intermediate",
+        "wave_type": "Beach break and point break",
+        "break_type": "Multiple beach and point breaks surrounded by Atlantic Forest",
+        "swell_direction": "South to southeast",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "description": "A gem of the Bahia coast — a charming colonial town on the Dendê Coast surrounded by Atlantic Forest and accessed only through challenging roads (adding to its authenticity). Praia da Tiririca is the main break, a consistent beach break. The beaches are ringed by coconut palms and Atlantic Forest. Multiple breaks within a short hike or boat ride. Legendary surf and nightlife combination."
+      },
+      {
+        "name": "Jericoacoara, Ceará",
+        "region": "Ceará (northeast Brazil)",
+        "difficulty": "Beginner to Intermediate",
+        "wave_type": "Beach break (kitesurf/windsurf dominated)",
+        "break_type": "Long beach break with strong consistent trade winds",
+        "swell_direction": "East and northeast",
+        "best_months": [
+          "July",
+          "August",
+          "September",
+          "October",
+          "November"
+        ],
+        "description": "A legendary beach village accessible only by 4x4 through sand dunes — no paved roads allow vehicles. Jeri's constant and powerful trade winds (July-December) make it one of the world's top kitesurfing and windsurfing destinations. Good longboard waves when conditions are right. The famous 'Sunset Dune' watch is a daily ritual. Magical, remote atmosphere."
+      },
+      {
+        "name": "Saquarema, Rio de Janeiro",
+        "region": "Rio de Janeiro State",
+        "difficulty": "Advanced",
+        "wave_type": "Beach break",
+        "break_type": "Powerful exposed beach break",
+        "swell_direction": "South to southwest",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August"
+        ],
+        "description": "The spiritual home of Brazilian surfing — home of the annual Brazil WSL Championship Tour stop. Saquarema's Praia de Itaúna produces some of the best waves in South America — heavy, powerful barrels that punish mistakes. The church on the hill overlooking the break is iconic. Strong local surf culture, competitive and proud."
+      },
+      {
+        "name": "Ubatuba, São Paulo",
+        "region": "São Paulo State (Litoral Norte)",
+        "difficulty": "Beginner to Advanced",
+        "wave_type": "Multiple break types",
+        "break_type": "Beach breaks and point breaks in Atlantic Forest setting",
+        "swell_direction": "Southeast to south",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August"
+        ],
+        "description": "100 beaches in a stunningly beautiful stretch of Atlantic Forest coast — something for every level. Praia da Almada and Praia do Vermelhos are beginner-friendly; Praia Grande handles big south swells for advanced surfers. Warm water, lush green surroundings, and fresh seafood. 5 hours from São Paulo."
+      }
+    ],
+    "hikes": [
+      {
+        "name": "Pedra do Telégrafo, Rio de Janeiro",
+        "region": "Rio de Janeiro (Barra de Guaratiba)",
+        "difficulty": "Moderate",
+        "distance_km": 9,
+        "duration_days": 1,
+        "elevation_gain_m": 350,
+        "description": "A day hike through Atlantic Forest to a dramatic cliff-edge boulder protruding over the ocean. Famous for perspective photography making hikers appear to hang off a sheer drop. Actually very safe — the ground is wide. Rio de Janeiro coastline panorama on a clear day.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Chapada Diamantina — Vale do Pati Circuit",
+        "region": "Bahia",
+        "difficulty": "Hard",
+        "distance_km": 85,
+        "duration_days": 6,
+        "elevation_gain_m": 1500,
+        "description": "One of Brazil's greatest trekking circuits — through the spectacular Bahian highlands with diamond mine history, crystalline rivers, table-top mountains (chapadas), and endemic wildlife. Vale do Pati is accessible only on foot, inhabited by a handful of families who host trekkers. Swim in natural pools at Cachoeira do Riachão.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Trilha do Ouro (Gold Trail), Paraty",
+        "region": "Rio de Janeiro / São Paulo border",
+        "difficulty": "Moderate",
+        "distance_km": 30,
+        "duration_days": 2,
+        "elevation_gain_m": 800,
+        "description": "Follow the 18th-century cobblestone royal road used to transport gold from Minas Gerais to the port of Paraty during the colonial gold rush. Through Atlantic Forest, crossing streams on original stone bridges. A historical and ecological experience combined.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Trilha da Praia do Rosa, Santa Catarina",
+        "region": "Santa Catarina",
+        "difficulty": "Easy",
+        "distance_km": 8,
+        "duration_days": 1,
+        "elevation_gain_m": 150,
+        "description": "Coastal trail along clifftops above some of Brazil's most beautiful beaches — famous for southern right whale watching during winter migration (July-October). The whales come very close to shore and are visible from the trail without a boat.",
+        "best_months": [
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Chapada dos Veadeiros — Cânion dos Couros",
+        "region": "Goiás (Brazil's central plateau)",
+        "difficulty": "Moderate",
+        "distance_km": 22,
+        "duration_days": 1,
+        "elevation_gain_m": 400,
+        "description": "Trek through one of Earth's oldest geological formations (1.8 billion years old) in Brazil's central savanna (cerrado). Dramatic canyons, crystal-clear rivers, waterfalls perfect for swimming, and extraordinary cerrado biodiversity. UNESCO World Heritage Site.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Pantanal (Mato Grosso and Mato Grosso do Sul)",
+        "region": "Mato Grosso and Mato Grosso do Sul",
+        "species": [
+          "Jaguar (highest density in the world)",
+          "Capybara",
+          "Giant anteater",
+          "Tapir",
+          "Giant otter",
+          "Marsh deer",
+          "Hyacinth macaw",
+          "Jabiru stork",
+          "Caiman (millions)"
+        ],
+        "description": "The world's largest tropical wetland — the single best destination in the Americas to see jaguars in the wild. During the dry season (July-October), wildlife concentrates around shrinking water sources. Jaguars hunt caimans on the banks of the Cuiabá River in plain view. Boat tours from Cuiabá or Campo Grande.",
+        "best_months": [
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Amazon Rainforest — Manaus and surrounds",
+        "region": "Amazonas state",
+        "species": [
+          "Pink river dolphin",
+          "Grey river dolphin",
+          "Jaguar",
+          "Tapir",
+          "Giant otter",
+          "Anaconda",
+          "Piranha",
+          "Harpy eagle",
+          "Toucan",
+          "Monkey species (many)"
+        ],
+        "description": "The lungs of the Earth — the world's largest tropical rainforest. Base yourself in Manaus for lodge-based Amazon experiences. The Meeting of the Waters (where the dark Rio Negro meets the sandy-colored Amazon River and flows side by side for kilometers) is unmissable. Night canoe trips for caiman spotting.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Fernando de Noronha Marine Park",
+        "region": "Pernambuco (Atlantic archipelago)",
+        "species": [
+          "Spinner dolphin (hundreds)",
+          "Sea turtle (nesting)",
+          "Reef shark",
+          "Manta ray",
+          "Barracuda",
+          "Nurse shark",
+          "Sea bird colonies"
+        ],
+        "description": "Brazil's most pristine marine environment — strict visitor caps preserve crystal-clear water with 30m visibility. The Bay of Dolphins (Baía dos Golfinhos) holds the world's largest school of spinner dolphins, visible from the cliffs at dawn. Sea turtles nest on the beaches from October to March.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "December",
+          "January",
+          "February"
+        ]
+      },
+      {
+        "name": "Abrolhos Archipelago Marine Park",
+        "region": "Bahia",
+        "species": [
+          "Humpback whale (June-November nesting season)",
+          "Sea turtle",
+          "Reef fish",
+          "Manta ray",
+          "Spinner dolphin"
+        ],
+        "description": "The most important humpback whale breeding ground in the South Atlantic — thousands of humpback whales gather in these warm, shallow waters to give birth and nurse calves (August-November). Coral reefs unlike any others in the South Atlantic — distinctive mushroom-shaped coral formations called chapeirões.",
+        "best_months": [
+          "August",
+          "September",
+          "October",
+          "November"
+        ]
+      }
+    ],
+    "national_parks": [
+      {
+        "name": "Iguaçu National Park",
+        "region": "Paraná (border with Argentina)",
+        "area_km2": 1847,
+        "description": "UNESCO World Heritage Site — the Brazilian side of Iguaçu Falls offers the panoramic perspective, looking across the full width of the 275-cascade system. The walkways lead to the base of the falls where the spray soaks everything. Combined with the Argentine side, gives the complete experience. Toucans, coatis, and capuchin monkeys inhabit the surrounding forest.",
+        "highlights": [
+          "Panoramic view from Brazilian side",
+          "Devil's Throat panorama",
+          "Helicopter flights over the falls",
+          "Macuco Safari (boat under the falls)",
+          "Forest birdwatching",
+          "Combined Argentine/Brazilian visit"
+        ]
+      },
+      {
+        "name": "Chapada Diamantina National Park",
+        "region": "Bahia",
+        "area_km2": 1520,
+        "description": "The Brazilian highlands' most spectacular park — diamond mine history, table-top mountains, spectacular waterfalls (Cachoeira da Fumaça falls 340m — one of Brazil's highest), cave systems with crystalline lakes (Poço Encantado), and exceptional hiking. Base town of Lençóis is charming.",
+        "highlights": [
+          "Cachoeira da Fumaça (340m falls)",
+          "Poço Encantado (crystal cave lake)",
+          "Vale do Pati trek",
+          "Morro do Pai Inácio plateau views",
+          "Diamond mine history",
+          "Swimming in natural pools"
+        ]
+      },
+      {
+        "name": "Lençóis Maranhenses National Park",
+        "region": "Maranhão",
+        "area_km2": 1550,
+        "description": "One of the world's most surreal landscapes — vast white sand dunes (up to 40m high) with crystal-blue and green rain-filled lagoons scattered between them during the rainy season (March-September). Despite being near the equator, the unique geography prevents vegetation. Look like Sahara dunes with Caribbean lagoons.",
+        "highlights": [
+          "Lagoa Bonita",
+          "Lagoa Azul",
+          "Lagoa da Garça flamingos",
+          "4x4 access across the dunes",
+          "Swimming in lagoon pools",
+          "Overnight camps in the dunes"
+        ]
+      },
+      {
+        "name": "Jaú National Park",
+        "region": "Amazonas",
+        "area_km2": 23000,
+        "description": "One of the largest national parks in South America — a vast, pristine Amazon rainforest reserve around the Jaú River system. Blackwater ecosystem creating unique biodiversity. UNESCO World Heritage Site. Very remote — access by river only from Manaus. Pink river dolphins, giant otters, and 300+ fish species.",
+        "highlights": [
+          "Pristine blackwater Amazon forest",
+          "Pink river dolphin habitat",
+          "Giant otter territory",
+          "River expedition by boat",
+          "Virtually no other tourists",
+          "Jaguar territory"
+        ]
+      },
+      {
+        "name": "Chapada dos Veadeiros National Park",
+        "region": "Goiás",
+        "area_km2": 2400,
+        "description": "On one of Earth's oldest geological formations (1.8 billion years old), this cerrado savanna park is a UNESCO World Heritage Site. Extraordinary biodiversity of the cerrado ecosystem — Brazil's second-largest biome. Crystal-clear rivers perfect for swimming, dramatic canyons, and giant waterfalls.",
+        "highlights": [
+          "Cânion dos Couros",
+          "Cânion Rio Preto",
+          "Multiple waterfalls",
+          "Cerrado biodiversity",
+          "Quartz crystal formations",
+          "Giant anteater and maned wolf sightings"
+        ]
+      }
+    ],
+    "danger_zones": [
+      {
+        "name": "Favelas",
+        "region": "All Brazilian cities",
+        "risk_level": "High — Do Not Enter",
+        "description": "US State Department is explicit: Do Not Enter favelas at any time, including on guided tours — neither tour companies nor police can guarantee safety. While 'favela tours' are marketed, the risk-reward calculation is unfavorable."
+      },
+      {
+        "name": "Northeast beaches — rip currents",
+        "region": "Recife (Boa Viagem) and surrounds",
+        "risk_level": "Moderate",
+        "description": "The beaches near Recife have some of the world's highest shark attack rates due to the nearby Porto de Suape construction disturbing shark feeding grounds. Swim only in designated, flagged zones. Also strong rip currents throughout the northeast coast."
+      },
+      {
+        "name": "Amazon border zones",
+        "region": "Zones within 160km of land borders",
+        "risk_level": "High",
+        "description": "US State Dept Level 2-4 advisory for areas within 160km of Brazil's land borders with Bolivia, Colombia, Guyana, French Guiana, Paraguay, Peru, Suriname, and Venezuela. Drug trafficking, armed groups, and lack of law enforcement. Note: Foz do Iguaçu NP and Pantanal NP are exceptions and remain accessible."
+      }
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Pedra do Telégrafo, Rio de Janeiro",
+        "difficulty": "Moderate",
+        "duration": "1 day",
+        "region": "Rio de Janeiro (Barra de Guaratiba)",
+        "description": "A day hike through Atlantic Forest to a dramatic cliff-edge boulder protruding over the ocean. Famous for perspective photography making hikers appear to hang off a sheer drop. Actually very safe — the ground is wide. Rio de Janeiro coastline panorama on a clear day.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 350,
+        "notes": "",
+        "distance_km": 9,
+        "duration_days": 1
+      },
+      {
+        "name": "Trilha da Praia do Rosa, Santa Catarina",
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "region": "Santa Catarina",
+        "description": "Coastal trail along clifftops above some of Brazil's most beautiful beaches — famous for southern right whale watching during winter migration (July-October). The whales come very close to shore and are visible from the trail without a boat.",
+        "best_months": [
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "elevation_m": 150,
+        "notes": "",
+        "distance_km": 8,
+        "duration_days": 1
+      },
+      {
+        "name": "Chapada dos Veadeiros — Cânion dos Couros",
+        "difficulty": "Moderate",
+        "duration": "1 day",
+        "region": "Goiás (Brazil's central plateau)",
+        "description": "Trek through one of Earth's oldest geological formations (1.8 billion years old) in Brazil's central savanna (cerrado). Dramatic canyons, crystal-clear rivers, waterfalls perfect for swimming, and extraordinary cerrado biodiversity. UNESCO World Heritage Site.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 400,
+        "notes": "",
+        "distance_km": 22,
+        "duration_days": 1
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Chapada Diamantina — Vale do Pati Circuit",
+        "difficulty": "Hard",
+        "duration": "6 days",
+        "region": "Bahia",
+        "description": "One of Brazil's greatest trekking circuits — through the spectacular Bahian highlands with diamond mine history, crystalline rivers, table-top mountains (chapadas), and endemic wildlife. Vale do Pati is accessible only on foot, inhabited by a handful of families who host trekkers. Swim in natural pools at Cachoeira do Riachão.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 1500,
+        "notes": "",
+        "distance_km": 85,
+        "duration_days": 6
+      },
+      {
+        "name": "Trilha do Ouro (Gold Trail), Paraty",
+        "difficulty": "Moderate",
+        "duration": "2 days",
+        "region": "Rio de Janeiro / São Paulo border",
+        "description": "Follow the 18th-century cobblestone royal road used to transport gold from Minas Gerais to the port of Paraty during the colonial gold rush. Through Atlantic Forest, crossing streams on original stone bridges. A historical and ecological experience combined.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 800,
+        "notes": "",
+        "distance_km": 30,
+        "duration_days": 2
+      }
+    ],
+    "top_national_parks": [
+      {
+        "name": "Iguaçu National Park",
+        "region": "Paraná (border with Argentina)",
+        "description": "UNESCO World Heritage Site — the Brazilian side of Iguaçu Falls offers the panoramic perspective, looking across the full width of the 275-cascade system. The walkways lead to the base of the falls where the spray soaks everything. Combined with the Argentine side, gives the complete experience. Toucans, coatis, and capuchin monkeys inhabit the surrounding forest.",
+        "area_km2": 1847,
+        "best_months": [],
+        "highlights": [
+          "Panoramic view from Brazilian side",
+          "Devil's Throat panorama",
+          "Helicopter flights over the falls",
+          "Macuco Safari (boat under the falls)",
+          "Forest birdwatching",
+          "Combined Argentine/Brazilian visit"
+        ]
+      },
+      {
+        "name": "Chapada Diamantina National Park",
+        "region": "Bahia",
+        "description": "The Brazilian highlands' most spectacular park — diamond mine history, table-top mountains, spectacular waterfalls (Cachoeira da Fumaça falls 340m — one of Brazil's highest), cave systems with crystalline lakes (Poço Encantado), and exceptional hiking. Base town of Lençóis is charming.",
+        "area_km2": 1520,
+        "best_months": [],
+        "highlights": [
+          "Cachoeira da Fumaça (340m falls)",
+          "Poço Encantado (crystal cave lake)",
+          "Vale do Pati trek",
+          "Morro do Pai Inácio plateau views",
+          "Diamond mine history",
+          "Swimming in natural pools"
+        ]
+      },
+      {
+        "name": "Lençóis Maranhenses National Park",
+        "region": "Maranhão",
+        "description": "One of the world's most surreal landscapes — vast white sand dunes (up to 40m high) with crystal-blue and green rain-filled lagoons scattered between them during the rainy season (March-September). Despite being near the equator, the unique geography prevents vegetation. Look like Sahara dunes with Caribbean lagoons.",
+        "area_km2": 1550,
+        "best_months": [],
+        "highlights": [
+          "Lagoa Bonita",
+          "Lagoa Azul",
+          "Lagoa da Garça flamingos",
+          "4x4 access across the dunes",
+          "Swimming in lagoon pools",
+          "Overnight camps in the dunes"
+        ]
+      },
+      {
+        "name": "Jaú National Park",
+        "region": "Amazonas",
+        "description": "One of the largest national parks in South America — a vast, pristine Amazon rainforest reserve around the Jaú River system. Blackwater ecosystem creating unique biodiversity. UNESCO World Heritage Site. Very remote — access by river only from Manaus. Pink river dolphins, giant otters, and 300+ fish species.",
+        "area_km2": 23000,
+        "best_months": [],
+        "highlights": [
+          "Pristine blackwater Amazon forest",
+          "Pink river dolphin habitat",
+          "Giant otter territory",
+          "River expedition by boat",
+          "Virtually no other tourists",
+          "Jaguar territory"
+        ]
+      },
+      {
+        "name": "Chapada dos Veadeiros National Park",
+        "region": "Goiás",
+        "description": "On one of Earth's oldest geological formations (1.8 billion years old), this cerrado savanna park is a UNESCO World Heritage Site. Extraordinary biodiversity of the cerrado ecosystem — Brazil's second-largest biome. Crystal-clear rivers perfect for swimming, dramatic canyons, and giant waterfalls.",
+        "area_km2": 2400,
+        "best_months": [],
+        "highlights": [
+          "Cânion dos Couros",
+          "Cânion Rio Preto",
+          "Multiple waterfalls",
+          "Cerrado biodiversity",
+          "Quartz crystal formations",
+          "Giant anteater and maned wolf sightings"
+        ]
+      }
+    ]
+  },
+  "sports_and_activities": {
+    "top_activities": [
+      "Surfing (extensive coastline)",
+      "Carnival celebrations",
+      "Amazon jungle tours",
+      "Pantanal wildlife safaris",
+      "Capoeira (watch or learn)",
+      "Beach volleyball",
+      "Kitesurfing (Jericoacoara)",
+      "Fernando de Noronha snorkeling/diving"
+    ],
+    "skiing_destinations": [],
+    "ski_season": "Not applicable",
+    "scuba_diving": true,
+    "world_class_destinations": [
+      "Fernando de Noronha (snorkeling/diving)",
+      "Pantanal (jaguar watching)",
+      "Amazon rainforest",
+      "Iguaçu Falls",
+      "Lençóis Maranhenses"
+    ],
+    "adventure_sports": [
+      "Surfing",
+      "Kitesurfing (Jericoacoara)",
+      "Hang gliding (Rio — Pedra Bonita launch)",
+      "Canyoning (Chapada Diamantina)",
+      "River rafting (Jacaré river, Paraíba do Sul)",
+      "Rappelling (Chapada dos Veadeiros)"
+    ]
+  },
+  "trip_styles": {
+    "backpacker": "Excellent infrastructure — extensive hostel network, cheap domestic flights, and the world's greatest free festival (Carnival street blocos). Best route: Rio → Florianópolis → Iguaçu → Salvador/Bahia beaches → Northeast → Amazon.",
+    "luxury": "World-class — Inhotim contemporary art museum (Belo Horizonte), Singita Grumeti equivalent in Pantanal, Amazon tree-house lodges, Rio's Copacabana Palace. São Paulo has a Michelin-starred restaurant scene rivaling any global city.",
+    "family": "Excellent — Iguaçu Falls (both sides), Florianópolis beaches, Amazon lodges, Pantanal wildlife. Rio is manageable for families with precautions. Fernando de Noronha wonderful for teens interested in nature.",
+    "adventure": "Outstanding — surfing, Amazon trekking, Pantanal jaguar safaris, Chapada Diamantina canyons, Fernando de Noronha diving. Brazil has enormous adventure variety.",
+    "cultural": "Extraordinary — Afro-Brazilian culture in Salvador, Japanese-Brazilian São Paulo, indigenous Amazon communities, Carnival, Candomblé ceremonies, colonial architecture in Ouro Preto and Paraty.",
+    "eco": "Exceptional — Amazon rainforest, Pantanal, Fernando de Noronha, cerrado of Chapada dos Veadeiros, Abrolhos marine park, Atlantic Forest. Brazil contains 10% of all species on Earth."
+  },
+  "destinations": [
+    {
+      "name": "Rio de Janeiro",
+      "type": "City/Beach",
+      "region": "Rio de Janeiro State",
+      "description": "The Cidade Maravilhosa — Christ the Redeemer, Sugarloaf Mountain, Ipanema and Copacabana beaches, Carnaval. One of the world's most dramatically beautiful cities, draped in mountains, forest, and ocean. Exercise strong safety awareness.",
+      "highlights": [
+        "Christ the Redeemer",
+        "Sugarloaf Mountain",
+        "Ipanema Beach",
+        "Lapa arches nightlife",
+        "Santa Teresa neighborhood",
+        "Jardim Botânico"
+      ]
+    },
+    {
+      "name": "Amazon (Manaus)",
+      "type": "Nature",
+      "region": "Amazonas state",
+      "description": "The world's greatest rainforest — accessed via the jungle city of Manaus. Lodge-based experiences, river expeditions, pink dolphin swimming, piranha fishing, and nocturnal wildlife walks. The Meeting of the Waters is a natural wonder.",
+      "highlights": [
+        "Meeting of the Waters",
+        "Anaconda encounters",
+        "Pink river dolphin swimming",
+        "Canopy walk lodges",
+        "Caiman spotting at night",
+        "Indigenous community visits"
+      ]
+    },
+    {
+      "name": "Salvador, Bahia",
+      "type": "Culture/Beach",
+      "region": "Bahia",
+      "description": "The African heart of Brazil — a UNESCO colonial city and center of Afro-Brazilian culture. The Pelourinho historic district, Candomblé ceremonies, acarajé street food, and the world's largest street Carnival. Rich, complex, and deeply moving.",
+      "highlights": [
+        "Pelourinho historic center",
+        "Carnaval de Salvador",
+        "Candomblé ceremonies",
+        "Acarajé street food",
+        "Mercado Modelo",
+        "Elevator Lacerda views"
+      ]
+    },
+    {
+      "name": "Fernando de Noronha",
+      "type": "Nature/Surf/Diving",
+      "region": "Pernambuco (Atlantic archipelago)",
+      "description": "Brazil's most pristine natural destination — a UNESCO World Heritage archipelago with strict visitor limits. World-class surfing, snorkeling, diving, and dolphin watching. The most expensive destination in Brazil but worth every real.",
+      "highlights": [
+        "Spinner dolphin pods (dawn)",
+        "Cacimba do Padre surf",
+        "Sueste Bay snorkeling",
+        "Baia dos Porcos sea arches",
+        "Sea turtle nesting beaches",
+        "Limited daily visitor quota"
+      ]
+    },
+    {
+      "name": "Florianópolis",
+      "type": "Beach/Surf",
+      "region": "Santa Catarina",
+      "description": "The 'Magic Island' — Brazil's most livable beach city with 40+ beaches for every taste and type. World-class surf at Praia Mole and Joaquina, lagoon kayaking, whale watching in winter, and an excellent restaurant scene. The best base for extended Brazil beach time.",
+      "highlights": [
+        "Praia Mole surf",
+        "Joaquina dunes",
+        "Lagoa da Conceição",
+        "Whale watching (Jul-Oct)",
+        "Gastronomia scene",
+        "Armação beach"
+      ]
+    },
+    {
+      "name": "Pantanal",
+      "type": "Wildlife",
+      "region": "Mato Grosso and Mato Grosso do Sul",
+      "description": "The world's best place to see jaguars — this vast tropical wetland offers open-landscape wildlife viewing rivaling Africa. Beyond jaguars, capybaras, giant anteaters, hyacinth macaws, and millions of caimans. Dry season boat safaris are extraordinary.",
+      "highlights": [
+        "Jaguar boat safaris",
+        "Giant otter families",
+        "Capybara herds",
+        "Hyacinth macaw",
+        "Caiman-filled lagoons",
+        "Jabiru stork nesting"
+      ]
+    }
+  ],
+  "practical_info": {
+    "best_time_to_visit": "April to June and August to October for Rio and southeast; November to March for northeast and Fernando de Noronha surf; July to October for Pantanal wildlife",
+    "visa_required_for_us": false,
+    "health_card_required": false,
+    "language_barrier": "High — Brazilian Portuguese is distinct and English proficiency is low outside major tourist areas. Download Google Translate for offline Portuguese use.",
+    "solo_travel": "Manageable with strong safety awareness. Join group activities for excursions. Solo female travelers should exercise extra precautions in cities.",
+    "guided_tour_required": false,
+    "internet_resources": [
+      "Brasil.gov.br/turismo",
+      "Visite.brasil.tur.br",
+      "Parques.gov.br for national parks"
+    ]
+  },
+  "laws": {
+    "driving_license": "International Driving Permit recommended alongside national license",
+    "drug_laws": "Possession of small amounts for personal use (marijuana) decriminalized since 2023 but not fully legalized. Hard drugs carry serious penalties. Do not buy drugs from strangers.",
+    "alcohol_laws": "Legal drinking age 18. Zero tolerance for drunk driving — any detectable alcohol results in arrest.",
+    "smoking_laws": "Smoking banned in all enclosed public spaces. Outdoor cafés and beach bars typically allow smoking.",
+    "photography_laws": "Photography of military installations, judicial buildings, and some government buildings prohibited. Photography of minors with malicious intent is illegal.",
+    "drone_laws": "ANAC (Brazil) permit required. Must register drone. Restricted in tourist areas, near airports, and over crowds without authorization.",
+    "lgbt_legal": true,
+    "lgbt_legal_details": "Same-sex marriage legal since 2013 (Supreme Court ruling). Full adoption rights. Anti-discrimination protections. São Paulo hosts the world's largest Pride parade. Conservative attitudes persist in rural areas and evangelical communities.",
+    "currency_export_limits": "Declaration required for amounts over $10,000 USD or equivalent",
+    "items_restricted": [
+      "Medications without prescription",
+      "Agricultural products (strict biosecurity)",
+      "Items made from protected species"
+    ],
+    "local_laws_tourists_often_break": [
+      "Drinking from unmarked street vendor's caipirinha cups — can be drugged",
+      "Topless sunbathing — technically legal but frowned upon outside specific beaches",
+      "Using unmarked taxis — illegal ride-sharing risk"
+    ]
+  },
+  "family_travel": {
+    "family_friendliness_score": 8,
+    "notes": "Brazil is extremely family-oriented — Brazilians adore children and families are catered to everywhere. Beach culture is family-friendly. Main concern is safety in cities — keep children close in urban areas.",
+    "best_family_destinations": [
+      "Florianópolis (safe beaches, lagoon activities)",
+      "Iguaçu Falls",
+      "Fernando de Noronha (older teens)",
+      "Pantanal (wildlife, older children)",
+      "Gramado (mountain resort, European atmosphere)"
+    ],
+    "health_concerns": "Dengue risk nationwide — use repellent on children at all times. Yellow fever vaccine recommended before Amazon visits (consult pediatrician). Sunscreen essential — equatorial UV very intense.",
+    "child_entry_requirements": "Children traveling with only one parent require notarized authorization from absent parent. Brazilian children (dual nationals) must enter/exit on Brazilian passport.",
+    "family_activities": [
+      "Iguaçu Falls boat rides",
+      "Amazon lodge stays",
+      "Pantanal wildlife safaris",
+      "Florianópolis lagoon kayaking",
+      "Fernando de Noronha snorkeling",
+      "Whale watching (Santa Catarina, July-October)"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Improving — São Paulo and Rio have some accessible infrastructure. Copacabana beachfront boardwalk is accessible. Most museums accessible. Natural parks have limited accessibility.",
+    "major_accessible_attractions": [
+      "Copacabana boardwalk",
+      "São Paulo MASP museum",
+      "Iguaçu Falls Brazilian circuit (partially paved)",
+      "São Paulo Metro (selected stations)"
+    ],
+    "accessible_transport": "São Paulo Metro has elevator access at many stations. Rio's BRT is partially accessible. Uber accessible options available in major cities.",
+    "notes": "Contact national parks in advance for accessibility information. Fernando de Noronha has limited accessibility due to terrain."
+  },
+  "gear": {
+    "essentials": [
+      "DEET 30%+ insect repellent (dengue and Amazon malaria)",
+      "Sunscreen SPF 50+ (equatorial UV)",
+      "Rain jacket (Amazon and Bahia afternoon rain)",
+      "Reef-safe sunscreen for Fernando de Noronha",
+      "Water purification tablets (rural areas)"
+    ],
+    "surf_specific": [
+      "3mm spring suit for south Brazil winter",
+      "Boardshorts for northeast and Noronha (water 26-28°C)",
+      "Reef booties for Fernando de Noronha volcanic rock",
+      "Leash (powerful surf at Florianópolis and Saquarema)"
+    ],
+    "trekking_specific": [
+      "Lightweight hiking boots",
+      "Quick-dry clothing",
+      "Water filter (Chapada Diamantina rivers)",
+      "Headlamp",
+      "Trekking poles for Chapada"
+    ],
+    "tech": [
+      "Offline maps (Maps.me)",
+      "Power bank",
+      "Plug adapter (Type N — unique to Brazil)",
+      "Unlocked phone for Vivo/Claro SIM"
+    ],
+    "what_not_to_bring": [
+      "Expensive jewelry or watches to cities",
+      "Visible laptop in public",
+      "Multiple credit cards at once"
+    ]
+  },
+  "history": [
+    {
+      "title": "Pre-Columbian Era",
+      "content": "Brazil was home to hundreds of indigenous nations — an estimated 1,500 distinct peoples with 6–10 million people before European contact. The Amazon basin supported complex societies including the mysterious geoglyphs of Amazonia and the terra preta (dark earth) agricultural system."
+    },
+    {
+      "title": "Portuguese Colony",
+      "content": "Pedro Álvares Cabral claimed Brazil for Portugal in 1500. The Treaty of Tordesillas (1494) had already divided the New World between Spain and Portugal. Brazil became Portugal's primary colony, exporting brazilwood, then sugar (using enslaved African labor), gold (Minas Gerais, 1690s), and finally coffee."
+    },
+    {
+      "title": "Empire & Abolition",
+      "content": "Napoleon's invasion of Portugal in 1807 caused the Portuguese royal family to flee to Rio de Janeiro — the only case of a European monarch ruling from the Americas. Brazil declared independence on September 7, 1822 under Emperor Dom Pedro I. Brazil was the last country in the Americas to abolish slavery, doing so on May 13, 1888 (Lei Áurea)."
+    },
+    {
+      "title": "Republic & Vargas Era",
+      "content": "The Republic was declared on November 15, 1889. Getúlio Vargas ruled Brazil as a populist authoritarian (1930–1945, 1950–1954), industrializing the country and creating Brazilian labor law. Juscelino Kubitschek built Brasília from scratch as the new capital (1960)."
+    },
+    {
+      "title": "Military Dictatorship & Democracy",
+      "content": "A US-backed military coup in 1964 ushered in 21 years of dictatorship, with the worst repression in 1968–1974. Democracy returned in 1985. Brazil hosted the 2014 World Cup and 2016 Olympics. Former president Luiz Inácio Lula da Silva (Lula) won the 2022 election, returning after serving prison time in a corruption case that was later annulled."
+    }
+  ]
+}

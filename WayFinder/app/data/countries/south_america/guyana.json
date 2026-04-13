@@ -1,0 +1,1059 @@
+{
+  "meta": {
+    "last_updated": "2026-04-12",
+    "confidence_score": 0.87,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "Wilderness Explorers Guyana",
+      "Matador Network Guyana travel guide",
+      "Very Hungry Nomads Guyanese food guide",
+      "592Hub Guyana safety guide",
+      "iExplore Guyana festivals",
+      "Adventure Guianas trek data"
+    ],
+    "notes": "Guyana is an English-speaking eco-tourism destination with low visitor numbers but rapidly growing infrastructure. Data reflects 2025-2026 conditions."
+  },
+  "identity": {
+    "name": "Guyana",
+    "official_name": "Co-operative Republic of Guyana",
+    "code": "GY",
+    "iso3": "GUY",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Georgetown",
+    "flag_emoji": "🇬🇾",
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "driving_side": "left",
+    "country_calling_code": "+592",
+    "internet_tld": ".gy"
+  },
+  "language_and_money": {
+    "languages": [
+      "English",
+      "Guyanese Creole",
+      "Hindi",
+      "Urdu",
+      "Amerindian languages"
+    ],
+    "primary_language": "English",
+    "english_proficiency": "High — English is the official language. Guyanese Creole widely spoken in everyday life. No language barrier for English-speaking travelers.",
+    "currency": "GYD",
+    "currency_name": "Guyanese Dollar",
+    "currency_symbol": "G$",
+    "cash_vs_card": "Cash preferred, especially outside Georgetown. USD widely accepted at eco-lodges and tour operators. Cards accepted at major hotels and supermarkets in Georgetown.",
+    "typical_payment_methods": [
+      "Cash (GYD)",
+      "USD cash",
+      "Visa",
+      "Mastercard"
+    ],
+    "atm_availability": "ATMs available in Georgetown (Republic Bank, Demerara Bank, Scotiabank). Very limited or absent in interior regions — withdraw sufficient cash before heading to Iwokrama, Rupununi, or Kaieteur.",
+    "tipping_culture": "Not mandatory but appreciated. Tip guides $10-20/day, eco-lodge staff $5-10/day.",
+    "tipping_etiquette": "Tip indigenous guides generously — they are often the primary income earners for their communities. 10% at restaurants in Georgetown. Round up taxi fares."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days",
+      "visa_type": "Stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for at least 6 months beyond intended stay",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": false,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Strict controls on wildlife and timber exports. Protected Amerindian artifacts cannot be exported. No export of gold or diamonds without proper documentation.",
+    "restricted_items": [
+      "Protected wildlife (live or dead)",
+      "Amerindian cultural artifacts",
+      "Unprocessed gold/diamonds without documentation",
+      "Narcotics",
+      "Firearms without permit"
+    ],
+    "duty_free_allowances": "200 cigarettes or 50 cigars, 1.5 liters of spirits, gifts up to G$10,000 value"
+  },
+  "health": {
+    "recommended_vaccines": [
+      "Hepatitis A",
+      "Typhoid",
+      "Hepatitis B",
+      "Rabies (if venturing into jungle)",
+      "Tetanus-Diphtheria",
+      "Yellow Fever"
+    ],
+    "required_vaccines": [
+      "Yellow Fever (required for entry if arriving from a yellow fever endemic country)"
+    ],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Present in interior regions, especially Rupununi, Essequibo, and Potaro-Siparuni. Georgetown and coast are low risk.",
+    "malaria_regions": [
+      "Rupununi",
+      "Potaro-Siparuni (Kaieteur area)",
+      "Upper Demerara-Berbice",
+      "Upper Takutu-Upper Essequibo"
+    ],
+    "malaria_prophylaxis_info": "Atovaquone-proguanil or doxycycline recommended for interior travel. Start before departure. Not needed for Georgetown coastal stay only.",
+    "dengue_risk": "Present in Georgetown and coastal areas, particularly during rainy season. Use insect repellent.",
+    "altitude_sickness_risk": "Low — highest point is Mount Roraima at 2,772m on border with Venezuela/Brazil, accessible via strenuous trek. Most tourist areas are at low elevation.",
+    "food_water_safety": "Tap water not safe to drink in most areas. Bottled water widely available in Georgetown. At eco-lodges, treated water is provided. Exercise caution with street food.",
+    "air_quality_concerns": "Generally good. Occasional smoke from gold mining operations in interior. Georgetown traffic can create localized pollution.",
+    "common_travel_illnesses": [
+      "Traveler's diarrhea",
+      "Malaria (interior)",
+      "Dengue fever",
+      "Chikungunya",
+      "Heat exhaustion"
+    ],
+    "pharmacy_access": "Pharmacies available in Georgetown. Limited to basic supplies in interior. Stock up on prescription medications and antimalarials before departing Georgetown.",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Georgetown Public Hospital is the main referral facility but has significant capacity constraints. Private clinics exist. Serious cases may require medical evacuation to Trinidad or the US. Medical evacuation insurance is strongly recommended for interior travel.",
+    "emergency_medical_number": "913"
+  },
+  "safety": {
+    "overall_score": 45,
+    "travel_advisory_level_us": 3,
+    "travel_advisory_level_label": "Reconsider Travel",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "Violent crime including murder and armed robbery in Georgetown",
+      "Crime concentrated in specific Georgetown neighborhoods (Albouystown, Tiger Bay, Agricola)",
+      "Interior regions and eco-lodges are extremely safe with near-zero tourist crime",
+      "Police limited capacity to respond to serious incidents"
+    ],
+    "crime_risk": "Moderate-high in Georgetown, particularly at night. Interior rainforest regions have near-zero crime. Over 90% of tourism activity occurs in the safe interior. The Level 3 advisory is driven by localized urban crime, not tourist areas.",
+    "scam_risk": "Low — Guyana has limited tourist infrastructure and therefore fewer organized tourist scams. Taxi overcharging occurs; agree on fare in advance.",
+    "transport_safety": "Use hotel-arranged taxis in Georgetown, especially at night. Never use unlicensed taxis. Internal charter flights to interior (Kaieteur, Iwokrama) operated by reliable operators like Trans Guyana Airways.",
+    "solo_female_travel_notes": "Exercise caution in Georgetown at night. Interior eco-lodge travel is very safe with guides. Catcalling exists in Georgetown. Organized tours are recommended for solo travelers.",
+    "lgbtq_notes": "Same-sex relations are technically criminalized under colonial-era laws (rarely enforced). No legal recognition of same-sex partnerships. LGBTQ travelers should exercise discretion, particularly outside Georgetown.",
+    "night_safety": "Avoid walking alone at night anywhere in Georgetown. Use hotel-arranged transport. Interior lodges are safe — darkness is simply the rainforest at night.",
+    "safe_areas": [
+      "Bourda (Georgetown)",
+      "Queenstown (Georgetown)",
+      "Bartica",
+      "Iwokrama region",
+      "Rupununi savannah",
+      "Kaieteur National Park area"
+    ],
+    "areas_to_avoid": [
+      "Albouystown (Georgetown)",
+      "Tiger Bay (Georgetown)",
+      "Agricola",
+      "Linden Road at night",
+      "Buxton"
+    ],
+    "natural_disaster_risks": [
+      "Flooding (low-lying coastal region below sea level)",
+      "Seasonal flooding from heavy rains (May-August, November-January)",
+      "No significant earthquake risk"
+    ],
+    "political_stability_notes": "Political stability has improved following the 2020 election. Oil revenues creating rapid economic change. Monitor local news for any developments.",
+    "common_scams": [
+      "Taxi overcharging — always agree on price in advance or use hotel-recommended taxis",
+      "Gold/gem dealers selling fake or overpriced stones",
+      "Unofficial 'guides' at Georgetown waterfront"
+    ],
+    "police_reliability": "Limited capacity, especially outside Georgetown. File reports at Brickdam Police Station in Georgetown.",
+    "emergency_numbers": {
+      "police": "911",
+      "ambulance": "913",
+      "fire": "912",
+      "general_emergency": "911"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Georgetown",
+      "us_embassy_phone": "+592-225-4900",
+      "us_embassy_website": "https://gy.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "September to November (short dry season) and February to April (long dry season). These periods offer better road conditions and river levels for eco-tourism. Kaieteur Falls is most spectacular during the wet season (May-August) when water volume peaks.",
+    "climate_zones": [
+      "Coastal belt — hot, humid, tropical, 26-32°C year-round",
+      "Interior rainforest — hot, humid, 25-35°C, heavy rainfall",
+      "Rupununi savannah — hot, drier, distinct wet/dry seasons",
+      "Pakaraima Mountains — cooler at elevation, misty"
+    ],
+    "dry_season": "February to April (long dry) and September to November (short dry)",
+    "rainy_season": "May to August (long rainy) and December to January (short rainy)",
+    "hurricane_typhoon_season": "South of the hurricane belt — minimal hurricane risk",
+    "surf_season": "No consistent surf; Atlantic coast has rough, muddy waters unsuitable for surfing",
+    "trekking_best_months": [
+      "September",
+      "October",
+      "November",
+      "February",
+      "March",
+      "April"
+    ],
+    "average_temp_by_month": {
+      "Georgetown": "26-32°C year-round, humidity 80%+",
+      "Rupununi": "25-38°C, drier in dry season",
+      "Iwokrama": "25-32°C, high humidity year-round"
+    },
+    "daylight_hours_by_season": "Approximately 12 hours of daylight year-round due to equatorial location"
+  },
+  "transport": {
+    "major_airports": [
+      "Cheddi Jagan International Airport (GEO) — Georgetown/Timehri, 40km from city center",
+      "Ogle Aerodrome (OGL) — domestic charter flights to interior"
+    ],
+    "main_airlines": [
+      "Caribbean Airlines",
+      "LATAM",
+      "Copa Airlines",
+      "Surinam Airways",
+      "Trans Guyana Airways (domestic)"
+    ],
+    "airport_to_city_options": [
+      "Taxi ($25-35 to Georgetown, 45 min)",
+      "Hotel transfers",
+      "Car rental at airport"
+    ],
+    "public_transit_quality": "Georgetown has minibuses and shared taxis (route taxis). No formal bus network to interior — all interior travel by charter flight, 4x4 vehicle, or boat.",
+    "intercity_bus_quality": "Basic minibus service along the coast. Linden Highway is main interior road — unpaved beyond Linden. Interior travel requires organized tours or 4x4 hire.",
+    "train_network_quality": "No passenger rail network",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": false,
+    "road_conditions": "Georgetown roads poor and often flooded. Coastal road (Berbice, Essequibo) paved but narrow. Interior roads unpaved, requiring 4x4. The Lethem Road (Georgetown to Lethem/Brazil border) is partially paved but challenging in rainy season.",
+    "four_x_four_needed_regions": [
+      "All interior regions",
+      "Lethem Road",
+      "Rupununi",
+      "Pakaraima approaches"
+    ],
+    "ride_hailing_apps": [],
+    "taxi_safety_notes": "Use hotel-recommended taxis in Georgetown. Negotiate fare in advance. Never take unmarked taxis at night. Trans Guyana Airways and Roraima Airways for charter flights to interior.",
+    "ferry_routes": [
+      "Georgetown to Vreed-en-Hoop (short Demerara River ferry)",
+      "Georgetown to Bartica by speedboat via Essequibo River",
+      "Parika to Bartica and Essequibo Islands"
+    ],
+    "border_crossing_notes": "Lethem border crossing to Boa Vista, Brazil (paved on Brazilian side). Springlands-Nickerie crossing to Suriname by ferry on Corentyne River. Both require valid passport and immigration processing."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$60-90/day",
+    "daily_budget_midrange": "$100-180/day",
+    "daily_budget_comfort": "$200-400/day",
+    "hostel_avg": "$20-35/night",
+    "hotel_avg": "$60-120/night",
+    "meal_avg": "$5-15 (local restaurants $5-8, mid-range $12-20)",
+    "coffee_avg": "$2-4",
+    "beer_avg": "$2-5 (Banks Beer is local brand)",
+    "local_transport_avg": "$1-3 (minibus), $8-15 (taxi Georgetown)",
+    "sim_card_avg": "$10-20 for data package",
+    "coworking_day_pass_avg": "$15-25",
+    "surfboard_rental_avg": "Not applicable — no surf culture",
+    "value_for_money": "Moderate — eco-lodges and charter flights to the interior are expensive but include meals and guides. Georgetown is reasonably affordable. Kaieteur Falls charter flight costs $250-400 per person."
+  },
+  "connectivity": {
+    "sim_card_providers": [
+      "Digicel",
+      "GTT (Guyana Telephone and Telegraph)"
+    ],
+    "esim_available": false,
+    "mobile_data_quality": "4G available in Georgetown and coastal towns. Very limited signal in interior — Iwokrama and Rupununi have satellite-only or no connectivity. Plan for digital detox in the jungle.",
+    "wifi_quality": "Available in Georgetown hotels and some restaurants. Eco-lodges have limited or satellite wifi. Speeds generally slow (2-10 Mbps).",
+    "coworking_available": false,
+    "best_remote_work_cities": [
+      "Georgetown"
+    ],
+    "power_outlet_types": [
+      "A",
+      "B",
+      "G"
+    ],
+    "voltage": "240V, 60Hz",
+    "plug_adapter_needed_for_us": true,
+    "power_reliability": "Frequent power outages in Georgetown. Most hotels have generators. Interior lodges use solar/generator power."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Pegasus area (Seawall), Georgetown — upscale, near business district",
+      "Queenstown, Georgetown — safe residential area",
+      "Cara Lodge, Georgetown — historic boutique hotel, colonial architecture",
+      "Iwokrama River Lodge — jungle lodge, wildlife access",
+      "Surama Eco-Lodge — Makushi indigenous community lodge, Rupununi",
+      "Caiman House, Lethem — Rupununi wildlife and giant anteater base"
+    ],
+    "budget_areas": [
+      "Georgetown budget guesthouses",
+      "Bartica"
+    ],
+    "family_friendly_areas": [
+      "Queenstown Georgetown",
+      "Surama Eco-Lodge (great for families with older children)"
+    ],
+    "nightlife_areas": [
+      "Sheriff Street, Georgetown",
+      "Carmichael Street, Georgetown"
+    ],
+    "surf_towns": [],
+    "eco_lodges_available": true,
+    "peak_booking_season": "September to November and February to April (dry seasons); book eco-lodges 3-6 months ahead",
+    "accommodation_notes": "Eco-lodges (Iwokrama River Lodge, Atta Rainforest Lodge, Surama, Rewa Lodge) must be booked far in advance as capacity is very limited. Prices include meals and guiding at most lodges."
+  },
+  "culture": {
+    "local_customs": [
+      "Guyanese are warm and hospitable — conversations with strangers are common and welcome",
+      "Multicultural society — East Indian, Afro-Guyanese, Amerindian, Chinese, and Portuguese communities",
+      "Cricket is a national obsession — matches are social events",
+      "Rum is the national spirit — sharing a drink is culturally important",
+      "Amerindian communities have strict protocols — always arrive with a guide and seek permission"
+    ],
+    "dress_expectations": "Casual in Georgetown. Light, breathable clothing essential in jungle. Long sleeves recommended for mosquito protection in interior. Modest dress when visiting Amerindian communities.",
+    "religious_sensitivity": "Highly diverse — Christian, Hindu, and Muslim communities. Respect religious festivals and places of worship. Remove shoes when entering Hindu mandirs or mosques.",
+    "social_norms": [
+      "English is universal — no language barrier",
+      "Direct communication style — Guyanese say what they mean",
+      "Punctuality is relaxed — 'Guyana time' means 30+ minutes late is normal",
+      "Sharing food is a sign of friendship and community"
+    ],
+    "greeting_style": "Handshake is standard. Close friends may hug. 'How you do?' is the common greeting.",
+    "public_behavior_notes": "Modest public behavior expected outside tourist areas. Respectful dress in religious sites and Amerindian villages.",
+    "photography_etiquette": "Always ask permission before photographing Amerindian community members or sacred sites. Guides will advise. Wildlife photography unrestricted in national parks.",
+    "bargaining_expected": false,
+    "important_holidays": [
+      "Mashramani — February 23, Republic Day celebration with float parades, costumes, soca and calypso music in Georgetown",
+      "Phagwah (Holi) — March, Hindu spring festival with colored powder celebrations in Indo-Guyanese communities",
+      "Diwali — October/November, Festival of Lights with motorcades and lighting ceremonies",
+      "Independence Day — May 26, national celebrations",
+      "Emancipation Day — August 1, major public holiday commemorating end of slavery"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Marijuana possession is technically illegal though decriminalization has been discussed",
+      "Same-sex relations are criminalized under old laws — exercise discretion",
+      "Wildlife export strictly prohibited — do not attempt to take any animals or plant specimens",
+      "Drone use requires Civil Aviation Authority permit"
+    ]
+  },
+  "food": {
+    "dishes": [
+      {
+        "name": "Pepperpot",
+        "description": "Guyana's national dish — a rich, dark stew of beef, pork, and chicken cooked in cassareep (reduced cassava juice), cinnamon, cloves, and Wiri Wiri peppers. Traditionally slow-cooked for hours. The cassareep acts as a preservative, and pepperpot improves over days of reheating.",
+        "region": "Nationwide (Christmas tradition)"
+      },
+      {
+        "name": "Cook-up Rice",
+        "description": "A hearty one-pot Creole dish of rice, black-eye peas or other beans, coconut milk, pig tail or salted beef, and herbs. Cooked together until creamy. The quintessential comfort food eaten on Saturday nights and special occasions.",
+        "region": "Nationwide (Afro-Guyanese tradition)"
+      },
+      {
+        "name": "Metemgee",
+        "description": "A thick, satisfying stew of cassava, sweet potato, plantains, eddoes, and dumplings boiled in coconut milk with salted fish or meat. Deeply rooted in Amerindian and African culinary traditions. Rich, creamy, and filling.",
+        "region": "Nationwide (Amerindian/Afro-Guyanese)"
+      },
+      {
+        "name": "Curry and Roti",
+        "description": "Indo-Guyanese chicken, goat, or duck curry served with dhalpuri (flatbread stuffed with ground split peas), oil roti, or paratha. Fragrant with cumin, turmeric, garam masala, and curry leaf. A daily staple for half the population.",
+        "region": "Nationwide (Indo-Guyanese communities)"
+      },
+      {
+        "name": "Bake and Saltfish",
+        "description": "Classic Guyanese breakfast — salted codfish sautéed with onions, garlic, tomatoes, and peppers, served alongside 'bakes' (fried or baked dough rounds). Simple, flavorful, and widely available at breakfast spots.",
+        "region": "Georgetown and coast"
+      },
+      {
+        "name": "Pholourie",
+        "description": "Addictive deep-fried balls of seasoned split pea flour batter, golden and crispy outside, fluffy inside. Served with tangy tamarind sauce or mango chutney. The most popular street snack in Guyana.",
+        "region": "Georgetown and coast"
+      },
+      {
+        "name": "Bounjal Shrimp",
+        "description": "Spicy stir-fried shrimp with onions, garlic, scotch bonnet or Wiri Wiri peppers, cumin, coriander, and turmeric. A bold, aromatic dish reflecting the Indo-Guyanese love of spice.",
+        "region": "Coastal areas"
+      },
+      {
+        "name": "Seven Curry (Saat Sabjee)",
+        "description": "A ceremonial dish served at Hindu weddings and puja ceremonies — seven different vegetarian curries served on a banana leaf, including curried pumpkin, mango, channa, potato, baigan, and more. A communal feast tradition.",
+        "region": "Indo-Guyanese communities"
+      },
+      {
+        "name": "Garlic Pork",
+        "description": "A Portuguese-Guyanese Christmas specialty — pork marinated in garlic, thyme, scotch bonnet pepper, and vinegar for several days before frying. Intensely flavored, eaten on Christmas morning alongside pepperpot.",
+        "region": "Georgetown (Portuguese-Guyanese community)"
+      },
+      {
+        "name": "Wild Meat",
+        "description": "In the interior, bush meat including labba (paca), deer, tapir, and caiman is commonly eaten by Amerindian communities. Grilled or stewed over open fire. A unique taste of Guyana's indigenous food culture — most commonly encountered at eco-lodges.",
+        "region": "Interior (Amerindian communities)"
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Rum",
+        "description": "Guyana produces some of the finest aged rums in the world. El Dorado 15-Year and 25-Year from Demerara Distillers are globally acclaimed. Rum and cola ('Black and White') is the most popular local cocktail."
+      },
+      {
+        "name": "Banks Beer",
+        "description": "The national lager, brewed in Georgetown since 1956. Light, refreshing, and perfect for the tropical heat. Available everywhere from roadside shops to eco-lodges."
+      },
+      {
+        "name": "Mauby",
+        "description": "A traditional drink made from the bark of the mauby tree, boiled with spices like cinnamon and anise, sweetened. Has a distinctive bittersweet taste — an acquired flavor beloved by locals."
+      },
+      {
+        "name": "Sorrel",
+        "description": "A vibrant red drink made from dried sorrel (hibiscus) flowers steeped with ginger, cloves, and cinnamon, sweetened to taste. Served cold, especially popular during Christmas and Diwali seasons."
+      },
+      {
+        "name": "Coconut Water",
+        "description": "Fresh young coconuts chopped open at roadside stands throughout Georgetown and the coast. The ideal hydration in Guyana's tropical heat. Vendors sell them for less than $1 USD."
+      },
+      {
+        "name": "Pineapple Drink",
+        "description": "Fresh-squeezed pineapple juice blended with water and sugar, often with a touch of ginger. A staple at local restaurants and market stalls — sweet, tart, and refreshing."
+      }
+    ],
+    "street_food_safety": "Generally safe at busy stalls in Georgetown. Exercise caution with raw seafood in hot weather. Stick to freshly cooked items.",
+    "vegetarian_friendliness": "Moderate — Indo-Guyanese cuisine offers many vegetarian options including dhal, channa curry, and vegetable curries. Amerindian and Creole cuisine is more meat-focused.",
+    "vegan_friendliness": "Challenging outside Indo-Guyanese restaurants. Coconut-based dishes can be made vegan. Limited options in interior.",
+    "must_try_drinks": [
+      "El Dorado rum (neat or with coconut water)",
+      "Banks Beer",
+      "Mauby",
+      "Sorrel",
+      "Fresh coconut water"
+    ],
+    "regional_specialties": [
+      "Georgetown: Cook-up rice, pepperpot, pholourie, curry and roti",
+      "Interior/Amerindian: Wild meat, cassava bread, tuma (fermented cassava drink), pepper pot variations",
+      "Rupununi: Grilled river fish, black caiman (where legal), cassava-based dishes"
+    ],
+    "drinking_water_notes": "Never drink tap water. Bottled water available throughout Georgetown. Eco-lodges provide treated water. Carry purification tablets for jungle travel.",
+    "alcohol_rules": "Legal drinking age 18. Alcohol freely available. El Dorado rum is a point of national pride — the ideal souvenir.",
+    "signature_dishes": [
+      {
+        "name": "Pepperpot",
+        "description": "Guyana's national dish — a rich, dark stew of beef, pork, and chicken cooked in cassareep (reduced cassava juice), cinnamon, cloves, and Wiri Wiri peppers. Traditionally slow-cooked for hours. The cassareep acts as a preservative, and pepperpot improves over days of reheating.",
+        "region": "Nationwide (Christmas tradition)"
+      },
+      {
+        "name": "Cook-up Rice",
+        "description": "A hearty one-pot Creole dish of rice, black-eye peas or other beans, coconut milk, pig tail or salted beef, and herbs. Cooked together until creamy. The quintessential comfort food eaten on Saturday nights and special occasions.",
+        "region": "Nationwide (Afro-Guyanese tradition)"
+      },
+      {
+        "name": "Metemgee",
+        "description": "A thick, satisfying stew of cassava, sweet potato, plantains, eddoes, and dumplings boiled in coconut milk with salted fish or meat. Deeply rooted in Amerindian and African culinary traditions. Rich, creamy, and filling.",
+        "region": "Nationwide (Amerindian/Afro-Guyanese)"
+      },
+      {
+        "name": "Curry and Roti",
+        "description": "Indo-Guyanese chicken, goat, or duck curry served with dhalpuri (flatbread stuffed with ground split peas), oil roti, or paratha. Fragrant with cumin, turmeric, garam masala, and curry leaf. A daily staple for half the population.",
+        "region": "Nationwide (Indo-Guyanese communities)"
+      },
+      {
+        "name": "Bake and Saltfish",
+        "description": "Classic Guyanese breakfast — salted codfish sautéed with onions, garlic, tomatoes, and peppers, served alongside 'bakes' (fried or baked dough rounds). Simple, flavorful, and widely available at breakfast spots.",
+        "region": "Georgetown and coast"
+      },
+      {
+        "name": "Pholourie",
+        "description": "Addictive deep-fried balls of seasoned split pea flour batter, golden and crispy outside, fluffy inside. Served with tangy tamarind sauce or mango chutney. The most popular street snack in Guyana.",
+        "region": "Georgetown and coast"
+      },
+      {
+        "name": "Bounjal Shrimp",
+        "description": "Spicy stir-fried shrimp with onions, garlic, scotch bonnet or Wiri Wiri peppers, cumin, coriander, and turmeric. A bold, aromatic dish reflecting the Indo-Guyanese love of spice.",
+        "region": "Coastal areas"
+      },
+      {
+        "name": "Seven Curry (Saat Sabjee)",
+        "description": "A ceremonial dish served at Hindu weddings and puja ceremonies — seven different vegetarian curries served on a banana leaf, including curried pumpkin, mango, channa, potato, baigan, and more. A communal feast tradition.",
+        "region": "Indo-Guyanese communities"
+      },
+      {
+        "name": "Garlic Pork",
+        "description": "A Portuguese-Guyanese Christmas specialty — pork marinated in garlic, thyme, scotch bonnet pepper, and vinegar for several days before frying. Intensely flavored, eaten on Christmas morning alongside pepperpot.",
+        "region": "Georgetown (Portuguese-Guyanese community)"
+      },
+      {
+        "name": "Wild Meat",
+        "description": "In the interior, bush meat including labba (paca), deer, tapir, and caiman is commonly eaten by Amerindian communities. Grilled or stewed over open fire. A unique taste of Guyana's indigenous food culture — most commonly encountered at eco-lodges.",
+        "region": "Interior (Amerindian communities)"
+      }
+    ]
+  },
+  "outdoors": {
+    "surf_spots": [],
+    "hikes": [
+      {
+        "name": "Kaieteur Falls Trek",
+        "region": "Potaro-Siparuni (Kaieteur National Park)",
+        "difficulty": "Hard",
+        "distance_km": 35,
+        "duration_days": 5,
+        "elevation_gain_m": 560,
+        "description": "A multi-day expedition trekking through pristine Guiana Shield rainforest to reach Kaieteur Falls — the world's largest single-drop waterfall by volume (226m high, 113m wide). The trail follows the Potaro River by boat then ascends the gorge on foot. Pakaraima Amerindian guides essential. The 'Oh My God Hike' — a steep 2-4 hour ascent to the plateau — rewards with jaw-dropping views of the falls. Spot Guianan Cock-of-the-Rock, Golden Rocket Frogs in bromeliads, and White-chinned Swifts nesting behind the falls.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "February",
+          "March",
+          "April"
+        ]
+      },
+      {
+        "name": "Turtle Mountain, Iwokrama",
+        "region": "Potaro-Siparuni (Iwokrama Forest)",
+        "difficulty": "Moderate",
+        "distance_km": 8,
+        "duration_days": 1,
+        "elevation_gain_m": 285,
+        "description": "A 2-hour ascent through pristine Guiana Shield rainforest to the summit of Turtle Mountain (360m), part of the Iwokrama International Rainforest Reserve. Panoramic views over the forest canopy extending for miles in every direction. One of the best places to spot Black Spider Monkey, Red Howler Monkey, and if very lucky, a Jaguar. The trail passes enormous buttress trees and endemic Greenheart hardwood.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "February",
+          "March",
+          "April"
+        ]
+      },
+      {
+        "name": "Iwokrama Canopy Walkway Trail",
+        "region": "Potaro-Siparuni (Iwokrama Forest)",
+        "difficulty": "Easy",
+        "distance_km": 3,
+        "duration_days": 1,
+        "elevation_gain_m": 30,
+        "description": "A series of four suspension bridges and three platforms reaching 30 metres above the forest floor at Mauisparu. One of South America's most accessible canopy experiences. Dawn visits reward with a symphony of bird calls and excellent chances of spotting canopy species including toucans, macaws, harpy eagles, and the brilliantly colored Guianan Cock-of-the-Rock. Guides explain medicinal plant uses and forest ecology.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "February",
+          "March",
+          "April"
+        ]
+      },
+      {
+        "name": "Mount Roraima Trek",
+        "region": "Pakaraima Mountains (Upper Mazaruni)",
+        "difficulty": "Very Hard",
+        "distance_km": 75,
+        "duration_days": 8,
+        "elevation_gain_m": 2400,
+        "description": "The classic ascent of the legendary Roraima Tepui (2,810m) — Guyana's most famous peak, shared with Venezuela and Brazil. The summit plateau is a lost world of alien landscapes: carnivorous plants, endemic black frogs, pink crystals, and views of Venezuela's Gran Sabana. The trail begins near Paruima village in the Upper Mazaruni. Significantly more remote and challenging than the Venezuelan route. Requires experienced indigenous guides.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Shell Beach Conservation Trail",
+        "region": "Barima-Waini (Northwest)",
+        "difficulty": "Easy",
+        "distance_km": 10,
+        "duration_days": 1,
+        "elevation_gain_m": 5,
+        "description": "A coastal walk along 90 miles of pristine Atlantic beach that serves as one of the Caribbean's most important sea turtle nesting sites. Leatherback, green, and hawksbill turtles nest from March to August. Night walks with rangers to observe nesting are the highlight. Also excellent birdwatching in mangroves and coastal forest. Accessible via speedboat from Georgetown.",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August"
+        ]
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Iwokrama Forest Reserve",
+        "region": "Potaro-Siparuni",
+        "species": [
+          "Jaguar",
+          "Giant River Otter",
+          "Harpy Eagle",
+          "Guianan Cock-of-the-Rock",
+          "Tapir",
+          "Black Caiman",
+          "Arapaima",
+          "Red Howler Monkey",
+          "Black Spider Monkey",
+          "Anaconda"
+        ],
+        "description": "One of the world's four remaining pristine tropical rainforests, covering nearly 400,000 hectares of the Guiana Shield. Managed sustainably by the Iwokrama International Centre. Among the best places on Earth to see jaguar in the wild — the cats have habituated to human presence near the river lodge. More than 500 bird species recorded.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "February",
+          "March",
+          "April"
+        ]
+      },
+      {
+        "name": "Rupununi Savannahs",
+        "region": "Upper Takutu-Upper Essequibo",
+        "species": [
+          "Giant Anteater",
+          "Giant Armadillo",
+          "Maned Wolf",
+          "Marsh Deer",
+          "Jabiru Stork",
+          "Sun Parakeet",
+          "Black Caiman",
+          "Anaconda",
+          "Capybara"
+        ],
+        "description": "A vast mosaic of seasonally flooded grasslands, gallery forest, and wetlands bordering Brazil's Pantanal ecosystem. The Rupununi is extraordinary for large mammal sightings, especially Giant Anteater (best viewed at Caiman House in Yupukari). Sun Parakeets flock near Karasabai. Community-based eco-lodges at Surama, Rewa, and Karanambu offer world-class wildlife experiences.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Kaieteur National Park",
+        "region": "Potaro-Siparuni",
+        "species": [
+          "Guianan Cock-of-the-Rock",
+          "Golden Rocket Frog",
+          "White-chinned Swift",
+          "Capuchinbird",
+          "Cock-tailed Tyrant",
+          "Brown Capuchin Monkey",
+          "Tarantula",
+          "Carnivorous plants"
+        ],
+        "description": "The park surrounding Kaieteur Falls protects a rich Guiana Shield ecosystem. The falls create a perpetual mist zone supporting carnivorous pitcher plants and the endemic Golden Rocket Frog (lives exclusively in giant bromeliad tanks). Guianan Cock-of-the-Rock males display in leks near the falls. Most visitors arrive by charter flight (Kaieteur airstrip).",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Shell Beach and Mangroves",
+        "region": "Barima-Waini",
+        "species": [
+          "Leatherback Sea Turtle",
+          "Green Sea Turtle",
+          "Hawksbill Sea Turtle",
+          "Scarlet Ibis",
+          "Manatee",
+          "Arapaima",
+          "Caiman",
+          "Dolphins"
+        ],
+        "description": "The northwestern coast of Guyana hosts one of the hemisphere's most important sea turtle nesting beaches. The Waini River estuary supports significant Scarlet Ibis populations. Mangrove rivers are habitat for West Indian Manatee and Pink River Dolphin. The World Wildlife Fund and local communities operate ranger stations.",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August"
+        ]
+      }
+    ],
+    "national_parks": [
+      {
+        "name": "Kaieteur National Park",
+        "region": "Potaro-Siparuni",
+        "area_km2": 627,
+        "description": "Guyana's oldest and most visited national park, established in 1929, centered on Kaieteur Falls — the world's largest single-drop waterfall by volume, 226m high and 113m wide (five times the height of Niagara). The park protects pristine Guiana Shield rainforest. Most visitors arrive by 45-minute charter flight from Georgetown or Ogle.",
+        "highlights": [
+          "Kaieteur Falls viewpoints",
+          "Golden Rocket Frog in bromeliad pools",
+          "Guianan Cock-of-the-Rock lek",
+          "Carnivorous pitcher plants",
+          "White-chinned Swifts nesting behind falls",
+          "Orinduik Falls (nearby, on Ireng River at Brazilian border)"
+        ]
+      },
+      {
+        "name": "Iwokrama International Centre for Rainforest Conservation",
+        "region": "Potaro-Siparuni",
+        "area_km2": 3710,
+        "description": "A UNESCO-recognized rainforest reserve and research center, one of the world's four remaining pristine tropical rainforests. Managed jointly by the Government of Guyana and the Commonwealth of Nations. Offers sustainable tourism through community-operated lodges. The Canopy Walkway provides rare above-forest-floor access to wildlife.",
+        "highlights": [
+          "Iwokrama Canopy Walkway (30m above forest floor)",
+          "Night jaguar spotting drives",
+          "Turtle Mountain hike",
+          "Arapaima conservation program",
+          "Guianan Cock-of-the-Rock viewing at Corkwood",
+          "World-class birding (500+ species)"
+        ]
+      },
+      {
+        "name": "Kanuku Mountains Protected Area",
+        "region": "Upper Takutu-Upper Essequibo (Rupununi)",
+        "area_km2": 6330,
+        "description": "A largely unvisited wilderness protecting the Kanuku Mountain range in southern Guyana, bordering Brazil. Among the most biodiverse areas in the Guiana Shield with exceptionally high bird endemism. The Harpy Eagle nests here. Access requires expedition-level planning through Rupununi-based operators.",
+        "highlights": [
+          "Harpy Eagle nesting sites",
+          "Extremely high bird endemism",
+          "Pristine rivers and waterfalls",
+          "Indigenous Wapishana communities",
+          "Wild Brazil nut forests"
+        ]
+      },
+      {
+        "name": "Shell Beach Protected Area",
+        "region": "Barima-Waini",
+        "area_km2": 120,
+        "description": "A 90-mile stretch of Atlantic coastline and mangrove belt protecting critical sea turtle nesting habitat. Part of the wider Guiana Shield coastal conservation system. Community ranger program monitors nesting leatherback, green, and hawksbill turtles from March to August.",
+        "highlights": [
+          "Sea turtle nesting (March-August)",
+          "Mangrove birdwatching",
+          "Scarlet Ibis colonies",
+          "Amerindian village visits (Waini River area)",
+          "Manatee observation from boats"
+        ]
+      }
+    ],
+    "danger_zones": [
+      {
+        "name": "Gold Mining Interior Roads",
+        "region": "Various interior regions",
+        "risk_level": "Moderate",
+        "description": "Gold and diamond mining areas in the interior (Mazaruni, Cuyuni) can have lawless sections with minimal police presence. Avoid unguided travel in mining regions. Stick to eco-tourism routes."
+      },
+      {
+        "name": "Albouystown / Tiger Bay, Georgetown",
+        "region": "Georgetown",
+        "risk_level": "High",
+        "description": "These Georgetown neighborhoods have high rates of violent crime and gang activity. No tourist reason to visit. Stay clear at all times, especially after dark."
+      }
+    ],
+    "top_national_parks": [
+      "Kaieteur National Park — world's largest single-drop waterfall by volume, endemic wildlife",
+      "Iwokrama International Centre — pristine Guiana Shield rainforest, jaguar habitat",
+      "Kanuku Mountains Protected Area — extremely biodiverse, unvisited wilderness",
+      "Shell Beach Protected Area — sea turtle nesting, Scarlet Ibis, Manatee"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Turtle Mountain, Iwokrama",
+        "difficulty": "Moderate",
+        "duration": "1 day",
+        "region": "Potaro-Siparuni (Iwokrama Forest)",
+        "description": "A 2-hour ascent through pristine Guiana Shield rainforest to the summit of Turtle Mountain (360m), part of the Iwokrama International Rainforest Reserve. Panoramic views over the forest canopy extending for miles in every direction. One of the best places to spot Black Spider Monkey, Red Howler Monkey, and if very lucky, a Jaguar. The trail passes enormous buttress trees and endemic Greenheart hardwood.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "February",
+          "March",
+          "April"
+        ],
+        "elevation_m": 285,
+        "notes": "",
+        "distance_km": 8,
+        "duration_days": 1
+      },
+      {
+        "name": "Iwokrama Canopy Walkway Trail",
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "region": "Potaro-Siparuni (Iwokrama Forest)",
+        "description": "A series of four suspension bridges and three platforms reaching 30 metres above the forest floor at Mauisparu. One of South America's most accessible canopy experiences. Dawn visits reward with a symphony of bird calls and excellent chances of spotting canopy species including toucans, macaws, harpy eagles, and the brilliantly colored Guianan Cock-of-the-Rock. Guides explain medicinal plant uses and forest ecology.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "February",
+          "March",
+          "April"
+        ],
+        "elevation_m": 30,
+        "notes": "",
+        "distance_km": 3,
+        "duration_days": 1
+      },
+      {
+        "name": "Shell Beach Conservation Trail",
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "region": "Barima-Waini (Northwest)",
+        "description": "A coastal walk along 90 miles of pristine Atlantic beach that serves as one of the Caribbean's most important sea turtle nesting sites. Leatherback, green, and hawksbill turtles nest from March to August. Night walks with rangers to observe nesting are the highlight. Also excellent birdwatching in mangroves and coastal forest. Accessible via speedboat from Georgetown.",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August"
+        ],
+        "elevation_m": 5,
+        "notes": "",
+        "distance_km": 10,
+        "duration_days": 1
+      }
+    ],
+    "waterfalls": [
+      "Kaieteur Falls (226m) — world's largest single-drop waterfall by volume",
+      "Orinduik Falls — on the Ireng River at Guyana/Brazil border, red sandstone terraces",
+      "Tumatumari Falls — Potaro River, downstream from Kaieteur",
+      "Marshall Falls — Essequibo River basin"
+    ],
+    "rivers": [
+      "Essequibo River — longest river in Guyana at 1,010km, wildlife-rich",
+      "Potaro River — flows over Kaieteur Falls",
+      "Rupununi River — savannah river with Giant River Otters",
+      "Demerara River — Georgetown's river, main transport corridor"
+    ],
+    "wildlife": [
+      "Jaguar — Iwokrama has one of world's highest jaguar densities",
+      "Giant River Otter — Rewa River and Rupununi",
+      "Harpy Eagle — Kanuku Mountains and Iwokrama",
+      "Guianan Cock-of-the-Rock — Kaieteur and Iwokrama",
+      "Giant Anteater — Rupununi savannahs",
+      "Arapaima — world's largest freshwater fish, Essequibo and Rupununi rivers",
+      "Black Caiman — rivers and lakes throughout interior",
+      "Giant Armadillo — Rupununi",
+      "Sun Parakeet — Rupununi grasslands",
+      "Leatherback Sea Turtle — Shell Beach nesting",
+      "Pink River Dolphin — interior rivers"
+    ],
+    "birdwatching_hotspots": [
+      "Iwokrama Forest — 500+ species including Harpy Eagle, Guianan Cock-of-the-Rock",
+      "Rupununi — Sun Parakeets at Karasabai, jabiru storks",
+      "Kaieteur — Cock-of-the-Rock lek, White-chinned Swifts",
+      "Shell Beach mangroves — Scarlet Ibis, herons",
+      "Surama — birding at dawn and dusk from lodge grounds"
+    ],
+    "stargazing_spots": [
+      "Rupununi savannahs — virtually no light pollution, extraordinary Milky Way views",
+      "Iwokrama River Lodge — dark sky location",
+      "Surama Eco-Lodge — dry season stargazing from open savannah"
+    ],
+    "scenic_drives": [
+      "Georgetown to Linden along Demerara River",
+      "Lethem Road (partial) — Rupununi savannah drives with wildlife",
+      "Essequibo Coast Road — coastal villages and river scenery"
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Kaieteur Falls Trek",
+        "difficulty": "Hard",
+        "duration": "5 days",
+        "region": "Potaro-Siparuni (Kaieteur National Park)",
+        "description": "A multi-day expedition trekking through pristine Guiana Shield rainforest to reach Kaieteur Falls — the world's largest single-drop waterfall by volume (226m high, 113m wide). The trail follows the Potaro River by boat then ascends the gorge on foot. Pakaraima Amerindian guides essential. The 'Oh My God Hike' — a steep 2-4 hour ascent to the plateau — rewards with jaw-dropping views of the falls. Spot Guianan Cock-of-the-Rock, Golden Rocket Frogs in bromeliads, and White-chinned Swifts nesting behind the falls.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "February",
+          "March",
+          "April"
+        ],
+        "elevation_m": 560,
+        "notes": "",
+        "distance_km": 35,
+        "duration_days": 5
+      },
+      {
+        "name": "Mount Roraima Trek",
+        "difficulty": "Very Hard",
+        "duration": "8 days",
+        "region": "Pakaraima Mountains (Upper Mazaruni)",
+        "description": "The classic ascent of the legendary Roraima Tepui (2,810m) — Guyana's most famous peak, shared with Venezuela and Brazil. The summit plateau is a lost world of alien landscapes: carnivorous plants, endemic black frogs, pink crystals, and views of Venezuela's Gran Sabana. The trail begins near Paruima village in the Upper Mazaruni. Significantly more remote and challenging than the Venezuelan route. Requires experienced indigenous guides.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "February",
+          "March"
+        ],
+        "elevation_m": 2400,
+        "notes": "",
+        "distance_km": 75,
+        "duration_days": 8
+      }
+    ]
+  },
+  "sports_and_activities": {
+    "surfing": "Not applicable — Guyana's Atlantic coast has turbid, rough water unsuitable for surfing",
+    "diving_snorkeling": "Very limited — Atlantic waters are murky from river silt. No reef diving.",
+    "fishing": "World-class freshwater fishing in Rupununi and Essequibo rivers — arapaima, peacock bass, and more",
+    "kayaking_canoeing": "River trips throughout interior; dugout canoe with Amerindian guides is the traditional mode of travel",
+    "birdwatching": "World-class — over 800 recorded species. Iwokrama and Rupununi are globally recognized birding destinations",
+    "wildlife_safari": "Rupununi savannahs offer African-safari-quality mammal viewing — Giant Anteater, caiman, capybara",
+    "hiking": "Interior jungle hikes (Turtle Mountain, Kaieteur Trek) require excellent fitness and guides",
+    "gold_panning": "Cultural experience in mining communities — not a formal tourism activity",
+    "cricket": "The national sport — watching a match is a great cultural experience"
+  },
+  "trip_styles": {
+    "eco_tourism": "Primary reason most travelers visit — among the top eco-destinations globally",
+    "adventure": "Excellent for hard adventure: multi-day rainforest treks, remote river expeditions, tepui climbing",
+    "birdwatching": "One of the top birding destinations in South America with 800+ species",
+    "wildlife": "Exceptional — jaguar, giant river otter, arapaima, harpy eagle, sea turtles",
+    "indigenous_culture": "Authentic interaction with Makushi, Wapishana, Wai Wai, and Patamona communities at community-run lodges",
+    "backpacker": "Limited infrastructure — not well-suited to budget backpacking. Eco-tourism requires investment.",
+    "luxury": "Growing luxury eco-lodge market (Atta Rainforest Lodge, Rock View Lodge)"
+  },
+  "destinations": [
+    {
+      "name": "Kaieteur Falls",
+      "region": "Potaro-Siparuni",
+      "description": "The world's most powerful single-drop waterfall by volume — 226m high and 113m wide, set in pristine Guiana Shield jungle. Best visited by charter flight from Georgetown/Ogle (45 min). Day trip or multi-day trek options. One of South America's most spectacular natural wonders."
+    },
+    {
+      "name": "Iwokrama Rainforest",
+      "region": "Potaro-Siparuni",
+      "description": "The crown jewel of Guyana's eco-tourism. One of four pristine rainforests remaining on Earth. Canopy walkway, jaguar spotting night drives, Turtle Mountain hike, and river wildlife tours from Iwokrama River Lodge and Atta Rainforest Lodge."
+    },
+    {
+      "name": "Rupununi Savannahs",
+      "region": "Upper Takutu-Upper Essequibo",
+      "description": "Vast grasslands bordering Brazil's Pantanal ecosystem. Base at Surama Eco-Lodge (Makushi community), Rewa Lodge, or Caiman House (Yupukari) for Giant Anteater, caiman, capybara, and extraordinary birdwatching. Fly-fishing for peacock bass."
+    },
+    {
+      "name": "Georgetown",
+      "region": "Demerara-Mahaica",
+      "description": "The capital city features remarkable British colonial architecture (Saint George's Cathedral — one of the world's tallest wooden buildings, Stabroek Market, Parliament Buildings). The National Museum and Botanical Gardens are worth visiting. Food scene centered on Water Street and Main Street area."
+    },
+    {
+      "name": "Shell Beach",
+      "region": "Barima-Waini",
+      "description": "A 90-mile untouched Atlantic coastline and the most important sea turtle nesting site in Guyana. March to August: leatherback, green, and hawksbill turtles nest under ranger supervision. Scarlet Ibis and manatee in adjacent mangroves."
+    },
+    {
+      "name": "Orinduik Falls",
+      "region": "Potaro-Siparuni (Brazil border)",
+      "description": "Stunning tiered waterfall on the Ireng River forming the border with Brazil. Red sandstone terraces and crystal-clear water for swimming. Reached by charter flight from Ogle — often combined with Kaieteur Falls day trip."
+    }
+  ],
+  "practical_info": {
+    "calling_code": "+592",
+    "emergency_numbers": {
+      "police": "911",
+      "ambulance": "913",
+      "fire": "912"
+    },
+    "public_holidays": [
+      "New Year's Day (Jan 1)",
+      "Republic Day/Mashramani (Feb 23)",
+      "Phagwah/Holi (March, varies)",
+      "Good Friday",
+      "Easter Monday",
+      "Labour Day (May 1)",
+      "Arrival Day (May 5)",
+      "Independence Day (May 26)",
+      "CARICOM Day (July, first Monday)",
+      "Emancipation Day (Aug 1)",
+      "Diwali (October/November, varies)",
+      "Christmas Day (Dec 25)",
+      "Boxing Day (Dec 26)"
+    ],
+    "business_hours": "Mon-Fri 8am-4pm government; shops 8am-5pm. Many businesses closed Sunday. Markets open early daily.",
+    "post_office": "Guyana Post Office in Georgetown. Limited reliability for international mail.",
+    "useful_apps": [
+      "WhatsApp (universal in Guyana)",
+      "Google Maps (offline for Georgetown)",
+      "Trans Guyana Airways app (domestic flights)"
+    ]
+  },
+  "laws": {
+    "lgbt_legal": false,
+    "lgbt_details": "Same-sex sexual activity is technically criminalized under colonial-era Sections 351-353 of the Criminal Law Offences Act (up to life imprisonment on paper, though rarely prosecuted). No legal recognition of same-sex relationships. LGBTQ travelers should exercise discretion. Advocacy groups are pushing for decriminalization.",
+    "drug_laws": "Strict. Cannabis possession illegal (decriminalization discussed but not enacted). Zero tolerance for trafficking. Severe penalties.",
+    "alcohol_legal_age": 18,
+    "smoking_rules": "Prohibited in public buildings, restaurants, and enclosed spaces. Legal in outdoor areas.",
+    "photography_laws": "Photography of military installations, government buildings, and bridges prohibited. Amerindian communities may restrict photography — always ask.",
+    "currency_import_export": "Declare amounts over USD $10,000 at customs. Export of local currency limited.",
+    "unusual_laws": [
+      "Same-sex relations technically illegal under colonial-era law",
+      "Export of any wildlife (including insects and plants) requires permits",
+      "Drone use requires Civil Aviation Authority permit — apply before travel"
+    ]
+  },
+  "family_travel": {
+    "overall_rating": "Moderate — excellent for adventurous families with older children (10+). Younger children may struggle with heat, insects, and remote conditions.",
+    "child_friendly_attractions": [
+      "Georgetown Botanical Gardens",
+      "Kaieteur Falls day trip by charter flight",
+      "Turtle watching at Shell Beach",
+      "Surama Eco-Lodge (child-friendly indigenous community)"
+    ],
+    "stroller_friendliness": "Very poor — Georgetown roads are uneven, interior has no infrastructure for strollers",
+    "baby_supplies_availability": "Basic supplies in Georgetown supermarkets. Bring specialist items from home.",
+    "family_accommodation_notes": "Eco-lodges typically accommodate families. Family rooms available at Georgetown hotels. Surama Eco-Lodge is highly recommended for families interested in wildlife.",
+    "health_considerations_for_families": "Malaria prophylaxis required for children traveling to interior. Yellow fever vaccination required. Dengue protection essential. Children should be current on all routine vaccines."
+  },
+  "accessibility": {
+    "overall_rating": "Poor — limited infrastructure for travelers with mobility impairments",
+    "wheelchair_accessibility": "Georgetown has some paved sidewalks but poor overall wheelchair access. Interior regions (eco-lodges, jungle trails) are not wheelchair accessible.",
+    "visual_impairment_services": "Very limited. Guide services available through tour operators.",
+    "hearing_impairment_services": "Limited formal services. English-speaking destination makes communication easier.",
+    "accessible_attractions": [
+      "Georgetown waterfront (partially accessible)",
+      "Botanical Gardens (partially accessible)"
+    ],
+    "accessible_accommodation": "A few Georgetown hotels have accessible rooms. Eco-lodges are generally not accessible."
+  },
+  "gear": {
+    "essentials": [
+      "DEET insect repellent (minimum 30%, higher concentration for interior)",
+      "Antimalarial medication (prescription)",
+      "Lightweight long-sleeve shirts and pants for mosquito protection",
+      "Waterproof hiking boots",
+      "Rain jacket/poncho",
+      "Headlamp with extra batteries",
+      "Water purification tablets or filter",
+      "Electrolyte packets"
+    ],
+    "nice_to_have": [
+      "Binoculars (8x42 minimum for birdwatching)",
+      "Dry bags for boat trips and rain",
+      "Camera with telephoto lens (wildlife)",
+      "Sun hat and neck protection",
+      "Lightweight gaiters"
+    ],
+    "what_not_to_bring": [
+      "Expensive jewelry (security risk in Georgetown)",
+      "White or light-colored clothing (stains immediately in jungle)",
+      "Flip-flops as primary footwear in interior",
+      "Large rolling suitcase (backpack/duffel for interior travel)"
+    ],
+    "gear_rental_available": false,
+    "local_gear_shopping": "Basic outdoor supplies available in Georgetown (Hardware stores on Regent Street). Bring specialized gear from home."
+  },
+  "history": [
+    {
+      "title": "Indigenous Peoples",
+      "content": "Guyana's name comes from an indigenous word meaning 'land of many waters.' The Arawak, Carib, Wapishana, Macushi, and Pemon peoples inhabited the region for millennia, adapting to rainforest, savanna, and coastal environments. Indigenous communities still inhabit the interior."
+    },
+    {
+      "title": "Dutch & British Colonization",
+      "content": "The Dutch established the first European settlements (Essequibo colony, 1616). Britain acquired the colonies of Essequibo, Demerara, and Berbice and merged them as British Guiana in 1831. Sugar plantations using enslaved African labor defined the colonial economy; after emancipation (1834), indentured laborers from India replaced them — creating Guyana's unique Afro-Guyanese and Indo-Guyanese demographic split."
+    },
+    {
+      "title": "Independence & Burnham Era",
+      "content": "British Guiana gained independence on May 26, 1966 becoming Guyana — the only English-speaking country in South America. Forbes Burnham's socialist government (1964–1985) nationalized industries and declared a 'Co-operative Republic.' The 1978 Jonestown massacre — where 909 American followers of Jim Jones died in a mass murder-suicide — occurred in Guyana's interior."
+    },
+    {
+      "title": "Border Disputes",
+      "content": "Guyana has an ongoing territorial dispute with Venezuela over the Essequibo region — a mineral-rich area comprising two-thirds of Guyana's territory. Venezuela has claimed Essequibo since the 19th century. In 2023, Venezuela held a referendum claiming the territory, escalating tensions significantly."
+    },
+    {
+      "title": "Oil Discovery & New Prosperity",
+      "content": "Offshore oil discovered by ExxonMobil in 2015 has transformed Guyana's economy. Production began in 2019 and Guyana now has one of the world's fastest-growing economies, with per-capita oil revenues among the highest globally. The country of 800,000 people faces the challenge of managing oil wealth equitably while protecting the Amazon."
+    }
+  ]
+}

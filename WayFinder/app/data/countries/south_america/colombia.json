@@ -1,0 +1,1331 @@
+{
+  "meta": {
+    "last_updated": "2026-04-12",
+    "confidence_score": 0.91,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "ProColombia (official tourism authority)",
+      "OSAC Colombia Country Security Report",
+      "WayFinder internal hike/food/history data"
+    ],
+    "notes": "Colombia has specific no-go zones (FARC/ELN activity, border regions). Medellín has transformed dramatically but requires street smarts. Cartagena and coffee region are very tourist-friendly."
+  },
+  "identity": {
+    "name": "Colombia",
+    "official_name": "Republic of Colombia",
+    "code": "CO",
+    "iso3": "COL",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Bogotá",
+    "flag_emoji": "🇨🇴",
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "driving_side": "right",
+    "country_calling_code": "+57",
+    "internet_tld": ".co"
+  },
+  "language_and_money": {
+    "languages": [
+      "Spanish"
+    ],
+    "primary_language": "Spanish",
+    "english_proficiency": "Low to moderate — growing rapidly in Medellín El Poblado, Cartagena walled city, and Bogotá tourist areas. Coffee region increasing. Limited in rural areas and Pacific coast.",
+    "currency": "COP",
+    "currency_name": "Colombian Peso",
+    "currency_symbol": "$",
+    "cash_vs_card": "Cards widely accepted in Bogotá, Medellín, and Cartagena. Cash preferred in smaller towns, markets, and the Pacific coast (no card infrastructure in Nuquí/El Valle). Nequi and Daviplata are popular mobile payment apps.",
+    "typical_payment_methods": [
+      "Cash (COP)",
+      "Visa",
+      "Mastercard",
+      "Nequi (mobile)",
+      "Daviplata (mobile)"
+    ],
+    "atm_availability": "Widely available in cities. Davivienda, Bancolombia, and Banco de Bogotá most common. Withdraw during daylight hours at mall or bank-attached ATMs. Limited in Pacific coast and Amazon.",
+    "tipping_culture": "10% propina voluntary in restaurants — tax and service often already included. Tip tour guides COP$20,000-50,000/day. Coffee region guides appreciate tips. Taxi: round up fare.",
+    "tipping_etiquette": "Check restaurant bill for 'propina voluntaria' (10%) — you can decline or accept. For Pacific coast guides, tip generously (limited income). Coffee region: tip coffee tour guide COP$20,000-30,000."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days (extendable to 180 days total)",
+      "visa_type": "Tourist entry stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for at least 6 months beyond date of entry",
+    "blank_passport_pages_required": 2,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": false,
+    "tourist_entry_fee": null,
+    "departure_tax": "COP$113,600 (approximately $28 USD) — often included in airline ticket. Verify at check-in.",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Strict on narcotics — zero tolerance. Agricultural products inspected. Gold and pre-Columbian artifacts cannot be exported. Declare cash over $10,000 USD.",
+    "restricted_items": [
+      "Narcotics and cocaine (extremely serious consequences)",
+      "Pre-Columbian artifacts",
+      "Wildlife products",
+      "Unauthorized firearms"
+    ],
+    "duty_free_allowances": "400 cigarettes, 50 cigars, 2 liters of alcohol, gifts up to $500 USD"
+  },
+  "health": {
+    "recommended_vaccines": [
+      "Hepatitis A",
+      "Typhoid",
+      "Hepatitis B",
+      "Rabies (Amazon, jungle, rural areas)",
+      "Tetanus-Diphtheria",
+      "Yellow Fever (Amazon and Pacific coast regions)"
+    ],
+    "required_vaccines": [
+      "Yellow Fever (required for entry if arriving from endemic country; recommended for Amazon and Pacific coast)"
+    ],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Present in Amazon (Leticia, Amazonas department), Pacific coast, Chocó department, and remote rural lowland areas. Not present in Bogotá (2,600m), Medellín, Cartagena, or coffee region highlands.",
+    "malaria_regions": [
+      "Amazonas department (Leticia)",
+      "Chocó department (Nuquí, El Valle)",
+      "Nariño Pacific lowlands",
+      "Vaupes and Guainía departments",
+      "Rural Córdoba and Urabá"
+    ],
+    "malaria_prophylaxis_info": "Atovaquone-proguanil or doxycycline recommended for Amazon and Pacific coast travel. Not needed for Bogotá, Medellín, Cartagena, or the coffee region (Eje Cafetero). Consult doctor 4-6 weeks before travel.",
+    "dengue_risk": "High — Colombia has one of South America's highest dengue burdens. Active transmission in coastal cities (Cartagena, Santa Marta, Barranquilla), Cali, and lowland areas. Use DEET 30%+ repellent at all times in these areas.",
+    "altitude_sickness_risk": "Low for most destinations. Bogotá is at 2,600m — some visitors feel mild effects (headache, fatigue) but serious AMS is uncommon. El Cocuy range (hiking to 5,000m+) carries moderate altitude risk. La Popa hill in Cartagena has no altitude concern.",
+    "food_water_safety": "Use bottled water in all cities including Bogotá and Medellín. Street food generally safe at busy, high-turnover stalls. Be cautious with uncooked salads from small establishments.",
+    "air_quality_concerns": "Bogotá and Medellín can have significant air quality issues from traffic. Medellín's valley traps smog during low-wind periods. Good air quality in the coffee region and Cartagena.",
+    "common_travel_illnesses": [
+      "Dengue fever (coastal and lowland areas)",
+      "Traveler's diarrhea",
+      "Malaria (Amazon and Pacific coast)",
+      "Scopolamine (burundanga) drugging — Colombia-specific risk",
+      "Altitude effects (Bogotá, El Cocuy)"
+    ],
+    "pharmacy_access": "Excellent in cities — Drogas La Rebaja, Cruz Verde, and Farmacia Pasteur chains nationwide. Many medications available OTC. Limited in Pacific coast (Nuquí, El Valle) and Amazon (Leticia).",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Excellent private hospitals in Bogotá (Fundación Santa Fe, Hospital Universitario Méderi) and Medellín (Hospital Pablo Tobón Uribe, Clínica Las Américas). Good in Cartagena and Cali. Very limited in Pacific coast and Amazon.",
+    "emergency_medical_number": "123"
+  },
+  "safety": {
+    "overall_score": 50,
+    "travel_advisory_level_us": 3,
+    "travel_advisory_level_label": "Reconsider Travel",
+    "travel_advisory_updated": "2024",
+    "risk_indicators": [
+      "Do Not Travel: Arauca, Cauca, and Norte de Santander departments (ELN/FARC dissidents)",
+      "Do Not Travel: Pacific coast border regions and rural Nariño",
+      "Scopolamine (burundanga) drugging — Colombia has the world's highest rate",
+      "Express kidnapping in Bogotá and Cali — unlicensed taxis",
+      "Armed criminal gangs (bandas criminales/BACRIM) in many regions"
+    ],
+    "crime_risk": "Moderate to High in cities — major improvement over the 1990s but crime remains significant. Bogotá and Medellín have high pickpocket rates. Express kidnapping via street taxis is a real threat. La Candelaria (Bogotá historic center) and certain Cali neighborhoods have elevated mugging risk. Tourist zones (El Poblado Medellín, Cartagena old city) are much safer.",
+    "scam_risk": "High — Colombia has the world's highest reported rate of scopolamine drugging. Common in Bogotá and Medellín nightlife — added to drinks or even powder blown in the face. 'Rumbeadero' (fake nightclub) scams. Fake police. Dating app setup robberies.",
+    "transport_safety": "NEVER use street taxis or taxis hailed by someone else in Colombia — express kidnapping risk. Use ONLY Uber, InDriver, or DiDi (all app-based, tracked). Even official-looking yellow taxis can be dangerous if not called through a radio dispatch.",
+    "solo_female_travel_notes": "Exercise significant caution. Colombian cities have high sexual harassment rates. Do not walk alone at night. Use only app-based taxis. In El Poblado (Medellín), Zona Rosa (Bogotá), and Cartagena walled city, the environment is more manageable. Coffee region and Tayrona are excellent for solo female travelers with standard precautions.",
+    "lgbtq_notes": "Same-sex marriage legal since 2016 (Constitutional Court ruling). Anti-discrimination protections. Bogotá and Medellín have active LGBTQ+ scenes. Cartagena has a growing LGBTQ+ tourism sector. Conservative attitudes in rural and Pacific coast communities. Public displays of affection carry some risk outside major cities.",
+    "night_safety": "Stay in El Poblado (Medellín) and Zona Rosa/Parque 93 (Bogotá) for nightlife — never wander into adjacent neighborhoods. In Cartagena, stick to the walled city and Getsemaní (until midnight). Never walk alone at night anywhere in Colombia.",
+    "safe_areas": [
+      "El Poblado (Medellín)",
+      "Laureles (Medellín)",
+      "Zona Rosa/Parque 93 (Bogotá)",
+      "Usaquén (Bogotá)",
+      "Cartagena walled city",
+      "Salento (coffee region)"
+    ],
+    "areas_to_avoid": [
+      "Arauca department (Do Not Travel)",
+      "Cauca department rural areas (Do Not Travel)",
+      "Norte de Santander rural areas (Do Not Travel)",
+      "Nariño border regions (Do Not Travel)",
+      "Bogotá southern neighborhoods at night",
+      "Cali Aguablanca district",
+      "Pacific coast border with Ecuador"
+    ],
+    "natural_disaster_risks": [
+      "Earthquakes (Pacific Ring of Fire)",
+      "Volcanic eruptions (Nevado del Ruiz, Galeras — active)",
+      "Landslides (coffee region and Andes — rainy season)",
+      "Flooding (Amazon, Llanos, Pacific coast)"
+    ],
+    "political_stability_notes": "Peace process with FARC (signed 2016) has dramatically improved many regions. However, FARC dissident groups and ELN continue armed conflict in border regions. Monitor OSAC and US Embassy travel alerts. Situation can change rapidly in conflict zones.",
+    "common_scams": [
+      "Scopolamine (burundanga/devil's breath) — the world's most reported use of this drug is in Colombia. Added to drinks, cigarettes, food, or blown in the face. Results in total compliance and amnesia. Never accept anything from a stranger.",
+      "Express kidnapping via street taxi — taken to ATMs to withdraw cash",
+      "Fake police — plainclothes officers demanding to inspect wallet or drugs",
+      "Dating app/bar beautiful stranger setup — scopolamine or robbery",
+      "Virtual kidnapping — called claiming your relative is kidnapped",
+      "Emerald sellers trying to rob tourists who follow them",
+      "Counterfeit COP bills especially in change at markets"
+    ],
+    "police_reliability": "Variable. Tourist Police (Policía de Turismo) in Bogotá and Cartagena are helpful. Regular police reliability varies significantly. File reports at tourist police stations.",
+    "emergency_numbers": {
+      "police": "112",
+      "ambulance": "123",
+      "fire": "119",
+      "general_emergency": "123"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Bogotá",
+      "us_embassy_phone": "+57-1-275-2000",
+      "us_embassy_website": "https://co.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "December to March and July to August (dry seasons for most regions). Pacific coast: December to April (drier, calmer surf). Coffee region: any time — two dry seasons (Dec-Feb and Jun-Aug). Tayrona NP: Jan-Feb and Aug (closed in October).",
+    "climate_zones": [
+      "Caribbean coast (Cartagena, Santa Marta) — hot, tropical, 28-34°C, trade winds",
+      "Andean (Bogotá, Medellín, coffee region) — mild spring-like climate, 14-25°C depending on altitude",
+      "Pacific coast (Chocó, Nuquí) — one of the wettest areas on Earth, 26-32°C, heavy rainfall year-round",
+      "Amazon (Leticia) — equatorial, hot, humid, 28-34°C, rain year-round",
+      "Llanos (eastern plains) — tropical wet-dry, 30-38°C, dramatic dry season"
+    ],
+    "dry_season": "December to February and June to August for most of Colombia. Pacific coast: December to April (relative dry).",
+    "rainy_season": "March to May and September to November for most of Colombia. Year-round heavy rain on Pacific coast.",
+    "hurricane_typhoon_season": "San Andrés and Caribbean islands can be affected by Atlantic hurricanes (June to November)",
+    "surf_season": "April to October for Pacific coast big swells. December to March for cleaner conditions. Caribbean coast (Santa Marta) surf is secondary but consistent.",
+    "trekking_best_months": [
+      "December",
+      "January",
+      "February",
+      "June",
+      "July",
+      "August"
+    ],
+    "average_temp_by_month": {
+      "Bogotá": "7-19°C (mild year-round, two rainy seasons; warmest Jan-Feb and Jul-Aug)",
+      "Medellín": "16-28°C (City of Eternal Spring — consistent mild climate year-round)",
+      "Cartagena": "28-34°C (hot year-round, Dec-Mar less humid)",
+      "Coffee Region (Salento)": "12-24°C (mild, two dry seasons Dec-Feb and Jun-Aug)"
+    },
+    "daylight_hours_by_season": "Near equator — very consistent 11.5-12.5 hours of daylight year-round in most of Colombia."
+  },
+  "transport": {
+    "major_airports": [
+      "El Dorado International Airport (BOG) — Bogotá, main hub",
+      "José María Córdova International Airport (MDE) — Medellín (actually in Rionegro, 45km from city)",
+      "Rafael Núñez International Airport (CTG) — Cartagena",
+      "Alfonso Bonilla Aragón International Airport (CLO) — Cali",
+      "Matecaña International Airport (PEI) — Pereira (coffee region gateway)",
+      "Gustavo Rojas Pinilla International Airport (ADZ) — San Andrés Island"
+    ],
+    "main_airlines": [
+      "Avianca",
+      "LATAM Colombia",
+      "JetSMART Colombia",
+      "Wingo",
+      "EasyFly (regional)"
+    ],
+    "airport_to_city_options": [
+      "Transmilenio bus (BOG — cheapest, COP$2,900)",
+      "Taxi (app-based Uber from El Dorado — $15-25 to Zona Rosa)",
+      "Airport shuttle services"
+    ],
+    "public_transit_quality": "Bogotá has Transmilenio BRT (extensive, safe, crowded) and Metro Line 1 (opening 2025-2026). Medellín has an excellent Metro with 2 lines, Metrocable, and electric escalators in Comuna 13. Cartagena has limited public transport — Uber most practical.",
+    "intercity_bus_quality": "Good — Berlinas del Fonce, Expreso Palmira, Flota Magdalena. Comfortable long-distance buses. Bogotá to Medellín: 8-9 hours; Bogotá to Santa Marta: 18 hours. Book in advance. Overnight buses carry increased risk.",
+    "train_network_quality": "Very limited — Tren de la Sabana (tourist excursion from Bogotá) is the main train. No intercity passenger rail network.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": false,
+    "road_conditions": "Main highways generally good. Rural roads in Pacific coast and jungle regions are poor to non-existent. Coffee region roads are windy but paved. Do not drive at night in Colombia.",
+    "four_x_four_needed_regions": [
+      "Pacific coast (road access to El Valle from Quibdó)",
+      "Amazon jungle roads",
+      "Sierra Nevada de Santa Marta access to Ciudad Perdida"
+    ],
+    "ride_hailing_apps": [
+      "Uber",
+      "InDriver",
+      "DiDi"
+    ],
+    "taxi_safety_notes": "NEVER hail street taxis in Colombia. NEVER use taxis arranged by someone else. ONLY use Uber, DiDi, or InDriver. This is the single most important safety precaution in Colombia. Express kidnapping via street taxi is one of the most common crimes against tourists.",
+    "ferry_routes": [
+      "Cartagena to Islas del Rosario (1-hour speedboat)",
+      "Mompox ferry across Magdalena River",
+      "Turbo to Capurganá (Pacific adventure route, not for casual travelers)",
+      "Cartagena to San Andrés (no ferry — flights only)"
+    ],
+    "border_crossing_notes": "Ipiales-Tulcán (Ecuador), Cúcuta-San Antonio (Venezuela — currently restricted), Leticia-Tabatinga (Brazil/Peru triple border by river only). Do not attempt Venezuelan border crossings. Monitor FARC/ELN control of border areas."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$35-55/day",
+    "daily_budget_midrange": "$80-150/day",
+    "daily_budget_comfort": "$180-350/day",
+    "hostel_avg": "$10-20/night",
+    "hotel_avg": "$50-120/night",
+    "meal_avg": "$4-12 (menú ejecutivo COP$15,000-20,000, restaurant COP$30,000-80,000)",
+    "coffee_avg": "$1-3",
+    "beer_avg": "$1.50-4",
+    "local_transport_avg": "$0.50-2 (Metro/Transmilenio)",
+    "sim_card_avg": "$5-10 for 5GB",
+    "coworking_day_pass_avg": "$10-25",
+    "surfboard_rental_avg": "$15-25/day (Pacific coast only — limited availability)",
+    "value_for_money": "Excellent — Colombia offers exceptional value. Coffee tours, Pacific coast surf and wildlife, and Cartagena colonial experience are all affordable. Medellín has a thriving digital nomad scene with very affordable coworking."
+  },
+  "connectivity": {
+    "sim_card_providers": [
+      "Claro",
+      "Movistar",
+      "Tigo",
+      "ETB (Bogotá)"
+    ],
+    "esim_available": true,
+    "mobile_data_quality": "Excellent 4G in Bogotá, Medellín, Cartagena, Cali, and coffee region. Limited on Pacific coast (Nuquí area), Amazon, and rural highlands.",
+    "wifi_quality": "Very good in Bogotá, Medellín, and Cartagena hotels and co-working spaces. Slow and unreliable in Pacific coast and Amazon.",
+    "coworking_available": true,
+    "best_remote_work_cities": [
+      "Medellín (El Poblado, Laureles) — one of the world's top digital nomad cities",
+      "Bogotá (Zona Rosa, Chapinero)",
+      "Cartagena (for shorter stays)",
+      "Salento (coffee region — slower but charming)"
+    ],
+    "power_outlet_types": [
+      "A",
+      "B"
+    ],
+    "voltage": "110V, 60Hz",
+    "plug_adapter_needed_for_us": false,
+    "power_reliability": "Reliable in cities. Outages possible in Pacific coast and Amazon. Bring power bank for remote areas."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "El Poblado, Medellín — safest, tourist hub, restaurants, coffee shops",
+      "Laureles, Medellín — more local, equally safe, good restaurants",
+      "Zona Rosa / Parque 93, Bogotá — upscale, restaurants, safest Bogotá district",
+      "Chapinero / Zona G, Bogotá — food scene, creative, hipster",
+      "Walled City (Ciudad Amurallada), Cartagena — historic, colonial beauty",
+      "Salento, Coffee Region — charming small town atmosphere"
+    ],
+    "budget_areas": [
+      "La Candelaria (Bogotá — day only, not safe at night)",
+      "El Estadio (Medellín)",
+      "Getsemaní (Cartagena — gentrifying, exercise caution at night)"
+    ],
+    "family_friendly_areas": [
+      "El Poblado (Medellín)",
+      "Usaquén (Bogotá)",
+      "Cartagena walled city",
+      "Coffee region haciendas"
+    ],
+    "nightlife_areas": [
+      "Parque Lleras/El Poblado (Medellín)",
+      "Zona Rosa/Andino (Bogotá)",
+      "Getsemaní (Cartagena)",
+      "Cali Juanchito (salsa)"
+    ],
+    "surf_towns": [
+      "Nuquí (Pacific)",
+      "El Valle (Pacific)",
+      "Bahía Solano (Pacific)",
+      "Playa Almejal",
+      "Punta Huina"
+    ],
+    "eco_lodges_available": true,
+    "peak_booking_season": "December to January (Caribbean coast, family vacation season), Easter Week (Semana Santa), July festival season",
+    "accommodation_notes": "Pacific coast surf lodges (El Valle, Nuquí) must be booked in advance and include meals — no restaurants nearby. Book Tayrona NP accommodation months ahead. Ciudad Perdida tour operators book out in high season."
+  },
+  "culture": {
+    "local_customs": [
+      "Colombians are warm, expressive, and take pride in their country's transformation from violent past to vibrant present",
+      "Coffee is more than a drink — it's culture, livelihood, and identity for millions of Colombians",
+      "Salsa dancing (especially in Cali) is a cultural obsession — every Colombian dances",
+      "'No dar papaya' — don't make yourself an easy target; Colombians are savvy about security and expect visitors to be too",
+      "Haggling at San Jacinto craft markets in Cartagena is expected"
+    ],
+    "dress_expectations": "Casual and stylish in Bogotá and Medellín — Colombians dress well for going out. Conservative in rural and Andean regions. Beach attire only at the beach.",
+    "religious_sensitivity": "Predominantly Catholic — Semana Santa is the most important religious period. Churches and religious sites require modest dress (shoulders and knees covered).",
+    "social_norms": [
+      "Colombians are punctual in business contexts; more relaxed socially",
+      "Discussing the drug war or Pablo Escobar with locals requires extreme sensitivity — many families lost members; narco-tourism is controversial",
+      "Never buy drugs from strangers — being caught with drugs in Colombia carries very serious consequences",
+      "Colombians are intensely proud of their country — engage positively"
+    ],
+    "greeting_style": "One kiss on right cheek for women and mixed groups. Handshake for men. 'Quiubo' or 'Qué más' are casual Colombianisms — 'Buenas' works for any time of day.",
+    "public_behavior_notes": "PDA is normal in tourist areas. Be aware of surroundings in crowded areas — pickpocketing is opportunistic.",
+    "photography_etiquette": "Ask before photographing indigenous people or market vendors. Photography in certain government buildings restricted. Don't photograph military bases or police operations.",
+    "bargaining_expected": true,
+    "important_holidays": [
+      "Carnaval de Barranquilla — February/March — UNESCO Intangible Heritage, Colombia's biggest carnival; four days of cumbia, mapalé, and porro music, elaborate costumes, and the famous 'Battle of Flowers' parade. World's second-largest carnival after Rio.",
+      "Feria de Cali — December 25-30 — world's greatest salsa festival; the city transforms into a non-stop five-day salsa party with concerts, competitions, and tens of thousands of dancers in the streets",
+      "Festival de la Leyenda Vallenata — April/May, Valledupar — the world's premier vallenato music festival; artisans and musicians compete in the birthplace of Colombia's most beloved musical form",
+      "Festival de las Flores — August, Medellín — Silleteros (flower carriers) parade through Medellín with elaborate flower sculptures carried on wooden frames. The most colorful parade in the Americas.",
+      "Semana Santa — Holy Week (March/April) — processions throughout Colombia; Mompox and Popayán have the most spectacular and traditional celebrations"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Narco-tourism (visiting Escobar's graves, wearing narco shirts) is actively discouraged and can attract dangerous attention",
+      "Buying drugs from anyone is illegal and extremely risky — Colombia has strict penalties and the person selling may be setting you up",
+      "Removing archaeological artifacts from pre-Columbian sites is a criminal offense",
+      "Foreign citizens can be deported for participating in political protests"
+    ]
+  },
+  "food": {
+    "dishes": [
+      {
+        "name": "Bandeja Paisa",
+        "description": "Colombia's most celebrated dish and arguably the national plate — a massive platter from the Antioquia region (Medellín and coffee region). Includes red beans cooked with pork, white rice, carne molida (ground beef), chicharrón (fried pork belly), chorizo sausage, morcilla (blood sausage), a fried egg, maduros (ripe plantain), arepa, avocado, and hogao sauce. Originally fuel for farm workers, now a cultural institution.",
+        "region": "Antioquia (Medellín), coffee region (Eje Cafetero)"
+      },
+      {
+        "name": "Ajiaco Bogotano",
+        "description": "Bogotá's signature soup — a thick, creamy chicken and potato stew using three types of Colombian potato (papa criolla, papa pastusa, and papa sabanera) simmered with corn cobs, guascas herb, and cream. Served with capers, avocado, and heavy cream on the side. Deeply comforting at Bogotá's cool altitude.",
+        "region": "Bogotá and Cundinamarca highlands"
+      },
+      {
+        "name": "Arepas",
+        "description": "Colombia's foundational daily bread — round flatbreads made from ground cornmeal. Colombian arepas are softer and thicker than Venezuelan versions. Regional varieties: arepa de choclo (sweet corn, stuffed with cheese), arepa de huevo (deep-fried with egg, Cartagena/coast), arepa paisa (plain, accompanies everything in Medellín). Eaten at every meal.",
+        "region": "Nationwide, regional variations"
+      },
+      {
+        "name": "Sancocho",
+        "description": "Colombia's great communal stew — a rich broth with large chunks of meat (chicken, beef, hen, or goat), yuca, corn, plantain, and potato. Regional variations are dramatically different: Sancocho Costeño (Caribbean coast) with coconut milk, Sancocho Antioqueño with black beans, Sancocho de Pescado (fish). Eaten at family gatherings and on Sunday afternoons.",
+        "region": "Nationwide, regional variations"
+      },
+      {
+        "name": "Fritanga",
+        "description": "A festive Colombian mixed grill — a combination plate of chicharrón, morcilla, longaniza sausage, papas criollas (small yellow potatoes), and assorted fried items. Street food version sold on the Caribbean coast. A Colombian equivalent of the Argentine asado in terms of social function.",
+        "region": "Nationwide, especially Bogotá and Caribbean coast"
+      },
+      {
+        "name": "Lechona",
+        "description": "Tolima department's great festive dish — a whole pig slow-roasted for 10-12 hours stuffed with yellow rice, peas, green onions, and spices. The crispy golden skin (chicharrón) is prized. Traditionally made for celebrations and festivals. Sold by the slice from street stalls on special occasions.",
+        "region": "Tolima and Huila departments"
+      },
+      {
+        "name": "Patacones",
+        "description": "Twice-fried green plantain slices — smashed flat, fried, salted, and served as a staple starch throughout coastal Colombia. Topped with hogao (tomato-onion sauce), shrimp, or guacamole. A Caribbean coast essential, found at every coastal restaurant.",
+        "region": "Caribbean coast, Pacific coast, nationwide"
+      },
+      {
+        "name": "Cazuela de Mariscos",
+        "description": "Colombia's outstanding Caribbean seafood stew — shrimp, lobster, squid, and fish in a coconut milk and tomato base, seasoned with cumin and garlic. Served in a clay cazuela pot with white rice and patacones. Best in Cartagena and the Rosario Islands.",
+        "region": "Caribbean coast (Cartagena, Santa Marta, Barranquilla)"
+      },
+      {
+        "name": "Tamales Tolimenses",
+        "description": "Tolima's famous tamales — masa (corn dough) filled with pork, chicken, chickpeas, carrot, and potato, wrapped tightly in banana leaves and steamed for hours. Much larger and richer than Mexican tamales. Traditional Christmas and Sunday morning food throughout Colombia.",
+        "region": "Tolima and Huila (but eaten nationwide)"
+      },
+      {
+        "name": "Cuy (Guinea Pig)",
+        "description": "A pre-Columbian Andean staple — whole guinea pig roasted or fried on a skewer. Eaten throughout the Colombian and Ecuadorian highlands. The meat is rich and gamey, similar to rabbit. A traditional indigenous food increasingly appearing on upscale Nariño and Colombian Andes menus.",
+        "region": "Nariño department and southern Colombian highlands"
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Café Colombiano",
+        "description": "Colombia produces some of the world's finest Arabica coffee — grown in the coffee triangle (Caldas, Quindío, Risaralda) at 1,200-2,000m altitude. The best Colombian coffee is 100% washed Arabica with bright acidity, caramel sweetness, and a clean finish. Drink tinto (black espresso-style) or as a café con leche. Specialty coffee shops in Bogotá and Medellín rival any in the world."
+      },
+      {
+        "name": "Aguardiente",
+        "description": "Colombia's beloved anise spirit — distilled from sugarcane with star anise flavor added. The national alcoholic drink. Mild anise flavor, served neat in small glasses (chorritos). Toma una aguardiente is the social lubricant of Colombian nightlife. Different regional brands have devoted followings (Antioqueño, Néctar, Cristal)."
+      },
+      {
+        "name": "Refajo",
+        "description": "A uniquely Colombian drink — Colombiana (a sweet, fruity soda made from kola nut) mixed with beer (usually Águila or Club Colombia). Refreshing, sweet, and beloved throughout the country. More common than straight beer at family gatherings and fritangas."
+      },
+      {
+        "name": "Cholado",
+        "description": "Cali's iconic street dessert-drink — a large cup of shaved ice soaked in multiple fruit syrups (tamarind, blackberry, curuba, lulo), topped with fresh fruit, condensed milk, and coconut. Best enjoyed on a hot day in the Valle de Cauca."
+      },
+      {
+        "name": "Limonada de Coco",
+        "description": "Cartagena's signature drink — fresh lime juice blended with coconut milk, condensed milk, and ice. Sweet, creamy, cooling. Found at every beachside restaurant in Cartagena and the Caribbean coast. The perfect Caribbean refreshment."
+      },
+      {
+        "name": "Masato",
+        "description": "Traditional pre-Columbian fermented rice drink — milky, slightly sour, low alcohol. Made from cooked rice fermented for several days. Served throughout the Andean regions, particularly at rural festivals and community events. An important link to indigenous heritage."
+      }
+    ],
+    "street_food_safety": "Generally safe at busy, high-turnover stalls — empanadas, arepas, and obleas (wafer sandwiches with arequipe) are reliably safe. Exercise caution with raw seafood from informal vendors on the coast. Always buy from established, busy stalls.",
+    "vegetarian_friendliness": "Moderate — improving rapidly in Bogotá (Chapinero has many vegetarian restaurants) and Medellín. Challenging in coastal and rural areas where meat is central to everything. Colombian cuisine has many bean, plantain, and potato-based options.",
+    "vegan_friendliness": "Good in Bogotá. Growing in Medellín. Limited elsewhere. Notify restaurants specifically — dairy and lard are used extensively.",
+    "must_try_drinks": [
+      "Café Colombiano (specialty)",
+      "Aguardiente",
+      "Refajo",
+      "Limonada de Coco",
+      "Cholado (Cali)"
+    ],
+    "regional_specialties": [
+      "Bogotá: ajiaco, changua (milk and egg soup), tamales, mazorca (grilled corn)",
+      "Medellín/Antioquia: bandeja paisa, buñuelos, natilla (Christmas dessert), chicharrón",
+      "Cartagena/coast: cazuela de mariscos, arroz con coco, patacones, arroz con frijoles",
+      "Cali: cholado, sancocho de gallina, lulada (lulo juice)",
+      "Coffee region: coffee, trucha (trout), caldo de papa (potato soup), obleas con arequipe"
+    ],
+    "drinking_water_notes": "Do not drink tap water in Colombia. Bottled water universally available (COP$1,500-3,000). Use bottled water for brushing teeth in smaller towns.",
+    "alcohol_rules": "Legal drinking age 18. Drinking in public is generally tolerated. Colombia has a culture of responsible drinking on festive occasions. Aguardiente shots at midnight are a New Year tradition.",
+    "signature_dishes": [
+      {
+        "name": "Bandeja Paisa",
+        "description": "Colombia's most celebrated dish and arguably the national plate — a massive platter from the Antioquia region (Medellín and coffee region). Includes red beans cooked with pork, white rice, carne molida (ground beef), chicharrón (fried pork belly), chorizo sausage, morcilla (blood sausage), a fried egg, maduros (ripe plantain), arepa, avocado, and hogao sauce. Originally fuel for farm workers, now a cultural institution.",
+        "region": "Antioquia (Medellín), coffee region (Eje Cafetero)"
+      },
+      {
+        "name": "Ajiaco Bogotano",
+        "description": "Bogotá's signature soup — a thick, creamy chicken and potato stew using three types of Colombian potato (papa criolla, papa pastusa, and papa sabanera) simmered with corn cobs, guascas herb, and cream. Served with capers, avocado, and heavy cream on the side. Deeply comforting at Bogotá's cool altitude.",
+        "region": "Bogotá and Cundinamarca highlands"
+      },
+      {
+        "name": "Arepas",
+        "description": "Colombia's foundational daily bread — round flatbreads made from ground cornmeal. Colombian arepas are softer and thicker than Venezuelan versions. Regional varieties: arepa de choclo (sweet corn, stuffed with cheese), arepa de huevo (deep-fried with egg, Cartagena/coast), arepa paisa (plain, accompanies everything in Medellín). Eaten at every meal.",
+        "region": "Nationwide, regional variations"
+      },
+      {
+        "name": "Sancocho",
+        "description": "Colombia's great communal stew — a rich broth with large chunks of meat (chicken, beef, hen, or goat), yuca, corn, plantain, and potato. Regional variations are dramatically different: Sancocho Costeño (Caribbean coast) with coconut milk, Sancocho Antioqueño with black beans, Sancocho de Pescado (fish). Eaten at family gatherings and on Sunday afternoons.",
+        "region": "Nationwide, regional variations"
+      },
+      {
+        "name": "Fritanga",
+        "description": "A festive Colombian mixed grill — a combination plate of chicharrón, morcilla, longaniza sausage, papas criollas (small yellow potatoes), and assorted fried items. Street food version sold on the Caribbean coast. A Colombian equivalent of the Argentine asado in terms of social function.",
+        "region": "Nationwide, especially Bogotá and Caribbean coast"
+      },
+      {
+        "name": "Lechona",
+        "description": "Tolima department's great festive dish — a whole pig slow-roasted for 10-12 hours stuffed with yellow rice, peas, green onions, and spices. The crispy golden skin (chicharrón) is prized. Traditionally made for celebrations and festivals. Sold by the slice from street stalls on special occasions.",
+        "region": "Tolima and Huila departments"
+      },
+      {
+        "name": "Patacones",
+        "description": "Twice-fried green plantain slices — smashed flat, fried, salted, and served as a staple starch throughout coastal Colombia. Topped with hogao (tomato-onion sauce), shrimp, or guacamole. A Caribbean coast essential, found at every coastal restaurant.",
+        "region": "Caribbean coast, Pacific coast, nationwide"
+      },
+      {
+        "name": "Cazuela de Mariscos",
+        "description": "Colombia's outstanding Caribbean seafood stew — shrimp, lobster, squid, and fish in a coconut milk and tomato base, seasoned with cumin and garlic. Served in a clay cazuela pot with white rice and patacones. Best in Cartagena and the Rosario Islands.",
+        "region": "Caribbean coast (Cartagena, Santa Marta, Barranquilla)"
+      },
+      {
+        "name": "Tamales Tolimenses",
+        "description": "Tolima's famous tamales — masa (corn dough) filled with pork, chicken, chickpeas, carrot, and potato, wrapped tightly in banana leaves and steamed for hours. Much larger and richer than Mexican tamales. Traditional Christmas and Sunday morning food throughout Colombia.",
+        "region": "Tolima and Huila (but eaten nationwide)"
+      },
+      {
+        "name": "Cuy (Guinea Pig)",
+        "description": "A pre-Columbian Andean staple — whole guinea pig roasted or fried on a skewer. Eaten throughout the Colombian and Ecuadorian highlands. The meat is rich and gamey, similar to rabbit. A traditional indigenous food increasingly appearing on upscale Nariño and Colombian Andes menus.",
+        "region": "Nariño department and southern Colombian highlands"
+      }
+    ]
+  },
+  "outdoors": {
+    "surf_spots": [
+      {
+        "name": "Playa El Almejal, El Valle",
+        "region": "Chocó Department (Pacific coast)",
+        "difficulty": "Beginner to Intermediate",
+        "wave_type": "Beach break",
+        "break_type": "Long beach break with consistent peaks",
+        "swell_direction": "West and northwest Pacific",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "description": "The most accessible Pacific coast surf destination — a pristine beach within 1km of El Valle village, backed by jungle and accessible by irregular transport from Quibdó or by small plane. Consistent beach break suitable for all levels. Warm water (26-28°C) — no wetsuit needed. Colombia's Pacific coast is one of the wettest on Earth — bring waterproof everything. Humpback whales visible from the beach (July-October). Pristine, crowd-free, unforgettable."
+      },
+      {
+        "name": "Playa Terco, Nuquí",
+        "region": "Chocó Department (Pacific coast)",
+        "difficulty": "Intermediate to Advanced",
+        "wave_type": "Beach break",
+        "break_type": "Exposed beach break with rocky sections",
+        "swell_direction": "West Pacific",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "description": "Nuquí's best wave — a powerful, consistent Pacific break that handles significant swell. Reachable only by small plane from Medellín or boat from Bahía Solano. Surrounded by pristine jungle that runs to the beach. Humpback whales July-November. No surf schools — advanced surfers only on big days. Some of the most biodiverse waters in the Pacific."
+      },
+      {
+        "name": "Punta Huina, Nuquí",
+        "region": "Chocó Department (Pacific coast)",
+        "difficulty": "Intermediate",
+        "wave_type": "Point break",
+        "break_type": "Rock point break into jungle-backed beach",
+        "swell_direction": "West to northwest",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August"
+        ],
+        "description": "A quality point break north of Nuquí, accessed by boat only from Nuquí town. Consistent, organized waves over a rocky point — better shape than beach breaks in the area. Extremely remote — accommodation is basic ecolodges only. Combine with whale watching and jungle exploration."
+      },
+      {
+        "name": "Juanchaco, Valle del Cauca",
+        "region": "Valle del Cauca Department (near Buenaventura)",
+        "difficulty": "Beginner to Intermediate",
+        "wave_type": "Beach break",
+        "break_type": "Beach break",
+        "swell_direction": "West Pacific",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "description": "The most accessible Pacific surf spot from Cali — reached by boat from Buenaventura (2 hours). Consistent beach break with manageable waves for beginners. Small surf school presence. Also a base for Uramba Bahía Málaga natural park — humpback whale nursery with some of the highest whale densities in the Pacific (July-October)."
+      },
+      {
+        "name": "Playa Capurganá",
+        "region": "Chocó Department (Caribbean/Pacific divide, Darién)",
+        "difficulty": "Beginner to Intermediate",
+        "wave_type": "Beach break",
+        "break_type": "Caribbean swells with jungle backdrop",
+        "swell_direction": "North and northwest Caribbean",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "description": "A remote and beautiful Caribbean beach accessible only by boat or small plane from Turbo. Colombians consider it paradise — crystal Caribbean water, coral reefs, and forest to the beach. Not a major surf destination but consistent small-medium waves and excellent snorkeling. Near the Panama border — be aware of FARC/ELN presence in the Darién region and stay in tourist areas."
+      }
+    ],
+    "hikes": [
+      {
+        "name": "Ciudad Perdida (Lost City) Trek",
+        "region": "Sierra Nevada de Santa Marta (Magdalena)",
+        "difficulty": "Hard",
+        "distance_km": 44,
+        "duration_days": 4,
+        "elevation_gain_m": 1200,
+        "description": "Colombia's greatest trekking adventure — a 4-day jungle trek to the 'Lost City' (Teyuna), a pre-Columbian city predating Machu Picchu by 650 years. Built by the Tayrona civilization around 800 AD, rediscovered in 1972. 1,260 stone steps, dense jungle, crossing rivers, indigenous Kogi, Arhuaco, and Wiwa communities. Must do with licensed tour company — no independent access.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "June",
+          "July",
+          "August"
+        ]
+      },
+      {
+        "name": "Valle de Cocora Wax Palm Circuit",
+        "region": "Quindío (coffee region, near Salento)",
+        "difficulty": "Moderate",
+        "distance_km": 12,
+        "duration_days": 1,
+        "elevation_gain_m": 500,
+        "description": "Walk among the world's tallest wax palms — Colombia's national tree reaching 60m — in the stunning Andean Cocora Valley. The trail climbs through cloud forest with hummingbirds and tanagers before descending through the palm-dotted valley floor. Extraordinary scenery combining Colombian Andes, national symbol plants, and cloud forest biodiversity.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "June",
+          "July",
+          "August"
+        ]
+      },
+      {
+        "name": "PNN El Cocuy Glacier Trek",
+        "region": "Boyacá Department (Andes)",
+        "difficulty": "Hard",
+        "distance_km": 60,
+        "duration_days": 5,
+        "elevation_gain_m": 2500,
+        "description": "Colombia's most spectacular high-altitude trek — around the Cocuy snow peaks (5,330m) through high páramo (tropical alpine grassland) with dramatic glaciated summits. Few tourists make the journey. The páramo ecosystem is among the world's fastest-changing due to climate change — glaciers retreating visibly. Indigenous U'wa territory — respect cultural protocols.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "June",
+          "July",
+          "August"
+        ]
+      },
+      {
+        "name": "Tayrona National Park — Pueblito Trek",
+        "region": "Magdalena (Caribbean coast)",
+        "difficulty": "Moderate",
+        "distance_km": 16,
+        "duration_days": 2,
+        "elevation_gain_m": 400,
+        "description": "Trek through jungle to Caribbean beaches and up to the ruins of Pueblito — a Tayrona indigenous village with stone platforms and pathways. The beaches (Cabo San Juan, Arrecifes, La Piscina) are among Colombia's most beautiful. El Cabañero trail circles the headland. Park closes October for ecological rest.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March",
+          "June",
+          "July",
+          "August"
+        ]
+      },
+      {
+        "name": "Serranía de la Macarena — Caño Cristales",
+        "region": "Meta Department (Llanos)",
+        "difficulty": "Easy to Moderate",
+        "distance_km": 8,
+        "duration_days": 1,
+        "elevation_gain_m": 100,
+        "description": "The 'River of Five Colors' or 'Most Beautiful River in the World' — a river with brilliant red aquatic plants (Macarenia clavígera), yellow sand, green algae, blue water, and white foam creating a psychedelic natural palette. Only visible July to November when the plants bloom. Access by small plane from Villavicencio.",
+        "best_months": [
+          "July",
+          "August",
+          "September",
+          "October",
+          "November"
+        ]
+      },
+      {
+        "name": "Nevado del Tolima Summit",
+        "region": "Tolima Department",
+        "difficulty": "Very Hard",
+        "distance_km": 30,
+        "duration_days": 3,
+        "elevation_gain_m": 3200,
+        "description": "Climb Colombia's most aesthetically perfect volcano — a near-perfect ice cone at 5,215m. Requires crampons and ice axe. Two-day approach through páramo grasslands and cloud forest. Guide mandatory. Acclimatize in Bogotá (2,600m) before attempting. Views of the Andean range from the summit.",
+        "best_months": [
+          "December",
+          "January",
+          "June",
+          "July",
+          "August"
+        ]
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Colombian Amazon (Leticia)",
+        "region": "Amazonas Department",
+        "species": [
+          "Pink river dolphin",
+          "Grey river dolphin",
+          "Jaguar",
+          "Tapir",
+          "Giant anteater",
+          "Anaconda",
+          "Poison dart frog",
+          "Caiman",
+          "Piranha",
+          "Macaw",
+          "1,000+ bird species"
+        ],
+        "description": "Colombia's Amazonian border town Leticia is the gateway to one of the most biodiverse corners of the planet — at the triple border of Colombia, Brazil, and Peru. River safaris, indigenous community visits, and exceptional bird diversity. The evening parrot roost in Parque Santander (thousands of parakeets returning at sunset) is an unforgettable free spectacle.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Bahía Málaga (Uramba NP) — Humpback Whale Nursery",
+        "region": "Valle del Cauca (Pacific coast near Buenaventura)",
+        "species": [
+          "Humpback whale (breeding and calving)",
+          "Spinner dolphin",
+          "Sea turtle",
+          "Spotted eagle ray",
+          "Frigatebird",
+          "Brown pelican"
+        ],
+        "description": "One of the world's most important humpback whale nurseries — hundreds of southern Pacific humpback whales give birth and nurse calves in the sheltered bay waters from July to October. Snorkeling alongside whale calves is surreal. Access from Buenaventura by boat (2 hours). The bay is also rich in coral and tropical fish.",
+        "best_months": [
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Serranía de la Macarena",
+        "region": "Meta Department",
+        "species": [
+          "Jaguar",
+          "Tapir",
+          "Giant anteater",
+          "Spectacled bear",
+          "500+ bird species",
+          "Caño Cristales aquatic plants (Macarenia)"
+        ],
+        "description": "One of Colombia's most biodiverse regions — an isolated mountain range rising from the Llanos that acts as a bridge between Andes, Amazon, and Orinoco ecosystems. Home to Caño Cristales (the 'River of Five Colors'). Wildlife viewing is excellent. Access by small plane from Villavicencio.",
+        "best_months": [
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Santuario de Flora y Fauna Malpelo (Pacific Ocean)",
+        "region": "Pacific Ocean (350km from Buenaventura)",
+        "species": [
+          "Whale shark (hundreds)",
+          "Scalloped hammerhead shark (schools of hundreds)",
+          "Silky shark",
+          "Galapagos shark",
+          "Manta ray",
+          "Giant Pacific manta ray"
+        ],
+        "description": "One of the world's top scuba diving destinations — a remote UNESCO World Heritage volcanic island surrounded by some of the most shark-dense waters on Earth. Schools of hundreds of hammerhead sharks, whale sharks year-round. Accessible only by liveaboard dive boats from Buenaventura (36 hours). For experienced divers only — strong currents.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      }
+    ],
+    "national_parks": [
+      {
+        "name": "Tayrona National Natural Park",
+        "region": "Magdalena Department (Caribbean coast, Sierra Nevada de Santa Marta)",
+        "area_km2": 150,
+        "description": "Colombia's most popular national park — a dramatic junction of jungle and Caribbean sea. White sand beaches backed by tropical forest, with pre-Columbian Tayrona ruins inland. Stunning beaches: Cabo San Juan, La Piscina, Arrecifes. Rich birdlife in the transition between Caribbean and Andean ecosystems. The park closes in October for ecological rest and Arrecifes has dangerous swimming currents.",
+        "highlights": [
+          "Cabo San Juan beach",
+          "Pueblito ruins trek",
+          "La Piscina snorkeling",
+          "Jungle wildlife",
+          "Hammock camping in the trees",
+          "Caribbean sunrise views"
+        ]
+      },
+      {
+        "name": "Los Flamencos Sanctuary",
+        "region": "Magdalena Department (Guajira Peninsula)",
+        "area_km2": 560,
+        "description": "Coastal lagoon system on the Guajira Peninsula with large flamingo colonies. Mangroves, sand bars, and shallow lagoon habitat. The Guajira Peninsula itself (extending to Punta Gallinas — Colombia's northernmost point) is an extraordinary desert landscape inhabited by the Wayúu indigenous people.",
+        "highlights": [
+          "Flamingo colonies",
+          "Wayúu indigenous culture",
+          "Punta Gallinas northernmost point",
+          "Desert dunes meeting Caribbean sea",
+          "Kite surfing (El Cabo de la Vela)"
+        ]
+      },
+      {
+        "name": "Amacayacu National Natural Park",
+        "region": "Amazonas Department",
+        "area_km2": 2930,
+        "description": "Colombia's main Amazon national park — accessible only by river from Leticia. Dense Amazon rainforest with extraordinary biodiversity. Guided tours through indigenous communities. River dolphin watching and nocturnal wildlife walks. One of the most biodiverse park areas in Colombia.",
+        "highlights": [
+          "River dolphin watching",
+          "Nocturnal Amazon walks",
+          "Indigenous community visits",
+          "Bird diversity",
+          "River expeditions",
+          "Victoria amazonica giant lily pads"
+        ]
+      },
+      {
+        "name": "PNN El Cocuy",
+        "region": "Boyacá Department",
+        "area_km2": 3068,
+        "description": "Colombia's most spectacular alpine national park — 17 snow peaks above 5,000m, glaciers, lakes, and high páramo ecosystems. The trekking circuit around the glaciated summits is Colombia's most dramatic mountain hike. The U'wa indigenous people consider the mountains sacred. Access requires permits due to U'wa territorial restrictions.",
+        "highlights": [
+          "Glaciated summits",
+          "Páramo ecosystem",
+          "Alpine lakes",
+          "U'wa indigenous territory",
+          "Trekking circuit",
+          "Pulpito del Diablo formation"
+        ]
+      },
+      {
+        "name": "Serranía de la Macarena National Park",
+        "region": "Meta Department",
+        "area_km2": 6292,
+        "description": "A biogeographic marvel — an isolated highland rising from the Llanos that serves as a bridge between three great ecosystems. Famous for Caño Cristales, the River of Five Colors. Jaguar, spectacled bear, and extraordinary bird diversity. Previously closed due to FARC presence, now reopening to tourism.",
+        "highlights": [
+          "Caño Cristales (July-November)",
+          "Jaguar territory",
+          "Bridge ecosystem (Andes-Amazon-Orinoco)",
+          "Bird diversity",
+          "Laguna La Macarena",
+          "River swimming in natural pools"
+        ]
+      }
+    ],
+    "danger_zones": [
+      {
+        "name": "Arauca Department",
+        "region": "Eastern border with Venezuela",
+        "risk_level": "Do Not Travel",
+        "description": "US State Dept Do Not Travel advisory. Active ELN operations, guerrilla violence, and drug trafficking. US government has extremely limited ability to provide emergency services."
+      },
+      {
+        "name": "Cauca Department (rural areas)",
+        "region": "Southwest Colombia",
+        "risk_level": "Do Not Travel (rural areas)",
+        "description": "FARC dissident groups and ELN operate in rural Cauca. Frequent violence and road interdictions. Tourist cities within Cauca (Popayán) are safer but monitor for travel disruptions."
+      },
+      {
+        "name": "Norte de Santander (rural)",
+        "region": "Northeast border with Venezuela",
+        "risk_level": "Do Not Travel",
+        "description": "ELN and FARC dissidents operate in rural areas near the Venezuelan border. Cúcuta city is accessible but avoid rural Norte de Santander. Trafficking routes and associated violence."
+      },
+      {
+        "name": "Nariño-Ecuador border zone",
+        "region": "Southern Colombia border",
+        "risk_level": "High",
+        "description": "Drug trafficking corridor with armed group presence. Travel through Ipiales (Ecuador border crossing) is generally safe but avoid rural areas of Nariño."
+      },
+      {
+        "name": "Darién Gap / Capurganá border",
+        "region": "Chocó border with Panama",
+        "risk_level": "High",
+        "description": "The Darién Gap has armed group presence (FARC dissidents, ELN). Capurganá tourist area is relatively safe but venturing beyond is extremely dangerous. The gap is being transited by migrants facing very dangerous conditions."
+      }
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Valle de Cocora Wax Palm Circuit",
+        "difficulty": "Moderate",
+        "duration": "1 day",
+        "region": "Quindío (coffee region, near Salento)",
+        "description": "Walk among the world's tallest wax palms — Colombia's national tree reaching 60m — in the stunning Andean Cocora Valley. The trail climbs through cloud forest with hummingbirds and tanagers before descending through the palm-dotted valley floor. Extraordinary scenery combining Colombian Andes, national symbol plants, and cloud forest biodiversity.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "June",
+          "July",
+          "August"
+        ],
+        "elevation_m": 500,
+        "notes": "",
+        "distance_km": 12,
+        "duration_days": 1
+      },
+      {
+        "name": "Serranía de la Macarena — Caño Cristales",
+        "difficulty": "Easy to Moderate",
+        "duration": "1 day",
+        "region": "Meta Department (Llanos)",
+        "description": "The 'River of Five Colors' or 'Most Beautiful River in the World' — a river with brilliant red aquatic plants (Macarenia clavígera), yellow sand, green algae, blue water, and white foam creating a psychedelic natural palette. Only visible July to November when the plants bloom. Access by small plane from Villavicencio.",
+        "best_months": [
+          "July",
+          "August",
+          "September",
+          "October",
+          "November"
+        ],
+        "elevation_m": 100,
+        "notes": "",
+        "distance_km": 8,
+        "duration_days": 1
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Ciudad Perdida (Lost City) Trek",
+        "difficulty": "Hard",
+        "duration": "4 days",
+        "region": "Sierra Nevada de Santa Marta (Magdalena)",
+        "description": "Colombia's greatest trekking adventure — a 4-day jungle trek to the 'Lost City' (Teyuna), a pre-Columbian city predating Machu Picchu by 650 years. Built by the Tayrona civilization around 800 AD, rediscovered in 1972. 1,260 stone steps, dense jungle, crossing rivers, indigenous Kogi, Arhuaco, and Wiwa communities. Must do with licensed tour company — no independent access.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "June",
+          "July",
+          "August"
+        ],
+        "elevation_m": 1200,
+        "notes": "",
+        "distance_km": 44,
+        "duration_days": 4
+      },
+      {
+        "name": "PNN El Cocuy Glacier Trek",
+        "difficulty": "Hard",
+        "duration": "5 days",
+        "region": "Boyacá Department (Andes)",
+        "description": "Colombia's most spectacular high-altitude trek — around the Cocuy snow peaks (5,330m) through high páramo (tropical alpine grassland) with dramatic glaciated summits. Few tourists make the journey. The páramo ecosystem is among the world's fastest-changing due to climate change — glaciers retreating visibly. Indigenous U'wa territory — respect cultural protocols.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "June",
+          "July",
+          "August"
+        ],
+        "elevation_m": 2500,
+        "notes": "",
+        "distance_km": 60,
+        "duration_days": 5
+      },
+      {
+        "name": "Tayrona National Park — Pueblito Trek",
+        "difficulty": "Moderate",
+        "duration": "2 days",
+        "region": "Magdalena (Caribbean coast)",
+        "description": "Trek through jungle to Caribbean beaches and up to the ruins of Pueblito — a Tayrona indigenous village with stone platforms and pathways. The beaches (Cabo San Juan, Arrecifes, La Piscina) are among Colombia's most beautiful. El Cabañero trail circles the headland. Park closes October for ecological rest.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March",
+          "June",
+          "July",
+          "August"
+        ],
+        "elevation_m": 400,
+        "notes": "",
+        "distance_km": 16,
+        "duration_days": 2
+      },
+      {
+        "name": "Nevado del Tolima Summit",
+        "difficulty": "Very Hard",
+        "duration": "3 days",
+        "region": "Tolima Department",
+        "description": "Climb Colombia's most aesthetically perfect volcano — a near-perfect ice cone at 5,215m. Requires crampons and ice axe. Two-day approach through páramo grasslands and cloud forest. Guide mandatory. Acclimatize in Bogotá (2,600m) before attempting. Views of the Andean range from the summit.",
+        "best_months": [
+          "December",
+          "January",
+          "June",
+          "July",
+          "August"
+        ],
+        "elevation_m": 3200,
+        "notes": "",
+        "distance_km": 30,
+        "duration_days": 3
+      }
+    ],
+    "top_national_parks": [
+      {
+        "name": "Tayrona National Natural Park",
+        "region": "Magdalena Department (Caribbean coast, Sierra Nevada de Santa Marta)",
+        "description": "Colombia's most popular national park — a dramatic junction of jungle and Caribbean sea. White sand beaches backed by tropical forest, with pre-Columbian Tayrona ruins inland. Stunning beaches: Cabo San Juan, La Piscina, Arrecifes. Rich birdlife in the transition between Caribbean and Andean ecosystems. The park closes in October for ecological rest and Arrecifes has dangerous swimming currents.",
+        "area_km2": 150,
+        "best_months": [],
+        "highlights": [
+          "Cabo San Juan beach",
+          "Pueblito ruins trek",
+          "La Piscina snorkeling",
+          "Jungle wildlife",
+          "Hammock camping in the trees",
+          "Caribbean sunrise views"
+        ]
+      },
+      {
+        "name": "Los Flamencos Sanctuary",
+        "region": "Magdalena Department (Guajira Peninsula)",
+        "description": "Coastal lagoon system on the Guajira Peninsula with large flamingo colonies. Mangroves, sand bars, and shallow lagoon habitat. The Guajira Peninsula itself (extending to Punta Gallinas — Colombia's northernmost point) is an extraordinary desert landscape inhabited by the Wayúu indigenous people.",
+        "area_km2": 560,
+        "best_months": [],
+        "highlights": [
+          "Flamingo colonies",
+          "Wayúu indigenous culture",
+          "Punta Gallinas northernmost point",
+          "Desert dunes meeting Caribbean sea",
+          "Kite surfing (El Cabo de la Vela)"
+        ]
+      },
+      {
+        "name": "Amacayacu National Natural Park",
+        "region": "Amazonas Department",
+        "description": "Colombia's main Amazon national park — accessible only by river from Leticia. Dense Amazon rainforest with extraordinary biodiversity. Guided tours through indigenous communities. River dolphin watching and nocturnal wildlife walks. One of the most biodiverse park areas in Colombia.",
+        "area_km2": 2930,
+        "best_months": [],
+        "highlights": [
+          "River dolphin watching",
+          "Nocturnal Amazon walks",
+          "Indigenous community visits",
+          "Bird diversity",
+          "River expeditions",
+          "Victoria amazonica giant lily pads"
+        ]
+      },
+      {
+        "name": "PNN El Cocuy",
+        "region": "Boyacá Department",
+        "description": "Colombia's most spectacular alpine national park — 17 snow peaks above 5,000m, glaciers, lakes, and high páramo ecosystems. The trekking circuit around the glaciated summits is Colombia's most dramatic mountain hike. The U'wa indigenous people consider the mountains sacred. Access requires permits due to U'wa territorial restrictions.",
+        "area_km2": 3068,
+        "best_months": [],
+        "highlights": [
+          "Glaciated summits",
+          "Páramo ecosystem",
+          "Alpine lakes",
+          "U'wa indigenous territory",
+          "Trekking circuit",
+          "Pulpito del Diablo formation"
+        ]
+      },
+      {
+        "name": "Serranía de la Macarena National Park",
+        "region": "Meta Department",
+        "description": "A biogeographic marvel — an isolated highland rising from the Llanos that serves as a bridge between three great ecosystems. Famous for Caño Cristales, the River of Five Colors. Jaguar, spectacled bear, and extraordinary bird diversity. Previously closed due to FARC presence, now reopening to tourism.",
+        "area_km2": 6292,
+        "best_months": [],
+        "highlights": [
+          "Caño Cristales (July-November)",
+          "Jaguar territory",
+          "Bridge ecosystem (Andes-Amazon-Orinoco)",
+          "Bird diversity",
+          "Laguna La Macarena",
+          "River swimming in natural pools"
+        ]
+      }
+    ]
+  },
+  "sports_and_activities": {
+    "top_activities": [
+      "Ciudad Perdida trekking (4-day jungle adventure)",
+      "Coffee farm tour (Eje Cafetero)",
+      "Salsa dancing in Cali",
+      "Pacific coast whale watching (Jul-Oct)",
+      "Pacific coast surfing (El Valle, Nuquí)",
+      "Tayrona National Park hiking and beaches",
+      "Medellín cable car and social urbanism tours",
+      "Amazon river safari from Leticia"
+    ],
+    "skiing_destinations": [],
+    "ski_season": "Not applicable",
+    "scuba_diving": true,
+    "world_class_destinations": [
+      "Malpelo Island (top 5 dive sites globally)",
+      "Bahía Málaga whale nursery",
+      "Ciudad Perdida trek",
+      "Caño Cristales (River of Five Colors)"
+    ],
+    "adventure_sports": [
+      "Paragliding (Medellín's San Félix — Colombian pilots are world-class)",
+      "White-water rafting (Chicamocha Canyon, San Gil)",
+      "Rock climbing (El Peñol near Guatapé)",
+      "Kitesurfing (Cabo de la Vela, Guajira Peninsula)",
+      "Canyoning (San Gil — Colombia's adventure capital)",
+      "Zip-lining (coffee region canopy tours)"
+    ]
+  },
+  "trip_styles": {
+    "backpacker": "One of the world's best backpacker destinations — exceptional value, great hostel culture in Medellín and Bogotá, legendary nightlife, and extraordinary diversity. Best route: Bogotá → Coffee Region → Medellín → Cartagena → Santa Marta → Tayrona.",
+    "luxury": "Rapidly developing — Cartagena has world-class boutique hotels in colonial buildings (Hotel Sofitel Legend Santa Clara, Casa San Agustín). Hacienda stays in the coffee region (Hacienda Venecia). Pacific coast ecolodges. Malpelo liveaboard diving.",
+    "family": "Good for older families — Cartagena walled city, coffee farm stays, Tayrona beaches. Safety concerns make cities challenging for very young children. Tayrona and coffee region are excellent. Amazon lodge stays.",
+    "adventure": "Outstanding — San Gil for adventure sports capital, Caño Cristales, Ciudad Perdida, Pacific surfing, El Cocuy mountaineering, Malpelo diving. Colombia punches above its weight for adventure diversity.",
+    "cultural": "Extraordinary — Cartagena's 500-year colonial history, Carnaval de Barranquilla (UNESCO), Medellín's transformation story, coffee culture, Cali salsa, pre-Columbian gold museum (Bogotá), indigenous communities (Tayrona, Amazon).",
+    "eco": "Exceptional — Pacific coast humpback whale nursery, Amazon river expeditions, Malpelo shark diving, Caño Cristales, Tayrona jungle-beach, Serranía de la Macarena ecosystem bridge."
+  },
+  "destinations": [
+    {
+      "name": "Medellín",
+      "type": "City",
+      "region": "Antioquia Department",
+      "description": "The 'City of Eternal Spring' — one of the world's most remarkable urban transformation stories. Once the world's murder capital (1990s), now a design, innovation, and culture powerhouse. The social urbanism story (cable cars to poor comunas, escalators to hillside neighborhoods, public libraries) is globally celebrated.",
+      "highlights": [
+        "El Poblado neighborhood",
+        "Comuna 13 graffiti tour (escalators + murals)",
+        "Guatapé colorful pueblo and El Peñol rock climb",
+        "Plaza Botero (Botero sculptures)",
+        "Parque Arví via cable car",
+        "Bandeja paisa experience"
+      ]
+    },
+    {
+      "name": "Cartagena",
+      "type": "City/History",
+      "region": "Bolívar Department",
+      "description": "Colombia's most beautiful city — a UNESCO World Heritage colonial port with colorful buildings festooned with bougainvillea, 7km of Spanish-era defensive walls, and some of South America's finest boutique hotels. Caribbean sea, Rosario Islands day trips, and extraordinary street food.",
+      "highlights": [
+        "Walled city (Ciudad Amurallada)",
+        "Castillo de San Felipe",
+        "Islas del Rosario (snorkeling)",
+        "Getsemaní neighborhood (street art)",
+        "Playa Blanca day trip",
+        "Sunset from the city walls"
+      ]
+    },
+    {
+      "name": "Coffee Region (Eje Cafetero)",
+      "type": "Nature/Culture",
+      "region": "Caldas, Quindío, Risaralda Departments",
+      "description": "The rolling green hills of Colombia's coffee heartland — UNESCO Cultural Landscape of Coffee. A region of colorful, flower-draped towns (Salento, Filandia, Jardín), coffee haciendas, and the extraordinary Valle de Cocora wax palm forest. The most beautifully maintained rural culture in Colombia.",
+      "highlights": [
+        "Coffee farm tours (Hacienda Venecia)",
+        "Valle de Cocora wax palms",
+        "Salento colorful streets",
+        "Hot springs at Santa Rosa de Cabal",
+        "Parque del Café theme park",
+        "Filandia artisan market"
+      ]
+    },
+    {
+      "name": "Tayrona National Park",
+      "type": "Nature/Beach",
+      "region": "Magdalena Department",
+      "description": "Where jungle meets Caribbean — one of South America's most spectacular national parks. Deserted beaches backed by tropical forest with pre-Columbian Tayrona ruins. Base in Santa Marta or El Rodadero. Trek to Cabo San Juan through jungle for swimming, hammock camping, and extraordinary scenery.",
+      "highlights": [
+        "Cabo San Juan del Guía",
+        "Pueblito ruins",
+        "La Piscina beach",
+        "Jungle hammock camping",
+        "Birding in the transition zone",
+        "Pre-Columbian stone paths"
+      ]
+    },
+    {
+      "name": "Bogotá",
+      "type": "City",
+      "region": "Cundinamarca Department (Capital District)",
+      "description": "The complex, energetic, 8-million-person capital at 2,600m — a world-class food scene, extraordinary museums (Gold Museum, Botero Museum), the UNESCO-listed La Candelaria historic center, and Usaquén's Sunday flea market. Cold, rainy, high-altitude, and fascinating.",
+      "highlights": [
+        "Gold Museum (Museo del Oro)",
+        "Cerro Monserrate (funicular/tram)",
+        "La Candelaria historic center",
+        "Zona G food scene",
+        "Usaquén Sunday market",
+        "Bogotá craft beer scene"
+      ]
+    },
+    {
+      "name": "Pacific Coast (Nuquí / El Valle)",
+      "type": "Nature/Surf/Wildlife",
+      "region": "Chocó Department",
+      "description": "Colombia's last great untouched coastline — one of the wettest places on Earth, where jungle pours into the Pacific. Humpback whales calving offshore, nesting sea turtles on the beach, surf at Playa El Almejal, and some of the most pristine ocean in the Americas. Accessible only by small plane or boat from Medellín.",
+      "highlights": [
+        "Humpback whale watching (Jul-Oct)",
+        "Playa El Almejal surf",
+        "Ensenada de Utría NP (UNESCO)",
+        "Sea turtle nesting",
+        "Jungle lodge ecolodges",
+        "Poison dart frog tracking"
+      ]
+    }
+  ],
+  "practical_info": {
+    "best_time_to_visit": "December to March and June to August for most of Colombia. July to October for Pacific coast whale watching.",
+    "visa_required_for_us": false,
+    "health_card_required": false,
+    "language_barrier": "High in rural areas and Pacific coast. Moderate in Medellín and Bogotá tourist zones. Growing English presence in El Poblado (Medellín).",
+    "solo_travel": "Manageable with heightened safety awareness. Join group tours for Ciudad Perdida and Pacific coast. Medellín's El Poblado is excellent for solo travelers. Never use street taxis.",
+    "guided_tour_required": false,
+    "internet_resources": [
+      "colombia.travel (ProColombia official)",
+      "parquesnacionales.gov.co for national parks",
+      "ciudadperdidatour.com for Lost City booking"
+    ]
+  },
+  "laws": {
+    "driving_license": "Foreign license valid for 90 days. International Driving Permit strongly recommended.",
+    "drug_laws": "Personal use of small amounts of marijuana and cocaine is technically decriminalized (dosis personal), but trafficking, sale, and large quantities carry extremely severe penalties (up to 20 years). Colombia has zero tolerance for foreigners involved in drug trafficking. Do NOT buy drugs from strangers.",
+    "alcohol_laws": "Legal drinking age 18. Open container permitted on beaches and in parks. Drunk driving: severe penalties.",
+    "smoking_laws": "Smoking banned in enclosed public spaces. Outdoor areas generally permitted.",
+    "photography_laws": "Photography of military installations, police operations, and judicial buildings prohibited. Photography of indigenous people requires their consent.",
+    "drone_laws": "Requires AEROCIVIL (Colombia civil aviation) permit. Registration required. Prohibited near airports, national parks without authorization, and military installations.",
+    "lgbt_legal": true,
+    "lgbt_legal_details": "Same-sex marriage legal since 2016 (Constitutional Court). Anti-discrimination protections. Bogotá and Medellín have active LGBTQ+ scenes. Colombia Pride is a significant event in Bogotá. Conservative attitudes in rural and Pacific coast communities — exercise discretion.",
+    "currency_export_limits": "Declaration required for cash over $10,000 USD at border crossings",
+    "items_restricted": [
+      "Pre-Columbian artifacts",
+      "Gold without DIAN documentation",
+      "Wildlife products",
+      "Narcotics"
+    ],
+    "local_laws_tourists_often_break": [
+      "Using street taxis — express kidnapping risk, also technically unsafe",
+      "Buying or accepting drugs from strangers — often setups for robbery or arrest",
+      "Narco-tourism — visiting Escobar sites with unauthorized operators",
+      "Photography of police operations"
+    ]
+  },
+  "family_travel": {
+    "family_friendliness_score": 7,
+    "notes": "Colombia can be excellent for families in the right destinations. Cartagena is very family-friendly (pool hotels, beaches). Coffee region haciendas are wonderful for children. Safety concerns require constant awareness in cities.",
+    "best_family_destinations": [
+      "Cartagena (walled city + beaches)",
+      "Coffee region hacienda stays",
+      "Tayrona (older children)",
+      "Guatapé (El Peñol rock)",
+      "Amazon lodge stays (older children)"
+    ],
+    "health_concerns": "Dengue risk in Cartagena and Santa Marta — repellent essential for children. Malaria prophylaxis needed for Amazon visits. Yellow fever vaccine recommended for Amazon and Pacific coast (consult pediatrician). Mild altitude effects possible in Bogotá for young children.",
+    "child_entry_requirements": "Children under 18 traveling with only one parent need notarized authorization from absent parent (this is enforced at Colombian borders and airports). Bring certified copy of birth certificate.",
+    "family_activities": [
+      "Cartagena horse carriage rides",
+      "Coffee farm tours (hands-on)",
+      "El Peñol rock climb in Guatapé (900 steps, rewarding views)",
+      "Amazon dolphin watching",
+      "Tayrona beach camping",
+      "Parque del Café theme park (coffee region)"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Limited — Colombian cities have improving but inconsistent accessibility. Medellín Metro has elevators at most stations. Bogotá Transmilenio is partially accessible. Historic Cartagena streets are cobblestone — challenging.",
+    "major_accessible_attractions": [
+      "Bogotá Gold Museum (accessible)",
+      "Medellín Metro (elevators)",
+      "Cartagena walled city (partially flat sections)",
+      "Coffee region farm tours (some accessible options)"
+    ],
+    "accessible_transport": "Medellín Metro with elevators. Bogotá SITP buses partially accessible. Uber and InDriver are the most practical for mobility-limited travelers.",
+    "notes": "Pacific coast destinations (Nuquí, El Valle) are not accessible — remote access by small plane and boat. City-based tourism in Bogotá, Medellín, and Cartagena is the most accessible option."
+  },
+  "gear": {
+    "essentials": [
+      "DEET 30%+ repellent (dengue nationwide, malaria on coast)",
+      "Waterproof dry bags for Pacific coast (extreme rainfall)",
+      "Sunscreen SPF 50+ (equatorial UV)",
+      "Rain jacket (coffee region and Pacific coast)",
+      "Unlocked phone for Colombian SIM card"
+    ],
+    "surf_specific": [
+      "Boardshorts only — water 26-28°C year-round (no wetsuit)",
+      "Waterproof bag for board shorts and electronics (Pacific coast rain)",
+      "Leash (beach break with strong current)",
+      "Rash guard for long sessions"
+    ],
+    "trekking_specific": [
+      "Rubber boots (Pacific coast jungle trails — permanently wet)",
+      "Lightweight hiking poles (Ciudad Perdida stone steps)",
+      "Rain gear (cloud forest)",
+      "Insect-proof clothing (Amazon)"
+    ],
+    "tech": [
+      "Offline maps (Maps.me) — Pacific coast and Amazon have no signal",
+      "Power bank (Pacific coast lodges on generator)",
+      "Plug adapter (Type A/B — same as US, no adapter needed)"
+    ],
+    "what_not_to_bring": [
+      "Expensive jewelry or watches",
+      "Visible camera equipment in cities",
+      "Large amounts of cash — use ATMs as needed"
+    ]
+  },
+  "history": [
+    {
+      "title": "Pre-Columbian Civilizations",
+      "content": "Colombia was home to the Muisca (Chibcha) civilization in the highlands — the source of the El Dorado legend due to their gold rituals at Lake Guatavita. The Tayrona civilization built Ciudad Perdida (650 CE) in the Sierra Nevada. Colombia held the greatest diversity of pre-Columbian gold cultures in the Americas, now displayed in Bogotá's Museo del Oro."
+    },
+    {
+      "title": "Spanish Conquest & Nueva Granada",
+      "content": "Gonzalo Jiménez de Quesada conquered the Muisca in 1537, founding Bogotá (Santa Fé de Bogotá). Colombia became the center of the Viceroyalty of New Granada (1717), which also governed modern Venezuela, Ecuador, and Panama. Cartagena became the primary port for Spanish treasure fleets."
+    },
+    {
+      "title": "Independence & Gran Colombia",
+      "content": "Colombia's independence movement produced some of South America's most important leaders. Simón Bolívar, born in Caracas (part of Nueva Granada), led the liberation of Colombia, Venezuela, Ecuador, Peru, and Bolivia. Gran Colombia (1819–1831) briefly united these nations before fragmenting. Colombia's independence is celebrated on July 20, 1810."
+    },
+    {
+      "title": "La Violencia & FARC",
+      "content": "The period known as La Violencia (1948–1958) killed an estimated 200,000 Colombians in partisan conflict between Liberals and Conservatives, sparked by the assassination of populist leader Jorge Eliécer Gaitán. This led to the formation of the FARC (1964) and other guerrilla groups. The 52-year FARC conflict killed 220,000 and displaced 7 million people before a peace deal in 2016."
+    },
+    {
+      "title": "Narco Era & Transformation",
+      "content": "Pablo Escobar and the Medellín Cartel made Colombia the world's cocaine capital in the 1980s–90s, with Escobar at his peak supplying 80% of US cocaine. Escobar was killed in 1993. Medellín transformed from the world's most dangerous city into an urban innovation model. Colombia's tourism, coffee, and flower industries have boomed since security improvements in the 2000s."
+    }
+  ]
+}

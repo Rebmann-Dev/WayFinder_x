@@ -1,0 +1,1017 @@
+{
+  "meta": {
+    "last_updated": "2026-04-12",
+    "confidence_score": 0.88,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "Responsible Travel Paraguay guide",
+      "Journey Latin America Paraguay",
+      "Paraguayan cuisine Wikipedia",
+      "MustSeeSpots Paraguay festivals",
+      "Travel With Hello Paraguay budget guide",
+      "Paraguay Birding Nature Chaco guide"
+    ],
+    "notes": "Paraguay is a landlocked country with no surf spots. It is one of South America's least-visited and most affordable destinations with Jesuit mission heritage and the Gran Chaco wilderness."
+  },
+  "identity": {
+    "name": "Paraguay",
+    "official_name": "Republic of Paraguay",
+    "code": "PY",
+    "iso3": "PRY",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Asunción",
+    "flag_emoji": "🇵🇾",
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "driving_side": "right",
+    "country_calling_code": "+595",
+    "internet_tld": ".py"
+  },
+  "language_and_money": {
+    "languages": [
+      "Spanish",
+      "Guaraní"
+    ],
+    "primary_language": "Spanish",
+    "english_proficiency": "Low — English is rarely spoken outside high-end hotels and some tour operators in Asunción. Learn basic Spanish before visiting. Guaraní is co-official and widely spoken among locals, particularly outside the capital.",
+    "currency": "PYG",
+    "currency_name": "Paraguayan Guaraní",
+    "currency_symbol": "₲",
+    "cash_vs_card": "Cash strongly preferred, especially outside Asunción. Cards accepted at major hotels, malls, and upscale restaurants in the capital. Carry cash for all interior travel.",
+    "typical_payment_methods": [
+      "Cash (Guaraní)",
+      "USD (accepted at some businesses)",
+      "Visa",
+      "Mastercard",
+      "Uber/MUV app in Asunción"
+    ],
+    "atm_availability": "ATMs widely available in Asunción (BBVA, Itaú, Banco Continental). Limited outside major cities. Charge fees — withdraw large amounts to minimize fees. Exchange rate approximately 7,000 PYG per USD.",
+    "tipping_culture": "Not mandatory. 10% at restaurants if service was good. Round up taxi fares.",
+    "tipping_etiquette": "Leave 10% at sit-down restaurants. Tip tour guides $10-15/day. Taxi drivers appreciate rounding up."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days",
+      "visa_type": "Stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for at least 6 months beyond intended stay",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": false,
+    "proof_of_funds_required": false,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Zero tolerance for drugs — do not carry packages for strangers across borders. Plant material restrictions apply. Cultural artifacts from Jesuit missions cannot be exported.",
+    "restricted_items": [
+      "Narcotics (zero tolerance)",
+      "Firearms without permit",
+      "Agricultural products without declaration",
+      "Cultural artifacts"
+    ],
+    "duty_free_allowances": "400 cigarettes or 25 cigars, 2 liters of alcohol, goods up to $300 value"
+  },
+  "health": {
+    "recommended_vaccines": [
+      "Hepatitis A",
+      "Typhoid",
+      "Hepatitis B",
+      "Tetanus-Diphtheria",
+      "Yellow Fever (if visiting jungle areas)"
+    ],
+    "required_vaccines": [
+      "Yellow Fever (required if arriving from endemic country)"
+    ],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Low risk overall. Some risk in northern Chaco departments (Alto Paraguay) bordering Bolivia and Brazil. Minimal risk in Asunción and southern Paraguay.",
+    "malaria_regions": [
+      "Alto Paraguay",
+      "Amambay (border with Brazil)"
+    ],
+    "malaria_prophylaxis_info": "Prophylaxis not generally recommended for standard tourist itineraries. Consult a travel medicine clinic for northern Chaco travel.",
+    "dengue_risk": "Moderate — dengue outbreaks occur, particularly in summer (December-March). Use insect repellent year-round in urban and rural areas.",
+    "altitude_sickness_risk": "None — Paraguay is entirely lowland with no significant elevation. Highest point is only 842m.",
+    "food_water_safety": "Tap water not safe to drink outside Asunción's treated supply (even then, bottled water recommended). Bottled water widely available. Food from established restaurants is generally safe.",
+    "air_quality_concerns": "Generally good. Asunción can have vehicle emissions issues in central areas. Agricultural burning in rural areas during dry season.",
+    "common_travel_illnesses": [
+      "Traveler's diarrhea",
+      "Dengue fever",
+      "Heat exhaustion (Chaco reaches 45°C+)",
+      "Sunburn"
+    ],
+    "pharmacy_access": "Pharmacies (farmacias) widely available in Asunción and major cities. Open late hours. Basic medications available OTC. Limited in remote Chaco.",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Good private hospitals in Asunción (Hospital Privado Francés, Clínica La Costa). Limited in provinces. Medical evacuations for serious cases may be to Buenos Aires or São Paulo.",
+    "emergency_medical_number": "141"
+  },
+  "safety": {
+    "overall_score": 58,
+    "travel_advisory_level_us": 1,
+    "travel_advisory_level_label": "Exercise Normal Precautions",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "Amambay, Canindeyu, and San Pedro departments — elevated crime near Brazilian border",
+      "Drug trafficking activity near Brazilian and Bolivian borders",
+      "Asunción generally safe for tourists",
+      "Petty theft in crowded markets"
+    ],
+    "crime_risk": "Low-moderate for standard tourist areas. Asunción and tourist sites (Jesuit missions, Encarnación) are safe with normal precautions. The northeastern border departments (Amambay, Canindeyu) near Brazil have elevated drug trafficking-related crime and should be approached with caution.",
+    "scam_risk": "Low — Paraguay has little organized tourism, so tourist-targeted scams are less common than in major South American cities. Taxi overcharging occurs.",
+    "transport_safety": "Buses between cities are reliable. Uber and MUV are available in Asunción (safer than street taxis). Road conditions outside main highways can be poor.",
+    "solo_female_travel_notes": "Generally safe in Asunción and tourist areas with normal precautions. Conservative dress recommended in rural and indigenous communities. Nightlife areas in Asunción are safe in groups.",
+    "lgbtq_notes": "No legal recognition of same-sex unions. LGBTQ activities exist in Asunción (particularly the Villa Morra neighborhood). Paraguay is more socially conservative than Argentina or Uruguay. Discretion recommended outside the capital.",
+    "night_safety": "Asunción's Villa Morra, Carmelitas, and Paseo La Galería areas are safe at night. Avoid Ciudad del Este center at night and border zones.",
+    "safe_areas": [
+      "Villa Morra (Asunción)",
+      "Carmelitas (Asunción)",
+      "Encarnación waterfront",
+      "Trinidad Jesuit ruins area",
+      "San Bernardino"
+    ],
+    "areas_to_avoid": [
+      "Ciudad del Este border area (night)",
+      "Amambay department",
+      "Canindeyu department",
+      "Concepción border region"
+    ],
+    "natural_disaster_risks": [
+      "Flooding in the Chaco during wet season (January-March)",
+      "Extreme heat in the Chaco (up to 48°C)",
+      "Occasional severe storms"
+    ],
+    "political_stability_notes": "Generally stable. Protests can occur near the Palacio de Gobierno in Asunción. Colorado Party has dominated politics for decades.",
+    "common_scams": [
+      "Taxi overcharging from the airport — use Uber or agree on price in advance",
+      "Money exchange on the street — use banks or official casas de cambio only",
+      "Fake police demanding to check belongings"
+    ],
+    "police_reliability": "Variable. The tourist police (Policia Turistica) are more helpful in Asunción.",
+    "emergency_numbers": {
+      "police": "911",
+      "ambulance": "141",
+      "fire": "132",
+      "general_emergency": "911"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Asunción",
+      "us_embassy_phone": "+595-21-213-715",
+      "us_embassy_website": "https://py.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "April to September — mild temperatures (15-25°C), low humidity. The Chaco is only bearable in winter (June-August). Encarnación Carnival is January-February. Semana Santa (Easter) brings major festivities.",
+    "climate_zones": [
+      "Eastern Paraguay (Oriental) — subtropical, hot and humid, 18-35°C",
+      "Gran Chaco (Occidental) — semi-arid to tropical savannah, extreme heat (up to 48°C in summer), cooler winters",
+      "Asunción — humid subtropical, hot summers (35°C+), mild winters (10-20°C)"
+    ],
+    "dry_season": "May to September (cooler, less rain, best for Chaco wildlife)",
+    "rainy_season": "October to April (heavy rain, flooding possible, Chaco can be impassable)",
+    "hurricane_typhoon_season": "Not in hurricane belt. Severe thunderstorms and pampero cold fronts can strike suddenly June-August.",
+    "surf_season": "Not applicable — landlocked country",
+    "trekking_best_months": [
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
+    "average_temp_by_month": {
+      "Asunción": "10-35°C (hot Dec-Mar 35°C+, cool Jun-Jul 10-20°C)",
+      "Chaco": "5-48°C (extreme range — winter nights 5°C, summer days 48°C)",
+      "Encarnación": "12-35°C, similar to Asunción"
+    },
+    "daylight_hours_by_season": "10-14 hours depending on season — long summer days, shorter winters"
+  },
+  "transport": {
+    "major_airports": [
+      "Silvio Pettirossi International Airport (ASU) — Luque/Asunción metropolitan area",
+      "Guaraní International Airport (AGT) — Ciudad del Este (Foz do Iguaçu area)"
+    ],
+    "main_airlines": [
+      "LATAM Paraguay",
+      "Paranair",
+      "Aerolíneas Argentinas",
+      "Copa Airlines"
+    ],
+    "airport_to_city_options": [
+      "Taxi ($15-25 to Asunción center, 20-30 min)",
+      "Uber ($10-18)",
+      "Hotel transfers"
+    ],
+    "public_transit_quality": "Asunción has colectivos (city buses) but they are confusing for tourists. Uber and MUV are much more practical. Intercity buses are the main form of long-distance travel — reliable and affordable.",
+    "intercity_bus_quality": "Good network connecting all major cities. Asunción to Encarnación (5-6 hours, $10-15); Asunción to Ciudad del Este (4-5 hours, $8-12). Multiple companies including Expresso Guaraní and La Encarnacena.",
+    "train_network_quality": "No active passenger rail",
+    "domestic_flights_useful": false,
+    "car_rental_recommended": true,
+    "road_conditions": "Ruta 1 (Asunción-Encarnación) and Ruta 2 (Asunción-Ciudad del Este) are well-maintained. Trans-Chaco Highway is paved to Mariscal Estigarribia but rough beyond. Rural roads in the Oriental region can be unpaved.",
+    "four_x_four_needed_regions": [
+      "Deep Chaco (beyond Mariscal Estigarribia)",
+      "Rural departments after rain",
+      "Cerro Corá National Park access"
+    ],
+    "ride_hailing_apps": [
+      "Uber",
+      "MUV"
+    ],
+    "taxi_safety_notes": "Use Uber or MUV in Asunción. Street taxis should be negotiated carefully — agree price before entering. Never take taxis from strangers.",
+    "ferry_routes": [
+      "Asunción to Clorinda, Argentina (via Remanso Ferry)",
+      "Pilcomayo River crossings to Argentina"
+    ],
+    "border_crossing_notes": "Main crossings: Puente de la Amistad (Ciudad del Este to Foz do Iguaçu, Brazil, extremely busy); Encarnación-Posadas to Argentina via international bridge; Clorinda-Asunción region to Argentina. Carry physical passport."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$30-50/day",
+    "daily_budget_midrange": "$60-100/day",
+    "daily_budget_comfort": "$120-200/day",
+    "hostel_avg": "$10-20/night",
+    "hotel_avg": "$30-70/night",
+    "meal_avg": "$3-8 (local restaurants $3-5, mid-range $8-15)",
+    "coffee_avg": "$1-2",
+    "beer_avg": "$1-3",
+    "local_transport_avg": "$0.50 (city bus), $3-8 (Uber)",
+    "sim_card_avg": "$5-10 for data package",
+    "coworking_day_pass_avg": "$10-20",
+    "surfboard_rental_avg": "Not applicable",
+    "value_for_money": "Excellent — Paraguay is one of South America's most affordable destinations. Meals, accommodation, and transport are all very cheap. Budget travelers can live well on $35-45/day."
+  },
+  "connectivity": {
+    "sim_card_providers": [
+      "Tigo",
+      "Personal",
+      "Claro"
+    ],
+    "esim_available": false,
+    "mobile_data_quality": "Good 4G coverage in Asunción and major cities. Limited in rural areas and deep Chaco. Tigo has the best coverage outside the capital.",
+    "wifi_quality": "Available in most hotels and cafes in Asunción. Slower in smaller towns. Improving rapidly.",
+    "coworking_available": true,
+    "best_remote_work_cities": [
+      "Asunción (Villa Morra, Carmelitas area)"
+    ],
+    "power_outlet_types": [
+      "C",
+      "L"
+    ],
+    "voltage": "220V, 50Hz",
+    "plug_adapter_needed_for_us": true,
+    "power_reliability": "Generally reliable in Asunción (hydroelectric power from Itaipú). Occasional outages in rural areas."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Villa Morra, Asunción — upscale, restaurants, nightlife, safe",
+      "Carmelitas, Asunción — central, walkable, boutique hotels",
+      "Encarnación — for Carnival season and Jesuit ruins access",
+      "San Bernardino — lake resort town near Asunción",
+      "Mariscal Estigarribia — Chaco gateway (limited options)"
+    ],
+    "budget_areas": [
+      "Asunción Centro",
+      "Asunción surrounding neighborhoods",
+      "Small guesthouses in Encarnación"
+    ],
+    "family_friendly_areas": [
+      "San Bernardino (lakeside)",
+      "Villa Morra Asunción",
+      "Encarnación waterfront (Costanera)"
+    ],
+    "nightlife_areas": [
+      "Villa Morra (Asunción)",
+      "Carmelitas (Asunción)",
+      "Encarnación (especially during Carnival)"
+    ],
+    "surf_towns": [],
+    "eco_lodges_available": true,
+    "peak_booking_season": "January-February (Carnival in Encarnación — book months ahead); July-August (cool season tourism)",
+    "accommodation_notes": "Encarnación Carnival (January-February) requires booking accommodation 3-6 months in advance. Chaco lodges are very basic — manage expectations."
+  },
+  "culture": {
+    "local_customs": [
+      "Guaraní language and culture are deeply embedded — even non-indigenous Paraguayans use Guaraní words and expressions",
+      "Tereré (cold yerba mate) is the national drink — sharing tereré with someone is an important social ritual",
+      "Paraguayans are very proud of their indigenous heritage, unique bilingualism, and resilience",
+      "Asado (barbecue) is a central social institution on weekends",
+      "Religion is central — Catholicism is deeply woven into public and private life"
+    ],
+    "dress_expectations": "Casual. Business casual in Asunción offices. Conservative dress in churches and during religious festivals. Modest clothing in indigenous communities.",
+    "religious_sensitivity": "Strongly Catholic. The Virgen de Caacupé (December 8) is the most important religious event in the country — millions of pilgrims. Respect processions and religious sites.",
+    "social_norms": [
+      "Paraguayans are warm and patient — take time to greet properly",
+      "Handshakes for men; women may offer a cheek kiss",
+      "Punctuality is relaxed in social settings",
+      "Offering tereré is a friendship gesture — it is rude to decline"
+    ],
+    "greeting_style": "Handshake between men. Women exchange a cheek kiss. 'Buenos días/tardes/noches' is always appropriate. In Guaraní: 'Mba'éichapa' (How are you?).",
+    "public_behavior_notes": "Conservative country — avoid loud or provocative behavior in public. Modesty in dress appreciated especially in smaller cities.",
+    "photography_etiquette": "Always ask permission before photographing indigenous community members or religious ceremonies.",
+    "bargaining_expected": false,
+    "important_holidays": [
+      "Carnaval Encarnaceno — January to February (5 Saturdays), Encarnación's legendary carnival with samba parades, considered second only to Rio de Janeiro in South America's Guinness record attendance",
+      "Día de San Blas — February 3, patron saint of Paraguay, masses and processions nationwide",
+      "San Juan Ára — June 23-24, midsummer bonfires, fireball football (pelota tatá), coal-walking, and traditional games in every town",
+      "Virgen de Caacupé — December 8, the biggest religious pilgrimage in Paraguay, millions walk to Caacupé basilica from across the country",
+      "Fiesta del Ñandutí — August, Areguá, celebrating Paraguay's iconic lace-weaving tradition with handicraft fair and music"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Must carry physical passport at all times — police can demand ID on the street",
+      "Zero tolerance DUI — legal blood alcohol limit is 0.00% for drivers",
+      "International Driving Permit required to rent a car",
+      "Zero drug tolerance — even small quantities can lead to serious imprisonment"
+    ]
+  },
+  "food": {
+    "dishes": [
+      {
+        "name": "Sopa Paraguaya",
+        "description": "The national dish despite its misleading name — not a soup but a dense, moist corn bread baked with fresh cheese, onions, eggs, and lard (or oil). Rich in protein and calories. Served at every asado and special occasion. The name supposedly originated from a presidential banquet mishap where too much cheese was added to cornmeal soup, turning it solid.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Chipa",
+        "description": "Paraguay's beloved cheese bread — ring-shaped rolls made from manioc (cassava) flour, eggs, fresh cheese, and anise seeds. Baked in traditional tatakuá clay ovens. Sold at every bus station, street corner, and market. About 70 varieties exist across the country. Crispy outside, chewy inside, intensely cheesy.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Asado",
+        "description": "The Paraguayan barbecue tradition — whole cuts of beef, pork ribs, chorizo, and morcilla (blood sausage) slow-cooked over hardwood charcoal. The social centerpiece of Paraguayan life, especially on weekends. The parrilla (grill) dominates family gatherings. Often served with sopa paraguaya and fresh mandioca.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Bori-Bori",
+        "description": "A traditional corn dumpling soup — small balls of cornmeal and fresh cheese are simmered in a fragrant chicken or beef broth with vegetables and herbs. Declared Immaterial Cultural Heritage of Paraguay. Warming, hearty, and beloved as a cold-weather comfort food.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Mbejú",
+        "description": "A flat, crispy cassava and cheese cake — made from manioc starch (almidón), fresh cheese, eggs, and lard, cooked on a hot dry pan or over embers. One of the oldest Guaraní foods, this is street food and breakfast staple. Gluten-free by nature.",
+        "region": "Nationwide (strong in rural areas)"
+      },
+      {
+        "name": "Pira Caldo",
+        "description": "A traditional river fish soup — fresh surubí, dorado, or sábalo from Paraguay's rivers simmered with onion, tomato, peppers, herbs, and mandioca. Guaraní fishing culture distilled into a bowl. The best versions come from riverside towns along the Paraná and Paraguay rivers.",
+        "region": "Riverside towns (Asunción, Concepción, San Juan Bautista)"
+      },
+      {
+        "name": "Kivevé",
+        "description": "A sweet-savory pumpkin corn pudding — andaí pumpkin cooked with corn flour, milk, onion, salt, and fresh cheese. Creamy, comforting, and unique to Paraguay. Served as a side dish at asados or as a standalone comfort food.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Empanadas Paraguayas",
+        "description": "Baked or fried pastry pockets filled with ground beef, onion, hard-boiled egg, and olives. Paraguayan empanadas are slightly thicker than Argentine versions and often include local spices. A ubiquitous snack at markets, bus stations, and street food stalls.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Locro",
+        "description": "A thick, hearty stew made from dried hominy corn (choclo), beans, pork or beef, and vegetables. Declared Immaterial Cultural Heritage of Paraguay alongside bori-bori. A winter staple that dates to pre-Columbian Guaraní cooking traditions.",
+        "region": "Nationwide (winter staple)"
+      },
+      {
+        "name": "Surubí al Disco",
+        "description": "Fresh surubí catfish (a prized river fish that can reach 1.5m long) cooked in a large steel disc with tomatoes, onions, garlic, peppers, and local spices. A celebratory dish in fishing communities along the Paraguay and Paraná rivers.",
+        "region": "Fishing communities along major rivers"
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Tereré",
+        "description": "Cold brewed yerba mate — dried yerba mate leaves steeped in ice-cold water (plain or with medicinal herbs like mint, cedrón, or burrito). Sipped through a metal bombilla straw from a shared guampa (container). The national drink and social ritual of Paraguay. Sharing tereré is an act of friendship and community."
+      },
+      {
+        "name": "Mate Cocido",
+        "description": "Hot yerba mate brewed like tea, served with milk and sugar. The morning staple drunk at home before work. Less ceremonial than tereré but equally important to Paraguayan daily life."
+      },
+      {
+        "name": "Caña",
+        "description": "Paraguay's traditional sugar cane spirit, harsher than Argentine caña. Drunk straight or mixed with herbs. The rural equivalent of whiskey — what a Paraguayan campesino reaches for at the end of a hard day."
+      },
+      {
+        "name": "Clericó",
+        "description": "A popular party punch of white wine mixed with fresh fruit (oranges, peaches, strawberries), sugar, and soda water. Common at festivals and social gatherings, particularly in Encarnación during Carnival."
+      },
+      {
+        "name": "Cocido",
+        "description": "A warming winter drink — yerba mate is briefly toasted in a pot then sweetened with sugar (which caramelizes), and hot water or milk is added. The sugar burns off the bitterness. A distinctly Paraguayan preparation unique to the country."
+      },
+      {
+        "name": "Mosto",
+        "description": "Fresh sugar cane juice pressed at roadside stalls — sweet, green, and consumed immediately. Extremely popular especially in rural areas and markets. Sometimes fermented into a mildly alcoholic drink called chicha."
+      }
+    ],
+    "street_food_safety": "Generally safe at busy stalls. Empanadas, chipa, and mbejú are safe hot street foods. Exercise caution with raw salads in rural areas.",
+    "vegetarian_friendliness": "Limited — Paraguayan cuisine is heavily meat-focused. Sopa paraguaya, mbejú, chipa, and kivevé are naturally vegetarian. Restaurants in Asunción are increasingly accommodating.",
+    "vegan_friendliness": "Difficult — most traditional dishes contain eggs, cheese, or lard. Asunción has a few vegan options; rural areas have almost none.",
+    "must_try_drinks": [
+      "Tereré (shared cold mate with herbs)",
+      "Caña",
+      "Cocido (hot caramelized mate)",
+      "Mosto (fresh sugar cane juice)",
+      "Clericó"
+    ],
+    "regional_specialties": [
+      "Asunción: Asado, chipa, sopa paraguaya, river fish from waterfront restaurants",
+      "Encarnación / Misiones: Asado and regional dishes with Argentine influence",
+      "Chaco: Roast meat from Mennonite farms (excellent dairy and beef), jacaré (caiman) in indigenous communities"
+    ],
+    "drinking_water_notes": "Bottled water recommended everywhere. Asunción tap water is treated but bottled water preferred.",
+    "alcohol_rules": "Legal drinking age 18. Ley Seca (dry law) the day before and day of elections — stores physically tape off alcohol sections. Zero alcohol tolerance for drivers.",
+    "signature_dishes": [
+      {
+        "name": "Sopa Paraguaya",
+        "description": "The national dish despite its misleading name — not a soup but a dense, moist corn bread baked with fresh cheese, onions, eggs, and lard (or oil). Rich in protein and calories. Served at every asado and special occasion. The name supposedly originated from a presidential banquet mishap where too much cheese was added to cornmeal soup, turning it solid.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Chipa",
+        "description": "Paraguay's beloved cheese bread — ring-shaped rolls made from manioc (cassava) flour, eggs, fresh cheese, and anise seeds. Baked in traditional tatakuá clay ovens. Sold at every bus station, street corner, and market. About 70 varieties exist across the country. Crispy outside, chewy inside, intensely cheesy.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Asado",
+        "description": "The Paraguayan barbecue tradition — whole cuts of beef, pork ribs, chorizo, and morcilla (blood sausage) slow-cooked over hardwood charcoal. The social centerpiece of Paraguayan life, especially on weekends. The parrilla (grill) dominates family gatherings. Often served with sopa paraguaya and fresh mandioca.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Bori-Bori",
+        "description": "A traditional corn dumpling soup — small balls of cornmeal and fresh cheese are simmered in a fragrant chicken or beef broth with vegetables and herbs. Declared Immaterial Cultural Heritage of Paraguay. Warming, hearty, and beloved as a cold-weather comfort food.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Mbejú",
+        "description": "A flat, crispy cassava and cheese cake — made from manioc starch (almidón), fresh cheese, eggs, and lard, cooked on a hot dry pan or over embers. One of the oldest Guaraní foods, this is street food and breakfast staple. Gluten-free by nature.",
+        "region": "Nationwide (strong in rural areas)"
+      },
+      {
+        "name": "Pira Caldo",
+        "description": "A traditional river fish soup — fresh surubí, dorado, or sábalo from Paraguay's rivers simmered with onion, tomato, peppers, herbs, and mandioca. Guaraní fishing culture distilled into a bowl. The best versions come from riverside towns along the Paraná and Paraguay rivers.",
+        "region": "Riverside towns (Asunción, Concepción, San Juan Bautista)"
+      },
+      {
+        "name": "Kivevé",
+        "description": "A sweet-savory pumpkin corn pudding — andaí pumpkin cooked with corn flour, milk, onion, salt, and fresh cheese. Creamy, comforting, and unique to Paraguay. Served as a side dish at asados or as a standalone comfort food.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Empanadas Paraguayas",
+        "description": "Baked or fried pastry pockets filled with ground beef, onion, hard-boiled egg, and olives. Paraguayan empanadas are slightly thicker than Argentine versions and often include local spices. A ubiquitous snack at markets, bus stations, and street food stalls.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Locro",
+        "description": "A thick, hearty stew made from dried hominy corn (choclo), beans, pork or beef, and vegetables. Declared Immaterial Cultural Heritage of Paraguay alongside bori-bori. A winter staple that dates to pre-Columbian Guaraní cooking traditions.",
+        "region": "Nationwide (winter staple)"
+      },
+      {
+        "name": "Surubí al Disco",
+        "description": "Fresh surubí catfish (a prized river fish that can reach 1.5m long) cooked in a large steel disc with tomatoes, onions, garlic, peppers, and local spices. A celebratory dish in fishing communities along the Paraguay and Paraná rivers.",
+        "region": "Fishing communities along major rivers"
+      }
+    ]
+  },
+  "outdoors": {
+    "surf_spots": [],
+    "hikes": [
+      {
+        "name": "Cerro Corá National Park Trails",
+        "region": "Amambay (northeast Paraguay)",
+        "difficulty": "Easy to Moderate",
+        "distance_km": 15,
+        "duration_days": 1,
+        "elevation_gain_m": 300,
+        "description": "Paraguay's largest national park (5,538 km²) and site of the final battle of the War of the Triple Alliance (1870). Trails through dense Atlantic Forest with sandstone mesas and cave paintings from pre-Columbian inhabitants. The park is rich in wildlife including tapir, peccary, and hundreds of bird species. A historic and natural gem rarely visited by foreigners.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Ybycuí National Park Waterfall Trails",
+        "region": "Paraguarí (southeast Paraguay)",
+        "difficulty": "Easy",
+        "distance_km": 12,
+        "duration_days": 1,
+        "elevation_gain_m": 150,
+        "description": "Paraguay's most visited national park — 500 km² of Atlantic Forest with waterfalls, swimming holes, and the ruins of a 19th-century iron foundry (La Rosada). Multiple short trails lead to cascading waterfalls and pristine rivers. Excellent birdwatching. Only 150km from Asunción — perfect for a day trip.",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Chaco Wildlife Drive / Trail, Teniente Enciso",
+        "region": "Alto Paraguay (Gran Chaco)",
+        "difficulty": "Easy (vehicle-based)",
+        "distance_km": 40,
+        "duration_days": 2,
+        "elevation_gain_m": 20,
+        "description": "Teniente Agripino Enciso National Park in the deep Chaco (near Bolivian border) protects one of South America's last great wilderness areas. Guided vehicle-based wildlife drives through dry forest, salt flats, and thorn scrub — the habitat of the Chacoan Peccary (believed extinct until 1975), Maned Wolf, Giant Armadillo, and over 300 bird species. Distances are vast and roads can be impassable after rain.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Jesuit Mission Circuit Walk",
+        "region": "Misiones / Itapúa",
+        "difficulty": "Easy",
+        "distance_km": 5,
+        "duration_days": 1,
+        "elevation_gain_m": 30,
+        "description": "Walk through the UNESCO World Heritage Jesuit mission ruins of La Santísima Trinidad del Paraná and Jesús de Tavarangue. Remarkably preserved 17th-18th century red sandstone churches, plazas, and community structures where Guaraní people lived under Jesuit direction for over a century. The circuit connects both sites (30km apart by road) with guided walks through the ruins.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Médanos del Chaco Dune Walk",
+        "region": "Boquerón (Central Chaco)",
+        "difficulty": "Moderate",
+        "distance_km": 8,
+        "duration_days": 1,
+        "elevation_gain_m": 40,
+        "description": "Walk through the unusual sand dunes of the Chaco near Mariscal Estigarribia — an unexpected desert landscape in the middle of South America's largest wilderness. The surrounding area supports Giant Anteater, Armadillo, Pampas Deer, and Rhea. Best combined with birdwatching in adjacent dry forest.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Gran Chaco Wilderness",
+        "region": "Boquerón and Alto Paraguay departments",
+        "species": [
+          "Chacoan Peccary",
+          "Giant Anteater",
+          "Maned Wolf",
+          "Giant Armadillo",
+          "Pampas Deer",
+          "Rhea",
+          "Jabiru Stork",
+          "Chaco Eagle",
+          "Ocelot",
+          "Puma",
+          "Giant Screech-Owl",
+          "Crowned Solitary Eagle"
+        ],
+        "description": "The Paraguayan Gran Chaco covers over 60% of the country and is one of South America's great wildlife frontiers. The dry forest, salt flats, wetlands, and gallery forest support incredible biodiversity including endemic species found nowhere else. The Chacoan Peccary (Catagonus wagneri) was believed extinct until rediscovered alive in 1975. Best experienced on guided tours from Filadelfia (Mennonite town) or via established estancias.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Ñeembucú Wetlands (Paraguayan Pantanal)",
+        "region": "Ñeembucú department (southwest)",
+        "species": [
+          "Capybara",
+          "Caiman",
+          "Jabiru Stork",
+          "Giant Otter",
+          "Anaconda",
+          "Marsh Deer",
+          "Comb Duck",
+          "Boat-billed Heron",
+          "Hyacinth Macaw"
+        ],
+        "description": "Paraguay's extension of the Pantanal ecosystem — the world's largest tropical wetland. Flooded grasslands and oxbow lakes bordering Argentina teem with wildlife. Less visited than the Brazilian or Bolivian Pantanal but equally spectacular. Accessible by boat from Pilar.",
+        "best_months": [
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Cerro Corá National Park",
+        "region": "Amambay",
+        "species": [
+          "Tapir",
+          "Peccary",
+          "Brocket Deer",
+          "Armadillo",
+          "Toucans",
+          "Harpy Eagle",
+          "King Vulture",
+          "Boa Constrictor"
+        ],
+        "description": "Paraguay's largest national park protecting a significant remnant of the interior Atlantic Forest. The sandstone mesas and cave art add archaeological interest to the wildlife viewing. Very few visitors means the wildlife is less disturbed.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      }
+    ],
+    "national_parks": [
+      {
+        "name": "Cerro Corá National Park",
+        "region": "Amambay",
+        "area_km2": 5538,
+        "description": "Paraguay's largest national park, established on the site of the final battle of the devastating War of the Triple Alliance (1864-1870), where President Francisco Solano López died. Protects the last significant Atlantic Forest remnant in northern Paraguay with sandstone mesas, cave paintings, rivers, and rich wildlife. Very few tourists visit, ensuring pristine conditions.",
+        "highlights": [
+          "Cave paintings (Panaambí rock art)",
+          "Historic battlefield site (Lopez death site)",
+          "Atlantic Forest biodiversity",
+          "Sandstone plateau trails",
+          "River swimming holes",
+          "King Vulture and Harpy Eagle sightings"
+        ]
+      },
+      {
+        "name": "Ybycuí National Park",
+        "region": "Paraguarí",
+        "area_km2": 500,
+        "description": "Paraguay's most visited national park, 150km southeast of Asunción. Dense Atlantic Forest with spectacular waterfalls, crystal-clear rivers for swimming, and the ruins of La Rosada — a 19th-century iron foundry that supplied cannons during the Triple Alliance War. Day-trip favorite from the capital.",
+        "highlights": [
+          "La Rosada iron foundry ruins",
+          "Multiple waterfalls and swimming holes",
+          "Atlantic Forest birdwatching",
+          "Family-friendly trails",
+          "Camping facilities"
+        ]
+      },
+      {
+        "name": "Teniente Agripino Enciso National Park",
+        "region": "Boquerón (deep Chaco)",
+        "area_km2": 800,
+        "description": "Remote Chaco wilderness park near the Bolivian border, protecting one of the last intact dry forest ecosystems in the Gran Chaco. The habitat of the Chacoan Peccary, Giant Armadillo, and over 300 bird species including the endemic Chaco Nothura. Accessible only via the Trans-Chaco Highway in a 4x4 vehicle.",
+        "highlights": [
+          "Chacoan Peccary (endemic, near-threatened)",
+          "Crested Eagle sightings",
+          "Salt flats and dry forest landscape",
+          "Night drives for armadillo and peccary",
+          "True wilderness immersion with no other tourists"
+        ]
+      },
+      {
+        "name": "Lago Ypacaraí Natural Reserve",
+        "region": "Cordillera (near Asunción)",
+        "area_km2": 60,
+        "description": "A shallow lake and surrounding wetlands 35km from Asunción. Famous in Paraguayan culture — the lake is the subject of a beloved national folk song. Birdwatching, kayaking, and visits to the lakeside resort town of San Bernardino (summer playground for Asunceños).",
+        "highlights": [
+          "Birdwatching (herons, egrets, caimans)",
+          "San Bernardino lakeside town",
+          "Kayaking and boat tours",
+          "Weekend escape from Asunción",
+          "Paraguayan folk culture site"
+        ]
+      }
+    ],
+    "danger_zones": [
+      {
+        "name": "Northeast Border with Brazil (Amambay/Canindeyu)",
+        "region": "Amambay and Canindeyu departments",
+        "risk_level": "High",
+        "description": "Drug trafficking activity from Brazil creates elevated crime risk in these border departments. Pedro Juan Caballero (Amambay capital) has experienced organized crime-related violence. Avoid if possible; if visiting, stay alert and don't travel at night."
+      },
+      {
+        "name": "Deep Chaco in Wet Season",
+        "region": "Alto Paraguay and Boquerón",
+        "risk_level": "Moderate",
+        "description": "During the wet season (October-April), the Chaco roads can become completely impassable, stranding vehicles for days. Extreme heat (45°C+) in summer creates dangerous conditions. Only travel with experienced guides and a well-equipped 4x4."
+      }
+    ],
+    "top_national_parks": [
+      "Cerro Corá — Atlantic Forest, cave paintings, historical battlefield",
+      "Ybycuí — waterfalls, Atlantic Forest, accessible from Asunción",
+      "Teniente Enciso — deep Chaco wildlife, Chacoan Peccary",
+      "Lago Ypacaraí — birdwatching, lakeside recreation"
+    ],
+    "waterfalls": [
+      "Saltos del Monday — on the Monday River near Ciudad del Este, dramatic drop into Atlantic Forest canyon",
+      "Ybycuí Falls — multiple cascades within Ybycuí National Park",
+      "Toro Candil waterfall — Guairaó region, hidden gem in forest"
+    ],
+    "rivers": [
+      "Paraguay River — the country's main artery, divides the country between oriental and Chaco regions",
+      "Paraná River — eastern border with Argentina/Brazil, world's 7th longest river",
+      "Pilcomayo River — northern border with Argentina through the Chaco",
+      "Ypané River — northern Paraguay interior"
+    ],
+    "wildlife": [
+      "Chacoan Peccary — critically endangered, Paraguay's unique endemic mammal",
+      "Giant Anteater — Chaco and Ñeembucú wetlands",
+      "Maned Wolf — grasslands of eastern Paraguay",
+      "Capybara — widespread in wetland areas",
+      "Jabiru Stork — Paraguay's largest bird, symbol of the Chaco",
+      "Hyacinth Macaw — Ñeembucú and Chaco",
+      "Anaconda — wetland areas",
+      "Caiman — rivers and wetlands throughout",
+      "Harpy Eagle — Cerro Corá Atlantic Forest"
+    ],
+    "birdwatching_hotspots": [
+      "Chaco region (Filadelfia base) — Chaco Eagle, Crowned Solitary Eagle, Chaco Nothura, 500+ species",
+      "Ñeembucú wetlands — Hyacinth Macaw, Jabiru Stork, Marsh Deer",
+      "Cerro Corá — Atlantic Forest endemics",
+      "Itaipú Reservoir — waterbirds, migratory species",
+      "Encarnación area — transitional forest birds"
+    ],
+    "stargazing_spots": [
+      "Chaco (Mennonite colonies, Filadelfia area) — virtually no light pollution, exceptional Milky Way",
+      "Cerro Corá — remote location with dark skies"
+    ],
+    "scenic_drives": [
+      "Trans-Chaco Highway — Asunción to Mariscal Estigarribia through flat wilderness",
+      "Ruta 1 — Asunción to Encarnación through Mission country",
+      "Circuito de Oro — Asunción surroundings through colonial towns and hills"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Cerro Corá National Park Trails",
+        "difficulty": "Easy to Moderate",
+        "duration": "1 day",
+        "region": "Amambay (northeast Paraguay)",
+        "description": "Paraguay's largest national park (5,538 km²) and site of the final battle of the War of the Triple Alliance (1870). Trails through dense Atlantic Forest with sandstone mesas and cave paintings from pre-Columbian inhabitants. The park is rich in wildlife including tapir, peccary, and hundreds of bird species. A historic and natural gem rarely visited by foreigners.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 300,
+        "notes": "",
+        "distance_km": 15,
+        "duration_days": 1
+      },
+      {
+        "name": "Ybycuí National Park Waterfall Trails",
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "region": "Paraguarí (southeast Paraguay)",
+        "description": "Paraguay's most visited national park — 500 km² of Atlantic Forest with waterfalls, swimming holes, and the ruins of a 19th-century iron foundry (La Rosada). Multiple short trails lead to cascading waterfalls and pristine rivers. Excellent birdwatching. Only 150km from Asunción — perfect for a day trip.",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 150,
+        "notes": "",
+        "distance_km": 12,
+        "duration_days": 1
+      },
+      {
+        "name": "Jesuit Mission Circuit Walk",
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "region": "Misiones / Itapúa",
+        "description": "Walk through the UNESCO World Heritage Jesuit mission ruins of La Santísima Trinidad del Paraná and Jesús de Tavarangue. Remarkably preserved 17th-18th century red sandstone churches, plazas, and community structures where Guaraní people lived under Jesuit direction for over a century. The circuit connects both sites (30km apart by road) with guided walks through the ruins.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "elevation_m": 30,
+        "notes": "",
+        "distance_km": 5,
+        "duration_days": 1
+      },
+      {
+        "name": "Médanos del Chaco Dune Walk",
+        "difficulty": "Moderate",
+        "duration": "1 day",
+        "region": "Boquerón (Central Chaco)",
+        "description": "Walk through the unusual sand dunes of the Chaco near Mariscal Estigarribia — an unexpected desert landscape in the middle of South America's largest wilderness. The surrounding area supports Giant Anteater, Armadillo, Pampas Deer, and Rhea. Best combined with birdwatching in adjacent dry forest.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 40,
+        "notes": "",
+        "distance_km": 8,
+        "duration_days": 1
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Chaco Wildlife Drive / Trail, Teniente Enciso",
+        "difficulty": "Easy (vehicle-based)",
+        "duration": "2 days",
+        "region": "Alto Paraguay (Gran Chaco)",
+        "description": "Teniente Agripino Enciso National Park in the deep Chaco (near Bolivian border) protects one of South America's last great wilderness areas. Guided vehicle-based wildlife drives through dry forest, salt flats, and thorn scrub — the habitat of the Chacoan Peccary (believed extinct until 1975), Maned Wolf, Giant Armadillo, and over 300 bird species. Distances are vast and roads can be impassable after rain.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 20,
+        "notes": "",
+        "distance_km": 40,
+        "duration_days": 2
+      }
+    ]
+  },
+  "sports_and_activities": {
+    "surfing": "Not applicable — landlocked country",
+    "fishing": "Excellent freshwater fishing in Paraguay and Paraná rivers — surubí, dorado, and sábalo are prized catches",
+    "birdwatching": "World-class Chaco birding — 700+ species countrywide, 30+ Chaco endemics",
+    "wildlife_safari": "Chaco game drives and Rupununi-style mammal spotting",
+    "horse_riding": "Estancia-based riding available throughout rural Paraguay",
+    "kayaking_canoeing": "Paraguay River and Paraná River paddling, Ñeembucú wetland boat tours",
+    "football": "National obsession — attending an Olimpia or Cerro Porteño game in Asunción is a cultural experience",
+    "golf": "Courses in Asunción area"
+  },
+  "trip_styles": {
+    "eco_tourism": "Growing sector — Chaco wildlife and Atlantic Forest remnants attract serious naturalists",
+    "adventure": "Chaco 4x4 expeditions, river fishing",
+    "history_culture": "Jesuit missions (UNESCO World Heritage), War of the Triple Alliance sites, Guaraní cultural heritage",
+    "budget": "One of South America's best-value destinations for all traveler types",
+    "off_beaten_path": "Paraguay receives very few tourists — travelers seeking genuine authenticity will find it here",
+    "birdwatching": "Exceptional Chaco birding for specialists"
+  },
+  "destinations": [
+    {
+      "name": "Asunción",
+      "region": "Central/Capital",
+      "description": "One of South America's oldest and most underrated capitals. Highlights include the Palacio de López (presidential palace), Panteón Nacional de los Héroes, Mercado Central, and the bohemian neighborhoods of Loma San Jerónimo and the Manzana de la Rivera cultural center. The riverside Costanera is the city's social heart at sunset."
+    },
+    {
+      "name": "La Santísima Trinidad del Paraná",
+      "region": "Itapúa",
+      "description": "The most impressive and best-preserved Jesuit mission ruin in Paraguay — a UNESCO World Heritage Site. The largest of all Jesuit reductions in the region, it once housed 2,000-3,000 Guaraní people. Elaborate red-brick church, residential quarters, and indigenous workshops remain. Combined with nearby Jesús de Tavarangue (also UNESCO)."
+    },
+    {
+      "name": "Encarnación",
+      "region": "Itapúa",
+      "description": "Paraguay's second city and the Carnival Capital of Paraguay. The renovated Costanera de Encarnación (2.5km riverside promenade with beaches, restaurants, and recreation) has transformed the city. Home to Paraguay's most spectacular Carnival (January-February) — declared the best in South America by some. Connected to Posadas, Argentina by international bridge."
+    },
+    {
+      "name": "Gran Chaco",
+      "region": "Boquerón / Alto Paraguay",
+      "description": "South America's second-largest biome after the Amazon — covering 62% of Paraguay. The Mennonite colony town of Filadelfia is the gateway. German-speaking Mennonite communities have built a prosperous agricultural civilization in this harsh environment. Wildlife drives to Teniente Enciso National Park for Chacoan peccary and 500+ bird species."
+    },
+    {
+      "name": "Ciudad del Este",
+      "region": "Alto Paraná",
+      "description": "Paraguay's second-largest city and one of the world's largest duty-free shopping zones. Near the Iguazú Falls (Argentina side), Itaipú Hydroelectric Dam (world's largest by annual electricity output), and Saltos del Monday waterfall. The city center is chaotic but the surrounding nature attractions are outstanding."
+    },
+    {
+      "name": "San Bernardino",
+      "region": "Cordillera",
+      "description": "A charming German-founded lakeside resort town on Lago Ypacaraí, 35km from Asunción. Beer gardens, sailing, swimming, and a lively summer social scene popular with Asuncenos escaping the capital. Nearby Areguá is the artisan craft center of Paraguay, known for Ñandutí lacework."
+    }
+  ],
+  "practical_info": {
+    "calling_code": "+595",
+    "emergency_numbers": {
+      "police": "911",
+      "ambulance": "141",
+      "fire": "132"
+    },
+    "public_holidays": [
+      "New Year's Day (Jan 1)",
+      "San Blas Day (Feb 3)",
+      "Heroes' Day (Mar 1)",
+      "Semana Santa (variable)",
+      "Labour Day (May 1)",
+      "Independence Day (May 14-15)",
+      "Chaco Armistice (Jun 12)",
+      "Asunción Foundation Day (Aug 15)",
+      "Battle of Boquerón (Sep 29)",
+      "Columbus Day (Oct 12)",
+      "All Saints Day (Nov 1)",
+      "Immaculate Conception/Caacupé (Dec 8)",
+      "Christmas (Dec 25)"
+    ],
+    "business_hours": "Mon-Fri 8am-12pm, 3pm-7pm (siesta is real in Paraguay). Banks close at noon. Malls open until 9pm.",
+    "post_office": "CONANTEL postal service. Unreliable for international parcels.",
+    "useful_apps": [
+      "Uber (Asunción)",
+      "MUV (Asunción ride-hailing)",
+      "WhatsApp (universal)",
+      "Google Maps offline"
+    ]
+  },
+  "laws": {
+    "lgbt_legal": true,
+    "lgbt_details": "Same-sex sexual activity is legal. However, there is no legal recognition of same-sex partnerships or marriage. Anti-discrimination protections are limited. Paraguay is socially conservative — public displays of affection between same-sex couples may draw negative attention outside Asunción.",
+    "drug_laws": "Extremely strict zero tolerance. Any amount of narcotics can result in serious prison time in Tacumbú prison (dangerous and overcrowded). Do not carry packages for strangers across borders.",
+    "alcohol_legal_age": 18,
+    "smoking_rules": "Prohibited in enclosed public spaces, restaurants, and public transport.",
+    "photography_laws": "Photography of military installations and some government buildings prohibited.",
+    "currency_import_export": "Declare amounts over USD $10,000.",
+    "unusual_laws": [
+      "Ley Seca: No alcohol sales the day before or day of any election",
+      "Zero BAC tolerance for drivers — even one drink can result in arrest",
+      "International Driving Permit required to drive — your home license alone is not sufficient",
+      "Physical passport must be carried at all times"
+    ]
+  },
+  "family_travel": {
+    "overall_rating": "Good — Paraguay is a safe, affordable, and relaxed destination for families. Children are welcomed everywhere.",
+    "child_friendly_attractions": [
+      "Ybycuí National Park waterfalls (swimming)",
+      "San Bernardino lakeside",
+      "Asunción Zoo and Botanical Gardens",
+      "Itaipú Dam tour (impressive engineering)"
+    ],
+    "stroller_friendliness": "Moderate in Asunción (some sidewalks). Poor in rural areas.",
+    "baby_supplies_availability": "Good in Asunción supermarkets. Limited in rural areas.",
+    "family_accommodation_notes": "Family rooms widely available. San Bernardino lake resort is excellent for families.",
+    "health_considerations_for_families": "Standard pediatric vaccines recommended. Dengue prevention (repellent) essential. Heat management critical in summer."
+  },
+  "accessibility": {
+    "overall_rating": "Poor to moderate — improving in Asunción but limited elsewhere",
+    "wheelchair_accessibility": "Asunción has some accessible sidewalks and modern shopping malls. Historic center and rural areas are challenging.",
+    "visual_impairment_services": "Very limited.",
+    "hearing_impairment_services": "Very limited.",
+    "accessible_attractions": [
+      "Costanera de Asunción (partly accessible)",
+      "Costanera de Encarnación (generally accessible)"
+    ],
+    "accessible_accommodation": "Some modern hotels in Asunción have accessible rooms."
+  },
+  "gear": {
+    "essentials": [
+      "DEET insect repellent (dengue prevention)",
+      "Sunscreen (strong UV in open Chaco)",
+      "Hat and sun protection",
+      "Light breathable clothing",
+      "Water bottle (1.5L minimum for Chaco)",
+      "Small umbrella or rain jacket (for sudden storms)"
+    ],
+    "nice_to_have": [
+      "Binoculars for birdwatching",
+      "Spanish phrasebook",
+      "Offline maps (Maps.me)",
+      "Electrolyte packets for heat"
+    ],
+    "what_not_to_bring": [
+      "Heavy winter gear (except for Chaco winter nights)",
+      "Expensive jewelry"
+    ],
+    "gear_rental_available": false,
+    "local_gear_shopping": "Basic outdoor supplies in Asunción. Shopping centers (Shopping del Sol, Paseo la Galería) have sporting goods stores."
+  },
+  "history": [
+    {
+      "title": "Guaraní Nation",
+      "content": "The Guaraní people were the dominant culture of the Río de la Plata basin before European contact — skilled riverine farmers and hunters whose language and culture profoundly shaped modern Paraguay. Guaraní remains co-official with Spanish, making Paraguay unique in the Americas. The country's name comes from Guaraní meaning 'great river.'"
+    },
+    {
+      "title": "Jesuit Missions (Reducciones)",
+      "content": "The Jesuit missions (1609–1767) were perhaps the most ambitious social experiment of the colonial Americas — 30 autonomous mission towns where Jesuits and Guaraní built a theocratic utopia. At their peak they housed 100,000 Guaraní, developed sophisticated architecture, music, and crafts. The Jesuits were expelled by Spain in 1767; the ruins are now UNESCO World Heritage Sites."
+    },
+    {
+      "title": "Independence & Francia",
+      "content": "Paraguay declared independence on May 14, 1811. Dr. José Gaspar Rodríguez de Francia ruled as 'El Supremo' (1814–1840), isolating Paraguay completely from the outside world — no immigration, no emigration, no foreign trade. He created a highly self-sufficient state but also a paranoid dictatorship. Paraguay was the most literate and economically equal country in the region."
+    },
+    {
+      "title": "War of the Triple Alliance (1864–1870)",
+      "content": "The most devastating war in Latin American history — Paraguay under Francisco Solano López fought Argentina, Brazil, and Uruguay simultaneously. An estimated 60–70% of Paraguay's population was killed, including up to 90% of men. Paraguay lost territory and was occupied for 6 years. The country took generations to recover demographically."
+    },
+    {
+      "title": "Modern Paraguay",
+      "content": "Paraguay fought Bolivia in the Chaco War (1932–1935) over the Gran Chaco region, winning most of the disputed territory. The Stroessner dictatorship (1954–1989) was the longest in South America. Democracy returned in 1989. Paraguay remains one of the world's largest soybean exporters and operates the Itaipú Dam — shared with Brazil, one of the world's largest hydroelectric facilities."
+    }
+  ]
+}

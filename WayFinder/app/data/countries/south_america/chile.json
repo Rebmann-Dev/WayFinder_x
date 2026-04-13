@@ -1,0 +1,1327 @@
+{
+  "meta": {
+    "last_updated": "2026-04-12",
+    "confidence_score": 0.93,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "SERNATUR (Chile National Tourism Service)",
+      "WayFinder internal hike/food/history data",
+      "Surf-Forecast.com Chile breaks data"
+    ],
+    "notes": "Chile is one of South America's safest countries. Pichilemu is a designated World Surfing Reserve. Easter Island is a special case requiring advance booking."
+  },
+  "identity": {
+    "name": "Chile",
+    "official_name": "Republic of Chile",
+    "code": "CL",
+    "iso3": "CHL",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Santiago",
+    "flag_emoji": "🇨🇱",
+    "timezones": [
+      "UTC-04:00 (continental, daylight saving)",
+      "UTC-03:00 (Easter Island off-peak)",
+      "UTC-06:00 (Easter Island, DST)"
+    ],
+    "driving_side": "right",
+    "country_calling_code": "+56",
+    "internet_tld": ".cl"
+  },
+  "language_and_money": {
+    "languages": [
+      "Spanish"
+    ],
+    "primary_language": "Spanish",
+    "english_proficiency": "Moderate in Santiago (Providencia, Las Condes, Vitacura) and tourist areas. Low in rural areas, Patagonia lodges (staff trained but limited), and small towns.",
+    "currency": "CLP",
+    "currency_name": "Chilean Peso",
+    "currency_symbol": "$",
+    "cash_vs_card": "Cards widely accepted throughout Chile — one of South America's most card-friendly countries. Contactless payments common. Cash needed for street markets, small towns, and some Patagonia areas.",
+    "typical_payment_methods": [
+      "Visa",
+      "Mastercard",
+      "Redcompra (debit)",
+      "WebPay (digital)",
+      "Cash (CLP)"
+    ],
+    "atm_availability": "Excellent in cities. Banco Estado, BCI, Santander most common. Available in most towns. Remote Patagonia (Villa O'Higgins, Torres del Paine) — carry cash. ATMs in Puerto Natales and Punta Arenas are reliable.",
+    "tipping_culture": "10% propina added to restaurant bills — customer decides whether to pay it. Tip tour guides CLP$10,000-20,000/day. Tip rafting and trekking guides generously.",
+    "tipping_etiquette": "The 10% restaurant propina is optional — pay it if service was good. For Torres del Paine guides, tip at end of trip. Taxi: round up fare."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days",
+      "visa_type": "Tourist entry stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for the duration of stay; 6 months recommended",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": false,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Extremely strict biosecurity — one of the tightest in South America. Fresh fruit, vegetables, meat, plants, and soil are confiscated at borders and airports. Fines for non-declaration are substantial. No exceptions.",
+    "restricted_items": [
+      "Fresh produce, meat, plants (undeclared)",
+      "Honey (undeclared)",
+      "Firearms (without permit)",
+      "Narcotics"
+    ],
+    "duty_free_allowances": "400 cigarettes, 50 cigars, 2.5 liters of spirits or 6 liters of wine, gifts up to $500 USD"
+  },
+  "health": {
+    "recommended_vaccines": [
+      "Hepatitis A",
+      "Typhoid",
+      "Tetanus-Diphtheria",
+      "Hepatitis B"
+    ],
+    "required_vaccines": [],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": false,
+    "malaria_risk": "None — Chile is malaria-free.",
+    "malaria_regions": [],
+    "malaria_prophylaxis_info": "No malaria prophylaxis needed for any part of Chile.",
+    "dengue_risk": "Very low — isolated cases in northern Chile near borders. Not a significant traveler concern.",
+    "altitude_sickness_risk": "Moderate in Atacama Desert region — San Pedro de Atacama is at 2,400m; excursions to El Tatio geysers (4,320m) and Altiplanic lagoons (4,500m+) carry meaningful AMS risk. Acclimatize in San Pedro 24-48 hours before high-altitude day trips. Patagonia has no altitude concerns.",
+    "food_water_safety": "Excellent — tap water is safe to drink in Santiago and most cities. One of the safest food safety standards in South America. Street food reliably safe.",
+    "air_quality_concerns": "Santiago has significant winter air pollution (June-August) trapped by surrounding mountains. Air quality can be poor during temperature inversions — mask if sensitive.",
+    "common_travel_illnesses": [
+      "Altitude sickness (Atacama high excursions)",
+      "Sunburn (extreme UV in Atacama, ozone thinning in Patagonia)",
+      "Hypothermia (Patagonia — weather changes rapidly)"
+    ],
+    "pharmacy_access": "Excellent — Cruz Verde, Salcobrand, and Farmacias Ahumada chains nationwide. Wide range of medications available OTC. In remote Patagonia towns, limited pharmacy access.",
+    "tap_water_safe": true,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Excellent private hospitals in Santiago (Clínica Las Condes, Clínica Alemana, Hospital Clínico Universidad de Chile). Good care in Iquique and Antofagasta. Limited in remote Patagonia — helicopter evacuation available from Torres del Paine (medical insurance with evacuation coverage mandatory).",
+    "emergency_medical_number": "131"
+  },
+  "safety": {
+    "overall_score": 72,
+    "travel_advisory_level_us": 1,
+    "travel_advisory_level_label": "Exercise Normal Precautions",
+    "travel_advisory_updated": "2024",
+    "risk_indicators": [
+      "Petty crime in Santiago (pickpocketing in tourist areas, bus stations)",
+      "Araucanía region — occasional Mapuche land-rights protests and road blockades",
+      "Northern border regions with Peru and Bolivia — drug trafficking"
+    ],
+    "crime_risk": "Low to moderate overall — Chile is one of South America's safest countries. Santiago's tourist areas (Providencia, Las Condes, Bellavista) are safe. The Metro is generally safe. Petty theft is the primary concern, not violent crime.",
+    "scam_risk": "Low — Chile has fewer tourist scams than neighboring countries. Standard precautions (watch for pickpockets in crowded areas, use apps for taxis) are sufficient.",
+    "transport_safety": "Excellent — Uber and Cabify widely available and safe. Santiago Metro is modern and safe. Long-distance buses (Turbus, Pullman, Andesmar) are comfortable and reliable.",
+    "solo_female_travel_notes": "One of the best countries for solo female travelers in South America. Chilean culture is relatively respectful. Normal urban precautions apply. Patagonia is extremely safe for solo trekkers.",
+    "lgbtq_notes": "Same-sex civil unions recognized since 2015; same-sex marriage legalized in 2022. Anti-discrimination protections. Santiago Pride (Marcha de la Diversidad) is a significant event. Conservative attitudes in rural and southern regions.",
+    "night_safety": "Santiago's tourist neighborhoods (Bellavista, Providencia, Vitacura) are safe at night. Avoid the area around La Alameda east toward the university late at night. Patagonia towns are very safe.",
+    "safe_areas": [
+      "Providencia (Santiago)",
+      "Las Condes (Santiago)",
+      "Vitacura (Santiago)",
+      "Bellavista (Santiago)",
+      "Valparaíso hills",
+      "Torres del Paine area"
+    ],
+    "areas_to_avoid": [
+      "La Pintana and Pudahuel (Santiago shantytowns)",
+      "Araucanía region during protests",
+      "Northern border zones at night"
+    ],
+    "natural_disaster_risks": [
+      "Earthquakes (Chile on Pacific Ring of Fire — most seismically active country on Earth)",
+      "Tsunamis (Pacific coast — know evacuation routes in coastal towns)",
+      "Volcanic eruptions (33 active volcanoes)",
+      "Wildfires (central Chile, summer)",
+      "Flash floods and alluvions (Atacama)"
+    ],
+    "political_stability_notes": "Generally stable. Occasional social unrest around economic issues (2019-2020 estallido social was significant but calmed). Araucanía conflict (Mapuche land rights) occasionally disrupts travel in La Araucanía region.",
+    "common_scams": [
+      "Taxi overcharging at airports — use Uber or pre-arranged radio taxis",
+      "Pickpocketing on Santiago Metro during rush hour",
+      "Distraction theft in Bellavista and Cerro San Cristóbal",
+      "Counterfeit CLP bills — check large denominations"
+    ],
+    "police_reliability": "High — Carabineros (national police) are generally professional and reliable. Tourist assistance available at police stations in tourist areas.",
+    "emergency_numbers": {
+      "police": "133",
+      "ambulance": "131",
+      "fire": "132",
+      "general_emergency": "133"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Santiago",
+      "us_embassy_phone": "+56-2-2330-3000",
+      "us_embassy_website": "https://cl.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "October to April for most of Chile. November to March for Patagonia (austral summer — only viable trekking window). May to November for Atacama (cooler, clearer skies). Year-round for Santiago and central valley.",
+    "climate_zones": [
+      "Atacama Desert (north) — hyperarid, world's driest desert, 15-30°C, almost no rain",
+      "Mediterranean (Santiago, Valparaíso) — hot dry summers, mild wet winters (15-35°C)",
+      "Temperate forest (Lake District) — rainfall year-round, 10-25°C",
+      "Patagonia — cold, windy, wet, unpredictable; 5-20°C in summer, sub-zero in winter",
+      "Easter Island — subtropical, 19-28°C year-round"
+    ],
+    "dry_season": "October to April for most of Chile; year-round in Atacama (almost no rain ever)",
+    "rainy_season": "May to August in Santiago/central Chile. Year-round rain in Patagonia.",
+    "hurricane_typhoon_season": null,
+    "surf_season": "April to September for best southern swells at Pichilemu and central coast. Year-round for the north. Easter Island waves year-round.",
+    "trekking_best_months": [
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "average_temp_by_month": {
+      "Santiago": "8-35°C (hot Jan-Mar, coolest Jun-Jul with rain)",
+      "Atacama (San Pedro)": "5-30°C (cold nights year-round; warmest Nov-Mar)",
+      "Torres del Paine": "0-25°C (warmest Nov-Mar; weather unpredictable year-round)",
+      "Easter Island": "19-28°C year-round"
+    },
+    "daylight_hours_by_season": "Santiago: 9-15 hours. Patagonia: extreme — nearly 18 hours in December, very short in June. Easter Island: 11-13 hours year-round."
+  },
+  "transport": {
+    "major_airports": [
+      "Arturo Merino Benítez International Airport (SCL) — Santiago, main hub",
+      "Diego Aracena International Airport (IQQ) — Iquique",
+      "El Loa Airport (CJC) — Calama (gateway to San Pedro de Atacama)",
+      "Mataveri International Airport (IPC) — Easter Island (Rapa Nui)",
+      "Carlos Ibáñez del Campo International Airport (PUQ) — Punta Arenas (Patagonia gateway)",
+      "Teniente Julio Gallardo Airport (PMC) — Puerto Montt (Lake District)"
+    ],
+    "main_airlines": [
+      "LATAM Chile",
+      "JetSMART",
+      "Sky Airline"
+    ],
+    "airport_to_city_options": [
+      "TransVip bus (SCL to Santiago, CLP$4,000-8,000)",
+      "Uber ($15-25 to city)",
+      "Centropuerto bus (CLP$2,900)",
+      "Radio taxi ($30-40 to city)"
+    ],
+    "public_transit_quality": "Santiago has an excellent Metro system (6 lines, clean, safe, air-conditioned) and Transantiago bus network. BIP card (reloadable transit card) required. Other cities rely on buses.",
+    "intercity_bus_quality": "Excellent — Turbus and Pullman Bus offer comfortable Salón Cama (business lie-flat) seats. Efficient connections Santiago-Valparaíso, Santiago-Pichilemu, Santiago-Puerto Montt. Reliable, punctual.",
+    "train_network_quality": "Limited — EFE Trenes de Chile operates suburban services and a scenic route to Chillán. No cross-Patagonia rail. Most intercity travel by bus or air.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": true,
+    "road_conditions": "Excellent Pan-American Highway (Ruta 5) the length of Chile. Carretera Austral (Ruta 7) in southern Chile is partially unpaved — 4x4 recommended. Easter Island: paved roads, small. Atacama: paved main roads, unpaved to remote sites.",
+    "four_x_four_needed_regions": [
+      "Carretera Austral southern section",
+      "Remote Atacama lagoons",
+      "Torres del Paine park roads after rain"
+    ],
+    "ride_hailing_apps": [
+      "Uber",
+      "Cabify",
+      "InDriver"
+    ],
+    "taxi_safety_notes": "Taxis generally safe in Chile. Use apps for transparent pricing. Radio taxis safer than flagging street taxis.",
+    "ferry_routes": [
+      "Puerto Montt to Puerto Natales (Navimag ferry, 4-day scenic passage through channels and fjords)",
+      "Punta Arenas to Porvenir (Tierra del Fuego)",
+      "Castro (Chiloé) to various island destinations"
+    ],
+    "border_crossing_notes": "Los Libertadores (Santiago-Mendoza, Argentina — busy, may close in winter snowstorms), Paso Jama (Atacama-Jujuy, Argentina), Chungará (Arica-La Paz, Bolivia). Chile has extremely strict biosecurity on all crossings — no fresh food."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$40-65/day",
+    "daily_budget_midrange": "$90-160/day",
+    "daily_budget_comfort": "$200-400/day",
+    "hostel_avg": "$12-22/night",
+    "hotel_avg": "$60-130/night",
+    "meal_avg": "$6-18 (menú del día CLP$5,000-8,000, restaurant CLP$10,000-30,000)",
+    "coffee_avg": "$2-4",
+    "beer_avg": "$2-5",
+    "local_transport_avg": "$0.50-2.00 (Metro/bus)",
+    "sim_card_avg": "$8-15 for 5-10GB",
+    "coworking_day_pass_avg": "$15-30",
+    "surfboard_rental_avg": "$20-35/day",
+    "value_for_money": "Good — Chile is more expensive than Peru or Bolivia but offers excellent value for the quality of experience. Patagonia (Torres del Paine camping, refugios) adds up quickly. Atacama tours and Easter Island are premium. Santiago is affordable compared to Western cities."
+  },
+  "connectivity": {
+    "sim_card_providers": [
+      "Entel",
+      "Movistar",
+      "Claro",
+      "WOM"
+    ],
+    "esim_available": true,
+    "mobile_data_quality": "Excellent 4G in Santiago, Valparaíso, and major cities. Good along the Pan-American Highway. Limited on the Carretera Austral and remote Patagonia trails. No signal in Torres del Paine backcountry.",
+    "wifi_quality": "Excellent in Santiago — one of South America's best digital infrastructure. Good in hostels and hotels nationwide. Very limited in Easter Island and remote Patagonia.",
+    "coworking_available": true,
+    "best_remote_work_cities": [
+      "Santiago (Providencia, Las Condes)",
+      "Valparaíso",
+      "Concepción"
+    ],
+    "power_outlet_types": [
+      "L (three-pin angled, uniquely Chilean)"
+    ],
+    "voltage": "220V, 50Hz",
+    "plug_adapter_needed_for_us": true,
+    "power_reliability": "Very reliable in cities and towns. Remote Patagonia lodges use generators — limited hours. Easter Island is reliable."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Providencia / Las Condes, Santiago — safest, walkable, closest to good restaurants",
+      "Bellavista, Santiago — bohemian, nightlife, restaurant strip",
+      "Cerro Alegre, Valparaíso — colorful hillside neighborhood, best boutique hotels",
+      "San Pedro de Atacama — small town, all lodges within walking distance",
+      "Torres del Paine refugios — in-park accommodation; reserve months ahead",
+      "Hanga Roa, Easter Island — the only town on the island"
+    ],
+    "budget_areas": [
+      "Barrio Lastarria (Santiago)",
+      "Bellas Artes (Santiago)",
+      "Cerro Concepción (Valparaíso)",
+      "Puerto Natales backpacker hostels"
+    ],
+    "family_friendly_areas": [
+      "Las Condes (Santiago)",
+      "Vitacura (Santiago)",
+      "Atacama Desert lodges",
+      "Chiloé island"
+    ],
+    "nightlife_areas": [
+      "Bellavista (Santiago)",
+      "Barrio Italia (Santiago)",
+      "Valparaíso Cerro Alegre",
+      "Pichilemu on weekends"
+    ],
+    "surf_towns": [
+      "Pichilemu",
+      "Punta de Lobos",
+      "Matanzas",
+      "Las Cruces",
+      "Arica (north)",
+      "Iquique (north)",
+      "El Gringo (Iquique)"
+    ],
+    "eco_lodges_available": true,
+    "peak_booking_season": "December to February (Patagonia, everywhere). Torres del Paine requires 6-month advance booking for refugios and campsites. Easter Island peaks in January-February.",
+    "accommodation_notes": "Torres del Paine: book campgrounds through Vértice Patagonia and Fantastico Sur (the only authorized operators) 6 months in advance for the W Trek. Punta de Lobos surf area has limited accommodation near the break — stay in Pichilemu town (3km). Easter Island accommodation fills for January (festival season)."
+  },
+  "culture": {
+    "local_customs": [
+      "Greet with one kiss on the right cheek — standard for meeting anyone",
+      "Chileans are generally more reserved than Argentinians — warm up slowly",
+      "Porotos (beans) and bread (pan amasado) are staples of the daily diet",
+      "Chilenismo slang is dense and can be impenetrable — poh (emphasis), cachai (understand?), fome (boring), carrete (party)",
+      "Cueca is the national dance — performed at fiestas patrias with handkerchief-waving"
+    ],
+    "dress_expectations": "Casual in most contexts. Smart casual for Santiago restaurants. Functional outdoor gear essential in Patagonia. Layering critical in all regions.",
+    "religious_sensitivity": "Predominantly Catholic with strong devotion to Virgin Mary and patron saints. Day of the Dead (November 2) is observed. Semana Santa in small towns involves street processions.",
+    "social_norms": [
+      "Latecomers are normal for social events — arrive 30-60 minutes late",
+      "Chileans rarely invite foreigners home — social life centers on restaurants and bars",
+      "Environmental consciousness is growing — leave no trace in Patagonia is actively enforced",
+      "Don't compare Chile to Argentina or Peru in negative contexts"
+    ],
+    "greeting_style": "One kiss on right cheek for any greeting. Very warm once familiarity established. 'Buenos días/tardes' always appropriate.",
+    "public_behavior_notes": "PDA moderate. Chileans are politically engaged — avoid strong opinions on sensitive political topics (2019 estallido, Pinochet-era legacy) unless you know someone well.",
+    "photography_etiquette": "Generally unrestricted in public spaces. Ask before photographing Rapa Nui (Easter Island) ceremonies or people.",
+    "bargaining_expected": false,
+    "important_holidays": [
+      "Fiestas Patrias — September 18-19 — Chilean Independence Day and Armed Forces Day; the most important holiday of the year. Empanadas, chicha, asado, cueca dancing, and fondas (festive pavilions) nationwide.",
+      "Tapati Rapa Nui — February — Easter Island's annual cultural festival with triathlon-style competitions, traditional body painting, reed boat racing, and cultural performances. Book accommodation far in advance.",
+      "Carnaval de Arica — January-February — vibrant Andean carnival in the northern port city with elaborate costumes, tinku dances, and morenada",
+      "Semana de Chiloé — January — cultural celebration on Chiloé Island with traditional music, crafts, food, and the unique Chiloé mythology",
+      "Festival de Viña del Mar — February — Latin America's biggest music festival, held in Viña del Mar's amphitheater with international and Latin pop stars"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "No fresh produce, meat, or plants allowed across any Chilean border — fines are substantial",
+      "Camping fires banned in national parks year-round after Torres del Paine fire",
+      "Drone use requires DGAC permit near airports and national parks",
+      "Easter Island: Do not touch or move any moai or archaeological artifact — criminal offense"
+    ]
+  },
+  "food": {
+    "dishes": [
+      {
+        "name": "Pastel de Choclo",
+        "description": "Chile's national comfort food — a savory corn casserole with a sweet corn purée (choclo) layered over pino (ground beef cooked with onion, cumin, and paprika), chicken pieces, hard-boiled eggs, black olives, and raisins. Baked in clay dishes until golden. Best in summer when corn is sweet and fresh.",
+        "region": "Nationwide, especially central Chile"
+      },
+      {
+        "name": "Empanada de Pino",
+        "description": "Chile's definitive empanada — baked dough pocket filled with the traditional pino (minced beef, onion, hard-boiled egg, olive, and raisin filling), seasoned with cumin and paprika. Larger and more substantial than Argentine empanadas. Eaten everywhere on 18 September (Independence Day).",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Cazuela",
+        "description": "Chile's most beloved everyday soup — a clear, flavorful broth with a bone-in piece of meat (chicken, beef, or lamb), corn on the cob, potato, squash, and green beans. Served in the deep bowl it's cooked in. The foundational dish of Chilean home cooking.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Curanto",
+        "description": "Chiloé Island's ancient feast — clams, mussels, smoked sausage, pork, chicken, and milcao potato cakes cooked in an earthen pit layered with hot stones and nalca (giant rhubarb) leaves. An indigenous Mapuche and Huilliche tradition. Best experienced in Chiloé itself.",
+        "region": "Chiloé Archipelago (Los Lagos Region)"
+      },
+      {
+        "name": "Completo",
+        "description": "Chile's extraordinary hot dog — a pork sausage in a soft bun, piled generously with mashed avocado (palta), fresh tomato, sauerkraut, and a heavy drizzle of mayonnaise. The 'Italiano' version has avocado, tomato, and mayo (green, red, white — Italian flag colors). A beloved street food.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Chorrillana",
+        "description": "Valparaíso's iconic sharing plate — a heaping mountain of french fries topped with caramelized onions, sautéed beef strips, and fried or scrambled eggs. Typically serves 2-3 people. Always ordered with cold beer. A post-night out tradition in Valparaíso.",
+        "region": "Valparaíso (origin), now nationwide"
+      },
+      {
+        "name": "Machas a la Parmesana",
+        "description": "Chilean razor clams (machas) baked in their shells with parmesan and gouda cheese, butter, white wine, and cream. A classic Chilean seafood starter from the Pacific coast. Served sizzling from the oven. The clam is unique to Chilean waters.",
+        "region": "Central and southern coast"
+      },
+      {
+        "name": "Sopaipillas",
+        "description": "Fried pumpkin flatbreads — made from pumpkin-and-flour dough with lard, deep-fried until golden. Eaten as a snack with pebre (fresh tomato-herb salsa) or mote con huesillos (sweet rehydrated peach drink). Winter street food staple.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Ceviche Chileno",
+        "description": "Chilean-style ceviche — fresh fish or shellfish 'cooked' in lemon juice with onion, cilantro, and a touch of chili. Lighter and less complex than Peruvian ceviche, but made with exceptional Pacific seafood. Very popular along the coast.",
+        "region": "Coastal Chile"
+      },
+      {
+        "name": "Paila Marina",
+        "description": "Chile's superb seafood soup — a rich broth packed with clams, mussels, shrimp, fish, squid, and whatever Pacific shellfish is freshest. Served in a clay bowl (paila) with crusty bread. Essential in Valparaíso and coastal towns.",
+        "region": "Coastal Chile, especially Valparaíso"
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Pisco Sour",
+        "description": "Chile and Peru both claim pisco — Chile's version uses grape distillate with lemon juice, sugar syrup, and often egg white. Chilean pisco tends to be smoother and less complex than Peruvian. Enjoyed throughout the country. The ongoing Chile-Peru pisco dispute is diplomatically sensitive — both cultures are deeply attached to their version."
+      },
+      {
+        "name": "Terremoto",
+        "description": "Santiago's famous carnival drink — a scoop of pineapple sorbet (in some versions, grenadine) floating in cheap white pipeño wine in a large glass. Translates as 'Earthquake' — for obvious reasons after two or three. A rite of passage in Barrio Bellavista."
+      },
+      {
+        "name": "Mote con Huesillos",
+        "description": "Chile's beloved summer street drink — reconstituted dried peaches (huesillos) in sweet spiced syrup, served cold with husked wheat (mote) and a rehydrated peach floating on top. Eaten with a spoon. A 100% Chilean experience sold from carts in parks."
+      },
+      {
+        "name": "Carménère",
+        "description": "Chile's signature red wine grape — a Bordeaux variety thought extinct until discovered thriving in Chile in 1994. Deep red, with bell pepper, chocolate, and dark fruit notes. Best from Colchagua Valley and Maipo Valley. Chile produces some of the world's finest Carménère."
+      },
+      {
+        "name": "Chicha",
+        "description": "Fermented grape or apple drink — traditionally made at harvest time in central Chile. Mildly alcoholic, cloudy, and sweet-sour. Served at fiestas patrias celebrations in September."
+      },
+      {
+        "name": "Agua de Hierbas",
+        "description": "Herbal tea — deeply ingrained in Chilean home culture. Manzanilla (chamomile), menta-poleo (mint), and boldo (a Chilean herb good for digestion) are most common. Offered after meals as a digestive throughout the country."
+      }
+    ],
+    "street_food_safety": "Very safe — Chile has excellent food safety standards. Street food from busy stands is reliable. Completos, sopaipillas, and empanadas are universally safe.",
+    "vegetarian_friendliness": "Good in Santiago (dedicated vegetarian restaurants in Bellavista, Lastarria, Providencia). Limited in Patagonia and smaller towns where meat dominates. Chilean cuisine is less meat-obsessed than Argentina.",
+    "vegan_friendliness": "Good in Santiago. Improving in Valparaíso. Difficult in rural areas.",
+    "must_try_drinks": [
+      "Pisco Sour",
+      "Carménère",
+      "Mote con Huesillos",
+      "Terremoto",
+      "Chicha"
+    ],
+    "regional_specialties": [
+      "Santiago: empanadas, completo, cazuela, Carménère wine",
+      "Valparaíso: chorrillana, paila marina, fresh seafood",
+      "Atacama: llama dishes, altiplanic stews, quinoa",
+      "Chiloé: curanto, milcao, chapaleles, smoked salmon",
+      "Patagonia: cordero magallánico (lamb), king crab (centolla), Patagonian trout"
+    ],
+    "drinking_water_notes": "Tap water safe throughout Chile. Excellent water quality by South American standards.",
+    "alcohol_rules": "Legal drinking age 18. Zero tolerance for drunk driving. No open container laws but public intoxication can result in fines.",
+    "signature_dishes": [
+      {
+        "name": "Pastel de Choclo",
+        "description": "Chile's national comfort food — a savory corn casserole with a sweet corn purée (choclo) layered over pino (ground beef cooked with onion, cumin, and paprika), chicken pieces, hard-boiled eggs, black olives, and raisins. Baked in clay dishes until golden. Best in summer when corn is sweet and fresh.",
+        "region": "Nationwide, especially central Chile"
+      },
+      {
+        "name": "Empanada de Pino",
+        "description": "Chile's definitive empanada — baked dough pocket filled with the traditional pino (minced beef, onion, hard-boiled egg, olive, and raisin filling), seasoned with cumin and paprika. Larger and more substantial than Argentine empanadas. Eaten everywhere on 18 September (Independence Day).",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Cazuela",
+        "description": "Chile's most beloved everyday soup — a clear, flavorful broth with a bone-in piece of meat (chicken, beef, or lamb), corn on the cob, potato, squash, and green beans. Served in the deep bowl it's cooked in. The foundational dish of Chilean home cooking.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Curanto",
+        "description": "Chiloé Island's ancient feast — clams, mussels, smoked sausage, pork, chicken, and milcao potato cakes cooked in an earthen pit layered with hot stones and nalca (giant rhubarb) leaves. An indigenous Mapuche and Huilliche tradition. Best experienced in Chiloé itself.",
+        "region": "Chiloé Archipelago (Los Lagos Region)"
+      },
+      {
+        "name": "Completo",
+        "description": "Chile's extraordinary hot dog — a pork sausage in a soft bun, piled generously with mashed avocado (palta), fresh tomato, sauerkraut, and a heavy drizzle of mayonnaise. The 'Italiano' version has avocado, tomato, and mayo (green, red, white — Italian flag colors). A beloved street food.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Chorrillana",
+        "description": "Valparaíso's iconic sharing plate — a heaping mountain of french fries topped with caramelized onions, sautéed beef strips, and fried or scrambled eggs. Typically serves 2-3 people. Always ordered with cold beer. A post-night out tradition in Valparaíso.",
+        "region": "Valparaíso (origin), now nationwide"
+      },
+      {
+        "name": "Machas a la Parmesana",
+        "description": "Chilean razor clams (machas) baked in their shells with parmesan and gouda cheese, butter, white wine, and cream. A classic Chilean seafood starter from the Pacific coast. Served sizzling from the oven. The clam is unique to Chilean waters.",
+        "region": "Central and southern coast"
+      },
+      {
+        "name": "Sopaipillas",
+        "description": "Fried pumpkin flatbreads — made from pumpkin-and-flour dough with lard, deep-fried until golden. Eaten as a snack with pebre (fresh tomato-herb salsa) or mote con huesillos (sweet rehydrated peach drink). Winter street food staple.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Ceviche Chileno",
+        "description": "Chilean-style ceviche — fresh fish or shellfish 'cooked' in lemon juice with onion, cilantro, and a touch of chili. Lighter and less complex than Peruvian ceviche, but made with exceptional Pacific seafood. Very popular along the coast.",
+        "region": "Coastal Chile"
+      },
+      {
+        "name": "Paila Marina",
+        "description": "Chile's superb seafood soup — a rich broth packed with clams, mussels, shrimp, fish, squid, and whatever Pacific shellfish is freshest. Served in a clay bowl (paila) with crusty bread. Essential in Valparaíso and coastal towns.",
+        "region": "Coastal Chile, especially Valparaíso"
+      }
+    ]
+  },
+  "outdoors": {
+    "surf_spots": [
+      {
+        "name": "Punta de Lobos, Pichilemu",
+        "region": "O'Higgins Region (212km south of Santiago)",
+        "difficulty": "Advanced to Expert",
+        "wave_type": "Left-hand point break",
+        "break_type": "Volcanic rock point break",
+        "swell_direction": "South and southwest Pacific swell",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "description": "The crown jewel of South American surfing — the 6th designated World Surfing Reserve (2013). A flawless left-hand point break that runs along a dramatic volcanic rock cliff face, producing long, powerful, mechanical walls ideal for performance surfing. Waves reach 3-5m on good swells, with barrels and long open-face sections. Cold water (14-18°C) requires 4/3mm wetsuit. Hosts international competitions. The cliffside spectator viewpoint is spectacular. Chile's most iconic wave."
+      },
+      {
+        "name": "Pichilemu — Infiernillo",
+        "region": "O'Higgins Region",
+        "difficulty": "Intermediate to Advanced",
+        "wave_type": "Beach/reef break",
+        "break_type": "Black sand beach with reef sections",
+        "swell_direction": "Southwest to south",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "description": "Black sand beach break in central Pichilemu town with reef sections producing powerful, hollow waves. Good for intermediates on small days, challenging on south swells. When Punta de Lobos is too intense, Infiernillo provides excellent alternatives. Cold water requires full suit."
+      },
+      {
+        "name": "Matanzas",
+        "region": "Valparaíso Region (coast south of Valparaíso)",
+        "difficulty": "Intermediate",
+        "wave_type": "Point break",
+        "break_type": "Rock point break",
+        "swell_direction": "Southwest Pacific",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August"
+        ],
+        "description": "One of Chile's most consistent and accessible surf spots — a reliable left-hand point break with long, peeling walls. Good for improving intermediates. Significant kitesurfing and windsurfing scene alongside surfing. Cold water, consistent south Pacific swell. Small fishing village atmosphere."
+      },
+      {
+        "name": "El Gringo, Iquique",
+        "region": "Tarapacá Region (north Chile)",
+        "difficulty": "Advanced to Expert",
+        "wave_type": "Right-hand point break",
+        "break_type": "Rocky point break",
+        "swell_direction": "Northwest and west Pacific",
+        "best_months": [
+          "October",
+          "November",
+          "December",
+          "January",
+          "February"
+        ],
+        "description": "Northern Chile's premier big wave spot — a powerful right-hand point break that handles massive northwest swells. Can reach 4-6m on big days. Desert setting with dramatic cliffs. Warm water compared to central Chile (20-22°C). Iquique also offers world-class paragliding from the coastal cliffs."
+      },
+      {
+        "name": "Arica — El Gringo (La Lisera)",
+        "region": "Arica y Parinacota Region (northernmost Chile)",
+        "difficulty": "Beginner to Intermediate",
+        "wave_type": "Beach break",
+        "break_type": "Protected bay beach break",
+        "swell_direction": "West to southwest",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "description": "Arica is Chile's northern surf hub — warm water (22-24°C) from Humboldt Current upwelling. La Lisera beach break and El Gringo point offer consistent waves for all levels. Gateway to Lauca National Park and Bolivia. Historic surfing city where South American surfing has deep roots."
+      },
+      {
+        "name": "Easter Island (Rapa Nui) — Hanga Oa",
+        "region": "Easter Island (Rapa Nui) Special Territory",
+        "difficulty": "Intermediate to Advanced",
+        "wave_type": "Reef break",
+        "break_type": "Volcanic reef break",
+        "swell_direction": "Exposed to south, west, and north swells",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "description": "The most remote surf destination in the world — 3,700km from the Chilean mainland, Easter Island receives completely unobstructed Pacific swell from all directions. Multiple breaks around the volcanic island with warm-ish water (22-24°C). Surfing among ancient moai statues on the horizon is a uniquely surreal experience. Very limited surf infrastructure — bring equipment. The combination of moai culture, birdman ceremonies, and surf makes this unforgettable."
+      }
+    ],
+    "hikes": [
+      {
+        "name": "Torres del Paine W Trek",
+        "region": "Magallanes and Chilean Antarctica Region",
+        "difficulty": "Moderate to Hard",
+        "distance_km": 80,
+        "duration_days": 5,
+        "elevation_gain_m": 3400,
+        "description": "The iconic W-shaped trekking route through Torres del Paine National Park — visiting the three most dramatic viewpoints: the Torres (granite towers), Valle del Francés (hanging glaciers and condors), and Glaciar Grey (a massive Patagonian glacier). Refugio lodges or camping available throughout. Winds can be extreme — gusts to 100km/h are normal. Book refugios 6 months ahead.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Torres del Paine O Circuit",
+        "region": "Magallanes and Chilean Antarctica Region",
+        "difficulty": "Hard",
+        "distance_km": 110,
+        "duration_days": 8,
+        "elevation_gain_m": 5000,
+        "description": "The complete circuit of the Paine Massif — extends the W Trek with the remote northern sector including the spectacular Paso John Gardner (1,241m) with views of the Southern Patagonian Ice Field. Far fewer people than the W. Camping only in the northern section. Requires more technical gear.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Valle de la Luna, San Pedro de Atacama",
+        "region": "Antofagasta Region",
+        "difficulty": "Easy",
+        "distance_km": 12,
+        "duration_days": 1,
+        "elevation_gain_m": 100,
+        "description": "Walk through the otherworldly salt canyons and clay formations of the Atacama Desert — eroded into lunar-like landscape at 2,500m. Sunset from the Piedra del Coyote viewpoint turns the valley orange-pink. Flamingos visible at nearby salt lagoons. One of the world's most surreal natural landscapes.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Volcán Villarrica Ascent",
+        "region": "Araucanía Region (Lake District)",
+        "difficulty": "Hard",
+        "distance_km": 12,
+        "duration_days": 1,
+        "elevation_gain_m": 1500,
+        "description": "Chile's most climbed volcano — a near-perfect snow cone (2,847m) above Pucón with an active lava lake in the crater. Guided ascent with crampons and ice axe in 6-7 hours. Summit views of 30+ volcanic peaks and the glacial lake district below. The descent by plastic toboggan is legendary.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Carretera Austral — Cochrane to O'Higgins (Ferry sections)",
+        "region": "Aysén Region (Patagonia)",
+        "difficulty": "Very Hard",
+        "distance_km": 100,
+        "duration_days": 5,
+        "elevation_gain_m": 2000,
+        "description": "A remote multi-day trek through the most isolated reaches of the Carretera Austral — the only road south of Cochrane. Through temperate rainforest, icy rivers, and hanging glaciers. Villa O'Higgins at the end of the road is Chile's most remote mainland town. Access from Puerto Río Tranquilo or Cochrane.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February"
+        ]
+      },
+      {
+        "name": "Parque Patagonia — Aviles Valley Circuit",
+        "region": "Aysén Region",
+        "difficulty": "Moderate",
+        "distance_km": 55,
+        "duration_days": 3,
+        "elevation_gain_m": 900,
+        "description": "One of the world's great rewilded landscapes — Doug and Kristine Tompkins' conservation project (now part of Patagonia National Park) spanning 263,000 hectares. The Aviles Valley circuit passes through pampas populated by guanaco herds, pumas, and condors. Exceptional wildlife viewing in a pristine landscape. Free entry.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Atacama — El Tatio Geyser Field",
+        "region": "Antofagasta Region",
+        "difficulty": "Easy",
+        "distance_km": 3,
+        "duration_days": 1,
+        "elevation_gain_m": 50,
+        "description": "Walk among 80+ active geysers at 4,320m — the world's highest geyser field. Steam columns erupt most powerfully at dawn in the cold morning air (-10°C at sunrise). Flamingos in nearby lagoons. Altitude is the main challenge — acclimatize 2 days in San Pedro first.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Torres del Paine National Park",
+        "region": "Magallanes Region",
+        "species": [
+          "Guanaco (thousands)",
+          "Puma (best puma viewing in the world)",
+          "Andean condor",
+          "Magellanic woodpecker",
+          "Rhea (ñandú)",
+          "Flamingo",
+          "Darwin's fox (endemic)"
+        ],
+        "description": "Torres del Paine is arguably the world's best place to see pumas in the wild — the puma population here is habituated to human presence due to protection, and sightings are relatively common especially at dawn and dusk in the central zone. Guanaco herds number in the thousands.",
+        "best_months": [
+          "October",
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Atacama Desert — Altiplanic Lagoons (CONAF Reserve)",
+        "region": "Antofagasta Region",
+        "species": [
+          "James's flamingo (endemic)",
+          "Andean flamingo",
+          "Chilean flamingo",
+          "Vicuña",
+          "Viscacha",
+          "Atacama giant hummingbird"
+        ],
+        "description": "The high-altitude lagoons (Miscanti, Miñiques, Chaxa) at 4,300m+ are home to three flamingo species simultaneously — a spectacular and rare sight. Vicuña herds graze the surrounding puna grasslands. The contrast of the flamingo-pink birds against the white salt and blue sky is extraordinary.",
+        "best_months": [
+          "October",
+          "November",
+          "December",
+          "January",
+          "February"
+        ]
+      },
+      {
+        "name": "Chiloé Island",
+        "region": "Los Lagos Region",
+        "species": [
+          "Pudu (world's smallest deer, endemic)",
+          "Patagonian otter",
+          "South American sea lion",
+          "Magellanic penguin (Puñihuil colony)",
+          "Black-necked swan",
+          "Curco (Chiloé fox, endemic)"
+        ],
+        "description": "The misty, mythological island of Chiloé is a biodiversity hotspot for species found nowhere else. The Puñihuil Penguin Colony has both Magellanic and Humboldt penguins nesting side by side — extremely rare. The island's stilt-house churches (UNESCO) add cultural richness.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "December",
+          "January"
+        ]
+      }
+    ],
+    "national_parks": [
+      {
+        "name": "Torres del Paine National Park",
+        "region": "Magallanes Region",
+        "area_km2": 2400,
+        "description": "Chile's most iconic national park and one of the world's great wilderness destinations. The granite towers of the Paine Massif, the Southern Patagonian Ice Field, turquoise glacial lakes, and puma territories. The W Trek is one of the world's great multi-day hikes. Requires booking and permits.",
+        "highlights": [
+          "Los Torres viewpoint",
+          "Glaciar Grey",
+          "Valle del Francés",
+          "Puma sightings",
+          "Guanaco herds",
+          "Southern Patagonian Ice Field views"
+        ]
+      },
+      {
+        "name": "Lauca National Park",
+        "region": "Arica y Parinacota Region",
+        "area_km2": 1380,
+        "description": "Chile's highest national park at 4,500m average altitude — altiplano grasslands with volcanic peaks (Parinacota 6,348m, Pomerape 6,282m), Lake Chungará (one of the world's highest lakes), and extraordinary Andean wildlife. Flamingos, vicuña, and vizcacha throughout.",
+        "highlights": [
+          "Lake Chungará (4,517m)",
+          "Parinacota and Pomerape volcanoes",
+          "Vicuña herds",
+          "Three flamingo species",
+          "Andean churches",
+          "Atacama to Bolivia border crossing"
+        ]
+      },
+      {
+        "name": "Rapa Nui National Park (Easter Island)",
+        "region": "Easter Island (Valparaíso Region)",
+        "area_km2": 66,
+        "description": "UNESCO World Heritage Site protecting the extraordinary moai stone statues and ceremonial sites of the Rapa Nui people. Ahu Tongariki (15 standing moai) is the most spectacular restored site. Quarry at Rano Raraku has 400 moai in various stages. An archaeological mystery of global significance.",
+        "highlights": [
+          "Ahu Tongariki (15 moai)",
+          "Rano Raraku quarry",
+          "Anakena Beach",
+          "Orongo ceremonial village",
+          "Ahu Akivi (only moai facing the sea)",
+          "Sunrise at Ahu Tongariki"
+        ]
+      },
+      {
+        "name": "Atacama Salt Flat (Los Flamencos National Reserve)",
+        "region": "Antofagasta Region",
+        "area_km2": 740,
+        "description": "A high-altitude protected area encompassing the Atacama Salt Flat, altiplanic lagoons, and Andean geological formations. Three flamingo species in the lagoons, vicuña on the puna, and otherworldly volcanic landscapes. Part of the San Pedro de Atacama tourist circuit.",
+        "highlights": [
+          "Laguna Chaxa flamingos",
+          "Miscanti and Miñiques lagoons",
+          "Vicuña herds",
+          "Altiplano volcanic scenery",
+          "Piedras Rojas red rocks and lagoon"
+        ]
+      },
+      {
+        "name": "Patagonia National Park",
+        "region": "Aysén Region",
+        "area_km2": 2903,
+        "description": "A triumph of private conservation — created by Tompkins Conservation and donated to Chile (2018). Restored patagonian steppe with reintroduced wildlife including guanaco, puma, and condor. Extraordinary trekking, exceptional wildlife, and beautiful landscapes. A model for wilderness recovery.",
+        "highlights": [
+          "Aviles Valley guanaco herds",
+          "Puma tracking",
+          "Andean condors",
+          "Lago Cochrane",
+          "Rewilding success story",
+          "Carretera Austral access"
+        ]
+      }
+    ],
+    "danger_zones": [
+      {
+        "name": "Patagonia weather",
+        "region": "Magallanes and Aysén Regions",
+        "risk_level": "Moderate",
+        "description": "Torres del Paine experiences extreme weather — winds gusting to 130km/h, sudden snow in summer, and hypothermia risk. Every year, under-equipped trekkers require rescue. Never hike without a tent, full rain gear, and layers even on day hikes."
+      },
+      {
+        "name": "Atacama altitude excursions",
+        "region": "Antofagasta Region",
+        "risk_level": "Moderate",
+        "description": "El Tatio geysers (4,320m), Miscanti lagoon (4,400m), and Bolivian border areas (4,500m+) can cause AMS in visitors who haven't acclimatized in San Pedro (2,400m) for 2+ days first. Take it slow. Coca tea helps."
+      },
+      {
+        "name": "Araucanía conflict zones",
+        "region": "Araucanía Region (around Temuco, Victoria, Cañete)",
+        "risk_level": "Low to Moderate",
+        "description": "Mapuche indigenous land rights conflict occasionally results in roadblocks, arson of farm equipment, and confrontations. Not directed at tourists but road closures can disrupt Pucón and Lake District visits. Monitor local news before travel through rural La Araucanía."
+      }
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Valle de la Luna, San Pedro de Atacama",
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "region": "Antofagasta Region",
+        "description": "Walk through the otherworldly salt canyons and clay formations of the Atacama Desert — eroded into lunar-like landscape at 2,500m. Sunset from the Piedra del Coyote viewpoint turns the valley orange-pink. Flamingos visible at nearby salt lagoons. One of the world's most surreal natural landscapes.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "elevation_m": 100,
+        "notes": "",
+        "distance_km": 12,
+        "duration_days": 1
+      },
+      {
+        "name": "Volcán Villarrica Ascent",
+        "difficulty": "Hard",
+        "duration": "1 day",
+        "region": "Araucanía Region (Lake District)",
+        "description": "Chile's most climbed volcano — a near-perfect snow cone (2,847m) above Pucón with an active lava lake in the crater. Guided ascent with crampons and ice axe in 6-7 hours. Summit views of 30+ volcanic peaks and the glacial lake district below. The descent by plastic toboggan is legendary.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "elevation_m": 1500,
+        "notes": "",
+        "distance_km": 12,
+        "duration_days": 1
+      },
+      {
+        "name": "Atacama — El Tatio Geyser Field",
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "region": "Antofagasta Region",
+        "description": "Walk among 80+ active geysers at 4,320m — the world's highest geyser field. Steam columns erupt most powerfully at dawn in the cold morning air (-10°C at sunrise). Flamingos in nearby lagoons. Altitude is the main challenge — acclimatize 2 days in San Pedro first.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "elevation_m": 50,
+        "notes": "",
+        "distance_km": 3,
+        "duration_days": 1
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Torres del Paine W Trek",
+        "difficulty": "Moderate to Hard",
+        "duration": "5 days",
+        "region": "Magallanes and Chilean Antarctica Region",
+        "description": "The iconic W-shaped trekking route through Torres del Paine National Park — visiting the three most dramatic viewpoints: the Torres (granite towers), Valle del Francés (hanging glaciers and condors), and Glaciar Grey (a massive Patagonian glacier). Refugio lodges or camping available throughout. Winds can be extreme — gusts to 100km/h are normal. Book refugios 6 months ahead.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "elevation_m": 3400,
+        "notes": "",
+        "distance_km": 80,
+        "duration_days": 5
+      },
+      {
+        "name": "Torres del Paine O Circuit",
+        "difficulty": "Hard",
+        "duration": "8 days",
+        "region": "Magallanes and Chilean Antarctica Region",
+        "description": "The complete circuit of the Paine Massif — extends the W Trek with the remote northern sector including the spectacular Paso John Gardner (1,241m) with views of the Southern Patagonian Ice Field. Far fewer people than the W. Camping only in the northern section. Requires more technical gear.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "elevation_m": 5000,
+        "notes": "",
+        "distance_km": 110,
+        "duration_days": 8
+      },
+      {
+        "name": "Carretera Austral — Cochrane to O'Higgins (Ferry sections)",
+        "difficulty": "Very Hard",
+        "duration": "5 days",
+        "region": "Aysén Region (Patagonia)",
+        "description": "A remote multi-day trek through the most isolated reaches of the Carretera Austral — the only road south of Cochrane. Through temperate rainforest, icy rivers, and hanging glaciers. Villa O'Higgins at the end of the road is Chile's most remote mainland town. Access from Puerto Río Tranquilo or Cochrane.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February"
+        ],
+        "elevation_m": 2000,
+        "notes": "",
+        "distance_km": 100,
+        "duration_days": 5
+      },
+      {
+        "name": "Parque Patagonia — Aviles Valley Circuit",
+        "difficulty": "Moderate",
+        "duration": "3 days",
+        "region": "Aysén Region",
+        "description": "One of the world's great rewilded landscapes — Doug and Kristine Tompkins' conservation project (now part of Patagonia National Park) spanning 263,000 hectares. The Aviles Valley circuit passes through pampas populated by guanaco herds, pumas, and condors. Exceptional wildlife viewing in a pristine landscape. Free entry.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "elevation_m": 900,
+        "notes": "",
+        "distance_km": 55,
+        "duration_days": 3
+      }
+    ],
+    "top_national_parks": [
+      {
+        "name": "Torres del Paine National Park",
+        "region": "Magallanes Region",
+        "description": "Chile's most iconic national park and one of the world's great wilderness destinations. The granite towers of the Paine Massif, the Southern Patagonian Ice Field, turquoise glacial lakes, and puma territories. The W Trek is one of the world's great multi-day hikes. Requires booking and permits.",
+        "area_km2": 2400,
+        "best_months": [],
+        "highlights": [
+          "Los Torres viewpoint",
+          "Glaciar Grey",
+          "Valle del Francés",
+          "Puma sightings",
+          "Guanaco herds",
+          "Southern Patagonian Ice Field views"
+        ]
+      },
+      {
+        "name": "Lauca National Park",
+        "region": "Arica y Parinacota Region",
+        "description": "Chile's highest national park at 4,500m average altitude — altiplano grasslands with volcanic peaks (Parinacota 6,348m, Pomerape 6,282m), Lake Chungará (one of the world's highest lakes), and extraordinary Andean wildlife. Flamingos, vicuña, and vizcacha throughout.",
+        "area_km2": 1380,
+        "best_months": [],
+        "highlights": [
+          "Lake Chungará (4,517m)",
+          "Parinacota and Pomerape volcanoes",
+          "Vicuña herds",
+          "Three flamingo species",
+          "Andean churches",
+          "Atacama to Bolivia border crossing"
+        ]
+      },
+      {
+        "name": "Rapa Nui National Park (Easter Island)",
+        "region": "Easter Island (Valparaíso Region)",
+        "description": "UNESCO World Heritage Site protecting the extraordinary moai stone statues and ceremonial sites of the Rapa Nui people. Ahu Tongariki (15 standing moai) is the most spectacular restored site. Quarry at Rano Raraku has 400 moai in various stages. An archaeological mystery of global significance.",
+        "area_km2": 66,
+        "best_months": [],
+        "highlights": [
+          "Ahu Tongariki (15 moai)",
+          "Rano Raraku quarry",
+          "Anakena Beach",
+          "Orongo ceremonial village",
+          "Ahu Akivi (only moai facing the sea)",
+          "Sunrise at Ahu Tongariki"
+        ]
+      },
+      {
+        "name": "Atacama Salt Flat (Los Flamencos National Reserve)",
+        "region": "Antofagasta Region",
+        "description": "A high-altitude protected area encompassing the Atacama Salt Flat, altiplanic lagoons, and Andean geological formations. Three flamingo species in the lagoons, vicuña on the puna, and otherworldly volcanic landscapes. Part of the San Pedro de Atacama tourist circuit.",
+        "area_km2": 740,
+        "best_months": [],
+        "highlights": [
+          "Laguna Chaxa flamingos",
+          "Miscanti and Miñiques lagoons",
+          "Vicuña herds",
+          "Altiplano volcanic scenery",
+          "Piedras Rojas red rocks and lagoon"
+        ]
+      },
+      {
+        "name": "Patagonia National Park",
+        "region": "Aysén Region",
+        "description": "A triumph of private conservation — created by Tompkins Conservation and donated to Chile (2018). Restored patagonian steppe with reintroduced wildlife including guanaco, puma, and condor. Extraordinary trekking, exceptional wildlife, and beautiful landscapes. A model for wilderness recovery.",
+        "area_km2": 2903,
+        "best_months": [],
+        "highlights": [
+          "Aviles Valley guanaco herds",
+          "Puma tracking",
+          "Andean condors",
+          "Lago Cochrane",
+          "Rewilding success story",
+          "Carretera Austral access"
+        ]
+      }
+    ]
+  },
+  "sports_and_activities": {
+    "top_activities": [
+      "Trekking Torres del Paine (W or O circuit)",
+      "Surfing Punta de Lobos",
+      "Atacama Desert stargazing",
+      "Easter Island moai exploration",
+      "Villarrica volcano ascent",
+      "Carretera Austral driving",
+      "Wine tasting in Colchagua and Casablanca valleys",
+      "Whale watching"
+    ],
+    "skiing_destinations": [
+      "Valle Nevado (35km from Santiago)",
+      "El Colorado (35km from Santiago)",
+      "La Parva (35km from Santiago)",
+      "Portillo (160km from Santiago, iconic Andes ski resort)",
+      "Termas de Chillán (thermal pools and skiing combined)"
+    ],
+    "ski_season": "June to September (or October in high snow years)",
+    "scuba_diving": true,
+    "world_class_destinations": [
+      "Punta de Lobos surf (World Surfing Reserve)",
+      "Torres del Paine",
+      "Atacama Desert stargazing (Atacama large millimeter array area)",
+      "Easter Island moai"
+    ],
+    "adventure_sports": [
+      "White-water rafting (Trancura River near Pucón)",
+      "Volcano climbing (Villarrica, Osorno, Calbuco)",
+      "Mountain biking (Atacama and Lake District)",
+      "Sea kayaking (Chiloé channels)",
+      "Paragliding (Iquique coastal cliffs)",
+      "Zip-lining (Pucón area)"
+    ]
+  },
+  "trip_styles": {
+    "backpacker": "Excellent infrastructure — Turbus and Sky Airline make inter-regional travel efficient. Torres del Paine camping is affordable. The Carretera Austral appeals to adventurous budget travelers. Best route: Santiago → Atacama → Easter Island → Lake District → Patagonia.",
+    "luxury": "World-class — Explora Atacama, Explora Patagonia (remote lodges with expert guides), luxury Torres del Paine refugios (EcoCamp), wine lodges in Colchagua. Private Andean helicopter tours. Chilean luxury is low-key and sophisticated.",
+    "family": "Excellent — Torres del Paine W Trek can accommodate families with teens, Easter Island is manageable for all ages, Villarrica toboggan descent is thrilling for children, Chiloé's mythology and wooden churches delight young imaginations.",
+    "adventure": "Outstanding — world-class surfing, Patagonia trekking, volcano climbing, white-water rafting, kite surfing, and the Carretera Austral for overlanders.",
+    "cultural": "Rich — Easter Island Rapa Nui culture, Chiloé mythology and UNESCO churches, Atacama indigenous Atacameño culture, Valparaíso street art UNESCO city, Mapuche cultural heritage.",
+    "eco": "Exceptional — Patagonia National Park (rewilding success), Torres del Paine, Lauca altiplano, Chiloé endemic species, Atacama's fragile desert ecosystem."
+  },
+  "destinations": [
+    {
+      "name": "Atacama Desert (San Pedro de Atacama)",
+      "type": "Nature/Adventure",
+      "region": "Antofagasta Region",
+      "description": "The driest non-polar desert on Earth — an otherworldly landscape of salt flats, volcanoes, flamingo lagoons, and the world's clearest night skies. Base in the charming adobe town of San Pedro de Atacama. Surreal sunrise at El Tatio geysers and sunset at Valle de la Luna are unmissable.",
+      "highlights": [
+        "El Tatio Geysers (dawn)",
+        "Valle de la Luna sunset",
+        "Atacama Salt Flat flamingos",
+        "Stargazing (lowest light pollution on Earth)",
+        "Miscanti and Miñiques lagoons",
+        "Puritama hot springs"
+      ]
+    },
+    {
+      "name": "Torres del Paine",
+      "type": "Nature/Trekking",
+      "region": "Magallanes Region",
+      "description": "The jewel of South American wilderness — granite towers rising from the Patagonian steppe, turquoise glacial lakes, and the Southern Patagonian Ice Field. The W Trek is one of the world's five greatest multi-day hikes. Plan for wind, weather, and crowds (December-February).",
+      "highlights": [
+        "Base Torres granite towers",
+        "Glaciar Grey",
+        "Valle del Francés condors",
+        "Puma sightings",
+        "Lago Pehoé",
+        "Southern Patagonian Ice Field"
+      ]
+    },
+    {
+      "name": "Easter Island (Rapa Nui)",
+      "type": "Culture/Nature",
+      "region": "Easter Island Special Territory",
+      "description": "The most remote inhabited island on Earth — 3,700km from Chile, 2,100km from Pitcairn Island. Home to 900 enigmatic moai statues carved by the Rapa Nui people. An archaeological mystery and a living culture. Also has world-class surfing, diving, and pristine beaches.",
+      "highlights": [
+        "Ahu Tongariki (15 standing moai)",
+        "Rano Raraku quarry",
+        "Tapati cultural festival (February)",
+        "Anakena beach",
+        "Orongo birdman village",
+        "Unique Rapa Nui culture"
+      ]
+    },
+    {
+      "name": "Valparaíso",
+      "type": "City/Culture",
+      "region": "Valparaíso Region",
+      "description": "Chile's most beloved city — a UNESCO World Heritage port city of steep hills (cerros) covered in colorful street art, Victorian-era lifts (ascensores), and bohemian neighborhoods. The 'Jewel of the Pacific' has an electric creative energy and the best food scene outside Santiago.",
+      "highlights": [
+        "Cerro Alegre and Concepción neighborhoods",
+        "Ascensor lifts",
+        "Street murals",
+        "Chorrillana at La Flor de Chile",
+        "Paseo 21 de Mayo views",
+        "New Year's fireworks over the bay (world-famous)"
+      ]
+    },
+    {
+      "name": "Chilean Lake District (Pucón, Puerto Varas)",
+      "type": "Nature/Adventure",
+      "region": "Araucanía and Los Lagos Regions",
+      "description": "Chilean Switzerland — snow-capped volcanoes mirrored in glacial lakes, German-influenced towns, adventure sports, and thermal springs. Pucón is the adventure capital (volcano climbing, rafting, kayaking); Puerto Varas is more refined with German-colonial architecture on Lago Llanquihue.",
+      "highlights": [
+        "Villarrica volcano climb",
+        "Trancura white-water rafting",
+        "Lago Llanquihue views",
+        "Osorno volcano",
+        "Petrohué rapids",
+        "Thermal hot springs"
+      ]
+    },
+    {
+      "name": "Carretera Austral",
+      "type": "Nature/Adventure/Road Trip",
+      "region": "Aysén and Los Lagos Regions",
+      "description": "One of the world's great road trips — 1,240km of mostly unpaved road through pristine Chilean Patagonia: hanging glaciers at Ventisquero Colgante, marble caves of Puerto Río Tranquilo, and the rewilded Patagonia National Park. Truly end-of-the-world remoteness.",
+      "highlights": [
+        "Marble Caves (Puerto Río Tranquilo)",
+        "Ventisquero Colgante glacier",
+        "Patagonia National Park",
+        "Villa O'Higgins (end of the road)",
+        "Puyuhuapi thermal baths",
+        "Carretera Austral landscape"
+      ]
+    }
+  ],
+  "practical_info": {
+    "best_time_to_visit": "October to April for Patagonia; May to October for Atacama; Year-round for Santiago and Easter Island",
+    "visa_required_for_us": false,
+    "health_card_required": false,
+    "language_barrier": "Low in Santiago tourist zones. Moderate in provinces. Spanish essential for most interactions.",
+    "solo_travel": "Excellent — Chile is one of the safest and most organized solo travel destinations in South America. Torres del Paine has excellent infrastructure for solo trekkers.",
+    "guided_tour_required": false,
+    "internet_resources": [
+      "chile.travel (SERNATUR official)",
+      "conaf.cl for national parks",
+      "fantasticosur.com and verticepatagonia.cl for Torres del Paine booking"
+    ]
+  },
+  "laws": {
+    "driving_license": "Foreign license valid for 90 days. International Driving Permit recommended.",
+    "drug_laws": "Cannabis decriminalized for personal use (limited amounts). Cultivation for personal use allowed but not purchase. Hard drugs: strict penalties.",
+    "alcohol_laws": "Legal drinking age 18. Zero tolerance drunk driving law — any detectable alcohol results in serious legal consequences.",
+    "smoking_laws": "Smoking banned in all enclosed public spaces including bars, restaurants, and offices. Outside areas generally permitted.",
+    "photography_laws": "No restrictions in public spaces. Military installations and some government buildings prohibit photography.",
+    "drone_laws": "DGAC (Chilean civil aviation) permit required. Cannot fly over people, within 9km of airports, or in national parks without authorization. Violations carry significant fines.",
+    "lgbt_legal": true,
+    "lgbt_legal_details": "Same-sex marriage legalized in 2022. Same-sex civil unions since 2015. Anti-discrimination protections in employment and services. Santiago has an active LGBTQ+ scene. Conservative attitudes in rural and religious communities.",
+    "currency_export_limits": "Declare cash over $10,000 USD at border crossings",
+    "items_restricted": [
+      "Fresh food items of any kind at borders (Chile's biosecurity is absolute)",
+      "Archaeological artifacts from Easter Island or Chilean sites"
+    ],
+    "local_laws_tourists_often_break": [
+      "Bringing fresh produce across any Chilean border — serious fine",
+      "Touching or moving moai or any archaeological artifact on Easter Island — criminal offense",
+      "Drone use without DGAC permit in national parks"
+    ]
+  },
+  "family_travel": {
+    "family_friendliness_score": 8,
+    "notes": "Chile is very family-friendly — safe, clean, and with good infrastructure. Chilean families are the norm and children are welcomed everywhere. Patagonia is excellent for adventure-minded families with older children.",
+    "best_family_destinations": [
+      "Torres del Paine (day hikes for families)",
+      "Villarrica toboggan descent (all ages love it)",
+      "Atacama Desert (flamingo lagoons, geyser walks)",
+      "Easter Island",
+      "Chiloé Island (mythological stories)"
+    ],
+    "health_concerns": "Altitude on Atacama excursions (children can suffer more severely — consult doctor before El Tatio visit). Extreme UV in Patagonia and Atacama. Hypothermia risk in Patagonia with children.",
+    "child_entry_requirements": "Children traveling with only one parent may need notarized authorization. Chilean-born children must have Chilean ID.",
+    "family_activities": [
+      "Villarrica volcano toboggan (ascent + slide down)",
+      "Torres del Paine short hikes",
+      "Easter Island moai discovery",
+      "Chiloé stilt churches and mythology",
+      "Atacama flamingo lagoon visits"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Improving — Santiago has accessible Metro (most stations have elevators), accessible museums, and improving sidewalks. Torres del Paine has limited wheelchair access. Easter Island has very limited accessibility.",
+    "major_accessible_attractions": [
+      "Torres del Paine — Mirador Las Torres viewpoint (accessible section)",
+      "Santiago Metro",
+      "Santiago museums (Bellas Artes, MNBA)",
+      "Atacama Desert tours in 4x4 vehicles (accessible for mobility-limited)"
+    ],
+    "accessible_transport": "Santiago Metro with elevators. Long-distance buses have wheelchair spaces. Uber accessible vehicles available in Santiago.",
+    "notes": "Contact CONAF in advance for national park accessibility information. Torres del Paine's main trails are not wheelchair accessible."
+  },
+  "gear": {
+    "essentials": [
+      "Windproof layer (Patagonia wind is extreme)",
+      "Waterproof jacket",
+      "Sunscreen SPF 50+ (ozone hole — very intense UV)",
+      "Layers for cold Atacama nights",
+      "Trekking poles for Torres del Paine"
+    ],
+    "surf_specific": [
+      "4/3mm wetsuit + boots for central Chile (Pichilemu water 14-18°C)",
+      "Hood for winter",
+      "3mm for northern Chile and Easter Island",
+      "Sunscreen for long surf sessions"
+    ],
+    "trekking_specific": [
+      "Full rain gear (essential for Patagonia)",
+      "Tent rated for high winds",
+      "Sleeping bag rated to -5°C (Torres del Paine nights)",
+      "Gaiters",
+      "Emergency bivouac sack"
+    ],
+    "tech": [
+      "Garmin GPS or downloaded offline maps (Maps.me)",
+      "Power bank",
+      "Plug adapter (Type L — three-pin angled, unique to Chile)",
+      "Satellite communicator (Garmin inReach) for remote Patagonia"
+    ],
+    "what_not_to_bring": [
+      "Any fresh food across Chilean borders",
+      "Drone without permits registered"
+    ]
+  },
+  "history": [
+    {
+      "title": "Pre-Columbian Era",
+      "content": "Chile's indigenous peoples included the Mapuche (the most numerous and powerful), Atacameño in the north, Aymara in the Altiplano, and Fuegian peoples in the far south. The Mapuche were the only indigenous nation in the Americas to resist both Inca and Spanish conquest for centuries."
+    },
+    {
+      "title": "Spanish Conquest & Mapuche Resistance",
+      "content": "Pedro de Valdivia conquered northern Chile from 1540, founding Santiago in 1541. But the Arauco War — the Mapuche's resistance — lasted continuously until 1883, making it one of the longest conflicts in the Americas. Valdivia himself was captured and killed by the Mapuche leader Lautaro in 1553."
+    },
+    {
+      "title": "Independence",
+      "content": "Chile declared independence on September 18, 1810 (celebrated as Independence Day), with full independence achieved in 1818 after the Battle of Chacabuco (1817) and Maipú (1818). General Bernardo O'Higgins became the first Supreme Director, supported by José de San Martín's Army of the Andes."
+    },
+    {
+      "title": "War of the Pacific & Nitrate Boom",
+      "content": "The 1879–1884 War of the Pacific saw Chile defeat Bolivia and Peru, gaining the Atacama Desert and its vast nitrate deposits. The nitrate boom (1880s–1910s) made Chile wealthy until synthetic nitrates (Haber-Bosch process) collapsed the market in WWI. The Atacama also holds the world's largest copper reserves, still Chile's primary export."
+    },
+    {
+      "title": "Pinochet Dictatorship & Recovery",
+      "content": "Salvador Allende — the world's first democratically elected Marxist president — was overthrown in a US-backed coup on September 11, 1973. General Augusto Pinochet's dictatorship (1973–1990) killed and disappeared thousands, but also implemented free-market reforms (the 'Chicago Boys'). Democracy returned in 1990. Chile became Latin America's most stable economy, though massive inequality persisted, sparking the 2019 social uprising."
+    }
+  ]
+}

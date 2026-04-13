@@ -1,0 +1,1293 @@
+{
+  "meta": {
+    "last_updated": "2026-04-12",
+    "confidence_score": 0.92,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "Argentina Tourism Board",
+      "WayFinder internal hike/food/history data",
+      "OSAC Argentina Country Security Report 2025"
+    ],
+    "notes": "Populated from WayFinder app data and verified travel references."
+  },
+  "identity": {
+    "name": "Argentina",
+    "official_name": "Argentine Republic",
+    "code": "AR",
+    "iso3": "ARG",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Buenos Aires",
+    "flag_emoji": "🇦🇷",
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "driving_side": "right",
+    "country_calling_code": "+54",
+    "internet_tld": ".ar"
+  },
+  "language_and_money": {
+    "languages": [
+      "Spanish"
+    ],
+    "primary_language": "Spanish",
+    "english_proficiency": "Low to moderate — functional in Buenos Aires tourist areas, upscale hotels, and Patagonia tourism hubs. Very limited in rural provinces.",
+    "currency": "ARS",
+    "currency_name": "Argentine Peso",
+    "currency_symbol": "$",
+    "cash_vs_card": "Cash (dollars or pesos) essential outside Buenos Aires. Cards widely accepted in upscale Buenos Aires restaurants and hotels but may carry surcharges. USD cash at blue-rate gives significantly better value.",
+    "typical_payment_methods": [
+      "Cash (ARS)",
+      "Cash (USD)",
+      "Visa",
+      "Mastercard",
+      "Mercado Pago (mobile)"
+    ],
+    "atm_availability": "ATMs widespread but withdrawal limits are very low due to economic restrictions. Use ATMs that offer 'no conversion' to avoid DCC fees. Bring USD cash for better blue-market exchange rates.",
+    "tipping_culture": "10% expected in restaurants if no service charge included. Tip tour guides $5-10/day, trekking guides $10-20/day.",
+    "tipping_etiquette": "Leave 10% in restaurants if propina not included. Round up taxi fares. Tip hotel porters $1-2 per bag. Asado hosts: bring wine or dessert rather than tipping."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days",
+      "visa_type": "Tourist entry stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for the duration of stay; 6 months beyond entry recommended",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": false,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price for most international flights",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Strict on agricultural products — fresh fruit, vegetables, and meats may be confiscated. Declare cash over $10,000 USD.",
+    "restricted_items": [
+      "Fresh produce (undeclared)",
+      "Firearms (without permit)",
+      "Narcotics",
+      "Protected wildlife products"
+    ],
+    "duty_free_allowances": "400 cigarettes, 50 cigars, 2 liters of alcohol, gifts up to $500 USD value"
+  },
+  "health": {
+    "recommended_vaccines": [
+      "Hepatitis A",
+      "Typhoid",
+      "Hepatitis B",
+      "Tetanus-Diphtheria",
+      "Rabies (if trekking/wildlife areas)"
+    ],
+    "required_vaccines": [],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Minimal — very limited risk in northern border provinces (Salta, Jujuy, Misiones) near subtropical lowlands. None in Buenos Aires or Patagonia.",
+    "malaria_regions": [
+      "Northern Salta province border areas",
+      "Northern Misiones lowlands"
+    ],
+    "malaria_prophylaxis_info": "Not needed for most tourist destinations including Buenos Aires, Patagonia, Mendoza, Bariloche, or Iguazu Falls. Consult doctor for extended northern border travel.",
+    "dengue_risk": "Moderate and increasing — outbreaks reported in Buenos Aires and northern provinces (Chaco, Corrientes, Misiones, Formosa, Salta). Mosquito protection advised.",
+    "altitude_sickness_risk": "LOW for most destinations. Moderate risk in Jujuy and Salta highlands (2,000-4,000m). Aconcagua base camp and summit (6,961m) carry extreme altitude risk requiring proper acclimatization.",
+    "food_water_safety": "Tap water safe in Buenos Aires and major cities — one of the safest in South America. Bottled water preferred in smaller towns and rural areas. Street food generally safe.",
+    "air_quality_concerns": "Buenos Aires can have moderate air quality issues from traffic. Wildfire smoke occasional in Patagonia during summer.",
+    "common_travel_illnesses": [
+      "Traveler's diarrhea (rare, food generally safe)",
+      "Dengue (northern regions)",
+      "Sunburn (Patagonia UV is very intense — ozone hole)",
+      "Altitude sickness (Andes)"
+    ],
+    "pharmacy_access": "Excellent in cities. Farmacity and Vantage chains throughout Buenos Aires. Many medications available OTC. Limited in remote Patagonia.",
+    "tap_water_safe": true,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Excellent private healthcare in Buenos Aires (Hospital Alemán, Hospital Italiano, Clínica Suizo-Argentina). Good in Mendoza and Córdoba. Limited in remote Patagonia — helicopter evacuation may be needed for serious injuries.",
+    "emergency_medical_number": "107"
+  },
+  "safety": {
+    "overall_score": 68,
+    "travel_advisory_level_us": 1,
+    "travel_advisory_level_label": "Exercise Normal Precautions",
+    "travel_advisory_updated": "2024",
+    "risk_indicators": [
+      "Petty crime (bag snatching, pickpocketing) in Buenos Aires tourist areas",
+      "Motochorros (motorcycle thieves) snatch phones and bags from pedestrians and cars",
+      "Economic instability affects scam sophistication",
+      "Rosario has elevated gang violence — Level 2 caution"
+    ],
+    "crime_risk": "Low to moderate — Argentina has one of the lowest homicide rates in South America (4.4/100k in 2024). Petty crime is the main concern in Buenos Aires (La Boca, San Telmo, Retiro bus station). Rosario has higher violent crime due to drug trafficking.",
+    "scam_risk": "Moderate — currency exchange scams, fake police, taxi overcharging, mustard/pigeon-poop distraction theft in tourist areas.",
+    "transport_safety": "Taxis generally safe but use apps (Cabify, Uber) in Buenos Aires. Long-distance buses are excellent and safe — Cama Ejecutivo class is very comfortable. Domestic flights reliable.",
+    "solo_female_travel_notes": "Generally safe with normal precautions. Buenos Aires is one of the more female-friendly South American capitals. Avoid walking alone at night in La Boca and Retiro. Catcalling exists but far less aggressive than other Latin American countries.",
+    "lgbtq_notes": "Very progressive — Argentina was the first Latin American country to legalize same-sex marriage (2010). Buenos Aires is one of the most LGBTQ-friendly cities in the Americas with a large Pride event.",
+    "night_safety": "Most tourist neighborhoods in Buenos Aires (Palermo, Recoleta, San Telmo) are safe until late. Avoid La Boca after dark. Retiro bus station area risky at night.",
+    "safe_areas": [
+      "Palermo (Buenos Aires)",
+      "Recoleta (Buenos Aires)",
+      "Belgrano (Buenos Aires)",
+      "Puerto Madero (Buenos Aires)",
+      "Mendoza city center",
+      "Bariloche tourist zone"
+    ],
+    "areas_to_avoid": [
+      "La Boca (Buenos Aires) — after dark or off tourist streets",
+      "Retiro bus terminal area at night",
+      "Rosario — exercise increased caution",
+      "Northern border areas with Bolivia and Paraguay"
+    ],
+    "natural_disaster_risks": [
+      "Earthquakes in Cuyo (Mendoza, San Juan)",
+      "Volcanic ash from Chilean volcanoes (Patagonia)",
+      "Flooding in Buenos Aires (summer storms)",
+      "Wildfires in Patagonia (January-March)"
+    ],
+    "political_stability_notes": "Political protests are common and can disrupt transport — piquetes (roadblocks) especially in Buenos Aires during economic unrest. Generally peaceful. Monitor local news.",
+    "common_scams": [
+      "Mustard/substance on clothing distraction — someone 'helps' clean you while accomplice steals",
+      "Fake police asking to inspect wallet or passport",
+      "Currency exchange scams — only exchange at official exchange houses (casas de cambio) or use blue-rate apps",
+      "Taxi overcharging — use Cabify or Uber",
+      "Counterfeit pesos — check large bills",
+      "Friendly stranger leading you to 'better' exchange rate — usually a robbery setup"
+    ],
+    "police_reliability": "Variable. Tourist police in Buenos Aires are generally helpful. File reports at comisaría. Corruption exists but is not typically directed at tourists.",
+    "emergency_numbers": {
+      "police": "911",
+      "ambulance": "107",
+      "fire": "100",
+      "general_emergency": "911"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Buenos Aires",
+      "us_embassy_phone": "+54-11-5777-4354",
+      "us_embassy_website": "https://ar.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "October to April for Buenos Aires and the north. November to March for Patagonia (austral summer). March to May and August to October for Mendoza wine country.",
+    "climate_zones": [
+      "Buenos Aires — humid subtropical, hot summers (25-35°C), mild winters (5-15°C)",
+      "Patagonia — cold, windy, semi-arid; summer 15-25°C, winter sub-zero with snow",
+      "Mendoza — arid, continental; hot summers, cold winters, very sunny",
+      "Northwest (Salta, Jujuy) — high-altitude, dry, dramatic temperature swings",
+      "Iguazu — tropical, hot and humid year-round, 20-35°C"
+    ],
+    "dry_season": "April to October in most regions; Patagonia is windy year-round",
+    "rainy_season": "November to March in Buenos Aires and the north; year-round in Patagonia",
+    "hurricane_typhoon_season": null,
+    "surf_season": "April to October for best swells at Mar del Plata and Atlantic coast. March is most consistent with summer water temps.",
+    "trekking_best_months": [
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "average_temp_by_month": {
+      "Buenos Aires": "10-35°C (warmest Jan-Feb, coldest Jun-Jul)",
+      "Bariloche": "2-25°C (summer Dec-Feb best, winter ski season Jun-Sep)",
+      "Mendoza": "5-35°C (harvest March, skiing Jul-Aug)",
+      "Ushuaia": "-5 to 14°C (warmest Dec-Feb)"
+    },
+    "daylight_hours_by_season": "Buenos Aires: 9-14 hours depending on season. Ushuaia: extreme variation — nearly 24-hour daylight in December, very short days in June."
+  },
+  "transport": {
+    "major_airports": [
+      "Ministro Pistarini International Airport (EZE) — Buenos Aires (Ezeiza), main international hub",
+      "Aeroparque Jorge Newbery (AEP) — Buenos Aires city, domestic and regional",
+      "Ingeniero Aeronáutico Ambrosio L.V. Taravella (COR) — Córdoba",
+      "Francisco Gabrielli International Airport (MDZ) — Mendoza",
+      "Malvinas Argentinas International Airport (USH) — Ushuaia"
+    ],
+    "main_airlines": [
+      "Aerolíneas Argentinas",
+      "LATAM Argentina",
+      "JetSMART",
+      "Flybondi"
+    ],
+    "airport_to_city_options": [
+      "Tienda León bus service (EZE to Buenos Aires, $15)",
+      "Taxi ($40-60 from EZE to city center)",
+      "Uber (from EZE, check local availability)",
+      "Manuel Tienda León shuttle"
+    ],
+    "public_transit_quality": "Buenos Aires has an excellent Subte (metro) with 7 lines, extensive bus (colectivo) network, and Metrobus. SUBE card required. Provincial cities have buses only.",
+    "intercity_bus_quality": "World-class — Argentina has one of the best long-distance bus networks in South America. Cama (lie-flat) seats on routes like Buenos Aires-Mendoza (14hr), Buenos Aires-Bariloche (20hr). Very affordable.",
+    "train_network_quality": "Limited — trains connect Buenos Aires suburbs. Long-distance rail limited. El Tren Patagónico runs Viedma-Bariloche (16hr, scenic). Belgrano Cargas freight trains not for tourists.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": true,
+    "road_conditions": "Excellent highways around Buenos Aires and between major cities (Ruta 40, Pan-American). Ruta 40 in Patagonia is partially unpaved — 4x4 recommended for southern sections. Mountain roads in Mendoza and Salta require caution.",
+    "four_x_four_needed_regions": [
+      "Southern Patagonia (Ruta 40 south of Perito Moreno)",
+      "Remote Salta/Jujuy highlands",
+      "Los Glaciares backcountry"
+    ],
+    "ride_hailing_apps": [
+      "Uber",
+      "Cabify",
+      "InDriver"
+    ],
+    "taxi_safety_notes": "Taxis generally safe in Argentina — not the express kidnapping risk seen elsewhere in South America. Use apps in Buenos Aires for transparent pricing. Remises (private cars) are safe for airport transfers.",
+    "ferry_routes": [
+      "Buenos Aires to Colonia del Sacramento (Uruguay) — 1-hour ferry via Buquebus",
+      "Buenos Aires to Montevideo (Uruguay) — 3-hour Buquebus ferry"
+    ],
+    "border_crossing_notes": "Main crossings: Mendoza-Santiago via Los Libertadores (Chile), Puerto Iguazú to Brazil/Paraguay (Tres Fronteras), La Quiaca (Bolivia). Bring passport — cedula not accepted."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$35-55/day",
+    "daily_budget_midrange": "$80-150/day",
+    "daily_budget_comfort": "$200-400/day",
+    "hostel_avg": "$10-20/night",
+    "hotel_avg": "$50-120/night",
+    "meal_avg": "$5-15 (menú del día $5-8, restaurant $15-30)",
+    "coffee_avg": "$1-3",
+    "beer_avg": "$2-5",
+    "local_transport_avg": "$0.25-1.00 (Subte/colectivo)",
+    "sim_card_avg": "$5-10 for 5-10GB",
+    "coworking_day_pass_avg": "$10-25",
+    "surfboard_rental_avg": "$15-25/day",
+    "value_for_money": "Excellent for international travelers — the blue-rate USD gives significantly more purchasing power. Fine dining, steak restaurants, and Malbec wine are very affordable. Patagonia activities (glacier tours, gear rental) are pricier."
+  },
+  "connectivity": {
+    "sim_card_providers": [
+      "Claro",
+      "Personal",
+      "Movistar"
+    ],
+    "esim_available": true,
+    "mobile_data_quality": "Good 4G in Buenos Aires, Córdoba, Mendoza, and major cities. Patchy in Patagonia and remote provinces. No coverage in many Patagonia trekking areas.",
+    "wifi_quality": "Good in Buenos Aires hostels, cafés, and co-working spaces (20-100 Mbps). Slower in provinces. Spotty in Patagonia lodges.",
+    "coworking_available": true,
+    "best_remote_work_cities": [
+      "Buenos Aires (Palermo, Belgrano, Recoleta)",
+      "Mendoza",
+      "Córdoba",
+      "Bariloche"
+    ],
+    "power_outlet_types": [
+      "I"
+    ],
+    "voltage": "220V, 50Hz",
+    "plug_adapter_needed_for_us": true,
+    "power_reliability": "Reliable in cities. Outages possible in Patagonia during storms. Bring power bank for trekking."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Palermo, Buenos Aires — bohemian, restaurants, parks, nightlife, safest",
+      "Recoleta, Buenos Aires — upscale, museums, Paris-like architecture",
+      "San Telmo, Buenos Aires — historic, tango, antique markets, artsy",
+      "Mendoza city center — walkable, wine bars, Andes views",
+      "Bariloche town center — lake views, hiking access, ski resort",
+      "El Chaltén — trekking base for Fitz Roy, tiny mountain village"
+    ],
+    "budget_areas": [
+      "San Telmo (Buenos Aires)",
+      "Congreso (Buenos Aires)",
+      "Mendoza backpacker area",
+      "El Calafate hostels"
+    ],
+    "family_friendly_areas": [
+      "Recoleta (Buenos Aires)",
+      "Puerto Madero (Buenos Aires)",
+      "Bariloche resort zone",
+      "Mendoza bodegas area"
+    ],
+    "nightlife_areas": [
+      "Palermo Hollywood (Buenos Aires)",
+      "San Telmo (Buenos Aires)",
+      "Córdoba city center"
+    ],
+    "surf_towns": [
+      "Mar del Plata",
+      "Miramar",
+      "Necochea",
+      "Santa Teresita",
+      "Monte Hermoso"
+    ],
+    "eco_lodges_available": true,
+    "peak_booking_season": "December to February (Patagonia summer); July-August (ski season Bariloche/Las Leñas); Vendimia March (Mendoza)",
+    "accommodation_notes": "Book Patagonia lodges and El Chaltén accommodation well in advance (6+ months for peak Dec-Feb). Puerto Madryn for whale watching requires March booking. Buenos Aires has ample availability year-round."
+  },
+  "culture": {
+    "local_customs": [
+      "Greeting with one kiss on the right cheek — even with strangers in social settings",
+      "Mate (yerba mate tea) is a deeply communal ritual — sharing from the same gourd is a sign of friendship",
+      "Punctuality is relaxed — arriving 30-60 minutes late to social events is normal",
+      "Fútbol (soccer) is a national religion — Boca vs River matches are electric",
+      "Asado (barbecue) is a social institution — Sunday family asados can last all afternoon"
+    ],
+    "dress_expectations": "Casual and stylish — Buenos Aires is fashion-conscious. Smart casual for restaurants. Beachwear only at beach. Layers essential in Patagonia.",
+    "religious_sensitivity": "Predominantly Catholic but secular in practice. Churches welcome visitors dressed modestly. Patron saint festivals blend Catholic and gaucho traditions.",
+    "social_norms": [
+      "Never discuss the Falklands/Malvinas as anything other than Argentinian territory",
+      "Don't pour wine for yourself — fill others' glasses first",
+      "Avoid calling Malbec 'French wine' — it's Argentina's wine",
+      "Tipping in pesos is fine; USD tips are enthusiastically received",
+      "Don't rush a meal — dinner starts at 9pm, restaurants fill at 10-11pm"
+    ],
+    "greeting_style": "One kiss on right cheek for everyone in social settings. Handshake in formal business settings. Use 'vos' (local second person) rather than 'tú'.",
+    "public_behavior_notes": "PDA is normal and accepted. Argentinians are expressive and conversational — loud debate is normal. Football rivalry is intense but usually friendly to tourists.",
+    "photography_etiquette": "Generally fine in public spaces. Ask permission before photographing indigenous people in the northwest. No restrictions at most attractions.",
+    "bargaining_expected": false,
+    "important_holidays": [
+      "Vendimia — National Grape Harvest Festival, Mendoza, late February/March — floats, harvest queen, folk music",
+      "Buenos Aires Tango Festival & Mundial — August — world championship tango competition",
+      "Carnaval de Gualeguaychú — January-March, Entre Ríos — one of South America's largest carnivals",
+      "Día de la Tradición — November 10, San Antonio de Areco — gaucho festival with horsemanship and asado",
+      "Fiestas Patrias — July 9 (Independence Day) — national holiday, military parades"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Must carry passport or certified copy — police can demand ID",
+      "Drone use requires ANAC authorization near airports and national parks",
+      "Photography prohibited at some military installations",
+      "Blue market currency exchange is technically illegal but widely practiced"
+    ]
+  },
+  "food": {
+    "dishes": [
+      {
+        "name": "Asado",
+        "description": "Argentina's national dish and social ritual — beef and offal (chorizo, morcilla, sweetbreads) grilled slowly over wood embers on a parrilla. Seasoned only with salt to showcase the meat's flavor. A social event lasting hours.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Empanadas",
+        "description": "Baked or fried pastry pockets filled with beef (carne cortada a cuchillo), chicken, ham and cheese, or humita (corn). Regional variations are significant — Salta empanadas are the most revered with egg and potato.",
+        "region": "Nationwide, best in Salta and Tucumán"
+      },
+      {
+        "name": "Locro",
+        "description": "Hearty winter stew of white corn, beans, squash, and various meats (pork knuckle, chorizo, bacon). A pre-Incan Andean dish, eaten on national holidays (May 25 and July 9). Warming and deeply satisfying.",
+        "region": "Northwest Argentina (Salta, Jujuy)"
+      },
+      {
+        "name": "Milanesa",
+        "description": "Breaded and fried beef or chicken cutlet — Argentina's Italian-influenced ubiquitous comfort food. Served as milanesa napolitana (with tomato sauce, ham, and cheese) or a caballo (with fried eggs).",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Dulce de Leche",
+        "description": "Argentina's beloved caramel spread made from slowly heated sweetened milk. Found on everything — toast, alfajores, ice cream, pancakes. Argentine dulce de leche is considered the world's finest.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Provoleta",
+        "description": "Thick round of provolone cheese grilled on the parrilla until charred outside and molten inside, served with chimichurri. Always first course at an asado.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Humita en chala",
+        "description": "Creamed corn paste seasoned with sautéed onion and spices, wrapped in corn husks and steamed. Pre-Columbian Andean dish, sweet and savory. Best in the northwest.",
+        "region": "Northwest Argentina (Tucumán, Salta, Jujuy)"
+      },
+      {
+        "name": "Cordero Patagónico",
+        "description": "Patagonian lamb slow-roasted on a cross (asado al palo) over open fire for 4-6 hours. The pampas-raised lamb has a distinctive earthy flavor from grazing on wild herbs. Iconic to the south.",
+        "region": "Patagonia (Santa Cruz, Chubut)"
+      },
+      {
+        "name": "Choripán",
+        "description": "Butterfly-cut chorizo grilled and served in a crusty bread roll with chimichurri and salsa criolla. The street food of Argentina — found at football stadiums, protests, and roadside parrillas.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Alfajor",
+        "description": "Two soft cookie rounds sandwiched with dulce de leche and coated in chocolate or powdered sugar. Argentina's most beloved sweet — Havanna and Guaymallén are iconic brands.",
+        "region": "Nationwide, best in Mar del Plata and Córdoba"
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Malbec",
+        "description": "Argentina's flagship red wine — deep, velvety, with blackberry and plum notes. Mendoza's high-altitude vineyards (Luján de Cuyo, Valle de Uco) produce world-class bottles. Essential pairing with asado."
+      },
+      {
+        "name": "Mate",
+        "description": "Bitter herbal tea from dried yerba mate leaves, drunk through a metal straw (bombilla) from a gourd. The national drink — sharing mate is a profound gesture of friendship and community."
+      },
+      {
+        "name": "Fernet con Coca",
+        "description": "Bitter Italian amaro Fernet-Branca mixed with Coca-Cola — Argentina consumes more Fernet than anywhere outside Italy. The unofficial national cocktail, especially popular in Córdoba."
+      },
+      {
+        "name": "Torrontés",
+        "description": "Argentina's signature white wine — floral, aromatic, with peach and rose notes. Unique to Argentina, grown in Salta's Cafayate valley at 1,700m altitude. Excellent aperitif."
+      },
+      {
+        "name": "Quilmes",
+        "description": "Argentina's most popular lager beer — light, crisp, and refreshing. Named after the Buenos Aires suburb. Available everywhere, best ice-cold at a parrilla."
+      },
+      {
+        "name": "Tereré",
+        "description": "Cold mate made with iced water or fruit juice instead of hot water. Popular in northeastern Argentina (Corrientes, Chaco) and during summer. Refreshing version of the mate ritual."
+      }
+    ],
+    "street_food_safety": "Very safe — Argentina has one of the better food safety standards in South America. Choripán carts, empanada shops, and pizza by the slice are all generally reliable.",
+    "vegetarian_friendliness": "Moderate — improving rapidly in Buenos Aires (Palermo has many vegetarian/vegan restaurants). Difficult in Patagonia and rural areas where meat dominates. Ask for 'sin carne'.",
+    "vegan_friendliness": "Good in Buenos Aires. Limited elsewhere. Growing vegan scene in Mendoza and Córdoba.",
+    "must_try_drinks": [
+      "Malbec",
+      "Mate",
+      "Fernet con Coca",
+      "Torrontés",
+      "Quilmes",
+      "Tereré"
+    ],
+    "regional_specialties": [
+      "Buenos Aires: pizza, empanadas, milanesas, asado, dulce de leche ice cream",
+      "Mendoza: Malbec, Torrontés, kid goat (chivito), olive oil, trout",
+      "Patagonia: Cordero patagónico, King crab (centolla), smoked trout, craft beer",
+      "Northwest: locro, humitas, tamales, quinoa, llama meat",
+      "Litoral/Northeast: surubí fish, chipá (cheese bread), mbaipy (corn polenta)"
+    ],
+    "drinking_water_notes": "Tap water is safe in Buenos Aires and all major cities. Buenos Aires tap water is treated and tested regularly.",
+    "alcohol_rules": "Legal drinking age 18. No open container laws in most provinces. Don't call Malbec 'from France' — it's proudly Argentine.",
+    "signature_dishes": [
+      {
+        "name": "Asado",
+        "description": "Argentina's national dish and social ritual — beef and offal (chorizo, morcilla, sweetbreads) grilled slowly over wood embers on a parrilla. Seasoned only with salt to showcase the meat's flavor. A social event lasting hours.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Empanadas",
+        "description": "Baked or fried pastry pockets filled with beef (carne cortada a cuchillo), chicken, ham and cheese, or humita (corn). Regional variations are significant — Salta empanadas are the most revered with egg and potato.",
+        "region": "Nationwide, best in Salta and Tucumán"
+      },
+      {
+        "name": "Locro",
+        "description": "Hearty winter stew of white corn, beans, squash, and various meats (pork knuckle, chorizo, bacon). A pre-Incan Andean dish, eaten on national holidays (May 25 and July 9). Warming and deeply satisfying.",
+        "region": "Northwest Argentina (Salta, Jujuy)"
+      },
+      {
+        "name": "Milanesa",
+        "description": "Breaded and fried beef or chicken cutlet — Argentina's Italian-influenced ubiquitous comfort food. Served as milanesa napolitana (with tomato sauce, ham, and cheese) or a caballo (with fried eggs).",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Dulce de Leche",
+        "description": "Argentina's beloved caramel spread made from slowly heated sweetened milk. Found on everything — toast, alfajores, ice cream, pancakes. Argentine dulce de leche is considered the world's finest.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Provoleta",
+        "description": "Thick round of provolone cheese grilled on the parrilla until charred outside and molten inside, served with chimichurri. Always first course at an asado.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Humita en chala",
+        "description": "Creamed corn paste seasoned with sautéed onion and spices, wrapped in corn husks and steamed. Pre-Columbian Andean dish, sweet and savory. Best in the northwest.",
+        "region": "Northwest Argentina (Tucumán, Salta, Jujuy)"
+      },
+      {
+        "name": "Cordero Patagónico",
+        "description": "Patagonian lamb slow-roasted on a cross (asado al palo) over open fire for 4-6 hours. The pampas-raised lamb has a distinctive earthy flavor from grazing on wild herbs. Iconic to the south.",
+        "region": "Patagonia (Santa Cruz, Chubut)"
+      },
+      {
+        "name": "Choripán",
+        "description": "Butterfly-cut chorizo grilled and served in a crusty bread roll with chimichurri and salsa criolla. The street food of Argentina — found at football stadiums, protests, and roadside parrillas.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Alfajor",
+        "description": "Two soft cookie rounds sandwiched with dulce de leche and coated in chocolate or powdered sugar. Argentina's most beloved sweet — Havanna and Guaymallén are iconic brands.",
+        "region": "Nationwide, best in Mar del Plata and Córdoba"
+      }
+    ]
+  },
+  "outdoors": {
+    "surf_spots": [
+      {
+        "name": "Mar del Plata — La Popular / Playa Grande",
+        "region": "Buenos Aires Province (Atlantic coast)",
+        "difficulty": "Intermediate",
+        "wave_type": "Beach break",
+        "break_type": "Sand bottom beach break, some rights near lighthouse",
+        "swell_direction": "East-southeast",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August"
+        ],
+        "description": "Argentina's surf capital — 600,000-person city whose surfers are out year-round. Best swells arrive from the southeast in autumn and winter. Playa Grande is most consistent for intermediates; the lighthouse area (Faro) produces quality rights on south swells. Biología jetty provides wind protection. Crowds heavy in summer; manageable in winter. Cold water (8-21°C) — full suit and hood in winter."
+      },
+      {
+        "name": "Miramar",
+        "region": "Buenos Aires Province (south of Mar del Plata)",
+        "difficulty": "Intermediate to Advanced",
+        "wave_type": "Beach break",
+        "break_type": "Exposed beach break with reef sections",
+        "swell_direction": "Southeast to south",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "description": "Quieter surf town 45km south of Mar del Plata. More powerful and hollow than 'Mardel' with less crowd. Quality beach break peaks that fire on solid south swells. Authentic Argentine surf culture with fewer tourists."
+      },
+      {
+        "name": "Necochea",
+        "region": "Buenos Aires Province",
+        "difficulty": "Beginner to Intermediate",
+        "wave_type": "Beach break",
+        "break_type": "Long beach with consistent peaks",
+        "swell_direction": "Southeast",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July"
+        ],
+        "description": "Long sandy beach 130km south of Mar del Plata. Consistent beach break with forgiving waves — good for learning. Long waves in smaller swell. Atlantic pine forest backdrop. Less crowded than Mar del Plata."
+      },
+      {
+        "name": "Monte Hermoso",
+        "region": "Buenos Aires Province (Bahía Blanca area)",
+        "difficulty": "Beginner",
+        "wave_type": "Beach break",
+        "break_type": "Sheltered bay beach break",
+        "swell_direction": "Southwest to south",
+        "best_months": [
+          "January",
+          "February",
+          "March",
+          "April"
+        ],
+        "description": "Small resort town with gentle beach break suitable for beginners. Protected bay softens swells. Warm summer atmosphere. Good for families learning to surf. Limited surf culture compared to Mar del Plata."
+      }
+    ],
+    "hikes": [
+      {
+        "name": "Fitz Roy Trek (to Laguna de los Tres)",
+        "region": "Santa Cruz (El Chaltén)",
+        "difficulty": "Moderate to Hard",
+        "distance_km": 24,
+        "duration_days": 1,
+        "elevation_gain_m": 1000,
+        "description": "The signature Patagonia day hike — through lenga beech forest to the glacial lagoon at the base of Mount Fitz Roy (3,359m). The final 45 minutes is a steep scramble but the view of Fitz Roy mirrored in the turquoise lagoon is one of South America's great sights. Wind and weather change fast.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Laguna Torre Trek",
+        "region": "Santa Cruz (El Chaltén)",
+        "difficulty": "Moderate",
+        "distance_km": 18,
+        "duration_days": 1,
+        "elevation_gain_m": 350,
+        "description": "Trek through Patagonian steppe and forest to Laguna Torre — a glacial lake with chunks of calving glacier and stunning views of Cerro Torre (3,128m), one of the world's most technically demanding mountains. Condors often circle overhead.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Glaciar Perito Moreno Walk",
+        "region": "Santa Cruz (El Calafate)",
+        "difficulty": "Easy",
+        "distance_km": 5,
+        "duration_days": 1,
+        "elevation_gain_m": 100,
+        "description": "Walk the network of elevated boardwalks to dramatic viewpoints of one of the world's only advancing glaciers. The 60m-tall ice wall calves massive icebergs with thunderous crashes. Minitrekking ice walks also available with crampons. Unmissable in Patagonia.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Quebrada de Humahuaca Circuit",
+        "region": "Jujuy Province",
+        "difficulty": "Easy",
+        "distance_km": 10,
+        "duration_days": 1,
+        "elevation_gain_m": 200,
+        "description": "Walk through a UNESCO World Heritage canyon with 14-color mountain sediment layers (Cerro de los 14 Colores). Ancient pre-Inca ruins at Tilcara Pucará. Dramatic landscapes of ochre, purple, and green. Best at midday for colors. Altitude ~2,700m.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Aconcagua Normal Route",
+        "region": "Mendoza Province",
+        "difficulty": "Very Hard",
+        "distance_km": 80,
+        "duration_days": 18,
+        "elevation_gain_m": 4875,
+        "description": "The highest peak in the Americas (6,961m) and the highest outside Asia — the ultimate Andean mountaineering objective. The Normal Route from Horcones Valley (2,950m) requires 18-21 days with full acclimatization. Technical skills limited but altitude is extreme. Guide and permit required.",
+        "best_months": [
+          "December",
+          "January",
+          "February"
+        ]
+      },
+      {
+        "name": "Valle de la Luna Circuit (Ischigualasto)",
+        "region": "San Juan Province",
+        "difficulty": "Easy",
+        "distance_km": 40,
+        "duration_days": 1,
+        "elevation_gain_m": 100,
+        "description": "UNESCO World Heritage 'Valley of the Moon' — surreal gray clay moonscape with dinosaur fossils (Eoraptor, Herrerasaurus), eroded badlands, and bizarre rock formations. Guided vehicle tour with hiking stops. Otherworldly at full moon. 225 million year old Triassic period deposits.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Lanín Volcano Ascent",
+        "region": "Neuquén Province",
+        "difficulty": "Hard",
+        "distance_km": 16,
+        "duration_days": 2,
+        "elevation_gain_m": 2885,
+        "description": "Climb the symmetrical snow-capped Lanín volcano (3,776m) on the Chile border — a technically moderate snow climb requiring crampons and ice axe. Register with park rangers. Camp at 2,500m refuge. Views over Argentine and Chilean lakes.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ]
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Valdés Peninsula",
+        "region": "Chubut Province (Patagonia)",
+        "species": [
+          "Southern right whale",
+          "Orca",
+          "Magellanic penguin",
+          "Southern elephant seal",
+          "South American sea lion",
+          "Rhea",
+          "Patagonian mara"
+        ],
+        "description": "UNESCO World Heritage Site and one of the world's great wildlife destinations. Southern right whales give birth in the sheltered bays (June-December). Orcas intentionally beach themselves to catch sea lions (March-April). Penguin colony at Punta Tombo (1 million birds). Peninsula accessible from Puerto Madryn.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "December",
+          "March",
+          "April"
+        ]
+      },
+      {
+        "name": "Iguazu Falls and Surrounds",
+        "region": "Misiones Province",
+        "species": [
+          "Toucan",
+          "Coati",
+          "Capuchin monkey",
+          "Caiman",
+          "Giant anteater",
+          "Jaguar (rare)",
+          "Tapir",
+          "800+ bird species"
+        ],
+        "description": "The falls themselves are spectacular but the surrounding subtropical Atlantic Forest is one of the most biodiverse areas in Argentina. Walk the trails early morning for wildlife. Coatis are habituated and bold — don't feed them. Boat rides go under the falls.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Punta Tombo Penguin Colony",
+        "region": "Chubut Province",
+        "species": [
+          "Magellanic penguin",
+          "Kelp gull",
+          "Imperial cormorant",
+          "Steamer duck"
+        ],
+        "description": "Largest Magellanic penguin colony in the world — over 1 million birds nest here between September and March. Walk among the penguins on marked paths. Penguins are incredibly unbothered by humans and will waddle within centimeters.",
+        "best_months": [
+          "September",
+          "October",
+          "November",
+          "December",
+          "January",
+          "February"
+        ]
+      }
+    ],
+    "national_parks": [
+      {
+        "name": "Los Glaciares National Park",
+        "region": "Santa Cruz (Patagonia)",
+        "area_km2": 4459,
+        "description": "UNESCO World Heritage Site encompassing Perito Moreno Glacier, Mount Fitz Roy, and Cerro Torre. Two main visitor zones: El Calafate (glaciers) and El Chaltén (trekking). One of Argentina's most visited parks.",
+        "highlights": [
+          "Perito Moreno Glacier",
+          "Fitz Roy massif",
+          "Laguna de los Tres",
+          "Cerro Torre",
+          "Lago Argentino",
+          "Glacier trekking"
+        ]
+      },
+      {
+        "name": "Iguazú National Park",
+        "region": "Misiones Province",
+        "area_km2": 667,
+        "description": "UNESCO World Heritage Site protecting the Argentine side of Iguazú Falls — 275 waterfalls spanning 2.7km, with Garganta del Diablo (Devil's Throat) as the dramatic centerpiece. Dense subtropical forest with exceptional wildlife.",
+        "highlights": [
+          "Garganta del Diablo",
+          "Upper and Lower Circuit walks",
+          "Jungle boat rides",
+          "San Martín Island",
+          "Bird watching",
+          "Macuco Safari boat ride"
+        ]
+      },
+      {
+        "name": "Nahuel Huapi National Park",
+        "region": "Río Negro and Neuquén (Lake District)",
+        "area_km2": 7050,
+        "description": "Argentina's oldest national park (1934), centered on the stunning Andean lake district around Bariloche. Glacial lakes, Valdivian rainforest, ski resort, and access to the Andes. Year-round destination.",
+        "highlights": [
+          "Lago Nahuel Huapi",
+          "Cerro Catedral ski resort",
+          "Circuito Chico drive",
+          "Isla Victoria",
+          "Arrayanes Forest",
+          "Trekking to Refugio Frey"
+        ]
+      },
+      {
+        "name": "Talampaya National Park",
+        "region": "La Rioja Province",
+        "area_km2": 2150,
+        "description": "UNESCO World Heritage Site protecting dramatic red sandstone canyons carved by the Talampaya River. Towering 143m canyon walls with petroglyphs and Triassic-era fossils. Condors nest in the cliffs. Guided vehicle tours only.",
+        "highlights": [
+          "Red canyon walls",
+          "Andean condors",
+          "Triassic fossils",
+          "Indigenous petroglyphs",
+          "Cañón Principal",
+          "Boca del Diablo gorge"
+        ]
+      },
+      {
+        "name": "Tierra del Fuego National Park",
+        "region": "Tierra del Fuego Province",
+        "area_km2": 630,
+        "description": "The End of the World — Argentina's most southerly national park, on the Beagle Channel. Sub-Antarctic forest, peat bogs, and glaciated mountains. The Pan-American Highway ends here. Penguin colonies accessible by boat.",
+        "highlights": [
+          "Beagle Channel views",
+          "Lapataia Bay (end of Pan-American Highway)",
+          "Sub-Antarctic forest",
+          "Magellanic penguin colonies",
+          "Trekking to Cerro Guanaco",
+          "Train del Fin del Mundo"
+        ]
+      }
+    ],
+    "danger_zones": [
+      {
+        "name": "Patagonia weather window",
+        "region": "Santa Cruz and Tierra del Fuego",
+        "risk_level": "Moderate",
+        "description": "Weather can change from sunny to blizzard in 30 minutes. Wind gusts on exposed ridges can exceed 120km/h. Always carry layers, rain gear, and a tent even on day hikes in El Chaltén."
+      },
+      {
+        "name": "Aconcagua high altitude",
+        "region": "Mendoza Province",
+        "risk_level": "High",
+        "description": "At 6,961m, Aconcagua carries severe risks of HACE and HAPE. Climbers must have proper acclimatization, guide support, and rescue insurance. Several deaths occur annually."
+      },
+      {
+        "name": "Ruta 40 southern section",
+        "region": "Santa Cruz Province",
+        "risk_level": "Low to Moderate",
+        "description": "Partially unpaved road with long distances between fuel stations. Carry spare fuel, food, and water. Wind can make driving dangerous. Cell coverage nonexistent for hundreds of kilometers."
+      }
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Fitz Roy Trek (to Laguna de los Tres)",
+        "difficulty": "Moderate to Hard",
+        "duration": "1 day",
+        "region": "Santa Cruz (El Chaltén)",
+        "description": "The signature Patagonia day hike — through lenga beech forest to the glacial lagoon at the base of Mount Fitz Roy (3,359m). The final 45 minutes is a steep scramble but the view of Fitz Roy mirrored in the turquoise lagoon is one of South America's great sights. Wind and weather change fast.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "elevation_m": 1000,
+        "notes": "",
+        "distance_km": 24,
+        "duration_days": 1
+      },
+      {
+        "name": "Laguna Torre Trek",
+        "difficulty": "Moderate",
+        "duration": "1 day",
+        "region": "Santa Cruz (El Chaltén)",
+        "description": "Trek through Patagonian steppe and forest to Laguna Torre — a glacial lake with chunks of calving glacier and stunning views of Cerro Torre (3,128m), one of the world's most technically demanding mountains. Condors often circle overhead.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "elevation_m": 350,
+        "notes": "",
+        "distance_km": 18,
+        "duration_days": 1
+      },
+      {
+        "name": "Glaciar Perito Moreno Walk",
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "region": "Santa Cruz (El Calafate)",
+        "description": "Walk the network of elevated boardwalks to dramatic viewpoints of one of the world's only advancing glaciers. The 60m-tall ice wall calves massive icebergs with thunderous crashes. Minitrekking ice walks also available with crampons. Unmissable in Patagonia.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "elevation_m": 100,
+        "notes": "",
+        "distance_km": 5,
+        "duration_days": 1
+      },
+      {
+        "name": "Quebrada de Humahuaca Circuit",
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "region": "Jujuy Province",
+        "description": "Walk through a UNESCO World Heritage canyon with 14-color mountain sediment layers (Cerro de los 14 Colores). Ancient pre-Inca ruins at Tilcara Pucará. Dramatic landscapes of ochre, purple, and green. Best at midday for colors. Altitude ~2,700m.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 200,
+        "notes": "",
+        "distance_km": 10,
+        "duration_days": 1
+      },
+      {
+        "name": "Valle de la Luna Circuit (Ischigualasto)",
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "region": "San Juan Province",
+        "description": "UNESCO World Heritage 'Valley of the Moon' — surreal gray clay moonscape with dinosaur fossils (Eoraptor, Herrerasaurus), eroded badlands, and bizarre rock formations. Guided vehicle tour with hiking stops. Otherworldly at full moon. 225 million year old Triassic period deposits.",
+        "best_months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "elevation_m": 100,
+        "notes": "",
+        "distance_km": 40,
+        "duration_days": 1
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Aconcagua Normal Route",
+        "difficulty": "Very Hard",
+        "duration": "18 days",
+        "region": "Mendoza Province",
+        "description": "The highest peak in the Americas (6,961m) and the highest outside Asia — the ultimate Andean mountaineering objective. The Normal Route from Horcones Valley (2,950m) requires 18-21 days with full acclimatization. Technical skills limited but altitude is extreme. Guide and permit required.",
+        "best_months": [
+          "December",
+          "January",
+          "February"
+        ],
+        "elevation_m": 4875,
+        "notes": "",
+        "distance_km": 80,
+        "duration_days": 18
+      },
+      {
+        "name": "Lanín Volcano Ascent",
+        "difficulty": "Hard",
+        "duration": "2 days",
+        "region": "Neuquén Province",
+        "description": "Climb the symmetrical snow-capped Lanín volcano (3,776m) on the Chile border — a technically moderate snow climb requiring crampons and ice axe. Register with park rangers. Camp at 2,500m refuge. Views over Argentine and Chilean lakes.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "elevation_m": 2885,
+        "notes": "",
+        "distance_km": 16,
+        "duration_days": 2
+      }
+    ],
+    "top_national_parks": [
+      {
+        "name": "Los Glaciares National Park",
+        "region": "Santa Cruz (Patagonia)",
+        "description": "UNESCO World Heritage Site encompassing Perito Moreno Glacier, Mount Fitz Roy, and Cerro Torre. Two main visitor zones: El Calafate (glaciers) and El Chaltén (trekking). One of Argentina's most visited parks.",
+        "area_km2": 4459,
+        "best_months": [],
+        "highlights": [
+          "Perito Moreno Glacier",
+          "Fitz Roy massif",
+          "Laguna de los Tres",
+          "Cerro Torre",
+          "Lago Argentino",
+          "Glacier trekking"
+        ]
+      },
+      {
+        "name": "Iguazú National Park",
+        "region": "Misiones Province",
+        "description": "UNESCO World Heritage Site protecting the Argentine side of Iguazú Falls — 275 waterfalls spanning 2.7km, with Garganta del Diablo (Devil's Throat) as the dramatic centerpiece. Dense subtropical forest with exceptional wildlife.",
+        "area_km2": 667,
+        "best_months": [],
+        "highlights": [
+          "Garganta del Diablo",
+          "Upper and Lower Circuit walks",
+          "Jungle boat rides",
+          "San Martín Island",
+          "Bird watching",
+          "Macuco Safari boat ride"
+        ]
+      },
+      {
+        "name": "Nahuel Huapi National Park",
+        "region": "Río Negro and Neuquén (Lake District)",
+        "description": "Argentina's oldest national park (1934), centered on the stunning Andean lake district around Bariloche. Glacial lakes, Valdivian rainforest, ski resort, and access to the Andes. Year-round destination.",
+        "area_km2": 7050,
+        "best_months": [],
+        "highlights": [
+          "Lago Nahuel Huapi",
+          "Cerro Catedral ski resort",
+          "Circuito Chico drive",
+          "Isla Victoria",
+          "Arrayanes Forest",
+          "Trekking to Refugio Frey"
+        ]
+      },
+      {
+        "name": "Talampaya National Park",
+        "region": "La Rioja Province",
+        "description": "UNESCO World Heritage Site protecting dramatic red sandstone canyons carved by the Talampaya River. Towering 143m canyon walls with petroglyphs and Triassic-era fossils. Condors nest in the cliffs. Guided vehicle tours only.",
+        "area_km2": 2150,
+        "best_months": [],
+        "highlights": [
+          "Red canyon walls",
+          "Andean condors",
+          "Triassic fossils",
+          "Indigenous petroglyphs",
+          "Cañón Principal",
+          "Boca del Diablo gorge"
+        ]
+      },
+      {
+        "name": "Tierra del Fuego National Park",
+        "region": "Tierra del Fuego Province",
+        "description": "The End of the World — Argentina's most southerly national park, on the Beagle Channel. Sub-Antarctic forest, peat bogs, and glaciated mountains. The Pan-American Highway ends here. Penguin colonies accessible by boat.",
+        "area_km2": 630,
+        "best_months": [],
+        "highlights": [
+          "Beagle Channel views",
+          "Lapataia Bay (end of Pan-American Highway)",
+          "Sub-Antarctic forest",
+          "Magellanic penguin colonies",
+          "Trekking to Cerro Guanaco",
+          "Train del Fin del Mundo"
+        ]
+      }
+    ]
+  },
+  "sports_and_activities": {
+    "top_activities": [
+      "Trekking in Patagonia",
+      "Surfing on the Atlantic coast",
+      "Skiing in Bariloche and Las Leñas",
+      "Wine tasting in Mendoza",
+      "Whale watching at Valdés Peninsula",
+      "Tango lessons in Buenos Aires",
+      "Fly fishing in Patagonia",
+      "White-water rafting in Mendoza"
+    ],
+    "skiing_destinations": [
+      "Cerro Catedral (Bariloche) — largest ski resort in South America",
+      "Las Leñas (Mendoza) — best snow, steepest terrain",
+      "Chapelco (San Martín de los Andes) — family-friendly"
+    ],
+    "ski_season": "June to October",
+    "scuba_diving": false,
+    "world_class_destinations": [
+      "Perito Moreno Glacier",
+      "Iguazú Falls",
+      "Aconcagua",
+      "El Chaltén trekking"
+    ],
+    "adventure_sports": [
+      "Via ferrata (Mendoza)",
+      "Paragliding (Córdoba, Mendoza)",
+      "Bungee jumping (Mendoza)",
+      "Rafting (Mendoza, Patagonia)",
+      "Ice trekking on Perito Moreno"
+    ]
+  },
+  "trip_styles": {
+    "backpacker": "Very popular — excellent hostel network, affordable buses, free trekking in El Chaltén (no park entry fee). Buenos Aires is a great base. Best route: BA → Mendoza → Bariloche → El Calafate → El Chaltén.",
+    "luxury": "World-class options — Awasi Patagonia, Explora Patagonia, luxury wine lodges in Mendoza (Cavas Wine Lodge, Entre Cielos). Private glacier tours and helicopter access to remote areas.",
+    "family": "Excellent — Iguazú Falls, Bariloche lakes, whale watching at Valdés. Buenos Aires has many family-friendly museums and parks. Kids under 12 often free at national parks.",
+    "adventure": "One of the world's top adventure destinations — Patagonia trekking, Aconcagua climbing, Mendoza rafting, Valdés wildlife, Tierra del Fuego exploration.",
+    "cultural": "Rich European and gaucho heritage — Buenos Aires tango, San Telmo antiques, gaucho festivals in San Antonio de Areco, wine culture in Mendoza, indigenous traditions in Jujuy.",
+    "eco": "Outstanding — Valdés Peninsula, Iguazú, Punta Tombo penguins, Iberá wetlands (the Okavango of South America), Patagonian steppe."
+  },
+  "destinations": [
+    {
+      "name": "Buenos Aires",
+      "type": "City",
+      "region": "Buenos Aires Province",
+      "description": "The 'Paris of South America' — a sophisticated, European-flavored metropolis of 3 million with world-class dining, tango, street art, and architecture. Palermo for nightlife, Recoleta for culture, San Telmo for antiques and tango.",
+      "highlights": [
+        "Recoleta Cemetery",
+        "Palermo Parks",
+        "La Boca Caminito",
+        "San Telmo Market",
+        "Teatro Colón",
+        "MALBA Museum"
+      ]
+    },
+    {
+      "name": "Mendoza",
+      "type": "City/Wine Region",
+      "region": "Mendoza Province",
+      "description": "Argentina's wine capital — a walkable, tree-lined city in the shadow of the Andes. Surrounded by 1,500 wineries producing world-class Malbec. Base for Aconcagua and Tupungato. Excellent food scene.",
+      "highlights": [
+        "Bodega tours",
+        "Malbec wine tasting",
+        "Aconcagua viewpoint",
+        "Olive oil tastings",
+        "Luján de Cuyo wineries",
+        "Valle de Uco"
+      ]
+    },
+    {
+      "name": "Patagonia (El Calafate & El Chaltén)",
+      "type": "Nature/Trekking",
+      "region": "Santa Cruz Province",
+      "description": "The end of the world — dramatic glaciers, jagged granite peaks, and some of the world's best trekking. El Calafate for Perito Moreno Glacier, El Chaltén for Fitz Roy and Cerro Torre. Few places on Earth match this scenery.",
+      "highlights": [
+        "Perito Moreno Glacier",
+        "Fitz Roy Trek",
+        "Laguna de los Tres",
+        "Cerro Torre",
+        "Los Glaciares NP",
+        "Lago Argentino boat cruise"
+      ]
+    },
+    {
+      "name": "Iguazú Falls",
+      "type": "Natural Wonder",
+      "region": "Misiones Province",
+      "description": "The world's most spectacular waterfall system — wider than Victoria Falls and taller than Niagara. 275 falls spanning 2.7km. See from both the Argentine side (best views, walkways) and the Brazilian side (panoramic vistas). Visit in the morning light.",
+      "highlights": [
+        "Garganta del Diablo",
+        "Argentine Circuit walks",
+        "Boat rides under the falls",
+        "Wildlife in surrounding jungle",
+        "Combined Argentine/Brazilian visit"
+      ]
+    },
+    {
+      "name": "Salta & Jujuy",
+      "type": "Culture/Nature",
+      "region": "Northwest Argentina",
+      "description": "The colorful northwest — colonial architecture in Salta, rainbow-colored mountains at Quebrada de Humahuaca (UNESCO), salt flats, and Andean indigenous culture. Excellent wines (Torrontés), llamas, and puna landscapes.",
+      "highlights": [
+        "Quebrada de Humahuaca",
+        "Purmamarca multicolor hill",
+        "Salinas Grandes salt flat",
+        "Tren a las Nubes",
+        "Cafayate wine valley",
+        "Salta colonial city"
+      ]
+    },
+    {
+      "name": "Bariloche and the Lake District",
+      "type": "Nature/Adventure",
+      "region": "Río Negro and Neuquén",
+      "description": "A stunning Swiss-Alpine landscape on the Argentine Andes — chocolate shops, craft beer, glacial lakes, and ski resorts. Year-round outdoor activities: skiing in winter, trekking and kayaking in summer. Best chocolate in Argentina.",
+      "highlights": [
+        "Cerro Catedral ski resort",
+        "Circuito Chico scenic drive",
+        "Nahuel Huapi Lake",
+        "Parque Nacional Nahuel Huapi",
+        "Seven Lakes Route",
+        "Chocolate shops"
+      ]
+    }
+  ],
+  "practical_info": {
+    "best_time_to_visit": "October to April for Buenos Aires; November to March for Patagonia; March to May for Mendoza",
+    "visa_required_for_us": false,
+    "health_card_required": false,
+    "language_barrier": "Low in Buenos Aires tourist zones. Moderate in provinces. Spanish essential for rural areas.",
+    "solo_travel": "Excellent for solo travelers — safe, well-traveled circuit, great hostel culture in Buenos Aires and Patagonia towns.",
+    "guided_tour_required": false,
+    "internet_resources": [
+      "Argentina.gob.ar/turismo",
+      "Parques.gob.ar for national parks",
+      "Aerolíneas.com.ar for domestic flights"
+    ]
+  },
+  "laws": {
+    "driving_license": "International Driving Permit recommended alongside national license",
+    "drug_laws": "Personal use amounts (small quantities) decriminalized in practice. Possession with intent to distribute carries serious penalties.",
+    "alcohol_laws": "Legal drinking age 18. No open container laws in most provinces.",
+    "smoking_laws": "Smoking banned in enclosed public spaces, restaurants, and bars. Outdoor dining areas may allow smoking.",
+    "photography_laws": "No restrictions on photography in public spaces. Some military and government buildings prohibit it.",
+    "drone_laws": "ANAC (National Civil Aviation Administration) permit required. No drone use within 8km of airports or without authorization in national parks.",
+    "lgbt_legal": true,
+    "lgbt_legal_details": "Argentina was the first Latin American country to legalize same-sex marriage in 2010. Full legal equality including adoption rights. Gender self-ID law since 2012. One of the most progressive LGBTQ legal frameworks in the world.",
+    "currency_export_limits": "Cannot export more than $10,000 USD without declaration. Blue-market exchange is technically illegal but widely practiced.",
+    "items_restricted": [
+      "Fresh produce and meat across borders",
+      "Uncertified copies of pre-Columbian artifacts"
+    ],
+    "local_laws_tourists_often_break": [
+      "Exchanging currency on the blue market (illegal but widely tolerated)",
+      "Not carrying ID — police can demand identification",
+      "Drone use without ANAC authorization"
+    ]
+  },
+  "family_travel": {
+    "family_friendliness_score": 8,
+    "notes": "Argentina is very family-friendly. Argentines adore children and will go out of their way to accommodate families. Children under 12 often free at attractions. High chairs common in restaurants.",
+    "best_family_destinations": [
+      "Buenos Aires (Palermo parks, Tigre Delta)",
+      "Bariloche (lake activities, chocolate)",
+      "Iguazú Falls",
+      "Mendoza (farms, horse riding)",
+      "Valdés Peninsula (whale watching, penguins)"
+    ],
+    "health_concerns": "Dengue risk in northern regions. No significant child-specific health risks in Buenos Aires or Patagonia. Sun protection critical in Patagonia (UV very intense due to ozone hole).",
+    "child_entry_requirements": "Children traveling without both parents or as a single-parent family may need a notarized permission letter from the absent parent.",
+    "family_activities": [
+      "Whale watching at Valdés",
+      "Penguin colony visit",
+      "Iguazú Falls boat rides",
+      "Glacier ice trekking (age 10+)",
+      "Horse riding in estancias"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Improving — Buenos Aires has accessible Metro (some stations) and ramps. Patagonia trails are very challenging. Iguazú has paved boardwalks.",
+    "major_accessible_attractions": [
+      "Iguazú Argentine Circuit (paved)",
+      "Perito Moreno boardwalks",
+      "Buenos Aires museums (MALBA, MNBA)",
+      "Recoleta Cemetery"
+    ],
+    "accessible_transport": "Buenos Aires Metro Line B and H are most accessible. Buses have ramps. Intercity buses have wheelchair spaces.",
+    "notes": "Contact national parks in advance for accessibility information. Patagonia trekking is generally not wheelchair accessible."
+  },
+  "gear": {
+    "essentials": [
+      "Layers (temperature swings extreme in Patagonia)",
+      "Windproof jacket (Patagonia wind is brutal)",
+      "Sunscreen SPF 50+ (ozone hole UV intensity)",
+      "Rain gear",
+      "Trekking poles for Fitz Roy"
+    ],
+    "surf_specific": [
+      "5/4mm wetsuit + hood + gloves for winter (Mar del Plata)",
+      "3/2mm shorty for summer",
+      "Booties in winter",
+      "Sunscreen — UV is intense on Atlantic coast"
+    ],
+    "trekking_specific": [
+      "Layering system (wool + softshell + hardshell)",
+      "Crampons for winter Lanín or Aconcagua",
+      "Gaiters for Patagonia mud",
+      "Reliable headlamp"
+    ],
+    "tech": [
+      "Garmin GPS or downloaded offline maps (no signal on Patagonia trails)",
+      "Power bank",
+      "Plug adapter (Type I — three-prong angled)"
+    ],
+    "what_not_to_bring": [
+      "Unnecessary electronics for high-crime areas",
+      "Expensive jewelry in Buenos Aires"
+    ]
+  },
+  "history": [
+    {
+      "title": "Pre-Columbian Era",
+      "content": "Argentina's diverse pre-Columbian peoples included the Mapuche in Patagonia, Guaraní in the northeast, Diaguita in the northwest, and dozens of others. The Inca Empire's southern edge reached northwestern Argentina (modern Tucumán and Salta regions) in the 15th century."
+    },
+    {
+      "title": "Spanish Colonization",
+      "content": "Juan Díaz de Solís first reached the Río de la Plata in 1516. Pedro de Mendoza founded Buenos Aires in 1536 (abandoned, refounded 1580). Argentina was part of the Viceroyalty of Peru until 1776 when the Viceroyalty of the Río de la Plata was created with Buenos Aires as capital."
+    },
+    {
+      "title": "Independence",
+      "content": "Argentina declared independence on July 9, 1816 in Tucumán — celebrated as Independence Day. General José de San Martín crossed the Andes to liberate Chile (1817) and Peru (1821). The wars of independence were followed by decades of civil conflict between Unitarians (Buenos Aires centralists) and Federalists (provincial autonomists)."
+    },
+    {
+      "title": "Immigration & Growth (1880–1930)",
+      "content": "Argentina experienced massive European immigration — primarily Italian and Spanish — transforming it into one of the world's wealthiest nations by 1900. Buenos Aires became the 'Paris of South America.' Argentina was the world's 10th largest economy by 1913, a global beef and grain exporter."
+    },
+    {
+      "title": "Perón Era & Modern History",
+      "content": "Juan Perón's presidency (1946–1955, then 1973–1974) and the Peronist movement defined 20th century Argentine politics. The brutal military dictatorship (1976–1983) resulted in 30,000 disappeared. Democracy was restored in 1983. Argentina defaulted on its debt in 2001 in the largest sovereign default in history at the time, triggering a severe economic crisis."
+    }
+  ]
+}

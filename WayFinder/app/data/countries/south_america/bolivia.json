@@ -1,0 +1,1132 @@
+{
+  "meta": {
+    "last_updated": "2026-04-12",
+    "confidence_score": 0.9,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "Canada travel advisory for Bolivia",
+      "OSAC Bolivia Country Security Report 2025",
+      "WayFinder internal hike/food/history data"
+    ],
+    "notes": "Bolivia is landlocked — no surf spots. Altitude sickness is critical health concern. Chapare region is Do Not Travel."
+  },
+  "identity": {
+    "name": "Bolivia",
+    "official_name": "Plurinational State of Bolivia",
+    "code": "BO",
+    "iso3": "BOL",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Sucre (constitutional), La Paz (administrative/seat of government)",
+    "flag_emoji": "🇧🇴",
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "driving_side": "right",
+    "country_calling_code": "+591",
+    "internet_tld": ".bo"
+  },
+  "language_and_money": {
+    "languages": [
+      "Spanish",
+      "Quechua",
+      "Aymara",
+      "Guaraní"
+    ],
+    "primary_language": "Spanish",
+    "english_proficiency": "Low — some English in upscale La Paz hotels and tour agencies. Very limited outside tourism infrastructure. Spanish essential.",
+    "currency": "BOB",
+    "currency_name": "Boliviano",
+    "currency_symbol": "Bs.",
+    "cash_vs_card": "Cash dominant. Cards accepted at upscale hotels and restaurants in La Paz, Santa Cruz, and Sucre. ATMs available in cities. Carry cash for Uyuni, rural areas, and markets.",
+    "typical_payment_methods": [
+      "Cash (Bolivianos)",
+      "Visa (major cities only)",
+      "Mastercard (limited)"
+    ],
+    "atm_availability": "Available in La Paz, Santa Cruz, Cochabamba, Sucre. Scarce in Uyuni and rural towns. BNB and Banco Mercantil most reliable. Withdraw ample cash before leaving major cities.",
+    "tipping_culture": "Not customary but appreciated. 10% in upscale restaurants. Tip Uyuni tour drivers and guides Bs.50-100/day. Tip porters and guides in Rurrenabaque.",
+    "tipping_etiquette": "Leave 10% in restaurants if service is good. For Uyuni 3-day tours, tip at end of tour: $10-15 USD for driver, $10-15 for guide. Round up taxi fares."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days (US citizens)",
+      "visa_type": "Tourist entry stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for at least 6 months beyond date of entry",
+    "blank_passport_pages_required": 2,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": true,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in most airline tickets. Tax at Viru Viru airport (Santa Cruz) may be charged separately.",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Coca leaves legal for personal consumption within Bolivia — cannot be exported. Strict on pre-Columbian artifacts. Declare cash over $10,000.",
+    "restricted_items": [
+      "Coca leaves (export)",
+      "Pre-Columbian artifacts",
+      "Narcotics",
+      "Firearms"
+    ],
+    "duty_free_allowances": "400 cigarettes, 50 cigars, 3 liters of alcohol, electronics for personal use"
+  },
+  "health": {
+    "recommended_vaccines": [
+      "Hepatitis A",
+      "Typhoid",
+      "Hepatitis B",
+      "Rabies (jungle/bat areas)",
+      "Tetanus-Diphtheria",
+      "Yellow Fever (if going to Amazon)"
+    ],
+    "required_vaccines": [
+      "Yellow Fever (required if arriving from yellow fever endemic country)"
+    ],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Present in Amazon lowlands — Beni, Pando, and Santa Cruz departments below 2,500m. Not present in La Paz, Uyuni, or highlands above 2,500m.",
+    "malaria_regions": [
+      "Beni department",
+      "Pando department",
+      "Northern Santa Cruz lowlands",
+      "Rurrenabaque jungle area"
+    ],
+    "malaria_prophylaxis_info": "Atovaquone-proguanil or doxycycline recommended for Amazon/jungle travel. Not needed for La Paz, Uyuni, Potosí, Sucre, or highland destinations.",
+    "dengue_risk": "Moderate in lowland cities (Santa Cruz, Cochabamba lowland area, Beni). Not present in highland cities above 2,500m.",
+    "altitude_sickness_risk": "CRITICAL — La Paz airport (El Alto) is at 4,062m, one of the highest commercial airports in the world. La Paz city sits at 3,640m. Uyuni is at 3,656m. Potosí at 4,090m. Immediate acclimatization required. 40-50% of visitors experience acute mountain sickness (AMS). Descend immediately if symptoms worsen to HACE or HAPE. Take acetazolamide (Diamox) prophylactically. Spend first 24-48 hours at rest. No alcohol for first 48 hours. Drink coca tea (mate de coca) which locals swear by.",
+    "food_water_safety": "Do NOT drink tap water in Bolivia — not safe anywhere in the country. Bottled water essential. Be cautious with salads, raw vegetables, and ice. Stick to cooked street food at busy, high-turnover stalls.",
+    "air_quality_concerns": "La Paz can have significant air quality issues from traffic, altitude, and occasional industrial pollution. El Alto is worse than the lower city center.",
+    "common_travel_illnesses": [
+      "Altitude sickness (AMS, HACE, HAPE) — extremely common",
+      "Traveler's diarrhea",
+      "Dengue (lowlands)",
+      "Malaria (Amazon regions)",
+      "Drug-facilitated robbery (scopolamine/burundanga in drinks)"
+    ],
+    "pharmacy_access": "Pharmacies available in La Paz, Santa Cruz, and Cochabamba. Diamox (acetazolamide) available OTC but get prescription from home if possible. Very limited in rural areas.",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Limited — private clinics in La Paz (Clínica CEMES, Clínica del Sur) provide reasonable care. Emergency medical care quality is significantly below Western standards. For serious conditions, evacuation to Chile or Peru is necessary. Altitude complications require immediate descent.",
+    "emergency_medical_number": "118"
+  },
+  "safety": {
+    "overall_score": 52,
+    "travel_advisory_level_us": 2,
+    "travel_advisory_level_label": "Exercise Increased Caution",
+    "travel_advisory_updated": "2024",
+    "risk_indicators": [
+      "Civil unrest — roadblocks and protests can occur without notice and cut off transport",
+      "Chapare region: Do Not Travel — drug trafficking, violent crime",
+      "Drug-facilitated crime (scopolamine) in taxi and bar contexts",
+      "Petty crime in markets and bus terminals"
+    ],
+    "crime_risk": "Moderate — violent crime against tourists is rare but petty theft is common. La Paz markets (Witches' Market, Rodriguez Market) and bus terminals are pickpocket hotspots. Santa Cruz bus terminal has higher violent crime risk. El Alto has gang activity.",
+    "scam_risk": "Moderate to High — fake police demanding wallet inspection, 'express kidnapping' in Santa Cruz (rare but reported), drug-facilitated robbery (scopolamine added to drinks or cigarettes), fake tour operators for Uyuni.",
+    "transport_safety": "AVOID street hailing taxis — use radio taxis or hotel-arranged transport. Intercity buses risky on night routes due to road conditions. Book reputable bus companies. Uyuni tours: use established agencies only — tour companies vary widely in vehicle quality and safety.",
+    "solo_female_travel_notes": "Exercise caution, particularly in La Paz markets and after dark. Street harassment is common. Do not accept rides or drinks from strangers. Travel with other tourists for Uyuni tours. Rurrenabaque is generally safe.",
+    "lgbtq_notes": "Same-sex relationships decriminalized but not legally recognized. Social attitudes conservative especially outside La Paz. Public displays of affection carry some risk of harassment. La Paz has a small LGBTQ+ scene.",
+    "night_safety": "Avoid walking alone at night in La Paz (especially Sopocachi and El Alto), Santa Cruz, and Cochabamba. Use radio taxis. Night buses carry accident risk — poor road conditions.",
+    "safe_areas": [
+      "La Paz Zona Sur (upscale)",
+      "Sopocachi central area (daytime)",
+      "Sucre historic center",
+      "Copacabana lakefront"
+    ],
+    "areas_to_avoid": [
+      "Chapare region (Do Not Travel)",
+      "Yungas road (crime risk, not just road danger)",
+      "El Alto (violence from gangs)",
+      "Santa Cruz bus terminal at night",
+      "La Paz UMSA university area at night"
+    ],
+    "natural_disaster_risks": [
+      "Floods and landslides in rainy season (November-March)",
+      "Earthquakes (moderate risk)",
+      "Droughts affecting travel routes in dry years"
+    ],
+    "political_stability_notes": "Bolivia has frequent political upheaval — roadblocks (bloqueos) are a common form of protest and can strand travelers for days. Monitor news carefully, especially around elections. Have emergency food, water, and cash.",
+    "common_scams": [
+      "Fake police (plainclothes officers requesting to inspect wallet) — real police won't do this",
+      "Scopolamine (burundanga) drugging — added to drinks, food, or cigarettes; results in compliance and memory loss during robbery",
+      "Express kidnapping in Santa Cruz — rare but reported",
+      "Uyuni tour scams — operators take deposits then use substandard vehicles",
+      "ATM skimming — use bank-attached ATMs only",
+      "'Stranded tourist' ploy asking for money"
+    ],
+    "police_reliability": "Low. Tourism police (Policía Turística) exist in La Paz and Sucre. Significant corruption. File reports at tourist police stations for lost passports.",
+    "emergency_numbers": {
+      "police": "110",
+      "ambulance": "118",
+      "fire": "119",
+      "general_emergency": "911"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "La Paz",
+      "us_embassy_phone": "+591-2-216-8000",
+      "us_embassy_website": "https://bo.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "May to October (dry season) for most of Bolivia including Uyuni (dry = best mirror effect in early rainy season), Salar de Uyuni, La Paz, and trekking. Uyuni's famous mirror effect occurs at start of rainy season (November-January) when shallow water on the flats creates surreal reflections.",
+    "climate_zones": [
+      "Altiplano highlands — cold, arid, 3,600-4,200m; temperatures -5 to 18°C",
+      "Yungas valleys — warm, humid, subtropical, 15-25°C",
+      "Amazon lowlands — hot, humid, tropical, 25-35°C",
+      "Valleys (Cochabamba, Sucre) — mild, 15-25°C, 'eternal spring'"
+    ],
+    "dry_season": "May to October (highland/altiplano). Most reliable for trekking and travel.",
+    "rainy_season": "November to March (highland), year-round (Amazon). Heavy rain can close roads and cause landslides.",
+    "hurricane_typhoon_season": null,
+    "surf_season": "Not applicable — Bolivia is landlocked with no ocean coastline.",
+    "trekking_best_months": [
+      "May",
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
+    "average_temp_by_month": {
+      "La Paz": "-2 to 18°C (dry season May-Sep is coldest nights, sunniest days; wet season Nov-Mar warmer)",
+      "Uyuni": "-20 to 15°C (winter nights below freezing; dry season May-Oct best conditions)",
+      "Santa Cruz": "20-35°C (hot and humid year-round, peak rain January-March)",
+      "Rurrenabaque": "25-35°C (hot and humid, Amazon jungle climate)"
+    },
+    "daylight_hours_by_season": "Approximately 11-13 hours near the equator; consistent year-round near Bolivian latitudes."
+  },
+  "transport": {
+    "major_airports": [
+      "El Alto International Airport (LPB) — La Paz, at 4,062m (world's highest international airport)",
+      "Viru Viru International Airport (VVI) — Santa Cruz",
+      "Jorge Wilstermann International Airport (CBB) — Cochabamba",
+      "Juana Azurduy de Padilla Airport (SRE) — Sucre"
+    ],
+    "main_airlines": [
+      "Boliviana de Aviación (BoA)",
+      "LATAM Bolivia",
+      "Amaszonas"
+    ],
+    "airport_to_city_options": [
+      "Radio taxi (prearranged) from LPB airport ($15-25 to La Paz city)",
+      "Mini-buses (trufi) to El Alto then cable car (Teleferico) to La Paz",
+      "Hotel transfers"
+    ],
+    "public_transit_quality": "La Paz has an excellent urban cable car system (Mi Teleférico) with 10 lines connecting the city to El Alto — scenic and efficient at Bs.3/ride. Mini-buses (trufis/micros) throughout cities but chaotic. No formal transit in smaller cities.",
+    "intercity_bus_quality": "Variable — use reputable companies (Trans Copacabana, Flota Trans Copacabana for lake route, Todo Turismo). Night buses risky on mountain roads. Book in advance. Ride quality and safety varies enormously.",
+    "train_network_quality": "Limited — Bolivia has restored some historical routes. Oruro-Villazón train (crosses altiplano to Argentine border), Expreso del Sur. Scenic but slow. Book in advance.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": false,
+    "road_conditions": "Generally poor outside main highways. Yungas Road (Death Road) is genuinely dangerous — narrow, no guardrails, 300m drops. Many roads unpaved. 4x4 essential in rural areas and rainy season.",
+    "four_x_four_needed_regions": [
+      "Uyuni salt flats (all terrain)",
+      "Yungas region",
+      "Rurrenabaque jungle roads",
+      "Remote altiplano",
+      "Sajama National Park"
+    ],
+    "ride_hailing_apps": [
+      "Uber (La Paz and Santa Cruz)",
+      "InDriver (La Paz)"
+    ],
+    "taxi_safety_notes": "NEVER hail taxis off the street in Bolivia — drug-facilitated robbery and express kidnapping risk. Use radio taxis (call by phone), hotel-arranged taxis, or Uber. Share only with people you know.",
+    "ferry_routes": [
+      "Copacabana to Isla del Sol (Lake Titicaca) — local passenger boats",
+      "Tiquina Strait ferry (road crosses Lake Titicaca by boat)"
+    ],
+    "border_crossing_notes": "Desaguadero (Peru), Copacabana (Peru via Yunguyo), Villazón (Argentina), Tambo Quemado (Chile/Arica), Puerto Quijarro (Brazil). Bring passport and vaccination records. Bolivia entry stamp required."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$25-40/day",
+    "daily_budget_midrange": "$60-100/day",
+    "daily_budget_comfort": "$120-250/day",
+    "hostel_avg": "$8-15/night",
+    "hotel_avg": "$30-80/night",
+    "meal_avg": "$2-8 (almuerzo menu Bs.15-25, restaurant Bs.30-80)",
+    "coffee_avg": "$1-2",
+    "beer_avg": "$1-3",
+    "local_transport_avg": "$0.30-1.50 (trufi/teleférico)",
+    "sim_card_avg": "$5-8 for 3-5GB",
+    "coworking_day_pass_avg": "$8-15",
+    "surfboard_rental_avg": "Not applicable — no surf",
+    "value_for_money": "Excellent — Bolivia is one of the cheapest countries in South America. Uyuni tours ($80-150 for 3 days all-in) are outstanding value. La Paz street food is very cheap. Budget travelers can live well on $30/day."
+  },
+  "connectivity": {
+    "sim_card_providers": [
+      "Tigo",
+      "Entel",
+      "Viva"
+    ],
+    "esim_available": false,
+    "mobile_data_quality": "Good 4G in La Paz, Santa Cruz, Cochabamba, and Sucre. Very limited in Uyuni and rural altiplano. No signal in many trekking areas and Amazon jungle.",
+    "wifi_quality": "Available in hostels and hotels in major cities. Slow and unreliable in Uyuni and smaller towns. Salt hotels on the flats typically have no Wi-Fi.",
+    "coworking_available": true,
+    "best_remote_work_cities": [
+      "La Paz (Sopocachi, Zona Sur)",
+      "Santa Cruz",
+      "Cochabamba"
+    ],
+    "power_outlet_types": [
+      "A",
+      "C"
+    ],
+    "voltage": "220V / 110V (mixed in some areas), 50Hz",
+    "plug_adapter_needed_for_us": true,
+    "power_reliability": "Unreliable — outages common in La Paz during storms and on the altiplano. Bring power bank. Salt hotels run on generators with limited hours."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Sopocachi, La Paz — cafes, restaurants, galleries, upscale but accessible",
+      "Zona Sur, La Paz — safest, upscale, good restaurants",
+      "Sucre historic center — colonial architecture, UNESCO atmosphere",
+      "Copacabana lakefront — Lake Titicaca views, peaceful",
+      "Uyuni town — launch point for salt flat tours"
+    ],
+    "budget_areas": [
+      "Sagárnaga Street area (La Paz) — Witches' Market area, many budget hostels",
+      "Uyuni town budget hostels",
+      "Sucre backpacker area"
+    ],
+    "family_friendly_areas": [
+      "Zona Sur, La Paz",
+      "Sucre historic center",
+      "Copacabana lakefront"
+    ],
+    "nightlife_areas": [
+      "Sopocachi, La Paz — bars and clubs",
+      "Santa Cruz city center"
+    ],
+    "surf_towns": [],
+    "eco_lodges_available": true,
+    "peak_booking_season": "June to August (dry season, most popular); Uyuni tours book out during South American summer (Dec-Jan)",
+    "accommodation_notes": "Book Uyuni tours in advance during peak season. Salt hotels (hotels made of salt blocks) on the flats are memorable but basic — no Wi-Fi, limited hot water, generator power only. Bring sleeping bag liner."
+  },
+  "culture": {
+    "local_customs": [
+      "Greet with a kiss on the right cheek (women) or handshake (men)",
+      "Respect for Pachamama (Mother Earth) is fundamental — offerings of coca leaves, alcohol, and food are made to her",
+      "Coca chewing and coca tea (mate de coca) are traditional and legal — offer to share leaves as a gesture of respect",
+      "Cholita (indigenous women in bowler hats and layered skirts) culture is celebrated — do not photograph without asking permission",
+      "Alasitas festival (January 24) — people buy miniature items to offer to Ekeko, god of abundance, hoping for the real thing in the year ahead"
+    ],
+    "dress_expectations": "Casual in cities. Cover shoulders and knees in churches and indigenous ceremonies. On the altiplano, layers essential — temperature swings are extreme. Bowler hat fashions of cholitas should be admired, not imitated as costume.",
+    "religious_sensitivity": "Blend of Catholic and indigenous Andean spiritual practices. Pachamama offerings are sacred, not tourist spectacle. Photography at festivals requires sensitivity and sometimes permission.",
+    "social_norms": [
+      "Punctuality is relaxed but improving in urban areas",
+      "Bargaining is expected and normal at markets",
+      "Accepting coca leaves when offered is polite",
+      "Never refuse food from a host family without a polite excuse",
+      "Don't discuss coca use as 'drug use' — it's a sacred, millennia-old tradition"
+    ],
+    "greeting_style": "One kiss on right cheek between women and mixed groups. Handshake for men. 'Buenos días/tardes' always. Aymara greeting: 'Kamisaraki.' Quechua: 'Allin p'unchay.'",
+    "public_behavior_notes": "Modest dress appreciated especially in altiplano and indigenous communities. Photography of people requires consent — especially cholitas who may charge a small fee.",
+    "photography_etiquette": "Always ask before photographing people, especially cholitas and indigenous community members. Some will request a small tip (Bs.5-10). Photo-taking during Ekeko festival is welcomed; sacred ceremonies should not be photographed without permission.",
+    "bargaining_expected": true,
+    "important_holidays": [
+      "Carnaval de Oruro — February/March — UNESCO Intangible Heritage, Bolivia's greatest festival with elaborately costumed devil dances (diablada), 50,000 performers, and 2-week celebration",
+      "Alasitas Festival — January 24, La Paz — buy miniature items at the Gran Poder fair and have them blessed by Ekeko (deity of abundance) to manifest real-life wishes",
+      "Día de los Muertos — November 1-2 — families bring food, drink, and photos to cemeteries to welcome returning souls; more festive than somber",
+      "Independence Day — August 6 — military parades, folk music, and Picante de Pollo (traditional independence dish) throughout the country",
+      "Gran Poder Festival — May/June, La Paz — colorful parade through La Paz with thousands of costumed dancers"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Coca leaves cannot be exported from Bolivia",
+      "Potosí mine tours require hard hat and dust mask — bring your own or use provided ones",
+      "Photography in military zones and government buildings is restricted",
+      "Crossing roadblocks during protests can result in physical confrontation — never do this"
+    ]
+  },
+  "food": {
+    "dishes": [
+      {
+        "name": "Salteña",
+        "description": "Bolivia's iconic breakfast pastry — a football-shaped baked empanada with a sweet, slightly spiced dough filled with a brothy stew of chicken or beef, potatoes, peas, and olives. The interior is deliberately juicy — bite from the top to avoid spillage. Eaten in the morning only.",
+        "region": "Nationwide, originated in Salta (Argentina) but now quintessentially Bolivian"
+      },
+      {
+        "name": "Picante de Pollo",
+        "description": "Traditional chicken dish simmered in a rich spicy sauce of ají amarillo chili, onions, garlic, and cumin. Served with boiled potatoes, chuño (freeze-dried potatoes), rice, and a fresh tomato salsa. The national dish served on Independence Day (August 6).",
+        "region": "Cochabamba and western Bolivia"
+      },
+      {
+        "name": "Silpancho",
+        "description": "Cochabamba's signature dish — a thin, wide breaded beef cutlet served over rice and potatoes, topped with a fried egg, tomato, and onion salsa. A filling, substantial meal beloved throughout the country.",
+        "region": "Cochabamba"
+      },
+      {
+        "name": "Sopa de Maní",
+        "description": "Peanut soup — rich, creamy broth made from ground peanuts with beef or chicken, pasta, and potatoes. Comforting highland dish, thicker than expected. Found across Bolivia but especially in La Paz and Cochabamba.",
+        "region": "La Paz, Cochabamba"
+      },
+      {
+        "name": "Chuño Phuti",
+        "description": "A simple but beloved altiplano staple — reconstituted chuño (freeze-dried potatoes, a 2,000-year-old Andean preservation technique) stewed with cheese, egg, and herbs. Chuño is made by leaving potatoes outside on cold altiplano nights to freeze, then drying in the sun.",
+        "region": "Altiplano, La Paz, Potosí"
+      },
+      {
+        "name": "Fricasé",
+        "description": "Spicy pork stew cooked with white corn (mote), ají amarillo peppers, and chuño. A warming, hearty breakfast or lunch dish, served with a mug of the broth alongside. Popular in La Paz, especially in the cold months.",
+        "region": "La Paz and altiplano"
+      },
+      {
+        "name": "Chairo",
+        "description": "Thick, hearty Andean soup of chuño, tunta (white freeze-dried potato), beef or lamb, wheat, and vegetables. A pre-Columbian dish still eaten throughout the highlands. Very filling.",
+        "region": "La Paz department"
+      },
+      {
+        "name": "Majadito",
+        "description": "Eastern Bolivia (Santa Cruz) comfort food — rice cooked with dried beef (charque) and herbs until the grains break down into a porridge-like consistency. Served with fried egg, fried plantain, and yuca. A lowland contrast to highland Andean cuisine.",
+        "region": "Santa Cruz and eastern lowlands"
+      },
+      {
+        "name": "Api Morado",
+        "description": "A warming, thick drink-cum-breakfast — made from purple corn cooked with cinnamon, cloves, and lemon. Served hot at market stalls and bus stations throughout the altiplano. Often paired with buñuelos (deep-fried dough balls).",
+        "region": "Altiplano, La Paz, Cochabamba"
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Mate de Coca",
+        "description": "Coca leaf tea — brewed from dried coca leaves. Sacred in Andean culture and an effective, mild aid for altitude sickness. Legal in Bolivia. Available everywhere and strongly recommended for all highland visitors."
+      },
+      {
+        "name": "Api Morado",
+        "description": "Hot purple corn drink spiced with cinnamon and cloves — thick, sweet, and warming. A quintessential cold-morning altiplano drink."
+      },
+      {
+        "name": "Singani",
+        "description": "Bolivia's national spirit — a grape brandy distilled from Muscat of Alexandria grapes grown at high altitude. Similar to pisco but uniquely Bolivian. The base of the famous Chuflay cocktail (singani + ginger ale)."
+      },
+      {
+        "name": "Chuflay",
+        "description": "Bolivia's beloved cocktail — singani (national grape brandy) mixed with ginger ale and lime. Light, refreshing, and widely available. The quintessential tourist drink."
+      },
+      {
+        "name": "Chicha",
+        "description": "Traditional fermented corn beer — millennia-old Andean drink, cloudy and mildly alcoholic. Homemade versions in rural communities. A white flag outside a home indicates chicha for sale inside. Deeply cultural."
+      },
+      {
+        "name": "Mocochinchi",
+        "description": "A refreshing cold drink made from dried peaches (durazno) simmered with sugar and cinnamon. Served cold from street carts. A non-alcoholic Bolivian classic, particularly popular in summer."
+      }
+    ],
+    "street_food_safety": "Exercise caution — eat from busy, high-turnover stalls. Avoid raw salads, unpeeled fruit, and anything with ice. Market almuerzo (set lunch menus) are generally safe and cheap. Do not drink tap water.",
+    "vegetarian_friendliness": "Challenging — Bolivian cuisine is very meat-centric. In La Paz and Sucre, vegetarian restaurants exist. Markets always have vegetable soups available. Tell servers 'sin carne' and verify no meat stock.",
+    "vegan_friendliness": "Difficult outside La Paz. Growing awareness in tourism areas but most dishes use lard, animal stock, or dairy.",
+    "must_try_drinks": [
+      "Mate de Coca",
+      "Chuflay",
+      "Singani",
+      "Api Morado",
+      "Chicha",
+      "Mocochinchi"
+    ],
+    "regional_specialties": [
+      "La Paz: salteñas, fricasé, chairo, chuño phuti",
+      "Cochabamba: silpancho, picante de pollo, chicha (largest chicha culture in Bolivia)",
+      "Santa Cruz: majadito, locro, tropical fruits, beef",
+      "Sucre: sopa de maní, chorizo chuquisaqueño, empanadas",
+      "Potosí: chuño-based dishes, altitude comfort foods"
+    ],
+    "drinking_water_notes": "Never drink tap water. Bottled water available everywhere for Bs.2-5. Always verify ice is from purified water in drinks.",
+    "alcohol_rules": "Legal drinking age 18. Alcohol freely available. Note that alcohol affects the body differently at altitude — one drink equals two at sea level effects-wise. Stay hydrated.",
+    "signature_dishes": [
+      {
+        "name": "Salteña",
+        "description": "Bolivia's iconic breakfast pastry — a football-shaped baked empanada with a sweet, slightly spiced dough filled with a brothy stew of chicken or beef, potatoes, peas, and olives. The interior is deliberately juicy — bite from the top to avoid spillage. Eaten in the morning only.",
+        "region": "Nationwide, originated in Salta (Argentina) but now quintessentially Bolivian"
+      },
+      {
+        "name": "Picante de Pollo",
+        "description": "Traditional chicken dish simmered in a rich spicy sauce of ají amarillo chili, onions, garlic, and cumin. Served with boiled potatoes, chuño (freeze-dried potatoes), rice, and a fresh tomato salsa. The national dish served on Independence Day (August 6).",
+        "region": "Cochabamba and western Bolivia"
+      },
+      {
+        "name": "Silpancho",
+        "description": "Cochabamba's signature dish — a thin, wide breaded beef cutlet served over rice and potatoes, topped with a fried egg, tomato, and onion salsa. A filling, substantial meal beloved throughout the country.",
+        "region": "Cochabamba"
+      },
+      {
+        "name": "Sopa de Maní",
+        "description": "Peanut soup — rich, creamy broth made from ground peanuts with beef or chicken, pasta, and potatoes. Comforting highland dish, thicker than expected. Found across Bolivia but especially in La Paz and Cochabamba.",
+        "region": "La Paz, Cochabamba"
+      },
+      {
+        "name": "Chuño Phuti",
+        "description": "A simple but beloved altiplano staple — reconstituted chuño (freeze-dried potatoes, a 2,000-year-old Andean preservation technique) stewed with cheese, egg, and herbs. Chuño is made by leaving potatoes outside on cold altiplano nights to freeze, then drying in the sun.",
+        "region": "Altiplano, La Paz, Potosí"
+      },
+      {
+        "name": "Fricasé",
+        "description": "Spicy pork stew cooked with white corn (mote), ají amarillo peppers, and chuño. A warming, hearty breakfast or lunch dish, served with a mug of the broth alongside. Popular in La Paz, especially in the cold months.",
+        "region": "La Paz and altiplano"
+      },
+      {
+        "name": "Chairo",
+        "description": "Thick, hearty Andean soup of chuño, tunta (white freeze-dried potato), beef or lamb, wheat, and vegetables. A pre-Columbian dish still eaten throughout the highlands. Very filling.",
+        "region": "La Paz department"
+      },
+      {
+        "name": "Majadito",
+        "description": "Eastern Bolivia (Santa Cruz) comfort food — rice cooked with dried beef (charque) and herbs until the grains break down into a porridge-like consistency. Served with fried egg, fried plantain, and yuca. A lowland contrast to highland Andean cuisine.",
+        "region": "Santa Cruz and eastern lowlands"
+      },
+      {
+        "name": "Api Morado",
+        "description": "A warming, thick drink-cum-breakfast — made from purple corn cooked with cinnamon, cloves, and lemon. Served hot at market stalls and bus stations throughout the altiplano. Often paired with buñuelos (deep-fried dough balls).",
+        "region": "Altiplano, La Paz, Cochabamba"
+      }
+    ]
+  },
+  "outdoors": {
+    "surf_spots": [],
+    "hikes": [
+      {
+        "name": "Huayna Potosí Summit",
+        "region": "La Paz department",
+        "difficulty": "Hard",
+        "distance_km": 14,
+        "duration_days": 2,
+        "elevation_gain_m": 2000,
+        "description": "Climb to 6,088m — one of the most accessible 6,000m+ peaks in the world, requiring only basic glacier climbing skills. Guide and crampons mandatory. Two-day ascent with high camp at 5,300m. Summit views of the Cordillera Real and Lake Titicaca. Significant altitude and weather risk.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Choro Trek (La Cumbre to Coroico)",
+        "region": "La Paz department (Yungas)",
+        "difficulty": "Moderate",
+        "distance_km": 56,
+        "duration_days": 3,
+        "elevation_gain_m": 0,
+        "description": "An extraordinary descent from the icy Andean pass La Cumbre (4,800m) down through cloud forest to the subtropical Yungas at Coroico (1,750m). Traverses five ecological zones, crosses Inca-built stone paths, and passes through indigenous Aymara communities. One of Bolivia's great treks.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Takesi Trek",
+        "region": "La Paz department",
+        "difficulty": "Moderate",
+        "distance_km": 42,
+        "duration_days": 2,
+        "elevation_gain_m": 300,
+        "description": "One of Bolivia's best trekking routes — follows a well-preserved Inca royal road from the altiplano (4,630m) down through stunning mountain terrain to Yanacachi in the Yungas valley. Excellent Inca stonework throughout. Less frequented than Choro.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Laguna Colorada and Salar de Uyuni Circuit",
+        "region": "Potosí department / Oruro",
+        "difficulty": "Easy (vehicle-based)",
+        "distance_km": 700,
+        "duration_days": 3,
+        "elevation_gain_m": 200,
+        "description": "Bolivia's most popular 4x4 tour — across the world's largest salt flat (10,582 km²), past high-altitude lagoons (Laguna Colorada with flamingos, Laguna Verde with turquoise mineral water), geysers at 5,000m, and Dalí Desert rock formations. Not a hiking trail but an epic expedition across extraordinary landscapes.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "name": "Illimani Summit Trek",
+        "region": "La Paz department",
+        "difficulty": "Very Hard",
+        "distance_km": 30,
+        "duration_days": 3,
+        "elevation_gain_m": 3500,
+        "description": "The iconic snow-capped mountain visible from La Paz (6,438m). A serious mountaineering objective requiring glacier travel, crampons, and ice axe. Guide mandatory. The southeast face is the standard route. Views of the entire Cordillera Real.",
+        "best_months": [
+          "June",
+          "July",
+          "August"
+        ]
+      },
+      {
+        "name": "Death Road Mountain Bike Descent (Yungas Road)",
+        "region": "La Paz department",
+        "difficulty": "Moderate (biking)",
+        "distance_km": 64,
+        "duration_days": 1,
+        "elevation_gain_m": 0,
+        "description": "A legendary mountain bike descent from La Cumbre (4,700m) down the old Yungas Road (historically world's most dangerous road) through cloud forest to Coroico. Paved and unpaved sections, 300m cliff drops, and dramatic scenery. Done with reputable tour operators who provide bikes and safety gear.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Madidi National Park",
+        "region": "Beni department (Amazon)",
+        "species": [
+          "Jaguar",
+          "Tapir",
+          "Giant otter",
+          "Pink river dolphin",
+          "Spectacled bear",
+          "1,000+ bird species",
+          "Harpy eagle",
+          "Macaw",
+          "Caiman"
+        ],
+        "description": "One of the most biodiverse areas on Earth — Madidi spans from Andean cloud forest down to Amazonian lowlands, creating extraordinary habitat diversity. Base yourself in Rurrenabaque. The Chalalan Ecolodge (indigenous-run) is considered one of the best in the Amazon.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Lake Titicaca (Isla del Sol)",
+        "region": "La Paz department / Puno border",
+        "species": [
+          "Titicaca grebe (endemic, near-threatened)",
+          "Andean flamingo",
+          "Giant coot",
+          "Titicaca water frog (endemic)",
+          "Chinchilla"
+        ],
+        "description": "The world's highest navigable lake (3,812m) is home to several endemic species. The sun rises first here according to Inca mythology. Isla del Sol has Inca ruins, walking trails, and stunning highland scenery. Uros floating reed islands on the Peruvian side.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ]
+      },
+      {
+        "name": "Laguna Colorada Flamingo Colony",
+        "region": "Potosí department (Eduardo Avaroa Reserve)",
+        "species": [
+          "James's flamingo",
+          "Andean flamingo",
+          "Chilean flamingo",
+          "Andean avocet",
+          "Puna plover"
+        ],
+        "description": "Brilliant red-colored high-altitude lagoon (4,278m) stained by algae and sediment — a stunning natural spectacle. Home to one of the world's largest flamingo colonies (50,000+ birds). Part of the Uyuni 3-day tour circuit. Eduardo Avaroa Andean Fauna National Reserve.",
+        "best_months": [
+          "October",
+          "November",
+          "December",
+          "January",
+          "February"
+        ]
+      }
+    ],
+    "national_parks": [
+      {
+        "name": "Salar de Uyuni (Uyuni Salt Flat) — within Eduardo Avaroa Reserve area",
+        "region": "Potosí department",
+        "area_km2": 10582,
+        "description": "The world's largest salt flat — a vast, perfectly flat expanse of white salt crust at 3,656m. During dry season, cracked geometric patterns extend to the horizon. During rainy season, a thin layer of water creates the world's largest natural mirror, perfectly reflecting the sky. The train cemetery at the edge and Incahuasi cactus island are highlights.",
+        "highlights": [
+          "Salt flat mirror effect (November-March)",
+          "Incahuasi Island (giant cacti)",
+          "Sunset and sunrise photography",
+          "Salt hotels",
+          "Train cemetery",
+          "Horizon-filling emptiness"
+        ]
+      },
+      {
+        "name": "Madidi National Park",
+        "region": "Beni department",
+        "area_km2": 18958,
+        "description": "Bolivia's greatest biodiversity jewel — spanning from high Andean peaks to lowland Amazon rainforest, Madidi has one of the highest vertebrate species counts of any protected area on Earth. Access from Rurrenabaque. Indigenous community tourism model.",
+        "highlights": [
+          "Jaguar sightings",
+          "Bird diversity (1,000+ species)",
+          "Chalalan Ecolodge",
+          "River dolphin watching",
+          "Indigenous community visits",
+          "Cloud forest transition zones"
+        ]
+      },
+      {
+        "name": "Eduardo Avaroa Andean Fauna National Reserve",
+        "region": "Potosí department (southwest altiplano)",
+        "area_km2": 7147,
+        "description": "Remote high-altitude reserve in the extreme southwest of Bolivia, bordering Chile and Argentina. Home to Laguna Colorada, Laguna Verde, Sol de Mañana geysers, and extraordinary volcanic landscapes. The Uyuni 3-day tour circuit passes through.",
+        "highlights": [
+          "Laguna Colorada flamingos",
+          "Laguna Verde",
+          "Sol de Mañana geysers (5,000m)",
+          "Dalí Desert rock formations",
+          "Hot springs at Polques",
+          "Andean wildlife"
+        ]
+      },
+      {
+        "name": "Sajama National Park",
+        "region": "Oruro department",
+        "area_km2": 1000,
+        "description": "Bolivia's oldest national park, dominated by the perfect cone of Sajama volcano (6,542m — Bolivia's highest peak). Ancient queñoa forests (world's highest forests), Andean wildlife, and dramatic altiplano scenery. Nearby hot springs and Chipaya indigenous community.",
+        "highlights": [
+          "Sajama volcano summit",
+          "Queñoa forests",
+          "Hot springs",
+          "Vicuña and viscacha wildlife",
+          "Chipaya indigenous community",
+          "Parinacota and Pomerape volcano views"
+        ]
+      }
+    ],
+    "danger_zones": [
+      {
+        "name": "Yungas Road (Death Road)",
+        "region": "La Paz department",
+        "risk_level": "Moderate (biking with guide) to High (driving)",
+        "description": "The old Yungas Road earned its reputation as the world's most dangerous road — no guardrails, 300m drops, single-lane, and heavy traffic on the original route. The new road handles most traffic. Biking tours are now organized and relatively safe with proper equipment and reputable operators."
+      },
+      {
+        "name": "Chapare Region",
+        "region": "Cochabamba department",
+        "risk_level": "Do Not Travel",
+        "description": "US State Department Do Not Travel advisory. Coca-producing region with active drug trafficking, violent crime, and the US government cannot provide emergency services. No tourist infrastructure or reason to visit."
+      },
+      {
+        "name": "Altitude (entire altiplano)",
+        "region": "La Paz, Potosí, Uyuni, Oruro",
+        "risk_level": "High for unprepared travelers",
+        "description": "Arriving directly to La Paz (3,640m) or El Alto (4,062m) from sea level carries serious AMS risk for 40-50% of visitors. HACE (cerebral edema) and HAPE (pulmonary edema) are life-threatening. Fly to a lower city first (Cochabamba, Santa Cruz) if possible. Take acetazolamide, rest, and descend if symptoms worsen."
+      }
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Death Road Mountain Bike Descent (Yungas Road)",
+        "difficulty": "Moderate (biking)",
+        "duration": "1 day",
+        "region": "La Paz department",
+        "description": "A legendary mountain bike descent from La Cumbre (4,700m) down the old Yungas Road (historically world's most dangerous road) through cloud forest to Coroico. Paved and unpaved sections, 300m cliff drops, and dramatic scenery. Done with reputable tour operators who provide bikes and safety gear.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 0,
+        "notes": "",
+        "distance_km": 64,
+        "duration_days": 1
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Huayna Potosí Summit",
+        "difficulty": "Hard",
+        "duration": "2 days",
+        "region": "La Paz department",
+        "description": "Climb to 6,088m — one of the most accessible 6,000m+ peaks in the world, requiring only basic glacier climbing skills. Guide and crampons mandatory. Two-day ascent with high camp at 5,300m. Summit views of the Cordillera Real and Lake Titicaca. Significant altitude and weather risk.",
+        "best_months": [
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 2000,
+        "notes": "",
+        "distance_km": 14,
+        "duration_days": 2
+      },
+      {
+        "name": "Choro Trek (La Cumbre to Coroico)",
+        "difficulty": "Moderate",
+        "duration": "3 days",
+        "region": "La Paz department (Yungas)",
+        "description": "An extraordinary descent from the icy Andean pass La Cumbre (4,800m) down through cloud forest to the subtropical Yungas at Coroico (1,750m). Traverses five ecological zones, crosses Inca-built stone paths, and passes through indigenous Aymara communities. One of Bolivia's great treks.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 0,
+        "notes": "",
+        "distance_km": 56,
+        "duration_days": 3
+      },
+      {
+        "name": "Takesi Trek",
+        "difficulty": "Moderate",
+        "duration": "2 days",
+        "region": "La Paz department",
+        "description": "One of Bolivia's best trekking routes — follows a well-preserved Inca royal road from the altiplano (4,630m) down through stunning mountain terrain to Yanacachi in the Yungas valley. Excellent Inca stonework throughout. Less frequented than Choro.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "elevation_m": 300,
+        "notes": "",
+        "distance_km": 42,
+        "duration_days": 2
+      },
+      {
+        "name": "Laguna Colorada and Salar de Uyuni Circuit",
+        "difficulty": "Easy (vehicle-based)",
+        "duration": "3 days",
+        "region": "Potosí department / Oruro",
+        "description": "Bolivia's most popular 4x4 tour — across the world's largest salt flat (10,582 km²), past high-altitude lagoons (Laguna Colorada with flamingos, Laguna Verde with turquoise mineral water), geysers at 5,000m, and Dalí Desert rock formations. Not a hiking trail but an epic expedition across extraordinary landscapes.",
+        "best_months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "November",
+          "December"
+        ],
+        "elevation_m": 200,
+        "notes": "",
+        "distance_km": 700,
+        "duration_days": 3
+      },
+      {
+        "name": "Illimani Summit Trek",
+        "difficulty": "Very Hard",
+        "duration": "3 days",
+        "region": "La Paz department",
+        "description": "The iconic snow-capped mountain visible from La Paz (6,438m). A serious mountaineering objective requiring glacier travel, crampons, and ice axe. Guide mandatory. The southeast face is the standard route. Views of the entire Cordillera Real.",
+        "best_months": [
+          "June",
+          "July",
+          "August"
+        ],
+        "elevation_m": 3500,
+        "notes": "",
+        "distance_km": 30,
+        "duration_days": 3
+      }
+    ],
+    "top_national_parks": [
+      {
+        "name": "Salar de Uyuni (Uyuni Salt Flat) — within Eduardo Avaroa Reserve area",
+        "region": "Potosí department",
+        "description": "The world's largest salt flat — a vast, perfectly flat expanse of white salt crust at 3,656m. During dry season, cracked geometric patterns extend to the horizon. During rainy season, a thin layer of water creates the world's largest natural mirror, perfectly reflecting the sky. The train cemetery at the edge and Incahuasi cactus island are highlights.",
+        "area_km2": 10582,
+        "best_months": [],
+        "highlights": [
+          "Salt flat mirror effect (November-March)",
+          "Incahuasi Island (giant cacti)",
+          "Sunset and sunrise photography",
+          "Salt hotels",
+          "Train cemetery",
+          "Horizon-filling emptiness"
+        ]
+      },
+      {
+        "name": "Madidi National Park",
+        "region": "Beni department",
+        "description": "Bolivia's greatest biodiversity jewel — spanning from high Andean peaks to lowland Amazon rainforest, Madidi has one of the highest vertebrate species counts of any protected area on Earth. Access from Rurrenabaque. Indigenous community tourism model.",
+        "area_km2": 18958,
+        "best_months": [],
+        "highlights": [
+          "Jaguar sightings",
+          "Bird diversity (1,000+ species)",
+          "Chalalan Ecolodge",
+          "River dolphin watching",
+          "Indigenous community visits",
+          "Cloud forest transition zones"
+        ]
+      },
+      {
+        "name": "Eduardo Avaroa Andean Fauna National Reserve",
+        "region": "Potosí department (southwest altiplano)",
+        "description": "Remote high-altitude reserve in the extreme southwest of Bolivia, bordering Chile and Argentina. Home to Laguna Colorada, Laguna Verde, Sol de Mañana geysers, and extraordinary volcanic landscapes. The Uyuni 3-day tour circuit passes through.",
+        "area_km2": 7147,
+        "best_months": [],
+        "highlights": [
+          "Laguna Colorada flamingos",
+          "Laguna Verde",
+          "Sol de Mañana geysers (5,000m)",
+          "Dalí Desert rock formations",
+          "Hot springs at Polques",
+          "Andean wildlife"
+        ]
+      },
+      {
+        "name": "Sajama National Park",
+        "region": "Oruro department",
+        "description": "Bolivia's oldest national park, dominated by the perfect cone of Sajama volcano (6,542m — Bolivia's highest peak). Ancient queñoa forests (world's highest forests), Andean wildlife, and dramatic altiplano scenery. Nearby hot springs and Chipaya indigenous community.",
+        "area_km2": 1000,
+        "best_months": [],
+        "highlights": [
+          "Sajama volcano summit",
+          "Queñoa forests",
+          "Hot springs",
+          "Vicuña and viscacha wildlife",
+          "Chipaya indigenous community",
+          "Parinacota and Pomerape volcano views"
+        ]
+      }
+    ]
+  },
+  "sports_and_activities": {
+    "top_activities": [
+      "Uyuni Salt Flat 4x4 tour",
+      "Death Road mountain biking",
+      "Huayna Potosí climbing",
+      "Lake Titicaca boat trips",
+      "Amazon jungle tour from Rurrenabaque",
+      "Choro Trek",
+      "Potosí silver mine tour",
+      "Cholita wrestling (La Paz)"
+    ],
+    "skiing_destinations": [
+      "Chacaltaya (former glacier, now for photos only — glacier disappeared)"
+    ],
+    "ski_season": "No active ski resorts",
+    "scuba_diving": false,
+    "world_class_destinations": [
+      "Salar de Uyuni",
+      "Lake Titicaca",
+      "Madidi National Park",
+      "Huayna Potosí"
+    ],
+    "adventure_sports": [
+      "Mountain biking (Death Road)",
+      "High-altitude mountaineering (Huayna Potosí, Illimani, Sajama)",
+      "White-water rafting (Yungas rivers)",
+      "Paragliding (La Paz)",
+      "Rock climbing (Valle de la Luna near La Paz)"
+    ]
+  },
+  "trip_styles": {
+    "backpacker": "Bolivia's top draw for budget travelers — cheapest quality destination in South America. Hostel scene in La Paz (Loki, Wild Rover) is legendary. Standard route: La Paz → Lake Titicaca → Uyuni → (on to Chile/Argentina or Peru).",
+    "luxury": "Limited luxury infrastructure compared to neighbors, but growing. Chalalan Ecolodge in Madidi is world-class. Kimal Hotel in San Pedro de Atacama (Chile) serves Uyuni tours from Chilean side. Boutique hotels in Sucre.",
+    "family": "Manageable with planning — altitude is the main concern for children. Uyuni is appropriate for older children. Lake Titicaca islands wonderful for all ages. Amazon lodge stays are memorable.",
+    "adventure": "Excellent — Death Road cycling, Huayna Potosí summit, Choro Trek, jungle expeditions from Rurrenabaque. Bolivia punches above its weight for adventure activities.",
+    "cultural": "Extraordinary — Carnaval de Oruro (UNESCO), Alasitas festival, cholita wrestling, Potosí colonial mine history, Lake Titicaca Inca mythology, witch market. One of South America's most culturally rich destinations.",
+    "eco": "Outstanding — Madidi NP, Lake Titicaca endemic species, Eduardo Avaroa flamingo colonies. Bolivia has 40% of its territory under some form of protection."
+  },
+  "destinations": [
+    {
+      "name": "La Paz",
+      "type": "City",
+      "region": "La Paz department",
+      "description": "The world's highest administrative capital (3,640m) in a dramatic canyon beneath snow-capped peaks. A chaotic, vibrant, fascinating city with the famous Witches' Market, cholitas in bowler hats, cable cars over the city, and a growing food scene. Altitude adjustment essential.",
+      "highlights": [
+        "Mi Teleférico cable car network",
+        "Witches' Market (Mercado de las Brujas)",
+        "Valle de la Luna",
+        "Cholita wrestling (Thursday/Sunday)",
+        "San Francisco Church",
+        "MUSEF ethnographic museum"
+      ]
+    },
+    {
+      "name": "Salar de Uyuni",
+      "type": "Natural Wonder",
+      "region": "Potosí department",
+      "description": "The world's largest salt flat — 10,582 km² of blinding white crust at 3,656m. Otherworldly perspective photography, brilliant sunsets, and the extraordinary mirror effect during the rainy season. One of the must-see landscapes on Earth.",
+      "highlights": [
+        "Mirror effect reflections (November-March)",
+        "Incahuasi Island cacti",
+        "Sunset photography",
+        "Laguna Colorada flamingos",
+        "Train cemetery",
+        "Salt hotel stays"
+      ]
+    },
+    {
+      "name": "Lake Titicaca (Copacabana & Isla del Sol)",
+      "type": "Nature/Culture",
+      "region": "La Paz department",
+      "description": "The world's highest navigable lake (3,812m) — stunningly blue in the thin Andean air. Copacabana is a charming pilgrimage town. Isla del Sol contains the Inca's sacred island where the sun god was born. Reed boat rides, ancient ruins, and highland culture.",
+      "highlights": [
+        "Isla del Sol Inca ruins",
+        "Reed boat rides",
+        "Copacabana Cathedral",
+        "Chalina (Chincana ruins)",
+        "Sunset over the lake",
+        "Local trout meals"
+      ]
+    },
+    {
+      "name": "Potosí",
+      "type": "History/Culture",
+      "region": "Potosí department",
+      "description": "Once the largest city in the Americas and the source of Spain's colonial silver wealth — the mines of Cerro Rico (Rich Hill) funded the entire Spanish Empire for two centuries. UNESCO Heritage city at 4,090m. Mine tours give access to working mines where conditions are unchanged for centuries.",
+      "highlights": [
+        "Cerro Rico silver mine tours",
+        "Casa de la Moneda (colonial mint)",
+        "Colonial architecture",
+        "Altitude (highest major city in Bolivia)",
+        "La Cancha market"
+      ]
+    },
+    {
+      "name": "Sucre",
+      "type": "City/History",
+      "region": "Chuquisaca department",
+      "description": "Bolivia's constitutional capital and most beautiful city — a UNESCO Heritage City of white colonial buildings, pleasant climate (2,750m — lower altitude than La Paz), and excellent museums. The constitution was signed here in 1825. Known as 'La Ciudad Blanca' (White City).",
+      "highlights": [
+        "Recoleta Monastery",
+        "Casa de la Libertad",
+        "Dinosaur footprints at Cal Orck'o",
+        "MUSEF museum",
+        "Mercado Central food",
+        "Cathedral on main plaza"
+      ]
+    },
+    {
+      "name": "Rurrenabaque",
+      "type": "Nature/Adventure",
+      "region": "Beni department",
+      "description": "Gateway to the Bolivian Amazon and the incredible Madidi National Park. A small jungle town accessible by short flight from La Paz. Base for jungle lodges, river tours, piranha fishing, and wildlife encounters.",
+      "highlights": [
+        "Madidi NP jungle tours",
+        "Pink river dolphin watching",
+        "Chalalan Ecolodge",
+        "Pampas tours (caiman, capybara)",
+        "Piranha fishing",
+        "Anaconda spotting"
+      ]
+    }
+  ],
+  "practical_info": {
+    "best_time_to_visit": "May to October (dry season) for most of Bolivia. November to January for Uyuni mirror effect.",
+    "visa_required_for_us": false,
+    "health_card_required": false,
+    "language_barrier": "High outside tourist areas. Spanish essential. Aymara widely spoken in La Paz highlands.",
+    "solo_travel": "Doable with extra caution — join group tours for Uyuni. Book radio taxis, not street taxis. La Paz is manageable solo.",
+    "guided_tour_required": false,
+    "internet_resources": [
+      "Bolivia.travel (official tourism)",
+      "Parques.gob.bo for national parks"
+    ]
+  },
+  "laws": {
+    "driving_license": "International Driving Permit required for foreign licenses",
+    "drug_laws": "Coca leaves legal for personal use and cultural purposes within Bolivia. Cocaine and derivatives: zero tolerance, severe penalties. Cannabis illegal.",
+    "alcohol_laws": "Legal drinking age 18. Note altitude significantly amplifies alcohol effects.",
+    "smoking_laws": "Smoking prohibited in enclosed public spaces and public transport.",
+    "photography_laws": "Photography of military installations, border crossings, and government buildings prohibited. Ask permission before photographing indigenous people.",
+    "drone_laws": "Requires DGAC (Bolivian civil aviation authority) permit. Not enforced consistently but technically required.",
+    "lgbt_legal": false,
+    "lgbt_legal_details": "Same-sex relationships are not criminalized, but same-sex unions have no legal recognition. Constitutional definition of marriage is man-woman. Social attitudes are conservative, especially in rural and indigenous communities. Exercise discretion, particularly outside La Paz.",
+    "currency_export_limits": "No more than $10,000 USD equivalent can leave Bolivia without declaration",
+    "items_restricted": [
+      "Coca leaves (export)",
+      "Pre-Columbian artifacts",
+      "Wildlife products from protected species"
+    ],
+    "local_laws_tourists_often_break": [
+      "Photographing military or police without permission",
+      "Crossing roadblocks during protests — illegal and physically dangerous",
+      "Taking coca leaves out of the country"
+    ]
+  },
+  "family_travel": {
+    "family_friendliness_score": 6,
+    "notes": "Bolivia is manageable for families but altitude is a serious concern for young children. Kids acclimatize differently from adults and can suffer more severely. Consider starting in Santa Cruz or Sucre (lower altitude) before going to La Paz.",
+    "best_family_destinations": [
+      "Sucre (2,750m — lower altitude)",
+      "Rurrenabaque (Amazon jungle, low altitude)",
+      "Lake Titicaca boat trips",
+      "Uyuni (for older children 10+)"
+    ],
+    "health_concerns": "Altitude sickness is the primary concern for children. Do not take young children to La Paz (3,640m) or Potosí (4,090m) without medical consultation. Malaria prophylaxis needed for Amazon jungle areas.",
+    "child_entry_requirements": "Standard passport requirements. Children under 18 traveling with one parent may need a notarized authorization from the absent parent.",
+    "family_activities": [
+      "Uyuni salt flat photography (fun perspective photos)",
+      "Lake Titicaca reed boat rides",
+      "Amazon jungle lodge stays",
+      "Dinosaur footprints at Sucre",
+      "Cholita cultural experiences"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Very limited — La Paz's steep hills, cobblestone streets, and high altitude make wheelchair access extremely challenging. Few ramps. The Teleférico cable car is wheelchair accessible.",
+    "major_accessible_attractions": [
+      "La Paz Teleférico cable car (accessible stations)",
+      "Sucre main plaza (largely flat)"
+    ],
+    "accessible_transport": "La Paz Teleférico is the most accessible urban transport. Long-distance buses and most attractions have no accessibility infrastructure.",
+    "notes": "Bolivia is not recommended for travelers with significant mobility limitations due to altitude, terrain, and infrastructure limitations."
+  },
+  "gear": {
+    "essentials": [
+      "Diamox (acetazolamide) — start 1-2 days before arrival at altitude",
+      "Warm layers (altiplano gets below freezing at night year-round)",
+      "Waterproof jacket",
+      "Sunscreen SPF 50+ (intense UV at altitude)",
+      "Altitude sickness medication",
+      "Water purification tablets"
+    ],
+    "surf_specific": [],
+    "trekking_specific": [
+      "Crampons and ice axe (for Huayna Potosí)",
+      "Trekking poles (essential on steep descents)",
+      "Warm sleeping bag (salt hotels and camping)",
+      "Headlamp",
+      "Gaiters for mud"
+    ],
+    "tech": [
+      "Offline maps (Maps.me or OsmAnd)",
+      "Power bank (frequent outages)",
+      "Plug adapter (Type A/C)"
+    ],
+    "what_not_to_bring": [
+      "Expensive jewelry or watches",
+      "More than one or two credit cards (ATMs unreliable)",
+      "Medications that can interact with altitude (consult doctor)"
+    ]
+  },
+  "history": [
+    {
+      "title": "Tiwanaku Civilization",
+      "content": "The Tiwanaku civilization (300–1000 CE) flourished on the shores of Lake Titicaca, developing sophisticated raised-field agriculture, monumental stone architecture, and a cultural influence spanning the Andes. The Gateway of the Sun at Tiwanaku is one of the most remarkable monuments in the Americas."
+    },
+    {
+      "title": "Inca Integration",
+      "content": "Bolivia's altiplano was incorporated into the Inca Empire (Tawantinsuyu) in the 15th century as the Kollasuyu region. Lake Titicaca — the world's highest navigable lake at 3,812m — was sacred to the Inca as the mythological birthplace of their civilization."
+    },
+    {
+      "title": "Colonial Silver Economy",
+      "content": "Spain founded Potosí in 1545 after discovering the Cerro Rico (Rich Mountain) silver deposits — the richest silver mine in history. By 1600, Potosí was one of the world's largest cities. An estimated 8 million indigenous and enslaved people died mining Potosí silver over three centuries, funding the Spanish Empire."
+    },
+    {
+      "title": "Independence & War of the Pacific",
+      "content": "Bolivia declared independence on August 6, 1825, named after Simón Bolívar. The 1879–1884 War of the Pacific (Bolivia, Peru vs. Chile) cost Bolivia its Pacific coastline — a loss it still mourns. Bolivia became a landlocked nation, and reclaiming sea access remains a national obsession."
+    },
+    {
+      "title": "Modern Bolivia",
+      "content": "The 1952 Revolution nationalized tin mines and instituted land reform. Evo Morales (2006–2019) was Bolivia's first indigenous president, nationalizing natural gas and dramatically reducing poverty. Bolivia holds the world's largest lithium reserves — critical for electric vehicle batteries — making it a pivotal country for the energy transition."
+    }
+  ]
+}

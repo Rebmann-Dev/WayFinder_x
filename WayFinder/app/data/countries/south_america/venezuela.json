@@ -1,0 +1,1083 @@
+{
+  "meta": {
+    "last_updated": "2026-04-12",
+    "confidence_score": 0.83,
+    "sources": [
+      "US State Department travel advisory (updated March 2025)",
+      "US Embassy Venezuela emergency alert May 2025",
+      "OSAC Venezuela security report",
+      "CDC health advisories",
+      "Max Haase Venezuela travel report 2024",
+      "Road to 197 Venezuela trip report 2024",
+      "Wikipedia Venezuelan cuisine",
+      "Will Fly for Food Venezuela dishes"
+    ],
+    "notes": "CRITICAL SAFETY NOTE: Venezuela carries a US State Department Level 3 'Reconsider Travel' advisory (downgraded from Level 4 in March 2025). Multiple regions remain Level 4 Do Not Travel. The US Embassy in Caracas has suspended operations. Travel should only be undertaken with extensive preparation, specialist local operators, and comprehensive evacuation insurance. Budget information is challenging due to dollarization of the economy — USD is effectively the primary currency."
+  },
+  "identity": {
+    "name": "Venezuela",
+    "official_name": "Bolivarian Republic of Venezuela",
+    "code": "VE",
+    "iso3": "VEN",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Caracas",
+    "flag_emoji": "🇻🇪",
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "driving_side": "right",
+    "country_calling_code": "+58",
+    "internet_tld": ".ve"
+  },
+  "language_and_money": {
+    "languages": [
+      "Spanish"
+    ],
+    "primary_language": "Spanish",
+    "english_proficiency": "Low — English rarely spoken outside high-end hotels in Caracas and established tourist operators (particularly for Angel Falls/Canaima tours). Limited in general population. Learning basic Spanish is essential.",
+    "currency": "VES",
+    "currency_name": "Venezuelan Sovereign Bolívar",
+    "currency_symbol": "Bs.",
+    "cash_vs_card": "USD is the de facto primary currency for tourism — bring USD cash. Bolívares are used for local transactions but USD is widely preferred and accepted at restaurants, hotels, tour operators, and shops. Credit cards are unreliable and often rejected. ATMs frequently out of service.",
+    "typical_payment_methods": [
+      "USD cash (primary for tourists)",
+      "Cash Bolívares",
+      "Zelle (widely used for USD transfers among locals)",
+      "Some credit cards at high-end establishments"
+    ],
+    "atm_availability": "ATMs frequently out of service or dispense inadequate amounts in bolívares. Do not rely on ATMs. Bring sufficient USD cash for your entire trip. Exchange at authorized casas de cambio or through your tour operator.",
+    "tipping_culture": "Appreciated — tip guides $10-20/day in USD. Restaurant tips 10%. Tips in USD are greatly appreciated given economic conditions.",
+    "tipping_etiquette": "Always tip in USD if possible. Guides at Angel Falls and Los Roques expect $15-30/day USD. Tour operators include guides but not tips."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "Visa required — Tourist visa must be obtained in advance from the Venezuelan Embassy or Consulate. Process is complex given suspended US-Venezuela diplomatic relations; contact Embassy of Venezuela in another country.",
+      "visa_type": "Tourist visa (stamp on entry card 'Tarjeta de Turismo')",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for at least 6 months beyond intended stay",
+    "blank_passport_pages_required": 2,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": true,
+    "tourist_entry_fee": null,
+    "departure_tax": "Airport tax included in ticket or paid separately at airport",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Strict — do not photograph military installations, police, government buildings, or infrastructure. Drone import requires permits and is very restricted. Bring only what you need.",
+    "restricted_items": [
+      "Drones (require special permits, effectively restricted)",
+      "Firearms without permit",
+      "Narcotics",
+      "Satellite phones (require registration)",
+      "Excessive USD cash without declaration"
+    ],
+    "duty_free_allowances": "200 cigarettes, 2 liters of alcohol, gifts up to $300 value"
+  },
+  "health": {
+    "recommended_vaccines": [
+      "Hepatitis A",
+      "Typhoid",
+      "Hepatitis B",
+      "Yellow Fever",
+      "Rabies (if visiting jungle areas)",
+      "Tetanus-Diphtheria",
+      "Measles-Mumps-Rubella (confirm up to date)"
+    ],
+    "required_vaccines": [
+      "Yellow Fever (required for Canaima National Park and jungle regions)"
+    ],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": true,
+    "yellow_fever_required_if_from_risk_country": false,
+    "malaria_risk": "Present in interior regions — Bolívar state, Amazonas, Delta Amacuro, and Apure. Significant risk particularly in Canaima National Park area and all jungle travel.",
+    "malaria_regions": [
+      "Bolívar state (rural)",
+      "Amazonas state",
+      "Delta Amacuro",
+      "Apure state",
+      "Sucre (rural areas)"
+    ],
+    "malaria_prophylaxis_info": "Strongly recommended for Canaima, Angel Falls, and any interior travel. Atovaquone-proguanil or doxycycline recommended. Consult travel medicine specialist before departing.",
+    "dengue_risk": "High — dengue is endemic in Venezuela with frequent outbreaks in Caracas and coastal cities. Use DEET repellent continuously.",
+    "altitude_sickness_risk": "Present on Roraima and Auyán-Tepui treks (2,000-2,810m). Minor acclimatization needed for tepui summit expeditions but less severe than Andean destinations.",
+    "food_water_safety": "Tap water not safe to drink — contaminated water is a significant source of gastrointestinal infection. Bottled water is scarce in some areas due to economic conditions. Bring purification tablets or filter. Exercise strong caution with food hygiene, particularly outside established restaurants.",
+    "air_quality_concerns": "Poor in Caracas due to traffic and industrial emissions. Generally good in interior and coastal areas.",
+    "common_travel_illnesses": [
+      "Traveler's diarrhea",
+      "Dengue fever",
+      "Malaria (interior)",
+      "Chikungunya",
+      "Typhoid",
+      "Hepatitis A"
+    ],
+    "pharmacy_access": "Severely limited — Venezuela has experienced ongoing medical supply shortages. Many medications are unavailable or extremely scarce. Bring a comprehensive medical kit including prescription medications, antibiotics, and first aid supplies.",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "CRITICAL WARNING — Venezuela's healthcare system has collapsed under economic crisis. Hospitals lack basic supplies, medications, and equipment. Most serious medical conditions cannot be adequately treated in Venezuela. Medical evacuation insurance is MANDATORY. Even in Caracas, private clinics have limited supplies. Before any interior travel, confirm emergency evacuation procedures with your tour operator.",
+    "emergency_medical_number": "171"
+  },
+  "safety": {
+    "overall_score": 22,
+    "travel_advisory_level_us": 3,
+    "travel_advisory_level_label": "Reconsider Travel (downgraded from Level 4 in March 2025 — multiple regions remain Level 4 Do Not Travel)",
+    "travel_advisory_updated": "March 2025",
+    "risk_indicators": [
+      "LEVEL 4 DO NOT TRAVEL: Venezuela-Colombia border region (20 miles) — crime, kidnapping, terrorism",
+      "LEVEL 4 DO NOT TRAVEL: Amazonas state — terrorism (terrorist groups operate here)",
+      "LEVEL 4 DO NOT TRAVEL: Apure state — terrorism",
+      "LEVEL 4 DO NOT TRAVEL: Aragua state outside Maracay — crime, kidnapping (Tren de Aragua cartel)",
+      "LEVEL 4 DO NOT TRAVEL: Bolívar state rural areas — crime, kidnapping",
+      "LEVEL 4 DO NOT TRAVEL: Guárico state — crime, kidnapping",
+      "LEVEL 4 DO NOT TRAVEL: Táchira state — crime, terrorism",
+      "US Embassy Caracas has suspended operations — no US consular services available in Venezuela",
+      "Wrongful detention of US citizens has occurred",
+      "No commercial flights operating from US to Venezuela (as of advisory date)"
+    ],
+    "crime_risk": "VERY HIGH — Violent crime including homicide, armed robbery, express kidnapping, and carjacking occurs throughout Venezuela. Caracas has one of the highest homicide rates in the world. Criminal gang Tren de Aragua (a designated US Foreign Terrorist Organization) operates widely. Travelers face elevated risk. Only travel with a verified, reputable local operator who provides security coordination.",
+    "scam_risk": "High — taxi scams at Maiquetía airport, fake police, currency exchange fraud, express kidnappings in unlicensed taxis. Never take an unregulated taxi, especially at the airport.",
+    "transport_safety": "CRITICAL — Never travel between Maiquetía (international airport) and Caracas at night. Nighttime road travel between any cities is dangerous. Unregulated taxis are a kidnapping risk. Use only tour operator-arranged transport throughout.",
+    "solo_female_travel_notes": "NOT RECOMMENDED — Venezuela is not suitable for independent solo female travel. Tour operator-organized group travel with security protocols is the only reasonable approach.",
+    "lgbtq_notes": "Same-sex activity is legal (age of consent equal). No legal recognition of same-sex partnerships. Venezuela's constitution prohibits discrimination on the basis of sexual orientation, but enforcement is limited. Social conservatism is strong. LGBTQ travelers should exercise significant discretion. Political climate adds additional uncertainty.",
+    "night_safety": "Avoid all night travel between cities or between the airport and Caracas. The stretch from Maiquetía Airport to Caracas is particularly dangerous at night and has been the site of armed robberies and kidnappings of tourists.",
+    "safe_areas": [
+      "Los Roques (archipelago — relatively safe under local tour operator supervision)",
+      "Canaima National Park (with established tour operator)",
+      "Morrocoy (Caribbean coast — day trips with operator)",
+      "Mérida city center (generally safer than Caracas)"
+    ],
+    "areas_to_avoid": [
+      "Caracas (transit only — minimize time)",
+      "Venezuela-Colombia border region (Level 4 Do Not Travel)",
+      "Amazonas state (Level 4 Do Not Travel)",
+      "Apure state (Level 4 Do Not Travel)",
+      "Bolívar state rural areas (Level 4 Do Not Travel)",
+      "Táchira state (Level 4 Do Not Travel)",
+      "Maiquetía airport access road at night"
+    ],
+    "natural_disaster_risks": [
+      "Earthquakes — Venezuela is seismically active (Caracas, Mérida)",
+      "Flash flooding in mountainous areas during rainy season",
+      "Landslides in Andes and coastal mountains",
+      "Flooding in llanos (plains) during wet season"
+    ],
+    "political_stability_notes": "CRITICAL — Venezuela is under an authoritarian government that has been the subject of international sanctions. Arbitrary detention of foreigners has occurred. The US Embassy is non-operational. If detained, there is NO US consular assistance available. The political situation can deteriorate rapidly. Monitor news continuously. Have a clear evacuation plan.",
+    "common_scams": [
+      "Airport taxi kidnappings — NEVER take an unregulated taxi from Maiquetía Airport. Use only hotel-arranged or operator-arranged transport",
+      "Express kidnapping — forced to withdraw money from ATMs at gunpoint",
+      "Fake police asking to inspect wallets or documents",
+      "Currency exchange fraud — use only official or operator-arranged exchange",
+      "ATM card skimming (where ATMs function)"
+    ],
+    "police_reliability": "Very low — corruption is endemic. Do not expect police protection. Cartel de los Soles (military corruption) and Tren de Aragua have infiltrated law enforcement.",
+    "emergency_numbers": {
+      "police": "171",
+      "ambulance": "171",
+      "fire": "171",
+      "general_emergency": "171"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Bogotá (Venezuela Affairs Unit — Caracas embassy suspended)",
+      "us_embassy_phone": "+57-1-275-2000",
+      "us_embassy_website": "https://ve.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "November to April (dry season) for most of the country. Angel Falls: November-December has enough water for spectacular falls while rain is tapering. June-October (wet season) gives maximum waterfall height but jungle travel is harder. Los Roques: Year-round (Caribbean climate, dry season December-April).",
+    "climate_zones": [
+      "Caribbean coast — hot, humid, 25-32°C, relatively dry Dec-Apr",
+      "Andes (Mérida) — cooler, 15-25°C, variable rain",
+      "Llanos (plains) — extreme wet season flooding, dry season dust",
+      "Gran Sabana / Canaima — tropical, 20-30°C, heavy rains May-November",
+      "Los Roques archipelago — dry Caribbean, 28-32°C year-round"
+    ],
+    "dry_season": "December to April (most of country); Gran Sabana receives rain nearly year-round",
+    "rainy_season": "May to November (llanos flood dramatically; Angel Falls at peak height)",
+    "hurricane_typhoon_season": "Technically south of the main hurricane belt but tropical storms occasionally affect the coast",
+    "surf_season": "Year-round on the Caribbean coast (Choroní, Chichiriviche). Best November-April. Los Roques has consistent wind for kiteboarding.",
+    "trekking_best_months": [
+      "December",
+      "January",
+      "February",
+      "March",
+      "April"
+    ],
+    "average_temp_by_month": {
+      "Caracas": "18-28°C year-round (altitude 900m moderates heat)",
+      "Los Roques": "28-33°C year-round",
+      "Canaima": "22-32°C, very wet May-November",
+      "Mérida": "12-24°C year-round (high altitude)"
+    },
+    "daylight_hours_by_season": "Approximately 11-13 hours year-round (near equator)"
+  },
+  "transport": {
+    "major_airports": [
+      "Simón Bolívar International Airport (CCS) — Maiquetía, 25km from Caracas (HIGH RISK airport connection)",
+      "La Chinita International Airport (MAR) — Maracaibo",
+      "Jacinto Lara International Airport (BRM) — Barquisimeto",
+      "Alberto Carnevalli Airport (MRD) — Mérida (domestic)",
+      "Canaima Airport (CAJ) — gateway to Angel Falls"
+    ],
+    "main_airlines": [
+      "Conviasa",
+      "Laser Airlines",
+      "Rutaca (domestic)",
+      "Arauca (domestic charter)"
+    ],
+    "airport_to_city_options": [
+      "Tour operator-arranged transport ONLY (critical safety measure)",
+      "Hotel-arranged transport",
+      "Never use an unverified street taxi from Maiquetía Airport"
+    ],
+    "public_transit_quality": "Caracas has a Metro system (operational but overcrowded). Buses (metrobuses and private lines) connect cities but are unreliable and unsafe for tourists. All tourist transport should be arranged through operators.",
+    "intercity_bus_quality": "Bus network exists but is dangerous for tourists — breakdowns, crime, and poor conditions. Domestic flights (Conviasa, Laser) are the recommended option between Caracas, Mérida, Isla Margarita, and other destinations, despite their own reliability issues.",
+    "train_network_quality": "Passenger rail is minimal and non-functional for practical tourism",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": false,
+    "road_conditions": "Major roads passable but plagued by potholes, roadblocks (by criminals and military), and extremely dangerous driving. Nighttime road travel is life-threatening in many areas. Do not attempt independent road travel.",
+    "four_x_four_needed_regions": [
+      "Gran Sabana",
+      "Rural areas of Bolívar state",
+      "Remote coastal areas"
+    ],
+    "ride_hailing_apps": [],
+    "taxi_safety_notes": "CRITICAL WARNING — Unregulated taxis from Maiquetía Airport have been used in kidnappings and armed robberies of tourists. Only use transport arranged by your hotel or tour operator. Never accept a ride from a stranger claiming to be a taxi.",
+    "ferry_routes": [
+      "Cumaná to Isla Margarita (regular ferry)",
+      "Puerto La Cruz to Isla Margarita (ferry)",
+      "Los Roques accessible only by small aircraft from Caracas (charter flights)"
+    ],
+    "border_crossing_notes": "Colombia border (Level 4 Do Not Travel — avoid entirely). Brazil border (Boa Vista to Santa Elena de Uairén) — criminally active, extreme caution. Guyana border — remote, limited crossings."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$40-70/day (USD)",
+    "daily_budget_midrange": "$80-150/day (USD)",
+    "daily_budget_comfort": "$150-300/day (USD)",
+    "hostel_avg": "$15-30/night (USD)",
+    "hotel_avg": "$50-120/night (USD)",
+    "meal_avg": "$5-15 USD (local arepera $3-5, restaurant $10-20)",
+    "coffee_avg": "$1-3 USD",
+    "beer_avg": "$2-5 USD",
+    "local_transport_avg": "$2-10 USD (operator-arranged transport only recommended)",
+    "sim_card_avg": "$10-20 USD",
+    "coworking_day_pass_avg": "$10-20 USD",
+    "surfboard_rental_avg": "$15-25 USD/day (Caribbean coast)",
+    "value_for_money": "Venezuela is inexpensive in USD terms due to the economic collapse — but savings are offset by the significant cost of safety (trusted operators, organized tours, evacuation insurance). Budget does NOT include the premium cost of guided tours, which are essential. Canaima/Angel Falls packages run $300-800/person for 3-4 days. Los Roques packages $400-900/person for 3-4 days."
+  },
+  "connectivity": {
+    "sim_card_providers": [
+      "Movistar",
+      "Digitel",
+      "CANTV/Movilnet (state-owned, poor quality)"
+    ],
+    "esim_available": false,
+    "mobile_data_quality": "Extremely variable and often poor. Economic crisis has degraded infrastructure. Limited 4G in Caracas and major cities. Virtually no reliable coverage in interior regions. Los Roques has minimal connectivity.",
+    "wifi_quality": "Variable — some Caracas hotels have reasonable WiFi. VPN recommended as internet is partially filtered by the government.",
+    "coworking_available": false,
+    "best_remote_work_cities": [
+      "Caracas (limited, only with reliable hotel WiFi)"
+    ],
+    "power_outlet_types": [
+      "A",
+      "B"
+    ],
+    "voltage": "120V, 60Hz",
+    "plug_adapter_needed_for_us": false,
+    "power_reliability": "Very poor — Venezuela has experienced chronic nationwide power outages (blackouts) due to the state of the electrical grid. The Guri Dam hydropower system is poorly maintained. Bring a power bank and expect outages."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Los Roques — posadas (guesthouses) on Gran Roque island — isolated, relatively safe",
+      "Canaima — jungle lodges including Wakü Lodge (flagship luxury), Anauco Turismo camps",
+      "Mérida — budget posadas, university town atmosphere",
+      "Isla Margarita — beach resort hotels",
+      "Choroní / Puerto Colombia — coastal village guesthouses"
+    ],
+    "budget_areas": [
+      "Mérida (university town, cheapest city in Venezuela)",
+      "Mochima marine park area guesthouses"
+    ],
+    "family_friendly_areas": [
+      "Los Roques (with operator)",
+      "Isla Margarita resort hotels",
+      "Morrocoy"
+    ],
+    "nightlife_areas": [
+      "Las Mercedes (Caracas, avoid after midnight)",
+      "Mérida center (safer than Caracas)"
+    ],
+    "surf_towns": [
+      "Choroní / Puerto Colombia (Caribbean coast)",
+      "El Yaque (Isla Margarita, kiteboarding capital)"
+    ],
+    "eco_lodges_available": true,
+    "peak_booking_season": "December to March (dry season, best conditions); book Los Roques posadas and Canaima lodges 2-6 months ahead",
+    "accommodation_notes": "Book through reputable Venezuelan tour operators who can verify accommodation safety and arrange secure transport. Do not book independently through generic booking sites without local operator vetting. Wakü Lodge at Canaima is the premier luxury jungle option ($1,499+/person for 3-day package including airfare from Caracas)."
+  },
+  "culture": {
+    "local_customs": [
+      "Venezuelans are extremely warm, hospitable, and proud of their country despite hardships",
+      "Arepas are eaten three times daily — the cultural and culinary foundation of Venezuelan identity",
+      "Baseball (béisbol) is the national sport, not football — attending a game is a vibrant cultural experience",
+      "Family bonds are extraordinarily strong — extended family gatherings are central to social life",
+      "Music is central — joropo (harp, cuatro, maracas) is the national folk music from the llanos"
+    ],
+    "dress_expectations": "Casual. Beachwear on Caribbean coast. Avoid displaying wealth (expensive watches, jewelry, phones) in any context — this is a safety issue as much as a cultural one.",
+    "religious_sensitivity": "Predominantly Catholic with syncretic elements. The Virgen de Coromoto is the patron saint. Religious holidays are important.",
+    "social_norms": [
+      "Warmth and friendliness toward visitors is strong despite political tensions",
+      "Do not discuss politics unless the Venezuelan initiates — the topic is painful and sensitive",
+      "Punctuality is relaxed",
+      "Always accept offered food — refusing hospitality is considered rude"
+    ],
+    "greeting_style": "Single cheek kiss and handshake. 'Cómo estás?' or 'Épale!' (slang greeting). Venezuelans are generally very warm with strangers.",
+    "public_behavior_notes": "Keep cameras and phones discreet in cities. Do not photograph military, police, or government buildings under any circumstances — this can lead to arrest. Exercise extreme discretion.",
+    "photography_etiquette": "Be very discreet with cameras in cities. NEVER photograph military, police, checkpoints, or government infrastructure. In Angel Falls and Los Roques, photography is freely allowed. Ask permission in indigenous communities.",
+    "bargaining_expected": false,
+    "important_holidays": [
+      "Carnaval — February (4 days before Ash Wednesday), El Callao in Bolívar state is famous for Trinidadian-influenced Calipso carnival, and Caracas holds large parades",
+      "Semana Santa — Easter week, one of the biggest holiday periods with mass migration to beaches",
+      "Festival Internacional de Cine de Mérida — October, film festival in university city",
+      "Feria de San Sebastián — January, Mérida's biggest annual fair with music, bullfighting, exhibitions",
+      "Día de la Raza / Virgen de Coromoto — October 12, national holiday with religious celebrations"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "CRITICAL: Photography of military, police, or government facilities can result in immediate arrest and detention",
+      "Drones are effectively banned without complex government permits — do not bring a drone",
+      "Currency exchange must be through authorized channels — black market exchange is illegal",
+      "Carrying a satellite phone requires pre-registration with CONATEL (telecom authority)",
+      "Journalists require accreditation — do not present as a journalist"
+    ]
+  },
+  "food": {
+    "dishes": [
+      {
+        "name": "Arepa",
+        "description": "The foundational food of Venezuela — thick griddle cakes made from pre-cooked white corn flour (Harina PAN), water, and salt, cooked on a budare (round griddle) then finished in the oven. The arepa's genius is its versatility: split open and filled with anything from reina pepiada (chicken and avocado) to pabellón criollo fillings. Eaten at breakfast, lunch, and dinner. A 2015 survey found 70% of Venezuelans eat arepas regularly. The cultural and culinary soul of the country.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Pabellón Criollo",
+        "description": "The national dish — four components on one plate: carne mechada (slow-cooked shredded beef in tomato, onion, and cumin sauce), caraotas negras (Venezuelan black beans cooked with papelón/brown sugar and cumin), arroz blanco (white rice), and tajadas (ripe fried plantains). Together they represent Venezuela's flag colors and national identity. The definitive Venezuelan home meal.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Hallaca",
+        "description": "Venezuela's supreme festive dish — prepared for Christmas and eaten in the final months of the year. A family assembly-line operation: corn dough (masa) spread with a rich stew of beef, pork, chicken, olives, raisins, capers, and peppers; wrapped in plantain leaves and boiled. The filling reflects Venezuela's multicultural heritage (Spanish, indigenous, African). Making hallacas is itself a beloved family ritual.",
+        "region": "Nationwide (Christmas season)"
+      },
+      {
+        "name": "Cachapa",
+        "description": "A sweet corn pancake made from fresh ground corn (not corn flour), cooked thick on a griddle and served folded around hand cheese (queso de mano) — a fresh white cheese that melts beautifully. A beloved breakfast and street food. The corn-cheese combination is quintessentially Venezuelan. Also served with butter and cream.",
+        "region": "Nationwide (specialty of Miranda state and the Andes)"
+      },
+      {
+        "name": "Asado Negro",
+        "description": "A showstopping braised beef dish — a whole beef round (eye of round or similar cut) marinated in papelón (raw brown sugar cane), red wine, onions, garlic, and spices, then seared until a black caramel crust forms, and slowly braised until incredibly tender. The sauce is dark, sweet-savory, and complex. The pride of Venezuelan Sunday cooking and special occasions.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Tequeños",
+        "description": "Venezuela's irresistible party food — strips of fresh white cheese (queso blanco or queso de mano) wrapped in a brioche-style dough and deep-fried until golden and stretchy-melted inside. Served at every party, celebration, and gathering. Once tasted, impossible to stop eating. The Venezuelan equivalent of mozzarella sticks but far superior.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Sancocho",
+        "description": "A hearty Venezuelan soup-stew with multiple variations by region — the most famous is Sancocho de Gallina (free-range chicken with yuca, ñame, potatoes, corn on the cob, plantain, and fresh herbs). Typically served in enormous portions with white rice on the side. The Venezuelan cure for everything from a cold to a hangover. Every family has its treasured recipe.",
+        "region": "Nationwide (regional variations exist)"
+      },
+      {
+        "name": "Tostones",
+        "description": "Twice-fried green plantain discs — sliced, fried once, smashed flat, then fried again until crispy and golden. Sprinkled with salt and served with avocado salsa or garlic sauce (guasacaca). A staple side dish and snack in Venezuelan cuisine, reflecting African culinary heritage. Available at virtually every restaurant.",
+        "region": "Nationwide (Caribbean coast specialty)"
+      },
+      {
+        "name": "Mandoca",
+        "description": "A fried corn and papelón dough ring from the Maracaibo region (Zulia state) — made from toasted corn flour, sweet papelón, ripe plantain, and fresh cheese, formed into rings and fried. A unique regional breakfast food of the Maracucho culture. Sweet, savory, and utterly distinctive. The equivalent of a Zulia doughnut.",
+        "region": "Maracaibo / Zulia state"
+      },
+      {
+        "name": "Pisillo de Chigüire",
+        "description": "Shredded capybara (chigüire) — the world's largest rodent — prepared like carne mechada with tomatoes, onions, garlic, cumin, and sweet peppers. A traditional llanero (plains cowboy) dish with indigenous roots. Capybara was historically permitted during Catholic Lent in Venezuela due to a papal dispensation classifying it as 'aquatic.' Today it is a prized specialty in the llanos region.",
+        "region": "Los Llanos (Apure, Barinas, Guárico states)"
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Polar Beer",
+        "description": "The national beer and a point of Venezuelan pride — a light lager brewed since 1941 by Empresas Polar (the largest food company in Venezuela). Cold Polar on the Caribbean coast is the quintessential Venezuelan experience. Also available: Polar Malta (non-alcoholic malt beverage)."
+      },
+      {
+        "name": "Papelón con Limón",
+        "description": "The national refresher — fresh lime juice dissolved with chunks of papelón (raw brown sugar cane) in water. Served over ice. Sweet, tart, and refreshing. Every arepera and family kitchen makes this. The Venezuelan lemonade, more flavorful than any processed drink."
+      },
+      {
+        "name": "Cocada",
+        "description": "A thick, creamy coconut drink blended with sweetened condensed milk, ice, and fresh coconut. Sold by vendors on Caribbean beaches. The perfect companion to fresh fish on the coast."
+      },
+      {
+        "name": "Guarapita",
+        "description": "Venezuela's party cocktail — a fruit punch of guarapo (sugar cane juice or papelón water) blended with tropical fruits (passion fruit, tamarind, guanábana) and spiked with rum. Served in large communal pitchers at celebrations."
+      },
+      {
+        "name": "Ron Diplomatico / Santa Teresa",
+        "description": "Venezuelan rum is world-class — Ron Diplomatico (Reserva Exclusiva) and Ron Santa Teresa 1796 are internationally awarded premium aged rums that rival Caribbean competitors. Despite the political situation, Venezuelan rum continues to be produced to exceptional standards."
+      },
+      {
+        "name": "Tizana",
+        "description": "A tropical fruit salad drink — a mix of diced fresh tropical fruits (papaya, watermelon, pineapple, mango, guanábana) in their own juices with sugar, and topped with Polar Malta or grenadine. Served cold in a large glass. The Venezuelan version of sangría but alcohol-free."
+      }
+    ],
+    "street_food_safety": "Exercise significant caution with street food in Caracas — economic conditions have strained food safety. Established areperas and sit-down restaurants are safer. In Los Roques and Canaima (tour operator-controlled environments), food safety is generally good.",
+    "vegetarian_friendliness": "Challenging — Venezuelan cuisine is meat-centered. Arepas with queso, avocado, or caraotas negras are vegetarian. Limited options in many areas. Announce dietary restrictions to tour operators in advance.",
+    "vegan_friendliness": "Very difficult. Dairy and eggs are common in most dishes. Very limited vegan options even in Caracas.",
+    "must_try_drinks": [
+      "Papelón con Limón",
+      "Polar Beer",
+      "Ron Diplomatico (aged rum)",
+      "Tizana",
+      "Cocada"
+    ],
+    "regional_specialties": [
+      "Caracas/Central: Asado negro, tequeños, arepas in all variations",
+      "Zulia (Maracaibo): Mandoca, cazuela maracucha (fish stew), empanadas de cazón",
+      "Andes (Mérida): Pisca andina (potato and egg soup), míjao, truchas de río",
+      "Llanos: Pisillo de chigüire, carne en vara (beef on stick), cachapas with llanero cheese",
+      "Caribbean coast: Fresh grilled fish, ceviche, caraotas with coconut"
+    ],
+    "drinking_water_notes": "NEVER drink tap water in Venezuela. Bottled water can be scarce due to supply shortages — bring water purification tablets or a portable filter as backup.",
+    "alcohol_rules": "Legal drinking age 18. Alcohol available. Ley Seca (dry law) during some national holidays and elections.",
+    "signature_dishes": [
+      {
+        "name": "Arepa",
+        "description": "The foundational food of Venezuela — thick griddle cakes made from pre-cooked white corn flour (Harina PAN), water, and salt, cooked on a budare (round griddle) then finished in the oven. The arepa's genius is its versatility: split open and filled with anything from reina pepiada (chicken and avocado) to pabellón criollo fillings. Eaten at breakfast, lunch, and dinner. A 2015 survey found 70% of Venezuelans eat arepas regularly. The cultural and culinary soul of the country.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Pabellón Criollo",
+        "description": "The national dish — four components on one plate: carne mechada (slow-cooked shredded beef in tomato, onion, and cumin sauce), caraotas negras (Venezuelan black beans cooked with papelón/brown sugar and cumin), arroz blanco (white rice), and tajadas (ripe fried plantains). Together they represent Venezuela's flag colors and national identity. The definitive Venezuelan home meal.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Hallaca",
+        "description": "Venezuela's supreme festive dish — prepared for Christmas and eaten in the final months of the year. A family assembly-line operation: corn dough (masa) spread with a rich stew of beef, pork, chicken, olives, raisins, capers, and peppers; wrapped in plantain leaves and boiled. The filling reflects Venezuela's multicultural heritage (Spanish, indigenous, African). Making hallacas is itself a beloved family ritual.",
+        "region": "Nationwide (Christmas season)"
+      },
+      {
+        "name": "Cachapa",
+        "description": "A sweet corn pancake made from fresh ground corn (not corn flour), cooked thick on a griddle and served folded around hand cheese (queso de mano) — a fresh white cheese that melts beautifully. A beloved breakfast and street food. The corn-cheese combination is quintessentially Venezuelan. Also served with butter and cream.",
+        "region": "Nationwide (specialty of Miranda state and the Andes)"
+      },
+      {
+        "name": "Asado Negro",
+        "description": "A showstopping braised beef dish — a whole beef round (eye of round or similar cut) marinated in papelón (raw brown sugar cane), red wine, onions, garlic, and spices, then seared until a black caramel crust forms, and slowly braised until incredibly tender. The sauce is dark, sweet-savory, and complex. The pride of Venezuelan Sunday cooking and special occasions.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Tequeños",
+        "description": "Venezuela's irresistible party food — strips of fresh white cheese (queso blanco or queso de mano) wrapped in a brioche-style dough and deep-fried until golden and stretchy-melted inside. Served at every party, celebration, and gathering. Once tasted, impossible to stop eating. The Venezuelan equivalent of mozzarella sticks but far superior.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Sancocho",
+        "description": "A hearty Venezuelan soup-stew with multiple variations by region — the most famous is Sancocho de Gallina (free-range chicken with yuca, ñame, potatoes, corn on the cob, plantain, and fresh herbs). Typically served in enormous portions with white rice on the side. The Venezuelan cure for everything from a cold to a hangover. Every family has its treasured recipe.",
+        "region": "Nationwide (regional variations exist)"
+      },
+      {
+        "name": "Tostones",
+        "description": "Twice-fried green plantain discs — sliced, fried once, smashed flat, then fried again until crispy and golden. Sprinkled with salt and served with avocado salsa or garlic sauce (guasacaca). A staple side dish and snack in Venezuelan cuisine, reflecting African culinary heritage. Available at virtually every restaurant.",
+        "region": "Nationwide (Caribbean coast specialty)"
+      },
+      {
+        "name": "Mandoca",
+        "description": "A fried corn and papelón dough ring from the Maracaibo region (Zulia state) — made from toasted corn flour, sweet papelón, ripe plantain, and fresh cheese, formed into rings and fried. A unique regional breakfast food of the Maracucho culture. Sweet, savory, and utterly distinctive. The equivalent of a Zulia doughnut.",
+        "region": "Maracaibo / Zulia state"
+      },
+      {
+        "name": "Pisillo de Chigüire",
+        "description": "Shredded capybara (chigüire) — the world's largest rodent — prepared like carne mechada with tomatoes, onions, garlic, cumin, and sweet peppers. A traditional llanero (plains cowboy) dish with indigenous roots. Capybara was historically permitted during Catholic Lent in Venezuela due to a papal dispensation classifying it as 'aquatic.' Today it is a prized specialty in the llanos region.",
+        "region": "Los Llanos (Apure, Barinas, Guárico states)"
+      }
+    ]
+  },
+  "outdoors": {
+    "surf_spots": [
+      {
+        "name": "Choroní (Puerto Colombia)",
+        "region": "Aragua state (Caribbean coast)",
+        "difficulty": "Beginner to Intermediate",
+        "wave_type": "Beach break",
+        "break_type": "Beach break",
+        "swell_direction": "North-Northeast",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March",
+          "November"
+        ],
+        "description": "A picturesque colonial village on the Caribbean coast (2.5 hours from Caracas through Parque Nacional Henri Pittier). Playa Grande at Choroní and the adjacent beaches offer consistent beach break waves with warm Caribbean water. The drive through cloud forest to reach the coast is spectacular. Popular with Caraqueños as a weekend escape. Infrastructure is very basic — generator power, limited services. Safety in this Aragua state coastal pocket has historically been reasonable, but always verify current conditions with local operators."
+      },
+      {
+        "name": "El Yaque Beach, Isla Margarita",
+        "region": "Nueva Esparta (Isla Margarita)",
+        "difficulty": "All levels (primarily kiteboarding and windsurfing)",
+        "wave_type": "Flatwater to small surf",
+        "break_type": "Wind-driven",
+        "swell_direction": "Northeast trade winds",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March",
+          "April"
+        ],
+        "description": "El Yaque on the southern tip of Isla Margarita is one of the world's top kiteboarding and windsurfing destinations — consistently strong trade winds (15-30 knots) December through April. The bay's shallow flat water and warm Caribbean conditions make it ideal for water sports. Surfing per se is limited, but the broader water sports scene is world-class. Isla Margarita is a duty-free island with better security than mainland Venezuela."
+      },
+      {
+        "name": "Los Roques Kiteboarding / Windsurfing",
+        "region": "Los Roques Archipelago National Park (Federal Dependencies)",
+        "difficulty": "All levels (flat lagoons, no surf)",
+        "wave_type": "Flatwater / kite conditions",
+        "break_type": "Lagoon / flat water",
+        "swell_direction": "Northeast trades",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March",
+          "April"
+        ],
+        "description": "Los Roques is not a surf destination but a world-class kiteboarding, snorkeling, and diving destination. The 300+ small islands and coral atolls create protected turquoise lagoons with consistent trade winds and flat water perfect for kiteboarding and windsurfing. The archipelago is one of Venezuela's few genuinely safe destinations, operated under tight tourism control through licensed posada accommodation on Gran Roque island."
+      }
+    ],
+    "hikes": [
+      {
+        "name": "Roraima Tepui Trek (Venezuelan side)",
+        "region": "Gran Sabana, Bolívar state",
+        "difficulty": "Hard",
+        "distance_km": 70,
+        "duration_days": 6,
+        "elevation_gain_m": 1700,
+        "description": "The most famous tepui trek in the world — an ascent of the 2,810m Roraima plateau through the spectacular Gran Sabana landscape. Day 1-2: crossing the savannah to the tepui base. Day 3: the steep 'ramp' ascent through dramatic cliff bands. Days 4-5: exploring the otherworldly summit plateau of quartz crystals, endemic carnivorous plants, black frogs (Oreophrynella huberi), and ancient formations. Day 6: descent. Mandatory indigenous Pemón guide. The summit is shared with Guyana and Brazil. Check current safety conditions — Bolívar state rural areas are Level 4.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Angel Falls Trekking Route (Auyán-Tepui base)",
+        "region": "Canaima National Park, Bolívar state",
+        "difficulty": "Hard",
+        "distance_km": 30,
+        "duration_days": 3,
+        "elevation_gain_m": 400,
+        "description": "The boat and hiking journey to the base of Angel Falls — the world's highest waterfall at 979m (16x the height of Niagara Falls). Day 1: canoe from Canaima lagoon camp through jungle rivers and rapids. Day 2: hike to Mirador Laime and the base of the falls — standing at the bottom of the world's tallest waterfall, enveloped in mist, is one of the most extraordinary experiences in South America. Day 3: return by canoe. All logistics managed by licensed tour operators. Best November-January when falls are flowing well but rain has reduced.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February"
+        ]
+      },
+      {
+        "name": "Ávila / Warairarepano National Park (Caracas)",
+        "region": "Distrito Capital / Miranda",
+        "difficulty": "Moderate to Hard",
+        "distance_km": 12,
+        "duration_days": 1,
+        "elevation_gain_m": 1000,
+        "description": "The dramatic coastal mountain range that rises directly behind Caracas to 2,765m. The Ávila trail system has routes from various Caracas neighborhoods to the summit, where a hotel (Humboldt Hotel — currently inactive) and cable car (teleférico — currently suspended) once operated. Stunning views over Caracas and the Caribbean. WARNING: trail robberies have been reported — only hike in organized groups with local knowledge of current safety conditions.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March",
+          "April"
+        ]
+      },
+      {
+        "name": "Los Nevados Trek, Andes (Mérida)",
+        "region": "Mérida state (Andes)",
+        "difficulty": "Hard",
+        "distance_km": 45,
+        "duration_days": 3,
+        "elevation_gain_m": 2000,
+        "description": "A classic Andean village-to-village trek in the Sierra Nevada de Mérida, connecting high-altitude villages including Los Nevados (2,711m), Mucubají (3,600m), and Apartaderos. The route passes páramo (high Andean moorland) ecosystems, traditional adobe villages, and views of Pico Bolívar (4,978m). One of Venezuela's great highland adventures. Mérida is considered safer than most of Venezuela — verify conditions.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March"
+        ]
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Los Roques Archipelago National Park",
+        "region": "Federal Dependencies (Caribbean, north of mainland)",
+        "species": [
+          "Caribbean Flamingo",
+          "Frigatebird",
+          "Brown Pelican",
+          "Sea Turtle (nesting)",
+          "Reef Fish (snorkeling)",
+          "Sharks (nurse, reef)",
+          "Rays",
+          "Dolphins"
+        ],
+        "description": "A pristine coral atoll system protecting 225,000 hectares of Caribbean sea, 300 islands, and one of the largest coral reef systems in the Caribbean. World-class snorkeling and diving. Flamingos feed in the salt lagoons. Sea turtles nest on beaches. The only accommodation is on Gran Roque island in licensed posadas. Often described as Venezuela's most beautiful destination and one of the Caribbean's best.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March",
+          "April"
+        ]
+      },
+      {
+        "name": "Canaima National Park (Gran Sabana)",
+        "region": "Bolívar state (eastern Venezuela)",
+        "species": [
+          "Jaguar",
+          "Tapir",
+          "Giant Anteater",
+          "Ocelot",
+          "Harpy Eagle",
+          "Scarlet Macaw",
+          "Toucan",
+          "Capybara",
+          "Giant River Otter",
+          "Anaconda",
+          "Pemón indigenous Tepui endemics"
+        ],
+        "description": "A UNESCO World Heritage Site and the sixth largest national park in the world (30,000 km²). The homeland of the Pemón indigenous people and the Tepui table mountains. Angel Falls plunges from Auyán-Tepui. The Gran Sabana savannah and forest mosaic supports extraordinary biodiversity. Most wildlife viewing is incidental during Angel Falls tours — dedicated wildlife specialists need longer stays.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February"
+        ]
+      },
+      {
+        "name": "Los Llanos (Venezuelan Plains)",
+        "region": "Apure, Barinas, Guárico, Portuguesa states",
+        "species": [
+          "Capybara",
+          "Spectacled Caiman",
+          "Anaconda",
+          "Giant Anteater",
+          "Giant Armadillo",
+          "Jabiru Stork",
+          "Scarlet Ibis",
+          "Roseate Spoonbill",
+          "Orinoco Crocodile (critically endangered)",
+          "River Dolphins",
+          "Piranha",
+          "Piranhas"
+        ],
+        "description": "The Venezuelan llanos (flooded plains) offer Africa-quality wildlife viewing — 10,000+ caimans per hour drive reported at some estancias, capybara herds numbering in the thousands, anacondas in the rivers. The best wildlife watching in Venezuela. Classic llanos estancias operate as eco-lodges with wildlife drives. WARNING: Apure state is Level 4 Do Not Travel — only visit through established estancias in safer sections, verify current conditions carefully.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Morrocoy National Park",
+        "region": "Falcón state (Caribbean northwest)",
+        "species": [
+          "Flamingo",
+          "Red Ibis",
+          "Pelican",
+          "Sea Turtle",
+          "Reef Fish",
+          "Dolphin",
+          "Manatee (rare)"
+        ],
+        "description": "A beautiful national park of coral keys (cayos), mangroves, and turquoise Caribbean water on the northwest coast. Considered relatively safe for Venezuelan standards with good operator presence. Famous for snorkeling, flamingos in the lagoons, and boat trips between the cayos. Day trips or camping on the cayos available through operators.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March",
+          "April"
+        ]
+      }
+    ],
+    "national_parks": [
+      {
+        "name": "Canaima National Park",
+        "region": "Bolívar state",
+        "area_km2": 30000,
+        "description": "The sixth largest national park in the world and a UNESCO World Heritage Site. Contains Angel Falls (world's highest waterfall at 979m), Auyán-Tepui (700 km² table mountain), dozens of other tepuis, the Gran Sabana savannah, and the Canaima lagoon (famous pink-sand beach with six waterfalls). Homeland of the Pemón people. Accessed by charter flights from Caracas or Ciudad Bolívar.",
+        "highlights": [
+          "Angel Falls (Salto Ángel) — world's highest waterfall at 979m",
+          "Auyán-Tepui table mountain",
+          "Canaima lagoon and Hacha waterfall swimming",
+          "Gran Sabana red savannah landscape",
+          "Roraima tepui trekking",
+          "Pemón indigenous culture and guides",
+          "Jaspe River (red jasper riverbed)"
+        ]
+      },
+      {
+        "name": "Los Roques Archipelago National Park",
+        "region": "Federal Dependencies",
+        "area_km2": 2211,
+        "description": "Venezuela's premier marine park — a coral atoll system of 300+ islands with pristine Caribbean water, extensive coral reefs, and world-class marine life. One of the most beautiful archipelagos in the Caribbean. All visitors stay on Gran Roque island in licensed posadas. No private boat anchoring without registration. Strict entry controls make this one of Venezuela's safest tourist destinations.",
+        "highlights": [
+          "World-class snorkeling and diving",
+          "Pink and white sand beaches",
+          "Flamingos at salt lagoons",
+          "Kiteboarding and windsurfing",
+          "Fresh caught fish at posada restaurants",
+          "Sea turtle nesting beaches",
+          "Absolute seclusion from mainland Venezuela"
+        ]
+      },
+      {
+        "name": "Médanos de Coro National Park",
+        "region": "Falcón state",
+        "area_km2": 91,
+        "description": "A stunning desert landscape of active sand dunes (médanos) rising up to 40m immediately adjacent to the colonial city of Coro. A unique combination of a UNESCO-listed colonial city and desert dunes. The dunes shift with the trade winds. Camel-like iguanas and arid-adapted wildlife inhabit the park.",
+        "highlights": [
+          "Massive active sand dunes next to a colonial city",
+          "Desert wildlife (endemic iguanas)",
+          "Sunset over the dunes",
+          "Combined tour with Coro colonial city (UNESCO)",
+          "Windswept desert landscapes"
+        ]
+      },
+      {
+        "name": "Sierra Nevada de Mérida National Park",
+        "region": "Mérida state (Andes)",
+        "area_km2": 2764,
+        "description": "Venezuela's highest mountain range, protecting the Andes from Mérida to Barinas. Includes Pico Bolívar (4,978m) and the dramatic Mucubají páramo at 3,600m. Home to the endangered Venezuelan mountain coati, spectacled bear, and Andean condor. The Mérida Cable Car (teleférico, currently under renovation) was the world's highest and longest cable car.",
+        "highlights": [
+          "Pico Bolívar summit (4,978m)",
+          "Mucubají páramo and lagoon",
+          "Los Nevados village trek",
+          "Spectacled bear habitat",
+          "Andean condor sightings",
+          "Mérida city as base (cable cars, markets, cheese)"
+        ]
+      }
+    ],
+    "danger_zones": [
+      {
+        "name": "Colombia-Venezuela Border Region",
+        "region": "Táchira, Zulia, Apure (20 miles from border)",
+        "risk_level": "Extreme (Level 4 Do Not Travel)",
+        "description": "DO NOT TRAVEL. FARC dissidents, ELN guerrillas, Cartel de los Soles, and other armed criminal organizations control this region. Kidnapping, murder, and human trafficking are widespread. No tourist infrastructure. No emergency services. Absolute avoidance mandatory."
+      },
+      {
+        "name": "Amazonas State",
+        "region": "Amazonas (southern Venezuela)",
+        "risk_level": "Extreme (Level 4 Do Not Travel)",
+        "description": "DO NOT TRAVEL. Terrorist organizations operate in this region. Despite the area's ecological importance (Mount Duida, Autana Tepui), the security situation makes travel impossible. No exceptions."
+      },
+      {
+        "name": "Maiquetía Airport-Caracas Route",
+        "region": "Vargas/La Guaira to Caracas",
+        "risk_level": "High",
+        "description": "Nighttime travel on the Caracas-La Guaira highway is extremely dangerous — express kidnappings, armed robbery, and carjacking. NEVER travel this route at night. Only use tour operator-arranged daytime transfers. Many experienced Venezuela travelers transit directly from the airport without entering Caracas."
+      },
+      {
+        "name": "Caracas City Center and Poor Neighborhoods",
+        "region": "Caracas metropolitan area",
+        "risk_level": "High",
+        "description": "Caracas consistently ranks among the world's most dangerous cities. Most neighborhoods beyond the established tourist/business areas (Las Mercedes, Altamira, El Hatillo) carry high crime risk. Minimize time in Caracas to transit only if possible."
+      }
+    ],
+    "top_national_parks": [
+      "Canaima — Angel Falls, Tepuis, Gran Sabana (UNESCO World Heritage)",
+      "Los Roques — Caribbean marine park, coral reefs, flamingos",
+      "Sierra Nevada de Mérida — Andean peaks, páramo, Los Nevados trek",
+      "Médanos de Coro — desert dunes next to colonial UNESCO city"
+    ],
+    "waterfalls": [
+      "Angel Falls (Salto Ángel) — 979m, world's highest waterfall, Canaima National Park",
+      "Hacha Falls — within Canaima lagoon, swimable at the base",
+      "Sapo Falls — jungle waterfall, walk behind the water from Canaima",
+      "Jaspe Falls — on the red jasper riverbed in Gran Sabana"
+    ],
+    "rivers": [
+      "Orinoco River — one of the world's longest, spans Venezuela from the Andes to the Atlantic delta",
+      "Caroní River — major tributary, dams provide most of Venezuela's electricity",
+      "Venamo River — Gran Sabana, tepui landscapes",
+      "Cuyuní River — Bolívar state, gold mining region"
+    ],
+    "wildlife": [
+      "Jaguar — Canaima and llanos estancias",
+      "Giant Anteater — llanos (abundant)",
+      "Spectacled Bear — Sierra Nevada de Mérida (rare)",
+      "Orinoco Crocodile — critically endangered, llanos rivers",
+      "Scarlet Ibis — Orinoco Delta and llanos",
+      "Scarlet Macaw — Canaima and Gran Sabana",
+      "Harpy Eagle — forest zones",
+      "Capybara — llanos (thousands)",
+      "Anaconda — llanos and river edges",
+      "Spectacled Caiman — llanos (abundant)",
+      "Pink River Dolphin — Orinoco River system"
+    ],
+    "birdwatching_hotspots": [
+      "Los Llanos estancias — Scarlet Ibis, Jabiru Stork, 400+ species",
+      "Canaima National Park — Scarlet Macaw, Tepui endemics",
+      "Henri Pittier National Park (Choroní area) — 43% of Venezuela's bird species in one park",
+      "Gran Sabana — tepui endemic birds",
+      "Morrocoy — flamingos, Red Ibis"
+    ],
+    "stargazing_spots": [
+      "Gran Sabana — the tepui landscape under the Milky Way is extraordinary",
+      "Los Roques — virtually no light pollution in the archipelago",
+      "Los Llanos (estancias) — open sky and total darkness"
+    ],
+    "scenic_drives": [
+      "Caracas to Coro via coastal highway — Caribbean coast views (with security awareness)",
+      "Mérida to Apartaderos — spectacular Andean páramo drive",
+      "Gran Sabana highway from El Dorado to Santa Elena de Uairén — dramatic tepui landscapes"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Ávila / Warairarepano National Park (Caracas)",
+        "difficulty": "Moderate to Hard",
+        "duration": "1 day",
+        "region": "Distrito Capital / Miranda",
+        "description": "The dramatic coastal mountain range that rises directly behind Caracas to 2,765m. The Ávila trail system has routes from various Caracas neighborhoods to the summit, where a hotel (Humboldt Hotel — currently inactive) and cable car (teleférico — currently suspended) once operated. Stunning views over Caracas and the Caribbean. WARNING: trail robberies have been reported — only hike in organized groups with local knowledge of current safety conditions.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March",
+          "April"
+        ],
+        "elevation_m": 1000,
+        "notes": "",
+        "distance_km": 12,
+        "duration_days": 1
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Roraima Tepui Trek (Venezuelan side)",
+        "difficulty": "Hard",
+        "duration": "6 days",
+        "region": "Gran Sabana, Bolívar state",
+        "description": "The most famous tepui trek in the world — an ascent of the 2,810m Roraima plateau through the spectacular Gran Sabana landscape. Day 1-2: crossing the savannah to the tepui base. Day 3: the steep 'ramp' ascent through dramatic cliff bands. Days 4-5: exploring the otherworldly summit plateau of quartz crystals, endemic carnivorous plants, black frogs (Oreophrynella huberi), and ancient formations. Day 6: descent. Mandatory indigenous Pemón guide. The summit is shared with Guyana and Brazil. Check current safety conditions — Bolívar state rural areas are Level 4.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "elevation_m": 1700,
+        "notes": "",
+        "distance_km": 70,
+        "duration_days": 6
+      },
+      {
+        "name": "Angel Falls Trekking Route (Auyán-Tepui base)",
+        "difficulty": "Hard",
+        "duration": "3 days",
+        "region": "Canaima National Park, Bolívar state",
+        "description": "The boat and hiking journey to the base of Angel Falls — the world's highest waterfall at 979m (16x the height of Niagara Falls). Day 1: canoe from Canaima lagoon camp through jungle rivers and rapids. Day 2: hike to Mirador Laime and the base of the falls — standing at the bottom of the world's tallest waterfall, enveloped in mist, is one of the most extraordinary experiences in South America. Day 3: return by canoe. All logistics managed by licensed tour operators. Best November-January when falls are flowing well but rain has reduced.",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February"
+        ],
+        "elevation_m": 400,
+        "notes": "",
+        "distance_km": 30,
+        "duration_days": 3
+      },
+      {
+        "name": "Los Nevados Trek, Andes (Mérida)",
+        "difficulty": "Hard",
+        "duration": "3 days",
+        "region": "Mérida state (Andes)",
+        "description": "A classic Andean village-to-village trek in the Sierra Nevada de Mérida, connecting high-altitude villages including Los Nevados (2,711m), Mucubají (3,600m), and Apartaderos. The route passes páramo (high Andean moorland) ecosystems, traditional adobe villages, and views of Pico Bolívar (4,978m). One of Venezuela's great highland adventures. Mérida is considered safer than most of Venezuela — verify conditions.",
+        "best_months": [
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "elevation_m": 2000,
+        "notes": "",
+        "distance_km": 45,
+        "duration_days": 3
+      }
+    ]
+  },
+  "sports_and_activities": {
+    "surfing": "Limited but possible on the Caribbean coast. Best in Choroní area and some Margarita Island beaches.",
+    "kiteboarding": "World-class at El Yaque (Isla Margarita) and Los Roques during trade wind season",
+    "diving_snorkeling": "Los Roques and Mochima for world-class reef diving. Visibility excellent in dry season.",
+    "fishing": "Exceptional freshwater fishing in llanos (pavón/peacock bass); deep sea fishing off Caribbean coast",
+    "hiking_trekking": "Angel Falls approach, Roraima tepui, Los Nevados Andes — all require guided tours",
+    "wildlife_safari": "Los Llanos is arguably the best wildlife safari destination in South America during dry season",
+    "baseball": "National obsession — Leones del Caracas and Magallanes are the great rival teams. Season October-February."
+  },
+  "trip_styles": {
+    "adventure": "World-class: Angel Falls, Roraima tepui, Los Llanos wildlife — but requires serious preparation",
+    "eco_tourism": "Los Roques, Canaima, and llanos estancias offer extraordinary natural experiences",
+    "beach": "Los Roques and Morrocoy are among the Caribbean's finest",
+    "wildlife": "Los Llanos in dry season rivals the Serengeti for wildlife density",
+    "extreme_travelers": "Venezuela requires experience with difficult destinations — for seasoned, well-prepared travelers only"
+  },
+  "destinations": [
+    {
+      "name": "Los Roques Archipelago",
+      "region": "Federal Dependencies (Caribbean)",
+      "description": "Venezuela's jewel — 300+ coral islands with pristine turquoise water, world-class snorkeling and diving, flamingos, and exceptional fresh seafood. Accessed by charter flight from Caracas (35 min). Stay in licensed posadas on Gran Roque. Relatively safe and tightly controlled. One of the Caribbean's most beautiful destinations."
+    },
+    {
+      "name": "Canaima National Park / Angel Falls",
+      "region": "Bolívar state",
+      "description": "UNESCO World Heritage Site containing Angel Falls — the world's highest waterfall. The 3-day boat and hiking journey to the falls base, the alien tepui landscapes of the Gran Sabana, and Pemón indigenous culture make this one of South America's supreme travel experiences. Only accessible through licensed operators."
+    },
+    {
+      "name": "Mérida",
+      "region": "Mérida state (Andes)",
+      "description": "Venezuela's university city in the Andes — relatively safe, with great food, mountain scenery, and the famous Mucuchíes mountain dogs. Gateway to the Sierra Nevada and Los Nevados trek. The Teleférico (cable car to near Pico Bolívar) is under renovation but the city and surrounding páramo are worth visiting."
+    },
+    {
+      "name": "Los Llanos (Dry Season)",
+      "region": "Apure, Barinas, Portuguesa states",
+      "description": "Africa-quality wildlife on a budget — thousands of capybara, caimans, anacondas, giant anteaters, and scarlet ibis at established estancias (wildlife ranches). During dry season (December-March), animals concentrate at water sources creating extraordinary wildlife viewing. Only via established estancia accommodation — verify security conditions for specific states."
+    },
+    {
+      "name": "Morrocoy National Park",
+      "region": "Falcón state",
+      "description": "A Caribbean paradise of coral keys, mangroves, and turquoise water. The park's 32 cayos (small islands) offer excellent snorkeling and day beaches reachable by boat from Tucacas. One of Venezuela's more accessible and relatively safe coastal destinations. Flamingos in the mangrove lagoons."
+    },
+    {
+      "name": "Roraima Tepui (Gran Sabana)",
+      "region": "Bolívar state",
+      "description": "The legendary 'Lost World' — the inspiration for Arthur Conan Doyle's novel. A 6-day trek to the summit of the 2,810m plateau shared with Guyana and Brazil. An otherworldly summit of black rock, quartz crystals, carnivorous plants, and endemic black frogs. One of South America's greatest trekking adventures."
+    }
+  ],
+  "practical_info": {
+    "calling_code": "+58",
+    "emergency_numbers": {
+      "police": "171",
+      "ambulance": "171",
+      "fire": "171"
+    },
+    "public_holidays": [
+      "New Year's Day (Jan 1)",
+      "Carnival (Feb, 2 days)",
+      "San José (Mar 19)",
+      "Holy Thursday and Good Friday",
+      "Independence Declaration (Apr 19)",
+      "International Workers Day (May 1)",
+      "Battle of Carabobo (Jun 24)",
+      "Independence Day (Jul 5)",
+      "Bolívar's Birthday (Jul 24)",
+      "Day of Indigenous Resistance (Oct 12)",
+      "All Souls Day (Nov 2)",
+      "Christmas Eve/Christmas (Dec 24-25)"
+    ],
+    "business_hours": "Mon-Fri 8am-4pm government; shops 9am-6pm. Power outages disrupt schedules.",
+    "post_office": "Ipostel postal service extremely unreliable. Do not send valuables.",
+    "useful_apps": [
+      "WhatsApp (primary communication tool in Venezuela)",
+      "Google Maps (offline essential)",
+      "USD/VES exchange rate trackers"
+    ]
+  },
+  "laws": {
+    "lgbt_legal": true,
+    "lgbt_details": "Same-sex sexual activity is legal in Venezuela with an equal age of consent. The constitution prohibits discrimination based on sexual orientation. However, no legal recognition of same-sex partnerships or marriage exists. Social conservatism is strong, and the political environment under the Maduro government has not been progressive on LGBT rights. Discretion is strongly advised.",
+    "drug_laws": "Strict. Trafficking carries long prison sentences. Venezuela's complex drug trafficking environment (Cartel de los Soles) makes accidental association with drug activity a serious risk — never carry packages for strangers.",
+    "alcohol_legal_age": 18,
+    "smoking_rules": "Smoking banned in enclosed public spaces.",
+    "photography_laws": "CRITICAL — Photography of military installations, police, government buildings, or infrastructure is illegal and can result in immediate arrest and detention. This law is actively enforced. Do not photograph anything that could be interpreted as 'strategic infrastructure.'",
+    "currency_import_export": "Declare amounts over $10,000 USD. The economic situation creates complex currency rules — follow your operator's guidance.",
+    "unusual_laws": [
+      "Photography of military/police/government buildings is ILLEGAL and enforced — can result in detention",
+      "Drones require government permits from INAC (civil aviation authority) — effectively banned for tourists",
+      "Satellite phones require CONATEL registration",
+      "Currency exchange must be through authorized channels — black market exchange is illegal",
+      "Arbitrary law enforcement is a documented risk for foreigners",
+      "The US Embassy is non-operational — no US consular assistance available if detained"
+    ]
+  },
+  "family_travel": {
+    "overall_rating": "Poor — Venezuela is not recommended for family travel with children given the security situation, healthcare collapse, and infrastructure challenges.",
+    "child_friendly_attractions": [
+      "Los Roques beaches (with operator)",
+      "Morrocoy snorkeling (with operator)"
+    ],
+    "stroller_friendliness": "Very poor — infrastructure is degraded.",
+    "baby_supplies_availability": "Very limited — chronic supply shortages. Bring everything needed.",
+    "family_accommodation_notes": "If traveling with children, limit to Los Roques or Isla Margarita with established operators. Canaima and llanos expeditions are not appropriate for young children.",
+    "health_considerations_for_families": "Medical evacuation insurance is mandatory. Yellow fever vaccination required. Malaria prophylaxis for interior. Bring comprehensive medical kit. Healthcare system has collapsed — cannot be relied upon."
+  },
+  "accessibility": {
+    "overall_rating": "Very poor — infrastructure degradation makes accessibility extremely difficult",
+    "wheelchair_accessibility": "Virtually no wheelchair-accessible infrastructure. Even major hotels in Caracas have limited accessibility.",
+    "visual_impairment_services": "None available.",
+    "hearing_impairment_services": "None available.",
+    "accessible_attractions": [],
+    "accessible_accommodation": "Very limited even in major hotels."
+  },
+  "gear": {
+    "essentials": [
+      "USD cash (bring all you will need — no reliable ATMs)",
+      "Comprehensive medical kit (antibiotics, antimalarials, antidiarrheals, wound care)",
+      "Water purification tablets or filter (tap water unsafe, bottled water scarce)",
+      "DEET insect repellent (dengue and malaria)",
+      "Yellow fever vaccine certificate (mandatory)",
+      "Anti-malarial medication (prescription)",
+      "Power bank (frequent power outages)",
+      "Headlamp",
+      "Emergency satellite communicator (e.g., Garmin inReach) for interior travel"
+    ],
+    "nice_to_have": [
+      "Binoculars for wildlife and birds",
+      "Dry bags for boat travel to Angel Falls",
+      "Spanish phrasebook",
+      "Lightweight rain jacket",
+      "Quick-dry clothing"
+    ],
+    "what_not_to_bring": [
+      "Expensive jewelry, watches, or electronics visible in cities (robbery risk)",
+      "Drone without obtaining extremely difficult permits (effectively banned)",
+      "Satellite phone without CONATEL registration",
+      "Anything suggesting media or journalism credentials"
+    ],
+    "gear_rental_available": false,
+    "local_gear_shopping": "Do not rely on local gear availability due to chronic shortages. Bring everything from home."
+  },
+  "history": [
+    {
+      "title": "Pre-Columbian Civilizations",
+      "content": "Venezuela was home to the Timoto-Cuicas in the Andes, the Carib and Arawak peoples of the coast, and numerous Amazonian nations. Christopher Columbus first reached the Venezuelan coast on his third voyage in 1498 — the first time he set foot on the South American mainland. He saw the Orinoco delta and believed he had found the Garden of Eden."
+    },
+    {
+      "title": "Colonial Venezuela",
+      "content": "Venezuela was part of the Viceroyalty of New Granada. The pearl fisheries of Cubagua and Margarita Island were among Spain's first New World enterprises. The Welser banking family (from Augsburg, Germany) actually administered Venezuela under a Spanish grant from 1528–1546 — the only case of non-Spanish European administration of a Spanish colony."
+    },
+    {
+      "title": "Independence & Bolívar",
+      "content": "Simón Bolívar — El Libertador — was born in Caracas on July 24, 1783. He led the liberation of Venezuela, Colombia, Ecuador, Peru, and Bolivia, envisioning a unified Latin America (Gran Colombia). Venezuela declared independence on July 5, 1811. After years of brutal war against Spanish royalists, final liberation came at the Battle of Carabobo (June 24, 1821)."
+    },
+    {
+      "title": "Oil Discovery & Prosperity",
+      "content": "Oil was discovered in Lake Maracaibo in 1914, and Venezuela became the world's largest oil exporter by the 1920s. The oil boom created massive wealth but also dependency and corruption. Venezuela joined OPEC as a founding member in 1960. By the 1970s it had one of the highest per-capita incomes in Latin America."
+    },
+    {
+      "title": "Chavismo & Crisis",
+      "content": "Hugo Chávez won the presidency in 1998 on a populist platform, using oil revenues to fund social programs (misiones) that dramatically reduced poverty and expanded literacy and healthcare. After Chávez died of cancer in 2013, Nicolás Maduro succeeded him. Venezuela's economy collapsed as oil prices fell and government mismanagement accelerated: hyperinflation exceeded 1,000,000% in 2018. Over 7 million Venezuelans have emigrated — one of the largest displacement crises outside active war zones."
+    }
+  ]
+}

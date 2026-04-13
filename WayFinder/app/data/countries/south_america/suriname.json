@@ -1,0 +1,1010 @@
+{
+  "meta": {
+    "last_updated": "2026-04-12",
+    "confidence_score": 0.86,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "Suriname Travel Guide (suriname-guide.com)",
+      "Chef's Pencil Suriname food guide",
+      "Explore Suriname Nature",
+      "Blue Bird Tours Suriname",
+      "Responsible Travel Suriname",
+      "Brownsberg Nature Park data"
+    ],
+    "notes": "Suriname is a Dutch-speaking, highly diverse country with 93% rainforest cover. World Health Organization certified Suriname malaria-free on June 30, 2025. Atlantic coast has limited surf potential due to muddy river discharge."
+  },
+  "identity": {
+    "name": "Suriname",
+    "official_name": "Republic of Suriname",
+    "code": "SR",
+    "iso3": "SUR",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Paramaribo",
+    "flag_emoji": "🇸🇷",
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "driving_side": "left",
+    "country_calling_code": "+597",
+    "internet_tld": ".sr"
+  },
+  "language_and_money": {
+    "languages": [
+      "Dutch",
+      "Sranan Tongo (Surinamese Creole)",
+      "Javanese",
+      "Hindi/Sarnami",
+      "Saramaccan",
+      "Ndyuka",
+      "English"
+    ],
+    "primary_language": "Dutch",
+    "english_proficiency": "Moderate to High — English is widely understood especially in Paramaribo, tourism industry, and among educated Surinamese. Dutch is official. Sranan Tongo is the street lingua franca. Most signs in Dutch.",
+    "currency": "SRD",
+    "currency_name": "Surinamese Dollar",
+    "currency_symbol": "SRD",
+    "cash_vs_card": "Cash strongly preferred. USD accepted at many hotels, tours, and larger businesses. SRD needed for local restaurants, markets, and transport. Cards accepted at major hotels and some restaurants in Paramaribo.",
+    "typical_payment_methods": [
+      "Cash (SRD)",
+      "USD cash",
+      "Visa",
+      "Mastercard"
+    ],
+    "atm_availability": "ATMs available in Paramaribo (De Surinaamsche Bank, Hakrinbank). Very limited in interior — withdraw plenty of cash before leaving the capital for jungle lodges or Maroon villages.",
+    "tipping_culture": "Not mandatory but appreciated. 10% at restaurants in Paramaribo. Tip tour guides $10-15/day.",
+    "tipping_etiquette": "10% in restaurants if service is included; otherwise included in bill. Jungle guide tipping is important — $10-20/day for overnight trips."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "Tourist card ($25 USD) required — purchased online before travel at Suriname Tourism Foundation website or on arrival",
+      "visa_type": "Tourist card (e-Suriname visa)",
+      "visa_free_days": 90,
+      "visa_on_arrival": true,
+      "evisa_available": true
+    },
+    "passport_validity_rule": "Must be valid for at least 6 months beyond intended stay",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": false,
+    "tourist_entry_fee": 25,
+    "departure_tax": "Included in airline ticket price or paid separately ($26 at airport for some routes)",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Strict on drugs. Wildlife export prohibited. No firearms without permit. Some plant and food items restricted.",
+    "restricted_items": [
+      "Narcotics",
+      "Wildlife and wildlife products",
+      "Firearms without permit",
+      "Agricultural products without declaration"
+    ],
+    "duty_free_allowances": "200 cigarettes or 50 cigars, 1 liter of spirits, gifts up to $500 value"
+  },
+  "health": {
+    "recommended_vaccines": [
+      "Hepatitis A",
+      "Typhoid",
+      "Hepatitis B",
+      "Yellow Fever",
+      "Rabies (if trekking into interior)",
+      "Tetanus-Diphtheria"
+    ],
+    "required_vaccines": [
+      "Yellow Fever (required for entry — all visitors must present yellow fever vaccination certificate)"
+    ],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": true,
+    "yellow_fever_required_if_from_risk_country": false,
+    "malaria_risk": "Suriname was certified malaria-free by the WHO on June 30, 2025 — no malaria prophylaxis required. Previously high-risk in interior regions.",
+    "malaria_regions": [],
+    "malaria_prophylaxis_info": "Not required as of mid-2025. Suriname is WHO-certified malaria-free. Confirm latest status before travel.",
+    "dengue_risk": "Present in Paramaribo and other coastal areas. Use DEET repellent especially during rainy season.",
+    "altitude_sickness_risk": "None — Suriname is entirely lowland. Highest point is Julianatop at 1,230m.",
+    "food_water_safety": "Tap water not safe to drink in most areas. Bottled water and beverages generally safe. Many restaurants and hotels serve tap water unless bottled is requested. Ice may be made from tap water — request confirmation.",
+    "air_quality_concerns": "Generally good. Some vehicle emissions in Paramaribo.",
+    "common_travel_illnesses": [
+      "Traveler's diarrhea",
+      "Dengue fever",
+      "Heat exhaustion",
+      "Chikungunya"
+    ],
+    "pharmacy_access": "Pharmacies available in Paramaribo. Limited in interior. Stock up on medications before heading to jungle lodges.",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Adequate in Paramaribo (Academisch Ziekenhuis Paramaribo). Limited to very basic in interior regions. Medical evacuation coverage strongly recommended for jungle travel.",
+    "emergency_medical_number": "113"
+  },
+  "safety": {
+    "overall_score": 62,
+    "travel_advisory_level_us": 1,
+    "travel_advisory_level_label": "Exercise Normal Precautions",
+    "travel_advisory_updated": "2024",
+    "risk_indicators": [
+      "General petty crime in Paramaribo (pickpocketing, bag snatching)",
+      "Driving hazards — unpredictable driving, few traffic lights",
+      "Drug use crime correlation in some Paramaribo neighborhoods",
+      "Interior travel generally safe with guides"
+    ],
+    "crime_risk": "Low-moderate. Paramaribo is relatively safe for a South American capital. Petty crime occurs in crowded areas. The interior rainforest and Maroon communities are very safe. Use common sense in the city.",
+    "scam_risk": "Low — Suriname has limited tourism infrastructure, so organized tourist scams are uncommon. Taxi overcharging may occur.",
+    "transport_safety": "Drive carefully — road conditions can be unpredictable. Driving while using a phone is illegal. Use shared taxis (collectief) carefully.",
+    "solo_female_travel_notes": "Suriname is generally safe for solo female travelers in Paramaribo. Interior trips should be arranged with reputable guides. Normal precautions apply.",
+    "lgbtq_notes": "Same-sex activity is legal. No formal recognition of same-sex partnerships, but Suriname is relatively tolerant compared to other Caribbean/South American countries. The diverse multicultural society means varying attitudes. Discretion advisable in conservative communities.",
+    "night_safety": "Exercise caution at night in Paramaribo's less-traveled streets. Stick to restaurant and tourist areas. Don't walk alone late at night.",
+    "safe_areas": [
+      "Centrum (Paramaribo historic district)",
+      "Zorg en Hoop (residential)",
+      "Tourist areas around Fort Zeelandia"
+    ],
+    "areas_to_avoid": [
+      "Areas south of Gemenelandsweg at night",
+      "Port area at night",
+      "Isolated road areas after dark"
+    ],
+    "natural_disaster_risks": [
+      "Flooding in coastal areas during heavy rains (Paramaribo is below sea level in places)",
+      "Flash floods in interior rivers during rainy season",
+      "No earthquake or hurricane risk"
+    ],
+    "political_stability_notes": "Political landscape has been complex with former leader Desi Bouterse convicted of murder. New government elected in 2020 and 2024. Generally stable.",
+    "common_scams": [
+      "Taxi overcharging from Johan Adolf Pengel Airport",
+      "Unofficial money changers offering bad rates",
+      "Street vendors selling overpriced 'crafts'"
+    ],
+    "police_reliability": "Present in Paramaribo. Less responsive in interior.",
+    "emergency_numbers": {
+      "police": "115",
+      "ambulance": "113",
+      "fire": "110",
+      "general_emergency": "115"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Paramaribo",
+      "us_embassy_phone": "+597-556-700",
+      "us_embassy_website": "https://sr.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "February to April (long dry season) and August to November (short dry season). Rainforest is accessible year-round but trails are muddy and rivers higher in wet season. Turtle nesting at Matapica Beach is February to July.",
+    "climate_zones": [
+      "Coastal zone (Paramaribo) — hot, humid tropical, 25-33°C year-round",
+      "Interior rainforest — slightly cooler, high humidity, 22-32°C",
+      "Savannah zones (south) — similar humidity, seasonal flooding"
+    ],
+    "dry_season": "February to April (long dry) and August to November (short dry)",
+    "rainy_season": "April to August (long rainy) and November to February (short rainy)",
+    "hurricane_typhoon_season": "Minimal hurricane risk — south of the main hurricane belt",
+    "surf_season": "Atlantic coast has turbid water from massive river sediment discharge (Amazon and Orinoco influence). No reliable surf conditions. Tiny swells occasionally break on the eastern Galibi beach but not surfable consistently.",
+    "trekking_best_months": [
+      "February",
+      "March",
+      "April",
+      "August",
+      "September",
+      "October"
+    ],
+    "average_temp_by_month": {
+      "Paramaribo": "26-33°C year-round, humidity 85%+",
+      "Interior (Brownsberg)": "22-30°C, cooler at elevation",
+      "South (Sipaliwini)": "24-32°C"
+    },
+    "daylight_hours_by_season": "Approximately 12 hours year-round due to equatorial location (5°N latitude)"
+  },
+  "transport": {
+    "major_airports": [
+      "Johan Adolf Pengel International Airport (PBM) — 45km south of Paramaribo",
+      "Zorg en Hoop Airport (ORG) — domestic flights within Paramaribo area"
+    ],
+    "main_airlines": [
+      "Caribbean Airlines",
+      "Surinam Airways",
+      "LATAM",
+      "Gol Linhas Aéreas",
+      "Insel Air International"
+    ],
+    "airport_to_city_options": [
+      "Shared taxi/bus SRD 35-50 ($10 USD, 1 hour)",
+      "Private taxi ($25-35 USD)",
+      "Hotel transfers"
+    ],
+    "public_transit_quality": "Paramaribo has minibus lines but they are confusing. Shared taxis (collectief) are the main public transport. No formal bus network to interior — interior travel by small aircraft, boat, or 4x4.",
+    "intercity_bus_quality": "Limited intercity bus service. Most travel is by private car or boat. Some routes along the coastal road to Nickerie (west) and Albina (east, Suriname-French Guiana border).",
+    "train_network_quality": "No passenger rail",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": true,
+    "road_conditions": "Paramaribo roads paved but potholed. East-West highway (connecting to Nickerie and Albina) paved. Interior roads unpaved, requiring 4x4. Driving can be challenging — erratic local driving style.",
+    "four_x_four_needed_regions": [
+      "Interior beyond Brownsberg",
+      "Brokopondo district roads",
+      "Sipaliwini (Trio Amerindian territory)"
+    ],
+    "ride_hailing_apps": [],
+    "taxi_safety_notes": "Use hotel-recommended taxis or established companies. Agree on price before entering any taxi. No ride-hailing apps available.",
+    "ferry_routes": [
+      "Paramaribo to Meerzorg (short Suriname River crossing by pontoon ferry)",
+      "Albina to St. Laurent du Maroni, French Guiana (pirogue/motorboat)",
+      "Nickerie to Moleson Creek, Guyana (boat service, border crossing)"
+    ],
+    "border_crossing_notes": "Eastern border: Albina to St. Laurent du Maroni (French Guiana) by motorboat on Marowijne River. Western border: Nickerie to South Drain (Guyana) by boat. Both require passport and visa/entry documentation for the other country."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$45-70/day",
+    "daily_budget_midrange": "$90-140/day",
+    "daily_budget_comfort": "$150-250/day",
+    "hostel_avg": "$15-25/night",
+    "hotel_avg": "$40-100/night",
+    "meal_avg": "$5-10 (warung/local $5-7, restaurant $10-20)",
+    "coffee_avg": "$1.50-3",
+    "beer_avg": "$2-4 (Parbo Beer is local brand)",
+    "local_transport_avg": "$0.50-1.50 (collectief/bus), $5-10 (private taxi)",
+    "sim_card_avg": "$10-15 for data package",
+    "coworking_day_pass_avg": "$15-25",
+    "surfboard_rental_avg": "Not applicable — no surf culture",
+    "value_for_money": "Moderate — Paramaribo is affordable for food and accommodation. Interior tours are expensive due to limited infrastructure and specialist guides. A multi-day jungle lodge stay can cost $150-300/day all-inclusive."
+  },
+  "connectivity": {
+    "sim_card_providers": [
+      "Digicel Suriname",
+      "Telesur"
+    ],
+    "esim_available": false,
+    "mobile_data_quality": "Good 4G in Paramaribo. Limited 3G in some coastal areas. No coverage in interior jungle and Maroon communities along upper rivers — satellite communication only.",
+    "wifi_quality": "Available in Paramaribo hotels, restaurants, and cafes. Speeds variable (5-20 Mbps). Interior lodges use satellite or no internet.",
+    "coworking_available": false,
+    "best_remote_work_cities": [
+      "Paramaribo"
+    ],
+    "power_outlet_types": [
+      "C",
+      "F"
+    ],
+    "voltage": "127V and 220V (dual voltage — check before using appliances), 60Hz",
+    "plug_adapter_needed_for_us": true,
+    "power_reliability": "Reliable in Paramaribo. Power outages occur. Interior lodges use generators (limited hours) or solar."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Centrum, Paramaribo — near historic district, Fort Zeelandia, and restaurants",
+      "Zorg en Hoop, Paramaribo — upscale residential area",
+      "Torarica Hotel area (Kleine Waterstraat) — upscale riverside",
+      "Brownsberg Nature Park lodge — accessible jungle experience",
+      "Palumeu Lodge — deep interior all-inclusive",
+      "Danpaati Lodge — Marowijne River, Maroon village experience"
+    ],
+    "budget_areas": [
+      "Paramaribo centre guesthouses",
+      "Zorg en Hoop affordable hotels"
+    ],
+    "family_friendly_areas": [
+      "Centrum Paramaribo (walkable, historic)",
+      "Brownsberg (older children)"
+    ],
+    "nightlife_areas": [
+      "Kleine Waterstraat (Paramaribo)",
+      "Around Saramaccastraat",
+      "Waterfront restaurants and bars"
+    ],
+    "surf_towns": [],
+    "eco_lodges_available": true,
+    "peak_booking_season": "February to April (dry season, Holi/Phagwa season). Book interior lodges 2-3 months in advance.",
+    "accommodation_notes": "Interior eco-lodges have very limited capacity (6-12 guests typically) — book far in advance. Most include meals and guides in the price. Paramaribo has good hotel selection."
+  },
+  "culture": {
+    "local_customs": [
+      "Suriname is one of the world's most ethnically diverse nations — Creole, Hindustani, Javanese, Maroon, Chinese, Amerindian, and Dutch communities coexist",
+      "Food is a primary expression of cultural identity — eating across ethnic traditions is expected and celebrated",
+      "The Maroon people (descendants of escaped enslaved Africans) have preserved rich cultural traditions in the interior",
+      "Javanese culture brought from Indonesia in the 1890s includes warungs, batik textiles, and shadow puppet theater",
+      "Greeting warmly and asking about family is important in all communities"
+    ],
+    "dress_expectations": "Casual and relaxed in Paramaribo. Light clothing essential for heat and humidity. Modest dress in Hindu mandirs and mosques. Interior jungle travel requires long sleeves and pants for mosquito protection.",
+    "religious_sensitivity": "Highly multi-religious — Christian, Hindu, Muslim, and traditional African/Maroon spiritual practices coexist. The historic district has synagogues, mosques, churches, and mandirs within blocks of each other. Respect all traditions.",
+    "social_norms": [
+      "Surinamese are generally relaxed and welcoming",
+      "Multi-language switching is common — a sentence may include Dutch, Sranan Tongo, and English",
+      "Sharing food across ethnic lines is a normal and appreciated gesture",
+      "The Maroon communities have specific protocols — always arrive with a guide and bring gifts for community leaders"
+    ],
+    "greeting_style": "Handshake is universal. Among friends, a hug and cheek kiss. 'Fa waka?' (Sranan Tongo — How are you going?) or 'Hoe gaat het?' (Dutch). In Maroon communities, greetings are formal and important.",
+    "public_behavior_notes": "Relaxed atmosphere in Paramaribo. Respectful behavior expected in religious sites and Maroon/Amerindian communities.",
+    "photography_etiquette": "Always ask permission in Maroon and Amerindian communities. Many Maroon people consider photography spiritually sensitive — respect refusals. Fort Zeelandia and Palmentuin are freely photographable.",
+    "bargaining_expected": false,
+    "important_holidays": [
+      "Holi Phagwa — March (date varies by Hindu calendar), Hindu spring festival celebrated with colored powder, music, and communal gatherings at the Palm Garden in Paramaribo — one of Suriname's most vibrant celebrations",
+      "Keti Koti (Emancipation Day) — July 1, marks the abolition of slavery in 1863, major Creole and Maroon celebration with music, traditional food, and cultural performances",
+      "Owru Yari — December 31, Surinamese New Year's Eve, the biggest party of the year, multicultural celebrations throughout Paramaribo",
+      "Eid al-Fitr — end of Ramadan (date varies), major celebration in the Hindustani and Javanese communities with open houses and communal meals",
+      "Independence Day — November 25, national holiday celebrating 1975 independence from the Netherlands"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Yellow fever vaccination certificate is mandatory for entry — you will be denied boarding without it",
+      "Driving while using a phone is illegal",
+      "Wildlife and plant export strictly prohibited",
+      "Photography of military and police facilities restricted"
+    ]
+  },
+  "food": {
+    "dishes": [
+      {
+        "name": "Roti (Surinamese)",
+        "description": "The most beloved meal in Suriname — a large flaky flatbread (similar to Indian paratha) served with rich curried chicken, potatoes, and long beans. The Surinamese version is more layered and buttery than Caribbean roti. Available at dedicated roti shops across Paramaribo. A complete meal in itself, reflecting the country's Indian heritage brought by Hindustani workers in the 1870s.",
+        "region": "Nationwide (Hindustani tradition)"
+      },
+      {
+        "name": "Saoto Soup",
+        "description": "Javanese-origin chicken soup that has become a national comfort food — clear broth with shredded chicken, thin vermicelli noodles, bean sprouts, and fragrant herbs. Served with white rice on the side and condiments including sambal and ketjap (sweet soy sauce). Found at warungs (Javanese restaurants) throughout Suriname. Light yet deeply satisfying.",
+        "region": "Nationwide (Javanese tradition)"
+      },
+      {
+        "name": "Pom",
+        "description": "The iconic Creole-Sephardic Jewish dish — a baked casserole made from grated pomtayer (a taro-like root), chicken pieces, onion, garlic, citrus juice, and spices. Slow-baked until golden and creamy. Created by the Sephardic Jewish community (among the oldest in the Americas) with input from enslaved Africans. An irreplaceable part of Surinamese food culture.",
+        "region": "Paramaribo and nationwide (Creole/Jewish tradition)"
+      },
+      {
+        "name": "Herie Herie",
+        "description": "A Creole one-pot meal of mixed root vegetables — cassava, sweet potato, plantains, and tayer (taro) — boiled together with salted fish or salt meat. Simple, filling, and deeply rooted in African culinary heritage. Garnished with bakkeljauw (salted cod) and often served with a spoonful of peanut sauce.",
+        "region": "Nationwide (Afro-Surinamese/Maroon tradition)"
+      },
+      {
+        "name": "Javaanse Bami",
+        "description": "Javanese fried noodles — one of Suriname's most popular dishes. Egg noodles baked with sweet soy sauce (ketjap), garlic, ginger, and various spices, topped with grilled chicken and vegetables. Drizzled with peanut sauce before serving. Brought to Suriname by Javanese contract workers beginning in the 1890s and now fully part of the national food identity.",
+        "region": "Nationwide (Javanese tradition)"
+      },
+      {
+        "name": "Bakabana",
+        "description": "A beloved sweet-savory snack — ripe plantains battered in seasoned flour and deep-fried until golden, served with a rich peanut dipping sauce. Street food staple sold at market stalls throughout Paramaribo. Simple, cheap, and utterly satisfying.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Moksi Meti",
+        "description": "A mixed meat dish with Chinese-Surinamese origins — various cuts of pork (belly, ear, trotter) cooked with soy sauce, garlic, and Chinese five spice until deeply flavored and tender. Part of the rich Chinese-Surinamese culinary tradition developed by Cantonese immigrants arriving between 1858 and 1875.",
+        "region": "Paramaribo (Chinese-Surinamese restaurants)"
+      },
+      {
+        "name": "Podosiri (Acai Pudding)",
+        "description": "A traditional Maroon delicacy from the interior — a thick, non-liquid preparation made from fresh acai (açaí) berries found in the Amazonian interior. Neither juice nor pudding, it has a unique grainy-smooth consistency. Eaten with cassava bread, rice, or dried fish. Rarely found outside Maroon communities and select Paramaribo specialty markets.",
+        "region": "Maroon communities (interior rivers)"
+      },
+      {
+        "name": "Peanut Soup (Pindasoep)",
+        "description": "A rich, creamy soup made from ground peanuts simmered with chicken, vegetables, and Surinamese spices. A staple in both Creole and Javanese cooking traditions, reflecting the central role peanuts play in Surinamese cuisine. Thick, warming, and universally loved.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Teloh with Terie",
+        "description": "A Javanese staple — fried cassava sticks (teloh) served with spiced tiny dried anchovies (terie), topped with ketchup, sweet soy sauce (ketjap), and peanut sauce. Simple street food beloved at warungs throughout Paramaribo. A perfect example of the Javanese-Surinamese fusion style.",
+        "region": "Paramaribo and nationwide (Javanese tradition)"
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Parbo Beer",
+        "description": "The national lager of Suriname — brewed in Paramaribo at the Surinaamsche Brouwerij since the 1960s. A refreshing, light pilsner perfect for the tropical heat. Available everywhere from warungs to upscale restaurants."
+      },
+      {
+        "name": "Dawet",
+        "description": "A traditional Javanese sweet drink of coconut milk, pandan-flavored green rice flour jelly noodles, and palm sugar syrup served over ice. Sold at Javanese markets and stalls throughout Paramaribo — cool, fragrant, and sweet."
+      },
+      {
+        "name": "Sorrel",
+        "description": "Dried hibiscus flowers (sorrel/roselle) steeped with ginger, cloves, and cinnamon, sweetened and served cold. Especially popular during Christmas and festive occasions across the Creole community."
+      },
+      {
+        "name": "Coconut Water",
+        "description": "Fresh green coconuts sold at roadside stalls throughout the coast and interior — the ideal hydration in Suriname's tropical heat."
+      },
+      {
+        "name": "Rum",
+        "description": "Surinamese rum (Borgoe rum is the main brand) reflects Dutch-Caribbean sugar cane heritage. Mixed in cocktails or drunk with cola. The DeSP (De Surinaamsche Spirituosenfabriek) distillery produces several varieties."
+      },
+      {
+        "name": "Lassi",
+        "description": "Indian yogurt-based drink common in Hindustani-Surinamese restaurants — served sweet with mango or salty with cumin. Reflects the rich Indian culinary tradition of the Hindustani community."
+      }
+    ],
+    "street_food_safety": "Generally safe at Paramaribo's central market and established warungs. The Centrale Markt on Waterkant is a safe and excellent street food destination.",
+    "vegetarian_friendliness": "Moderate to good — the Javanese and Hindustani food traditions offer many vegetarian options including roti with vegetable curries, nasi (fried rice), and bami. Creole cuisine is more meat-focused.",
+    "vegan_friendliness": "Challenging — dairy and eggs appear in many dishes. Growing awareness in Paramaribo. Specific vegan restaurants emerging.",
+    "must_try_drinks": [
+      "Parbo Beer",
+      "Dawet (Javanese coconut drink)",
+      "Borgoe rum",
+      "Fresh coconut water",
+      "Sorrel"
+    ],
+    "regional_specialties": [
+      "Paramaribo: Pom, roti, saoto soup, all cuisines represented",
+      "Interior (Maroon communities): Podosiri, cassava dishes, wild smoked fish",
+      "Nickerie (west): Fresh shrimp, rice dishes (major rice-growing region)",
+      "Javanese communities: Saoto, bami, teloh, dawet"
+    ],
+    "drinking_water_notes": "Do not drink tap water. Bottled water available throughout Paramaribo. Jungle lodges provide treated water. Request bottled water explicitly at restaurants.",
+    "alcohol_rules": "Legal drinking age 18. Alcohol freely available. Rum and Parbo Beer are the national standards.",
+    "signature_dishes": [
+      {
+        "name": "Roti (Surinamese)",
+        "description": "The most beloved meal in Suriname — a large flaky flatbread (similar to Indian paratha) served with rich curried chicken, potatoes, and long beans. The Surinamese version is more layered and buttery than Caribbean roti. Available at dedicated roti shops across Paramaribo. A complete meal in itself, reflecting the country's Indian heritage brought by Hindustani workers in the 1870s.",
+        "region": "Nationwide (Hindustani tradition)"
+      },
+      {
+        "name": "Saoto Soup",
+        "description": "Javanese-origin chicken soup that has become a national comfort food — clear broth with shredded chicken, thin vermicelli noodles, bean sprouts, and fragrant herbs. Served with white rice on the side and condiments including sambal and ketjap (sweet soy sauce). Found at warungs (Javanese restaurants) throughout Suriname. Light yet deeply satisfying.",
+        "region": "Nationwide (Javanese tradition)"
+      },
+      {
+        "name": "Pom",
+        "description": "The iconic Creole-Sephardic Jewish dish — a baked casserole made from grated pomtayer (a taro-like root), chicken pieces, onion, garlic, citrus juice, and spices. Slow-baked until golden and creamy. Created by the Sephardic Jewish community (among the oldest in the Americas) with input from enslaved Africans. An irreplaceable part of Surinamese food culture.",
+        "region": "Paramaribo and nationwide (Creole/Jewish tradition)"
+      },
+      {
+        "name": "Herie Herie",
+        "description": "A Creole one-pot meal of mixed root vegetables — cassava, sweet potato, plantains, and tayer (taro) — boiled together with salted fish or salt meat. Simple, filling, and deeply rooted in African culinary heritage. Garnished with bakkeljauw (salted cod) and often served with a spoonful of peanut sauce.",
+        "region": "Nationwide (Afro-Surinamese/Maroon tradition)"
+      },
+      {
+        "name": "Javaanse Bami",
+        "description": "Javanese fried noodles — one of Suriname's most popular dishes. Egg noodles baked with sweet soy sauce (ketjap), garlic, ginger, and various spices, topped with grilled chicken and vegetables. Drizzled with peanut sauce before serving. Brought to Suriname by Javanese contract workers beginning in the 1890s and now fully part of the national food identity.",
+        "region": "Nationwide (Javanese tradition)"
+      },
+      {
+        "name": "Bakabana",
+        "description": "A beloved sweet-savory snack — ripe plantains battered in seasoned flour and deep-fried until golden, served with a rich peanut dipping sauce. Street food staple sold at market stalls throughout Paramaribo. Simple, cheap, and utterly satisfying.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Moksi Meti",
+        "description": "A mixed meat dish with Chinese-Surinamese origins — various cuts of pork (belly, ear, trotter) cooked with soy sauce, garlic, and Chinese five spice until deeply flavored and tender. Part of the rich Chinese-Surinamese culinary tradition developed by Cantonese immigrants arriving between 1858 and 1875.",
+        "region": "Paramaribo (Chinese-Surinamese restaurants)"
+      },
+      {
+        "name": "Podosiri (Acai Pudding)",
+        "description": "A traditional Maroon delicacy from the interior — a thick, non-liquid preparation made from fresh acai (açaí) berries found in the Amazonian interior. Neither juice nor pudding, it has a unique grainy-smooth consistency. Eaten with cassava bread, rice, or dried fish. Rarely found outside Maroon communities and select Paramaribo specialty markets.",
+        "region": "Maroon communities (interior rivers)"
+      },
+      {
+        "name": "Peanut Soup (Pindasoep)",
+        "description": "A rich, creamy soup made from ground peanuts simmered with chicken, vegetables, and Surinamese spices. A staple in both Creole and Javanese cooking traditions, reflecting the central role peanuts play in Surinamese cuisine. Thick, warming, and universally loved.",
+        "region": "Nationwide"
+      },
+      {
+        "name": "Teloh with Terie",
+        "description": "A Javanese staple — fried cassava sticks (teloh) served with spiced tiny dried anchovies (terie), topped with ketchup, sweet soy sauce (ketjap), and peanut sauce. Simple street food beloved at warungs throughout Paramaribo. A perfect example of the Javanese-Surinamese fusion style.",
+        "region": "Paramaribo and nationwide (Javanese tradition)"
+      }
+    ]
+  },
+  "outdoors": {
+    "surf_spots": [
+      {
+        "name": "Galibi Beach (Atlantic Coast)",
+        "region": "Marowijne (far northeast coast)",
+        "difficulty": "Not recommended for surfing",
+        "wave_type": "Shoreline shore break",
+        "break_type": "Beach break (inconsistent and weak)",
+        "swell_direction": "Northeast Atlantic",
+        "best_months": [
+          "November",
+          "December",
+          "January",
+          "February"
+        ],
+        "description": "Suriname's Atlantic coastline is turbid with river sediment from the Amazon and Orinoco systems. Galibi is primarily visited as Suriname's most important sea turtle nesting site (leatherback, green, olive ridley turtles nest March-August). Any waves that form are generally small, short-period, and unsuitable for surfing. The beach itself is wild and beautiful. The main reason to visit is turtle conservation, not surfing."
+      }
+    ],
+    "hikes": [
+      {
+        "name": "Brownsberg Nature Park Trails (Leo Falls, Irene Falls)",
+        "region": "Brokopondo district",
+        "difficulty": "Moderate",
+        "distance_km": 15,
+        "duration_days": 1,
+        "elevation_gain_m": 200,
+        "description": "The most accessible hiking destination from Paramaribo (130km, 2 hours). The Brownsberg plateau (500m) offers spectacular views over the vast Brokopondo reservoir. Multiple trails lead to several waterfalls (Leo Falls, Irene Falls, Koemboe Falls) through pristine tropical rainforest. Hear howler monkeys, spot toucans, and watch for jaguars (present but rarely seen). An excellent introduction to Surinamese jungle without requiring a multi-day expedition.",
+        "best_months": [
+          "February",
+          "March",
+          "April",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Raleighvallen (Raleighfallen) Nature Reserve Trails",
+        "region": "Sipaliwini (Coppename River)",
+        "difficulty": "Hard",
+        "distance_km": 25,
+        "duration_days": 3,
+        "elevation_gain_m": 400,
+        "description": "Accessed by light aircraft, this pristine wilderness reserve surrounds the spectacular Raleigh Falls and Voltzberg granite dome (240m). The hike to Voltzberg summit rewards with panoramic views over hundreds of miles of unbroken rainforest. Guianan Cock-of-the-Rock lek at dawn is one of Suriname's greatest wildlife spectacles. Superb birdwatching throughout.",
+        "best_months": [
+          "August",
+          "September",
+          "October",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Julianatop Summit Trek",
+        "region": "Sipaliwini (southwest)",
+        "difficulty": "Very Hard",
+        "distance_km": 40,
+        "duration_days": 5,
+        "elevation_gain_m": 1230,
+        "description": "The ascent of Suriname's highest peak (1,230m Julianatop) is a serious expedition through remote rainforest. Only accessible with indigenous Trio Amerindian guides from the village of Kwamalasamutu. A true wilderness adventure through entirely pristine forest with no infrastructure. Exceptional biodiversity and birdwatching throughout.",
+        "best_months": [
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Peperpot Nature Park Walk",
+        "region": "Commewijne (near Paramaribo)",
+        "difficulty": "Easy",
+        "distance_km": 8,
+        "duration_days": 1,
+        "elevation_gain_m": 10,
+        "description": "A gentle walk through a former sugar and coffee plantation near Paramaribo, now a nature reserve with good birdwatching in riverside forest, mangroves, and plantation remains. Accessible by short ferry crossing from Paramaribo. Excellent for birding beginners — woodpeckers, trogons, and parrots common.",
+        "best_months": [
+          "February",
+          "March",
+          "April",
+          "August",
+          "September",
+          "October"
+        ]
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Central Suriname Nature Reserve",
+        "region": "Sipaliwini (central interior)",
+        "species": [
+          "Jaguar",
+          "Giant River Otter",
+          "Tapir",
+          "Giant Armadillo",
+          "Harpy Eagle",
+          "Guianan Cock-of-the-Rock",
+          "Black Spider Monkey",
+          "White-faced Saki",
+          "Anaconda",
+          "Giant Anteater"
+        ],
+        "description": "A UNESCO World Heritage Site covering 1.6 million hectares of pristine Guiana Shield rainforest — one of the largest tracts of protected wilderness in the world. Encompasses the Raleighvallen, Eilerts de Haan, and Tafelberg reserves. Accessed only by small aircraft to airstrips at Raleighvallen. World-class wildlife including one of the highest jaguar densities in South America.",
+        "best_months": [
+          "August",
+          "September",
+          "October",
+          "February",
+          "March"
+        ]
+      },
+      {
+        "name": "Brownsberg Nature Park",
+        "region": "Brokopondo",
+        "species": [
+          "Howler Monkey",
+          "Capuchin Monkey",
+          "Toucan",
+          "Toucanet",
+          "Jaguar (rarely seen)",
+          "Armadillo",
+          "Agouti",
+          "Various hummingbirds",
+          "Herons and kingfishers"
+        ],
+        "description": "The most accessible wildlife viewing area in Suriname — only 2 hours from Paramaribo on the Brownsberg plateau above the Brokopondo reservoir. Excellent trail system with multiple waterfalls. Howler monkeys frequently heard and seen. Night drives possible for jaguar and tapir spotting. STINASU (Foundation for Nature Conservation) manages the park.",
+        "best_months": [
+          "February",
+          "March",
+          "April",
+          "August",
+          "September",
+          "October"
+        ]
+      },
+      {
+        "name": "Galibi Nature Reserve",
+        "region": "Marowijne (northeast coast)",
+        "species": [
+          "Leatherback Sea Turtle",
+          "Green Sea Turtle",
+          "Olive Ridley Sea Turtle",
+          "Scarlet Ibis",
+          "Black Caiman",
+          "Dolphins",
+          "Manatee"
+        ],
+        "description": "The most important sea turtle nesting site in Suriname — leatherback, green, and olive ridley turtles nest on the 17km beach, watched over by Kaliña Amerindian rangers from the nearby village. Accessible by motorboat from Albina. Night turtle watching tours operate from March to August.",
+        "best_months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August"
+        ]
+      },
+      {
+        "name": "Marowijne River (Upper Suriname and Maroni Rivers)",
+        "region": "Marowijne and Sipaliwini",
+        "species": [
+          "Giant River Otter",
+          "Black Caiman",
+          "Harpy Eagle",
+          "Scarlet Macaw",
+          "Sun Conure",
+          "Piranha",
+          "Arapaima",
+          "Freshwater dolphins"
+        ],
+        "description": "The river system of eastern Suriname (Marowijne/Maroni River forming the border with French Guiana) runs through the territory of the Ndyuka and Aluku Maroon communities. Multi-day river expeditions reveal extraordinary wildlife and indigenous culture simultaneously. Best exploration base is Danpaati or Awarradam Lodge.",
+        "best_months": [
+          "August",
+          "September",
+          "October",
+          "February",
+          "March"
+        ]
+      }
+    ],
+    "national_parks": [
+      {
+        "name": "Central Suriname Nature Reserve (UNESCO)",
+        "region": "Sipaliwini (central)",
+        "area_km2": 16000,
+        "description": "One of the world's largest protected wilderness areas, covering 16,000 km² of pristine Guiana Shield rainforest. UNESCO World Heritage Site. Encompasses three previous reserves (Raleighvallen, Eilerts de Haan, Tafelberg). Near-zero human impact — one of South America's last great wildernesses.",
+        "highlights": [
+          "Voltzberg granite dome (240m) with panoramic rainforest views",
+          "Raleigh Falls whitewater rapids",
+          "Guianan Cock-of-the-Rock lek at dawn",
+          "Jaguar tracking with experienced guides",
+          "Virtually no other tourists",
+          "Giant River Otter families"
+        ]
+      },
+      {
+        "name": "Brownsberg Nature Park",
+        "region": "Brokopondo",
+        "area_km2": 80,
+        "description": "The only formally gazetted national park in Suriname and the most accessible nature experience from Paramaribo. The 500m Brownsberg plateau overlooks the vast Brokopondo reservoir. Managed by STINASU with basic lodge accommodation and a system of well-maintained trails.",
+        "highlights": [
+          "Leo Falls and Irene Falls hikes",
+          "Panoramic views over Brokopondo Lake",
+          "Howler monkey encounters on trails",
+          "Abundant birdwatching (toucans, trumpeters, parrots)",
+          "Jaguar tracking (overnight stays required)",
+          "Accessible day trip from Paramaribo"
+        ]
+      },
+      {
+        "name": "Galibi Nature Reserve",
+        "region": "Marowijne",
+        "area_km2": 45,
+        "description": "Coastal reserve protecting Suriname's most critical sea turtle nesting beach. Managed with the Kaliña (Carib) Amerindian community. Night tours during nesting season (March-August) allow visitors to witness leatherback turtle nesting under ranger supervision.",
+        "highlights": [
+          "Leatherback turtle nesting (March-August)",
+          "Kaliña Amerindian village visit",
+          "Scarlet Ibis at sunset in mangroves",
+          "Black Caiman night spotting by boat",
+          "Remote beach with no roads (boat access only)"
+        ]
+      },
+      {
+        "name": "Bigi Pan Nature Reserve",
+        "region": "Nickerie (northwest)",
+        "area_km2": 620,
+        "description": "A vast coastal lagoon and mangrove system in northwest Suriname, one of the most important shorebird staging areas in the Western Hemisphere. During migration (August-November), hundreds of thousands of shorebirds from North America stopover here on their way to South America.",
+        "highlights": [
+          "World-class shorebird migration (August-November)",
+          "Scarlet Ibis at sunset",
+          "Mangrove boat tours",
+          "Manatee sightings",
+          "Pristine coastal wilderness"
+        ]
+      }
+    ],
+    "danger_zones": [
+      {
+        "name": "Interior rivers without experienced guides",
+        "region": "Sipaliwini and upper river systems",
+        "risk_level": "High",
+        "description": "Rivers in the Surinamese interior can rise dramatically and flood without warning. Rapids are dangerous without local knowledge. Never attempt interior river travel without certified indigenous or professional guides."
+      },
+      {
+        "name": "Gold Mining Areas (interior)",
+        "region": "Brokopondo, Para, and Sipaliwini",
+        "risk_level": "Moderate",
+        "description": "Illegal gold mining (garimpeiros) has created lawless zones in parts of the interior, with mercury pollution in affected river systems. Avoid mining areas."
+      }
+    ],
+    "top_national_parks": [
+      "Central Suriname Nature Reserve (UNESCO) — world-class wilderness, jaguar, Cock-of-the-Rock",
+      "Brownsberg Nature Park — accessible from Paramaribo, waterfalls, monkeys",
+      "Galibi Nature Reserve — sea turtle nesting, coastal wildlife",
+      "Bigi Pan — shorebird migration spectacle"
+    ],
+    "waterfalls": [
+      "Raleigh Falls — dramatic whitewater cascades in Central Suriname Nature Reserve",
+      "Leo Falls — Brownsberg Nature Park, easy hiking access",
+      "Irene Falls — Brownsberg Nature Park",
+      "Wonotobo Falls — Corantijn River, remote but spectacular"
+    ],
+    "rivers": [
+      "Suriname River — main river, Paramaribo sits on its banks",
+      "Marowijne/Maroni River — eastern border with French Guiana",
+      "Saramacca River — through Saramaka Maroon territory",
+      "Coppename River — central Suriname, access to Raleighvallen"
+    ],
+    "wildlife": [
+      "Jaguar — Central Suriname Nature Reserve and Brownsberg",
+      "Giant River Otter — Corantijn, Marowijne, and Coppename rivers",
+      "Harpy Eagle — interior forest",
+      "Guianan Cock-of-the-Rock — Raleighvallen lek site",
+      "Leatherback Sea Turtle — Galibi and Matapica beaches",
+      "Black Caiman — rivers and lakes throughout interior",
+      "Anaconda — swamp areas and river margins",
+      "Arapaima — largest freshwater fish, interior rivers",
+      "Giant Anteater — savannah areas near Sipaliwini"
+    ],
+    "birdwatching_hotspots": [
+      "Raleighvallen (Central Suriname Reserve) — Cock-of-the-Rock, Harpy Eagle, 600+ species",
+      "Brownsberg — toucans, trumpeters, tinamous, White Bellbird",
+      "Bigi Pan (Nickerie) — shorebird migration, Scarlet Ibis",
+      "Galibi mangroves — herons, egrets, Scarlet Ibis",
+      "Peperpot Nature Park — accessible birding near Paramaribo"
+    ],
+    "stargazing_spots": [
+      "Interior rainforest (Raleighvallen, Palumeu) — virtually no light pollution, extraordinary equatorial sky",
+      "Brownsberg plateau — dark sky above the reservoir"
+    ],
+    "scenic_drives": [
+      "Paramaribo to Brownsberg (130km) — through plantation district and interior",
+      "East-West highway to Albina — through mixed forest and Maroon communities",
+      "Paramaribo to Nieuw Nickerie — through former plantation country and rice fields"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Brownsberg Nature Park Trails (Leo Falls, Irene Falls)",
+        "difficulty": "Moderate",
+        "duration": "1 day",
+        "region": "Brokopondo district",
+        "description": "The most accessible hiking destination from Paramaribo (130km, 2 hours). The Brownsberg plateau (500m) offers spectacular views over the vast Brokopondo reservoir. Multiple trails lead to several waterfalls (Leo Falls, Irene Falls, Koemboe Falls) through pristine tropical rainforest. Hear howler monkeys, spot toucans, and watch for jaguars (present but rarely seen). An excellent introduction to Surinamese jungle without requiring a multi-day expedition.",
+        "best_months": [
+          "February",
+          "March",
+          "April",
+          "August",
+          "September",
+          "October"
+        ],
+        "elevation_m": 200,
+        "notes": "",
+        "distance_km": 15,
+        "duration_days": 1
+      },
+      {
+        "name": "Peperpot Nature Park Walk",
+        "difficulty": "Easy",
+        "duration": "1 day",
+        "region": "Commewijne (near Paramaribo)",
+        "description": "A gentle walk through a former sugar and coffee plantation near Paramaribo, now a nature reserve with good birdwatching in riverside forest, mangroves, and plantation remains. Accessible by short ferry crossing from Paramaribo. Excellent for birding beginners — woodpeckers, trogons, and parrots common.",
+        "best_months": [
+          "February",
+          "March",
+          "April",
+          "August",
+          "September",
+          "October"
+        ],
+        "elevation_m": 10,
+        "notes": "",
+        "distance_km": 8,
+        "duration_days": 1
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Raleighvallen (Raleighfallen) Nature Reserve Trails",
+        "difficulty": "Hard",
+        "duration": "3 days",
+        "region": "Sipaliwini (Coppename River)",
+        "description": "Accessed by light aircraft, this pristine wilderness reserve surrounds the spectacular Raleigh Falls and Voltzberg granite dome (240m). The hike to Voltzberg summit rewards with panoramic views over hundreds of miles of unbroken rainforest. Guianan Cock-of-the-Rock lek at dawn is one of Suriname's greatest wildlife spectacles. Superb birdwatching throughout.",
+        "best_months": [
+          "August",
+          "September",
+          "October",
+          "February",
+          "March"
+        ],
+        "elevation_m": 400,
+        "notes": "",
+        "distance_km": 25,
+        "duration_days": 3
+      },
+      {
+        "name": "Julianatop Summit Trek",
+        "difficulty": "Very Hard",
+        "duration": "5 days",
+        "region": "Sipaliwini (southwest)",
+        "description": "The ascent of Suriname's highest peak (1,230m Julianatop) is a serious expedition through remote rainforest. Only accessible with indigenous Trio Amerindian guides from the village of Kwamalasamutu. A true wilderness adventure through entirely pristine forest with no infrastructure. Exceptional biodiversity and birdwatching throughout.",
+        "best_months": [
+          "August",
+          "September",
+          "October"
+        ],
+        "elevation_m": 1230,
+        "notes": "",
+        "distance_km": 40,
+        "duration_days": 5
+      }
+    ]
+  },
+  "sports_and_activities": {
+    "surfing": "Not suitable — Atlantic coast has turbid water and inconsistent, weak waves from river sediment",
+    "diving_snorkeling": "Very limited — Atlantic waters murky. No reef diving.",
+    "fishing": "World-class freshwater fishing in interior rivers — piranha, payara, and peacock bass",
+    "kayaking_canoeing": "River travel in the interior; Cola Creek and Suriname River near Paramaribo",
+    "birdwatching": "World-class — 700+ recorded species; Suriname ranks among top birding destinations in South America",
+    "wildlife_safari": "Exceptional in Central Suriname Reserve and Brownsberg",
+    "whitewater_rafting": "Marowijne and Tapanahoni rivers offer challenging multi-day whitewater expeditions",
+    "turtle_watching": "Galibi and Matapica beaches (March-August) — leatherback turtle nesting"
+  },
+  "trip_styles": {
+    "eco_tourism": "Primary attraction — 93% forest cover makes Suriname one of the world's greenest countries",
+    "cultural": "Paramaribo's multicultural mosaic is unique globally — walking the historic district is a UNESCO-recognized experience",
+    "adventure": "Interior expeditions, river journeys, Voltzberg climb",
+    "birdwatching": "Top destination for serious birders",
+    "history": "Oldest and most intact Jewish community in the Americas, Dutch colonial heritage, Maroon culture",
+    "off_beaten_path": "Suriname receives very few tourists even compared to Guyana — true frontier travel"
+  },
+  "destinations": [
+    {
+      "name": "Paramaribo Historic District",
+      "region": "Paramaribo",
+      "description": "A UNESCO World Heritage Site — the 17th-century Dutch colonial city center with remarkable wooden architecture, Fort Zeelandia, the Neveh Shalom Synagogue (1735, one of the oldest in the Americas) next door to a mosque (a symbol of religious coexistence), St. Peter and Paul Basilica, and the vibrant Centrale Markt riverside market."
+    },
+    {
+      "name": "Brownsberg Nature Park",
+      "region": "Brokopondo",
+      "description": "The most accessible nature experience from Paramaribo — 130km away on the Brownsberg plateau above the Brokopondo reservoir. Waterfalls, monkeys, birding, and panoramic views. Day trip or overnight in STINASU lodges."
+    },
+    {
+      "name": "Central Suriname Nature Reserve",
+      "region": "Sipaliwini",
+      "description": "One of Earth's last great wildernesses — 16,000 km² of pristine Guiana Shield rainforest. Reached by charter flight to Raleighvallen. Voltzberg granite dome, Guianan Cock-of-the-Rock lek, and jaguar tracking with expert guides."
+    },
+    {
+      "name": "Galibi",
+      "region": "Marowijne",
+      "description": "Suriname's most important sea turtle nesting site — reached by motorboat from Albina. Kaliña Amerindian rangers lead night tours during nesting season (March-August). Also home to a Kaliña village offering cultural immersion."
+    },
+    {
+      "name": "Marowijne River / Maroon Communities",
+      "region": "Sipaliwini and Marowijne",
+      "description": "Multi-day river journeys through Ndyuka and Aluku Maroon territory. The Maroons (descendants of escaped enslaved people who built free societies in the jungle) have preserved extraordinary cultural traditions including woodcarving, textiles, and spiritual practices. Danpaati and Awarradam lodges offer immersive experiences."
+    },
+    {
+      "name": "Nieuw Nickerie",
+      "region": "Nickerie",
+      "description": "The rice capital of Suriname in the far west, on the border with Guyana. The surrounding paddies attract enormous numbers of waterbirds and migratory shorebirds. Bigi Pan Nature Reserve nearby offers world-class shorebird migration viewing. Good food (Hindustani community cuisine)."
+    }
+  ],
+  "practical_info": {
+    "calling_code": "+597",
+    "emergency_numbers": {
+      "police": "115",
+      "ambulance": "113",
+      "fire": "110"
+    },
+    "public_holidays": [
+      "New Year's Day (Jan 1)",
+      "Holi Phagwa (March, varies)",
+      "Good Friday",
+      "Easter Monday",
+      "Labour Day (May 1)",
+      "Eid al-Fitr (varies)",
+      "Keti Koti/Emancipation Day (Jul 1)",
+      "Independence Day (Nov 25)",
+      "Christmas Day (Dec 25)",
+      "Owru Yari/New Year (Dec 31)"
+    ],
+    "business_hours": "Mon-Fri 7:30am-3:30pm government offices; shops 8am-5pm or later. Saturday half-day.",
+    "post_office": "Telesur postal service, Paramaribo. Reliable for international letters.",
+    "useful_apps": [
+      "WhatsApp (universal)",
+      "Google Maps (offline for Paramaribo)",
+      "Suriname Tourism Foundation website for tourist card"
+    ]
+  },
+  "laws": {
+    "lgbt_legal": true,
+    "lgbt_details": "Same-sex activity is legal in Suriname. No legal recognition of same-sex partnerships. Anti-discrimination protections are limited but the country is relatively tolerant given its multicultural makeup. The Hindu, Javanese, and Muslim communities tend toward conservative views on LGBTQ matters, while the Creole community is generally more accepting.",
+    "drug_laws": "Strict. Cannabis possession illegal. Drug trafficking carries severe penalties.",
+    "alcohol_legal_age": 18,
+    "smoking_rules": "Restricted in enclosed public spaces.",
+    "photography_laws": "Photography of military and police installations restricted. Ask permission in Maroon and Amerindian communities.",
+    "currency_import_export": "Declare amounts over $10,000 USD equivalent.",
+    "unusual_laws": [
+      "Yellow fever certificate is mandatory for entry — no exceptions",
+      "Driving while using a mobile phone is illegal",
+      "Wildlife and plant export requires permits",
+      "Maroon community territories have their own traditional governance — always show respect for local authority"
+    ]
+  },
+  "family_travel": {
+    "overall_rating": "Moderate — Paramaribo is family-friendly. Interior travel best for older children and teens.",
+    "child_friendly_attractions": [
+      "Paramaribo historic center walk",
+      "Centrale Markt food exploration",
+      "Brownsberg day trip (older children)",
+      "Peperpot Nature Park birdwatching"
+    ],
+    "stroller_friendliness": "Poor — Paramaribo has uneven sidewalks. Interior has no stroller access.",
+    "baby_supplies_availability": "Basic supplies in Paramaribo supermarkets. Bring specialist items.",
+    "family_accommodation_notes": "Family rooms available in Paramaribo hotels. Some Brownsberg lodges can accommodate families.",
+    "health_considerations_for_families": "Yellow fever vaccination required (check age requirements for infants). Dengue protection essential. No malaria risk since 2025."
+  },
+  "accessibility": {
+    "overall_rating": "Poor — limited infrastructure for travelers with disabilities",
+    "wheelchair_accessibility": "Some newer buildings in Paramaribo have accessibility. Historic district and all interior areas are not wheelchair accessible.",
+    "visual_impairment_services": "Very limited.",
+    "hearing_impairment_services": "Very limited.",
+    "accessible_attractions": [
+      "Parts of Paramaribo waterfront"
+    ],
+    "accessible_accommodation": "Some Paramaribo hotels have accessible rooms."
+  },
+  "gear": {
+    "essentials": [
+      "DEET repellent (dengue and general insect protection)",
+      "Yellow fever vaccination certificate (mandatory — travel without it at your own extreme risk)",
+      "Light, quick-dry breathable clothing",
+      "Waterproof hiking shoes or boots",
+      "Rain jacket or poncho",
+      "Headlamp",
+      "Water purification tablets",
+      "Sunscreen"
+    ],
+    "nice_to_have": [
+      "Binoculars for birdwatching",
+      "Dry bags for river trips",
+      "Portable WiFi device",
+      "Camera with telephoto lens"
+    ],
+    "what_not_to_bring": [
+      "Heavy luggage (small aircraft to interior have strict weight limits)",
+      "Valuables beyond what is essential",
+      "Light-colored clothes (jungle stains permanently)"
+    ],
+    "gear_rental_available": false,
+    "local_gear_shopping": "Basic supplies in Paramaribo. Bring specialized gear from home."
+  },
+  "history": [
+    {
+      "title": "Pre-Colonial & Indigenous Era",
+      "content": "Suriname was inhabited by Arawak, Carib, and other indigenous peoples before European contact. The diverse rainforest interior supported hunting, fishing, and shifting cultivation societies. Indigenous Maroon communities — descendants of escaped enslaved Africans — now inhabit the interior and maintain distinct Afro-Surinamese cultures."
+    },
+    {
+      "title": "Dutch Colony & Plantation Economy",
+      "content": "The Dutch established permanent settlement in 1667 (acquiring Suriname from Britain in exchange for New Amsterdam — modern Manhattan — via the Treaty of Breda). Sugar, coffee, and cacao plantations using enslaved African labor defined the colony. Suriname had one of the highest proportions of enslaved people in any colony, and one of the highest rates of marronage (escape)."
+    },
+    {
+      "title": "Maroon Wars & Freedom",
+      "content": "Enslaved Africans who escaped into the jungle formed Maroon communities and fought the Dutch in a series of Maroon Wars (17th–18th centuries). The Dutch eventually signed peace treaties recognizing Maroon autonomy in the interior — one of the earliest official recognitions of freedom for formerly enslaved people in the Americas."
+    },
+    {
+      "title": "Independence & Ethnic Diversity",
+      "content": "Suriname gained independence from the Netherlands on November 25, 1975. The country is one of the most ethnically diverse in the world: Hindustani (Indo-Surinamese, descendants of Indian indentured laborers), Creole (Afro-Surinamese), Javanese, Maroon, Chinese, and indigenous Amerindians. Dutch remains the official language."
+    },
+    {
+      "title": "Military Coup & Recovery",
+      "content": "Dési Bouterse led a military coup in 1980 and ruled for most of the 1980s–90s. The 1982 December Murders — in which 15 prominent intellectuals and opposition figures were executed — became a defining atrocity. Bouterse was eventually convicted of drug trafficking by a Dutch court and later of the December Murders by a Surinamese military tribunal (2019). Democracy has been maintained since 1991."
+    }
+  ]
+}
