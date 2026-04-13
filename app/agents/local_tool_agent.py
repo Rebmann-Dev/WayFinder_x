@@ -724,14 +724,14 @@ class LocalToolAgent:
             thread.append(tool_msg)
             messages.append(tool_msg)
 
-            if name == "search_flights":
+            if name == "search_flights" and len(calls) == 1:
                 final_text = render_search_flights_result(result_str)
                 if final_text:
                     yield AgentStreamEvent("done", final_text)
                     messages.append({"role": "assistant", "content": final_text})
                     return
 
-            if name == "get_safety_assessment":
+            if name == "get_safety_assessment" and len(calls) == 1:
                 final_text = render_safety_result(result_str)
                 if final_text:
                     yield AgentStreamEvent("done", final_text)
@@ -813,12 +813,15 @@ class LocalToolAgent:
                 [f"{m.get('role')}:{m.get('name', '')}" for m in thread],
             )
 
+            from agents.utils.intent import is_web_search_intent
+            
             # ── Short-circuit to search_flights ───────────────────────────────
             short_circuit_eligible = (
                 user_wants_flights
                 and len(grounded_codes) >= 2
                 and bool(explicit_dates)
                 and not already_searched
+                and not is_web_search_intent(messages)
             )
             log.info(
                 "AGENT STEP %d  short_circuit_eligible=%s  "
@@ -901,7 +904,7 @@ class LocalToolAgent:
                 and user_wants_flights
                 and not is_last_possible
                 and _FLIGHT_HALLUCINATION_RE.search(visible)
-                and not any(m.get("name") == "search_flights" for m in thread)
+                and not already_searched
             ):
                 log.warning(
                     "AGENT STEP %d  hallucination detected, looping: %r",

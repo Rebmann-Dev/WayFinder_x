@@ -5,6 +5,7 @@ import json
 import re
 from typing import Any
 
+# Qwen-style XML blocks
 _TOOL_STRIP = re.compile(r"<tool_call>[\s\S]*?</tool_call>", re.IGNORECASE)
 
 

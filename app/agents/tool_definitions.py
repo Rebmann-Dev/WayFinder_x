@@ -107,4 +107,29 @@ TOOLS: list[dict] = [
             },
         },
     },
+    {
+        "type": "function",
+        "function": {
+            "name": "search_web",
+            "description": (
+                "Search the web for up-to-date information on travel logistics, "
+                "such as visa entry requirements, top hiking trails, regional foods, "
+                "budget guidelines, or customs and etiquette."
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string",
+                        "description": "The search query formulation.",
+                    },
+                    "country_code": {
+                        "type": "string",
+                        "description": "Optional 2-letter ISO country code to retrieve/save local cached info.",
+                    },
+                },
+                "required": ["query"],
+            },
+        },
+    },
 ]

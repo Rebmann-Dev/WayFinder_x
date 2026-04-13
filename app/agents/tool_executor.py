@@ -10,6 +10,7 @@ from services.flight_api import FlightAPIService
 added below for safety function
 """
 from services.safety_service import SafetyService
+from services.tavily_service import TavilyService
 
 
 log = logging.getLogger("wayfinder.tools")
@@ -122,6 +123,7 @@ class ToolExecutor:
     def __init__(self) -> None:
         self._flights = FlightAPIService()
         self._safety = SafetyService()
+        self._tavily = TavilyService()
 
     def run(self, name: str, arguments: dict[str, Any]) -> str:
         log.info("TOOL CALL  %-20s args=%s", name, json.dumps(arguments, default=str))
@@ -318,6 +320,34 @@ class ToolExecutor:
             result["key_factors"] = _safety_highlights(result)
             result["instruction"] = _build_safety_instruction(result)
             result.pop("details", None)  # Already distilled into factors/instruction
+            return json.dumps(result)
+
+        if name == "search_web":
+            query = str(arguments.get("query", "")).strip()
+            country_code = arguments.get("country_code")
+            if country_code:
+                country_code = str(country_code).strip()
+            
+            if not query:
+                return json.dumps({"error": "Provide a search query."})
+            
+            result = self._tavily.search(query, country_code)
+            if result is None:
+                if not self._tavily.enabled:
+                    return json.dumps({"error": "Tavily web search is currently disabled by the user. Ask them to enable it in the sidebar."})
+                return json.dumps({"error": "No results found or API request failed."})
+            
+            # Format nicely so the LLM doesn't get overwhelmed with raw JSON
+            if isinstance(result, dict) and "data" in result:
+                # This indicates it's from json_cache
+                return json.dumps({"source": "local_cache", "results": result["data"]})
+            elif isinstance(result, dict) and "results" in result:
+                # From Tavily API
+                summaries = [
+                    f"Title: {r.get('title')}\nContent: {r.get('content')}"
+                    for r in result.get("results", [])
+                ]
+                return json.dumps({"source": "web_search", "results": summaries})
             return json.dumps(result)
 
         log.warning("TOOL CALL  unknown tool: %s", name)

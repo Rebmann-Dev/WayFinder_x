@@ -26,6 +26,14 @@ _SAFETY_INTENT_RE = re.compile(
     re.IGNORECASE,
 )
 
+_WEB_SEARCH_INTENT_RE = re.compile(
+    r"\b(web|search the web|surf|surfing|hike|hiking|trek|trail|food|eat|restaurant|dish|"
+    r"wildlife|animals|birds|visa|entry|border|vaccine|medical|budget|cost|price|cheap|expensive|"
+    r"lodging|hotel|hostel|weather|climate|rain|season|national park|reserve|nature|"
+    r"transport|bus|taxi|culture|etiquette|customs|cenote|cenotes|beach|beaches)\b",
+    re.IGNORECASE,
+)
+
 _NARRATION_PATTERNS = (
     re.compile(
         r"I (will|am going to|can) (now |)(look up|search|find|check|call|use)",
@@ -74,6 +82,20 @@ def is_safety_intent(messages: list[dict[str, Any]]) -> bool:
     if not latest:
         return False
     return bool(_SAFETY_INTENT_RE.search(latest))
+
+
+def is_web_search_intent(messages: list[dict[str, Any]]) -> bool:
+    """
+    Returns True if the user asks for anything related to the web search categories
+    (e.g., food, hikes, visas, budget, beaches) so we can bypass the flight short-circuit
+    and let the agent answer both.
+    """
+    from agents.utils.thread import latest_user_message
+
+    latest = latest_user_message(messages)
+    if not latest:
+        return False
+    return bool(_WEB_SEARCH_INTENT_RE.search(latest))
 
 
 def is_narration(text: str) -> bool:

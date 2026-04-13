@@ -73,6 +73,13 @@ def _render_sidebar(safety_service: SafetyService) -> None:
             MemoryService.clear()
             st.rerun()
 
+        # ── Settings ──────────────────────────────────────────────────────
+        st.html('<div class="wf-label">Settings</div>')
+        st.toggle(
+            "Web Search",
+            key="tavily_enabled"
+        )
+
         # ── Travel date ───────────────────────────────────────────────────
         st.html('<div class="wf-label">Travel date</div>')
 
@@ -304,6 +311,7 @@ def render_chat_page() -> None:
         ("selected_location", None),
         ("safety_result", None),
         ("safety_debug", None),
+        ("tavily_enabled", True),
     ]:
         if key not in st.session_state:
             st.session_state[key] = default
