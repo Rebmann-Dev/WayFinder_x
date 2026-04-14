@@ -324,7 +324,7 @@ def _render_sidebar(safety_service: SafetyService) -> None:
             if st.session_state["safety_result"] is not None:
                 result = st.session_state["safety_result"]
                 if result.get("success"):
-                    _render_safety_panel(result)
+                    render_safety_panel(result)
                 else:
                     st.error(f"Scoring failed: {result.get('error')}")
 

@@ -1,8 +1,0 @@
-services:
-  server:
-    build:
-      context: ../ScraperAPI/ScraperAPI-main
-      dockerfile: Dockerfile
-    image: wayfinder-scraper:local
-    ports:
-      - 8080:8080
