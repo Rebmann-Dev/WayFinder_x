@@ -12,7 +12,7 @@ from ui.translate_widget import render_translate_widget
 from ui.explore_page import render_explore_page
 from components.location_picker import location_picker
 from models.safety.schemas import SafetyRequest
-
+from ui.safety_display import render_safety_panel
 
 @st.cache_resource
 def get_model_service(_cache_version: str = "v6-mps-eager-attn") -> ModelService:
@@ -324,7 +324,7 @@ def _render_sidebar(safety_service: SafetyService) -> None:
             if st.session_state["safety_result"] is not None:
                 result = st.session_state["safety_result"]
                 if result.get("success"):
-                    _render_safety_results_panel(result)
+                    _render_safety_panel(result)
                 else:
                     st.error(f"Scoring failed: {result.get('error')}")
 
@@ -350,7 +350,7 @@ def _render_sidebar(safety_service: SafetyService) -> None:
 
 
 
-
+'''
 def _render_safety_results_panel(result: dict, label: str = "") -> None:
     """Render all safety scoring outputs as a clean tabbed panel."""
     import datetime as _dt
@@ -522,7 +522,7 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
 
             st.caption("Source: ILGA World, Rainbow Map, and WayFinder LGBT classifier (1 = Criminalized → 5 = Very Safe)")
 
-
+'''
 
 
 def render_chat_page() -> None:

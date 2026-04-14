@@ -4,7 +4,7 @@ import datetime
 import json
 import logging
 from pathlib import Path
-
+from ui.safety_display import render_safety_panel
 import streamlit as st
 
 log = logging.getLogger("wayfinder.explore")
@@ -965,7 +965,7 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
 
     explore_result = st.session_state.get("explore_safety_result")
     if explore_result and isinstance(explore_result, dict) and explore_result.get("success"):
-        _render_safety_results_panel(explore_result, label=st.session_state.get("explore_scored_location", ""))
+        render_safety_panel(explore_result, label=st.session_state.get("explore_scored_location", ""))
     elif explore_result and isinstance(explore_result, dict):
         st.error(f"Scoring failed: {explore_result.get('error')}")
 
@@ -1028,7 +1028,7 @@ def _run_safety_score(explore_dest: str, active_country: str, sel_month: int) ->
         except Exception as e:
             st.error(f"Scoring failed: {e}")
 
-
+'''
 def _render_safety_results_panel(result: dict, label: str = "") -> None:
     """Render safety scoring outputs as a tabbed panel (Fix 1: restored sub-tabs)."""
     score = result.get("safety_score")
@@ -1191,7 +1191,7 @@ def _render_safety_results_panel(result: dict, label: str = "") -> None:
             confidence = lgbt.get("confidence") or "high"
             st.markdown(f"Data confidence: {confidence}")
             st.caption("Source: ILGA World, Rainbow Map, and WayFinder LGBT classifier (1 = Criminalized \u2192 5 = Very Safe)")
-
+'''
 
 def _render_hikes_tab(active_country: str) -> None:
     """Render the Hikes tab with hike info cards loaded from JSON."""
