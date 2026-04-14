@@ -536,7 +536,6 @@ DANGER_MARKERS = {
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
-
 def _load_country_json(country_code: str) -> dict | None:
     """Load country JSON, checking continent subfolders then root."""
     cc = country_code.lower().strip()
@@ -716,7 +715,24 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
     with ctrl_d3:
         show_danger = st.checkbox("\u26a0\ufe0f Show dangerous areas", value=False, key="map_show_danger")
 
-    m = folium.Map(location=center, zoom_start=zoom, tiles="OpenStreetMap")
+    ##### added below this 4/14 -- trying to combat the lat lon out of bounds & location picker reverting to SA country (snapping back)
+    
+    m = folium.Map(
+    location=center,
+    zoom_start=zoom,
+    tiles=None,
+    min_zoom=2,
+    max_bounds=True,
+    )
+
+    folium.TileLayer(
+        "OpenStreetMap",
+        no_wrap=True,
+    ).add_to(m)
+
+    m.fit_bounds([[-85, -180], [85, 180]])
+
+    #### to here 4/14
 
     sel = st.session_state.get("selected_location")
     if sel and isinstance(sel, dict) and sel.get("lat"):
@@ -917,13 +933,14 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
             except Exception:
                 st.session_state["explore_click_name"] = f"{c_lat:.4f}, {c_lng:.4f}"
 
-            # Fix 2: detect country from click coordinates and switch if different
-            detected_cc = _detect_country_from_coords(c_lat, c_lng)
-            if detected_cc:
-                cc_to_country = {v: k for k, v in _COUNTRY_CODE_MAP.items()}
-                detected_name = cc_to_country.get(detected_cc)
-                if detected_name and detected_name != st.session_state.get("explore_country"):
-                    st.session_state["explore_country"] = detected_name
+            # Fix 2: detect country from click coordinates and switch if different Fix 3: adding toggle can come off when we find new solution or have every single country maped with code
+            if st.session_state.get("explore_auto_country_snap", False):
+                detected_cc = _detect_country_from_coords(c_lat, c_lng)
+                if detected_cc:
+                    cc_to_country = {v: k for k, v in _COUNTRY_CODE_MAP.items()}
+                    detected_name = cc_to_country.get(detected_cc)
+                    if detected_name and detected_name != st.session_state.get("explore_country"):
+                        st.session_state["explore_country"] = detected_name
 
             st.rerun()
 
@@ -1651,7 +1668,12 @@ def _render_travel_info_tab(data: dict | None) -> None:
 
 def render_explore_page() -> None:
     """Main explore page entry point -- called from chat_page when in explore mode."""
-
+    ##### added auto_snap this 4/14 -- trying to combat the lat lon out of bounds & location picker reverting to SA country (snapping back)
+    auto_snap = st.toggle(
+        "***** Auto-switch country from map click - Dev function with out toggle or every single country code mapped it will snap back to SA where we have jsons for every country ***** ",
+        value=st.session_state.get("explore_auto_country_snap", False),
+        key="explore_auto_country_snap",
+    )
     active_country = _detect_country()
     st.session_state["explore_country"] = active_country
 

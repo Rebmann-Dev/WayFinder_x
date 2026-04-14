@@ -135,14 +135,14 @@ const app = {
       zoom: this.config.map.zoom,
       minZoom: this.config.map.minZoom,
       zoomControl: true,
-      worldCopyJump: false,
+      worldCopyJump: true,                   // not sure this is a correct fix ##### added above this 4/14 -- trying to combat the lat lon out of bounds & location picker reverting to SA country
     });
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: this.config.map.maxZoom,
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors',
-      noWrap: false,
+      noWrap: true,                 // change to true to fix the lat lon problem long repating map 
     }).addTo(this.map);
 
     this.map.on("click", (e) => this.handleMapClick(e.latlng));
@@ -239,7 +239,7 @@ const app = {
 
   updateState(next) {
     this.state.lat = next.lat;
-    this.state.lon = this.normalizeLon(next.lon);
+    this.state.lon = next.lon;                                            // this.state.lon = this.normalizeLon(next.lon);  removed ##### added above this 4/14 -- trying to combat the lat lon out of bounds & location picker reverting to SA country
     this.state.place_name = next.place_name ?? null;
     this.state.country = next.country ?? null;
     this.state.country_code = next.country_code ?? null;
