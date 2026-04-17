@@ -1,0 +1,8 @@
+{
+  "_comment": "Runtime feature flag overrides. Edit here to toggle features without redeploying.",
+  "flight_scraper_mode": "off",
+  "knowledge_base_version": "v1",
+  "input_pipeline_enabled": false,
+  "mobile_api_enabled": false,
+  "memory_logging_enabled": true
+}
