@@ -1,10 +1,10 @@
 from models.flight_search import FlightSearchRequest
-from services.flight_api import FlightAPIService
+from services.flight import get_flight_provider
 
 
 class FlightSearchTool:
     def __init__(self) -> None:
-        self.api_service = FlightAPIService()
+        self.provider = get_flight_provider()
 
     def run(self, request: FlightSearchRequest):
         if not request.is_ready():
@@ -30,7 +30,7 @@ class FlightSearchTool:
                 },
             }
 
-        flights = self.api_service.search_flights(
+        flights = self.provider.search_flights(
             origin=request.origin,
             destination=request.destination,
             departure_date=request.departure_date,
