@@ -1,0 +1,769 @@
+{
+  "meta": {
+    "last_updated": "2026-04-17",
+    "confidence_score": 0.91,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "WayFinder internal hike/food/history data",
+      "WayFinder safety submodels",
+      "Antigua Guatemala tourism board"
+    ],
+    "notes": "Guatemala is the cultural anchor of Central America — Maya civilization, Antigua colonial architecture, and Lake Atitlán are world-class. Safety is highly location-dependent: tourist areas are very safe, rural and urban outskirts require care. Reflects current 2025-2026 conditions."
+  },
+  "identity": {
+    "name": "Guatemala",
+    "official_name": "Republic of Guatemala",
+    "code": "GT",
+    "iso3": "GTM",
+    "region": "Americas",
+    "subregion": "Central America",
+    "capital": "Guatemala City",
+    "flag_emoji": "🇬🇹",
+    "timezones": ["UTC-06:00"],
+    "driving_side": "right",
+    "country_calling_code": "+502",
+    "internet_tld": ".gt"
+  },
+  "language_and_money": {
+    "languages": ["Spanish", "K'iche'", "Q'eqchi'", "Kaqchikel", "Mam", "and 19 other Maya languages"],
+    "primary_language": "Spanish",
+    "english_proficiency": "Low overall. Moderate in Antigua, Lake Atitlán tourist villages, and upscale Guatemala City hotels. Very limited in rural highlands, indigenous communities, and most of the country.",
+    "currency": "GTQ",
+    "currency_name": "Guatemalan Quetzal",
+    "currency_symbol": "Q",
+    "cash_vs_card": "Cash dominant outside Antigua and Guatemala City. Cards accepted at upscale hotels, restaurants, and tour operators in Antigua, Flores, and Guatemala City. Always carry quetzales in highland villages, markets, and rural areas.",
+    "typical_payment_methods": ["Cash (GTQ)", "Visa (tourist areas)", "Mastercard (tourist areas)", "USD (accepted in many tourist areas at slight disadvantage)"],
+    "atm_availability": "Good in Antigua, Guatemala City, and Flores. Limited in highland towns and villages. Very scarce in remote areas (Petén jungle, rural Huehuetenango). Withdraw before leaving main towns.",
+    "tipping_culture": "Growing tip culture in tourist areas. 10% in restaurants appreciated. Guides and drivers expect $5-15/day tip. Not customary in comedores (local eateries) or markets.",
+    "tipping_etiquette": "10% in sit-down restaurants in Antigua and tourist areas. $10-15/day for certified guides. $5-8/day for drivers. $1-2/bag for hotel porters. No tip expected at comedores."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days (CA-4 agreement)",
+      "visa_type": "Tourist stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for at least 6 months beyond date of entry",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": true,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Standard restrictions on narcotics, firearms, and agricultural products. Declaration required for cash over $10,000. Pre-Columbian artifacts cannot be exported — illegal and heavily enforced.",
+    "restricted_items": ["Narcotics", "Firearms (without permit)", "Pre-Columbian artifacts", "Fresh produce without permit", "Cash over $10,000 without declaration"],
+    "duty_free_allowances": "400 cigarettes or 100 cigars, 3 liters of alcohol, gifts up to $500 value"
+  },
+  "health": {
+    "recommended_vaccines": ["Hepatitis A", "Typhoid", "Hepatitis B", "Rabies (rural/cave visits)", "Tetanus-Diphtheria", "Cholera (if visiting rural areas)"],
+    "required_vaccines": [],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Present in lowland areas below 1,500m — particularly Petén (Tikal region), Pacific and Caribbean coast lowlands, and rural Izabal. Not a risk in Antigua (1,500m), Lake Atitlán (1,560m), or Chichicastenango.",
+    "malaria_regions": ["Petén department (Tikal, Flores)", "Izabal department (Río Dulce, Livingston)", "Pacific lowlands", "Alta Verapaz (lower elevations)"],
+    "malaria_prophylaxis_info": "Recommended if visiting Petén (Tikal/Flores) or Río Dulce/Izabal. Not needed for Antigua, Lake Atitlán, or highland areas above 1,500m. Atovaquone/proguanil or doxycycline most commonly prescribed.",
+    "dengue_risk": "High — dengue endemic nationwide at lower elevations. Major concern in Guatemala City, Pacific coast, Petén, and Izabal. Regular outbreaks. Use DEET repellent consistently.",
+    "altitude_sickness_risk": "Moderate — Antigua sits at 1,500m, Lake Atitlán at 1,560m, and Guatemala City at 1,500m. Highland markets like Chichicastenango at 1,965m. Acatenango volcano reaches 3,976m — altitude sickness common on the overnight camping route. Acclimatize before strenuous hikes.",
+    "food_water_safety": "Tap water not safe anywhere in Guatemala. Always use bottled or purified water. Street food and markets generally safe at busy, high-turnover stalls. Wash fruit before eating. Antigua and Flores have high-quality food scenes.",
+    "air_quality_concerns": "Guatemala City has significant traffic pollution. Burning of crop residue in highland dry season creates haze (Jan-April). Volcanic activity (Fuego, Santiaguito) can produce ash falls — monitor active volcanoes.",
+    "common_travel_illnesses": ["Traveler's diarrhea", "Dengue fever", "Altitude sickness (highland hikes)", "Sunburn", "Insect bites"],
+    "pharmacy_access": "Good in Antigua and Guatemala City. Available in larger highland towns (Quetzaltenango, Cobán). Very limited in remote villages and jungle areas.",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Limited — private hospitals in Guatemala City (Hospital Herrera Llerandi, Hospital Centro Médico) offer reasonable care. Antigua has decent clinics. Very limited outside main cities — evacuate serious conditions to Guatemala City or the US.",
+    "emergency_medical_number": "122"
+  },
+  "safety": {
+    "travel_advisory_level_us": 3,
+    "travel_advisory_level_label": "Reconsider Travel (tourist areas significantly safer — closer to Level 2 in practice)",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "High violent crime in Guatemala City (especially Zone 1, outskirts)",
+      "Gang activity in non-tourist areas",
+      "Highway robbery on some routes — particularly at night",
+      "Petty theft in markets and tourist crowds",
+      "Volcanic eruption risk (Fuego periodically forces evacuations)",
+      "Tourist areas (Antigua, Atitlán, Tikal, Flores) are genuinely very safe"
+    ],
+    "crime_risk": "Highly location-dependent — Guatemala City and rural areas have significant crime. Antigua, Lake Atitlán, Flores/Tikal, and the main tourist circuit are extremely well-traveled and consistently safe. The vast majority of visitors have no safety issues if sticking to tourist areas. Guatemala City requires serious care outside Zona Viva and Zone 10.",
+    "scam_risk": "Moderate — taxi overcharging, fake tour guides at ruins, currency exchange fraud, inflated tourist pricing at markets",
+    "transport_safety": "Shuttle services between tourist towns (Antigua-Atitlán-Flores) are safe and strongly recommended over chicken buses for tourists. Chicken buses are cultural experiences but have been targeted by robbery on some routes. Avoid all overnight ground travel. Domestic flights between Guatemala City and Flores excellent.",
+    "solo_female_travel_notes": "Antigua and Atitlán very manageable solo. Take standard precautions — don't walk alone at night, use shuttles over chicken buses, arrange hotel taxis. Guatemala City requires significant extra care. Local Spanish school culture means many solo female travelers stay extended periods in Antigua.",
+    "lgbtq_notes": "Same-sex relationships legal but no legal recognition of partnerships. Deeply conservative Catholic and evangelical society — significant social hostility in most of the country. Antigua and Zone 10 Guatemala City more tolerant. No public displays of affection outside liberal enclaves. LGBTQ+ travelers face discrimination and potential hostility in rural and indigenous communities.",
+    "night_safety": "Antigua — safe in the well-lit historic center until 10-11pm with normal precautions. Lake Atitlán villages — safe at night within village areas. Flores — safe at night on the island. Guatemala City — Zone 10/Zona Viva safe at night, everywhere else exercise extreme caution. No walking alone at night anywhere outside the immediate tourist zones.",
+    "safe_areas": [
+      "Antigua Guatemala (entire historic center)",
+      "Lake Atitlán — San Pedro, San Marcos, Panajachel, Santiago",
+      "Flores island (Petén)",
+      "Chichicastenango market days",
+      "Quetzaltenango (Xela) city center",
+      "Guatemala City Zone 10 (Zona Viva) and Zone 14"
+    ],
+    "areas_to_avoid": [
+      "Guatemala City Zone 1 (historic center) — high crime, avoid at night especially",
+      "Guatemala City Zones 3, 6, 7, 18, 21 — extremely dangerous",
+      "Guatemala City outskirts and peripheral neighborhoods",
+      "Rural highway travel at night",
+      "Remote parts of Huehuetenango (border with Mexico — smuggling routes)",
+      "Izabal department rural roads at night"
+    ],
+    "natural_disaster_risks": [
+      "Volcanic eruptions — Volcán de Fuego (among world's most active, frequent eruptions, 2018 killed 200+), Santiaguito, Pacaya",
+      "Earthquakes — active seismic zone, major earthquakes historically (1976 killed 23,000)",
+      "Landslides — highland rainy season major risk",
+      "Flooding — lowlands and river valleys",
+      "Hurricanes — Caribbean coast exposure"
+    ],
+    "political_stability_notes": "President Bernardo Arévalo (elected 2023) brought reform hopes but faces significant institutional resistance from conservative establishment and criminal networks embedded in state structures. Situation improving but complex. Monitor for protest activity which can disrupt roads (particularly Pan-American Highway). Indigenous community roadblocks occasional.",
+    "common_scams": [
+      "Fake tour operators and guides at Tikal and Antigua",
+      "Taxi overcharging — always negotiate or use Uber in Guatemala City",
+      "Market vendors shortchanging — count your change",
+      "Unofficial 'helpers' at bus stations demanding payment",
+      "Currency exchange street touts — only use banks or official exchangers",
+      "Gem/jade scams in Antigua tourist shops"
+    ],
+    "police_reliability": "Mixed — CICIG (anti-corruption commission) was expelled in 2019, weakening oversight. Tourist police (Politur) in Antigua and main tourist areas are reliable and responsive. Regular police vary widely in reliability and honesty. Contact Politur or your embassy for serious incidents.",
+    "emergency_numbers": {
+      "police": "110",
+      "ambulance": "122 (Red Cross) / 1557 (IGSS)",
+      "fire": "123",
+      "general_emergency": "110",
+      "tourist_police": "1500"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Guatemala City",
+      "us_embassy_phone": "+502-2326-4000",
+      "us_embassy_website": "https://gt.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "November to April (dry season) — best weather for highlands, Tikal, and Antigua. October-November shoulder season offers lush green landscapes with fewer tourists.",
+    "climate_zones": [
+      "Central highlands (Antigua, Chichicastenango, Quetzaltenango) — spring-like year-round, 15-25°C, distinct wet/dry seasons",
+      "Lake Atitlán basin — warm year-round, 18-25°C, afternoon Xocomil wind (strong, cool)",
+      "Pacific coast lowlands (Retalhuleu) — hot, humid, distinct seasons, 28-35°C",
+      "Petén jungle (Tikal, Flores) — hot, humid, 28-38°C, wet season intense",
+      "Caribbean coast (Izabal, Livingston) — hot, humid, rain year-round",
+      "Alta Verapaz cloud forest — cool, misty, near year-round rain"
+    ],
+    "dry_season": "November to April (highlands and Pacific); February-April driest",
+    "rainy_season": "May to October; Caribbean coast rains nearly year-round",
+    "hurricane_typhoon_season": "June to November — Caribbean coast (Izabal, Livingston) at risk. 2020 hurricanes Eta and Iota caused catastrophic flooding across Guatemala.",
+    "surf_season": "April to October (Pacific coast — El Paredón, Sipacate); June-August biggest swells",
+    "trekking_best_months": ["November", "December", "January", "February", "March"],
+    "average_temp_by_month": {
+      "Antigua (1500m)": "15-25°C year-round",
+      "Guatemala City (1500m)": "15-25°C year-round",
+      "Lake Atitlán (1560m)": "18-25°C year-round",
+      "Flores/Tikal (Petén)": "28-36°C dry season, 24-32°C wet season",
+      "Pacific coast": "28-34°C year-round"
+    },
+    "daylight_hours_by_season": "Near equator — approximately 11.5-12.5 hours year-round"
+  },
+  "transport": {
+    "major_airports": [
+      "La Aurora International Airport (GUA) — Guatemala City (only major international airport)",
+      "Mundo Maya International Airport (FRS) — Flores/Santa Elena (domestic + limited international, gateway to Tikal)"
+    ],
+    "main_airlines": ["American Airlines", "United", "Delta", "Avianca (hub)", "Copa Airlines", "Spirit", "Volaris", "TAG Airlines (domestic)", "Transportes Aéreos Guatemaltecos"],
+    "airport_to_city_options": [
+      "Uber ($5-10 to Zone 10, ~15 min)",
+      "Official airport taxis ($15-20)",
+      "Hotel shuttle (pre-arranged)",
+      "Shuttle to Antigua ($10-15 direct, 45 min — most popular option)"
+    ],
+    "public_transit_quality": "Guatemala City has Transmetro BRT system — functional but crowded and not recommended for tourists with luggage. Chicken buses (repainted US school buses) connect everywhere cheaply but can be unsafe for tourists on some routes.",
+    "intercity_bus_quality": "Tourist shuttle services between Antigua-Atitlán-Flores-Tikal are excellent, safe, and strongly recommended. First-class Pullman buses (Tica Bus, ADN) for international routes. Chicken buses — authentic and cheap but targeted by robbery on some routes and very slow.",
+    "train_network_quality": "No passenger train service.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": true,
+    "road_conditions": "Pan-American Highway (CA-1) well-maintained. Roads to Antigua and Atitlán good. Road to Tikal from Flores good. Many secondary roads in highlands and jungle unpaved and rough. Road to Livingston requires boat (no road access).",
+    "four_x_four_needed_regions": [
+      "Alta Verapaz (remote areas)",
+      "Huehuetenango (remote highland villages)",
+      "Petén (off main Tikal road)",
+      "Pacific coast beach access roads",
+      "Volcanoes access roads (rainy season)"
+    ],
+    "ride_hailing_apps": ["Uber (Guatemala City and Antigua)", "InDriver"],
+    "taxi_safety_notes": "NEVER flag taxis from the street in Guatemala City — express kidnapping and robbery risk. Use Uber (excellent in GC) or call radio taxis. Antigua tuk-tuks and taxis generally safe but agree on fare. Atitlán uses lanchas (motorboats) between villages — negotiate price.",
+    "ferry_routes": [
+      "Lake Atitlán — lanchas between Panajachel, San Pedro, San Juan, San Marcos, Santiago, and all lakeside villages (10-45 min, $1-5)",
+      "Río Dulce to Livingston — scenic river journey through jungle canyon (2 hrs, $15-25)",
+      "Livingston to Punta Gorda, Belize (weekly boat)",
+      "El Ceibo river crossing to Mexico"
+    ],
+    "border_crossing_notes": "Main crossings: La Mesilla/Ciudad Cuauhtémoc (Mexico), Tecún Umán (Mexico — busy commercial), El Carmen (Mexico), Valle Nuevo/Las Chinamas (El Salvador), San Cristóbal (El Salvador), Agua Caliente (Honduras), El Florido (Honduras — for Copán), Melchor de Mencos (Belize). CA-4 agreement with El Salvador, Honduras, Nicaragua — 90-day shared stamp. Guatemala-Mexico and Guatemala-Belize crossings are NOT part of CA-4."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$25-45/day",
+    "daily_budget_midrange": "$60-100/day",
+    "daily_budget_comfort": "$120-250/day",
+    "hostel_avg": "$8-15/night",
+    "hotel_avg": "$40-100/night",
+    "meal_avg": "$3-8 (comedor lunch $3-5, restaurant $8-25 in Antigua)",
+    "coffee_avg": "$1.50-4 (excellent local coffee)",
+    "beer_avg": "$1.50-3 (Gallo, Cabro)",
+    "local_transport_avg": "$1-3 (chicken bus), $5-15 (lancha)",
+    "sim_card_avg": "$5-10 for 3-5GB",
+    "coworking_day_pass_avg": "$10-20",
+    "spanish_school_avg": "$150-250/week (includes 4-5 hrs/day private lessons + homestay)",
+    "value_for_money": "Excellent — Guatemala offers extraordinary experiences (Tikal, Antigua, Atitlán, Acatenango) at very low cost. Spanish schools in Antigua are among the cheapest and best in Latin America. Antigua restaurants are world-class by regional standards. One of the best-value destinations in the Americas."
+  },
+  "connectivity": {
+    "sim_card_providers": ["Tigo", "Claro", "Movistar"],
+    "esim_available": false,
+    "mobile_data_quality": "Good 4G in Guatemala City, Antigua, and Flores. Decent in Atitlán villages. Very limited in remote highlands, jungle areas, and rural indigenous communities.",
+    "wifi_quality": "Excellent in Antigua — one of the best WiFi cultures in Central America, driven by the large Spanish school and digital nomad population. Good in Flores and Atitlán tourist villages. Variable in Guatemala City. Very limited in Petén jungle and remote highlands.",
+    "coworking_available": true,
+    "best_remote_work_cities": ["Antigua Guatemala (best in Central America for remote work — excellent cafes, fast WiFi, pleasant climate)", "Lake Atitlán (San Pedro — growing nomad scene)", "Guatemala City Zone 10"],
+    "power_outlet_types": ["A", "B"],
+    "voltage": "120V, 60Hz",
+    "plug_adapter_needed_for_us": false,
+    "power_reliability": "Generally reliable in Antigua, Guatemala City, and Flores. Frequent outages in rural highlands and jungle areas. Bring power bank for Petén lodges and remote areas."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Antigua Guatemala — colonial gem, best food and coffee scene, excellent Spanish schools, safe historic center",
+      "Lake Atitlán — San Pedro La Laguna (backpacker scene), San Marcos (yoga/wellness), Panajachel (main town), Santa Cruz (quiet, boutique), San Juan (artisan)",
+      "Flores island (Petén) — pleasant colonial island base for Tikal, excellent budget options",
+      "Lanquín (Alta Verapaz) — base for Semuc Champey turquoise pools",
+      "Quetzaltenango (Xela) — authentic highland city, serious Spanish schools",
+      "Chichicastenango — stay for market days (Thursday/Sunday)",
+      "Livingston (Caribbean) — Garifuna culture, unique atmosphere",
+      "Guatemala City Zone 10 (Zona Viva) — business and upscale, best restaurants in the country"
+    ],
+    "budget_areas": ["San Pedro La Laguna (Atitlán)", "Flores (Petén)", "Lanquín", "Quetzaltenango"],
+    "family_friendly_areas": ["Antigua", "Flores and Tikal", "Panajachel (Atitlán)", "Pacific coast"],
+    "nightlife_areas": ["Antigua (La Sin Ventura, Reilly's)", "San Pedro La Laguna (Atitlán)", "Guatemala City Zone 10"],
+    "eco_lodges_available": true,
+    "peak_booking_season": "December-January; Easter (Semana Santa in Antigua — world-famous, book months ahead); July-August",
+    "accommodation_notes": "Antigua's Semana Santa (Easter) is one of the most spectacular religious celebrations in the world — the entire city is transformed with elaborate alfombras (sawdust carpets). Book accommodation 3-6 months in advance. Tikal lodges (inside the park) are expensive but extraordinary — staying overnight means you get the ruins at dawn before day-trippers arrive."
+  },
+  "culture": {
+    "local_customs": [
+      "Maya culture is living and thriving — over 40% of the population is indigenous Maya, speaking 22 languages. Treat with profound respect.",
+      "Traditional Maya dress (traje) varies by village — distinctive and deeply meaningful. Never comment dismissively.",
+      "Greet with a handshake; cheek kiss is common in social settings between women.",
+      "Respect is paramount — be patient, speak slowly in Spanish, never raise your voice.",
+      "Photography of indigenous people requires explicit permission — many consider it disrespectful or spiritually harmful.",
+      "Maya ceremonies and sacred sites deserve reverence — Chichicastenango church, Maximón shrines, highland altars are active places of worship."
+    ],
+    "dress_expectations": "Modest in highland towns, villages, and churches. Casual in Antigua tourist areas and Atitlán. Swimwear only at Pacific beaches and some Atitlán spots. Remove shoes before entering some indigenous sacred spaces.",
+    "religious_sensitivity": "Uniquely syncretistic — Catholicism deeply blended with Maya spirituality. Maximón (San Simón) folk saint widely venerated — effigy receives offerings of alcohol, cigarettes, money. Chichicastenango's Santo Tomás church has active Maya-Catholic rituals on the steps. Observe quietly and respectfully.",
+    "social_norms": [
+      "Patience is essential — Guatemalan time is relaxed",
+      "Direct haggling at markets expected and part of the culture",
+      "Photography in indigenous markets requires asking — many will say no",
+      "Complimenting Maya textiles and crafts is always welcomed",
+      "The civil war (1960-1996) is a deep wound — particularly Maya genocide — treat with sensitivity",
+      "Don't photograph military, police, or government buildings"
+    ],
+    "greeting_style": "Warm — handshake standard, cheek kiss in social settings. 'Buenos días/tardes/noches' always appreciated. Learn a few words of K'iche' or Kaqchikel in highland areas — received with delight.",
+    "public_behavior_notes": "PDA acceptable in Antigua and tourist areas. Modest and reserved in rural and indigenous communities. Low profile essential — do not display expensive jewelry, cameras, or electronics openly.",
+    "photography_etiquette": "Always ask before photographing people, especially indigenous Maya. Many decline — respect this without argument. Market photography especially sensitive. Ancient ruins freely photographable. Some village ceremonies prohibit photography entirely — obey posted signs.",
+    "bargaining_expected": true,
+    "important_holidays": [
+      "Semana Santa / Easter — Antigua's alfombra processions are one of the world's great cultural spectacles (March/April)",
+      "Día de los Muertos (November 1-2) — especially striking in Santiago Sacatepéquez with giant kite festival",
+      "Día de la Virgen de Guadalupe (December 12) — major religious celebrations",
+      "Independence Day (September 15)",
+      "Feria de Jocotenango (August) — Guatemala City patron saint festival",
+      "Christmas (December 24-25) — posadas and fireworks"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Exporting pre-Columbian artifacts is illegal and aggressively enforced — even 'fake' pieces cause complications at customs",
+      "Photography of military installations prohibited",
+      "Drone permits required — DGAC authorization needed, complex process",
+      "Fireworks are widely available but their use near colonial buildings in Antigua is increasingly restricted",
+      "Respect designated no-photography zones at indigenous ceremonies",
+      "Wild animal collecting prohibited"
+    ]
+  },
+  "food": {
+    "signature_dishes": [
+      "Pepián — Guatemala's national dish; rich, complex sauce of ground toasted seeds (pepita, sesame), dried chiles, and tomatoes, served over chicken or pork with vegetables; ancient pre-Columbian recipe",
+      "Kak'ik — Q'eqchi' Maya turkey soup with chile and spices; UNESCO Intangible Cultural Heritage of Guatemala",
+      "Tamales colorados — large banana-leaf tamales with rich red chile sauce, pork, olives, and prunes; traditional Christmas and celebration food",
+      "Tamales negros — darkened with chile negro and chocolate, richer version",
+      "Chiles rellenos — bell peppers stuffed with ground meat, vegetables, and cheese, battered and fried",
+      "Jocon — chicken in a tomatillo, cilantro, and chile verde sauce; bright green stew from Huehuetenango",
+      "Pollo en crema — chicken in cream sauce, simple and satisfying",
+      "Hilachas — shredded beef in tomato and vegetable sauce",
+      "Tostadas guatemaltecas — fried tortillas topped with guacamole, chicken or beef, pickled beets, cream, and cheese",
+      "Elotes locos — grilled corn with mayo, cheese, lime, and chile; ubiquitous street snack"
+    ],
+    "street_food_safety": "Generally safe at busy market stalls and comedores with high turnover. Chichicastenango and Antigua markets have excellent street food. Exercise normal caution with raw ingredients.",
+    "vegetarian_friendliness": "Good — Guatemalan cuisine naturally includes many vegetable-based dishes. Bean and cheese options widespread. Antigua and Atitlán (San Marcos especially) have strong vegetarian and vegan scenes catering to international travelers.",
+    "vegan_friendliness": "Moderate — growing vegan options in Antigua and San Marcos La Laguna (Atitlán). Challenging in rural areas and indigenous market towns. Black beans are a staple and often vegan.",
+    "must_try_drinks": [
+      "Gallo beer — the national beer, ubiquitous and cold",
+      "Quetzalteca (Ron Zacapa) — Guatemala produces some of the world's finest rum; Ron Zacapa 23 aged in the highlands is internationally award-winning",
+      "Café de Guatemala — exceptional highland coffee; Huehuetenango, Antigua, Cobán, and Acatenango regions produce world-class beans",
+      "Atol de elote — warm sweet corn drink, highland tradition",
+      "Horchata guatemalteca — rice and cinnamon cold drink",
+      "Fresco de rosa de Jamaica — hibiscus cold drink",
+      "Limonada con soda — fresh lime, water, sugar, and soda water; incredibly refreshing",
+      "Chicha — fermented corn drink, traditional in indigenous communities",
+      "Xtabentún equivalent — locally made liqueurs in some regions"
+    ],
+    "regional_specialties": [
+      "Alta Verapaz / Cobán: Kak'ik turkey soup, café cobán (iced coffee), boxboles (rolled corn leaves with beans)",
+      "Quetzaltenango highlands: heartier stews, potato dishes, Guatemalan hot chocolate (thick and spiced)",
+      "Lake Atitlán: mojarras (tilapia-like lake fish), lake crab in season, traditional Maya vegetables",
+      "Pacific coast (Champerico, Retalhuleu): fresh seafood, ceviche, coconut-based dishes",
+      "Antigua: best restaurant scene in the country, world-class coffee bars, international cuisine",
+      "Petén / Flores: river fish (mojarra), jungle game (in some traditional communities)"
+    ],
+    "drinking_water_notes": "Never drink tap water anywhere in Guatemala. Always bottled or purified water. Even in upscale Antigua restaurants, confirm water is purified. Ice at established tourist restaurants is typically from purified water.",
+    "alcohol_rules": "Legal drinking age 18. No strict public drinking laws in practice. Alcohol widely available except Good Friday."
+  },
+  "outdoors": {
+    "top_national_parks": [
+      "Tikal National Park — UNESCO World Heritage, greatest Maya city in the jungle; towering temples rising above the rainforest canopy",
+      "Semuc Champey Natural Monument — extraordinary turquoise limestone pools in the Alta Verapaz jungle",
+      "Lago de Atitlán — volcanic crater lake surrounded by three volcanoes and Maya villages; Aldous Huxley called it 'the most beautiful lake in the world'",
+      "Volcán Tajumulco (4,220m) — highest peak in Central America",
+      "Biotopo Cerro Cahuí — protected lake forest in Petén",
+      "Laguna Lachuá National Park — pristine circular jungle lake in Alta Verapaz",
+      "Parque Nacional Mirador-Río Azul — remote, primeval Maya jungle with El Mirador (possibly the largest Maya city ever built)",
+      "Parque Nacional Cuchumatanes — highest non-volcanic mountain range in Central America"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Volcán Acatenango Overnight (summit hike)",
+        "difficulty": "Very Hard",
+        "duration": "2 days / 1 night",
+        "region": "Chimaltenango department (near Antigua)",
+        "description": "Hike to the summit of Acatenango (3,976m) for what may be the most dramatic volcano camping experience on Earth — a front-row seat to the eruptions of active Volcán de Fuego directly across the saddle. Fuego erupts every 30-60 minutes with lava fountains, glowing rocks, and ash clouds visible from camp at 3,700m. One of the most extraordinary experiences in Central America.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 3976,
+        "notes": "Guide mandatory — booked through Antigua tour operators ($30-60 including gear rental). Very cold at summit camp — temperatures drop below 0°C. Bring warm layers, gloves, hat, good sleeping bag. Altitude sickness affects many — acclimatize 1-2 days in Antigua first. One of the most memorable overnight hikes in Central America."
+      },
+      {
+        "name": "Volcán Pacaya Active Lava Fields",
+        "difficulty": "Easy to Moderate",
+        "duration": "4-5 hours round trip",
+        "region": "Escuintla department (near Antigua and Guatemala City)",
+        "description": "Hike an active volcano and roast marshmallows on flowing lava — Pacaya is one of the most accessible active volcanic experiences in the world. Lava flows from a 2010 eruption created a moonscape of black basalt. On active days, lava can be seen glowing. Stunning views of the valley and other volcanoes.",
+        "best_months": ["Year-round (dry season better)"],
+        "elevation_m": 2552,
+        "notes": "Easy day trip from Antigua or Guatemala City ($15-25 including guide). Guide mandatory. Stick to marked paths — unstable new lava fields. Check activity level before going — periodically closes. Horses available for lower section."
+      },
+      {
+        "name": "Volcán San Pedro (Lake Atitlán)",
+        "difficulty": "Moderate to Hard",
+        "duration": "6-8 hours round trip",
+        "region": "Sololá department (Lake Atitlán)",
+        "description": "Hike the most accessible of Atitlán's three volcanoes from San Pedro La Laguna. Dense cloud forest, spectacular lake views from the summit, and three volcanoes visible on clear days. The summit (3,020m) rewards with one of the best vistas in Guatemala.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 3020,
+        "notes": "Guide required — hire in San Pedro ($10-15). Start early (5-6am) for best summit views before clouds roll in. Bring warm layer for the summit. Trail passes through coffee and corn farms before entering forest. San Pedro also has good Spanish schools."
+      },
+      {
+        "name": "Indian Nose (Nariz del Indio) Sunrise Hike",
+        "difficulty": "Moderate",
+        "duration": "3-4 hours",
+        "region": "Sololá department (Lake Atitlán — San Juan La Laguna side)",
+        "description": "Hike to the 'Indian Nose' ridge above Lake Atitlán for the most photographed sunrise in Guatemala. The rock formation resembles the profile of a sleeping Maya face — iconic view of the lake with three volcanoes reflected in the water at dawn. Far less crowded than San Pedro volcano.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 2850,
+        "notes": "Pre-dawn departure (4am) from San Juan La Laguna required. $10-15 guided. Shorter and less strenuous than San Pedro volcano. Best sunrise views in the Lake Atitlán area. Bring headlamp, warm layer."
+      },
+      {
+        "name": "Tikal Temple Circuit and Jungle Hike",
+        "difficulty": "Easy",
+        "duration": "Full day (8+ hours)",
+        "region": "Petén department",
+        "description": "Explore the greatest Maya city in the jungle — Tikal's temples rise 65m above the jungle canopy. Watch the sunset or sunrise from Temple IV — jungle stretching unbroken to every horizon, howler monkeys roaring, parrots flying below you. One of the most profound experiences in the Americas.",
+        "best_months": ["November", "December", "January", "February", "March", "April"],
+        "elevation_m": 250,
+        "notes": "Entry $25. Guided tour strongly recommended ($15-20 additional). Stay overnight in Flores or (best) a lodge inside the park for sunrise. Sunrise/sunset access requires being inside the park — buy ticket day before. Spider monkeys, coatis, and oscillated turkeys visible. Bring DEET — dense jungle."
+      },
+      {
+        "name": "Semuc Champey Pools and Caves",
+        "difficulty": "Moderate",
+        "duration": "Full day",
+        "region": "Alta Verapaz department (near Lanquín)",
+        "description": "Swim in a series of terraced turquoise limestone pools suspended above the Cahabón River in the jungle. Nearby Candelaria caves explored by candlelight through underground rivers. One of the most beautiful natural settings in Central America — genuinely feels like a hidden paradise.",
+        "best_months": ["March", "April", "November", "December"],
+        "elevation_m": 1380,
+        "notes": "Entry Q50. Mirador viewpoint 15-min steep climb for the classic photo. Cave tour ($5-10) involves swimming through underground river by candlelight — extraordinary. Base in Lanquín (2 hrs from Cobán on rough road). Wet season (May-Oct) pools can be too full and murky. Best in dry season and early rainy season."
+      },
+      {
+        "name": "Chichicastenango Market Walk",
+        "difficulty": "Easy",
+        "duration": "Half day",
+        "region": "El Quiché department",
+        "description": "Not a wilderness hike but one of Guatemala's essential experiences — the largest indigenous market in Central America. Thursday and Sunday markets fill the hillside town with 1,000+ Maya vendors in traditional traje selling textiles, masks, ceramics, incense, flowers, and jade. The Santo Tomás church on the market steps blends Maya and Catholic ritual in real time.",
+        "best_months": ["Year-round (Thursday and Sunday only)"],
+        "elevation_m": 1965,
+        "notes": "Most visitors day-trip from Antigua (2.5 hrs). Stay overnight (Thursday or Saturday night) to experience the market opening morning. Arrive early (7am) before tour groups. Bargaining expected. Photography requires asking. The cemetery behind town is equally extraordinary."
+      },
+      {
+        "name": "Río Dulce to Livingston Boat Journey",
+        "difficulty": "Easy",
+        "duration": "2-3 hours (one-way)",
+        "region": "Izabal department",
+        "description": "Take a lancha from Río Dulce town through one of the most beautiful river journeys in the Americas — a narrow limestone canyon draped in jungle, hot springs flowing into the river, a pristine jungle estuary, and entry into Livingston — the Garifuna town with no road access. Manatees, herons, and jungle sounds throughout.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 5,
+        "notes": "Lanchas depart Río Dulce dock hourly. $15-25 one way. Book return boat in Livingston. Livingston is Garifuna — unique Caribbean culture, different feel from the rest of Guatemala. Tapado (coconut seafood stew) is the local specialty. Río Dulce has marina community and interesting lake castle (Castillo de San Felipe)."
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "El Mirador Jungle Trek",
+        "difficulty": "Hard",
+        "duration": "5-7 days",
+        "region": "Petén department (remote northern jungle)",
+        "description": "Multi-day jungle trek to El Mirador — potentially the largest Maya complex ever built, predating Tikal by centuries. La Danta pyramid is the largest pyramid by volume in the world. Deep jungle, Howler and spider monkeys, toucans, and jaguars in one of the largest contiguous rainforests in Central America.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 250,
+        "notes": "Organized through licensed tour operators from Flores or Carmelita village. $200-400 for the full guided expedition including mule support, food, and camping. Only accessible by a 3-day jungle walk or helicopter. Helicopters available (expensive). Extreme heat May-October — dry season essential. One of the great off-the-beaten-path experiences in the Americas."
+      },
+      {
+        "name": "Quetzaltenango to Lake Atitlán Hike (Xela-Atitlán)",
+        "difficulty": "Moderate to Hard",
+        "duration": "3-4 days",
+        "region": "Quetzaltenango / Sololá departments",
+        "description": "Classic multi-day highland trek from Quetzaltenango through indigenous Maya villages, highland meadows, cloud forest, and volcano ridges to Lake Atitlán. Pass through communities where Spanish is rarely heard — traditional K'iche' and Tz'utujil villages with colorful market life.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 3800,
+        "notes": "Guide highly recommended — QuetzalTrekkers in Xela is the original and most respected operator (nonprofit, supports local schools). $150-200 including accommodation in community guesthouses. Cold nights — bring warm layers. An extraordinary immersion in highland Maya culture."
+      },
+      {
+        "name": "Cuchumatanes Highlands Trek",
+        "difficulty": "Hard",
+        "duration": "3-5 days",
+        "region": "Huehuetenango department",
+        "description": "Trek through the highest non-volcanic mountain range in Central America — vast, cold, and remote highland plateaus dotted with sheep herds and isolated Maya communities. The most untouched indigenous highland landscape in Guatemala. Rarely visited by international tourists.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 3837,
+        "notes": "Based from Huehuetenango town or Todos Santos Cuchumatán. Independent trekkers need local knowledge — hire a guide. Very cold at altitude (below 0°C at night). Todos Santos has distinctive red-and-white striped traditional dress. Far from tourist circuit — requires effort but extraordinarily rewarding."
+      }
+    ],
+    "volcanoes": [
+      "Volcán Tajumulco (4,220m) — highest peak in Central America, dormant",
+      "Volcán Acatenango (3,976m) — active, overnight hike, front-row view of Fuego",
+      "Volcán de Fuego (3,763m) — one of the most active volcanoes on Earth, continuous eruptions",
+      "Volcán Santa María (3,772m) — near Quetzaltenango, steep but rewarding",
+      "Volcán Santiaguito (2,488m) — active satellite dome of Santa María, mesmerizing lava flows",
+      "Volcán San Pedro (3,020m) — Lake Atitlán, most accessible Atitlán volcano",
+      "Volcán Tolimán (3,158m) — Lake Atitlán, twin with Atitlán",
+      "Volcán Atitlán (3,537m) — Lake Atitlán, hardest of the three, rarely climbed",
+      "Volcán Pacaya (2,552m) — active, accessible from Guatemala City and Antigua, lava viewing"
+    ],
+    "waterfalls": [
+      "Semuc Champey — tiered turquoise limestone pools over the Cahabón River (not a waterfall but equally stunning)",
+      "Laguna Lachuá — pristine jungle lake, not a waterfall but remarkable swimming",
+      "Cascadas de Tatasirire — Alta Verapaz, jungle waterfalls near Cobán",
+      "Cascadas de Chiflón-adjacent falls — near Huehuetenango"
+    ],
+    "hot_springs": [
+      "Fuentes Georginas — natural volcanic hot springs outside Quetzaltenango, stunning jungle setting ($5 entry)",
+      "Hot springs on Río Dulce — natural hot water flowing into the river near Livingston",
+      "El Paraíso hot springs — near Río Dulce, accessible by boat"
+    ],
+    "lakes": [
+      "Lago de Atitlán (1,560m) — most beautiful lake in the Americas by many accounts; three volcanoes; 12 Maya villages",
+      "Lago Petén Itzá — Flores island, gateway to Tikal",
+      "Laguna Lachuá (Alta Verapaz) — pristine circular jungle lake, emerald green",
+      "Lago de Izabal — largest lake in Guatemala, Caribbean coast",
+      "Lago de Amatitlán — near Guatemala City, volcanic",
+      "Lago Chicabal — sacred Maya volcanic crater lake in Quetzaltenango highlands — ceremonial site"
+    ],
+    "rivers": [
+      "Río Dulce — jungle river canyon to Caribbean; one of the most beautiful river journeys in Central America",
+      "Río Cahabón — runs beneath Semuc Champey",
+      "Río Usumacinta — border with Mexico, remote jungle river with ancient Maya sites",
+      "Río Motagua — Pacific drainage, runs through the valley where Copán road passes"
+    ],
+    "wildlife": [
+      "Jaguar (Petén — El Mirador, Tikal area; rarely seen)",
+      "Puma (highland cloud forests)",
+      "Tapir (Petén jungle)",
+      "Howler monkey (Tikal, Petén, Río Dulce — loud and spectacular)",
+      "Spider monkey (Tikal, El Mirador)",
+      "White-nosed coati (Tikal — very visible)",
+      "Oscillated turkey (Tikal — endemic to Yucatán/Petén, extraordinary plumage)",
+      "Scarlet macaw (Petén, Río Dulce)",
+      "Keel-billed toucan (Petén, Río Dulce)",
+      "Resplendent quetzal (Alta Verapaz cloud forest, Quetzaltenango — near-mythical, difficult to spot)",
+      "Harpy eagle (Petén — extremely rare)",
+      "Manatee (Río Dulce, Lago de Izabal)",
+      "American crocodile (Río Dulce, Río Motagua lowlands)",
+      "Leatherback sea turtle (Pacific coast nesting)",
+      "Olive ridley sea turtle (Pacific coast)",
+      "Hawksbill sea turtle (Caribbean coast)"
+    ],
+    "birdwatching_hotspots": [
+      "Tikal National Park — 400+ species, scarlet macaw, oscillated turkey, laughing falcon",
+      "El Mirador — pristine jungle, harpy eagle territory",
+      "Alta Verapaz (Cobán area) — resplendent quetzal, highland trogons",
+      "Lago de Atitlán — lake and highland birds, rose-throated becard",
+      "Río Dulce / Lago de Izabal — manatee, waterbirds, snail kite",
+      "Bocas del Polochic Wildlife Reserve (Izabal) — exceptional waterbird diversity",
+      "San Luis / Maya Biosphere Reserve (Petén) — primary jungle birding",
+      "Sierra de las Minas Biosphere — quetzal, highland cloud forest birds"
+    ],
+    "stargazing_spots": [
+      "Acatenango volcano summit — exceptional dark skies at 3,976m",
+      "El Mirador jungle (zero light pollution)",
+      "Lake Atitlán highlands away from towns",
+      "Cuchumatanes plateau (extreme altitude, minimal light pollution)"
+    ],
+    "scenic_drives": [
+      "Antigua to Lake Atitlán (CA-1 and descent to Panajachel) — volcano views throughout",
+      "Quetzaltenango to Chichicastenango via highland market towns",
+      "Cobán to Lanquín (rough road but extraordinary jungle and karst scenery)",
+      "Guatemala City to Antigua (30 min, beautiful valley and volcano views)"
+    ],
+    "surf_spots": [
+      {
+        "name": "El Paredón",
+        "region": "Escuintla department (Pacific coast)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["April", "May", "June", "July", "August", "September", "October"],
+        "typical_wave_size": {
+          "peak_season": "5-10 ft (Jun-Sep)",
+          "off_season": "2-4 ft"
+        },
+        "description": "Guatemala's best and most consistent surf break — a powerful, fast beach break on the Pacific black sand coast. El Paredón has transformed from a tiny fishing village to a growing surf destination. Long rides, powerful swell, black sand beach, excellent local vibes. Turtle nesting on the beach during surf season.",
+        "crowd_level": "Low to medium",
+        "notes": "2.5-3 hours from Antigua through mangrove and estuary landscape. Staying in El Paredón (basic surf hostels) recommended — the vibe is very local and authentic. La Pared is the main break. Very powerful — not for beginners when swell is up. Check surf report — size varies significantly."
+      },
+      {
+        "name": "Sipacate",
+        "region": "Escuintla department (Pacific coast)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Intermediate",
+        "best_months": ["April", "May", "June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "4-8 ft",
+          "off_season": "2-4 ft"
+        },
+        "description": "The original Guatemalan surf destination — Sipacate is a lagoon and beach surf village with several breaks. El Paredon has become more popular but Sipacate retains a quieter feel. Access by boat across the estuary. Several surf camps.",
+        "crowd_level": "Very low",
+        "notes": "Reached by boat from Puerto de San José. Very basic infrastructure. The Natural Reserve of Sipacate-Naranjo protects nesting sea turtles on the beach. Good combination of surfing and turtle watching."
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Tikal National Park",
+        "region": "Petén department",
+        "key_species": ["Howler monkey", "Spider monkey", "Oscillated turkey", "Scarlet macaw", "Keel-billed toucan", "White-nosed coati", "Jaguar (rare)", "400+ bird species"],
+        "best_months": ["November", "December", "January", "February", "March", "April"],
+        "notes": "UNESCO World Heritage. 576 km² of protected jungle. The archaeological and wildlife experience combined is unmatched in Central America. Dawn at Temple IV with howler monkeys and the jungle awakening is unforgettable. Night tours available."
+      },
+      {
+        "name": "Alta Verapaz Cloud Forests",
+        "region": "Alta Verapaz / Baja Verapaz departments",
+        "key_species": ["Resplendent quetzal", "Highland trogons", "Puma", "Howler monkey", "Spectacled owl", "Cloud forest endemics"],
+        "best_months": ["November", "December", "January", "February", "March"],
+        "notes": "The resplendent quetzal — Guatemala's national bird and Maya sacred symbol — is best seen in Alta Verapaz cloud forests (Cobán area) and Sierra de las Minas. March-April (nesting season) best for quetzal sightings. Hire specialist birdwatching guides."
+      },
+      {
+        "name": "Río Dulce / Lago de Izabal",
+        "region": "Izabal department",
+        "key_species": ["West Indian manatee", "American crocodile", "Snail kite", "Waterbirds", "Kingfisher species", "Howler monkey"],
+        "best_months": ["November", "December", "January", "February", "March"],
+        "notes": "Boat-based wildlife watching on the river and lake. Manatees present in Lago de Izabal — best chances in early morning by boat. Bocas del Polochic wildlife reserve at the lake's western end is exceptional for waterbirds."
+      },
+      {
+        "name": "El Mirador / Maya Biosphere Reserve",
+        "region": "Northern Petén department",
+        "key_species": ["Jaguar", "Tapir", "Harpy eagle", "Spider monkey", "Howler monkey", "Scarlet macaw", "Hundreds of jungle bird species"],
+        "best_months": ["November", "December", "January", "February", "March"],
+        "notes": "One of the largest remaining tropical rainforests north of the Amazon. Remote — requires a 5-7 day guided expedition. Jaguar tracks frequently seen on the trail. Zero light pollution. The most pristine wildlife habitat in Guatemala."
+      },
+      {
+        "name": "Pacific Coast Turtle Reserves",
+        "region": "Pacific coast (Escuintla, Retalhuleu, Suchitepéquez)",
+        "key_species": ["Olive ridley sea turtle", "Leatherback sea turtle", "Hawksbill sea turtle"],
+        "best_months": ["July", "August", "September", "October (nesting)"],
+        "notes": "Pacific coast beaches are major sea turtle nesting grounds. El Paredón surf area has turtle nesting. Monterrico (Biotopo Monterrico-Hawaii) is the most organized turtle conservation ecotourism. Night releases of baby turtles available July-October. Leatherback nesting Jan-May."
+      }
+    ]
+  },
+  "sports_and_activities": [
+    {
+      "name": "Volcano Hiking and Overnight Camping",
+      "popularity": "Very High",
+      "best_regions": ["Acatenango (Antigua)", "Pacaya (Guatemala City/Antigua area)", "San Pedro (Atitlán)", "Santa María (Quetzaltenango)"],
+      "best_months": ["November", "December", "January", "February", "March"],
+      "skill_levels": ["Easy (Pacaya)", "Moderate (San Pedro)", "Very Hard (Acatenango overnight)"],
+      "notes": "Acatenango overnight is Guatemala's single most extraordinary experience for adventurous travelers. Watching Fuego erupt at close range through the night is humbling and unforgettable. Pacaya is the accessible day option. 5+ different volcanoes hikeable from Antigua alone."
+    },
+    {
+      "name": "Maya Archaeology",
+      "popularity": "Very High",
+      "best_regions": ["Tikal (Petén)", "El Mirador (Petén)", "Quiriguá (Izabal — UNESCO)", "Iximché (Chimaltenango)", "Zaculeu (Huehuetenango)", "Mixco Viejo"],
+      "best_months": ["Year-round (dry season better for Petén)"],
+      "skill_levels": ["Beginner to Moderate"],
+      "notes": "Guatemala is THE destination for Maya archaeology. Tikal is world-class. El Mirador is the ultimate adventure for those willing to trek. Quiriguá has the finest carved stelae in the Maya world (UNESCO). The combination of living Maya culture and ancient sites is found nowhere else."
+    },
+    {
+      "name": "Spanish Language Learning",
+      "popularity": "Very High",
+      "best_regions": ["Antigua Guatemala", "Quetzaltenango (Xela)", "San Pedro La Laguna (Atitlán)"],
+      "best_months": ["Year-round"],
+      "skill_levels": ["All levels"],
+      "notes": "Guatemala is consistently rated the world's best country to learn Spanish — clear pronunciation, excellent schools, low cost ($150-250/week for private lessons + homestay), and an engaging cultural environment. Antigua has the most schools and amenities. Xela is more authentic and serious. Many travelers stay for months."
+    },
+    {
+      "name": "Lake Atitlán Water Activities",
+      "popularity": "High",
+      "best_regions": ["Lake Atitlán (all villages)"],
+      "best_months": ["November to April (calmer winds); avoid afternoon Xocomil wind)"],
+      "skill_levels": ["Beginner to Intermediate"],
+      "notes": "Kayaking, standup paddleboarding, open-water swimming, cliff jumping at San Marcos, and boat tours. The Xocomil wind (afternoon, often fierce) makes afternoon water activities challenging. Morning is always calmer. Several villages specialize in diving — Lake Atitlán has a submerged Pre-Columbian village visible in clear conditions."
+    },
+    {
+      "name": "Surfing (Pacific Coast)",
+      "popularity": "Moderate",
+      "best_regions": ["El Paredón", "Sipacate", "Monterrico"],
+      "best_months": ["April", "May", "June", "July", "August", "September"],
+      "skill_levels": ["Intermediate to Advanced"],
+      "notes": "El Paredón is the crown jewel — growing reputation with consistent, powerful beach break. Far less visited than El Salvador or Costa Rica surf scenes — more authentic feel. Great combination with Antigua (2.5 hr drive). Surf tourism growing rapidly."
+    },
+    {
+      "name": "Whitewater Rafting",
+      "popularity": "Moderate",
+      "best_regions": ["Río Cahabón (Alta Verapaz)", "Río Naranjo (San Marcos)", "Río Coyolate (Pacific slope)"],
+      "best_months": ["May", "June", "July", "August", "September", "October (peak flow)"],
+      "skill_levels": ["Intermediate to Advanced"],
+      "notes": "Río Cahabón near Semuc Champey offers excellent whitewater (Class III-IV). Lanquín-based operators offer rafting combined with Semuc Champey visits. Rainy season (May-Oct) provides best water levels."
+    },
+    {
+      "name": "Textile and Artisan Market Culture",
+      "popularity": "Very High",
+      "best_regions": ["Chichicastenango", "Antigua", "San Juan La Laguna (Atitlán)", "Almolonga (Quetzaltenango)", "Momostenango"],
+      "best_months": ["Year-round (Chichicastenango Thursdays and Sundays)"],
+      "skill_levels": ["Beginner"],
+      "notes": "Chichicastenango is one of the world's great markets — overwhelming, colorful, and genuine. San Juan La Laguna has textile cooperatives with natural dyes and quality weaving. Guatemala produces some of the finest traditional textiles in the Americas — each village has its own distinct pattern and color scheme."
+    },
+    {
+      "name": "Coffee Farm Tours",
+      "popularity": "Moderate",
+      "best_regions": ["Antigua highlands", "Huehuetenango", "Cobán (Alta Verapaz)", "Acatenango region", "Fraijanes"],
+      "best_months": ["October to March (harvest season)"],
+      "skill_levels": ["Beginner"],
+      "notes": "Guatemala produces some of the world's finest specialty coffee. Several named microclimates (Antigua, Huehuetenango, Cobán, Atitlán, Acatenango) produce distinctly different flavor profiles. Farm tours widely available in Antigua area. Coffee is one of Guatemala's greatest exports and sources of cultural pride."
+    }
+  ],
+  "trip_styles": {
+    "good_for_backpacking": true,
+    "good_for_luxury": true,
+    "good_for_families": true,
+    "good_for_couples": true,
+    "good_for_solo_travel": true,
+    "good_for_digital_nomads": true,
+    "good_for_adventure_travel": true,
+    "good_for_food_travel": true,
+    "good_for_road_trips": true,
+    "good_for_short_trips": true,
+    "good_for_long_stays": true
+  },
+  "destinations": {
+    "top_cities": ["Guatemala City (Zone 10)"],
+    "top_towns": ["Antigua Guatemala", "Flores", "Quetzaltenango", "Cobán", "Livingston"],
+    "top_regions": [
+      "Antigua and surrounding volcanoes",
+      "Lake Atitlán basin",
+      "Petén jungle (Tikal, El Mirador)",
+      "Ruta de las Verapaces (Alta Verapaz, Semuc Champey)",
+      "Western highlands (Quetzaltenango, Chichicastenango, Cuchumatanes)",
+      "Río Dulce and Caribbean coast (Izabal)"
+    ],
+    "top_islands": ["Flores island (Lago Petén Itzá)"],
+    "sample_itineraries": {
+      "one_week": "Guatemala City (half day) → Antigua (2 days, Spanish lesson + Pacaya volcano) → Chichicastenango market (1 day) → Lake Atitlán (3 days, San Pedro volcano + village hopping)",
+      "two_weeks": "Guatemala City (half day) → Antigua (2 days) → Acatenango overnight (1 night) → Chichicastenango (1 day) → Lake Atitlán (3 days) → Quetzaltenango (1 day) → Semuc Champey/Lanquín (2 days) → Flores/Tikal (3 days)",
+      "classic_route": "Guatemala City → Antigua → Chichicastenango → Lake Atitlán → Flores → Tikal",
+      "offbeat_route": "Cobán → Semuc Champey → Río Dulce → Livingston (Garifuna) → El Mirador expedition → Cuchumatanes highland trek"
+    }
+  },
+  "practical_info": {
+    "arrival_tips": "La Aurora Airport (GUA) is 7km from Guatemala City Zone 10 — 15-20 min by Uber. Most travelers head straight to Antigua (45 min shuttle, $10-15) rather than spending a night in Guatemala City. Shuttles bookable through most Antigua hotels in advance or at the airport.",
+    "airport_scam_notes": "Unofficial taxi touts in arrivals will overcharge — use Uber (excellent coverage from the airport) or book official airport taxi through the booth. Ignore all unsolicited 'help' in baggage claim.",
+    "local_sim_where_to_buy": "Tigo and Claro SIMs at the airport and throughout Guatemala City and Antigua. Claro has best nationwide coverage. $5-10 for a data plan. Bring passport.",
+    "money_exchange_notes": "ATMs at the airport (Banco Industrial and Banrural most reliable). Exchange at banks in Guatemala City or Antigua for best rates — avoid street changers. Quetzales are the currency — USD accepted in tourist areas at slight disadvantage.",
+    "language_helpful_phrases": {
+      "hello": "Hola / Buenos días",
+      "thank_you": "Gracias",
+      "how_much": "¿Cuánto cuesta?",
+      "where_is": "¿Dónde está...?",
+      "i_dont_speak_spanish": "No hablo español",
+      "the_bill_please": "La cuenta, por favor",
+      "help": "¡Auxilio! / ¡Ayuda!",
+      "cheers": "¡Salud!",
+      "beautiful": "¡Qué bonito/bonita!",
+      "k_iche_hello": "Saqarik (K'iche' morning greeting — received with delight in highlands)"
+    },
+    "offline_maps_recommended": ["Maps.me", "Google Maps (offline)", "Gaia GPS (for volcano hikes)"],
+    "apps_useful_locally": ["Uber (Guatemala City and Antigua — essential)", "WhatsApp (essential for everything)", "Google Maps (offline)", "XE Currency", "Gaia GPS (hiking)"]
+  },
+  "laws": {
+    "drug_laws_strictness": "Strict — possession can result in arrest. Marijuana technically decriminalized in very small amounts but enforcement is inconsistent. Do not carry or use drugs in public.",
+    "alcohol_laws": "Legal drinking age 18. No strict public drinking laws in practice. Alcohol widely available.",
+    "drone_rules": "Permits required from DGAC (Dirección General de Aeronáutica Civil). Prohibited over archaeological sites, airports, military areas. Tikal specifically prohibits drones. Permit process is bureaucratic — plan weeks in advance.",
+    "wild_camping_rules": "Generally permitted with landowner permission. Not in national parks without authorization. Volcano hiking camps require organized tour permits.",
+    "protected_area_rules": "Entry fees vary ($5-25). Guide required at Tikal. Pre-Columbian artifact collection and export absolutely prohibited. No removing plants, animals, or stones from protected areas.",
+    "fishing_license_required": true,
+    "photography_restricted_sites": ["Military installations", "Police checkpoints", "Some indigenous ceremonies (obey local rules)", "Government security buildings"],
+    "lgbtq_legal_status": "Same-sex relationships legal but no recognition. No anti-discrimination protections. Conservative society — discretion essential outside Antigua and Zone 10 Guatemala City.",
+    "marijuana_legality": "Technically decriminalized in minimal amounts but practically risky — avoid.",
+    "prescription_medication_rules": "Bring in original packaging with doctor's prescription. Good pharmacy availability in Antigua and Guatemala City. Many medications available OTC. Bring sufficient supply."
+  },
+    "family_travel": {
+    "kid_friendly": true,
+    "stroller_friendly": false,
+    "car_seat_rules": "Legally required but rarely enforced. Bring your own.",
+    "family_activities": [
+      "Pacaya volcano — kids love roasting marshmallows on lava (easy enough for older children)",
+      "Tikal — spider monkeys, coatis, oscillated turkeys, and temples make for an extraordinary family adventure",
+      "Semuc Champey — turquoise pools and swimming in the jungle",
+      "Lake Atitlán lancha hopping between colorful Maya villages",
+      "Chichicastenango market — sensory overload in the best way for curious kids",
+      "Antigua historic center — cobblestone walking, ruins, color, and great food all close together",
+      "Lago Coatepeque swimming",
+      "Antigua chocolate and coffee tours — hands-on and educational"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Very limited — cobblestone streets throughout Antigua and all highland towns make wheelchair travel extremely difficult. Tikal jungle paths are unpaved. Atitlán requires boat access. Guatemala City Zone 10 has the most accessible infrastructure.",
+    "accessible_transport": "Uber in Guatemala City most accessible option. No wheelchair-accessible public transport nationwide.",
+    "accessible_attractions": [
+      "Guatemala City Zone 10 museums (partial)",
+      "Tikal visitor center and some main paths (partially accessible)",
+      "Antigua — some flat sections near central park but cobblestones pervasive"
+    ]
+  },
+  "gear": {
+    "bring_wetsuit": false,
+    "bring_hiking_boots": true,
+    "bring_layers": true,
+    "bring_bug_spray": true,
+    "bring_sunscreen": true,
+    "cold_weather_gear_needed": true,
+    "cold_weather_gear_notes": "Essential for Acatenango overnight — temperatures drop well below 0°C at 3,700m camp. Warm sleeping bag, gloves, hat, and multiple insulating layers critical. Light jacket useful for Antigua evenings (1,500m). Petén and Pacific coast are hot — no cold gear needed there.",
+    "rental_gear_easy_to_find": true,
+    "outdoor_gear_shops": [
+      "Acatenango and Pacaya gear (sleeping bags, trekking poles, jackets) rentable through Antigua tour operators ($5-15/item/night)",
+      "Old Town Outfitters (Antigua) — best outdoor gear shop in Guatemala",
+      "Tikal has no gear rental — bring everything from Flores or Antigua",
+      "Surfboards available for rent at El Paredón ($10-20/day)",
+      "Bring your own quality hiking boots — rental options are poor quality"
+    ]
+ }
+}

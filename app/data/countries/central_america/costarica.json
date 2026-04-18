@@ -1,0 +1,743 @@
+{
+  "meta": {
+    "last_updated": "2026-04-17",
+    "confidence_score": 0.92,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "WayFinder internal hike/food/history data",
+      "WayFinder safety submodels"
+    ],
+    "notes": "Populated from WayFinder app data and verified travel references. Null fields to be enriched via Tavily web search."
+  },
+  "identity": {
+    "name": "Costa Rica",
+    "official_name": "Republic of Costa Rica",
+    "code": "CR",
+    "iso3": "CRI",
+    "region": "Americas",
+    "subregion": "Central America",
+    "capital": "San José",
+    "flag_emoji": "🇨🇷",
+    "timezones": ["UTC-06:00"],
+    "driving_side": "right",
+    "country_calling_code": "+506",
+    "internet_tld": ".cr"
+  },
+  "language_and_money": {
+    "languages": ["Spanish"],
+    "primary_language": "Spanish",
+    "english_proficiency": "Moderate — widely spoken in tourist areas, national parks, and hotels. Limited in rural communities.",
+    "currency": "CRC",
+    "currency_name": "Costa Rican Colón",
+    "currency_symbol": "₡",
+    "cash_vs_card": "Cards widely accepted in tourist areas, hotels, and larger restaurants. Cash essential in rural areas, small sodas, and local markets.",
+    "typical_payment_methods": ["Cash (CRC)", "USD (widely accepted)", "Visa", "Mastercard"],
+    "atm_availability": "Widely available in cities and tourist towns. Banco Nacional and BAC Credomatic most reliable. Scarce in remote areas — withdraw before heading off the beaten path.",
+    "tipping_culture": "10% service charge (propina) included in most restaurant bills. Additional tip appreciated but not required.",
+    "tipping_etiquette": "Round up taxi fares. Tip tour guides $5-15/day depending on tour length. Hotel staff $1-2/day. Extra 5-10% in restaurants for good service beyond the included propina."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days",
+      "visa_type": "Tourist stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for the entire duration of stay",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": true,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price since 2019",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Strict rules on importing fresh produce, plants, and animal products. No narcotics. Firearms require special permits.",
+    "restricted_items": ["Narcotics", "Firearms (without permit)", "Fresh produce without permit", "Animal products without permit"],
+    "duty_free_allowances": "400 cigarettes or 50 cigars, 3 liters of alcohol, gifts up to $500 value"
+  },
+  "health": {
+    "recommended_vaccines": ["Hepatitis A", "Typhoid", "Hepatitis B", "Rabies (if visiting rural areas or caves)", "Tetanus-Diphtheria"],
+    "required_vaccines": [],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Low — present in some remote lowland areas near Nicaraguan and Panamanian borders. Not a significant risk for most tourists.",
+    "malaria_regions": ["Limón province (remote areas)", "Alajuela (border areas)"],
+    "malaria_prophylaxis_info": "Generally not recommended unless visiting very remote border areas. Consult travel health provider.",
+    "dengue_risk": "Moderate — present throughout the country, especially in rainy season. Cases spike May-November.",
+    "altitude_sickness_risk": "Low for most destinations. Cerro Chirripó (3,821m) can cause mild altitude sickness — acclimatize before summit attempt.",
+    "food_water_safety": "Tap water safe to drink in most of San José and major tourist areas — one of few Central American countries where this is true. Check locally in rural areas.",
+    "air_quality_concerns": "San José has traffic-related air quality issues. Otherwise generally good countrywide.",
+    "common_travel_illnesses": ["Traveler's diarrhea", "Dengue fever", "Sunburn", "Insect bites"],
+    "pharmacy_access": "Pharmacies (farmacias) widely available in cities and tourist towns. Many medications available OTC. Limited in remote areas.",
+    "tap_water_safe": true,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Good in San José private hospitals (CIMA, Clínica Bíblica). Limited in rural areas. Evacuate serious conditions to San José.",
+    "emergency_medical_number": "911"
+  },
+  "safety": {
+    "travel_advisory_level_us": 2,
+    "travel_advisory_level_label": "Exercise Increased Caution",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "Petty theft and pickpocketing in tourist areas",
+      "Violent crime increasing in parts of San José",
+      "Drug trafficking along Caribbean coast",
+      "Ocean rip currents a major safety risk at beaches"
+    ],
+    "crime_risk": "Moderate — petty theft is the most common issue for tourists. Violent crime increasing in some San José neighborhoods and Caribbean coast. Tourist zones generally safe with normal precautions.",
+    "scam_risk": "Moderate — taxi overcharging, ATM skimming, rental car break-ins (very common), fake tour operators",
+    "transport_safety": "Public buses generally safe on main routes. Avoid night travel on secondary roads. Rental cars are frequent targets for theft — never leave valuables visible.",
+    "solo_female_travel_notes": "Generally safe with normal precautions. Avoid isolated beaches and walking alone at night. Catcalling occurs but rarely escalates. Well-traveled tourist routes are very manageable.",
+    "lgbtq_notes": "One of the most LGBTQ-friendly countries in Latin America. Same-sex marriage legal since 2020. Tolerant in San José and tourist areas. More conservative in rural areas.",
+    "night_safety": "Avoid walking alone at night in downtown San José, especially Barrio México and La Merced. Tourist areas like Escazú and Heredia are safer at night. Beach towns vary.",
+    "safe_areas": ["Escazú", "Santa Ana", "Heredia", "Manuel Antonio", "La Fortuna", "Tamarindo", "Monteverde", "Puerto Viejo (central area)"],
+    "areas_to_avoid": ["Downtown San José at night (Barrio México, La Merced)", "Limón city center at night", "Jacó at night (petty crime)", "Remote Caribbean coast at night"],
+    "natural_disaster_risks": ["Earthquakes", "Volcanic eruptions (Arenal, Rincón de la Vieja, Poás, Turrialba)", "Landslides in rainy season", "Flooding in lowlands", "Rip currents (major beach hazard)", "Tsunamis on Pacific coast"],
+    "political_stability_notes": "One of the most politically stable countries in Central America. Strong democratic institutions. Low risk of political unrest affecting tourists.",
+    "common_scams": [
+      "Rental car break-ins — never leave anything in a parked rental car",
+      "Taxi overcharging — use official red taxis with meters (María) or Uber",
+      "ATM skimming — use bank-attached ATMs during business hours",
+      "Timeshare touts in tourist areas",
+      "Fake tour operators — book through reputable agencies or hotels",
+      "Beach theft — never leave valuables unattended on the beach"
+    ],
+    "police_reliability": "Generally reliable. Tourist police (Policía Turística) operate in major tourist areas. Report crimes at OIJ (judicial police) for serious incidents.",
+    "emergency_numbers": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911",
+      "general_emergency": "911"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "San José",
+      "us_embassy_phone": "+506-2519-2000",
+      "us_embassy_website": "https://cr.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "December to April (dry season) for Pacific coast and Central Valley; June-July and September-October for Caribbean coast dry spells",
+    "climate_zones": [
+      "Central Valley — mild, temperate, 20-26°C year-round",
+      "Pacific coast (Guanacaste) — tropical dry, very hot dry season",
+      "Pacific coast (South) — wetter year-round, lush rainforest",
+      "Caribbean coast — hot, humid, rain year-round with two drier spells",
+      "Highlands (Chirripó area) — cool to cold, heavy rainfall"
+    ],
+    "dry_season": "December to April (Pacific and Central Valley)",
+    "rainy_season": "May to November (Pacific and Central Valley); year-round on Caribbean coast",
+    "hurricane_typhoon_season": "June to November (Caribbean side can be affected by Atlantic hurricanes)",
+    "surf_season": "April to October for Caribbean (La Salsa Brava); November to April for Pacific (biggest swells)",
+    "trekking_best_months": ["December", "January", "February", "March"],
+    "average_temp_by_month": {
+      "San José": "22°C year-round (15-27°C range)",
+      "Guanacaste (dry season)": "35-40°C (Mar-Apr)",
+      "Caribbean coast": "28-32°C year-round"
+    },
+    "daylight_hours_by_season": "Near equator — approximately 11.5-12.5 hours year-round"
+  },
+  "transport": {
+    "major_airports": [
+      "Juan Santamaría International Airport (SJO) — San José (main hub)",
+      "Daniel Oduber Quirós International Airport (LIR) — Liberia (Guanacaste gateway)"
+    ],
+    "main_airlines": ["LATAM", "Avianca", "American Airlines", "United", "Delta", "Nature Air (domestic)", "Sansa (domestic)"],
+    "airport_to_city_options": ["Official red taxis ($25-30 to San José center)", "Uber (cheaper, ~$15-20)", "Shared shuttles ($10-15)", "Public bus (cheapest, ~$0.75 but takes 1.5+ hrs)"],
+    "public_transit_quality": "San José has an extensive but chaotic public bus system. No metro. Buses are cheap but crowded and confusing for newcomers.",
+    "intercity_bus_quality": "Good coverage of major destinations. Companies include Tica Bus (international), Transportes Mepe (Caribbean), and many regional operators. Comfortable and affordable.",
+    "train_network_quality": "Very limited — commuter train operates in San José metro area only. Not useful for tourism.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": true,
+    "road_conditions": "Main highways paved and decent. Many secondary roads unpaved and require 4WD, especially in rainy season. Mountain roads can be steep and narrow.",
+    "four_x_four_needed_regions": ["Osa Peninsula", "Nicoya Peninsula back roads", "Caribbean hinterland", "Volcano access roads in rainy season"],
+    "ride_hailing_apps": ["Uber", "InDriver", "Didi"],
+    "taxi_safety_notes": "Use official red taxis with orange triangle on the door and meters ('Marías'). Uber is widely used and often cheaper. Airport taxis are orange — only use authorized ones.",
+    "ferry_routes": ["Puntarenas to Nicoya Peninsula (Naranjo and Paquera ferries, ~1.5 hrs)", "Sierpe to Drake Bay (boat taxi)"],
+    "border_crossing_notes": "Main crossings: Peñas Blancas (Nicaragua), Paso Canoas (Panama), Sixaola-Guabito (Panama, Caribbean side). Arrive early — lines can be long. Have passport and onward ticket ready."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$40-60/day",
+    "daily_budget_midrange": "$80-150/day",
+    "daily_budget_comfort": "$180-300/day",
+    "hostel_avg": "$12-25/night",
+    "hotel_avg": "$60-120/night",
+    "meal_avg": "$4-10 (soda casado $5-8, restaurant $12-25)",
+    "coffee_avg": "$1.50-3",
+    "beer_avg": "$2-4",
+    "local_transport_avg": "$0.50-1.50 (city bus)",
+    "sim_card_avg": "$10-15 for 5-10GB",
+    "coworking_day_pass_avg": "$10-20",
+    "surfboard_rental_avg": "$15-25/day",
+    "value_for_money": "Moderate — Costa Rica is one of the pricier Central American countries. Strong tourism infrastructure means costs are higher than neighbors, especially in Guanacaste."
+  },
+  "connectivity": {
+    "sim_card_providers": ["Kolbi (ICE)", "Movistar", "Claro"],
+    "esim_available": true,
+    "mobile_data_quality": "Good 4G in cities, tourist areas, and main roads. Limited in remote rainforest areas, Osa Peninsula, and parts of Caribbean coast.",
+    "wifi_quality": "Available in most hostels, hotels, cafes, and restaurants in tourist areas. Generally reliable (10-50 Mbps in good spots).",
+    "coworking_available": true,
+    "best_remote_work_cities": ["San José", "Escazú", "Santa Teresa", "Tamarindo", "La Fortuna"],
+    "power_outlet_types": ["A", "B"],
+    "voltage": "120V, 60Hz",
+    "plug_adapter_needed_for_us": false,
+    "power_reliability": "Generally reliable in cities. Outages possible during heavy rainstorms and in remote areas. Bring power bank for jungle/beach trips."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Escazú/Santa Ana, San José — upscale, safe, good restaurants and malls",
+      "La Fortuna — base for Arenal volcano and hot springs",
+      "Manuel Antonio — Pacific beach and national park access",
+      "Monteverde — cloud forest lodges, unique atmosphere",
+      "Tamarindo — surf town with great infrastructure",
+      "Santa Teresa/Mal País — bohemian surf and yoga scene",
+      "Puerto Viejo de Talamanca — laid-back Caribbean vibe"
+    ],
+    "budget_areas": ["Downtown San José (budget hostels)", "La Fortuna (guesthouses)", "Jacó", "Puerto Viejo"],
+    "family_friendly_areas": ["Manuel Antonio", "La Fortuna", "Tamarindo", "Monteverde"],
+    "nightlife_areas": ["Barrio Escalante (San José)", "Jacó", "Tamarindo", "Puerto Viejo"],
+    "surf_towns": ["Tamarindo", "Santa Teresa", "Jacó", "Dominical", "Pavones", "Salsa Brava (Puerto Viejo)"],
+    "eco_lodges_available": true,
+    "peak_booking_season": "December to April (dry season); holidays (Christmas, Easter)",
+    "accommodation_notes": "Eco-lodges are a Costa Rica specialty — many excellent options in national park buffer zones. Book well in advance for dry season, especially Arenal and Manuel Antonio."
+  },
+  "culture": {
+    "local_customs": [
+      "Pura vida — the national motto and philosophy, meaning 'pure life' or 'no worries'. Use it often.",
+      "Greet with a single kiss on the right cheek between women and mixed company; handshake between men",
+      "Ticos (Costa Ricans) are known for being indirect and avoiding confrontation",
+      "Strong Catholic traditions — family and religion are central"
+    ],
+    "dress_expectations": "Casual and relaxed in most areas. Cover up when entering churches. Beachwear only at the beach. Smart casual for nicer restaurants in San José.",
+    "religious_sensitivity": "Predominantly Catholic. Easter week (Semana Santa) is a major national holiday — many businesses close. Respect religious processions.",
+    "social_norms": [
+      "Punctuality is relaxed — 15-30 minutes late is socially normal",
+      "Ticos are warm and friendly — small talk before business is expected",
+      "Avoid direct confrontation or aggressive bargaining",
+      "Tipping is appreciated but not aggressive"
+    ],
+    "greeting_style": "Warm — cheek kiss in social settings, handshake in business. 'Pura vida' is used as hello, goodbye, thank you, and you're welcome.",
+    "public_behavior_notes": "PDA is acceptable in tourist areas. Noise levels are generally moderate. Respect nature — littering is frowned upon in a country that takes environmental pride.",
+    "photography_etiquette": "Generally relaxed. Ask permission before photographing people, especially indigenous communities in Talamanca. No restrictions in most tourist sites.",
+    "bargaining_expected": false,
+    "important_holidays": [
+      "Semana Santa (Easter week) — national holiday, beaches packed",
+      "Juan Santamaría Day (April 11) — national hero day",
+      "Independence Day (September 15)",
+      "Día de los Muertos (November 2)",
+      "Christmas and New Year — family-centered, quieter celebrations"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Smoking prohibited in all enclosed public spaces and within 5m of entrances",
+      "Drone permits required — contact DGAC for authorization",
+      "Collecting shells, coral, or wildlife strictly prohibited",
+      "ATV use on public roads illegal without proper licensing"
+    ]
+  },
+  "food": {
+    "signature_dishes": [
+      "Casado — the quintessential lunch: rice, beans, salad, plantains, and choice of protein",
+      "Gallo pinto — black beans and rice cooked together, the national breakfast",
+      "Ceviche — fresh fish or shrimp marinated in citrus, served with crackers",
+      "Olla de carne — hearty beef and vegetable soup",
+      "Arroz con leche — rice pudding dessert",
+      "Chifrijo — bar snack of rice, beans, chicharrón, and pico de gallo",
+      "Tamales — corn dough stuffed with pork and vegetables, wrapped in banana leaves (especially Christmas)",
+      "Chorreadas — corn pancakes served with sour cream"
+    ],
+    "street_food_safety": "Generally safe in busy sodas (local diners). Exercise normal caution with raw seafood from roadside stalls. Sodas are a reliable, cheap, and safe eating option.",
+    "vegetarian_friendliness": "Good — gallo pinto, casado without meat, and rice/bean dishes are ubiquitous. Vegetarian-specific restaurants growing in San José, La Fortuna, and Santa Teresa.",
+    "vegan_friendliness": "Moderate — improving in tourist areas. Growing vegan scene in San José and popular surf towns. Can be challenging in rural areas.",
+    "must_try_drinks": [
+      "Café chorreado — Costa Rican drip coffee, among the best in the world",
+      "Agua de sapo — ginger, lemon, and raw sugar drink",
+      "Horchata — cinnamon rice milk drink",
+      "Guaro sour — national spirit (Cacique guaro) with lime and sugar",
+      "Imperial beer — the iconic national beer",
+      "Resbaladera — barley, rice, and spice drink",
+      "Fresh tropical juices (cas, maracuyá, guanábana)"
+    ],
+    "regional_specialties": [
+      "Guanacaste: corn-based dishes, rosquillas (corn cookies), chicheme",
+      "Caribbean coast: rice and beans cooked in coconut milk, jerk chicken, pan bon (Caribbean bread)",
+      "Central Valley: casado, olla de carne, tamales",
+      "Pacific coast: fresh ceviche, grilled catch of the day"
+    ],
+    "drinking_water_notes": "Tap water is safe to drink in San José and most tourist areas — a rarity in Central America. Verify locally in very remote areas. Bottled water available everywhere.",
+    "alcohol_rules": "Legal drinking age 18. Alcohol sales restricted on Good Friday (Viernes Santo). No public drinking in most areas."
+  },
+  "outdoors": {
+    "top_national_parks": [
+      "Manuel Antonio National Park — Pacific coast, beaches, white-faced monkeys, sloths, stunning scenery",
+      "Corcovado National Park — Osa Peninsula, most biodiverse tropical rainforest, jaguars and tapirs",
+      "Tortuguero National Park — Caribbean coast, sea turtle nesting (July-October), canoe-based exploration",
+      "Arenal Volcano National Park — iconic active volcano, hot springs, lake activities",
+      "Monteverde Cloud Forest Reserve — cloud forest, hanging bridges, resplendent quetzal",
+      "Chirripó National Park — highest peak in Central America (3,821m), páramo hiking",
+      "Rincón de la Vieja National Park — active geothermal volcano, fumaroles, hot springs, wildlife",
+      "Cahuita National Park — Caribbean coast coral reef snorkeling, sloths and howler monkeys"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Cerro Chato (Arenal)",
+        "difficulty": "Moderate",
+        "duration": "4-6 hours round trip",
+        "region": "Alajuela (La Fortuna)",
+        "description": "Hike to the crater lake of the extinct Cerro Chato volcano with stunning views of Arenal. Lush rainforest with wildlife en route. Crater lake allows swimming.",
+        "best_months": ["December", "January", "February", "March", "April"],
+        "elevation_m": 1140,
+        "notes": "Trail starts at Hotel Linda Vista or El Silencio Lodge. Can be muddy in rainy season — waterproof boots recommended. Moderately strenuous final ascent."
+      },
+      {
+        "name": "Manuel Antonio Park Trails",
+        "difficulty": "Easy",
+        "duration": "2-4 hours",
+        "region": "Puntarenas (Manuel Antonio)",
+        "description": "Network of coastal trails through tropical forest to white sand beaches. Excellent wildlife — white-faced capuchin monkeys, sloths, coatis, and hundreds of bird species.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 200,
+        "notes": "Book tickets online in advance — daily visitor limit. Hire a local guide to spot well-camouflaged wildlife. Bring swimwear for beach stops."
+      },
+      {
+        "name": "Monteverde Cloud Forest Hanging Bridges",
+        "difficulty": "Easy to Moderate",
+        "duration": "3-5 hours",
+        "region": "Puntarenas (Monteverde)",
+        "description": "Walk a series of hanging bridges through cloud forest canopy with views of Gulf of Nicoya on clear days. Excellent birdwatching — resplendent quetzal possible.",
+        "best_months": ["December", "January", "February", "March", "April"],
+        "elevation_m": 1440,
+        "notes": "Entry fee applies (~$30). Multiple reserves in Monteverde area. Early morning is best for quetzal sightings and wildlife activity."
+      },
+      {
+        "name": "Rincón de la Vieja Geothermal Trail",
+        "difficulty": "Moderate",
+        "duration": "4-6 hours",
+        "region": "Guanacaste",
+        "description": "Hike through geothermal landscape — bubbling mud pots, fumaroles, and hot springs — in Rincón de la Vieja National Park. Wildlife includes coatis, white-faced monkeys, and toucans.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 900,
+        "notes": "Las Pailas sector is the most popular. Waterfall side trip available (La Cangreja). Bring plenty of water — hot and exposed in dry season."
+      },
+      {
+        "name": "Corcovado — San Pedrillo to Sirena",
+        "difficulty": "Hard",
+        "duration": "1-2 days",
+        "region": "Puntarenas (Osa Peninsula)",
+        "description": "Epic hike through the most biodiverse rainforest on Earth. Jaguar, tapir, scarlet macaw, and four species of monkey. River crossings and remote wilderness.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 300,
+        "notes": "Mandatory licensed guide required. Book ranger station accommodation months in advance. Tide-dependent river crossings — coordinate with guide. One of the most remarkable hikes in the Americas."
+      },
+      {
+        "name": "Poás Volcano Crater",
+        "difficulty": "Easy",
+        "duration": "1-2 hours",
+        "region": "Alajuela",
+        "description": "Short paved walk to the rim of one of the world's most accessible active volcanoes. Stunning acidic crater lake (when not obscured by clouds). Cloud forest environment.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 2708,
+        "notes": "Check volcano activity status before visiting. Early morning visits offer clearest views before cloud cover sets in. Masks available if sulfur fumes strong. $18 entry fee."
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Cerro Chirripó Summit",
+        "difficulty": "Hard",
+        "duration": "2-3 days",
+        "region": "San José (San Gerardo de Rivas)",
+        "description": "Trek to the highest point in Central America (3,821m). Through cloud forest, subalpine páramo, and Los Crestones rock formations. Views of both Pacific and Caribbean coasts on clear days.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 3821,
+        "notes": "Permit system — book months in advance at SINAC office. Refuge accommodation on the mountain. Start from San Gerardo de Rivas. One of the most rewarding hikes in Central America."
+      },
+      {
+        "name": "Corcovado Multi-Day Traverse",
+        "difficulty": "Hard",
+        "duration": "3-5 days",
+        "region": "Puntarenas (Osa Peninsula)",
+        "description": "Full traverse of Corcovado National Park from La Leona to San Pedrillo or vice versa via Sirena ranger station. The ultimate Costa Rica wilderness experience.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 300,
+        "notes": "Licensed guide mandatory. Book ranger station accommodation and guide well in advance. Access by boat or foot from Puerto Jiménez or Drake Bay."
+      },
+      {
+        "name": "Río Celeste and Tenorio Volcano Trail",
+        "difficulty": "Moderate",
+        "duration": "1-2 days",
+        "region": "Guanacaste (Tenorio)",
+        "description": "Hike through Tenorio Volcano National Park to the impossibly blue Río Celeste waterfall and river, caused by a chemical reaction between two volcanic streams. Tapir and puma habitat.",
+        "best_months": ["December", "January", "February", "March", "April"],
+        "elevation_m": 1916,
+        "notes": "Swimming in Río Celeste is prohibited to protect the ecosystem. Arrive early — limits on daily visitors. Best viewed in dry season for most vivid color."
+      }
+    ],
+    "volcanoes": [
+      "Arenal (1,670m) — iconic conical active volcano, last major eruption 2010, still geothermally active",
+      "Poás (2,708m) — highly active, one of the world's most accessible craters",
+      "Rincón de la Vieja (1,916m) — active, geothermal features, good hiking",
+      "Turrialba (3,328m) — active, intermittent eruptions, access currently restricted",
+      "Irazú (3,432m) — highest volcano in Costa Rica, crater lakes, views of both coasts",
+      "Barva (2,906m) — dormant, crater lakes, good cloud forest hiking"
+    ],
+    "waterfalls": [
+      "La Paz Waterfall Gardens — series of 5 waterfalls in Poás area, wildlife sanctuary on-site",
+      "Nauyaca Waterfalls — two-tiered 45m waterfall near Dominical, accessible by horse or hike",
+      "Río Celeste Waterfall — Tenorio Volcano NP, electric blue waterfall",
+      "Llanos de Cortez — wide, accessible waterfall in Guanacaste, great swimming",
+      "Uvita Waterfall — jungle waterfall near Marino Ballena NP"
+    ],
+    "hot_springs": [
+      "Tabacón Hot Springs — premium hot springs resort near Arenal ($)",
+      "Baldi Hot Springs — popular complex near La Fortuna ($$)",
+      "The Springs Resort — luxury hot springs with animal sanctuary ($$$)",
+      "Free public hot springs in La Fortuna river (gratis)"
+    ],
+    "lakes": [
+      "Laguna de Arenal — large artificial lake, windsurfing and kitesurfing, scenic",
+      "Laguna Botos (Poás) — emerald green crater lake inside Poás volcano",
+      "Laguna Barva — remote crater lake inside Barva Volcano"
+    ],
+    "rivers": [
+      "Pacuare River — world-class whitewater rafting (Class III-IV), lush canyon",
+      "Reventazón River — excellent whitewater rafting near Turrialba",
+      "Río Celeste — Tenorio Volcano NP, electric blue water from volcanic minerals",
+      "Río Sarapiquí — wildlife boat tours, kayaking, Caribbean lowland rainforest"
+    ],
+    "wildlife": [
+      "Resplendent quetzal (Monteverde, Chirripó)",
+      "Jaguar (Corcovado)",
+      "Tapir (Corcovado, Chirripó)",
+      "Scarlet macaw (Carara NP, Osa Peninsula)",
+      "Three-toed sloth (nationwide)",
+      "White-faced capuchin monkey (nationwide)",
+      "Howler monkey (nationwide)",
+      "Green sea turtle (Tortuguero, June-October)",
+      "Leatherback sea turtle (Playa Grande, Oct-Feb)",
+      "Humpback whale (Drake Bay, Jul-Oct and Dec-Apr)",
+      "Whale shark (Cocos Island)",
+      "Crocodile (Tárcoles River)",
+      "Resplendent quetzal (cloud forests, Dec-Apr breeding)",
+      "Morpho butterfly (nationwide)"
+    ],
+    "birdwatching_hotspots": [
+      "Monteverde Cloud Forest — resplendent quetzal, three-wattled bellbird, 400+ species",
+      "Carara National Park — transition zone, scarlet macaw roost flights at dusk",
+      "La Selva Biological Station (Sarapiquí) — 500+ species, excellent research station",
+      "Corcovado National Park — scarlet macaw, harpy eagle, 400+ species",
+      "Caño Negro Wildlife Refuge — waterbirds, jabiru stork, Nicaragua border area",
+      "Wilson Botanical Garden (San Vito) — cloud forest, 300+ species"
+    ],
+    "stargazing_spots": [
+      "Chirripó National Park — high altitude, minimal light pollution",
+      "Arenal area — low light pollution at volcano viewpoints",
+      "Nicoya Peninsula inland areas"
+    ],
+    "scenic_drives": [
+      "San José to Arenal via Zarcero — cloud forest, topiary gardens, mountain scenery",
+      "Interamericana through Cerro de la Muerte — paramo landscape, quetzal habitat",
+      "Costanera Sur — Pacific coastal highway from Jacó to Palmar Norte",
+      "Road to Monteverde — unpaved scenic mountain road (4x4 recommended)"
+    ],
+    "surf_spots": [
+      {
+        "name": "Playa Tamarindo",
+        "region": "Guanacaste (Nicoya Peninsula)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "typical_wave_size": {
+          "peak_season": "3-6 ft (Nov-Mar)",
+          "off_season": "1-3 ft"
+        },
+        "description": "Costa Rica's most famous surf town. Consistent beach break with both lefts and rights spread across a wide bay. Very beginner-friendly with multiple surf schools. Full tourism infrastructure.",
+        "crowd_level": "High",
+        "notes": "Best at mid to high tide. Estero (river mouth) section offers better quality waves. Crowded during peak season."
+      },
+      {
+        "name": "Playa Santa Teresa",
+        "region": "Puntarenas (Nicoya Peninsula)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to advanced",
+        "best_months": ["April", "May", "June", "July", "August", "September", "October"],
+        "typical_wave_size": {
+          "peak_season": "4-8 ft (May-Oct)",
+          "off_season": "2-4 ft"
+        },
+        "description": "One of Costa Rica's best surf destinations. Powerful, fast beach break across a long stretch of coast. Multiple peaks offering different skill levels. Bohemian surf and yoga culture.",
+        "crowd_level": "Medium to high",
+        "notes": "Gets big and powerful in rainy season — can be challenging for intermediates. Beautiful beach with excellent sunset views."
+      },
+      {
+        "name": "Playa Dominical",
+        "region": "Puntarenas (South Pacific)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["April", "May", "June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "5-10 ft (May-Sep)",
+          "off_season": "2-4 ft"
+        },
+        "description": "Powerful, hollow beach break in the lush South Pacific. Heavy, fast waves not suitable for beginners. Rip currents are strong — respect the ocean. Surrounding jungle and waterfalls add to the experience.",
+        "crowd_level": "Medium",
+        "notes": "Strong rip currents — always check conditions. Best early morning before wind. Surf schools available for intermediates looking to progress."
+      },
+      {
+        "name": "Pavones",
+        "region": "Puntarenas (Osa/Golfito area)",
+        "break_type": "Point break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["April", "May", "June", "July", "August", "September", "October"],
+        "typical_wave_size": {
+          "peak_season": "6-12 ft (May-Sep)",
+          "off_season": "2-4 ft"
+        },
+        "description": "One of the longest left-hand point breaks in the world — rides of 400-700m possible on good swells. Powerful and fast. Located near the Panama border in a remote, lush jungle setting.",
+        "crowd_level": "Low to medium",
+        "notes": "Very remote — 4WD required to access. Limited accommodation. The long ride makes the journey very worthwhile for experienced surfers."
+      },
+      {
+        "name": "Salsa Brava (Puerto Viejo)",
+        "region": "Limón (Caribbean coast)",
+        "break_type": "Reef break",
+        "wave_direction": "Right",
+        "difficulty": "Advanced",
+        "best_months": ["January", "February", "March", "April", "May", "June"],
+        "typical_wave_size": {
+          "peak_season": "6-15 ft (Jan-Apr)",
+          "off_season": "2-4 ft"
+        },
+        "description": "The most famous wave in Costa Rica and one of the best reef breaks in the Caribbean. Powerful, hollow rights breaking over a shallow coral reef. Comparable to powerful Caribbean reef breaks. Not for the faint-hearted.",
+        "crowd_level": "Medium",
+        "notes": "Very shallow reef — wipeouts can be dangerous. Advanced surfers only. Caribbean culture and reggae atmosphere in Puerto Viejo makes this a unique surf destination."
+      },
+      {
+        "name": "Witch's Rock (Roca Bruja)",
+        "region": "Guanacaste (Santa Rosa National Park)",
+        "break_type": "Beach and rock break",
+        "wave_direction": "Left and right",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "typical_wave_size": {
+          "peak_season": "4-10 ft",
+          "off_season": "2-4 ft"
+        },
+        "description": "Legendary remote break inside Santa Rosa National Park, accessible only by boat from Tamarindo or Playa del Coco. Powerful, hollow beach and rock break. Pristine natural setting with very few crowds.",
+        "crowd_level": "Low",
+        "notes": "Boat trips $75-100 per person from Tamarindo. Day trips only — no accommodation on site. One of Costa Rica's most iconic surf experiences."
+      },
+      {
+        "name": "Playa Jacó",
+        "region": "Puntarenas (Central Pacific)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["April", "May", "June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "3-6 ft",
+          "off_season": "1-3 ft"
+        },
+        "description": "Closest surf beach to San José (1.5 hrs). Consistent year-round waves with full surf infrastructure. Good for beginners to intermediates. Lively town with nightlife.",
+        "crowd_level": "High",
+        "notes": "Closest surf destination to San José — popular weekend destination. Water quality can be affected by runoff. Full range of surf shops and schools."
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Corcovado National Park",
+        "region": "Osa Peninsula (Puntarenas)",
+        "key_species": ["Jaguar", "Baird's tapir", "White-lipped peccary", "Scarlet macaw", "Harpy eagle", "Bull shark", "Four monkey species", "Giant anteater"],
+        "best_months": ["December", "January", "February", "March"],
+        "notes": "National Geographic called it the most biologically intense place on Earth. Licensed guide mandatory. Book months in advance. Access via Puerto Jiménez or Drake Bay."
+      },
+      {
+        "name": "Tortuguero National Park",
+        "region": "Limón (Caribbean coast)",
+        "key_species": ["Green sea turtle", "Leatherback sea turtle", "River otter", "Tapir", "Manatee", "Caiman", "Green iguana", "400+ bird species"],
+        "best_months": ["July", "August", "September", "October"],
+        "notes": "No roads — accessible only by boat or small plane. Sea turtle nesting July-October. Canoe through canals for wildlife. Village of Tortuguero is charming and car-free."
+      },
+      {
+        "name": "Monteverde Cloud Forest Reserve",
+        "region": "Puntarenas (Monteverde)",
+        "key_species": ["Resplendent quetzal", "Three-wattled bellbird", "Spectacled bear (rare)", "Kinkajou", "Olingo", "Glass frog", "Golden toad (extinct)"],
+        "best_months": ["December", "January", "February", "March", "April"],
+        "notes": "Multiple reserves in area (Santa Elena, Curi Cancha, Children's Eternal Rainforest). Early morning best for quetzal. Hanging bridges offer canopy perspective."
+      },
+      {
+        "name": "Cahuita National Park",
+        "region": "Limón (Caribbean coast)",
+        "key_species": ["Three-toed sloth", "Howler monkey", "White-faced monkey", "Parrot", "Heron", "Coral reef fish (snorkeling)", "Nurse shark"],
+        "best_months": ["September", "October"],
+        "notes": "Free entry (donation requested). Best snorkeling in Costa Rica. Caribbean culture in Cahuita village. Coral reef is fragile — no touching."
+      },
+      {
+        "name": "Carara National Park",
+        "region": "Puntarenas (Central Pacific)",
+        "key_species": ["Scarlet macaw (most reliable sighting in CR)", "Crocodile (Tárcoles River)", "White-faced monkey", "Basilisk lizard", "American crocodile"],
+        "best_months": ["December", "January", "February", "March"],
+        "notes": "Best place to see scarlet macaws roosting at dawn and dusk. Tárcoles Bridge crocodile viewing is iconic. Transition zone between dry and wet forest."
+      }
+    ]
+  },
+  "sports_and_activities": [
+    {
+      "name": "Surfing",
+      "popularity": "Very High",
+      "best_regions": ["Tamarindo", "Santa Teresa", "Dominical", "Pavones", "Puerto Viejo (Salsa Brava)"],
+      "best_months": ["November", "December", "January", "February", "March (Pacific)", "April-October (South Pacific and Caribbean)"],
+      "skill_levels": ["Beginner", "Intermediate", "Advanced"],
+      "notes": "Costa Rica has two coasts with surf year-round. Pacific is most consistent Nov-Mar; South Pacific and Caribbean peak Apr-Oct. Board rentals $15-25/day. Lessons $40-70."
+    },
+    {
+      "name": "Zip-lining / Canopy Tours",
+      "popularity": "Very High",
+      "best_regions": ["Monteverde", "Arenal", "Manuel Antonio", "Jacó"],
+      "best_months": ["Year-round"],
+      "skill_levels": ["Beginner"],
+      "notes": "Costa Rica invented the zip-line canopy tour concept. Monteverde's Original Canopy Tour is historic. Prices $50-100 for tours. Superman zip-lines are thrillingly fast."
+    },
+    {
+      "name": "Whitewater Rafting",
+      "popularity": "High",
+      "best_regions": ["Pacuare River", "Reventazón River", "Sarapiquí River"],
+      "best_months": ["May", "June", "July", "August", "September", "October"],
+      "skill_levels": ["Beginner", "Intermediate", "Advanced"],
+      "notes": "Pacuare is world-class Class III-IV. Multi-day Pacuare trips with jungle lodge accommodation are exceptional. $80-120 for day trips, $300+ for multi-day."
+    },
+    {
+      "name": "Wildlife Watching",
+      "popularity": "Very High",
+      "best_regions": ["Corcovado", "Tortuguero", "Monteverde", "Manuel Antonio", "Cahuita"],
+      "best_months": ["Year-round; December-April best visibility in national parks"],
+      "skill_levels": ["Beginner", "Intermediate", "Expert"],
+      "notes": "Costa Rica has 5% of world's biodiversity. Hire a guide — they find what you will miss. Sloths, monkeys, toucans, and macaws are commonly spotted. Jaguar sightings rare but possible in Corcovado."
+    },
+    {
+      "name": "Birdwatching",
+      "popularity": "High",
+      "best_regions": ["Monteverde", "Corcovado", "La Selva", "Carara", "Caño Negro"],
+      "best_months": ["December", "January", "February", "March", "April"],
+      "skill_levels": ["Beginner", "Intermediate", "Expert"],
+      "notes": "900+ bird species recorded in Costa Rica. Resplendent quetzal is the most sought-after species. Carara for scarlet macaws; Caño Negro for waterbirds. World-class birding destination."
+    },
+    {
+      "name": "Hot Springs",
+      "popularity": "High",
+      "best_regions": ["La Fortuna (Arenal)", "Rincón de la Vieja"],
+      "best_months": ["Year-round"],
+      "skill_levels": ["Beginner"],
+      "notes": "Arenal area has many hot spring resorts at various price points. Free option: hot springs in La Fortuna river. Rincón de la Vieja has natural mud pools and volcanic springs."
+    },
+    {
+      "name": "Sea Turtle Watching",
+      "popularity": "High",
+      "best_regions": ["Tortuguero", "Playa Grande", "Ostional"],
+      "best_months": ["July", "August", "September", "October (green turtle at Tortuguero)", "October-February (leatherback at Playa Grande)", "July-December (olive ridley at Ostional)"],
+      "skill_levels": ["Beginner"],
+      "notes": "Night tours with licensed guides only. Do not use white flashlights. Ostional is famous for massive olive ridley arribadas (mass nesting events)."
+    },
+    {
+      "name": "Kayaking / Stand-up Paddleboarding",
+      "popularity": "Moderate",
+      "best_regions": ["Laguna de Arenal", "Gulf of Papagayo", "Río Sarapiquí", "Manuel Antonio"],
+      "best_months": ["December", "January", "February", "March"],
+      "skill_levels": ["Beginner", "Intermediate"],
+      "notes": "Sea kayaking in Gulf of Nicoya and Papagayo. River kayaking on Sarapiquí. SUP popular at Tamarindo and Manuel Antonio. Laguna de Arenal is top windsurfing and kitesurfing destination."
+    }
+  ],
+  "trip_styles": {
+    "good_for_backpacking": true,
+    "good_for_luxury": true,
+    "good_for_families": true,
+    "good_for_couples": true,
+    "good_for_solo_travel": true,
+    "good_for_digital_nomads": true,
+    "good_for_adventure_travel": true,
+    "good_for_food_travel": true,
+    "good_for_road_trips": true,
+    "good_for_short_trips": true,
+    "good_for_long_stays": true
+  },
+  "destinations": {
+    "top_cities": ["San José", "Liberia", "Limón"],
+    "top_towns": ["La Fortuna", "Monteverde", "Tamarindo", "Puerto Viejo de Talamanca", "Jacó", "Dominical", "Drake Bay", "Puerto Jiménez"],
+    "top_regions": ["Guanacaste (Pacific dry coast)", "Nicoya Peninsula", "Osa Peninsula", "Caribbean coast", "Central Valley", "South Pacific"],
+    "top_islands": ["Isla del Coco (remote dive destination)", "Isla Tortuga (day trip from Puntarenas)", "Caño Island (snorkeling/diving near Corcovado)"],
+    "sample_itineraries": {
+      "one_week": "San José (1 day) → La Fortuna/Arenal (2 days) → Monteverde (2 days) → Tamarindo surf (2 days)",
+      "two_week": "San José (1 day) → La Fortuna (2 days) → Monteverde (2 days) → Santa Teresa surf (3 days) → Manuel Antonio (2 days) → Puerto Viejo Caribbean (3 days) → San José (1 day)",
+      "classic_route": "San José → Arenal → Monteverde → Nicoya Peninsula (Tamarindo or Santa Teresa) → Manuel Antonio",
+      "offbeat_route": "San José → Sarapiquí jungle → Tortuguero canals → Puerto Viejo Caribbean → Cahuita → Chirripó trek → Osa Peninsula"
+    }
+  },
+  "practical_info": {
+    "arrival_tips": "SJO airport is 20 minutes from San José center. Use official orange airport taxis or pre-book a shuttle. Uber works from SJO. Many tourists skip San José entirely and head straight to their destination — shuttles connect directly to major spots.",
+    "airport_scam_notes": "Only use authorized taxis from the official taxi stand inside arrivals. Never accept rides from touts approaching you in the terminal. Uber is now allowed at SJO.",
+    "local_sim_where_to_buy": "Kolbi (ICE) SIMs available at the airport and throughout the country. Bring passport. $10-15 for a data plan. Works reliably in most tourist areas.",
+    "money_exchange_notes": "USD widely accepted in tourist areas — often preferable to colones. Change will be given in colones. Use ATMs for best exchange rates. Avoid airport exchange booths (poor rates).",
+    "language_helpful_phrases": {
+      "hello": "Hola / Pura vida",
+      "thank_you": "Gracias / Pura vida",
+      "how_much": "¿Cuánto cuesta?",
+      "where_is": "¿Dónde está...?",
+      "i_dont_speak_spanish": "No hablo español",
+      "the_bill_please": "La cuenta, por favor",
+      "help": "¡Ayuda!",
+      "cheers": "¡Salud!",
+      "pure_life": "Pura vida"
+    },
+    "offline_maps_recommended": ["Maps.me", "Google Maps (offline)", "iOverlander (for remote areas)"],
+    "apps_useful_locally": ["Uber (ride-hailing)", "Waze (navigation — better than Google Maps for CR roads)", "WhatsApp (essential)", "iNaturalist (wildlife ID)", "eBird (birdwatching)"]
+  },
+  "laws": {
+    "drug_laws_strictness": "Moderate — personal use decriminalized in small amounts but possession can still result in arrest. Trafficking carries severe penalties. Do not purchase from street dealers.",
+    "alcohol_laws": "Legal age 18. No alcohol sales on Good Friday (Viernes Santo). Public intoxication can result in fines.",
+    "drone_rules": "Must register with DGAC (Dirección General de Aviación Civil). Prohibited over national parks, near airports, over populated areas. 120m altitude limit. Permit required for commercial use.",
+    "wild_camping_rules": "Not permitted in national parks. Allowed on private land with owner permission. Designated camping areas exist at some parks (Chirripó, Corcovado).",
+    "protected_area_rules": "National park entry fees apply ($18-20 for most parks). Corcovado requires licensed guide. No collecting plants, animals, shells, or coral — strict enforcement. Stay on marked trails.",
+    "fishing_license_required": true,
+    "photography_restricted_sites": ["Military installations (no military in CR)", "Some indigenous Bribri and Cabécar communities"],
+    "lgbtq_legal_status": "Same-sex marriage legal since May 2020. Strong anti-discrimination protections. Very LGBTQ-friendly by regional standards.",
+    "marijuana_legality": "Illegal — personal use decriminalized in very small amounts but not legal. Do not buy or use in public.",
+    "prescription_medication_rules": "Bring prescriptions in original packaging with doctor's letter in English and Spanish. Many medications available OTC in pharmacies."
+  },
+  "family_travel": {
+    "kid_friendly": true,
+    "stroller_friendly": false,
+    "car_seat_rules": "Required by law for children under 12 or under 1.45m. Bring your own — rental availability unreliable.",
+    "family_activities": [
+      "Manuel Antonio National Park — monkeys, sloths, beaches",
+      "Arenal hot springs and hanging bridges",
+      "La Paz Waterfall Gardens — waterfalls, wildlife sanctuary, butterfly garden",
+      "Tortuguero sea turtle tours (July-October)",
+      "Monteverde zip-lining and cloud forest",
+      "Croc Bridge at Tárcoles — see massive crocodiles",
+      "Butterfly farms and frog gardens in Monteverde"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Limited — uneven terrain, unpaved roads, and jungle environments make accessibility difficult in most natural areas. Some Manuel Antonio trails are paved. Urban areas improving slowly.",
+    "accessible_transport": "Limited wheelchair-accessible public buses. Private shuttles and rental cars with hand controls available on request. Advanced booking essential.",
+    "accessible_attractions": ["Manuel Antonio (some paved trails)", "La Paz Waterfall Gardens (partial)", "San José museums", "Tabacón Hot Springs (some areas)"]
+  },
+  "gear": {
+    "bring_wetsuit": false,
+    "bring_hiking_boots": true,
+    "bring_layers": true,
+    "bring_bug_spray": true,
+    "bring_sunscreen": true,
+    "cold_weather_gear_needed": false,
+    "rental_gear_easy_to_find": true,
+    "outdoor_gear_shops": [
+      "Loco's Surf Shop (Tamarindo and multiple locations)",
+      "Columbia Sportswear (San José malls)",
+      "Decathlon (San José — Escazú)"
+    ]
+  }
+}

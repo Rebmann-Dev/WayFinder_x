@@ -1,0 +1,791 @@
+{
+  "meta": {
+    "last_updated": "2026-04-17",
+    "confidence_score": 0.89,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "WayFinder internal hike/food/history data",
+      "WayFinder safety submodels",
+      "Belize Tourism Board"
+    ],
+    "notes": "Belize is the only English-speaking country in Central America — a unique blend of Caribbean, Maya, Garifuna, Creole, and Mestizo cultures. World-class diving and snorkeling on the Mesoamerican Barrier Reef (second largest in the world), Maya ruins, and jungle. Small country — easy to cover in 1-2 weeks. Safety is location-dependent: tourist areas are safe, parts of Belize City require care."
+  },
+  "identity": {
+    "name": "Belize",
+    "official_name": "Belize",
+    "code": "BZ",
+    "iso3": "BLZ",
+    "region": "Americas",
+    "subregion": "Central America",
+    "capital": "Belmopan",
+    "largest_city": "Belize City",
+    "flag_emoji": "🇧🇿",
+    "timezones": ["UTC-06:00"],
+    "driving_side": "right",
+    "country_calling_code": "+501",
+    "internet_tld": ".bz"
+  },
+  "language_and_money": {
+    "languages": ["English (official)", "Belizean Creole", "Spanish", "Garifuna", "Maya (Yucatec, Mopan, Q'eqchi')", "Plautdietsch (Mennonite)"],
+    "primary_language": "English",
+    "english_proficiency": "Very high — English is the official language and widely spoken throughout. Belizean Creole is the lingua franca. No language barrier for English speakers.",
+    "currency": "BZD",
+    "currency_name": "Belize Dollar",
+    "currency_symbol": "BZ$",
+    "cash_vs_card": "USD widely accepted everywhere at a fixed 2:1 rate (BZ$2 = US$1). Cards accepted at most hotels, dive shops, and restaurants on the cayes and in San Ignacio. Cash essential in rural areas, villages, and smaller establishments. Always confirm whether prices are in BZD or USD.",
+    "typical_payment_methods": ["USD cash (universally accepted)", "BZD cash", "Visa", "Mastercard", "American Express (major hotels)"],
+    "atm_availability": "Available in Belize City, San Ignacio, Placencia, and Ambergris Caye (San Pedro). Limited on Caye Caulker and Tobacco Caye. Very scarce in remote jungle and southern areas. ATMs dispense BZD. Withdraw sufficient cash before heading to cayes or jungle lodges.",
+    "tipping_culture": "Expected in tourist areas — US/Caribbean norms apply. 10-15% in restaurants, $5-10/day for dive guides, $10-15/day for tour guides. Lodges often add service charge.",
+    "tipping_etiquette": "10-15% in restaurants. $5-10/dive for dive masters. $10-15/day for guides. $2-3/bag for hotel porters. Some lodges include 10% service charge — check bill."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 30 days (extendable to 6 months)",
+      "visa_type": "Tourist stamp on arrival",
+      "visa_free_days": 30,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for the duration of stay plus 6 months",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": true,
+    "tourist_entry_fee": null,
+    "departure_tax": "BZ$37.50 (approximately US$18.75) — sometimes included in airline ticket",
+    "conservation_fee": "BZ$3.75 per day (US$1.88) — paid on departure, max BZ$75 total",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Standard restrictions on narcotics, firearms, and agricultural products. Pre-Columbian artifacts cannot be exported. Declaration required for cash over US$10,000.",
+    "restricted_items": ["Narcotics", "Firearms (without permit)", "Pre-Columbian artifacts", "Fresh produce without permit", "Cash over $10,000 without declaration"],
+    "duty_free_allowances": "200 cigarettes or 50 cigars, 1 liter of alcohol, gifts up to BZ$400 value",
+    "extension_info": "30-day extensions available from Belize Immigration for BZ$100. Can extend up to 6 months total."
+  },
+  "health": {
+    "recommended_vaccines": ["Hepatitis A", "Typhoid", "Hepatitis B", "Rabies (jungle/cave visits)", "Tetanus-Diphtheria"],
+    "required_vaccines": [],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Low to moderate — present in rural and jungle areas, particularly southern Belize (Toledo district), Cayo district jungle areas, and some northern districts. Not a risk on the cayes or in Belize City.",
+    "malaria_regions": ["Toledo district (Punta Gorda area)", "Remote Cayo district jungle", "Orange Walk district (remote areas)", "Corozal district (some rural areas)"],
+    "malaria_prophylaxis_info": "Recommended if spending significant time in Toledo district (southern jungle) or remote Cayo. Not needed for Ambergris Caye, Caye Caulker, or Belize City. Atovaquone/proguanil or doxycycline most commonly prescribed.",
+    "dengue_risk": "Moderate — dengue present nationwide. More common in urban areas and lowlands. Use DEET repellent, especially during rainy season.",
+    "altitude_sickness_risk": "None — Belize is entirely lowland. Highest point (Doyle's Delight) is only 1,124m.",
+    "food_water_safety": "Tap water not recommended for drinking outside established hotels. Always use bottled or purified water. Food safety generally good in tourist areas — Belize has higher food hygiene standards than most Central American neighbors. Exercise normal caution with street food.",
+    "air_quality_concerns": "Generally very good — low industrial activity. Seasonal smoke from agricultural burning in northern Belize (dry season). Belize City traffic minimal.",
+    "common_travel_illnesses": ["Traveler's diarrhea", "Dengue fever", "Sunburn", "Insect bites", "Seasickness (boat travel)"],
+    "pharmacy_access": "Available in Belize City, San Ignacio, San Pedro (Ambergris Caye), and Placencia. Limited on smaller cayes and in remote areas. Basic medications available OTC. Bring sufficient prescription medications.",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Limited — Karl Heusner Memorial Hospital in Belize City offers basic care. Private clinics in Belize City and San Pedro. Very limited in rural and southern areas. Serious conditions require medical evacuation to the US or Mexico. Hyperbaric chamber on Ambergris Caye for dive emergencies.",
+    "emergency_medical_number": "911"
+  },
+  "safety": {
+    "travel_advisory_level_us": 2,
+    "travel_advisory_level_label": "Exercise Increased Caution",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "Belize City has significant gang-related violent crime",
+      "Parts of Belize City among the most dangerous in Central America per capita",
+      "Tourist areas (cayes, San Ignacio, Placencia) are genuinely safe",
+      "Petty theft in tourist crowds",
+      "Drug trafficking through the country",
+      "Hurricane risk on cayes (Category 4-5 storms historically devastating)"
+    ],
+    "crime_risk": "Highly location-dependent — Belize City requires significant care (do not wander, use taxis, avoid southern neighborhoods). All major tourist destinations (Ambergris Caye, Caye Caulker, San Ignacio, Placencia, Hopkins) are safe and well-traveled. The vast majority of visitors have no safety issues.",
+    "scam_risk": "Low — occasional overcharging, inflated taxi fares in Belize City",
+    "transport_safety": "Water taxis between cayes safe and efficient. Domestic flights recommended over road travel for Belize City connections. Road travel between tourist towns (San Ignacio, Placencia, Hopkins) safe during daylight. Avoid Belize City street travel on foot.",
+    "solo_female_travel_notes": "Cayes and San Ignacio very manageable solo — English-speaking country makes communication easy. Belize City requires same precautions as any high-crime city. Beach towns like Hopkins and Placencia have relaxed, safe atmospheres. Night safety standard — stay in well-lit tourist areas.",
+    "lgbtq_notes": "Belize decriminalized same-sex relationships in 2019 (Supreme Court ruling). No same-sex marriage recognition. Social attitudes mixed — more conservative in rural and Mennonite communities, more tolerant in tourist areas and among younger urban Belizeans. Discretion recommended outside San Pedro and tourist-facing areas. No dedicated LGBTQ+ venues but generally no hostility in tourist areas.",
+    "night_safety": "Cayes (San Pedro, Caye Caulker) — safe at night in main town areas. San Ignacio — safe in downtown area at night. Placencia and Hopkins — safe at night. Belize City — exercise extreme caution at night, stay in hotel or use taxis only.",
+    "safe_areas": [
+      "Ambergris Caye (San Pedro town)",
+      "Caye Caulker (the Split and main village)",
+      "San Ignacio town (Cayo district)",
+      "Placencia village",
+      "Hopkins village",
+      "Punta Gorda town",
+      "Dangriga town center"
+    ],
+    "areas_to_avoid": [
+      "Belize City — south side (Mesopotamia, Lake Independence, Port Loyola) extremely dangerous",
+      "Belize City — most areas on foot, especially at night",
+      "Remote roads at night",
+      "Isolated beach areas at night"
+    ],
+    "natural_disaster_risks": [
+      "Hurricanes — cayes extremely vulnerable (Category 4 Dean 2007, Category 5 near-misses; 1961 Hurricane Hattie devastated Belize City)",
+      "Flooding — low-lying coastal and river areas",
+      "Earthquakes — moderate seismic activity",
+      "Storm surge — cayes have very little elevation above sea level"
+    ],
+    "political_stability_notes": "Belize is one of the most politically stable countries in Central America — parliamentary democracy, peaceful transfers of power, and British Commonwealth membership. No significant political instability for tourists. Territorial dispute with Guatemala ongoing but no practical tourist impact.",
+    "common_scams": [
+      "Taxi overcharging in Belize City — always confirm fare before getting in",
+      "Unofficial tour guides at ruins offering cheaper prices but poor service",
+      "Drug offers on Caye Caulker — be aware possession is illegal",
+      "Water taxi 'package deals' that include unnecessary add-ons"
+    ],
+    "police_reliability": "Generally reliable in tourist areas — tourist police in San Pedro and major attractions. Belize Police Department responsive but under-resourced. Report incidents to tourist police or your embassy.",
+    "emergency_numbers": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911",
+      "general_emergency": "911",
+      "coast_guard": "224-5530"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Belize City",
+      "us_embassy_phone": "+501-822-4011",
+      "us_embassy_website": "https://bz.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "November to April (dry season) — best diving visibility, clearest water, least rain. February-April driest and sunniest.",
+    "climate_zones": [
+      "Northern lowlands (Corozal, Orange Walk) — subtropical, distinct dry season, sugarcane country",
+      "Belize City and cayes (Caribbean coast) — warm, humid, trade winds, distinct seasons",
+      "Cayo district (interior highlands) — slightly cooler, jungle, distinct wet/dry seasons",
+      "Southern Belize (Toledo, Stann Creek) — wettest area in Belize, near year-round rain, lush rainforest",
+      "Cayes and atolls — warm year-round, 25-30°C, most exposed to hurricanes"
+    ],
+    "dry_season": "November to April (north and central); southern Belize wetter year-round",
+    "rainy_season": "June to November (peak July-October)",
+    "hurricane_typhoon_season": "June to November — Belize has direct Caribbean hurricane exposure. Cayes are extremely vulnerable — Hurricane Hattie (1961) obliterated Belize City, prompting move of capital to Belmopan.",
+    "dive_season": "Year-round — visibility best November to June. July-October can have reduced visibility after rains. Great Blue Hole best November-April.",
+    "trekking_best_months": ["November", "December", "January", "February", "March", "April"],
+    "average_temp_by_month": {
+      "Belize City / Cayes": "24-30°C year-round",
+      "San Ignacio (Cayo)": "20-32°C year-round (cooler at night)",
+      "Placencia": "24-31°C year-round",
+      "Punta Gorda (south)": "23-30°C year-round (wettest)"
+    },
+    "daylight_hours_by_season": "Near equator — approximately 11.5-12.5 hours year-round"
+  },
+  "transport": {
+    "major_airports": [
+      "Philip S. W. Goldson International Airport (BZE) — Belize City (only international airport, 16km from city)",
+      "Municipal Airstrip (TZA) — Belize City (domestic flights, closer to city)",
+      "San Pedro Airport (SPR) — Ambergris Caye (domestic)",
+      "Caye Caulker Airport (CUK) — domestic",
+      "Placencia Airport (PLJ) — domestic",
+      "Punta Gorda Airport (PND) — domestic"
+    ],
+    "main_airlines": ["American Airlines", "United", "Southwest (seasonal)", "Delta (seasonal)", "Copa Airlines", "Tropic Air (domestic hub)", "Maya Island Air (domestic hub)"],
+    "airport_to_city_options": [
+      "Taxi to Belize City ($25-35 USD, 20-30 min)",
+      "Water taxi connection to cayes via Marine Terminal (most popular option for caye-bound travelers)",
+      "Domestic flight from BZE to San Pedro or Placencia (15-20 min, $80-120 USD — highly recommended)"
+    ],
+    "public_transit_quality": "Buses connect main towns on the Western and Southern highways — cheap and functional but slow. Not recommended for tourists with luggage or on tight schedules. No public transport on cayes.",
+    "intercity_bus_quality": "National Transport Lines and James Bus serve main routes (Belize City-San Ignacio, Belize City-Dangriga-Punta Gorda) — functional, air-conditioned coaches. Cheap (BZ$5-20) but slow. Reliable for the main highway routes.",
+    "train_network_quality": "No passenger train service.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": true,
+    "road_conditions": "Western Highway (Belize City to San Ignacio) well-maintained. Southern Highway (Belmopan to Punta Gorda) paved but rough in sections. Hummingbird Highway (Belmopan to Dangriga) — some of the most scenic road in Belize, reasonably maintained. Many jungle lodge and ruin access roads unpaved.",
+    "four_x_four_needed_regions": [
+      "Toledo district (remote Maya villages, rainy season)",
+      "Mountain Pine Ridge (rainy season)",
+      "Remote jungle lodge access roads",
+      "Rio Bravo Conservation Area"
+    ],
+    "ride_hailing_apps": [],
+    "taxi_safety_notes": "No ride-hailing apps in Belize. Taxis are unmetered — always confirm fare before getting in. Belize City taxis are safe but overcharge tourists. Green license plates indicate licensed taxis. Water taxis (Belize City to cayes) are safe, efficient, and the primary transport for caye visitors.",
+    "ferry_routes": [
+      "Belize City (Marine Terminal) to Ambergris Caye / San Pedro (1.5 hrs, BZ$20-35 — San Pedro Belize Express, Caye Caulker Water Taxi)",
+      "Belize City to Caye Caulker (45 min, BZ$15-20)",
+      "Caye Caulker to Ambergris Caye (30 min)",
+      "Punta Gorda to Puerto Barrios, Guatemala (1.5 hrs — International ferry)",
+      "Punta Gorda to Livingston, Guatemala (irregular)",
+      "Inter-caye water taxis throughout the cayes"
+    ],
+    "border_crossing_notes": "Main crossings: Santa Elena/Melchor de Mencos (Guatemala — Western Border, near San Ignacio); Chetumal/Subteniente López (Mexico — Northern Border, Corozal area). Belize is NOT part of CA-4 — separate entry stamp. Guatemala-Belize crossing is the most used by tourists (San Ignacio to Flores/Tikal route)."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$50-80/day (Belize is notably more expensive than neighbors)",
+    "daily_budget_midrange": "$100-180/day",
+    "daily_budget_comfort": "$200-400/day",
+    "hostel_avg": "$15-25/night",
+    "hotel_avg": "$80-200/night",
+    "meal_avg": "$5-12 (local rice and beans $5-8, restaurant $15-30)",
+    "coffee_avg": "$2-4",
+    "beer_avg": "$3-5 (Belikin)",
+    "local_transport_avg": "$5-20 (water taxi BZ$15-35)",
+    "sim_card_avg": "$10-20 for 3-5GB",
+    "coworking_day_pass_avg": "$15-25",
+    "dive_certification_avg": "$350-500 (more expensive than Honduras but world-class reef)",
+    "fun_dive_avg": "$40-70/dive (2-tank dives $80-130)",
+    "value_for_money": "Below average for the region — Belize is the most expensive country in Central America. USD economy, English-speaking, and world-class dive sites mean prices approach Caribbean island levels. Budget travelers find it tough. Caye Caulker is notably cheaper than Ambergris Caye. Inland Belize (Cayo, Hopkins) is much better value."
+  },
+  "connectivity": {
+    "sim_card_providers": ["Belize Telemedia Limited (BTL / Digicell)", "Smart (Speednet)"],
+    "esim_available": false,
+    "mobile_data_quality": "Decent 4G in Belize City, San Pedro, and Caye Caulker. Moderate in San Ignacio and Placencia. Poor in remote jungle areas (Mountain Pine Ridge, Toledo), small cayes, and offshore atolls.",
+    "wifi_quality": "Good in San Pedro and most tourist-facing hotels, dive shops, and restaurants. Variable speeds. Caye Caulker and San Ignacio have good WiFi in hostels and cafes. Very limited in remote jungle lodges and small cayes.",
+    "coworking_available": false,
+    "best_remote_work_cities": ["San Pedro (Ambergris Caye) — best connectivity and infrastructure", "San Ignacio — growing nomad presence, good WiFi in cafes"],
+    "power_outlet_types": ["A", "B", "G (British-style — legacy)"],
+    "voltage": "110V/220V, 60Hz",
+    "plug_adapter_needed_for_us": false,
+    "power_reliability": "Reliable in Belize City and San Pedro. Occasional outages on smaller cayes and in jungle areas. Bring power bank for remote lodges. Some jungle ecolodges use solar — power hours may be limited."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Ambergris Caye (San Pedro town) — most developed caye, best dive infrastructure, good restaurants and nightlife, wide price range",
+      "Caye Caulker — backpacker favorite, relaxed 'go slow' vibe, cheaper than Ambergris, smaller and more intimate",
+      "San Ignacio (Cayo district) — base for Maya ruins (Caracol, Xunantunich), jungle lodges, cave tubing, and the western highlands",
+      "Placencia — southern beach town, mix of budget and upscale, laid-back Caribbean vibe, good whale shark season",
+      "Hopkins — small Garifuna village on the southern coast, authentic culture, less touristy than Placencia, good budget options",
+      "Punta Gorda — base for Toledo district, deep southern Belize, Maya village stays, very off-the-beaten-path",
+      "Turneffe Atoll / Lighthouse Reef — live-aboard diving and exclusive island resorts near the Great Blue Hole",
+      "Mountain Pine Ridge (Cayo) — jungle lodges, waterfalls, cool highland climate — some of Belize's finest ecolodges"
+    ],
+    "budget_areas": ["Caye Caulker", "San Ignacio", "Hopkins", "Punta Gorda"],
+    "family_friendly_areas": ["Ambergris Caye", "San Ignacio (Cayo — cave tubing, ziplining)", "Placencia"],
+    "nightlife_areas": ["San Pedro (Ambergris Caye) — Fido's, Jaguar's Temple, Secret Beach", "Caye Caulker (the Split)"],
+    "eco_lodges_available": true,
+    "peak_booking_season": "December to April; Easter week; Lobster Fest (San Pedro — June) and other festivals",
+    "accommodation_notes": "Ambergris Caye is Belize's most visited destination — wide range from backpacker hostels to luxury resorts. Book well ahead December-April. Caye Caulker is the budget alternative — smaller, more relaxed, 'go slow' is the official motto. San Ignacio is the best value hub for jungle and ruins. Mountain Pine Ridge jungle lodges (Blancaneaux Lodge, Hidden Valley Inn) are world-class ecolodges."
+  },
+  "culture": {
+    "local_customs": [
+      "Belize is uniquely multicultural — Creole, Garifuna, Maya, Mestizo, Mennonite, and expat communities each with distinct culture",
+      "Belizean Creole is warm, colorful, and musical — learning a few phrases is welcomed",
+      "'Go slow' is the unofficial motto of Caye Caulker — patience and relaxation are expected",
+      "Garifuna culture (Hopkins, Dangriga) is deeply proud — drumming, punta music, and cassava-based food are central",
+      "Mennonite communities (Spanish Lookout, Shipyard) are conservative — dress modestly if visiting, no photography without permission",
+      "Maya communities in Toledo prefer respectful, quiet visitors — remove shoes before entering homes"
+    ],
+    "dress_expectations": "Casual beach and resort wear throughout. Modest clothing in villages, churches, and Mennonite communities. Swimwear only at beaches and pool areas. Light clothing year-round on cayes.",
+    "religious_sensitivity": "Mix of Christianity (Catholic, Protestant, evangelical), Maya spiritualism, and Garifuna religious traditions. Religion generally low-key for tourists. Garifuna Dugu ceremonies are sacred — attend only if invited.",
+    "social_norms": [
+      "Belizeans are warm and direct — English makes interaction easy and natural",
+      "The laid-back Caribbean pace is genuine — rushing is culturally jarring",
+      "Belizean pride in their reef, jungles, and multicultural identity is genuine — engage with enthusiasm",
+      "Garifuna pride is fierce — learn about their history (survivors of British colonial resistance on St. Vincent)",
+      "Lobster is a major cultural and economic touchstone — lobster season (July 15 to February 28) is celebrated"
+    ],
+    "greeting_style": "Informal and warm — handshake or nod, 'What's up?' or 'Alright?' in Creole. First names used quickly. Very friendly to English-speaking tourists.",
+    "public_behavior_notes": "PDA acceptable in tourist areas. Modest in villages and traditional communities. Keep valuables low-profile in Belize City.",
+    "photography_etiquette": "Ask permission in indigenous Maya villages and Garifuna communities. Mennonite communities generally decline photography. Ruins and natural sites freely photographable. Underwater photography — check dive operator rules.",
+    "bargaining_expected": false,
+    "important_holidays": [
+      "Garifuna Settlement Day (November 19) — national holiday celebrating Garifuna arrival in Belize, huge celebrations in Dangriga and Hopkins with drumming and punta",
+      "Independence Day (September 21) — major national celebration",
+      "Baron Bliss Day (March 9) — honors Henry Edward Ernest Victor Bliss, British fisherman who left his fortune to Belize",
+      "Columbus Day / Pan-American Day (October 12)",
+      "Lobster Fest (San Pedro, Placencia — June/July) — celebration of lobster season opening",
+      "Easter / Semana Santa",
+      "Christmas (December 24-25)"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Coral collection is illegal — even dead coral or shells. Heavy fines.",
+      "Drone permits required — Civil Aviation Department authorization needed",
+      "Spearfishing restricted — prohibited in many areas, especially near the reef. Check local rules.",
+      "Pre-Columbian artifact export completely prohibited",
+      "Lobster season strictly enforced — fishing or purchasing out of season illegal (March 1 to July 14)",
+      "Conch harvesting regulated — check current rules",
+      "Marijuana — despite Caribbean vibes, possession is illegal. Decriminalization of small amounts proposed but not yet in effect as of 2026."
+    ]
+  },
+  "food": {
+    "signature_dishes": [
+      "Rice and beans — the national staple; red kidney beans cooked with coconut milk and served with rice; appears at nearly every Belizean meal as the base",
+      "Stew chicken — slow-cooked chicken in recado (achiote) sauce; served with rice and beans; the quintessential Belizean comfort meal",
+      "Hudut — Garifuna dish of fish (snapper or barracuda) in a rich coconut broth with plantain mash (fufu); one of the most distinctive dishes in Central America",
+      "Sere — another Garifuna fish and coconut soup, lighter than hudut",
+      "Garnaches — fried corn tortillas topped with beans, cabbage, and cheese; street snack in northern Belize",
+      "Panades — fried corn masa pockets stuffed with fish or beans; popular street food in Belize City",
+      "Johnny cake — soft, slightly sweet baked bread rolls; the Belizean breakfast staple, served with eggs and beans",
+      "Fry jacks — deep-fried dough puffs served with eggs, beans, and cheese for breakfast; beloved national breakfast item",
+      "Conch fritters — battered and fried queen conch; quintessential caye snack",
+      "Conch ceviche — raw conch marinated in lime, cilantro, onion, and chile; best on the cayes",
+      "Lobster — the prized seasonal delicacy (July 15 to February 28); grilled, in pasta, in burgers, or thermidor at upscale restaurants",
+      "Gibnut (paca) — large rodent considered a delicacy; gained fame as 'royal rat' when served to Queen Elizabeth II in 1985"
+    ],
+    "street_food_safety": "Generally safe — panades, garnaches, and Johnny cakes from busy street vendors are reliable. High standards compared to neighbors. Caye Caulker and San Pedro have excellent street food scenes.",
+    "vegetarian_friendliness": "Moderate — rice and beans is naturally vegetarian. Bean-based dishes widespread. Growing vegetarian options in San Pedro and San Ignacio catering to international travelers. Limited in traditional Garifuna and Maya villages.",
+    "vegan_friendliness": "Limited but improving — coconut-based Garifuna food can be vegan-friendly. Dedicated vegan options growing in San Pedro. Challenging in rural areas.",
+    "must_try_drinks": [
+      "Belikin beer — the only beer brewed in Belize, ubiquitous and cold; the national drink in every sense",
+      "Belikin Stout — darker, stronger version",
+      "One Barrel rum — Belizean rum, widely consumed locally",
+      "Rum punch — fruit juice and rum; caye bar staple",
+      "Seaweed shake — ground seaweed blended with milk, vanilla, cinnamon, and nutmeg; surprisingly delicious Belizean health drink",
+      "Horchata — rice and cinnamon cold drink, more Latin influence in western Belize",
+      "Fresh coconut water — from green coconuts on the cayes",
+      "Cashew wine — fermented cashew fruit; seasonal specialty in Cayo district",
+      "Soursop juice — fresh tropical fruit juice",
+      "Rum cream (One Barrel) — local cream liqueur"
+    ],
+    "regional_specialties": [
+      "Northern Belize (Corozal, Orange Walk) — Mestizo-influenced; tamales, escabeche (sour onion chicken soup), relleno negro (black turkey stew with charred chile)",
+      "Cayes (San Pedro, Caye Caulker) — fresh seafood dominant; lobster, conch, snapper, ceviche, rum-based cocktails",
+      "Garifuna south (Hopkins, Dangriga) — hudut, sere, cassava bread, coconut-heavy cuisine; some of the most distinctive food in the country",
+      "Cayo district (San Ignacio) — Maya and Mestizo influenced; mountain chicken (frog legs — now protected), pibil (pit-roasted pork), tamales",
+      "Toledo district (Punta Gorda) — Q'eqchi' and Mopan Maya traditional foods; corn-based dishes, caldo (broth), wild game"
+    ],
+    "drinking_water_notes": "Do not drink tap water. Bottled water widely available throughout tourist areas. Many hotels provide filtered water. On remote cayes and jungle lodges — always confirm water source.",
+    "alcohol_rules": "Legal drinking age 18. No strict public drinking laws. Alcohol widely available."
+  },
+  "outdoors": {
+    "top_national_parks": [
+      "Great Blue Hole / Lighthouse Reef Atoll — UNESCO World Heritage (part of Belize Barrier Reef) — world-famous 300m-wide, 125m-deep marine sinkhole",
+      "Belize Barrier Reef Reserve System — UNESCO World Heritage — second largest barrier reef in the world",
+      "Caracol Archaeological Reserve — largest Maya site in Belize, deep in the jungle",
+      "Cockscomb Basin Wildlife Sanctuary — world's first jaguar preserve",
+      "Blue Hole National Park (inland) — turquoise limestone pool in the jungle (different from the marine Great Blue Hole)",
+      "Five Blues Lake National Park — color-shifting lake in Cayo",
+      "Half Moon Caye Natural Monument — UNESCO, nesting site for red-footed booby",
+      "Crooked Tree Wildlife Sanctuary — lagoon birdwatching, jabiru stork",
+      "Rio Bravo Conservation Area — 100,000+ hectares of pristine jungle",
+      "Shipstern Nature Reserve (Corozal) — tropical forest and lagoon",
+      "Glover's Reef Atoll — UNESCO, remote coral atoll, excellent diving"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "ATM Cave (Actun Tunichil Muknal)",
+        "difficulty": "Moderate",
+        "duration": "Full day (8-10 hours)",
+        "region": "Cayo district (near San Ignacio)",
+        "description": "One of the most extraordinary archaeological experiences in the world — swim and hike through an active river cave system to reach a Maya ceremonial chamber filled with intact skeletal remains and ceramic offerings left 1,000-1,500 years ago. The iconic 'Crystal Maiden' calcite-encrusted skeleton lies undisturbed exactly where Maya priests left her. National Geographic named it one of the Top 10 Sacred Sites on Earth.",
+        "best_months": ["November", "December", "January", "February", "March", "April"],
+        "elevation_m": 300,
+        "notes": "Access from San Ignacio, 45 min drive + 45 min jungle hike. Licensed guide mandatory — cannot visit independently. Entry fee $25 USD. Photography now prohibited inside the cave (cameras banned after tourist accidentally dropped camera on a skull). Cameras not allowed at all — experience it fully present. Involves swimming in river, climbing through passages, and wading. Extraordinary."
+      },
+      {
+        "name": "Caracol Maya Ruins",
+        "difficulty": "Easy",
+        "duration": "Full day",
+        "region": "Cayo district (Mountain Pine Ridge)",
+        "description": "Explore the largest Maya archaeological site in Belize — Caracol at its peak had a population larger than modern Belize City and dominated Tikal in the Maya Classic period. Caana (Sky Palace) is the tallest man-made structure in Belize at 43m. Deep jungle setting with howler monkeys, toucans, and tapir tracks.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 500,
+        "notes": "50 miles from San Ignacio on rough jungle road — requires 4WD or organized tour. Access restricted after 3pm (armed military escort only). Best visited with licensed tour operator from San Ignacio ($80-120 including guide). Allow full day. Combine with Mountain Pine Ridge waterfalls on same trip."
+      },
+      {
+        "name": "Xunantunich Maya Ruins",
+        "difficulty": "Easy",
+        "duration": "Half day",
+        "region": "Cayo district (near San Ignacio)",
+        "description": "Well-preserved hilltop Maya ceremonial center with magnificent frieze-decorated El Castillo pyramid (40m) with panoramic views over the Mopan River valley into Guatemala. One of the most visually impressive sites in Belize. Howler monkeys in the canopy overhead.",
+        "best_months": ["Year-round"],
+        "elevation_m": 300,
+        "notes": "8 miles from San Ignacio, accessed by hand-cranked cable ferry across the Mopan River (free, charmingly old-fashioned). Entry BZ$10. Can hike to top of El Castillo for spectacular valley views. Easy half-day trip. Combine with Cahal Pech ruins (in San Ignacio town itself) for a full ruins day."
+      },
+      {
+        "name": "Cockscomb Basin Jaguar Preserve Hike",
+        "difficulty": "Moderate",
+        "duration": "4-8 hours",
+        "region": "Stann Creek district (near Dangriga/Hopkins)",
+        "description": "Hike through the world's first jaguar sanctuary — a 400km² watershed preserve protecting the highest density jaguar population in Central America. Multiple trail options from short nature walks to multi-day backcountry routes. Excellent birdwatching, waterfall swimming, and the ever-present possibility of jaguar tracks (the cats themselves are elusive).",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 1120,
+        "notes": "Based from Cockscomb Basin visitor center, accessible from Southern Highway. Entry BZ$10. No guides required for main trails but recommended for backcountry. Jaguar sightings very rare — mostly tracks, scrapes, and camera traps. Ben's Bluff trail has excellent mountain views. Antelope Falls and Tiger Fern trail both excellent."
+      },
+      {
+        "name": "Inland Blue Hole and St. Herman's Cave",
+        "difficulty": "Easy",
+        "duration": "3-4 hours",
+        "region": "Cayo / Belmopan area",
+        "description": "Visit Belize's inland Blue Hole — a stunning 25m-diameter, 6m-deep turquoise sinkhole pool in the jungle, perfect for swimming. Nearby St. Herman's Cave is one of the most impressive entrance chambers in Belize — enormous and eerie. The two sites combined in Belize's smallest national park.",
+        "best_months": ["Year-round"],
+        "elevation_m": 230,
+        "notes": "On Hummingbird Highway, 45 min from Belmopan. Entry BZ$8. Blue Hole swimming is excellent — clear and very cold. St. Herman's Cave — go with a guide for the best experience (guides available at entrance). Easy half-day trip from San Ignacio or en route south."
+      },
+      {
+        "name": "Cave Tubing (Nohoch Che'en / Caves Branch)",
+        "difficulty": "Easy",
+        "duration": "4-6 hours",
+        "region": "Cayo / Belmopan (Caves Branch River)",
+        "description": "Float through a series of ancient river caves on an inner tube with a headlamp — one of Belize's most popular and enjoyable tourist activities. The Caves Branch River flows through a network of Maya ceremonial caves, past stalactites and stalagmites. Accessible, fun for all ages and fitness levels.",
+        "best_months": ["Year-round (avoid extreme rainy season peak — river can run too high)"],
+        "elevation_m": 120,
+        "notes": "Most popular day trip from San Ignacio or Belize City. Tours from $40-60 including transport and guide. Inner tube and headlamp provided. Combine with ziplining at the same site (Jaguar Paw and Caves Branch Resort are main operators). Can be combined with inland Blue Hole on same day."
+      },
+      {
+        "name": "Great Blue Hole Dive / Snorkel",
+        "difficulty": "Moderate (diving) / Easy (snorkel tour)",
+        "duration": "Full day (boat tour from Ambergris Caye or Caye Caulker)",
+        "region": "Lighthouse Reef Atoll (50 miles offshore)",
+        "description": "Dive or snorkel the world-famous Great Blue Hole — a perfectly circular marine sinkhole 300m wide and 125m deep, formed during the last ice age. Famous for Caribbean reef sharks, nurse sharks, midnight parrotfish, and the extraordinary walls dropping into the deep blue. UNESCO World Heritage. Consistently on every 'best dive sites in the world' list.",
+        "best_months": ["November", "December", "January", "February", "March", "April"],
+        "elevation_m": 0,
+        "notes": "Full-day boat trip ($250-350 including 3 dives at Blue Hole, Half Moon Caye, and Long Caye). Departs from San Pedro or Caye Caulker 5:30-6am, returns evening. The Blue Hole itself is best for divers (stalactites visible 40m+ deep) — snorkelers see the circle from the surface and may be disappointed by the lack of reef fish. The surrounding atolls are excellent for snorkelers. Seasickness precautions recommended — rough open-ocean crossing."
+      },
+      {
+        "name": "Crooked Tree Wildlife Sanctuary Boat Tour",
+        "difficulty": "Easy",
+        "duration": "Half day",
+        "region": "Belize district (Northern Belize, 33 miles north of Belize City)",
+        "description": "Boat through a vast freshwater lagoon system — the nesting ground for the jabiru stork, the largest flying bird in the Western Hemisphere. Hundreds of species of waterfowl, herons, egrets, spoonbills, ospreys, and black-collared hawks. One of the finest birdwatching experiences in Belize.",
+        "best_months": ["February", "March", "April", "May (jabiru nesting peak)"],
+        "elevation_m": 5,
+        "notes": "Entry BZ$8. Hire a local guide from Crooked Tree village for boat tour ($40-60/boat). Jabiru storks nest December-May — best birdwatching February-May. Accessible from Northern Highway on the way to or from Chetumal/Mexico border. Can be done as day trip from Belize City."
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Toledo Maya Village Experience",
+        "difficulty": "Easy to Moderate",
+        "duration": "2-4 days",
+        "region": "Toledo district (southern Belize — Punta Gorda area)",
+        "description": "Stay in Q'eqchi' and Mopan Maya villages in the remote Toledo district — one of the most authentic cultural immersion experiences in Central America. Community guesthouses, traditional food, cacao farm tours, waterfall hikes, and living Maya culture far from the tourist trail.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 350,
+        "notes": "Toledo Ecotourism Association (TEA) coordinates village stays ($BZ50-75/night including meals). Punta Gorda is the base — fly or take bus from Belize City. Remote and wet — this is Belize's rainiest area. Worth the effort for extraordinary authentic experience. Cacao and chocolate tours excellent."
+      },
+      {
+        "name": "Lamanai Archaeological Reserve and River Journey",
+        "difficulty": "Easy",
+        "duration": "1-2 days",
+        "region": "Orange Walk district (northern Belize)",
+        "description": "Boat up the New River Lagoon through crocodile-filled waters to reach Lamanai — one of Belize's most impressive Maya sites, continuously inhabited for over 3,000 years. The High Temple (33m) overlooks the lagoon. Howler monkeys, jabiru storks, black orchids, and morelet's crocodiles are all present. Most atmospheric site approach in Belize.",
+        "best_months": ["Year-round"],
+        "elevation_m": 60,
+        "notes": "River boat departs from Orange Walk town ($50-80 per person including guide). Stay overnight in the area for early morning site visit. Lamanai has modest on-site accommodation. Entry BZ$10. The river journey itself — past crocodiles, birds, and river vegetation — is as memorable as the ruins. Sugar cane country surrounds."
+      }
+    ],
+    "volcanoes": [],
+    "waterfalls": [
+      "Rio On Pools (Mountain Pine Ridge) — granite boulders and tiered cascade pools, excellent swimming",
+      "Hidden Valley Falls (Mountain Pine Ridge) — 1,600 ft drop, one of the highest in Central America, best viewed from a distance during rainy season",
+      "Five Sisters Falls (Mountain Pine Ridge) — five-strand waterfall at Gaia River Lodge",
+      "Antelope Falls (Cockscomb Basin) — jungle waterfall in jaguar preserve"
+    ],
+    "hot_springs": [],
+    "lakes": [
+      "Crooked Tree Lagoon — freshwater birding paradise, jabiru stork",
+      "New River Lagoon — access to Lamanai ruins, crocodiles",
+      "Lake Yaxhá (near border) — some cross-border tourism from Guatemala side",
+      "Five Blues Lake — color-shifting karst lake in Cayo"
+    ],
+    "rivers": [
+      "New River — boat journey to Lamanai, crocodile habitat",
+      "Mopan River — San Ignacio area, tubing and kayaking",
+      "Macal River — San Ignacio area, kayaking and riverside lodges",
+      "Caves Branch River — cave tubing",
+      "Moho River — Toledo district, remote jungle"
+    ],
+    "wildlife": [
+      "Jaguar (Cockscomb Basin — highest density in world; rarely seen)",
+      "Tapir — national animal; present in jungle areas",
+      "Baird's tapir (Cockscomb, Cayo jungle)",
+      "Howler monkey (nationwide — very audible at Lamanai, Caracol, Xunantunich)",
+      "Spider monkey (Cayo jungle, Cockscomb)",
+      "Morelet's crocodile (New River, Crooked Tree — endemic to Belize/Guatemala/Mexico)",
+      "American crocodile (coastal and river areas)",
+      "Manatee (Corozal Bay, Southern Lagoon — Belize has one of the healthiest manatee populations in the Caribbean)",
+      "Jabiru stork (Crooked Tree — largest flying bird in Western Hemisphere)",
+      "Scarlet macaw (Red Bank village, Cayo — largest scarlet macaw roosting site in Belize)",
+      "Keel-billed toucan — national bird, widespread",
+      "Red-footed booby (Half Moon Caye — large nesting colony)",
+      "Magnificent frigatebird (cayes)",
+      "Whale shark (Gladden Spit — seasonal, March-June)",
+      "Caribbean reef shark (Great Blue Hole, atolls)",
+      "Nurse shark (Shark Ray Alley, Hol Chan — habituated to snorkelers)",
+      "Southern stingray (Shark Ray Alley)",
+      "Loggerhead sea turtle (barrier reef nesting)",
+      "Hawksbill sea turtle (barrier reef)",
+      "Green sea turtle (barrier reef)",
+      "West Indian manatee (Corozal Bay, southern lagoons)"
+    ],
+    "birdwatching_hotspots": [
+      "Crooked Tree Wildlife Sanctuary — jabiru stork, 285+ species, best February-May",
+      "Lamanai ruins and New River — river and forest birds from the boat",
+      "Cockscomb Basin — forest interior species, toucans, parrots",
+      "Shipstern Nature Reserve (Corozal) — rare forest birds, manatees",
+      "Chan Chich Lodge (Orange Walk) — 350+ species, private jungle lodge birding",
+      "Red Bank village (Stann Creek) — scarlet macaw roosting congregation November-March",
+      "Caracol / Mountain Pine Ridge — highland pine forest species different from lowland jungle",
+      "Lighthouse Reef / Half Moon Caye — seabirds, red-footed booby nesting colony"
+    ],
+    "stargazing_spots": [
+      "Mountain Pine Ridge (Cayo) — dark skies, highland elevation",
+      "Remote cayes and atolls (Glover's Reef, Turneffe) — zero light pollution over the Caribbean",
+      "Cockscomb Basin — deep jungle, no light pollution",
+      "Chan Chich Lodge area (Orange Walk) — remote jungle, exceptional dark skies"
+    ],
+    "scenic_drives": [
+      "Hummingbird Highway (Belmopan to Dangriga) — most scenic road in Belize through Maya Mountains, citrus farms, and jungle",
+      "Western Highway (Belize City to San Ignacio) — Belize River valley and western highlands",
+      "Southern Highway (Dangriga to Punta Gorda) — remote, tropical, beautiful",
+      "Mountain Pine Ridge Road (San Ignacio to Caracol) — pine forest to jungle transition"
+    ],
+    "dive_and_snorkel_sites": [
+      {
+        "name": "Great Blue Hole",
+        "region": "Lighthouse Reef Atoll (offshore)",
+        "type": "Marine sinkhole",
+        "depth": "125m maximum",
+        "difficulty": "Advanced (diving) / Easy (snorkel)",
+        "best_months": ["November", "December", "January", "February", "March", "April"],
+        "description": "The world's most famous dive site — a perfectly circular UNESCO World Heritage marine sinkhole 300m wide, surrounded by a ring of coral. Caribbean reef sharks, bull sharks (seasonal), nurse sharks, and midnight parrotfish patrolling the walls. Stalactites at 40m+ prove this was once a dry cave during the Ice Age. Humbling scale — the walls drop into absolute darkness.",
+        "notes": "50 miles offshore — full-day boat journey from San Pedro. $250-350 full-day trip includes 3 dives. Best for advanced divers. Snorkelers see the circle from the surface. One of the world's great bucket-list dive experiences."
+      },
+      {
+        "name": "Hol Chan Marine Reserve / Shark Ray Alley",
+        "region": "Ambergris Caye (3 miles south of San Pedro)",
+        "type": "Reef and sand flat",
+        "depth": "3-12m",
+        "difficulty": "Beginner",
+        "best_months": ["Year-round"],
+        "description": "Belize's most visited marine reserve — a natural channel cut through the barrier reef teeming with fish life. Shark Ray Alley is an adjacent sand flat where nurse sharks and southern stingrays congregate in extraordinary numbers — snorkelers can swim directly among dozens of them. One of the best accessible marine wildlife experiences in the Caribbean.",
+        "notes": "15-20 min boat ride from San Pedro. BZ$20 marine reserve fee. Multiple snorkel and dive operators. Nurse sharks are habituated and non-aggressive. Can be crowded (most popular site in Belize). Morning sessions less busy. Easy half-day trip."
+      },
+      {
+        "name": "Turneffe Atoll",
+        "region": "Turneffe Islands (25 miles east of Belize City)",
+        "type": "Coral atoll",
+        "depth": "5-30m+",
+        "difficulty": "Beginner to Advanced",
+        "best_months": ["November", "December", "January", "February", "March", "April"],
+        "description": "The largest atoll in the Western Hemisphere — 50km of pristine wall and reef diving, elbow reef with strong currents and bull shark encounters, manatee-inhabited lagoons, and remote island camps. Less visited than the Blue Hole corridor. One of the finest all-around atoll diving destinations in the Caribbean.",
+        "notes": "Day trips from Belize City or multi-day stays at Turneffe Island Resort and Turneffe Flats. Elbow Reef (south end) is the signature site — bull sharks, eagle rays, and Caribbean reef sharks in strong currents. Manatees visible in calm lagoon areas."
+      },
+      {
+        "name": "Gladden Spit (Whale Shark Site)",
+        "region": "Stann Creek district (southern Belize offshore)",
+        "type": "Reef and open water",
+        "depth": "20-40m",
+        "difficulty": "Advanced",
+        "best_months": ["March", "April", "May", "June (peak full moon)"],
+        "description": "One of the world's most reliable whale shark encounter sites — whale sharks aggregate here during full moons March-June to feed on spawning cubera snapper. Filter-feeding giants up to 12m long in open water. An extraordinary bucket-list marine wildlife experience.",
+        "notes": "Access from Placencia (2.5 hr boat ride). Full-moon trips only during shark season ($150-200). Strict no-touch rules — must maintain 3m distance. Water can be murky from fish spawn. Open-water dive in the blue — some current. Completely worth it for the experience."
+      },
+      {
+        "name": "Glover's Reef Atoll",
+        "region": "Stann Creek district (offshore southern Belize)",
+        "type": "Coral atoll",
+        "depth": "5-40m+",
+        "difficulty": "Beginner to Advanced",
+        "best_months": ["Year-round"],
+        "description": "UNESCO World Heritage — the most remote and pristine atoll in Belize. Exceptional wall and reef diving, world-class fly fishing on the flats, and some of the clearest water in the Caribbean. Very few visitors — most who come stay at the handful of remote island camps.",
+        "notes": "2-3 hour boat from Dangriga or Sittee River. Remote island camps (Island Expeditions, Off the Wall) offer multi-day packages including diving and kayaking. Excellent sea kayaking between reef formations inside the lagoon. Not easily done as a day trip."
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Cockscomb Basin Wildlife Sanctuary",
+        "region": "Stann Creek district (southern Belize)",
+        "key_species": ["Jaguar (world's first jaguar preserve)", "Baird's tapir", "Puma", "Ocelot", "Margay", "Red-eyed tree frog", "Keel-billed toucan", "King vulture"],
+        "best_months": ["November", "December", "January", "February", "March"],
+        "notes": "400+ km² of protected watershed — the highest jaguar density in the world. Jaguars rarely seen but tracks, scrapes, and camera traps are frequent. Multiple hiking trails. Entry BZ$10. Based from Maya Centre village. Combine with Hopkins beach stay."
+      },
+      {
+        "name": "Crooked Tree Wildlife Sanctuary",
+        "region": "Belize district (northern Belize)",
+        "key_species": ["Jabiru stork (Western Hemisphere's largest flying bird)", "Snail kite", "Osprey", "Black-collared hawk", "Limpkin", "Morelet's crocodile", "Freshwater turtle species"],
+        "best_months": ["February", "March", "April", "May"],
+        "notes": "Freshwater lagoon system — best jabiru stork viewing in the world during February-May nesting season. Hire local guides from Crooked Tree village. BZ$8 entry."
+      },
+      {
+        "name": "Corozal Bay / Southern Lagoon Manatee Habitat",
+        "region": "Corozal district / Belize district",
+        "key_species": ["West Indian manatee", "American crocodile", "Hawksbill sea turtle"],
+        "best_months": ["Year-round"],
+        "notes": "Belize has one of the Caribbean's most important manatee populations. Corozal Bay and Southern Lagoon (Gales Point) are key habitats. Gales Point Manatee community offers boat tours to see manatees in the wild."
+      },
+      {
+        "name": "Barrier Reef and Atolls Marine Ecosystem",
+        "region": "Entire Belize Caribbean coast",
+        "key_species": ["Caribbean reef shark", "Nurse shark", "Whale shark (seasonal)", "Southern stingray", "Manatee", "Hawksbill turtle", "Green turtle", "Loggerhead turtle", "Spotted eagle ray", "Reef fish (700+ species)"],
+        "best_months": ["November", "December", "January", "February", "March", "April"],
+        "notes": "UNESCO World Heritage. Second largest barrier reef in the world. The entire reef system from Bacalar Chico in the north to Sapodilla Cayes in the south is a world-class marine ecosystem. Healthy reef, good visibility, and accessible from multiple base points."
+      }
+    ]
+  },
+  "sports_and_activities": [
+    {
+      "name": "Scuba Diving",
+      "popularity": "Very High",
+      "best_regions": ["Ambergris Caye (barrier reef)", "Caye Caulker", "Great Blue Hole / Lighthouse Reef", "Turneffe Atoll", "Glover's Reef", "Gladden Spit (whale sharks)"],
+      "best_months": ["November", "December", "January", "February", "March", "April"],
+      "skill_levels": ["Beginner (Hol Chan, shallow barrier reef)", "Advanced (Great Blue Hole, Turneffe walls)"],
+      "notes": "Belize is THE dive destination of the Caribbean mainland — the barrier reef and three atolls offer world-class diversity from beginner-friendly shallow reef to advanced wall and blue-water diving. Great Blue Hole is on every serious diver's bucket list. PADI certifications widely available ($350-500)."
+    },
+    {
+      "name": "Snorkeling",
+      "popularity": "Very High",
+      "best_regions": ["Shark Ray Alley / Hol Chan (San Pedro)", "Caye Caulker patch reefs", "Turneffe Atoll shallows", "Tobacco Caye reef"],
+      "best_months": ["Year-round (best November-April)"],
+      "skill_levels": ["Beginner"],
+      "notes": "Shark Ray Alley is the single most popular tourist experience in Belize — nurse sharks and stingrays at arm's reach. Caye Caulker has excellent patch reef snorkeling directly off the island. No diving certification needed — one of the best snorkeling destinations in the Caribbean."
+    },
+    {
+      "name": "Cave Exploration (Caving and Cave Tubing)",
+      "popularity": "High",
+      "best_regions": ["ATM Cave (Cayo — world-class)", "Cave Tubing at Caves Branch", "Barton Creek Cave", "Chechem Ha Cave"],
+      "best_months": ["Year-round (avoid extreme rainy season flooding)"],
+      "skill_levels": ["Easy (cave tubing)", "Moderate (ATM, Barton Creek)"],
+      "notes": "Belize has exceptional cave tourism — ATM (Actun Tunichil Muknal) is arguably the single most spectacular tourist experience in the country. Barton Creek Cave is floated by canoe through a dripping limestone cavern with Maya pottery and burial sites. A uniquely Belizean experience."
+    },
+    {
+      "name": "Maya Archaeology",
+      "popularity": "High",
+      "best_regions": ["Caracol (Cayo)", "Xunantunich (Cayo)", "Lamanai (Orange Walk)", "Cahal Pech (San Ignacio)", "Lubaantun (Toledo)"],
+      "best_months": ["Year-round (dry season best for jungle sites)"],
+      "skill_levels": ["Beginner"],
+      "notes": "Belize has hundreds of documented Maya sites — fewer than 40 are properly excavated. The jungle-buried ruins at Caracol and Lamanai are extraordinary. Xunantunich is the most accessible from San Ignacio. Toledo's Lubaantun and Nim Li Punit are rarely visited gems."
+    },
+    {
+      "name": "Fly Fishing",
+      "popularity": "Moderate (high among fishing tourists)",
+      "best_regions": ["Turneffe Flats", "Glover's Reef", "Ambergris Caye flats", "Southern Belize (Placencia area)"],
+      "best_months": ["March", "April", "May", "June"],
+      "skill_levels": ["Intermediate to Advanced"],
+      "notes": "Belize is a world-class fly fishing destination — permit, tarpon, and bonefish in the Caribbean flats. Turneffe Flats and Glover's Reef offer some of the best permit fishing anywhere. Specialized lodges cater to serious fly fishing travelers. Catch and release standard."
+    },
+    {
+      "name": "Kayaking and River Tubing",
+      "popularity": "Moderate",
+      "best_regions": ["Glover's Reef (sea kayaking)", "Mopan and Macal Rivers (San Ignacio)", "Placencia Lagoon"],
+      "best_months": ["November", "December", "January", "February", "March"],
+      "skill_levels": ["Beginner to Intermediate"],
+      "notes": "Glover's Reef offers world-class sea kayaking through a pristine atoll lagoon. Island Expeditions and Slickrock Adventures offer multi-day kayak camping expeditions. San Ignacio river tubing on the Mopan is leisurely and enjoyable."
+    },
+    {
+      "name": "Whale Shark Swimming",
+      "popularity": "Moderate (very seasonal)",
+      "best_regions": ["Gladden Spit (offshore southern Belize)"],
+      "best_months": ["March", "April", "May", "June (full moon trips)"],
+      "skill_levels": ["Beginner (snorkeling)", "Advanced (freediving)"],
+      "notes": "One of the world's most reliable whale shark encounters — aggregating to feed on spawning snapper during full moons. Full moon boat trips from Placencia. Strictly regulated ($150-200/person). An extraordinary wildlife experience."
+    },
+    {
+      "name": "Birdwatching",
+      "popularity": "Moderate to High",
+      "best_regions": ["Crooked Tree", "Chan Chich Lodge", "Cockscomb Basin", "Red Bank (scarlet macaws)", "Mountain Pine Ridge"],
+      "best_months": ["February", "March", "April", "May (jabiru nesting)"],
+      "skill_levels": ["Beginner to Advanced"],
+      "notes": "Belize has 600+ recorded bird species in a tiny country — exceptional diversity per square kilometer. The jabiru stork at Crooked Tree and the scarlet macaw congregation at Red Bank are world-class wildlife spectacles. Chan Chich Lodge is renowned as one of the finest jungle birding lodges in the Americas."
+    },
+    {
+      "name": "Garifuna Cultural Experiences",
+      "popularity": "Moderate",
+      "best_regions": ["Hopkins", "Dangriga", "Punta Gorda"],
+      "best_months": ["Year-round; November 19 (Garifuna Settlement Day) most spectacular"],
+      "skill_levels": ["Beginner"],
+      "notes": "The Garifuna people — descended from African and Arawak/Carib communities — have one of the most distinctive cultures in the Americas. Hopkins is the most accessible and welcoming Garifuna village. Drumming lessons, punta dancing, cassava bread making, and hudut cooking classes all available. Garifuna Settlement Day (November 19) is an extraordinary national celebration."
+    }
+  ],
+  "trip_styles": {
+    "good_for_backpacking": true,
+    "good_for_luxury": true,
+    "good_for_families": true,
+    "good_for_couples": true,
+    "good_for_solo_travel": true,
+    "good_for_digital_nomads": true,
+    "good_for_adventure_travel": true,
+    "good_for_food_travel": false,
+    "good_for_road_trips": true,
+    "good_for_short_trips": true,
+    "good_for_long_stays": true
+  },
+  "destinations": {
+    "top_cities": ["Belize City (transit hub only)"],
+    "top_towns": ["San Pedro (Ambergris Caye)", "San Ignacio", "Placencia", "Hopkins", "Caye Caulker", "Punta Gorda"],
+    "top_regions": [
+      "Ambergris Caye and the barrier reef",
+      "Caye Caulker",
+      "Cayo district (San Ignacio, Mountain Pine Ridge, Caracol)",
+      "Southern Belize (Placencia, Hopkins, Cockscomb Basin)",
+      "Northern Belize (Crooked Tree, Lamanai, Corozal)",
+      "The Atolls (Lighthouse Reef, Turneffe, Glover's Reef)",
+      "Toledo district (Maya villages, Punta Gorda)"
+    ],
+    "top_islands": ["Ambergris Caye", "Caye Caulker", "Tobacco Caye", "South Water Caye", "Glover's Reef islands"],
+    "sample_itineraries": {
+      "one_week": "Belize City (transit) → Ambergris Caye or Caye Caulker (3 days diving/snorkeling) → San Ignacio (3 days — ATM Cave, Xunantunich, cave tubing)",
+      "two_weeks": "Belize City (transit) → Ambergris Caye (3 days, Great Blue Hole day trip) → Caye Caulker (1 day) → San Ignacio (3 days — ATM Cave, Caracol, Mountain Pine Ridge) → Hopkins (2 days — Garifuna culture, Cockscomb Basin) → Placencia (2 days — snorkeling, Gladden Spit if in season)",
+      "classic_route": "Belize City → Ambergris Caye → Caye Caulker → San Ignacio → Caracol → ATM Cave",
+      "offbeat_route": "Corozal → Lamanai river journey → Crooked Tree birdwatching → Cockscomb jaguar hike → Toledo Maya village stays → Glover's Reef sea kayaking"
+    }
+  },
+  "practical_info": {
+    "arrival_tips": "Philip Goldson Airport (BZE) is 16km from Belize City. Most tourists DON'T stay in Belize City — take a taxi directly to the Marine Terminal for a water taxi to the cayes, or a domestic flight to San Pedro, Placencia, or Punta Gorda. Pre-book connecting transport. Belize City is a transit point, not a destination for most visitors.",
+    "airport_scam_notes": "Taxi touts at the airport are persistent — confirm fare before getting in ($25-35 to city). No Uber in Belize. Domestic flight check-in at Tropic Air or Maya Island Air counters is straightforward.",
+    "local_sim_where_to_buy": "BTL (Digicell) SIM at the airport or throughout Belize City. Smart (Speednet) for secondary option. $10-20 for data. Bring passport.",
+    "money_exchange_notes": "USD accepted everywhere at fixed 2:1 rate — no exchange needed for American travelers. ATMs dispense BZD. Always confirm whether prices quoted are BZD or USD — locals sometimes say 'dollars' meaning BZD.",
+    "language_helpful_phrases": {
+      "hello": "Hey / What's up (Creole: 'Weh di go on?')",
+      "thank_you": "Thanks (Creole: 'Much oblige')",
+      "how_much": "How much for this?",
+      "where_is": "Where is...?",
+      "cheers": "Cheers (Creole: 'Big up!')",
+      "no_problem": "No problem (Creole: 'Noh worry') — very common response",
+      "beautiful": "Beautiful / Nice (Creole: 'Real nice')",
+      "help": "Help!"
+    },
+    "offline_maps_recommended": ["Maps.me", "Google Maps (offline)"],
+    "apps_useful_locally": ["WhatsApp (essential — everyone uses it)", "Google Maps (offline)", "XE Currency (BZD/USD conversion)", "Tropic Air app (domestic flights)", "Belize Audubon Society app (birdwatching)"]
+  },
+  "laws": {
+    "drug_laws_strictness": "Strict — possession illegal despite Caribbean tourist vibe. Marijuana decriminalization of small amounts (10g) in personal possession proposed/partially implemented — verify current status. Public smoking illegal. Do not purchase from strangers.",
+    "alcohol_laws": "Legal drinking age 18. No strict public drinking laws. Belikin beer can be consumed on the beach in most areas.",
+    "drone_rules": "Permits required from Civil Aviation Department. Prohibited over archaeological sites (Caracol, Lamanai, etc.), national parks, airports, military areas, and near the barrier reef without special permit. Apply weeks in advance.",
+    "wild_camping_rules": "Permitted in some areas with landowner permission. Prohibited in national parks and wildlife sanctuaries without special permit.",
+        "protected_area_rules": "Entry fees BZ$8-25 at major sites. Coral collection absolutely prohibited — even dead coral or shells. Heavy fines and possible prosecution. Spearfishing prohibited in most reef areas. No littering in marine reserves. Follow all guide instructions.",
+    "photography_laws": "No special restrictions for tourists. Photography of government buildings, military installations, and police operations should be avoided. Always ask permission in indigenous communities and Garifuna villages.",
+    "wildlife_laws": "Strict — export of pre-Columbian artifacts completely prohibited (criminal offense). Coral, queen conch, and lobster (out of season) collection illegal. Manatee harassment illegal — maintain distance. Crocodile disturbance illegal. Spearfishing regulated. Wildlife removal from protected areas a serious offense.",
+    "lgbtq_legal_status": "Legal — Belize Supreme Court decriminalized same-sex relations in 2019 (confirmed on appeal 2023). No same-sex marriage recognition. No legal partnership protections. Discrimination protections limited.",
+    "other_important_laws": [
+      "Lobster season strictly enforced — purchasing, fishing, or possessing out of season (March 1 - July 14) illegal",
+      "Queen conch harvesting regulated — check current quotas",
+      "Pre-Columbian artifact removal from any site is a criminal offense",
+      "No coral collection of any kind — dead or alive",
+      "Firearms strictly controlled — tourists cannot bring firearms without prior authorization",
+      "Cash over $10,000 USD must be declared on entry and exit"
+    ]
+  },
+  "family_travel": {
+    "kid_friendly": true,
+    "stroller_friendly": false,
+    "car_seat_rules": "Required by law but rarely enforced. Bring your own.",
+    "family_activities": [
+      "Shark Ray Alley snorkeling — nurse sharks and stingrays at arm's length (age 6+ comfortable swimmers)",
+      "Cave tubing at Caves Branch — inner tube float through jungle caves, easy and fun for kids 8+",
+      "Xunantunich Maya ruins — climbable pyramid with howler monkeys overhead; short easy hike",
+      "Lamanai river boat tour — crocodiles, monkeys, and toucans from the boat; educational and thrilling for all ages",
+      "Belize Zoo — world's finest zoo using only rescued native Belizean animals; tapirs, jaguars, harpy eagles — extraordinary",
+      "Crocodile sighting on the New River — all ages",
+      "Caye Caulker beach and snorkeling — gentle, small island, very safe",
+      "Ambergris Caye glass-bottom boat — see the reef without getting wet",
+      "Chocolate and cacao farm tours (Cayo and Toledo) — hands-on and educational",
+      "Inland Blue Hole swimming — cool turquoise pool in the jungle"
+    ],
+    "notes": "The Belize Zoo (on the Western Highway near Belize City) is genuinely one of the finest zoos in the Western Hemisphere — worth a stop with children of all ages. ATM Cave is NOT suitable for children under 10 or those uncomfortable with confined spaces and swimming in dark water."
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Very limited throughout. Cayes (San Pedro and Caye Caulker) involve sand paths, docks, and water taxis — difficult for wheelchair users. Ruins (Caracol, Lamanai, Xunantunich) have steep, uneven terrain. Belize City has some paved sidewalks. Upscale resorts on Ambergris Caye have the best accessibility infrastructure in the country.",
+    "accessible_transport": "No wheelchair-accessible public transport. Private taxis and resort shuttles may accommodate with advance notice. Water taxis require boarding from docks — difficult without assistance.",
+    "accessible_attractions": [
+      "Belize Zoo (Western Highway) — partially accessible with paved paths through most areas",
+      "Some upscale Ambergris Caye resorts with beach accessibility (partial)",
+      "Lamanai visitor center and some flat areas (partial)",
+      "Placencia beachfront boardwalk — mostly flat, partially accessible"
+    ]
+  },
+    "gear": {
+    "bring_wetsuit": false,
+    "bring_rash_guard": true,
+    "bring_hiking_boots": true,
+    "bring_layers": false,
+    "bring_bug_spray": true,
+    "bring_sunscreen": true,
+    "cold_weather_gear_needed": false,
+    "cold_weather_gear_notes": "Not needed — Belize is warm year-round. A light long-sleeve layer for air-conditioned boats and restaurants is useful. Cayes have pleasant trade wind breezes.",
+    "rental_gear_easy_to_find": true,
+    "outdoor_gear_shops": [
+      "Dive gear (BCD, regulator, wetsuit, fins) rented at all dive shops in San Pedro, Caye Caulker, Placencia — $15-30/day for full kit",
+      "Snorkel gear rental everywhere on the cayes — $5-10/day",
+      "Cave tubing gear (tubes, headlamps, life jackets) included in tour price",
+      "Kayaks rentable at most beach resorts and Glover's Reef camps",
+      "Very limited dry-land outdoor gear retail — bring good hiking boots and rain gear from home",
+      "SPF 50+ reef-safe sunscreen available in San Pedro but expensive — bring from home",
+      "Reef-safe sunscreen strongly recommended and required in some protected areas"
+    ],
+    "special_notes": "Reef-safe sunscreen (mineral-based, no oxybenzone or octinoxate) is strongly recommended and required in some marine reserve areas. Regular chemical sunscreen is harmful to coral and actively damages the reef Belize depends on — please use reef-safe alternatives. ATM Cave requires closed-toe shoes that can get wet."
+  }
+}

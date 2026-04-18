@@ -1,0 +1,613 @@
+{
+  "meta": {
+    "last_updated": "2026-04-17",
+    "confidence_score": 0.87,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "WayFinder internal hike/food/history data",
+      "WayFinder safety submodels"
+    ],
+    "notes": "Populated from WayFinder app data and verified travel references. Honduras carries the highest safety advisory in Central America — safety sections reflect this accurately."
+  },
+  "identity": {
+    "name": "Honduras",
+    "official_name": "Republic of Honduras",
+    "code": "HN",
+    "iso3": "HND",
+    "region": "Americas",
+    "subregion": "Central America",
+    "capital": "Tegucigalpa",
+    "flag_emoji": "🇭🇳",
+    "timezones": ["UTC-06:00"],
+    "driving_side": "right",
+    "country_calling_code": "+504",
+    "internet_tld": ".hn"
+  },
+  "language_and_money": {
+    "languages": ["Spanish", "Garifuna", "Miskito", "Creole English (Bay Islands)"],
+    "primary_language": "Spanish",
+    "english_proficiency": "Low on mainland. Moderate to high on Bay Islands (Roatán, Utila, Guanaja) due to heavy dive tourism and historical British/Caribbean influence.",
+    "currency": "HNL",
+    "currency_name": "Honduran Lempira",
+    "currency_symbol": "L",
+    "cash_vs_card": "Cash dominant. Cards accepted at upscale hotels, Bay Islands dive resorts, and larger restaurants in San Pedro Sula and Tegucigalpa. Always carry cash outside major tourist areas.",
+    "typical_payment_methods": ["Cash (HNL)", "USD (Bay Islands and tourist areas)", "Visa (limited)", "Mastercard (limited)"],
+    "atm_availability": "Available in Tegucigalpa, San Pedro Sula, and Roatán town. Scarce and unreliable in rural areas and smaller towns. Withdraw sufficient cash before leaving cities.",
+    "tipping_culture": "Appreciated but not mandatory. 10% tip in restaurants generous and welcomed. Bay Islands follow more US-influenced tipping norms.",
+    "tipping_etiquette": "10% in sit-down restaurants. $5-10/day for dive guides. $1-2/bag for hotel staff. Round up taxi fares. Dive masters on Bay Islands expect $5-10/day."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days (CA-4 agreement)",
+      "visa_type": "Tourist stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for at least 3 months beyond date of entry",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": true,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Standard restrictions on narcotics, firearms, and agricultural products. Declaration required for cash over $10,000.",
+    "restricted_items": ["Narcotics", "Firearms (without permit)", "Fresh produce without permit", "Cash over $10,000 without declaration"],
+    "duty_free_allowances": "400 cigarettes or 50 cigars, 2.5 liters of alcohol, gifts up to $500 value"
+  },
+  "health": {
+    "recommended_vaccines": ["Hepatitis A", "Typhoid", "Hepatitis B", "Rabies (rural/cave visits)", "Tetanus-Diphtheria"],
+    "required_vaccines": [],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Present in rural lowland areas, particularly Caribbean coast and Mosquitia region. Low risk in Tegucigalpa and San Pedro Sula.",
+    "malaria_regions": ["La Mosquitia (Gracias a Dios department)", "Caribbean coast lowlands", "Colón department (rural)", "Olancho (remote areas)"],
+    "malaria_prophylaxis_info": "Recommended for La Mosquitia and remote Caribbean coast. Not needed for Tegucigalpa, San Pedro Sula, Bay Islands, or Copán.",
+    "dengue_risk": "High — Honduras has persistent dengue transmission nationwide, particularly in urban lowlands and during rainy season (May-November). One of the highest rates in Central America.",
+    "altitude_sickness_risk": "Very low — highest point (Las Minas) is 2,870m but rarely visited. Not a practical concern for most tourists.",
+    "food_water_safety": "Tap water not safe to drink anywhere in Honduras. Always use bottled or purified water. Street food generally safe at busy stalls. Exercise standard caution.",
+    "air_quality_concerns": "Tegucigalpa and San Pedro Sula have traffic-related air pollution. Slash-and-burn agriculture creates smoke in rural areas during dry season.",
+    "common_travel_illnesses": ["Traveler's diarrhea", "Dengue fever", "Sunburn", "Insect bites"],
+    "pharmacy_access": "Pharmacies available in cities and larger towns. Basic medications widely available OTC. Very limited in rural areas and La Mosquitia.",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Limited — private clinics in Tegucigalpa and San Pedro Sula offer basic adequate care. Bay Islands have hyperbaric chambers for dive emergencies (Roatán). Evacuate serious conditions to the US or Costa Rica.",
+    "emergency_medical_number": "911"
+  },
+  "safety": {
+    "travel_advisory_level_us": 4,
+    "travel_advisory_level_label": "Do Not Travel (reconsider for specific tourist areas)",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "One of the highest homicide rates in the Western Hemisphere",
+      "Gang activity (MS-13, Barrio 18) in major cities",
+      "Drug trafficking corridors throughout the country",
+      "Armed robbery and express kidnapping",
+      "Police corruption and unreliable law enforcement",
+      "La Mosquitia region — extremely dangerous and remote"
+    ],
+    "crime_risk": "Very high — Honduras has among the highest murder rates in the world. Tegucigalpa and San Pedro Sula are genuinely dangerous cities. Bay Islands (Roatán, Utila) and Copán are significantly safer and regularly visited by tourists. Travel should be tightly focused on these areas.",
+    "scam_risk": "Moderate — taxi overcharging, fake police, currency exchange fraud",
+    "transport_safety": "Avoid night travel on all roads. Intercity buses are frequent robbery targets especially on secondary routes. Domestic flights between cities recommended over overland. Taxis should be arranged through hotels.",
+    "solo_female_travel_notes": "High risk on mainland — not recommended for solo female travel in cities. Bay Islands and Copán more manageable with standard precautions. Avoid walking alone at any time in Tegucigalpa and San Pedro Sula.",
+    "lgbtq_notes": "Same-sex relationships legal but no recognition of partnerships. Constitutional ban on same-sex marriage. Significant social hostility — LGBTQ+ individuals face discrimination and violence. Public displays of affection strongly discouraged. Bay Islands more tolerant.",
+    "night_safety": "Avoid all street activity at night in Tegucigalpa and San Pedro Sula. Even in Copán and Roatán, stay in well-lit tourist areas and arrange hotel taxis. No walking alone after dark anywhere.",
+    "safe_areas": ["Roatán (West Bay, West End)", "Utila town", "Copán Ruinas town", "Lago de Yojoa (specific lodges)"],
+    "areas_to_avoid": [
+      "Tegucigalpa — most neighborhoods (move quickly, use hotel taxis only)",
+      "San Pedro Sula — considered one of the world's most dangerous cities",
+      "La Mosquitia (Gracias a Dios) — extremely dangerous, drug trafficking",
+      "Colón department",
+      "Olancho department",
+      "All roads after dark"
+    ],
+    "natural_disaster_risks": ["Hurricanes (Caribbean coast, June-November — direct historical hits)", "Flooding (severe, especially after hurricanes — Eta and Iota 2020 were catastrophic)", "Landslides in rainy season", "Earthquakes"],
+    "political_stability_notes": "Honduras has significant political instability — corruption endemic at all government levels. President Xiomara Castro administration since 2022. Gang activity directly undermines state authority in many regions. Monitor situation closely.",
+    "common_scams": [
+      "Fake police officers demanding documents and money",
+      "Taxi overcharging — always arrange through hotel",
+      "Express kidnapping (brief kidnapping for ATM withdrawals) in cities",
+      "Currency exchange fraud",
+      "Fake tour guides at Copán ruins"
+    ],
+    "police_reliability": "Low — significant corruption reported. Tourist police in Copán and Roatán are more reliable. Do not rely on police assistance in most situations. Contact your embassy first in serious incidents.",
+    "emergency_numbers": {
+      "police": "911",
+      "ambulance": "195",
+      "fire": "198",
+      "general_emergency": "911"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Tegucigalpa",
+      "us_embassy_phone": "+504-2236-9320",
+      "us_embassy_website": "https://hn.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "December to April (dry season) — best weather for Bay Islands, Copán, and highland areas",
+    "climate_zones": [
+      "Pacific lowlands (Choluteca) — hot, dry, distinct seasons",
+      "Interior highlands (Tegucigalpa area) — warm, distinct wet and dry seasons",
+      "Caribbean lowlands (La Ceiba, Tela) — hot, humid, rain year-round with some drier months",
+      "Bay Islands (Caribbean) — tropical, most pleasant November-April",
+      "Western highlands (Copán, Gracias) — cooler, mild"
+    ],
+    "dry_season": "November to April (Pacific and interior); Feb-May and Aug-Sep relatively drier on Caribbean",
+    "rainy_season": "May to October (Pacific); near year-round on Caribbean coast",
+    "hurricane_typhoon_season": "June to November — Caribbean coast has direct hurricane exposure. Hurricanes Eta and Iota (2020) were catastrophic. Mitch (1998) killed 7,000+.",
+    "surf_season": "April to October (limited surf on north Caribbean coast; not a major surf destination)",
+    "trekking_best_months": ["December", "January", "February", "March"],
+    "average_temp_by_month": {
+      "Tegucigalpa": "22-28°C year-round",
+      "San Pedro Sula": "28-35°C (very hot)",
+      "Roatán": "26-30°C year-round",
+      "Copán Ruinas": "22-28°C year-round"
+    },
+    "daylight_hours_by_season": "Near equator — approximately 11.5-12.5 hours year-round"
+  },
+  "transport": {
+    "major_airports": [
+      "Toncontín International Airport (TGU) — Tegucigalpa (dangerous approach, small runway)",
+      "Ramón Villeda Morales International Airport (SAP) — San Pedro Sula (main hub for flights)",
+      "Juan Manuel Gálvez International Airport (RTB) — Roatán",
+      "Golosón International Airport (LCE) — La Ceiba"
+    ],
+    "main_airlines": ["American Airlines", "United", "Copa Airlines", "Avianca", "Aerolíneas Sosa (domestic)", "CM Airlines (domestic)"],
+    "airport_to_city_options": ["Hotel pre-arranged taxi (strongly recommended)", "Official taxi stands (negotiate fare)", "Rental car (not recommended for city driving)"],
+    "public_transit_quality": "City buses exist in Tegucigalpa and San Pedro Sula but are unsafe for tourists — frequent robbery targets. Taxis and ride-hailing only.",
+    "intercity_bus_quality": "First-class buses (Hedman Alas, Fuente del Norte, Viana) between major cities are air-conditioned and reasonably safe. Avoid chicken buses and second-class routes — frequent robbery targets.",
+    "train_network_quality": "No passenger train service.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": false,
+    "road_conditions": "Main highways paved but potholed. Many secondary roads unpaved. Driving independently is high risk due to roadside crime, fake checkpoints, and night robbery. Use first-class buses or fly between cities.",
+    "four_x_four_needed_regions": ["La Mosquitia", "Western highlands (Gracias, Santa Rosa)", "Remote Olancho"],
+    "ride_hailing_apps": ["Uber (Tegucigalpa, San Pedro Sula)", "InDriver"],
+    "taxi_safety_notes": "NEVER flag taxis from the street in Tegucigalpa or San Pedro Sula — express kidnapping risk. Always call a radio taxi or have your hotel arrange a trusted driver. Bay Islands and Copán are safer but still arrange through accommodation.",
+    "ferry_routes": [
+      "La Ceiba to Roatán (Galaxy Wave ferry, 1.5 hrs)",
+      "La Ceiba to Utila (Utila Dream ferry, 1 hr)",
+      "Island hopping within Bay Islands by water taxi"
+    ],
+    "border_crossing_notes": "Main crossings: El Florido (Guatemala, for Copán), Las Manos (Nicaragua), El Guasaule (Nicaragua), Agua Caliente (Guatemala). CA-4 agreement — 90-day stamp shared with Guatemala, El Salvador, Nicaragua. El Florido is the most-used tourist crossing (Copán access)."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$30-50/day (mainland); $50-70/day (Bay Islands)",
+    "daily_budget_midrange": "$60-100/day (mainland); $90-150/day (Bay Islands)",
+    "daily_budget_comfort": "$120-200/day",
+    "hostel_avg": "$8-15/night",
+    "hotel_avg": "$35-80/night",
+    "meal_avg": "$3-8 (local lunch $3-5, restaurant $8-18)",
+    "coffee_avg": "$1-2",
+    "beer_avg": "$1.50-3 (Port Royal, Nacional)",
+    "local_transport_avg": "$0.50-2 (taxi in Copán)",
+    "sim_card_avg": "$5-10 for 3-5GB",
+    "coworking_day_pass_avg": "$8-15",
+    "dive_certification_avg": "$250-350 (Utila — among cheapest in world)",
+    "value_for_money": "Very good — Honduras is one of the cheapest countries in Central America. Utila is globally famous for cheap PADI certifications. Mainland costs are very low. Bay Islands slightly more expensive but still great value."
+  },
+  "connectivity": {
+    "sim_card_providers": ["Tigo", "Claro", "Hondutel"],
+    "esim_available": false,
+    "mobile_data_quality": "Decent 4G in Tegucigalpa, San Pedro Sula, and Bay Islands. Poor in rural areas, Copán outskirts, and La Mosquitia. Very limited in highland villages.",
+    "wifi_quality": "Available in most hostels, hotels, and tourist-facing restaurants in Bay Islands and Copán. Variable speeds. Limited in rural areas.",
+    "coworking_available": false,
+    "best_remote_work_cities": ["Roatán (West End)", "Copán Ruinas"],
+    "power_outlet_types": ["A", "B"],
+    "voltage": "110V, 60Hz",
+    "plug_adapter_needed_for_us": false,
+    "power_reliability": "Frequent power outages (apagones) throughout the country — a chronic national problem. Bring power bank. Better reliability in upscale hotels and Bay Island resorts with generators."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Roatán — West End and West Bay (dive resort epicenter, safest Bay Island area)",
+      "Utila town — budget dive hub, backpacker scene",
+      "Copán Ruinas town — colonial town adjacent to Maya ruins",
+      "Lago de Yojoa — specific eco-lodges on the lake",
+      "Tela (specific resort zones only)"
+    ],
+    "budget_areas": ["Utila (hostels and dive guesthouses)", "Copán Ruinas (guesthouses)", "La Ceiba (transit point)"],
+    "family_friendly_areas": ["Roatán (West Bay)", "Copán Ruinas"],
+    "nightlife_areas": ["Utila (dive bar scene)", "Roatán West End", "Copán Ruinas (small town bars)"],
+    "surf_towns": [],
+    "eco_lodges_available": true,
+    "peak_booking_season": "December to April; Semana Santa (Easter) — very busy on Bay Islands",
+    "accommodation_notes": "Utila is world-famous among budget divers — entire economy is built around cheap PADI courses. Roatán has both budget and luxury dive resort options. Never book cheap accommodation in Tegucigalpa or San Pedro Sula city centers — stay near the airport or in business districts only if transiting."
+  },
+  "culture": {
+    "local_customs": [
+      "Hondurans (Catrachos) are warm and hospitable despite difficult circumstances",
+      "Greet with a single kiss on the right cheek between women and mixed company; handshake between men",
+      "Family is the core social unit — extended family networks are everything",
+      "Strong Catholic and evangelical Protestant traditions",
+      "Garifuna culture on the Caribbean coast is distinct and vibrant — music, dance, food are unique"
+    ],
+    "dress_expectations": "Casual on Bay Islands. Modest dress in cities and rural areas. Cover up in churches. Conservative dress appreciated in highland towns.",
+    "religious_sensitivity": "Predominantly Catholic with significant evangelical Protestant community. Semana Santa is the most important religious period.",
+    "social_norms": [
+      "Punctuality is relaxed in social contexts",
+      "Hondurans are proud of their country despite its challenges — be respectful in conversation",
+      "Garifuna communities on the Caribbean coast have a distinct culture — engage with openness and respect",
+      "Bargaining expected at markets"
+    ],
+    "greeting_style": "Warm — cheek kiss in social settings, handshake in business. 'Buenos días/tardes/noches' standard.",
+    "public_behavior_notes": "Avoid any display of wealth (jewelry, expensive cameras, phones) in cities. Keep a low profile. In Copán and Bay Islands, more relaxed.",
+    "photography_etiquette": "Ask permission before photographing people. Avoid photographing police, military, or anything that could be construed as gang-related. In Garifuna villages, ask community leaders first.",
+    "bargaining_expected": true,
+    "important_holidays": [
+      "Semana Santa (Easter) — major national holiday, Bay Islands packed",
+      "Independence Day (September 15) — Central American nations",
+      "Garifuna Settlement Day (April 12) — important Caribbean coast celebration",
+      "Día de los Muertos (November 2)",
+      "Christmas (December 25)"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Photography of military and police installations prohibited",
+      "Drone permits required — AHAC authorization needed",
+      "Collecting coral, marine life, or archaeological artifacts strictly prohibited",
+      "Copán archaeological site — no touching or climbing on structures"
+    ]
+  },
+  "food": {
+    "signature_dishes": [
+      "Baleada — thick flour tortilla folded with refried beans, cheese, and cream; THE national street food, eaten at all hours",
+      "Plato típico — the standard lunch plate: rice, beans, fried plantains, salad, tortillas, and choice of grilled meat",
+      "Sopa de caracol — conch and coconut milk soup from the Caribbean coast, considered an aphrodisiac",
+      "Tapado — Caribbean seafood and coconut milk stew with plantains and yuca",
+      "Enchiladas hondureñas — fried corn tortilla topped with ground beef, cabbage, tomato, and cheese (different from Mexican enchiladas)",
+      "Catrachitas — fried corn tortillas topped with refried beans and cheese",
+      "Pollo con tajadas — fried chicken served with fried plantain chips and cabbage slaw",
+      "Macheteadas — fried corn dough cakes served with honey or syrup for breakfast",
+      "Rosquillas — hard corn cookies popular in the interior",
+      "Tamales — corn masa filled with pork or chicken, wrapped in plantain leaves"
+    ],
+    "street_food_safety": "Generally safe at busy, high-turnover baleada stands and comedores. Baleadas from street stalls are a safe and delicious choice. Avoid raw seafood from low-turnover vendors in heat.",
+    "vegetarian_friendliness": "Limited — meat is central to Honduran cuisine. Rice, beans, plantains, and tortillas provide vegetarian staples but dedicated vegetarian options are rare outside Copán and Bay Islands.",
+    "vegan_friendliness": "Very challenging — dairy and meat ubiquitous. Nearly impossible in rural areas. Growing options in Bay Islands catering to international dive tourists.",
+    "must_try_drinks": [
+      "Port Royal beer — Honduras's most popular beer, light lager",
+      "Nacional beer — second most popular",
+      "Salva Vida beer — 'Lifesaver', classic Honduras lager",
+      "Guifiti — Garifuna herbal rum infusion, traditional medicine and ritual drink",
+      "Horchata — cinnamon rice milk drink",
+      "Fresh tropical juices (maracuyá, tamarind, guanábana, nance)",
+      "Pinol — toasted corn drink, traditional highland beverage",
+      "Ron Plata — affordable Honduran rum"
+    ],
+    "regional_specialties": [
+      "Caribbean coast (Garifuna): sopa de caracol, tapado, hudut (fish and plantain mash in coconut broth), pan de coco",
+      "Bay Islands: fresh lobster, conch fritters, Caribbean rice and beans in coconut milk",
+      "Interior/highlands: baleadas, plato típico, tamales, enchiladas hondureñas",
+      "Pacific coast: shrimp and seafood dishes, camarones"
+    ],
+    "drinking_water_notes": "Never drink tap water anywhere in Honduras. Always bottled or purified water. Ice at established restaurants usually from purified water — ask if unsure in budget spots.",
+    "alcohol_rules": "Legal drinking age 18. No strict public drinking laws. Alcohol widely available except Good Friday."
+  },
+  "outdoors": {
+    "top_national_parks": [
+      "Copán Archaeological Site — UNESCO World Heritage Maya ruins, most ornate in the Maya world",
+      "Pico Bonito National Park — rugged Caribbean slope rainforest, excellent birding and hiking near La Ceiba",
+      "Cusuco National Park — cloud forest, harpy eagle nesting, highly threatened ecosystem",
+      "Celaque National Park — highest peak in Honduras (Las Minas, 2,870m), cloud forest",
+      "Cuero y Salado Wildlife Refuge — manatee sanctuary and mangrove system near La Ceiba",
+      "Lago de Yojoa — largest freshwater lake in Honduras, excellent birding",
+      "La Mosquitia / Río Plátano Biosphere Reserve — UNESCO World Heritage, vast wilderness (serious security considerations)"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Copán Archaeological Site Trails",
+        "difficulty": "Easy",
+        "duration": "3-6 hours",
+        "region": "Copán department",
+        "description": "Explore the extraordinary Maya ruins of Copán — the most hieroglyph-rich site in the Maya world. The Hieroglyphic Stairway contains the longest Maya text ever found. Stelae, ball court, acropolis, and adjacent sculpture museum. Macaws everywhere.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 600,
+        "notes": "Entrance fee ~$15 plus $7 for tunnels. Hire local guide for context — transforms the experience. Combine with Las Sepulturas site and the sculpture museum. Arrive early before tour groups."
+      },
+      {
+        "name": "Pico Bonito Lower Trails",
+        "difficulty": "Moderate",
+        "duration": "3-6 hours",
+        "region": "Atlántida (near La Ceiba)",
+        "description": "Hike through stunning Caribbean slope rainforest with rushing rivers, waterfalls, and extraordinary biodiversity. One of the top birdwatching sites in Honduras — 400+ species. Jaguars and pumas present in the park.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 800,
+        "notes": "Multiple entry points. Lodge at the park entrance offers guided tours. Waterfalls and river swimming accessible on lower trails. Upper peaks require multi-day commitment."
+      },
+      {
+        "name": "Celaque National Park — Las Minas Summit",
+        "difficulty": "Very Hard",
+        "duration": "2-3 days",
+        "region": "Lempira (Gracias)",
+        "description": "Trek to the highest point in Honduras (2,870m) through pristine cloud forest. Quetzal habitat. Quetzals visible in January-May breeding season. Very remote — one of the least-visited high-altitude parks in Central America.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 2870,
+        "notes": "Start from Gracias town. Guide and ranger station registration required. Basic shelter on mountain. Can be very muddy — waterproof gear essential. Cold at summit — bring warm layers. Rare and rewarding experience."
+      },
+      {
+        "name": "Lago de Yojoa Birding Walk",
+        "difficulty": "Easy",
+        "duration": "2-4 hours",
+        "region": "Cortés / Santa Bárbara",
+        "description": "Walk the shores and forest edges of Honduras's largest lake — one of the top birding sites in Central America. Over 400 species recorded including jabiru stork, snail kite, and numerous herons. Beautiful lake scenery with Cerro Azul Meámbar NP as backdrop.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 640,
+        "notes": "Best birding from D&D Brewery eco-lodge area. Early morning essential. Boat tours on the lake also available. Good midpoint between San Pedro Sula and Copán."
+      },
+      {
+        "name": "Macaw Mountain Bird Park Trails (Copán)",
+        "difficulty": "Easy",
+        "duration": "1-2 hours",
+        "region": "Copán department",
+        "description": "Walk through a macaw and parrot rescue sanctuary in the river valley below Copán Ruinas. Scarlet macaws — the symbol of Copán — fly freely. Beautiful river canyon setting with hanging bridge.",
+        "best_months": ["Year-round"],
+        "elevation_m": 580,
+        "notes": "Entrance fee ~$10. Great for families. Combines perfectly with the main ruins site. River swimming possible in the valley. The scarlet macaws from this sanctuary now nest at the ruins themselves."
+      },
+      {
+        "name": "Cuero y Salado Manatee Boat Tour",
+        "difficulty": "Easy",
+        "duration": "3-5 hours",
+        "region": "Atlántida (near La Ceiba)",
+        "description": "Boat tour through mangrove channels and lagoons to spot West Indian manatees, river otters, monkeys, caimans, and extraordinary waterbird colonies. One of the best manatee viewing sites in Central America.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 5,
+        "notes": "Access by railway handcar from La Ceiba followed by boat — unique transport. Book through La Ceiba tour operators. Early morning for best wildlife. Mosquito repellent essential."
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Río Plátano Biosphere Reserve Expedition",
+        "difficulty": "Very Hard",
+        "duration": "7-14 days",
+        "region": "La Mosquitia (Gracias a Dios)",
+        "description": "Remote river expedition through one of the largest undisturbed rainforests in Central America — a UNESCO World Heritage Site. Pech and Miskito indigenous communities. Extraordinary wildlife including harpy eagle and jaguar. One of the most remote experiences in the Western Hemisphere.",
+        "best_months": ["February", "March"],
+        "elevation_m": 1326,
+        "notes": "CRITICAL SAFETY WARNING: La Mosquitia has serious drug trafficking activity. Only attempt with highly reputable specialized operators and with current US Embassy safety guidance. Check State Department advisory immediately before planning. This is an extraordinary but genuinely dangerous region."
+      },
+      {
+        "name": "Celaque Cloud Forest Multi-Day",
+        "difficulty": "Hard",
+        "duration": "2-3 days",
+        "region": "Lempira",
+        "description": "Overnight trek through Celaque cloud forest to Las Minas summit. Camp or shelter at ranger stations. Quetzal and harpy eagle possible. Pristine, rarely-visited highland wilderness.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 2870,
+        "notes": "Register at ranger station in Gracias. Bring all food and supplies — nothing available on the mountain. Guide essential. One of the most rewarding and overlooked treks in Central America."
+      }
+    ],
+    "volcanoes": [],
+    "waterfalls": [
+      "Pulhapanzak Waterfall — 43m waterfall on the Río Lindo near Lago de Yojoa, cave behind falls",
+      "La Cascada de La Tigra (Tegucigalpa) — waterfall in La Tigra cloud forest NP",
+      "Pico Bonito waterfalls — multiple cascades in Caribbean slope rainforest near La Ceiba"
+    ],
+    "hot_springs": [
+      "Aguas Termales de Azacualpa (near Gracias) — natural hot springs below Celaque volcano",
+      "Agua Caliente (near Ocotepeque) — natural hot springs near Guatemala border"
+    ],
+    "lakes": [
+      "Lago de Yojoa — largest lake in Honduras, superb birding, D&D Brewery",
+      "Lago de Ojo de Agua (Copán) — small lake near Copán ruins"
+    ],
+    "rivers": [
+      "Río Cangrejal (near La Ceiba) — excellent Class III-IV whitewater rafting",
+      "Río Plátano — remote La Mosquitia expedition river",
+      "Río Copán — river valley below Copán ruins, swimming"
+    ],
+    "wildlife": [
+      "Scarlet macaw (Copán — nesting in ruins, iconic)",
+      "Harpy eagle (Cusuco NP, Pico Bonito, La Mosquitia)",
+      "Jaguar (Pico Bonito, La Mosquitia, Celaque)",
+      "West Indian manatee (Cuero y Salado)",
+      "Resplendent quetzal (Celaque, Cusuco — Jan-May)",
+      "Howler monkey (Pico Bonito, Bay Islands)",
+      "White-faced capuchin monkey (widespread)",
+      "Spider monkey (La Mosquitia)",
+      "Jabiru stork (Lago de Yojoa)",
+      "American crocodile (Caribbean estuaries)",
+      "Sea turtle — hawksbill and loggerhead (Bay Islands nesting)",
+      "Whale shark (Bay Islands — regular sightings)",
+      "Dolphin (Bay Islands — bottlenose)"
+    ],
+    "birdwatching_hotspots": [
+      "Lago de Yojoa — over 400 species, one of top birding sites in Central America",
+      "Pico Bonito National Park — Caribbean slope, 400+ species",
+      "Cusuco National Park — cloud forest endemics, threatened species",
+      "Copán ruins — scarlet macaws nesting in the temples",
+      "La Tigra Cloud Forest (near Tegucigalpa) — quetzal and cloud forest species",
+      "Bay Islands — seabirds, wading birds, Brown booby"
+    ],
+    "stargazing_spots": [
+      "Celaque mountain (dark skies, 2,870m)",
+      "Lago de Yojoa (rural, low light pollution)",
+      "Bay Islands outer cays"
+    ],
+    "scenic_drives": [
+      "La Ceiba to Tela along Caribbean coast highway",
+      "San Pedro Sula to Copán via western highlands",
+      "Lago de Yojoa circuit"
+    ],
+    "surf_spots": [],
+    "wildlife_zones": [
+      {
+        "name": "Bay Islands Marine Reserve",
+        "region": "Bay Islands (Caribbean)",
+        "key_species": ["Whale shark", "Hammerhead shark", "Sea turtle (hawksbill, loggerhead)", "Dolphin", "Eagle ray", "Moray eel", "Caribbean reef fish", "Coral (Mesoamerican Barrier Reef)"],
+        "best_months": ["December", "January", "February", "March", "April"],
+        "notes": "The Bay Islands sit on the Mesoamerican Barrier Reef — second largest in the world. Excellent visibility year-round. Whale sharks regular visitors especially around Utila. Utila is globally known as cheapest place on earth to get PADI certified."
+      },
+      {
+        "name": "Cuero y Salado Wildlife Refuge",
+        "region": "Atlántida (near La Ceiba)",
+        "key_species": ["West Indian manatee", "River otter", "Crocodile", "Howler monkey", "White-faced monkey", "Roseate spoonbill", "Jabiru stork"],
+        "best_months": ["December", "January", "February", "March"],
+        "notes": "One of the best manatee refuges in Central America. Mangrove system teems with birds. Access by historic handcar railway from La Ceiba then boat. Book through Foundation Cuero y Salado."
+      },
+      {
+        "name": "Pico Bonito National Park",
+        "region": "Atlántida (near La Ceiba)",
+        "key_species": ["Harpy eagle", "Jaguar", "Puma", "Keel-billed toucan", "Resplendent quetzal (upper elevations)", "400+ bird species"],
+        "best_months": ["December", "January", "February", "March"],
+        "notes": "One of Honduras's top natural areas. The Lodge at Pico Bonito is world-famous for birding. Multiple trail difficulties from easy river hikes to steep summit climbs. Very close to La Ceiba."
+      },
+      {
+        "name": "Copán Archaeological Zone",
+        "region": "Copán department",
+        "key_species": ["Scarlet macaw (free-flying in the ruins)", "White-tailed deer", "Coati", "Agouti"],
+        "best_months": ["November", "December", "January", "February", "March"],
+        "notes": "The scarlet macaws at Copán are extraordinary — they nest in the ancient temple structures. Macaw Mountain park breeds and releases birds back to the ruins. Watching macaws fly over Maya stelae is one of Central America's great wildlife moments."
+      }
+    ]
+  },
+  "sports_and_activities": [
+    {
+      "name": "Scuba Diving",
+      "popularity": "Very High",
+      "best_regions": ["Roatán", "Utila", "Guanaja"],
+      "best_months": ["Year-round — best visibility December-April"],
+      "skill_levels": ["Beginner", "Intermediate", "Advanced"],
+      "notes": "The Bay Islands are one of the world's premier dive destinations — sitting on the Mesoamerican Barrier Reef. Utila is globally famous for the cheapest PADI Open Water certification in the world ($250-350). Regular whale shark sightings around Utila. Roatán has more infrastructure. Guanaja is remote and pristine."
+    },
+    {
+      "name": "PADI Dive Certification",
+      "popularity": "Very High",
+      "best_regions": ["Utila (cheapest)", "Roatán (more infrastructure)"],
+      "best_months": ["Year-round"],
+      "skill_levels": ["Beginner"],
+      "notes": "Utila is arguably the most famous budget dive certification destination on earth. Multiple dive shops offering Open Water, Advanced, and Divemaster courses. Entire town built around the dive industry. Whale shark encounters during certification dives are common."
+    },
+    {
+      "name": "Maya Archaeology",
+      "popularity": "High",
+      "best_regions": ["Copán", "Quiriguá (Guatemala, day trip)"],
+      "best_months": ["November", "December", "January", "February", "March"],
+      "skill_levels": ["Beginner"],
+      "notes": "Copán is one of the great Maya sites — arguably the most artistically sophisticated. The Hieroglyphic Stairway (2,500 glyphs), the Acropolis, and the extraordinary sculpture museum. Hire a licensed guide to unlock the full significance."
+    },
+    {
+      "name": "Whitewater Rafting",
+      "popularity": "Moderate",
+      "best_regions": ["Río Cangrejal (La Ceiba)"],
+      "best_months": ["June", "July", "August", "September", "October"],
+      "skill_levels": ["Intermediate", "Advanced"],
+      "notes": "Río Cangrejal offers excellent Class III-IV whitewater through Pico Bonito National Park. Best during rainy season when water levels are up. Multiple operators in La Ceiba. Combine with Pico Bonito hiking."
+    },
+    {
+      "name": "Snorkeling",
+      "popularity": "High",
+      "best_regions": ["Roatán (West Bay)", "Utila", "Guanaja"],
+      "best_months": ["Year-round — best clarity December-April"],
+      "skill_levels": ["Beginner"],
+      "notes": "West Bay Beach on Roatán has excellent snorkeling directly from the beach — coral reef 20m from shore. Some of the best accessible snorkeling in the Caribbean. Mask and fins available everywhere."
+    },
+    {
+      "name": "Birdwatching",
+      "popularity": "Moderate",
+      "best_regions": ["Lago de Yojoa", "Pico Bonito", "Cusuco NP", "Copán"],
+      "best_months": ["November", "December", "January", "February", "March"],
+      "skill_levels": ["Beginner", "Intermediate", "Advanced"],
+      "notes": "Honduras is severely underrated as a birding destination. Lago de Yojoa and Pico Bonito are world-class. Over 700 species recorded nationally. D&D Brewery at Lago de Yojoa is a beloved birding base."
+    },
+    {
+      "name": "Garifuna Cultural Experience",
+      "popularity": "Moderate",
+      "best_regions": ["Tela (Tornabé, Miami villages)", "La Ceiba", "Trujillo"],
+      "best_months": ["Year-round (April 12 — Garifuna Settlement Day is special)"],
+      "skill_levels": ["Beginner"],
+      "notes": "Garifuna culture — a unique blend of West African, Arawak, and Carib heritage — is living and vibrant on the Honduran Caribbean coast. Punta dancing, traditional drumming, sopa de caracol, and hudut. One of the most culturally distinctive experiences in Central America."
+    }
+  ],
+  "trip_styles": {
+    "good_for_backpacking": true,
+    "good_for_luxury": false,
+    "good_for_families": false,
+    "good_for_couples": true,
+    "good_for_solo_travel": false,
+    "good_for_digital_nomads": false,
+    "good_for_adventure_travel": true,
+    "good_for_food_travel": false,
+    "good_for_road_trips": false,
+    "good_for_short_trips": true,
+    "good_for_long_stays": false
+  },
+  "destinations": {
+    "top_cities": ["Tegucigalpa (transit only)", "San Pedro Sula (transit only)", "La Ceiba"],
+    "top_towns": ["Copán Ruinas", "Roatán (West End/West Bay)", "Utila", "Tela", "Gracias"],
+    "top_regions": ["Bay Islands", "Copán Archaeological Zone", "Lago de Yojoa", "Pico Bonito / La Ceiba area", "Caribbean Garifuna Coast"],
+    "top_islands": ["Roatán", "Utila", "Guanaja", "Cayos Cochinos"],
+    "sample_itineraries": {
+      "one_week": "Fly into SAP → La Ceiba (1 day) → Utila dive certification (5 days) → fly home from SAP",
+      "two_weeks": "Fly into SAP → Lago de Yojoa birding (1 day) → Copán ruins (2 days) → La Ceiba/Pico Bonito (2 days) → Utila dive cert (5 days) → Roatán (3 days) → fly home",
+      "classic_route": "Copán → Lago de Yojoa → La Ceiba → Bay Islands",
+      "offbeat_route": "La Ceiba → Cuero y Salado manatees → Pico Bonito → Cayos Cochinos → Garifuna villages (Tela)"
+    }
+  },
+  "practical_info": {
+    "arrival_tips": "Most tourists fly into San Pedro Sula (SAP) — better infrastructure and safer airport area than Tegucigalpa. If transiting through Tegucigalpa, arrange hotel airport pickup in advance. Do not linger in either city — move to your destination quickly.",
+    "airport_scam_notes": "Only use hotel pre-arranged taxis or official airport taxi desks. Never accept rides from strangers approaching in the terminal. Keep bags close at all times in airports.",
+    "local_sim_where_to_buy": "Tigo and Claro SIMs available at airports and city shops. Bring passport. $5-10 for a data plan.",
+    "money_exchange_notes": "USD exchangeable at banks and exchange houses (casas de cambio). Bay Islands widely accept USD. Use bank ATMs during business hours only. Avoid street money changers.",
+    "language_helpful_phrases": {
+      "hello": "Hola / Buenos días",
+      "thank_you": "Gracias",
+      "how_much": "¿Cuánto cuesta?",
+      "where_is": "¿Dónde está...?",
+      "i_dont_speak_spanish": "No hablo español",
+      "the_bill_please": "La cuenta, por favor",
+      "help": "¡Ayuda!",
+      "cheers": "¡Salud!",
+      "baleada_please": "Una baleada, por favor"
+    },
+    "offline_maps_recommended": ["Maps.me", "Google Maps (offline)"],
+    "apps_useful_locally": ["Uber (Tegucigalpa/San Pedro Sula)", "WhatsApp (essential)", "Maps.me (offline maps)", "XE Currency"]
+  },
+  "laws": {
+    "drug_laws_strictness": "Very strict — possession carries significant jail time. Honduras is a major drug transit country — do not carry any drugs under any circumstances. Being caught with drugs here is extremely serious.",
+    "alcohol_laws": "Legal drinking age 18. No strict public drinking laws. Alcohol widely available.",
+    "drone_rules": "Permits required from AHAC (Autoridad de Aeronáutica Civil de Honduras). Prohibited over military areas, airports, and government buildings. Bay Islands have additional restrictions near dive sites.",
+    "wild_camping_rules": "Generally not recommended due to safety concerns. Only camp in designated park areas with guide and ranger awareness.",
+    "protected_area_rules": "Entry fees vary. Guides required or strongly recommended in most parks. No collecting plants, wildlife, or coral. Copán archaeological zone has strict no-touch rules.",
+    "fishing_license_required": true,
+    "photography_restricted_sites": ["Military and police installations", "Prisons", "Government security facilities"],
+    "lgbtq_legal_status": "Same-sex relationships legal but constitutional ban on marriage. No anti-discrimination protections. Significant social hostility and documented violence against LGBTQ+ individuals. Exercise extreme discretion outside Bay Islands tourist areas.",
+    "marijuana_legality": "Illegal — strict enforcement. Zero tolerance. Honduras is a drug transit country and authorities treat drug offenses very seriously.",
+    "prescription_medication_rules": "Bring prescriptions in original packaging with doctor's letter. Bring sufficient supply — availability limited outside Tegucigalpa and San Pedro Sula."
+  },
+  "family_travel": {
+    "kid_friendly": false,
+    "stroller_friendly": false,
+    "car_seat_rules": "Legally required but rarely enforced. Bring your own.",
+    "family_activities": [
+      "Copán ruins — the scarlet macaws flying over ancient temples are magical for children",
+      "Macaw Mountain Bird Park — hands-on macaw encounter",
+      "Roatán West Bay snorkeling — calm, clear, shallow reef great for children",
+      "Pulhapanzak Waterfall — swimming hole and waterfall exploration",
+      "Cuero y Salado manatee boat tour — wildlife adventure"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Very limited throughout the country. Poor infrastructure, unpaved roads, and limited ramps make wheelchair travel extremely difficult.",
+    "accessible_transport": "No wheelchair-accessible public transport. Private vehicle with driver is only practical option.",
+    "accessible_attractions": ["Copán ruins visitor center (partial)", "Miraflores Canal — not applicable to Honduras"]
+  },
+  "gear": {
+    "bring_wetsuit": false,
+    "bring_hiking_boots": true,
+    "bring_layers": true,
+    "bring_bug_spray": true,
+    "bring_sunscreen": true,
+    "cold_weather_gear_needed": true,
+    "cold_weather_gear_notes": "Needed for Celaque summit (can approach freezing). Light layers for Copán and highland areas in December-January.",
+    "rental_gear_easy_to_find": false,
+    "outdoor_gear_shops": [
+      "Dive gear rentals widely available in Bay Islands — every dive shop",
+      "Very limited general outdoor gear shops",
+      "Basic gear available in San Pedro Sula shopping malls",
+      "Bring your own hiking boots and technical gear from home"
+    ]
+  }
+}

@@ -1,0 +1,675 @@
+{
+  "meta": {
+    "last_updated": "2026-04-17",
+    "confidence_score": 0.88,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "WayFinder internal hike/food/history data",
+      "WayFinder safety submodels"
+    ],
+    "notes": "Populated from WayFinder app data and verified travel references. Null fields to be enriched via Tavily web search."
+  },
+  "identity": {
+    "name": "Nicaragua",
+    "official_name": "Republic of Nicaragua",
+    "code": "NI",
+    "iso3": "NIC",
+    "region": "Americas",
+    "subregion": "Central America",
+    "capital": "Managua",
+    "flag_emoji": "🇳🇮",
+    "timezones": ["UTC-06:00"],
+    "driving_side": "right",
+    "country_calling_code": "+505",
+    "internet_tld": ".ni"
+  },
+  "language_and_money": {
+    "languages": ["Spanish", "Miskito", "Creole English"],
+    "primary_language": "Spanish",
+    "english_proficiency": "Low — limited outside tourist areas, upscale hotels, and Caribbean coast. Creole English spoken on the Caribbean coast.",
+    "currency": "NIO",
+    "currency_name": "Nicaraguan Córdoba",
+    "currency_symbol": "C$",
+    "cash_vs_card": "Cash dominant. Cards accepted at upscale hotels and larger restaurants in Granada and León. ATMs available in cities but unreliable — carry sufficient cash especially outside Managua.",
+    "typical_payment_methods": ["Cash (NIO)", "USD (widely accepted)", "Visa (limited)", "Mastercard (limited)"],
+    "atm_availability": "Available in Managua, Granada, and León. Scarce and unreliable in smaller towns and Caribbean coast. Withdraw cash before leaving major cities.",
+    "tipping_culture": "Not mandatory but appreciated. 10-15% tip in restaurants is generous and welcomed.",
+    "tipping_etiquette": "Round up taxi fares. Tip tour guides $5-10/day. Restaurant staff appreciate 10% — not always included in bill. Hotel housekeeping $1/day."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days (CA-4 agreement)",
+      "visa_type": "Tourist stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for at least 6 months beyond date of entry",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": true,
+    "tourist_entry_fee": "$10 USD tourism card fee on arrival",
+    "departure_tax": "Included in airline ticket price",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Strict limits on firearms, narcotics, and fresh produce. Declaration required for cash over $10,000 USD.",
+    "restricted_items": ["Narcotics", "Firearms (without permit)", "Fresh produce without permit", "Cash over $10,000 without declaration"],
+    "duty_free_allowances": "400 cigarettes or 50 cigars, 3 liters of alcohol, gifts up to $500 value"
+  },
+  "health": {
+    "recommended_vaccines": ["Hepatitis A", "Typhoid", "Hepatitis B", "Rabies (if visiting rural areas)", "Tetanus-Diphtheria"],
+    "required_vaccines": [],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Present in rural and Caribbean coast areas. Low risk in major cities and Pacific highlands.",
+    "malaria_regions": ["RACN (North Caribbean Autonomous Region)", "RACS (South Caribbean Autonomous Region)", "Río San Juan department", "Jinotega rural areas"],
+    "malaria_prophylaxis_info": "Recommended for travel to Caribbean coast and remote jungle areas. Atovaquone-proguanil or doxycycline. Not needed for Granada, León, and Pacific coast.",
+    "dengue_risk": "Moderate to high — present nationwide, especially in urban and lowland areas during rainy season (May-November).",
+    "altitude_sickness_risk": "Very low — highest point (Mogoton) is only 2,107m. Not a practical concern for tourists.",
+    "food_water_safety": "Tap water not safe to drink. Use bottled or purified water everywhere. Street food generally safe at busy stalls. Avoid raw shellfish from unrefrigerated vendors.",
+    "air_quality_concerns": "Managua has traffic-related air pollution. Volcanic activity near Masaya can produce sulfur dioxide — check conditions before visiting.",
+    "common_travel_illnesses": ["Traveler's diarrhea", "Dengue fever", "Sunburn", "Mosquito-borne illness"],
+    "pharmacy_access": "Pharmacies available in cities and larger towns. Basic medications widely available OTC. Limited in Caribbean coast and remote areas.",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Limited — private clinics in Managua (Hospital Metropolitano, Hospital Bautista) offer adequate care. Public hospitals underfunded. Evacuate serious conditions to Costa Rica or US.",
+    "emergency_medical_number": "128"
+  },
+  "safety": {
+    "travel_advisory_level_us": 3,
+    "travel_advisory_level_label": "Reconsider Travel",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "Authoritarian government with history of arbitrary detention of foreigners",
+      "Limited rule of law and due process",
+      "Political situation can change rapidly",
+      "Crime in Managua and Caribbean coast",
+      "Protests and civil unrest possible"
+    ],
+    "crime_risk": "Moderate — Nicaragua is historically safer than Honduras and El Salvador for street crime, but political risks are significant. Petty theft in Managua and tourist areas. Violent crime on Caribbean coast.",
+    "scam_risk": "Moderate — taxi overcharging, fake guides, currency exchange fraud",
+    "transport_safety": "Intercity buses generally safe on main routes. Avoid night travel. Chicken buses (repurposed US school buses) are very cheap but crowded. Roads can be poor.",
+    "solo_female_travel_notes": "Exercise increased caution. Catcalling and harassment more common than in Costa Rica. Avoid walking alone at night. Travel with groups when possible in less-touristed areas.",
+    "lgbtq_notes": "Same-sex relationships legal but no recognition of same-sex partnerships. Social conservatism prevalent. Public displays of affection not recommended. No legal protections against discrimination.",
+    "night_safety": "Avoid walking alone at night anywhere in Managua. Granada and León tourist centers are relatively safe until 10pm. Caribbean coast requires extra caution at night.",
+    "safe_areas": ["Granada old town", "León colonial center", "Isla de Ometepe", "San Juan del Sur", "Little Corn Island"],
+    "areas_to_avoid": ["Managua at night (most neighborhoods)", "Caribbean coast border areas (Honduras)", "Río San Juan border region", "Areas near political government buildings"],
+    "natural_disaster_risks": ["Volcanic eruptions (Masaya, Concepción, San Cristóbal — all active)", "Earthquakes (Managua sits on major fault lines)", "Hurricanes (Caribbean coast, June-November)", "Flooding in rainy season", "Tsunamis on Pacific coast"],
+    "political_stability_notes": "Nicaragua is under authoritarian rule (Ortega government). Arbitrary detention of foreigners has occurred. Political situation is unpredictable. Monitor US State Department advisories closely. Avoid any political discussions or activities.",
+    "common_scams": [
+      "Taxi overcharging — negotiate fare before getting in, no meters",
+      "Fake tour guides at major attractions",
+      "Currency exchange fraud — use official exchange houses (casa de cambio)",
+      "Overpriced 'tourist menus' in restaurants",
+      "Unsolicited 'help' at bus stations leading to inflated prices"
+    ],
+    "police_reliability": "Variable. Police can be influenced by political considerations. Tourist police available in Granada and León. Exercise caution in interactions with authorities.",
+    "emergency_numbers": {
+      "police": "118",
+      "ambulance": "128",
+      "fire": "115",
+      "general_emergency": "911"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Managua",
+      "us_embassy_phone": "+505-2252-7100",
+      "us_embassy_website": "https://ni.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "November to April (dry season) — best weather across the Pacific coast, highlands, and colonial cities",
+    "climate_zones": [
+      "Pacific lowlands — hot and dry, distinct wet and dry seasons",
+      "Central highlands — cooler, wetter year-round",
+      "Caribbean coast — hot, humid, extremely wet year-round, hurricane risk"
+    ],
+    "dry_season": "November to April (Pacific and highlands)",
+    "rainy_season": "May to October (Pacific and highlands); year-round on Caribbean coast",
+    "hurricane_typhoon_season": "June to November (Caribbean coast — direct hurricane risk)",
+    "surf_season": "April to October (largest swells on Pacific coast)",
+    "trekking_best_months": ["November", "December", "January", "February", "March"],
+    "average_temp_by_month": {
+      "Managua": "28-35°C year-round (hottest March-May)",
+      "Granada": "27-33°C year-round",
+      "Matagalpa (highlands)": "20-25°C year-round",
+      "Caribbean coast": "28-32°C year-round"
+    },
+    "daylight_hours_by_season": "Near equator — approximately 11.5-12.5 hours year-round"
+  },
+  "transport": {
+    "major_airports": [
+      "Augusto C. Sandino International Airport (MGA) — Managua (only international airport)"
+    ],
+    "main_airlines": ["American Airlines", "United", "Copa Airlines", "Avianca", "Spirit"],
+    "airport_to_city_options": ["Official taxis ($15-25 to Managua center)", "Pre-booked hotel shuttle", "Rental car"],
+    "public_transit_quality": "Managua has a public bus system but is confusing and slow. No metro. Motorcycle taxis (mototaxis) are common and cheap in smaller cities.",
+    "intercity_bus_quality": "Extensive network of chicken buses (repurposed US school buses) — very cheap but slow and crowded. Express minibuses (microlines) faster and slightly more expensive. Good coverage of major destinations.",
+    "train_network_quality": "No passenger train service.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": true,
+    "road_conditions": "Main highways (Pan-American) paved and decent. Many secondary roads unpaved and rough. Caribbean coast roads very poor — rivers and flooding common obstacles.",
+    "four_x_four_needed_regions": ["Caribbean coast (RACN/RACS)", "Río San Juan department", "Remote highland villages", "Mombacho volcano access"],
+    "ride_hailing_apps": ["InDriver (Managua)"],
+    "taxi_safety_notes": "No taxi meters — always negotiate fare before getting in. Agree on price in advance. Avoid unlicensed taxis at night. Mototaxis are common and cheap for short distances.",
+    "ferry_routes": ["Granada to Isla de Ometepe (across Lake Nicaragua, ~1 hr)", "San Carlos to Río San Juan (boat)", "Big Corn Island to Little Corn Island (panga boat, 30 min)"],
+    "border_crossing_notes": "Main crossings: Peñas Blancas (Costa Rica — busy, expect waits), Las Manos (Honduras), El Guasaule (Honduras). CA-4 agreement means stamp is shared across Guatemala, El Salvador, Honduras, Nicaragua."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$25-40/day",
+    "daily_budget_midrange": "$50-90/day",
+    "daily_budget_comfort": "$100-160/day",
+    "hostel_avg": "$8-15/night",
+    "hotel_avg": "$30-70/night",
+    "meal_avg": "$3-7 (comida corriente $2.50-4, restaurant $7-15)",
+    "coffee_avg": "$1-2",
+    "beer_avg": "$1.50-2.50",
+    "local_transport_avg": "$0.25-0.50 (chicken bus)",
+    "sim_card_avg": "$5-10 for 3-5GB",
+    "coworking_day_pass_avg": "$8-12",
+    "surfboard_rental_avg": "$10-20/day",
+    "value_for_money": "Excellent — one of the cheapest countries in Central America. Very good value for money, especially for food, transport, and accommodation."
+  },
+  "connectivity": {
+    "sim_card_providers": ["Claro", "Movistar (Tigo)"],
+    "esim_available": false,
+    "mobile_data_quality": "Decent 4G in Managua, Granada, and León. Poor to nonexistent in Caribbean coast, Isla de Ometepe, and remote areas.",
+    "wifi_quality": "Available in most hostels and tourist-facing restaurants. Speeds variable (2-20 Mbps). Unreliable in Caribbean coast and rural areas.",
+    "coworking_available": false,
+    "best_remote_work_cities": ["Managua", "Granada", "León"],
+    "power_outlet_types": ["A", "B"],
+    "voltage": "120V, 60Hz",
+    "plug_adapter_needed_for_us": false,
+    "power_reliability": "Frequent power outages (apagones) throughout the country — more common in heat of the day and during rainy season. Bring power bank. Larger hotels have generators."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Granada old town — colonial architecture, central, most tourist infrastructure",
+      "León colonial center — university city, revolutionary art, close to volcanoes",
+      "San Juan del Sur — Pacific surf and beach town",
+      "Isla de Ometepe — unique twin-volcano island in Lake Nicaragua",
+      "Little Corn Island — Caribbean gem, no cars, laid-back",
+      "Matagalpa — coffee highlands base, cooler climate"
+    ],
+    "budget_areas": ["Granada (hostels)", "León (hostels)", "San Juan del Sur (budget guesthouses)", "Isla de Ometepe (guesthouses)"],
+    "family_friendly_areas": ["Granada", "Isla de Ometepe", "San Juan del Sur"],
+    "nightlife_areas": ["San Juan del Sur", "Granada (Calle La Calzada)", "León (near the university)"],
+    "surf_towns": ["San Juan del Sur", "Playa Maderas", "Popoyo", "Playa Gigante"],
+    "eco_lodges_available": true,
+    "peak_booking_season": "December to April (dry season); Semana Santa (Easter) is extremely busy",
+    "accommodation_notes": "Granada offers the best range of quality accommodation. Semana Santa is the peak of peak season — book months in advance. Caribbean islands fill up quickly; book ahead."
+  },
+  "culture": {
+    "local_customs": [
+      "Warm and hospitable people despite political difficulties",
+      "Greet with a single kiss on the right cheek between women and mixed company; handshake between men",
+      "Family is extremely important — Sunday family gatherings are sacred",
+      "Strong revolutionary history — murals, sandinist symbolism common in León",
+      "Avoid political discussions — can be sensitive and even dangerous"
+    ],
+    "dress_expectations": "Casual and relaxed. Cover up when entering churches. Modest dress appreciated in smaller towns and rural areas. Beachwear only at the beach.",
+    "religious_sensitivity": "Predominantly Catholic with strong Protestant communities, especially on Caribbean coast. Semana Santa is the most important week of the year.",
+    "social_norms": [
+      "Punctuality is relaxed — being late is normal in social settings",
+      "Nicaraguans are proud of their country despite hardships — be respectful",
+      "Avoid any political commentary — neutrality is essential for tourist safety",
+      "Bargaining expected at markets but not in shops"
+    ],
+    "greeting_style": "Warm — cheek kiss in social settings, handshake in business. 'Buenos días/tardes/noches' is standard.",
+    "public_behavior_notes": "Generally relaxed about PDA in tourist areas. Avoid any political symbols, flags, or activism — can attract unwanted attention from authorities.",
+    "photography_etiquette": "Ask permission before photographing people. Avoid photographing government buildings, police, or military — can result in detention. Some churches restrict interior photography.",
+    "bargaining_expected": true,
+    "important_holidays": [
+      "Semana Santa (Easter week) — biggest holiday, beaches packed",
+      "Independence Day (September 15) — Central American nations",
+      "Revolution Day (July 19) — Sandinista celebration, government-organized events",
+      "Purísima (December 7-8) — immaculate conception celebration, loud fireworks, street celebrations",
+      "Día de los Muertos (November 2)"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Photography of government buildings, police, and military personnel can result in detention",
+      "Any perceived political activism can lead to arbitrary detention",
+      "Drone permits required and heavily regulated",
+      "Collecting wildlife, plants, or shells prohibited"
+    ]
+  },
+  "food": {
+    "signature_dishes": [
+      "Gallo pinto — rice and beans cooked together, the national breakfast staple",
+      "Vigorón — yuca topped with chicharrón and cabbage salad, served on a banana leaf",
+      "Nacatamal — large corn dough tamale stuffed with pork, rice, vegetables, wrapped in banana leaf",
+      "Indio Viejo — shredded beef or chicken stew with corn masa, tomatoes, and mint",
+      "Baho — slow-cooked beef with plantains and yuca, wrapped in banana leaves",
+      "Carne asada — grilled beef served with gallo pinto, plantains, and cheese",
+      "Sopa de res — hearty beef and vegetable soup",
+      "Quesillo — corn tortilla filled with soft white cheese, cream, and pickled onions (street food staple)"
+    ],
+    "street_food_safety": "Generally safe at busy, high-turnover stalls. Quesillo from street vendors is a classic and generally safe. Avoid raw seafood from unrefrigerated vendors. Stick to hot, freshly cooked items.",
+    "vegetarian_friendliness": "Limited — meat is central to Nicaraguan cuisine. Gallo pinto, rice, beans, and plantains are vegetarian-friendly staples. Few dedicated vegetarian restaurants outside Granada and León.",
+    "vegan_friendliness": "Challenging — dairy and meat are prevalent. Growing options in Granada and León for longer stays. Rural areas very difficult for vegans.",
+    "must_try_drinks": [
+      "Flor de Caña rum — Nicaragua's world-famous aged rum, among the best in the Caribbean basin",
+      "Tona and Victoria beer — national beers, light and refreshing",
+      "Pinolillo — toasted corn and cacao drink, the national beverage",
+      "Chicha bruja — fermented corn drink (Caribbean coast)",
+      "Tiste — cacao and corn cold drink",
+      "Fresh tropical juices (maracuyá, tamarind, jocote, nancite)"
+    ],
+    "regional_specialties": [
+      "Pacific coast/Granada: vigorón, quesillo, nacatamales",
+      "Caribbean coast: rice and beans in coconut milk, rondón (seafood/meat coconut stew), lobster",
+      "Highlands (Matagalpa/Jinotega): coffee (some of the best in Central America), dairy products",
+      "Masaya: traditional crafts market with local foods, rosquillas"
+    ],
+    "drinking_water_notes": "Never drink tap water anywhere in Nicaragua. Always use bottled or purified water. Ice at restaurants is usually from purified water in tourist areas — ask if unsure.",
+    "alcohol_rules": "Legal drinking age 18. No strict public drinking laws but excessive public drunkenness frowned upon. Alcohol widely available."
+  },
+  "outdoors": {
+    "top_national_parks": [
+      "Masaya Volcano National Park — most accessible active volcano in the world, lava lake visible at night",
+      "Mombacho Volcano Natural Reserve — cloud forest, excellent birdwatching, overlooking Granada",
+      "Bosawás Biosphere Reserve — largest rainforest north of the Amazon in Central America",
+      "Cerro Negro Volcano — youngest and most active volcano, famous for volcano boarding",
+      "Miraflor Nature Reserve — cloud forest, bird-rich highlands, community tourism",
+      "Cayos Miskitos Marine Reserve — Caribbean coral reef system"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Masaya Volcano — Lava Lake Viewpoint",
+        "difficulty": "Easy",
+        "duration": "1-2 hours",
+        "region": "Masaya (near Granada)",
+        "description": "Drive or walk to the Santiago crater rim to look directly into one of the world's few persistent lava lakes. Active, steaming, and viscerally impressive. Night visits when lava glows are spectacular.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 635,
+        "notes": "Sulfur dioxide fumes can be strong — bring a wet cloth. 30 minutes from Granada. Nighttime tours highly recommended. Gas mask available at entrance."
+      },
+      {
+        "name": "Cerro Negro Volcano Boarding",
+        "difficulty": "Moderate",
+        "duration": "3-5 hours (including boarding)",
+        "region": "León",
+        "description": "Hike up the youngest and most active volcano in Central America (728m) then board down the black volcanic ash slope at high speed. Iconic León activity. Stark, black moonscape landscape.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 728,
+        "notes": "Board and protective gear provided by tour operators in León (~$30). Hike up takes 45-60 min on loose ash. Descent takes 2-5 minutes depending on speed. Check volcanic activity before going."
+      },
+      {
+        "name": "Mombacho Volcano Cloud Forest",
+        "difficulty": "Easy to Moderate",
+        "duration": "3-5 hours",
+        "region": "Granada",
+        "description": "Hike or take a truck up to the cloud forest reserve atop Mombacho volcano with stunning views over Lake Nicaragua and Las Isletas. Excellent birdwatching — Mombacho salamander endemic here.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 1344,
+        "notes": "Truck available to summit ($8). Multiple trail loops of varying difficulty. Zip-line available. Views often obscured by cloud — arrive early morning for clearest skies."
+      },
+      {
+        "name": "Concepción Volcano (Isla de Ometepe)",
+        "difficulty": "Very Hard",
+        "duration": "8-12 hours round trip",
+        "region": "Rivas (Isla de Ometepe)",
+        "description": "Challenging full-day ascent of the active Concepción volcano (1,610m), one of two volcanoes forming Ometepe Island in Lake Nicaragua. Dense tropical forest, volcanic rocky summit, spectacular lake views.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 1610,
+        "notes": "Licensed guide mandatory. Very strenuous — 8-12 hours. Start at 5am. Bring substantial food and water. Not recommended for inexperienced hikers. Trail can be very muddy in rainy season."
+      },
+      {
+        "name": "Maderas Volcano (Isla de Ometepe)",
+        "difficulty": "Hard",
+        "duration": "6-9 hours round trip",
+        "region": "Rivas (Isla de Ometepe)",
+        "description": "Hike to the cloud forest-covered crater lake of the dormant Maderas volcano (1,394m). Howler monkeys, parrots, and if lucky, the rare white-faced monkey. Crater lake allows swimming.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 1394,
+        "notes": "Guide recommended. Very muddy — waterproof boots essential. Start early. The crater lake reward is worth the effort. Rope descents in the final section."
+      },
+      {
+        "name": "Las Isletas Kayaking (Granada)",
+        "difficulty": "Easy",
+        "duration": "2-4 hours",
+        "region": "Granada (Lake Nicaragua)",
+        "description": "Kayak or take a boat through 365 small islands formed by a prehistoric Mombacho eruption in Lake Nicaragua. Howler monkeys, birds, and beautiful lake scenery.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 37,
+        "notes": "Tours depart from Granada waterfront. Kayak rentals available. Combine with sunset tour for best experience. Watch for wind on open lake sections."
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Bosawás Biosphere Reserve Expedition",
+        "difficulty": "Very Hard",
+        "duration": "4-7 days",
+        "region": "Jinotega / RACN",
+        "description": "Remote multi-day expedition into Central America's largest rainforest reserve. Pristine wilderness, indigenous Mayangna and Miskito communities, extraordinary biodiversity. Requires significant logistical planning.",
+        "best_months": ["December", "January", "February"],
+        "elevation_m": 1650,
+        "notes": "Must arrange with specialized local tour operator in Jinotega. Carry all supplies. Serious logistics — not a casual adventure. One of the most remote experiences in Central America."
+      },
+      {
+        "name": "Río San Juan Jungle Route",
+        "difficulty": "Moderate",
+        "duration": "3-5 days",
+        "region": "Río San Juan",
+        "description": "Boat journey down the historic Río San Juan from Lake Nicaragua to the Caribbean coast. Spanish colonial fortress (El Castillo), wildlife-rich jungle, caimans, and river dolphins.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 100,
+        "notes": "Boat-based journey. El Castillo is the historic highlight. Limited accommodation along the route. Check safety situation in Río San Juan before traveling."
+      }
+    ],
+    "volcanoes": [
+      "Masaya (635m) — most accessible active volcano in the world, persistent lava lake",
+      "Cerro Negro (728m) — youngest and most active, famous for volcano boarding",
+      "Concepción (1,610m) — active, Isla de Ometepe, challenging hike",
+      "Maderas (1,394m) — dormant, Isla de Ometepe, crater lake",
+      "Mombacho (1,344m) — dormant, cloud forest reserve, Granada views",
+      "San Cristóbal (1,745m) — highest and one of most active, near Chinandega",
+      "Telica (1,061m) — frequently active, near León, accessible hike"
+    ],
+    "waterfalls": [
+      "San Ramón Waterfall (Ometepe) — 35m waterfall on Maderas volcano slopes",
+      "La Maquina Waterfall (Jinotega) — highland waterfall in coffee country",
+      "El Salto Waterfall (near Matagalpa) — accessible highland waterfall"
+    ],
+    "hot_springs": [
+      "Aguas Termales (near Tipitapa) — natural hot springs outside Managua",
+      "Hot springs on Ometepe — simple natural pools near Concepción volcano base"
+    ],
+    "lakes": [
+      "Lake Nicaragua (Cocibolca) — largest lake in Central America, freshwater sharks historically, Isla de Ometepe",
+      "Lake Managua (Xolotlán) — second largest, heavily polluted, not for swimming",
+      "Laguna de Apoyo — pristine volcanic crater lake, excellent swimming and kayaking",
+      "Laguna de Tiscapa — small crater lake inside Managua, historic viewpoint",
+      "Laguna de Xiloá — volcanic crater lake near Managua, popular weekend swimming"
+    ],
+    "rivers": [
+      "Río San Juan — historic jungle river connecting Lake Nicaragua to Caribbean",
+      "Río Coco — longest river in Central America, Honduran border",
+      "Río Tipitapa — connects lakes Managua and Nicaragua"
+    ],
+    "wildlife": [
+      "Howler monkey (nationwide)",
+      "White-faced capuchin monkey (nationwide)",
+      "Spider monkey (Ometepe, rainforests)",
+      "Jaguar (Bosawás, Indio-Maíz)",
+      "Tapir (Bosawás, Indio-Maíz)",
+      "Freshwater bull shark (Lake Nicaragua — rare now)",
+      "American crocodile (rivers and lakes)",
+      "Leatherback sea turtle (Pacific, nesting)",
+      "Green iguana (nationwide)",
+      "Scarlet macaw (forests)",
+      "Toucan (widespread)",
+      "Morpho butterfly (nationwide)"
+    ],
+    "birdwatching_hotspots": [
+      "Mombacho Volcano Reserve — cloud forest species, endemic salamander-related avifauna",
+      "Miraflor Nature Reserve — resplendent quetzal, cloud forest birds",
+      "Bosawás Biosphere Reserve — extraordinary diversity, harpy eagle",
+      "Río San Juan and Indio-Maíz Reserve — jaguar, great green macaw",
+      "Laguna de Apoyo — waterbirds, kingfishers, herons"
+    ],
+    "stargazing_spots": [
+      "Isla de Ometepe — limited light pollution, volcano silhouettes",
+      "Mombacho summit — above cloud layer on clear nights",
+      "Remote highland coffee farms (Matagalpa/Jinotega)"
+    ],
+    "scenic_drives": [
+      "Granada to Masaya — colonial cities, Masaya crafts market, volcano",
+      "León to Chinandega — Pacific volcanic chain, dramatic skyline",
+      "Managua to Matagalpa — mountain highlands, coffee country",
+      "Rivas to San Juan del Sur — Pacific coast access road"
+    ],
+    "surf_spots": [
+      {
+        "name": "Playa Maderas",
+        "region": "Rivas (near San Juan del Sur)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["April", "May", "June", "July", "August", "September", "October"],
+        "typical_wave_size": {
+          "peak_season": "4-8 ft (May-Oct)",
+          "off_season": "2-4 ft"
+        },
+        "description": "Nicaragua's most consistent and best-quality surf beach. Powerful, punchy beach break with both lefts and rights across a stunning cove. Consistent swell from April-October. Still relatively uncrowded compared to Costa Rica.",
+        "crowd_level": "Low to medium",
+        "notes": "Short boat ride or hike from San Juan del Sur. Surf camp scene growing but still uncrowded. Best at mid tide. Rip currents present — be aware."
+      },
+      {
+        "name": "Popoyo",
+        "region": "Rivas (south Pacific coast)",
+        "break_type": "Reef and beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["May", "June", "July", "August", "September", "October"],
+        "typical_wave_size": {
+          "peak_season": "5-10 ft (Jun-Sep)",
+          "off_season": "2-4 ft"
+        },
+        "description": "One of Central America's great, under-the-radar surf destinations. Consistent, powerful reef and beach breaks. Multiple peaks over a long stretch of coast. World-class on a big swell.",
+        "crowd_level": "Low",
+        "notes": "Remote location keeps crowds low. Growing surf camp scene. Several breaks in close proximity — explore all of them. 4WD helpful."
+      },
+      {
+        "name": "Playa Gigante",
+        "region": "Rivas (south Pacific coast)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["April", "May", "June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "3-6 ft",
+          "off_season": "1-3 ft"
+        },
+        "description": "Small fishing village with a great beach break and a friendly, no-frills surf scene. Good for intermediates looking for a quieter alternative to Maderas. Turtle nesting on the beach at night.",
+        "crowd_level": "Very low",
+        "notes": "Rustic accommodation available in the village. Very local feel. Combine with Popoyo for a surf trip on the south Pacific coast."
+      },
+      {
+        "name": "San Juan del Sur — Main Beach",
+        "region": "Rivas",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner",
+        "best_months": ["April", "May", "June", "July", "August"],
+        "typical_wave_size": {
+          "peak_season": "2-4 ft",
+          "off_season": "1-2 ft"
+        },
+        "description": "Protected bay with smaller, gentler waves. Best for absolute beginners wanting lessons. Main surfing hub with good infrastructure — more boats to better breaks nearby.",
+        "crowd_level": "High (tourist town)",
+        "notes": "Boat taxis to Maderas, Marsella, and Yankee beaches are the best use of San Juan del Sur as a surf base. Main bay is fine for beginners only."
+      },
+      {
+        "name": "Playa Colorado (Rancho Santana area)",
+        "region": "Rivas",
+        "break_type": "Beach break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["May", "June", "July", "August", "September", "October"],
+        "typical_wave_size": {
+          "peak_season": "5-10 ft",
+          "off_season": "2-4 ft"
+        },
+        "description": "Remote, powerful beach break on a beautiful stretch of coast within the Rancho Santana private community. Excellent, uncrowded lefts on good swells. One of Nicaragua's better-quality waves.",
+        "crowd_level": "Very low",
+        "notes": "Located within a private development — day access sometimes restricted. Some surf camps have access. Long left walls when conditions line up."
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Indio-Maíz Biological Reserve",
+        "region": "Río San Juan (Caribbean)",
+        "key_species": ["Jaguar", "Tapir", "Great green macaw", "Harpy eagle", "Spider monkey", "River otter", "Caiman"],
+        "best_months": ["December", "January", "February"],
+        "notes": "One of the most pristine and biodiverse rainforests in Central America. Very remote — accessible via San Juan del Norte or Río San Juan boat. Requires permit and guide."
+      },
+      {
+        "name": "Laguna de Apoyo",
+        "region": "Granada / Masaya",
+        "key_species": ["Howler monkey", "White-faced monkey", "Apoyo crater lake endemic fish (Amphilophus zaliosus)", "Herons", "Kingfishers"],
+        "best_months": ["November", "December", "January", "February", "March"],
+        "notes": "Pristine volcanic crater lake 30 min from Granada. Swimming, kayaking, snorkeling for endemic fish. Nature reserve status. Several lodges on the rim and lakeside."
+      },
+      {
+        "name": "Isla de Ometepe",
+        "region": "Rivas (Lake Nicaragua)",
+        "key_species": ["Howler monkey", "White-faced monkey", "Armadillo", "Basilisk lizard", "Toucan", "Parrots", "Ospreys"],
+        "best_months": ["November", "December", "January", "February", "March"],
+        "notes": "Biosphere reserve status. Two volcanoes connected by a land bridge. Excellent hiking, petroglyphs, and rural culture. Only a few thousand people live on the island."
+      },
+      {
+        "name": "La Flor Wildlife Refuge",
+        "region": "Rivas (Pacific coast)",
+        "key_species": ["Olive ridley sea turtle (mass nesting)", "Leatherback sea turtle", "Coyote", "Coati"],
+        "best_months": ["July", "August", "September", "October"],
+        "notes": "Major olive ridley sea turtle nesting site. Spectacular mass arribada events August-October. Night tours with rangers. Very near San Juan del Sur."
+      }
+    ]
+  },
+  "sports_and_activities": [
+    {
+      "name": "Surfing",
+      "popularity": "High",
+      "best_regions": ["Playa Maderas", "Popoyo", "Playa Gigante", "San Juan del Sur"],
+      "best_months": ["April", "May", "June", "July", "August", "September", "October"],
+      "skill_levels": ["Beginner", "Intermediate", "Advanced"],
+      "notes": "Nicaragua is one of Central America's best-value surf destinations. Consistent Pacific swells April-October. Boards $10-20/day. Lessons $30-50. Far less crowded than Costa Rica."
+    },
+    {
+      "name": "Volcano Boarding",
+      "popularity": "High",
+      "best_regions": ["Cerro Negro (León)"],
+      "best_months": ["November", "December", "January", "February", "March"],
+      "skill_levels": ["Beginner", "Intermediate"],
+      "notes": "Unique activity invented in Nicaragua — board down active volcano ash slope at 80+ km/h. ~$30-40 including gear. Must-do León activity. All tour operators in León offer it."
+    },
+    {
+      "name": "Volcano Hiking",
+      "popularity": "High",
+      "best_regions": ["Masaya", "Cerro Negro", "Concepción (Ometepe)", "Telica"],
+      "best_months": ["November", "December", "January", "February", "March"],
+      "skill_levels": ["Beginner (Masaya)", "Intermediate (Telica)", "Advanced (Concepción)"],
+      "notes": "Nicaragua has more accessible active volcanoes per capita than almost any country. Masaya lava lake is extraordinary. Telica night hike with lava views is a León classic."
+    },
+    {
+      "name": "Freshwater Kayaking and Lake Swimming",
+      "popularity": "Moderate",
+      "best_regions": ["Laguna de Apoyo", "Las Isletas (Granada)", "Isla de Ometepe"],
+      "best_months": ["November", "December", "January", "February", "March"],
+      "skill_levels": ["Beginner", "Intermediate"],
+      "notes": "Laguna de Apoyo is among the most beautiful swimming and kayaking spots in Central America. Crystal clear, warm, and pristine. Kayak rentals $5-10/hr."
+    },
+    {
+      "name": "Colonial City Walking Tours",
+      "popularity": "High",
+      "best_regions": ["Granada", "León"],
+      "best_months": ["Year-round"],
+      "skill_levels": ["Beginner"],
+      "notes": "Granada and León are two of the best-preserved colonial cities in Central America. Walking tours of churches, murals, and markets are outstanding. León has the best revolutionary mural art."
+    },
+    {
+      "name": "Sea Turtle Watching",
+      "popularity": "Moderate",
+      "best_regions": ["La Flor Wildlife Refuge", "Chacocente Wildlife Refuge"],
+      "best_months": ["July", "August", "September", "October"],
+      "skill_levels": ["Beginner"],
+      "notes": "Olive ridley mass nesting (arribada) events are spectacular. Night tours with rangers. La Flor is the most accessible from San Juan del Sur."
+    },
+    {
+      "name": "Rum Tasting",
+      "popularity": "Moderate",
+      "best_regions": ["Chichigalpa (Flor de Caña distillery)", "Managua"],
+      "best_months": ["Year-round"],
+      "skill_levels": ["Beginner"],
+      "notes": "Flor de Caña is world-renowned aged rum. Distillery tours available from $20. One of the best rum distillery experiences in Latin America. Near Chinandega."
+    }
+  ],
+  "trip_styles": {
+    "good_for_backpacking": true,
+    "good_for_luxury": false,
+    "good_for_families": false,
+    "good_for_couples": true,
+    "good_for_solo_travel": true,
+    "good_for_digital_nomads": false,
+    "good_for_adventure_travel": true,
+    "good_for_food_travel": false,
+    "good_for_road_trips": true,
+    "good_for_short_trips": true,
+    "good_for_long_stays": false
+  },
+  "destinations": {
+    "top_cities": ["Granada", "León", "Managua"],
+    "top_towns": ["San Juan del Sur", "Matagalpa", "Estelí", "Masaya", "Chichigalpa"],
+    "top_regions": ["Isla de Ometepe", "Pacific Surf Coast", "Colonial Cities Corridor", "Caribbean Corn Islands", "Lake Nicaragua"],
+    "top_islands": ["Isla de Ometepe (Lake Nicaragua)", "Big Corn Island (Caribbean)", "Little Corn Island (Caribbean)", "Las Isletas (Granada, Lake Nicaragua)"],
+    "sample_itineraries": {
+      "one_week": "Granada (2 days) → Masaya volcano (1 day) → León (2 days) → Cerro Negro volcano boarding (day trip) → San Juan del Sur/Maderas surf (2 days)",
+      "two_week": "Managua (1 day) → Granada (2 days) → Laguna de Apoyo (1 day) → Masaya (1 day) → León (2 days) → Isla de Ometepe (3 days) → San Juan del Sur (2 days) → Corn Islands (2 days)",
+      "classic_route": "Granada → Masaya → León → Cerro Negro → San Juan del Sur → Ometepe",
+      "offbeat_route": "Managua → Matagalpa coffee highlands → Miraflor cloud forest → Estelí → Corn Islands Caribbean"
+    }
+  },
+  "practical_info": {
+    "arrival_tips": "Managua airport (MGA) is 12km from city center. Use official taxis from the airport ($15-25 to center). Most travelers pass through quickly en route to Granada, León, or the coast. Granada is 1 hour from the airport and much more pleasant to base from.",
+    "airport_scam_notes": "Only use pre-paid official taxis from inside the terminal. Unofficial drivers will approach you — ignore them. Agree on price before getting in any taxi.",
+    "local_sim_where_to_buy": "Claro SIMs available at the airport and city shops. Bring passport. $5-10 for a data plan. Coverage good in major cities, poor elsewhere.",
+    "money_exchange_notes": "USD widely accepted in tourist areas. Change given in córdobas. Use official exchange houses (casas de cambio) or bank ATMs. Street money changers offer slightly better rates but carry scam risk.",
+    "language_helpful_phrases": {
+      "hello": "Hola / Buenos días",
+      "thank_you": "Gracias",
+      "how_much": "¿Cuánto cuesta?",
+      "where_is": "¿Dónde está...?",
+      "i_dont_speak_spanish": "No hablo español",
+      "the_bill_please": "La cuenta, por favor",
+      "help": "¡Ayuda!",
+      "cheers": "¡Salud!"
+    },
+    "offline_maps_recommended": ["Maps.me", "Google Maps (offline)"],
+    "apps_useful_locally": ["InDriver (Managua taxis)", "WhatsApp (essential for communication)", "Maps.me (offline maps)", "XE Currency (exchange rates)"]
+  },
+  "laws": {
+    "drug_laws_strictness": "Very strict — possession of any amount can result in arrest and imprisonment. Do not use or carry drugs of any kind.",
+    "alcohol_laws": "Legal drinking age 18. No public drinking restrictions in practice. Alcohol widely available.",
+    "drone_rules": "Heavily regulated — permits required from INAC (Instituto Nicaragüense de Aeronáutica Civil). Prohibited over populated areas, government buildings, military installations. Avoid flying drones near anything government-related.",
+    "wild_camping_rules": "Generally permitted in rural areas with landowner permission. Not permitted in protected reserves without authorization.",
+    "protected_area_rules": "Reserve entry fees vary. Guides required for some areas (Concepción volcano, Bosawás). No collecting plants, wildlife, or natural objects.",
+    "fishing_license_required": true,
+    "photography_restricted_sites": ["Government buildings", "Police stations", "Military installations — can result in detention"],
+    "lgbtq_legal_status": "Same-sex relationships legal but no partnership recognition. No anti-discrimination protections. Social conservatism prevalent. Exercise discretion.",
+    "marijuana_legality": "Illegal — possession can result in significant prison time. Zero tolerance in practice.",
+    "prescription_medication_rules": "Bring prescriptions in original packaging with doctor's letter. Some medications difficult to find locally — bring sufficient supply."
+  },
+  "family_travel": {
+    "kid_friendly": false,
+    "stroller_friendly": false,
+    "car_seat_rules": "Legally required but rarely enforced. Bring your own.",
+    "family_activities": [
+      "Masaya Volcano National Park — accessible lava lake viewing",
+      "Laguna de Apoyo — safe swimming in crystal clear crater lake",
+      "Las Isletas boat tour (Granada) — howler monkeys and lake scenery",
+      "Isla de Ometepe — rural island life, monkey spotting",
+      "Corn Islands — safe Caribbean beach environment for families"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Very limited — infrastructure is poor throughout the country. Cobblestone colonial streets, unpaved roads, and limited ramps make wheelchair travel extremely difficult.",
+    "accessible_transport": "No wheelchair-accessible public buses. Private vehicle rental with driver is the only practical option.",
+    "accessible_attractions": ["Masaya Volcano (partial — paved roads to crater rim)", "Some Granada colonial plazas"]
+  },
+  "gear": {
+    "bring_wetsuit": false,
+    "bring_hiking_boots": true,
+    "bring_layers": false,
+    "bring_bug_spray": true,
+    "bring_sunscreen": true,
+    "cold_weather_gear_needed": false,
+    "rental_gear_easy_to_find": false,
+    "outdoor_gear_shops": [
+      "Limited options — basic gear available in Managua shopping malls",
+      "Surf shops in San Juan del Sur for board rentals and basics",
+      "Volcano boarding gear provided by León tour operators"
+    ]
+  }
+}

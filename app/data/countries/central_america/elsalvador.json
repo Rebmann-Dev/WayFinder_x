@@ -1,0 +1,718 @@
+{
+  "meta": {
+    "last_updated": "2026-04-17",
+    "confidence_score": 0.90,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "WayFinder internal hike/food/history data",
+      "WayFinder safety submodels"
+    ],
+    "notes": "El Salvador's safety situation has transformed dramatically under President Bukele's crackdown on gangs (2022-present). Advisory level dropped from 4 to 2. Safety sections reflect current improved reality while noting ongoing considerations."
+  },
+  "identity": {
+    "name": "El Salvador",
+    "official_name": "Republic of El Salvador",
+    "code": "SV",
+    "iso3": "SLV",
+    "region": "Americas",
+    "subregion": "Central America",
+    "capital": "San Salvador",
+    "flag_emoji": "🇸🇻",
+    "timezones": ["UTC-06:00"],
+    "driving_side": "right",
+    "country_calling_code": "+503",
+    "internet_tld": ".sv"
+  },
+  "language_and_money": {
+    "languages": ["Spanish"],
+    "primary_language": "Spanish",
+    "english_proficiency": "Low — limited outside upscale hotels, surf camps, and San Salvador business areas. Growing in tourist-facing surf towns like El Tunco and El Zonte.",
+    "currency": "USD / BTC",
+    "currency_name": "US Dollar / Bitcoin",
+    "currency_symbol": "$",
+    "cash_vs_card": "El Salvador uses USD — no conversion needed for American travelers. Cards accepted at upscale restaurants, hotels, and larger businesses in San Salvador. Cash essential in surf towns, markets, and rural areas. Bitcoin legally accepted but practical use remains limited to Bitcoin Beach (El Zonte) and some tourist businesses.",
+    "typical_payment_methods": ["USD cash", "Visa", "Mastercard", "Bitcoin (El Zonte / Chivo Wallet)", "American Express (major hotels)"],
+    "atm_availability": "Available in San Salvador and larger towns. Limited in surf towns and rural areas — withdraw before heading to the coast. Banco Agrícola and Scotiabank most reliable.",
+    "tipping_culture": "Not mandatory but appreciated. 10% tip in restaurants is generous. Growing tip culture in tourist areas mirroring US norms.",
+    "tipping_etiquette": "10% in sit-down restaurants. $5-10/day for surf instructors and guides. $1-2 for hotel staff. Round up taxi fares. No tip required at counters."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 90 days (CA-4 agreement)",
+      "visa_type": "Tourist stamp on arrival",
+      "visa_free_days": 90,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for at least 6 months beyond date of entry",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": true,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Standard restrictions on narcotics, firearms, and agricultural products. Declaration required for cash over $10,000.",
+    "restricted_items": ["Narcotics", "Firearms (without permit)", "Fresh produce without permit", "Cash over $10,000 without declaration"],
+    "duty_free_allowances": "400 cigarettes or 50 cigars, 2.5 liters of alcohol, gifts up to $500 value"
+  },
+  "health": {
+    "recommended_vaccines": ["Hepatitis A", "Typhoid", "Hepatitis B", "Rabies (rural areas)", "Tetanus-Diphtheria"],
+    "required_vaccines": [],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Very low — malaria essentially eliminated in El Salvador. Not a practical concern for tourists.",
+    "malaria_regions": [],
+    "malaria_prophylaxis_info": "Not recommended — malaria risk negligible. El Salvador is one of the few Central American countries where malaria is not a concern.",
+    "dengue_risk": "Moderate — dengue present nationwide, particularly in urban areas and lowlands during rainy season (May-November). Regular outbreaks in San Salvador.",
+    "altitude_sickness_risk": "Very low — highest point (Santa Ana Volcano, 2,381m) is manageable with gradual ascent. Not a practical concern.",
+    "food_water_safety": "Tap water not safe to drink. Always use bottled or purified water. Street food generally safe at busy, high-turnover pupusería stalls. Exercise standard caution with raw foods.",
+    "air_quality_concerns": "San Salvador has traffic-related air pollution. Volcanic activity near Santa Ana and Izalco can produce sulfur dioxide — check conditions before visiting.",
+    "common_travel_illnesses": ["Traveler's diarrhea", "Dengue fever", "Sunburn", "Insect bites"],
+    "pharmacy_access": "Good in San Salvador — pharmacies (Farmacias Similares, Farmacias San Nicolás) widely available. Available in major towns. Limited in rural and surf coast areas.",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Limited — private clinics in San Salvador (Hospital de Diagnóstico, Clínica Médica Panamericana) offer adequate care. Very limited outside the capital. Evacuate serious conditions to the US or Costa Rica.",
+    "emergency_medical_number": "132"
+  },
+  "safety": {
+    "travel_advisory_level_us": 2,
+    "travel_advisory_level_label": "Exercise Increased Caution",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "Dramatically improved security since 2022 gang crackdown under Bukele",
+      "State of exception measures remain in place — civil liberties curtailed",
+      "Residual gang activity in some areas",
+      "Petty theft in tourist areas",
+      "Ocean rip currents a major hazard at surf beaches"
+    ],
+    "crime_risk": "Low to moderate — El Salvador's transformation is one of the most dramatic security improvements in recent history. Once one of the world's most dangerous countries, the Bukele government's mass gang crackdown (2022) has reduced homicides by over 90%. Tourist areas are now genuinely safe. Exercise normal urban precautions.",
+    "scam_risk": "Low — taxi overcharging, inflated tourist menus in San Salvador",
+    "transport_safety": "Taxis and ride-hailing safe in San Salvador. Intercity buses (first-class) safe on main routes. Avoid night travel on secondary roads. Surf town shuttle services widely used and safe.",
+    "solo_female_travel_notes": "Significantly safer than pre-2022. Surf towns like El Tunco and El Zonte are very manageable solo. Exercise normal precautions in San Salvador. Night walking in well-lit tourist areas is now reasonable. Still avoid isolated areas alone.",
+    "lgbtq_notes": "Same-sex relationships legal but no legal recognition of partnerships. Social conservatism strong — strongly Catholic country. No anti-discrimination protections. Discretion recommended outside San Salvador. Growing tolerance in surf towns among international crowd.",
+    "night_safety": "San Salvador tourist districts (Zona Rosa, Escalón, Santa Elena) safe at night with normal precautions. Surf towns (El Tunco, El Zonte) safe at night in established areas. Avoid poorly lit areas and non-tourist neighborhoods.",
+    "safe_areas": ["Zona Rosa (San Salvador)", "Escalón (San Salvador)", "Santa Elena (San Salvador)", "El Tunco", "El Zonte (Bitcoin Beach)", "La Libertad beach area", "Suchitoto", "Santa Ana"],
+    "areas_to_avoid": [
+      "Downtown San Salvador (historic center) at night",
+      "Soyapango and Mejicanos (San Salvador outskirts) — historically high crime",
+      "Remote rural areas without local knowledge",
+      "Isolated beaches at night"
+    ],
+    "natural_disaster_risks": ["Earthquakes (active seismic zone)", "Volcanic eruptions (Santa Ana, Izalco, San Miguel — all active)", "Landslides in rainy season", "Flooding in lowlands", "Tsunamis on Pacific coast", "Rip currents at surf beaches (major tourist hazard)"],
+    "political_stability_notes": "President Nayib Bukele (reelected 2024) holds significant political power with high approval ratings domestically. State of exception suspending certain civil liberties remains in place. Democratic institutions under pressure. Political situation stable for tourists but monitor for changes.",
+    "common_scams": [
+      "Taxi overcharging in San Salvador — use Uber or agree on price first",
+      "Inflated prices at tourist-facing restaurants in Zona Rosa",
+      "Unofficial 'tour guides' at Joya de Cerén and Tazumal ruins",
+      "Surf equipment rental overcharging in El Tunco"
+    ],
+    "police_reliability": "Significantly improved under current administration. Police presence very high — visible and active nationwide. Tourist police in main tourist areas. Report incidents at nearest police station.",
+    "emergency_numbers": {
+      "police": "911",
+      "ambulance": "132",
+      "fire": "913",
+      "general_emergency": "911"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "San Salvador",
+      "us_embassy_phone": "+503-2501-2999",
+      "us_embassy_website": "https://sv.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "November to April (dry season) — best weather, consistent surf, ideal for hiking and sightseeing",
+    "climate_zones": [
+      "Pacific coastal lowlands — hot, humid, distinct wet and dry seasons",
+      "Central highlands (San Salvador area) — warm, pleasant year-round, distinct seasons",
+      "Western highlands (Santa Ana, Metapán) — cooler, more temperate",
+      "Eastern lowlands — hot and dry, harshest climate"
+    ],
+    "dry_season": "November to April",
+    "rainy_season": "May to October",
+    "hurricane_typhoon_season": "June to November (El Salvador rarely takes direct hurricane hits but tropical systems bring heavy rain)",
+    "surf_season": "April to October (largest Pacific swells); November to March (consistent smaller surf, offshore winds, cleaner conditions)",
+    "trekking_best_months": ["November", "December", "January", "February", "March"],
+    "average_temp_by_month": {
+      "San Salvador": "22-32°C year-round (hottest March-May)",
+      "Santa Ana (highlands)": "20-28°C year-round",
+      "Pacific coast": "28-34°C year-round"
+    },
+    "daylight_hours_by_season": "Near equator — approximately 11.5-12.5 hours year-round"
+  },
+  "transport": {
+    "major_airports": [
+      "Monseñor Óscar Arnulfo Romero International Airport (SAL) — San Salvador (only international airport, 44km from city)"
+    ],
+    "main_airlines": ["American Airlines", "United", "Delta", "Avianca (hub)", "Copa Airlines", "Spirit", "Volaris"],
+    "airport_to_city_options": ["Uber ($20-30 to San Salvador center, ~45 min)", "Official airport taxis ($30-40)", "Shuttle services to surf towns ($15-25 direct)"],
+    "public_transit_quality": "San Salvador has public buses but they are overcrowded and unsafe for tourists with luggage. Use Uber in the city. Pickups (flatbed trucks) serve as rural transport in coastal areas.",
+    "intercity_bus_quality": "First-class coaches (Tica Bus for international, King Quality) between major cities comfortable and safe. Local chicken buses cheap but crowded. Surf shuttle services between airport and coast towns are excellent and widely used.",
+    "train_network_quality": "No passenger train service.",
+    "domestic_flights_useful": false,
+    "car_rental_recommended": true,
+    "road_conditions": "Pan-American Highway and main coastal road (Carretera Litoral) well-maintained. Secondary roads variable. El Salvador is small — driving the whole country in a day is possible. Roads significantly safer than pre-2022.",
+    "four_x_four_needed_regions": ["Ruta de las Flores mountain roads (rainy season)", "Remote Morazán department", "Santa Ana Volcano access road"],
+    "ride_hailing_apps": ["Uber", "InDriver"],
+    "taxi_safety_notes": "Uber widely available and recommended in San Salvador. If taking taxis, agree on fare before getting in — no meters. Airport taxis official and safe. Surf towns use mototaxis and pickup trucks for short hops.",
+    "ferry_routes": [],
+    "border_crossing_notes": "Main crossings: El Amatillo (Honduras), Las Chinamas (Guatemala), San Cristóbal (Guatemala), La Hachadura (Guatemala). CA-4 agreement — 90-day stamp shared with Guatemala, Honduras, Nicaragua. All crossings open 24 hours but less safe at night."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$30-50/day",
+    "daily_budget_midrange": "$60-100/day",
+    "daily_budget_comfort": "$120-200/day",
+    "hostel_avg": "$10-18/night",
+    "hotel_avg": "$40-90/night",
+    "meal_avg": "$3-8 (pupusas $0.50-1 each, restaurant $8-20)",
+    "coffee_avg": "$1.50-3",
+    "beer_avg": "$1.50-3 (Pilsener, Golden)",
+    "local_transport_avg": "$1-5 (Uber in San Salvador)",
+    "sim_card_avg": "$5-10 for 3-5GB",
+    "coworking_day_pass_avg": "$10-20",
+    "surfboard_rental_avg": "$10-20/day",
+    "value_for_money": "Excellent — El Salvador is one of the best value destinations in Central America. USD currency means predictable pricing. Pupusas are among the cheapest and most satisfying street foods in the region. Surf towns offer great value for the beach lifestyle."
+  },
+  "connectivity": {
+    "sim_card_providers": ["Tigo", "Claro", "Digicel"],
+    "esim_available": false,
+    "mobile_data_quality": "Good 4G in San Salvador and main towns. Decent coverage on Pacific coast and main highways. Limited in remote western highlands and Morazán department.",
+    "wifi_quality": "Good in San Salvador hotels, cafes, and coworking spaces. Available in surf town hostels and restaurants. Variable speeds (5-50 Mbps). El Zonte has better connectivity than most surf towns due to Bitcoin Beach infrastructure.",
+    "coworking_available": true,
+    "best_remote_work_cities": ["San Salvador (Zona Rosa, Santa Elena)", "El Zonte (Bitcoin Beach remote work community)", "El Tunco"],
+    "power_outlet_types": ["A", "B"],
+    "voltage": "120V, 60Hz",
+    "plug_adapter_needed_for_us": false,
+    "power_reliability": "Generally reliable in San Salvador. Occasional outages during heavy storms and in rural areas. Surf towns can have intermittent power — bring power bank."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Zona Rosa / Escalón / Santa Elena, San Salvador — safest and most upscale neighborhoods, good restaurants",
+      "El Tunco — most popular surf town, lively hostel and bar scene",
+      "El Zonte (Bitcoin Beach) — quieter, growing digital nomad and surf community",
+      "La Libertad — working fishing port, older surf scene",
+      "Suchitoto — colonial lakeside town, boutique hotels, cultural tourism",
+      "Santa Ana — western highlands base for volcano hiking",
+      "El Imposible / Apaneca — coffee highlands, eco-lodges"
+    ],
+    "budget_areas": ["El Tunco (hostels)", "San Salvador (El Escalón budget hostels)", "Santa Ana"],
+    "family_friendly_areas": ["Suchitoto", "Ruta de las Flores towns", "El Zonte (calmer than El Tunco)"],
+    "nightlife_areas": ["El Tunco", "Zona Rosa (San Salvador)", "El Zonte (growing scene)"],
+    "surf_towns": ["El Tunco", "El Zonte", "La Libertad", "Punta Roca", "Las Flores (eastern coast)", "El Cuco"],
+    "eco_lodges_available": true,
+    "peak_booking_season": "November to April (dry season); Semana Santa (Easter) — extremely busy on coast",
+    "accommodation_notes": "El Tunco is the backpacker surf hub with best range of hostels and bars. El Zonte has attracted a digital nomad and Bitcoin community — more upscale and quieter. Suchitoto is the cultural gem — boutique colonial accommodation. Book Semana Santa accommodation months in advance."
+  },
+  "culture": {
+    "local_customs": [
+      "Salvadorans (Guanacos) are warm, proud, and resilient — the country's transformation is a source of immense national pride",
+      "Greet with a single kiss on the right cheek between women and mixed company; handshake between men",
+      "Family is everything — Sunday family gatherings are sacred",
+      "Strongly Catholic — religious holidays observed seriously",
+      "Bitcoin is a matter of national pride and curiosity — even skeptical locals are often interested in discussing it"
+    ],
+    "dress_expectations": "Casual in surf towns and beach areas. Business casual for nicer San Salvador restaurants. Modest dress in churches and rural communities. Beachwear only at the beach.",
+    "religious_sensitivity": "Predominantly Catholic — Archbishop Óscar Romero (assassinated 1980, canonized 2018) is a national saint and deeply revered. His legacy is woven into the national identity. Semana Santa is the most important holiday.",
+    "social_norms": [
+      "Salvadorans are direct and warm — conversation is easy",
+      "National pride is very high — the security transformation is a sensitive topic worth engaging positively",
+      "Pupusas are a point of cultural pride — always compliment them",
+      "Bargaining at markets acceptable",
+      "Do not discuss gang issues casually — sensitive topic"
+    ],
+    "greeting_style": "Warm — cheek kiss in social settings, handshake in business. 'Buenos días/tardes/noches' and '¿Cómo estás?' standard.",
+    "public_behavior_notes": "PDA acceptable in tourist areas and surf towns. Modest in rural communities. Keep a low profile with valuables.",
+    "photography_etiquette": "Generally relaxed. Ask permission before photographing people. Avoid photographing police in sensitive contexts. Ruins and natural sites freely photographable.",
+    "bargaining_expected": true,
+    "important_holidays": [
+      "Semana Santa (Easter) — biggest holiday, coast towns pack out completely",
+      "Independence Day (September 15)",
+      "El Salvador del Mundo Festival (August 1-6) — patron saint of the country, massive celebrations in San Salvador",
+      "Día de los Muertos (November 2)",
+      "Christmas (December 25)"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "State of exception laws — police can detain without normal due process requirements. Carry passport at all times.",
+      "Photography of military installations and checkpoints not recommended",
+      "Drone permits required — DGAC authorization needed",
+      "Collecting marine life, shells, or archaeological artifacts prohibited",
+      "Bitcoin legal tender status — merchants technically required to accept it but enforcement is minimal"
+    ]
+  },
+  "food": {
+    "signature_dishes": [
+      "Pupusas — thick handmade corn or rice flour tortillas stuffed with cheese (queso), beans (frijoles), chicharrón (pork), or loroco flower; THE national dish and one of the great street foods of the Americas",
+      "Pupusas revueltas — stuffed with combination of cheese, beans, and chicharrón",
+      "Curtido — lightly fermented cabbage slaw with carrots and oregano, always served alongside pupusas",
+      "Salsa roja — tomato and chile sauce, the other pupusa accompaniment",
+      "Yuca frita — fried cassava with chicharrón and curtido, popular street snack",
+      "Sopa de pata — cow's foot soup with vegetables and corn, traditional hangover remedy",
+      "Caldo de res — beef and vegetable soup, standard comida corriente",
+      "Tamales de elote — fresh corn tamales, sweeter than Mexican variety",
+      "Pan con pollo — chicken sandwich on crusty roll with vegetables and mustard",
+      "Riguas — fresh corn cakes cooked on a griddle, sweet and savory"
+    ],
+    "street_food_safety": "Excellent — pupuserías are the safest and most reliable street food in El Salvador. High turnover, fresh ingredients, hot off the griddle. Pupusas are a genuinely safe and exceptional street food choice nationwide.",
+    "vegetarian_friendliness": "Good by Central American standards — cheese and bean (queso con frijoles) pupusas are outstanding vegetarian food. Many pupusa fillings are meat-free. Growing vegetarian options in surf towns and San Salvador.",
+    "vegan_friendliness": "Moderate — bean pupusas without cheese possible. Growing options in El Zonte and El Tunco catering to international surf crowd. Challenging in rural areas.",
+    "must_try_drinks": [
+      "Pilsener — the national beer, ubiquitous and refreshing",
+      "Golden beer — Pilsener's main competitor",
+      "Kolashanpán — iconic Salvadoran soda, unique fruity/cola flavor; a national institution",
+      "Horchata — rice, cinnamon, and spice cold drink; Salvadoran version often includes morro seeds",
+      "Fresco de tamarindo — chilled tamarind drink",
+      "Atol de elote — warm sweet corn drink, comfort food",
+      "Café de El Salvador — excellent highland-grown coffee, particularly from Apaneca-Ilamatepec region",
+      "Chicha — fermented corn drink in rural areas"
+    ],
+    "regional_specialties": [
+      "Western highlands (Ruta de las Flores): coffee, mora (blackberry) preserves, locally made cheeses, artisan sweets",
+      "Pacific coast: fresh ceviche, mariscada (seafood stew), grilled fish",
+      "San Salvador: all national dishes plus growing international restaurant scene",
+      "Eastern El Salvador (Morazán): traditional indigenous-influenced dishes, corn-based foods"
+    ],
+    "drinking_water_notes": "Never drink tap water anywhere in El Salvador. Always bottled or purified water. Ice at established restaurants typically from purified water — ask in budget spots.",
+    "alcohol_rules": "Legal drinking age 18. No strict public drinking laws in practice. Alcohol widely available except Good Friday."
+  },
+  "outdoors": {
+    "top_national_parks": [
+      "Santa Ana Volcano (Ilamatepec) — highest active volcano in El Salvador, stunning crater lake",
+      "Parque Nacional El Imposible — largest national park, cloud forest, excellent wildlife",
+      "Walter Thilo Deininger National Park — dry forest near coast, accessible from San Salvador",
+      "Cerro Verde National Park — dormant volcano with cloud forest, orchids, exceptional views",
+      "Montecristo Cloud Forest (Trifinio) — tri-country cloud forest at border with Honduras and Guatemala",
+      "Joya de Cerén Archaeological Site — UNESCO World Heritage 'Pompeii of the Americas'",
+      "Cinquera Forest Reserve — cloud forest, howler monkeys, civil war history"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Santa Ana Volcano (Ilamatepec) Summit",
+        "difficulty": "Moderate",
+        "duration": "4-6 hours round trip",
+        "region": "Santa Ana department",
+        "description": "Hike to the summit of El Salvador's highest active volcano (2,381m) and peer into a vivid turquoise-green sulfuric crater lake — one of the most dramatic volcanic crater views in Central America. On clear days, views of three other volcanoes and Guatemala.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 2381,
+        "notes": "Access from Cerro Verde national park. Mandatory ranger escort — groups depart 11am daily when open. Check volcanic activity before going (periodically closes). $6 entry fee. Combine with Cerro Verde and Izalco views on the same trip."
+      },
+      {
+        "name": "Izalco Volcano Hike",
+        "difficulty": "Hard",
+        "duration": "4-5 hours round trip",
+        "region": "Sonsonate / Santa Ana",
+        "description": "Hike the stark, black cinder cone of Izalco — the 'Lighthouse of the Pacific' — one of the youngest and most active volcanoes in El Salvador. Challenging climb up loose volcanic scree with dramatic views. No vegetation on the upper slopes.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 1950,
+        "notes": "Trail starts at Cerro Verde. Very loose black ash on upper section — trekking poles helpful. Check volcanic activity before visiting. Views of Santa Ana and Santa Ana lake from the top are outstanding. More strenuous than Santa Ana despite lower elevation."
+      },
+      {
+        "name": "El Imposible National Park Trails",
+        "difficulty": "Moderate to Hard",
+        "duration": "4-8 hours",
+        "region": "Ahuachapán department",
+        "description": "Hike through El Salvador's largest national park — remnant cloud forest on the Pacific slope. Excellent birdwatching — black-handed spider monkey, agoutis, pumas, and over 300 bird species. Several trail options including summit of Cerro El León.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 1425,
+        "notes": "Entry through SalvaNatura ($6). Guide recommended — trails not always well-marked. Only 4WD vehicles on the access road. Very remote feel for El Salvador. Name comes from the 'impossible' ravines that smugglers once tried to cross."
+      },
+      {
+        "name": "Ruta de las Flores Waterfall Walk",
+        "difficulty": "Easy",
+        "duration": "2-4 hours",
+        "region": "Sonsonate / Ahuachapán",
+        "description": "Walk between colorful highland coffee towns (Juayúa, Apaneca, Ataco) past waterfalls, coffee farms, and flower gardens. Juayúa's Cascadas de Juayúa are beautiful natural pools accessible on a short hike. Excellent food festival in Juayúa every weekend.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 1050,
+        "notes": "Juayúa is the anchor town — weekend food festival (Feria Gastronómica) is excellent. Cascades are a 20-min walk from town. Combine with Ataco (art murals, handicrafts) and Apaneca for a full Ruta de las Flores day or overnight."
+      },
+      {
+        "name": "Montecristo Cloud Forest",
+        "difficulty": "Moderate",
+        "duration": "4-6 hours",
+        "region": "Santa Ana department (tri-border with Honduras and Guatemala)",
+        "description": "Hike through the most pristine cloud forest in El Salvador — the Trifinio Biosphere Reserve where El Salvador, Honduras, and Guatemala meet. Howler monkeys, quetzal habitat, bromeliads, and mossy ancient trees. Rarely visited, extraordinary atmosphere.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 2418,
+        "notes": "Access from Metapán. Entry fee and guide required. Park partially closes during nesting season (May-October). Very remote and atmospheric. One of El Salvador's best-kept natural secrets."
+      },
+      {
+        "name": "Lago de Coatepeque Kayak Circuit",
+        "difficulty": "Easy",
+        "duration": "2-4 hours",
+        "region": "Santa Ana department",
+        "description": "Kayak or take a boat on the stunning volcanic crater lake of Coatepeque — one of the most beautiful lakes in Central America. Clear blue-green water, surrounding volcanic ridges, weekend house culture. Swimming and lakeside restaurants.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 745,
+        "notes": "Kayak rentals from lakeside restaurants ($5-10/hr). Hotel Torremolinos has good access. Excellent combined with Santa Ana volcano and Cerro Verde in a western highland circuit. Crowded on weekends with Salvadoran families."
+      },
+      {
+        "name": "Tazumal and Joya de Cerén Archaeological Walks",
+        "difficulty": "Easy",
+        "duration": "2-4 hours each",
+        "region": "Santa Ana / La Libertad",
+        "description": "Visit El Salvador's two most important pre-Columbian sites. Tazumal: impressive Mayan pyramid complex in Chalchuapa (Maya-Pipil). Joya de Cerén: UNESCO 'Pompeii of the Americas' — a Maya farming village perfectly preserved under volcanic ash from 590 AD.",
+        "best_months": ["Year-round"],
+        "elevation_m": 720,
+        "notes": "Joya de Cerén ($3) is one of the most fascinating archaeological sites in the Americas — you see actual preserved daily life, not just temples. Hire a guide at each site. Combine both in one day from San Salvador."
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Ruta de las Flores Hiking Circuit",
+        "difficulty": "Easy to Moderate",
+        "duration": "2-3 days",
+        "region": "Sonsonate / Ahuachapán highlands",
+        "description": "Walk or hike between the coffee highland towns of Nahuizalco, Salcoatitán, Juayúa, Apaneca, and Concepción de Ataco. Coffee farms, flowers, waterfalls, artisan markets, and excellent food. El Salvador's most scenic and pleasant multi-day cultural route.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 1100,
+        "notes": "Can be done by bus and on foot between towns. Juayúa is best overnight base. Weekend food festivals in Juayúa add extra dimension. Roads between towns walkable. Excellent coffee everywhere."
+      },
+      {
+        "name": "Northern Mountains (Morazán) Circuit",
+        "difficulty": "Moderate",
+        "duration": "2-3 days",
+        "region": "Morazán department",
+        "description": "Explore El Salvador's remote northern mountains and the civil war history of Morazán department. Perquín war museum, El Mozote massacre memorial, Río Sapo canyon hike, and the beautiful Cerro Pericón. Deeply moving and historically important.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 1300,
+        "notes": "Perquín has a basic but excellent war museum. El Mozote massacre site is sobering and important. Río Sapo offers good hiking through river canyon. This is El Salvador's most overlooked region — authentic and rewarding."
+      }
+    ],
+    "volcanoes": [
+      "Santa Ana / Ilamatepec (2,381m) — highest active volcano, spectacular turquoise crater lake",
+      "Izalco (1,950m) — 'Lighthouse of the Pacific', youngest and most active, stark black cinder cone",
+      "San Miguel / Chaparrastique (2,130m) — eastern El Salvador, active, last eruption 2013",
+      "Santa Ana range includes Cerro Verde (1,745m) — dormant, cloud forest, excellent views",
+      "Chinchontepec / San Vicente (2,182m) — twin-peaked dormant volcano",
+      "Conchagua (1,243m) — eastern El Salvador near Gulf of Fonseca"
+    ],
+    "waterfalls": [
+      "Cascadas de Juayúa — series of waterfalls and natural pools near Juayúa (Ruta de las Flores)",
+      "Salto El Malacate — impressive waterfall near Berlín",
+      "Los Chorros — natural spring pools and cascades near San Salvador (popular weekend spot)",
+      "Tamanique waterfalls — series of falls in coastal mountains near La Libertad"
+    ],
+    "hot_springs": [
+      "Aguas Termales de Ahuachapán — natural geothermal hot springs near Ahuachapán",
+      "Geothermal pools near Santa Ana — several small natural pools in volcanic area"
+    ],
+    "lakes": [
+      "Lago de Coatepeque — stunning volcanic crater lake, most beautiful in El Salvador",
+      "Lago de Ilopango — large volcanic crater lake east of San Salvador, site of catastrophic 536 AD eruption",
+      "Lago de Güija — lake on Guatemala border, archaeological petroglyphs",
+      "Laguna Olomega — eastern El Salvador, excellent birdwatching"
+    ],
+    "rivers": [
+      "Río Lempa — longest river in Central America running entirely within one country",
+      "Río Sapo (Morazán) — beautiful canyon hiking",
+      "Río Paz — western border with Guatemala"
+    ],
+    "wildlife": [
+      "Howler monkey (El Imposible, Montecristo, Cinquera)",
+      "Spider monkey (El Imposible — rare)",
+      "White-tailed deer (nationwide)",
+      "Puma (El Imposible, Montecristo)",
+      "Ocelot (El Imposible)",
+      "Green iguana (nationwide)",
+      "Resplendent quetzal (Montecristo — rare)",
+      "Scarlet macaw (El Imposible — rare)",
+      "Keel-billed toucan (El Imposible)",
+      "Sea turtle — olive ridley and leatherback (Pacific coast nesting)",
+      "Hawksbill sea turtle (Pacific coast)",
+      "American crocodile (Río Lempa, estuaries)",
+      "Morpho butterfly (nationwide)"
+    ],
+    "birdwatching_hotspots": [
+      "El Imposible National Park — 300+ species, spider monkey forest",
+      "Montecristo Cloud Forest — quetzal, cloud forest endemics",
+      "Laguna El Jocotal (eastern El Salvador) — migratory waterbirds, jabiru stork",
+      "Lago de Güija — waterbirds, osprey",
+      "Cinquera Forest Reserve — howler monkeys, forest birds",
+      "Los Cóbanos marine reserve — seabirds"
+    ],
+    "stargazing_spots": [
+      "Santa Ana Volcano summit (dark skies, 2,381m)",
+      "Montecristo Cloud Forest (remote, no light pollution)",
+      "Ruta de las Flores highland towns (minimal light pollution)"
+    ],
+    "scenic_drives": [
+      "Ruta de las Flores (Sonsonate to Ahuachapán) — most scenic drive in El Salvador",
+      "Carretera del Litoral (coastal highway) — Pacific beaches and surf towns",
+      "San Salvador to Santa Ana via highlands",
+      "Morazán mountain road circuit"
+    ],
+    "surf_spots": [
+      {
+        "name": "Punta Roca",
+        "region": "La Libertad department",
+        "break_type": "Reef break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["April", "May", "June", "July", "August", "September", "October"],
+        "typical_wave_size": {
+          "peak_season": "5-10 ft (Jun-Sep)",
+          "off_season": "2-4 ft"
+        },
+        "description": "El Salvador's most famous wave — a long, winding left-hander over a rocky reef at La Libertad point. One of the best left-hand point breaks in Central America. Consistent, powerful, and with proper swell can produce 200m+ rides. Has hosted world surf competitions.",
+        "crowd_level": "Medium to high",
+        "notes": "The crown jewel of Salvadoran surfing. Rocky entry and exit — booties helpful. La Libertad fishing port is the base. Stay in El Tunco (10 min) for better accommodation options. Best at mid to high tide."
+      },
+      {
+        "name": "El Tunco",
+        "region": "La Libertad department",
+        "break_type": "Beach and reef break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["April", "May", "June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "3-6 ft",
+          "off_season": "1-3 ft"
+        },
+        "description": "El Salvador's most popular surf and backpacker town. Multiple breaks around a black sand volcanic beach including El Sunzal (consistent intermediate left) and El Tunco (beginner-friendly). Lively hostel, bar, and restaurant scene. Great for learning and improvers.",
+        "crowd_level": "High (most popular surf town)",
+        "notes": "El Sunzal break (5 min north) is cleaner and more consistent than El Tunco main beach. Surf boards and lessons widely available ($15-25/day rental, $30-50 lessons). Can get very crowded on weekends with San Salvador day-trippers."
+      },
+      {
+        "name": "El Zonte (Bitcoin Beach)",
+        "region": "La Libertad department",
+        "break_type": "Beach and reef break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate",
+        "best_months": ["April", "May", "June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "3-6 ft",
+          "off_season": "1-3 ft"
+        },
+        "description": "Quieter, more laid-back alternative to El Tunco with a consistent left-hander. Famous as the birthplace of Bitcoin Beach — the community Bitcoin circular economy experiment that influenced El Salvador's Bitcoin adoption. Growing digital nomad presence. Beautiful black sand beach in a cove.",
+        "crowd_level": "Low to medium",
+        "notes": "Better vibe and less crowded than El Tunco. Growing infrastructure with quality restaurants and accommodation. Bitcoin widely accepted in the village. Excellent base for longer stays."
+      },
+      {
+        "name": "Las Flores",
+        "region": "Usulután department (eastern El Salvador)",
+        "break_type": "Reef break",
+        "wave_direction": "Right",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["April", "May", "June", "July", "August", "September", "October"],
+        "typical_wave_size": {
+          "peak_season": "4-8 ft",
+          "off_season": "2-3 ft"
+        },
+        "description": "El Salvador's best right-hand break — a long, peeling right-hander over a reef in eastern El Salvador. Far less crowded than the La Libertad area breaks. Classic surf camp destination with a remote, uncrowded feel. Good for intermediate surfers who want something different from El Tunco.",
+        "crowd_level": "Very low",
+        "notes": "3-4 hour drive from San Salvador — remote location keeps it uncrowded. Several quality surf camps in the area. Combine with El Cuco and nearby eastern beaches. Black sand beach. Worth the drive for a right-hand break."
+      },
+      {
+        "name": "El Cuco",
+        "region": "San Miguel department (eastern El Salvador)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "3-5 ft",
+          "off_season": "1-3 ft"
+        },
+        "description": "Remote eastern El Salvador beach town with consistent beach break. Long, wide black sand beach with fewer crowds than the western surf towns. Very local feel — few international tourists reach here. Good for exploring off the main tourist trail.",
+        "crowd_level": "Very low",
+        "notes": "4+ hours from San Salvador. Very basic infrastructure — come self-sufficient. Eastern El Salvador is less developed but authentic. Combine with Las Flores nearby."
+      },
+      {
+        "name": "El Sunzal",
+        "region": "La Libertad department",
+        "break_type": "Reef break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate",
+        "best_months": ["April", "May", "June", "July", "August", "September", "October"],
+        "typical_wave_size": {
+          "peak_season": "4-7 ft",
+          "off_season": "2-4 ft"
+        },
+        "description": "Consistent intermediate left-hander between El Tunco and La Libertad — one of the most user-friendly quality waves in the country. Long rides, not as powerful as Punta Roca. Excellent for surfers progressing beyond beginner stage. Several surf schools base here.",
+        "crowd_level": "Medium",
+        "notes": "Stay at El Tunco (5 min away) for best accommodation access. Morning sessions best before crowds and onshore wind. Rocky reef — watch your fins."
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "El Imposible National Park",
+        "region": "Ahuachapán department",
+        "key_species": ["Spider monkey", "Howler monkey", "Puma", "Ocelot", "300+ bird species", "Keel-billed toucan", "Green iguana"],
+        "best_months": ["November", "December", "January", "February", "March"],
+        "notes": "El Salvador's most important protected area. Managed by SalvaNatura. Guide required. Only 4WD access. Remote and pristine — feels like a different country from the surf towns."
+      },
+      {
+        "name": "Montecristo Cloud Forest (Trifinio Reserve)",
+        "region": "Santa Ana department",
+        "key_species": ["Howler monkey", "Resplendent quetzal (rare)", "Puma", "Horned guan", "Cloud forest endemics", "Orchids (200+ species)"],
+        "best_months": ["November", "December", "January", "February", "March"],
+        "notes": "Where El Salvador, Honduras, and Guatemala meet at 2,418m. Partially closed May-October for nesting season. Guide required. One of the most ethereal, ancient-feeling cloud forests in Central America."
+      },
+      {
+        "name": "Barra de Santiago Marine Reserve",
+        "region": "Ahuachapán department (Pacific coast)",
+        "key_species": ["Olive ridley sea turtle (nesting)", "Leatherback sea turtle", "American crocodile", "Howler monkey", "Mangrove birds"],
+        "best_months": ["July", "August", "September", "October (turtle nesting)"],
+        "notes": "Large mangrove estuary and coastal reserve. Boat tours through mangrove channels. Sea turtle nesting July-October. Crocodiles visible from boats. One of El Salvador's largest mangrove systems."
+      },
+      {
+        "name": "Cinquera Forest Reserve",
+        "region": "Cabañas department",
+        "key_species": ["Howler monkey", "White-tailed deer", "Keel-billed toucan", "Forest birds"],
+        "best_months": ["November", "December", "January", "February", "March"],
+        "notes": "Cloud forest reserve with civil war history — the forest grew back after being cleared during the conflict. Community-managed tourism. Howler monkeys audible from town. Combine with historical civil war narrative."
+      }
+    ]
+  },
+  "sports_and_activities": [
+    {
+      "name": "Surfing",
+      "popularity": "Very High",
+      "best_regions": ["Punta Roca", "El Tunco / El Sunzal", "El Zonte", "Las Flores"],
+      "best_months": ["April", "May", "June", "July", "August", "September", "October"],
+      "skill_levels": ["Beginner (El Tunco, El Zonte)", "Intermediate (El Sunzal, El Zonte)", "Advanced (Punta Roca, Las Flores)"],
+      "notes": "El Salvador is Central America's most surf-focused destination after Costa Rica. Consistent Pacific swells, warm water, and affordable costs make it a top surf trip. Punta Roca is world-class. El Tunco is the social and budget hub. Growing reputation globally."
+    },
+    {
+      "name": "Volcano Hiking",
+      "popularity": "High",
+      "best_regions": ["Santa Ana (Ilamatepec)", "Izalco", "Cerro Verde", "San Miguel"],
+      "best_months": ["November", "December", "January", "February", "March"],
+      "skill_levels": ["Moderate (Santa Ana)", "Hard (Izalco)"],
+      "notes": "Santa Ana crater lake is one of the most dramatic sights in Central America. Izalco's black cinder moonscape is extraordinary. Both accessible from Cerro Verde NP on the same day. Check volcanic activity — Santa Ana periodically closes."
+    },
+    {
+      "name": "Maya Archaeology",
+      "popularity": "Moderate",
+      "best_regions": ["Joya de Cerén (UNESCO)", "Tazumal", "San Andrés"],
+      "best_months": ["Year-round"],
+      "skill_levels": ["Beginner"],
+      "notes": "Joya de Cerén is extraordinary — a Maya farming village flash-frozen in time by a 590 AD volcanic eruption. Actual preserved household objects, food stores, and gardens. UNESCO World Heritage. Much more intimate than Copán or Tikal."
+    },
+    {
+      "name": "Coffee Farm Tours",
+      "popularity": "Moderate",
+      "best_regions": ["Ruta de las Flores (Apaneca, Juayúa)", "Santa Ana highlands"],
+      "best_months": ["November to March (harvest)"],
+      "skill_levels": ["Beginner"],
+      "notes": "El Salvador produces excellent shade-grown arabica coffee in the western highlands. Farm tours available from multiple operators in Apaneca and Juayúa. Buy direct from farms. Salvadoran coffee is seriously underrated on the world stage."
+    },
+    {
+      "name": "Bitcoin and Digital Economy Tourism",
+      "popularity": "Moderate (niche but growing)",
+      "best_regions": ["El Zonte (Bitcoin Beach)", "San Salvador"],
+      "best_months": ["Year-round"],
+      "skill_levels": ["Beginner"],
+      "notes": "El Zonte created the world's first Bitcoin circular economy before Bitcoin became legal tender in El Salvador. Walk around paying for meals, rentals, and services entirely in Bitcoin. Fascinating regardless of your views on cryptocurrency. The Chivo Wallet is the government Bitcoin app."
+    },
+    {
+      "name": "Colonial and Cultural City Tours",
+      "popularity": "Moderate",
+      "best_regions": ["Suchitoto", "Santa Ana", "San Vicente", "San Salvador (Zona Rosa, museums)"],
+      "best_months": ["Year-round"],
+      "skill_levels": ["Beginner"],
+      "notes": "Suchitoto is the most beautiful colonial town in El Salvador — cobblestone streets, artisan culture, Lago Suchitlán views, and excellent boutique hotels. Santa Ana has one of the finest neoclassical theater buildings in Central America. The national museum (MUNA) in San Salvador is excellent."
+    },
+    {
+      "name": "Sea Turtle Watching",
+      "popularity": "Moderate",
+      "best_regions": ["Barra de Santiago", "Los Cóbanos", "El Espino", "La Herradura"],
+      "best_months": ["July", "August", "September", "October"],
+      "skill_levels": ["Beginner"],
+      "notes": "Olive ridley sea turtles nest on El Salvador's Pacific beaches July-October. Guided night tours with conservation groups available. Barra de Santiago is the best-organized ecotourism program."
+    }
+  ],
+  "trip_styles": {
+    "good_for_backpacking": true,
+    "good_for_luxury": false,
+    "good_for_families": true,
+    "good_for_couples": true,
+    "good_for_solo_travel": true,
+    "good_for_digital_nomads": true,
+    "good_for_adventure_travel": true,
+    "good_for_food_travel": true,
+    "good_for_road_trips": true,
+    "good_for_short_trips": true,
+    "good_for_long_stays": true
+  },
+  "destinations": {
+    "top_cities": ["San Salvador"],
+    "top_towns": ["El Tunco", "El Zonte", "Suchitoto", "Santa Ana", "Juayúa", "La Libertad"],
+    "top_regions": ["La Libertad Surf Coast", "Ruta de las Flores (western highlands)", "Santa Ana Volcano area", "Morazán (northern mountains)", "La Paz coast"],
+    "top_islands": [],
+    "sample_itineraries": {
+      "one_week": "San Salvador (1 day) → Santa Ana Volcano + Lago Coatepeque (1 day) → Ruta de las Flores (1 day) → El Tunco / El Zonte surf (4 days)",
+      "two_weeks": "San Salvador (1 day) → Suchitoto (1 day) → Morazán / Perquín (2 days) → Santa Ana + volcanoes (2 days) → Ruta de las Flores (2 days) → Joya de Cerén + Tazumal (1 day) → El Tunco / El Zonte / Punta Roca (5 days)",
+      "classic_route": "San Salvador → Santa Ana → Ruta de las Flores → El Tunco → El Zonte",
+      "offbeat_route": "Morazán civil war circuit → Cinquera cloud forest → Suchitoto → Barra de Santiago mangroves → Las Flores eastern surf"
+    }
+  },
+  "practical_info": {
+    "arrival_tips": "SAL airport is 44km east of San Salvador — 45 min to an hour by car. Uber available from arrivals ($20-30 to Zona Rosa). Most surf tourists take direct airport shuttles to El Tunco or El Zonte ($15-20, pre-book). Many stay just a day or two in San Salvador before heading to coast.",
+    "airport_scam_notes": "Use Uber from the airport or pre-booked hotel shuttle. Official taxis from airport desk are safe but more expensive. Ignore informal taxi touts.",
+    "local_sim_where_to_buy": "Tigo and Claro SIMs at the airport and throughout San Salvador. Bring passport. $5-10 for a data plan. Claro has slightly better rural coverage.",
+    "money_exchange_notes": "El Salvador uses USD — no exchange needed for American travelers. ATMs at the airport and throughout San Salvador. No exchange needed.",
+    "language_helpful_phrases": {
+      "hello": "Hola / Buenos días",
+      "thank_you": "Gracias",
+      "how_much": "¿Cuánto cuesta?",
+      "where_is": "¿Dónde está...?",
+      "i_dont_speak_spanish": "No hablo español",
+      "the_bill_please": "La cuenta, por favor",
+      "help": "¡Ayuda!",
+      "cheers": "¡Salud!",
+      "two_pupusas_please": "Dos pupusas, por favor"
+    },
+    "offline_maps_recommended": ["Maps.me", "Google Maps (offline)"],
+    "apps_useful_locally": ["Uber (San Salvador — essential)", "WhatsApp (essential)", "Google Maps (offline)", "Chivo Wallet (Bitcoin — if curious)", "XE Currency"]
+  },
+  "laws": {
+    "drug_laws_strictness": "Very strict — possession of any amount can result in arrest. The Bukele government has zero tolerance approach. Do not carry or use drugs.",
+    "alcohol_laws": "Legal drinking age 18. No strict public drinking laws in practice. Alcohol widely available except Good Friday.",
+    "drone_rules": "Permits required from DGAC (Dirección General de Aeronáutica Civil). Prohibited over airports, military areas, and government buildings. Some restrictions near surf towns and beaches — check locally.",
+    "wild_camping_rules": "Generally permitted in remote areas with landowner permission. Not in protected reserves without authorization.",
+    "protected_area_rules": "Entry fees $3-6 at major parks. Guide required or recommended in El Imposible and Montecristo. No collecting plants, wildlife, or archaeological artifacts.",
+    "fishing_license_required": true,
+    "photography_restricted_sites": ["Military installations", "Police checkpoints (exercise discretion)", "Government security facilities"],
+    "lgbtq_legal_status": "Same-sex relationships legal but no partnership recognition. No anti-discrimination protections. Social conservatism strong in most communities. Discretion recommended outside tourist areas.",
+    "marijuana_legality": "Illegal — strict enforcement under current administration. Zero tolerance.",
+    "prescription_medication_rules": "Bring prescriptions in original packaging with doctor's letter. Good pharmacy availability in San Salvador — many medications available OTC. Bring sufficient supply for time away from capital.",
+    "bitcoin_legal_notes": "Bitcoin is legal tender since September 2021. Merchants technically required to accept it but enforcement minimal. Most tourist businesses in El Zonte accept it. Chivo Wallet is the government app."
+  },
+  "family_travel": {
+    "kid_friendly": true,
+    "stroller_friendly": false,
+    "car_seat_rules": "Legally required but rarely enforced. Bring your own.",
+    "family_activities": [
+      "Joya de Cerén — the real-life buried village is fascinating for curious kids",
+      "Ruta de las Flores — gentle highland scenery, food markets, flowers",
+      "Lago de Coatepeque — swimming and kayaking on a beautiful volcanic lake",
+      "El Zonte beach — calmer and safer beach environment than El Tunco",
+      "Macaw Mountain equivalent — Parque Zoológico Nacional in San Salvador",
+      "Los Cóbanos snorkeling — only rocky reef in El Salvador, accessible for families"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Very limited — poor urban infrastructure, cobblestone streets in colonial towns, and unpaved access roads to most natural attractions make wheelchair travel extremely difficult.",
+    "accessible_transport": "Uber in San Salvador is the most accessible option. No wheelchair-accessible public transport.",
+    "accessible_attractions": ["Joya de Cerén visitor center (partial)", "San Salvador museums (partial)", "Tazumal ruins (partial paved paths)"]
+  },
+  "gear": {
+    "bring_wetsuit": false,
+    "bring_hiking_boots": true,
+    "bring_layers": true,
+    "bring_bug_spray": true,
+    "bring_sunscreen": true,
+    "cold_weather_gear_needed": true,
+    "cold_weather_gear_notes": "Light jacket and warm layer needed for Santa Ana Volcano summit (can be cold and windy at 2,381m). Montecristo cloud forest is cool and misty. Not needed at the coast.",
+    "rental_gear_easy_to_find": true,
+    "outdoor_gear_shops": [
+      "Surf equipment rental widely available in El Tunco, El Zonte, and La Libertad",
+      "Boards $10-20/day, wetsuits not needed (water 26-28°C year-round)",
+      "Metrocentro Mall (San Salvador) has basic outdoor gear stores",
+      "Bring your own hiking boots — quality hiking gear shops scarce"
+    ]
+  }
+}

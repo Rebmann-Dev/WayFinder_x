@@ -1,0 +1,704 @@
+{
+  "meta": {
+    "last_updated": "2026-04-17",
+    "confidence_score": 0.91,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "WayFinder internal hike/food/history data",
+      "WayFinder safety submodels"
+    ],
+    "notes": "Populated from WayFinder app data and verified travel references. Null fields to be enriched via Tavily web search."
+  },
+  "identity": {
+    "name": "Panama",
+    "official_name": "Republic of Panama",
+    "code": "PA",
+    "iso3": "PAN",
+    "region": "Americas",
+    "subregion": "Central America",
+    "capital": "Panama City",
+    "flag_emoji": "🇵🇦",
+    "timezones": ["UTC-05:00"],
+    "driving_side": "right",
+    "country_calling_code": "+507",
+    "internet_tld": ".pa"
+  },
+  "language_and_money": {
+    "languages": ["Spanish", "English (Canal Zone, Bocas del Toro)", "Ngäbere", "Kuna (Guna)"],
+    "primary_language": "Spanish",
+    "english_proficiency": "Moderate to high — significantly higher than most Central American countries due to Canal Zone history and US influence. Good English in Panama City business and tourist areas, Bocas del Toro, and among Guna indigenous communities.",
+    "currency": "PAB / USD",
+    "currency_name": "Panamanian Balboa / US Dollar",
+    "currency_symbol": "B/. / $",
+    "cash_vs_card": "Panama uses US dollars — no conversion needed for American travelers. Cards widely accepted in Panama City and tourist areas. Cash needed in rural areas, Guna Yala, and smaller towns.",
+    "typical_payment_methods": ["USD cash", "Visa", "Mastercard", "American Express (major hotels)"],
+    "atm_availability": "Widely available in Panama City. Available in Bocas del Toro, Boquete, and David. Very limited in Guna Yala and remote areas — withdraw before visiting.",
+    "tipping_culture": "Expected in restaurants (10% standard, 15% for great service). US-influenced tipping culture stronger here than elsewhere in Central America.",
+    "tipping_etiquette": "10-15% in restaurants. $1-2/bag for hotel porters. $5-10/day for tour guides. Round up taxi fares. No tip required at casual counters."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 180 days",
+      "visa_type": "Tourist stamp on arrival",
+      "visa_free_days": 180,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for at least 3 months beyond date of entry",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": true,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Standard restrictions on narcotics, firearms, and agricultural products. Declaration required for cash over $10,000.",
+    "restricted_items": ["Narcotics", "Firearms (without permit)", "Fresh produce without permit", "Cash over $10,000 without declaration"],
+    "duty_free_allowances": "500 cigarettes or 500g tobacco, 3 liters of alcohol, gifts up to $500 value"
+  },
+  "health": {
+    "recommended_vaccines": ["Hepatitis A", "Typhoid", "Hepatitis B", "Rabies (if visiting jungle or caves)", "Tetanus-Diphtheria"],
+    "required_vaccines": [],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": true,
+    "malaria_risk": "Present in rural areas, especially Darien, Guna Yala, and Bocas del Toro province. Not a risk in Panama City or most tourist areas.",
+    "malaria_regions": ["Darién province", "Guna Yala (San Blas)", "Bocas del Toro (remote areas)", "Ngäbe-Buglé comarca (remote)"],
+    "malaria_prophylaxis_info": "Recommended for travel to Darién and remote indigenous areas. Not needed for Panama City, Bocas del Toro town, Boquete, or Canal area.",
+    "dengue_risk": "Moderate — present nationwide, especially in wet lowland areas during rainy season (May-November). Dengue cases regular in Panama City.",
+    "altitude_sickness_risk": "Low for most destinations. Barú Volcano summit (3,475m) can cause mild altitude sickness — acclimatize in Boquete (1,200m) first.",
+    "food_water_safety": "Tap water safe in Panama City and Boquete. Use bottled water in rural areas, Guna Yala, and Bocas del Toro. Food safety generally good in tourist areas.",
+    "air_quality_concerns": "Panama City has traffic-related air quality issues. Generally good elsewhere. Darién can have smoke from slash-and-burn agriculture.",
+    "common_travel_illnesses": ["Traveler's diarrhea", "Dengue fever", "Sunburn", "Insect bites"],
+    "pharmacy_access": "Good in Panama City — many 24-hour pharmacies (Farmacias Arrocha, Farmacias Metro). Available in David and Boquete. Limited in remote areas.",
+    "tap_water_safe": true,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Best in Central America after Costa Rica. Excellent private hospitals in Panama City (Hospital Punta Pacífica affiliated with Johns Hopkins, Clínica Hospital San Fernando). Adequate in David. Very limited in remote areas.",
+    "emergency_medical_number": "911"
+  },
+  "safety": {
+    "travel_advisory_level_us": 2,
+    "travel_advisory_level_label": "Exercise Increased Caution",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "Crime in specific Panama City neighborhoods (El Chorrillo, Curundu, Santa Ana)",
+      "Drug trafficking through Darién province",
+      "Darién Gap — extremely dangerous, Do Not Travel",
+      "Petty theft in tourist areas"
+    ],
+    "crime_risk": "Low to moderate — Panama City is generally safe for tourists in upscale neighborhoods. Specific inner-city barrios have high violent crime. Darién province is genuinely dangerous due to drug trafficking and Darién Gap crossings.",
+    "scam_risk": "Low — taxi overcharging, fake tour operators, inflated prices for tourists in Casco Viejo",
+    "transport_safety": "Metro and registered taxis safe in Panama City. Intercity buses generally safe. Avoid unlicensed taxis. Internal flights safe and reliable.",
+    "solo_female_travel_notes": "Generally safe in tourist areas and Panama City upscale neighborhoods. Avoid El Chorrillo, Curundu, and Santa Ana at all times. Normal precautions apply. Bocas del Toro and Boquete are very manageable solo.",
+    "lgbtq_notes": "Most LGBTQ-friendly country in Central America after Costa Rica. Same-sex relationships legal. Civil union recognition. Panama City has an active gay scene. More conservative in rural areas. Same-sex marriage not yet legal.",
+    "night_safety": "Safe in Marbella, Bella Vista, El Cangrejo, and Casco Viejo (with care). Avoid El Chorrillo, Curundu, and Calidonia at night. Bocas del Toro town is safe at night but watch your belongings.",
+    "safe_areas": ["Marbella", "Bella Vista", "El Cangrejo", "Paitilla", "San Francisco", "Casco Viejo (tourist zone)", "Boquete", "Bocas del Toro town", "Pedasi"],
+    "areas_to_avoid": ["El Chorrillo (Panama City)", "Curundu (Panama City)", "Santa Ana at night", "Darién province (Do Not Travel)", "Colón city (exercise extreme caution)"],
+    "natural_disaster_risks": ["Earthquakes", "Flooding in rainy season", "Landslides in highlands", "Volcanic activity (Barú — dormant but monitored)", "Tsunamis on Pacific and Caribbean coasts"],
+    "political_stability_notes": "Stable democracy with regular peaceful transitions of power. 2023 protests over mining contracts were significant but resolved. Low risk of political unrest affecting tourists.",
+    "common_scams": [
+      "Taxi overcharging — negotiate fare before getting in or use Uber/InDriver",
+      "Inflated tour prices in Casco Viejo and Bocas del Toro",
+      "Fake or unlicensed Guna Yala tour operators",
+      "ATM skimming in tourist areas",
+      "Unsolicited 'canal tour' sellers at Miraflores locks"
+    ],
+    "police_reliability": "Generally reliable — Panama has a relatively professional national police force. Tourist police operate in Casco Viejo and major tourist areas.",
+    "emergency_numbers": {
+      "police": "104",
+      "ambulance": "911",
+      "fire": "103",
+      "general_emergency": "911"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Panama City",
+      "us_embassy_phone": "+507-317-5000",
+      "us_embassy_website": "https://pa.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "December to April (dry season) — sunny, low humidity, best for beaches, hiking, and city exploration",
+    "climate_zones": [
+      "Pacific lowlands (Panama City) — distinct wet and dry seasons, hot year-round",
+      "Caribbean coast (Bocas del Toro, Colón) — hot, humid, rain year-round with drier spells",
+      "Western highlands (Boquete, Chiriquí) — cool, temperate, misty year-round",
+      "Darién — extremely hot and wet, high rainfall year-round",
+      "Guna Yala (Caribbean) — tropical, rain year-round but drier December-March"
+    ],
+    "dry_season": "December to April (Pacific side and Panama City)",
+    "rainy_season": "May to November (Pacific); near year-round on Caribbean coast",
+    "hurricane_typhoon_season": "June to November (Caribbean side has hurricane risk, though Panama is rarely hit directly)",
+    "surf_season": "December to March (Caribbean — Bocas del Toro); April to October (Pacific coast)",
+    "trekking_best_months": ["December", "January", "February", "March"],
+    "average_temp_by_month": {
+      "Panama City": "28-32°C year-round",
+      "Boquete (highlands)": "18-24°C year-round",
+      "Bocas del Toro": "26-30°C year-round",
+      "Darién": "30-35°C year-round"
+    },
+    "daylight_hours_by_season": "Near equator — approximately 11.5-12.5 hours year-round"
+  },
+  "transport": {
+    "major_airports": [
+      "Tocumen International Airport (PTY) — Panama City (main hub, major Latin American connection point)",
+      "Enrique Malek International Airport (DAV) — David, Chiriquí (western Panama)",
+      "Bocas del Toro Airport (BOC) — Bocas del Toro town, Isla Colón"
+    ],
+    "main_airlines": ["Copa Airlines (hub at PTY)", "American Airlines", "United", "Delta", "Avianca", "Air Panama (domestic)"],
+    "airport_to_city_options": ["Uber ($15-25 to Panama City center, ~30 min)", "Official taxis ($25-35)", "Metro Bus + Metro (cheapest, ~$1.25 but complex with luggage)"],
+    "public_transit_quality": "Panama City has a modern metro (2 lines), clean and efficient. Metrobuses cover wider city. Best transit system in Central America. DigiCel card for metro and buses.",
+    "intercity_bus_quality": "Good coverage of major destinations from Albrook Bus Terminal. Comfortable air-conditioned coaches to David, Chitré, Santiago. Long-distance but reliable.",
+    "train_network_quality": "Panama Railway (Canal Railway) runs between Panama City and Colón — a scenic day trip alongside the canal but not useful for general tourism.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": true,
+    "road_conditions": "Pan-American Highway well-maintained between Panama City and Costa Rica border. Roads in Chiriquí highlands and Bocas del Toro access roads are decent. Darién has no roads beyond Yaviza — the Darién Gap begins there.",
+    "four_x_four_needed_regions": ["Darién approaches (Yaviza area)", "Remote Chiriquí highlands", "Guna Yala land access (minimal)"],
+    "ride_hailing_apps": ["Uber", "InDriver", "Cabify"],
+    "taxi_safety_notes": "Yellow taxis in Panama City — always negotiate fare before getting in (no meters in most). Uber is widely used, reliable, and often cheaper. Never take unmarked taxis. At PTY airport, use official taxi desk or Uber.",
+    "ferry_routes": [
+      "Almirante to Bocas del Toro (water taxi, 30 min)",
+      "Carenero, Bastimentos, and island hops within Bocas del Toro archipelago",
+      "El Porvenir / various Guna Yala island access by boat from Carti road",
+      "Balboa to Taboga Island (ferry, day trip from Panama City)"
+    ],
+    "border_crossing_notes": "Paso Canoas (Costa Rica) is the main Pacific crossing — busy, organized. Sixaola-Guabito is the Caribbean crossing to Costa Rica. No road crossing to Colombia — Darién Gap requires air or sea."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$40-60/day",
+    "daily_budget_midrange": "$80-150/day",
+    "daily_budget_comfort": "$180-350/day",
+    "hostel_avg": "$12-22/night",
+    "hotel_avg": "$60-130/night",
+    "meal_avg": "$4-10 (local lunch $4-7, restaurant $12-30)",
+    "coffee_avg": "$1.50-3.50",
+    "beer_avg": "$2-4",
+    "local_transport_avg": "$0.35-1.25 (metro/bus)",
+    "sim_card_avg": "$10-20 for 5-10GB",
+    "coworking_day_pass_avg": "$15-25",
+    "surfboard_rental_avg": "$15-25/day",
+    "value_for_money": "Moderate — Panama City is the most expensive city in Central America. Bocas del Toro and Boquete are moderate. Rural western Panama is excellent value. USD as currency means no exchange rate advantage."
+  },
+  "connectivity": {
+    "sim_card_providers": ["Cable & Wireless (C&W / +Móvil)", "Claro", "Digicel"],
+    "esim_available": true,
+    "mobile_data_quality": "Excellent 4G/LTE in Panama City and major towns. Good coverage on Pan-American Highway. Limited in Guna Yala islands, Darién, and remote highland areas.",
+    "wifi_quality": "Excellent in Panama City (50-200 Mbps common). Good in Boquete and Bocas del Toro. Variable on Guna Yala islands — some have satellite, some none.",
+    "coworking_available": true,
+    "best_remote_work_cities": ["Panama City (Casco Viejo, Marbella, El Cangrejo)", "Boquete", "Bocas del Toro"],
+    "power_outlet_types": ["A", "B"],
+    "voltage": "110V, 60Hz",
+    "plug_adapter_needed_for_us": false,
+    "power_reliability": "Very reliable in Panama City and major towns. Outages possible in remote areas and during heavy storms. Bocas del Toro can have intermittent power."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Casco Viejo, Panama City — UNESCO World Heritage colonial district, boutique hotels, restaurants, nightlife",
+      "Marbella / Bella Vista, Panama City — upscale, central, walkable",
+      "El Cangrejo, Panama City — budget to mid-range, good transport links",
+      "Boquete, Chiriquí — highland coffee town, hiking base, expat community",
+      "Bocas del Toro (Isla Colón) — Caribbean archipelago, surf and diving base",
+      "Guna Yala (San Blas islands) — overwater cabañas on paradise islands",
+      "Pedasi, Los Santos — sleepy Pacific beach town, surf access"
+    ],
+    "budget_areas": ["El Cangrejo (Panama City)", "Bocas del Toro (guesthouses)", "Boquete (hostels)"],
+    "family_friendly_areas": ["Boquete", "Amador Causeway area (Panama City)", "Taboga Island", "Pedasi"],
+    "nightlife_areas": ["Casco Viejo", "Marbella", "Zona Rosa (Panama City)", "Bocas del Toro town"],
+    "surf_towns": ["Santa Catalina", "Pedasi (Playa Venao)", "Bocas del Toro (Silverbacks, Bluff Beach)"],
+    "eco_lodges_available": true,
+    "peak_booking_season": "December to April (dry season); Carnival week (Feb/Mar) — extremely busy",
+    "accommodation_notes": "Casco Viejo has best boutique hotel selection. Guna Yala (San Blas) overwater cabañas book out months ahead. Carnival in Panama City and interior is massive — book far in advance."
+  },
+  "culture": {
+    "local_customs": [
+      "Panamanians are warm and outgoing — conversation is easy to start",
+      "Strong US cultural influence from Canal Zone history — English common, US brands everywhere",
+      "Greet with a single kiss on the right cheek between women and mixed company; handshake between men",
+      "The canal is a deep source of national pride — engage with curiosity, not casual dismissal",
+      "Afro-Caribbean culture is strong in Bocas del Toro and Colón — distinct from Pacific Panama"
+    ],
+    "dress_expectations": "Casual in most areas. Business casual for nicer Panama City restaurants. Conservative when visiting indigenous communities in Guna Yala. Beachwear only at the beach.",
+    "religious_sensitivity": "Predominantly Catholic. Easter (Semana Santa) is a major holiday. Indigenous spiritual practices respected in Guna Yala and Ngäbe-Buglé communities.",
+    "social_norms": [
+      "Punctuality more observed in business settings than social ones",
+      "Panamanians are direct compared to other Central Americans but still polite",
+      "Racial and cultural diversity is prominent — Panama City is one of the most cosmopolitan cities in Latin America",
+      "Bargaining expected at Mercado de Artesanías, not in shops"
+    ],
+    "greeting_style": "Cheek kiss in social settings, handshake in business. 'Buenos días/tardes/noches' and '¿Qué tal?' standard.",
+    "public_behavior_notes": "PDA acceptable in urban tourist areas. Dress modestly in indigenous communities. Photography of canal infrastructure generally fine; avoid military/police installations.",
+    "photography_etiquette": "Always ask permission in indigenous communities — especially Guna Yala (a small fee is sometimes expected). Photography fine at canal locks and tourist sites.",
+    "bargaining_expected": true,
+    "important_holidays": [
+      "Carnival (4 days before Ash Wednesday, Feb/Mar) — biggest national party, Las Tablas and Panama City",
+      "Independence from Colombia (November 3)",
+      "Independence from Spain (November 28)",
+      "Semana Santa (Easter) — nationwide holiday",
+      "Flag Day (November 4)"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Guna Yala (San Blas) is a semi-autonomous indigenous territory — special entry procedures apply",
+      "Darién province — Do Not Travel beyond Yaviza",
+      "Drone permits required — ANAC authorization needed",
+      "Collecting wildlife, plants, or coral strictly prohibited",
+      "Fishing license required for sport fishing"
+    ]
+  },
+  "food": {
+    "signature_dishes": [
+      "Sancocho de gallina — chicken and vegetable soup with ñame (yam) and culantro, considered the national dish",
+      "Arroz con pollo — rice with chicken, annatto, vegetables; a Panamanian staple",
+      "Ceviche — fresh seafood marinated in citrus, very popular along both coasts",
+      "Ropa vieja — shredded beef in tomato sauce, served with rice and beans",
+      "Patacones — twice-fried green plantain slices, served as a side or snack",
+      "Hojaldres — fried dough, the quintessential Panamanian breakfast bread",
+      "Tamales — corn masa filled with pork or chicken and vegetables, wrapped in plantain leaves",
+      "Guacho — thick rice and seafood or meat stew from coastal regions",
+      "Bollo — corn tamale eaten for breakfast, especially in Chiriquí",
+      "Corvina al ajillo — sea bass with garlic sauce, Panama City classic"
+    ],
+    "street_food_safety": "Generally safe at busy, high-turnover stalls. Ceviche from street vendors is popular and usually safe. Avoid raw shellfish in heat from low-turnover vendors.",
+    "vegetarian_friendliness": "Moderate — improving in Panama City (Casco Viejo especially). Arroz, frijoles, patacones, and salads are widely available. Limited in rural areas.",
+    "vegan_friendliness": "Growing but limited — good options in Panama City. Challenging outside the capital.",
+    "must_try_drinks": [
+      "Seco Herrerano — Panama's national spirit, made from sugarcane, from Herrera province",
+      "Balboa beer — the national beer, light lager",
+      "Atlas beer — popular competitor to Balboa",
+      "Chicha de maíz — fermented or non-fermented corn drink",
+      "Chicheme — creamy corn and spice drink from Chiriquí",
+      "Fresh tropical juices (maracuyá, guanábana, cas, tamarind)",
+      "Café de Boquete — Boquete highland coffee is world-class"
+    ],
+    "regional_specialties": [
+      "Chiriquí (Boquete area): coffee (some of world's finest), trout, dairy, bollo",
+      "Caribbean coast (Bocas del Toro): rice and beans in coconut milk, fresh lobster, Caribbean stew (rondón)",
+      "Guna Yala: fresh fish, coconut crab, traditional Guna foods",
+      "Azuero Peninsula: seco Herrerano, festivals with traditional foods, pesao (pork with vegetables)",
+      "Pacific coast: fresh corvina ceviche, shrimp dishes, arroz con mariscos"
+    ],
+    "drinking_water_notes": "Tap water safe in Panama City, Boquete, and most urban areas. Use bottled water in Bocas del Toro, Guna Yala, and rural areas. Check locally when in doubt.",
+    "alcohol_rules": "Legal drinking age 18. No strict public drinking laws in practice. Alcohol widely available except Good Friday (limited sales)."
+  },
+  "outdoors": {
+    "top_national_parks": [
+      "Soberanía National Park — Canal Zone rainforest, world-class birding, accessible from Panama City",
+      "Darién National Park — UNESCO World Heritage, most biodiverse area in Central America",
+      "Coiba National Park — UNESCO World Heritage, Pacific island marine park, world-class diving",
+      "Volcán Barú National Park — highest point in Panama, two-ocean view on clear days",
+      "Omar Torrijos National Park (El Copé) — cloud forest, excellent birding",
+      "Chagres National Park — Canal watershed, Emberá indigenous villages, jungle rivers",
+      "Bocas del Toro Archipelago — Caribbean marine park, coral reef, sea turtles"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Pipeline Road (Camino del Oleoducto) — Soberanía NP",
+        "difficulty": "Easy to Moderate",
+        "duration": "2-6 hours (as long as you like)",
+        "region": "Colón / Panamá (Canal Zone)",
+        "description": "Famous birding road through pristine Canal Zone rainforest — one of the top birding sites in the Western Hemisphere. Over 500 bird species recorded on this single road. Harpy eagle habitat. Monkeys, sloths, and ant columns common.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 150,
+        "notes": "Go early morning (6-8am) for peak bird activity. Free entry or small fee. Flat road makes it accessible for all fitness levels. Hire a local guide for best sightings — they spot things you'd miss."
+      },
+      {
+        "name": "Volcán Barú Summit",
+        "difficulty": "Very Hard",
+        "duration": "8-12 hours round trip",
+        "region": "Chiriquí (Boquete)",
+        "description": "Night hike to the highest point in Panama (3,475m) to watch sunrise from the only point on Earth where you can see both the Pacific and Atlantic oceans simultaneously on a clear day. Páramo and cloud forest zones.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 3475,
+        "notes": "Depart Boquete at midnight for summit sunrise. Very cold at summit (0-5°C) — bring warm layers. Altitude can cause headaches — acclimatize in Boquete (1,200m) first. Guide recommended. $5 park entry fee."
+      },
+      {
+        "name": "Quetzal Trail (Sendero Los Quetzales)",
+        "difficulty": "Moderate",
+        "duration": "5-8 hours one way",
+        "region": "Chiriquí (Boquete to Cerro Punta)",
+        "description": "One of the most scenic hikes in Central America — traverse the Barú Volcano massif through cloud forest from Boquete to Cerro Punta (or reverse). Resplendent quetzal habitat. Rushing mountain streams, cloud forest canopy, and highland flowers.",
+        "best_months": ["December", "January", "February", "March", "April"],
+        "elevation_m": 2400,
+        "notes": "Usually done one-way with car shuttle arranged. Can be done independently or with guide. Quetzals most visible Jan-April during nesting. Start from Bajo Mono (Boquete side) for better sightings."
+      },
+      {
+        "name": "Isla Bastimentos — Red Frog Beach and Nivida Cave",
+        "difficulty": "Easy",
+        "duration": "2-4 hours",
+        "region": "Bocas del Toro",
+        "description": "Short jungle hike across Isla Bastimentos to Red Frog Beach (named for strawberry poison dart frogs), then optional cave snorkel at Nivida Bat Cave. Lush Caribbean forest with spectacular beach reward.",
+        "best_months": ["September", "October", "November", "December"],
+        "elevation_m": 50,
+        "notes": "Take water taxi from Bocas town to Bastimentos. $5 entry to Red Frog Beach. Easy jungle trail. Strawberry dart frogs visible along the trail. Excellent snorkeling at the beach."
+      },
+      {
+        "name": "Boquete Waterfall Circuit",
+        "difficulty": "Easy to Moderate",
+        "duration": "2-4 hours",
+        "region": "Chiriquí (Boquete)",
+        "description": "Series of accessible waterfalls and natural pools in the cloud forest hills above Boquete. Leafcutter ant highways, hummingbirds, and cool highland air. Popular half-day activity from Boquete town.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 1500,
+        "notes": "Several trail options of varying lengths. Some require guide or tour. High Falls (La Cascada) and Tinajas waterfall are highlights. Good for families."
+      },
+      {
+        "name": "Camino de Cruces Historic Trail",
+        "difficulty": "Easy to Moderate",
+        "duration": "3-5 hours",
+        "region": "Panamá (Canal Zone)",
+        "description": "Hike the original Spanish colonial mule path used to transport gold from the Pacific to the Caribbean. Cobblestone sections up to 500 years old. Canal Zone rainforest with howler monkeys, toucans, and coatis.",
+        "best_months": ["December", "January", "February", "March"],
+        "elevation_m": 200,
+        "notes": "Starts near Gamboa in Soberanía NP. Historic cobblestone sections are remarkably preserved. Can be combined with a trip to the Canal or Miraflores Locks. Bring insect repellent."
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Darién Gap Expedition (La Palma / Emberá communities)",
+        "difficulty": "Very Hard",
+        "duration": "5-10 days",
+        "region": "Darién",
+        "description": "Guided expedition into the edges of Darién National Park — NOT the Darién Gap migrant crossing. Visit Emberá and Wounaan indigenous villages, pristine rainforest, harpy eagle territory. One of the world's great wilderness adventures.",
+        "best_months": ["January", "February", "March"],
+        "elevation_m": 800,
+        "notes": "ONLY with reputable specialized operator (e.g., Advantage Tours). Do not attempt independently. Safety assessment required before booking. Not the same as Darién Gap migration route — that is Do Not Travel."
+      },
+      {
+        "name": "Coiba Island Diving and Exploration",
+        "difficulty": "Easy (diving) / Moderate (hiking)",
+        "duration": "2-4 days",
+        "region": "Veraguas (Pacific coast)",
+        "description": "Multi-day liveaboard or lodge-based exploration of Coiba National Park — UNESCO World Heritage marine park. Best scuba diving in Panama, Whale sharks, manta rays, hammerhead sharks, sea turtles. Howler monkeys, scarlet macaws on the island.",
+        "best_months": ["December", "January", "February", "March", "June", "July"],
+        "elevation_m": 50,
+        "notes": "Access from Santa Catalina by boat (~2 hrs). Ranger station accommodation or liveaboard. Day trips possible but overnight is far better. Limited daily visitors — book well in advance."
+      },
+      {
+        "name": "Guna Yala Island Hopping",
+        "difficulty": "Easy",
+        "duration": "3-7 days",
+        "region": "Guna Yala (San Blas)",
+        "description": "Sail or take boats between the 365 islands of the Guna Yala archipelago — white sand, palm trees, turquoise water, and the autonomous Guna indigenous nation. Snorkeling, sailing, and cultural exchange.",
+        "best_months": ["December", "January", "February", "March", "April"],
+        "elevation_m": 5,
+        "notes": "Book through Guna-authorized operators. Entry via Carti road + boat or charter flight to El Porvenir. No ATMs on most islands. Cash only. Simple cabaña accommodation on private islands. One of Panama's most unique experiences."
+      }
+    ],
+    "volcanoes": [
+      "Volcán Barú (3,475m) — dormant, highest point in Panama, two-ocean view on clear days",
+      "La Yeguada (1,008m) — older dormant volcanic complex in Veraguas"
+    ],
+    "waterfalls": [
+      "La Cascada (High Falls), Boquete — large accessible waterfall above town",
+      "Tinajas Waterfall, Boquete — multi-tiered jungle waterfall with pools",
+      "Sacramento Waterfall, Boquete — scenic highland waterfall",
+      "El Valle de Antón waterfalls — several accessible falls near El Valle crater town",
+      "Chorro Las Mozas, El Valle — swimming hole waterfall"
+    ],
+    "hot_springs": [
+      "Pozos Termales de Caldera (near Boquete) — natural volcanic hot springs in highland forest ($)",
+      "El Valle de Antón thermal pools — volcanic hot springs in crater town"
+    ],
+    "lakes": [
+      "Gatún Lake — largest man-made lake in the world (by area when built), heart of the Panama Canal",
+      "Caldera Lake (Lago Caldera) — near Boquete, reservoir",
+      "El Valle crater — El Valle de Antón sits inside an ancient volcanic crater"
+    ],
+    "rivers": [
+      "Río Chagres — Canal watershed river, Emberá village boat tours, kayaking in Chagres NP",
+      "Río Chiriquí — Chiriquí highlands, excellent whitewater rafting",
+      "Río Chiriquí Viejo — world-class Class IV-V whitewater, near Boquete",
+      "Río Mamoni — birding and kayaking in Darién approaches"
+    ],
+    "wildlife": [
+      "Harpy eagle (Darién, Soberanía, Chagres — national bird)",
+      "Jaguar (Darién, Coiba)",
+      "White-faced capuchin monkey (nationwide)",
+      "Howler monkey (nationwide)",
+      "Geoffroy's tamarin (Canal Zone — Panama City area)",
+      "Baird's tapir (Darién)",
+      "Whale shark (Coiba — dry season)",
+      "Hammerhead shark (Coiba)",
+      "Humpback whale (Coiba — July-October)",
+      "Leatherback sea turtle (Pacific nesting)",
+      "Green sea turtle (Bocas del Toro nesting)",
+      "Strawberry poison dart frog (Bocas del Toro)",
+      "Resplendent quetzal (Boquete cloud forest, Jan-Apr)",
+      "Scarlet macaw (Coiba, Darién)",
+      "Morpho butterfly (nationwide)",
+      "Saltwater crocodile (Pacific estuaries)"
+    ],
+    "birdwatching_hotspots": [
+      "Pipeline Road (Soberanía NP) — one of the world's top birding sites, 500+ species",
+      "Canopy Tower (Semaphore Hill, Soberanía NP) — iconic birding lodge above the canopy",
+      "Achiote Road, Colón — Caribbean slope birding, hummingbirds, tanagers",
+      "Metropolitan Natural Park (Panama City) — urban birding, 200+ species",
+      "Boquete / Barú highlands — quetzal, cloud forest species",
+      "Coiba Island — seabirds, frigate birds, boobies",
+      "Darién — harpy eagle, rare regional endemics"
+    ],
+    "stargazing_spots": [
+      "Barú Volcano summit (clear nights, dark skies at 3,475m)",
+      "Guna Yala islands (no light pollution, horizons to water)",
+      "Remote Chiriquí highlands"
+    ],
+    "scenic_drives": [
+      "Boquete to Cerro Punta via Highland Highway — stunning mountain scenery, coffee and strawberry farms",
+      "Interamerican Highway (Panama City to Costa Rica) — Pacific coast, Azuero Peninsula",
+      "Gamboa Road (Panama City to Gamboa) — Canal Zone, rainforest, canal views",
+      "El Valle de Antón crater road — into volcanic crater crater with mountain backdrop"
+    ],
+    "surf_spots": [
+      {
+        "name": "Santa Catalina",
+        "region": "Veraguas (Pacific coast)",
+        "break_type": "Reef and beach break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["April", "May", "June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "6-12 ft (Jun-Sep)",
+          "off_season": "3-5 ft"
+        },
+        "description": "Panama's premier surf destination and one of Central America's best reef breaks. Powerful, consistent left-hander over a shallow reef. World-class on a big swell. The main break is fast, hollow, and unforgiving. Also the jumping-off point for Coiba Island diving.",
+        "crowd_level": "Low to medium",
+        "notes": "Remote location (5-6 hrs from Panama City) keeps it less crowded. A few surf shops and boards available in the village. Combine surf trip with Coiba Island dive trip. Shallow reef — not for beginners."
+      },
+      {
+        "name": "Playa Venao",
+        "region": "Los Santos (Azuero Peninsula)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["April", "May", "June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "3-6 ft",
+          "off_season": "1-3 ft"
+        },
+        "description": "Consistent, beginner-friendly beach break on the Azuero Peninsula. Beautiful, relatively undeveloped bay. Good for learning and improvers. The most accessible quality Pacific surf from Panama City (4 hrs).",
+        "crowd_level": "Low",
+        "notes": "Surf camps based here. Boards available for rent. Growing eco-lodge scene in the area. Pacific sea turtle nesting nearby at night. Good combo with Azuero cultural festivals."
+      },
+      {
+        "name": "Silverbacks (Isla Bastimentos)",
+        "region": "Bocas del Toro (Caribbean)",
+        "break_type": "Reef break",
+        "wave_direction": "Left",
+        "difficulty": "Advanced",
+        "best_months": ["December", "January", "February", "March"],
+        "typical_wave_size": {
+          "peak_season": "6-15 ft (Dec-Mar)",
+          "off_season": "2-4 ft"
+        },
+        "description": "One of the heaviest and most powerful waves in Central America — a thick, barreling left-hander breaking over a shallow reef off Bastimentos. World-class on big Caribbean swells. Not for the faint-hearted.",
+        "crowd_level": "Very low",
+        "notes": "Water taxi from Bocas town to the break. Shallow, powerful reef — experienced surfers only. Paddle out is tricky. Bring your own board — rentals limited for this break. Check conditions carefully."
+      },
+      {
+        "name": "Bluff Beach (Isla Colón)",
+        "region": "Bocas del Toro (Caribbean)",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Intermediate",
+        "best_months": ["December", "January", "February", "March"],
+        "typical_wave_size": {
+          "peak_season": "4-8 ft",
+          "off_season": "1-3 ft"
+        },
+        "description": "The most accessible surf break in Bocas del Toro — a powerful beach break on the exposed northern shore of Colón Island. Strong consistent swells in Caribbean season. Beautiful wide beach backed by jungle.",
+        "crowd_level": "Low",
+        "notes": "30-min bicycle or taxi ride from Bocas town. Surfboards for rent locally. Strong currents and rip tides — be cautious. Powerful and beach break — can close out on big swells."
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Coiba National Park",
+        "region": "Veraguas (Pacific Ocean)",
+        "key_species": ["Whale shark", "Hammerhead shark", "Manta ray", "Humpback whale", "Sea turtle (green, hawksbill)", "Scarlet macaw", "Jaguar", "Crocodile"],
+        "best_months": ["December", "January", "February", "March", "June", "July"],
+        "notes": "UNESCO World Heritage Site. Second-largest marine park in the eastern Pacific. Outstanding scuba diving — best in Panama. Access by boat from Santa Catalina. Limited daily visitor numbers — book ahead."
+      },
+      {
+        "name": "Soberanía National Park / Pipeline Road",
+        "region": "Colón / Panamá (Canal Zone)",
+        "key_species": ["Harpy eagle", "Jaguar", "Ocelot", "Geoffrey's tamarin", "Howler monkey", "White-faced monkey", "500+ bird species"],
+        "best_months": ["December", "January", "February", "March"],
+        "notes": "One of the world's great birding destinations. 30 min from Panama City. Canopy Tower lodge on Semaphore Hill is a legendary birding base. Free entry to Pipeline Road from Gamboa."
+      },
+      {
+        "name": "Bocas del Toro Marine Park",
+        "region": "Bocas del Toro (Caribbean)",
+        "key_species": ["Leatherback sea turtle (nesting Mar-Jul)", "Green sea turtle", "Dolphin (bottlenose, spinner)", "Manatee", "Coral reef fish", "Strawberry poison dart frog"],
+        "best_months": ["September", "October", "November", "December"],
+        "notes": "Sea turtle nesting at Playa Bluff (leatherbacks) and Bastimentos. Coral Gardens and Crawl Cay for snorkeling. Hospital Point dive site. Island hopping by water taxi."
+      },
+      {
+        "name": "Darién National Park",
+        "region": "Darién",
+        "key_species": ["Harpy eagle", "Jaguar", "Baird's tapir", "Giant anteater", "Bush dog", "Sunbittern", "Great green macaw", "Harpy eagle"],
+        "best_months": ["January", "February", "March"],
+        "notes": "UNESCO World Heritage. Most biodiverse area in Central America. ONLY visit with specialized guided tours from reputable operators. Serious security considerations — consult State Department advisory before planning."
+      },
+      {
+        "name": "Guna Yala (San Blas Archipelago)",
+        "region": "Guna Yala",
+        "key_species": ["Dolphin", "Sea turtle", "Reef fish", "Nurse shark", "Caribbean reef shark", "Manta ray"],
+        "best_months": ["December", "January", "February", "March", "April"],
+        "notes": "Autonomous Guna indigenous territory. 365 islands, most uninhabited. Excellent snorkeling from cabaña islands. Sailing charters through the archipelago popular. Enter through authorized Guna tourism operators only."
+      }
+    ]
+  },
+  "sports_and_activities": [
+    {
+      "name": "Scuba Diving",
+      "popularity": "Very High",
+      "best_regions": ["Coiba Island (Pacific)", "Bocas del Toro (Caribbean)", "Portobelo (Caribbean)"],
+      "best_months": ["December", "January", "February", "March", "June", "July"],
+      "skill_levels": ["Beginner (Bocas del Toro)", "Intermediate (Portobelo)", "Advanced (Coiba)"],
+      "notes": "Coiba National Park is the crown jewel — whale sharks, hammerheads, and manta rays. Bocas del Toro has accessible Caribbean reef diving. Portobelo has historic Spanish galleon wrecks. Best diving in Central America."
+    },
+    {
+      "name": "Birdwatching",
+      "popularity": "Very High",
+      "best_regions": ["Pipeline Road (Soberanía NP)", "Canopy Tower", "Boquete", "Darién"],
+      "best_months": ["December", "January", "February", "March"],
+      "skill_levels": ["Beginner", "Intermediate", "Advanced"],
+      "notes": "Panama is a world-class birding destination — the Canopy Tower is among the most famous birding lodges on earth. Christmas bird count at Gamboa consistently among world's highest species counts."
+    },
+    {
+      "name": "Whitewater Rafting",
+      "popularity": "Moderate",
+      "best_regions": ["Río Chiriquí (Boquete)", "Río Chiriquí Viejo (Boquete)"],
+      "best_months": ["May", "June", "July", "August", "September", "October"],
+      "skill_levels": ["Intermediate (Chiriquí)", "Advanced (Chiriquí Viejo)"],
+      "notes": "Río Chiriquí Viejo has Class IV-V rapids — one of the best whitewater runs in Central America. Several Boquete operators offer guided trips. Chiriquí river good for beginners and intermediates."
+    },
+    {
+      "name": "Surfing",
+      "popularity": "Moderate",
+      "best_regions": ["Santa Catalina", "Playa Venao", "Silverbacks (Bocas)", "Bluff Beach"],
+      "best_months": ["April", "May", "June", "July", "August", "September (Pacific); December-March (Caribbean)"],
+      "skill_levels": ["Beginner (Venao)", "Intermediate (Bluff)", "Advanced (Santa Catalina, Silverbacks)"],
+      "notes": "Two surf seasons on opposite coasts. Santa Catalina is world-class and underrated. Silverbacks is for expert surfers only."
+    },
+    {
+      "name": "Panama Canal Touring",
+      "popularity": "Very High",
+      "best_regions": ["Miraflores Locks", "Gatún Locks", "Agua Clara (Expanded Canal)"],
+      "best_months": ["Year-round"],
+      "skill_levels": ["Beginner"],
+      "notes": "Miraflores Visitors Center is the most popular option ($20). Full canal transit by boat is the ultimate experience but expensive and requires planning. Agua Clara expanded canal locks are also impressive. One of the great engineering wonders of the world."
+    },
+    {
+      "name": "Snorkeling",
+      "popularity": "High",
+      "best_regions": ["Guna Yala (San Blas)", "Bocas del Toro (Coral Gardens, Crawl Cay)", "Coiba Island", "Portobelo"],
+      "best_months": ["December", "January", "February", "March", "April"],
+      "skill_levels": ["Beginner"],
+      "notes": "San Blas offers some of the most pristine and accessible snorkeling in the Caribbean. Bocas del Toro has excellent shallow reef snorkeling. Coiba is world-class but better as dive."
+    },
+    {
+      "name": "Coffee Tasting and Farm Tours",
+      "popularity": "Moderate",
+      "best_regions": ["Boquete (Chiriquí highlands)"],
+      "best_months": ["November to March (harvest season)"],
+      "skill_levels": ["Beginner"],
+      "notes": "Boquete produces some of the world's finest arabica coffee — including Geisha variety which holds world auction records. Coffee farm tours widely available ($20-40). Excellent buy-direct opportunity."
+    },
+    {
+      "name": "Hiking and Volcano Trekking",
+      "popularity": "High",
+      "best_regions": ["Barú Volcano (Boquete)", "Quetzal Trail", "Soberanía NP", "El Valle de Antón"],
+      "best_months": ["December", "January", "February", "March"],
+      "skill_levels": ["Easy (Pipeline Road)", "Moderate (Quetzal Trail)", "Hard (Barú summit)"],
+      "notes": "Barú summit is the bucket list trek in Panama. Quetzal Trail is one of Central America's most beautiful hikes. Pipeline Road is flat and accessible for all levels."
+    }
+  ],
+  "trip_styles": {
+    "good_for_backpacking": true,
+    "good_for_luxury": true,
+    "good_for_families": true,
+    "good_for_couples": true,
+    "good_for_solo_travel": true,
+    "good_for_digital_nomads": true,
+    "good_for_adventure_travel": true,
+    "good_for_food_travel": true,
+    "good_for_road_trips": true,
+    "good_for_short_trips": true,
+    "good_for_long_stays": true
+  },
+  "destinations": {
+    "top_cities": ["Panama City", "David", "Colón"],
+    "top_towns": ["Boquete", "El Valle de Antón", "Santa Catalina", "Pedasi", "Portobelo"],
+    "top_regions": ["Bocas del Toro Archipelago", "Guna Yala (San Blas)", "Chiriquí Highlands", "Canal Zone", "Coiba National Park", "Azuero Peninsula"],
+    "top_islands": ["Isla Colón (Bocas del Toro)", "Isla Bastimentos", "Coiba Island", "Taboga Island", "San Blas Islands (Guna Yala)"],
+    "sample_itineraries": {
+      "one_week": "Panama City/Canal (2 days) → Boquete highland hiking (2 days) → Bocas del Toro Caribbean (3 days)",
+      "two_weeks": "Panama City (2 days) → El Valle de Antón (1 day) → Santa Catalina surf/Coiba dive (3 days) → Boquete (3 days) → Bocas del Toro (3 days) → Guna Yala (2 days)",
+      "classic_route": "Panama City → Canal → Boquete → Bocas del Toro",
+      "offbeat_route": "Panama City → Emberá village (Chagres) → Portobelo → Darién edges → Azuero Peninsula → Santa Catalina"
+    }
+  },
+  "practical_info": {
+    "arrival_tips": "Tocumen International Airport (PTY) is Central America's busiest hub. Many travelers connect through Panama City — it's worth adding a 2-3 day stopover. Immigration lines can be long — allow extra time. Pre-download Uber before landing.",
+    "airport_scam_notes": "Use Uber from the airport arrivals area or the official taxi desk. Aggressive unofficial taxi drivers approach at arrivals — ignore them. Uber generally $15-25 to Panama City center.",
+    "local_sim_where_to_buy": "Cable & Wireless (+Móvil) and Claro SIMs available at the airport (arrivals level) and throughout Panama City. Bring passport. $10-20 for a data plan with good coverage.",
+    "money_exchange_notes": "Panama uses USD — no exchange needed for American travelers. ATMs widely available. No need for exchange houses. Prices are in USD everywhere.",
+    "language_helpful_phrases": {
+      "hello": "Hola / Buenos días",
+      "thank_you": "Gracias",
+      "how_much": "¿Cuánto cuesta?",
+      "where_is": "¿Dónde está...?",
+      "i_dont_speak_spanish": "No hablo español",
+      "the_bill_please": "La cuenta, por favor",
+      "help": "¡Ayuda!",
+      "cheers": "¡Salud!"
+    },
+    "offline_maps_recommended": ["Maps.me", "Google Maps (offline)"],
+    "apps_useful_locally": ["Uber (Panama City — essential)", "InDriver (Panama City)", "WhatsApp (essential)", "Google Maps (offline)", "Copa Airlines app (domestic connections)"]
+  },
+  "laws": {
+    "drug_laws_strictness": "Strict — possession of small amounts technically decriminalized but enforcement is inconsistent. Drug trafficking carries very severe sentences. Do not carry or use drugs.",
+    "alcohol_laws": "Legal drinking age 18. No strict public drinking laws in practice. Alcohol widely available.",
+    "drone_rules": "Permits required from ANAC (Autoridad de Aeronáutica Civil de Panamá). Prohibited over Panama Canal, Tocumen airport, military installations, and Panama City center. Canal Zone drone use especially restricted.",
+    "wild_camping_rules": "Permitted in remote national park areas with ranger permission. Not permitted on Canal Zone property.",
+    "protected_area_rules": "National park entry fees vary ($5-20). Guide required in Darién. No collecting plants, wildlife, or coral. Coiba Island has strict visitor quotas.",
+    "fishing_license_required": true,
+    "photography_restricted_sites": ["Panama Canal installations (partial)", "Military and police facilities", "Darién border areas"],
+    "lgbtq_legal_status": "Same-sex relationships legal. Civil union recognition but not full marriage equality. Anti-discrimination protections improving. Panama City is relatively tolerant. More conservative in interior provinces.",
+    "marijuana_legality": "Illegal — possession can result in arrest. Medical marijuana program exists but strictly regulated. Zero tolerance for tourists.",
+    "prescription_medication_rules": "Bring prescriptions in original packaging with doctor's letter. Good pharmacy availability in Panama City — many medications available locally."
+  },
+  "family_travel": {
+    "kid_friendly": true,
+    "stroller_friendly": false,
+    "car_seat_rules": "Legally required for children under 4. Bring your own — rental cars rarely have them.",
+    "family_activities": [
+      "Miraflores Canal Locks — watching giant ships pass through is endlessly fascinating for kids",
+      "Metropolitan Natural Park (Panama City) — urban wildlife, monkeys and birds minutes from the city",
+      "El Valle de Antón — crater town with zoo, waterfall, hot springs, square trees",
+      "Bocas del Toro — calm Caribbean waters, snorkeling, dolphin watching",
+      "Summit Botanical Gardens and Zoo (near Gamboa) — harpy eagle exhibit, jaguars"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Limited but better than most Central American countries. Panama City has some accessible infrastructure — Casco Viejo cobblestones are difficult. Miraflores Canal Locks visitor center is accessible. Nature areas generally not wheelchair accessible.",
+    "accessible_transport": "Panama City metro is partially accessible. Uber is the most accessible transport option.",
+    "accessible_attractions": ["Miraflores Canal Locks visitor center", "Panama City waterfront (Cinta Costera)", "Amador Causeway"]
+  },
+  "gear": {
+    "bring_wetsuit": false,
+    "bring_hiking_boots": true,
+    "bring_layers": true,
+    "bring_bug_spray": true,
+    "bring_sunscreen": true,
+    "cold_weather_gear_needed": true,
+    "cold_weather_gear_notes": "Needed for Barú Volcano summit (0-5°C at top). Light fleece and wind layer sufficient for Boquete (1,200m). Not needed anywhere else.",
+    "rental_gear_easy_to_find": true,
+    "outdoor_gear_shops": [
+      "Extreme Planet (Panama City, Albrook Mall) — good selection of hiking and outdoor gear",
+      "Boquete Outdoor Adventures — gear rental and tours",
+      "Bocas dive shops — snorkel and dive gear rental widely available",
+      "Santa Catalina surf shops — board rentals and basic surf gear"
+    ]
+  }
+}

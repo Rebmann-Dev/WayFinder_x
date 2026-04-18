@@ -1,0 +1,944 @@
+{
+  "meta": {
+    "last_updated": "2026-04-17",
+    "confidence_score": 0.92,
+    "sources": [
+      "US State Department travel advisory",
+      "CDC health advisories",
+      "WayFinder internal hike/food/history data",
+      "WayFinder safety submodels"
+    ],
+    "notes": "Populated from WayFinder app data and verified travel references. Null fields to be enriched via Tavily web search."
+  },
+  "identity": {
+    "name": "Mexico",
+    "official_name": "United Mexican States",
+    "code": "MX",
+    "iso3": "MEX",
+    "region": "Americas",
+    "subregion": "North America",
+    "capital": "Mexico City",
+    "flag_emoji": "🇲🇽",
+    "timezones": ["UTC-08:00", "UTC-07:00", "UTC-06:00", "UTC-05:00"],
+    "driving_side": "right",
+    "country_calling_code": "+52",
+    "internet_tld": ".mx"
+  },
+  "language_and_money": {
+    "languages": ["Spanish", "Nahuatl", "Yucatec Maya", "Mixtec", "Zapotec", "Otomi"],
+    "primary_language": "Spanish",
+    "english_proficiency": "Low to moderate — decent in tourist areas (Cancún, Los Cabos, Mexico City), limited in rural and indigenous regions",
+    "currency": "MXN",
+    "currency_name": "Mexican Peso",
+    "currency_symbol": "$",
+    "cash_vs_card": "Cash dominant in local markets, small towns, and street food. Cards widely accepted at hotels, malls, and larger restaurants. Always carry pesos.",
+    "typical_payment_methods": ["Cash (MXN)", "Visa", "Mastercard", "American Express (limited)"],
+    "atm_availability": "Widely available in cities and tourist areas. Use bank-attached ATMs (BBVA, Banamex, Santander). Avoid standalone ATMs in convenience stores due to skimming risk.",
+    "tipping_culture": "Expected — tipping is a significant part of service worker income.",
+    "tipping_etiquette": "Restaurants: 10-15% standard, 15-20% for good service. Hotel housekeeping: $20-50 MXN/day. Tour guides: $100-200 MXN/day. Gas station attendants: $5-10 MXN. Tip in pesos not USD."
+  },
+  "entry_and_border": {
+    "visa_requirements": {
+      "us_citizen": "No visa required for stays up to 180 days",
+      "visa_type": "Tourist card (Forma Migratoria Múltiple — FMM) issued on arrival or via airline",
+      "visa_free_days": 180,
+      "visa_on_arrival": false,
+      "evisa_available": false
+    },
+    "passport_validity_rule": "Must be valid for duration of stay — no 6-month rule but airlines may require 6 months",
+    "blank_passport_pages_required": 1,
+    "proof_of_onward_travel_required": true,
+    "proof_of_funds_required": false,
+    "tourist_entry_fee": null,
+    "departure_tax": "Included in airline ticket price",
+    "embassy_registration_recommended": true,
+    "step_available": true,
+    "customs_restrictions": "Strict on firearms and ammunition — illegal to bring without permits. Fresh produce and meats restricted. Currency over $10,000 USD must be declared.",
+    "restricted_items": ["Firearms and ammunition without permit", "Fresh produce and meats", "Undeclared currency over $10,000 USD", "Narcotics"],
+    "duty_free_allowances": "3 liters of alcohol, 200 cigarettes or 25 cigars, gifts up to $500 USD value"
+  },
+  "health": {
+    "recommended_vaccines": ["Hepatitis A", "Typhoid", "Hepatitis B", "Rabies (if trekking or rural)", "Tetanus-Diphtheria", "MMR"],
+    "required_vaccines": [],
+    "routine_vaccines_check": true,
+    "yellow_fever_required": false,
+    "yellow_fever_required_if_from_risk_country": false,
+    "malaria_risk": "Low-moderate — present in some rural areas of Oaxaca, Chiapas, Sinaloa, Nayarit, Durango, and Quintana Roo. Not present in major cities or tourist resorts.",
+    "malaria_regions": ["Rural Oaxaca", "Rural Chiapas", "Sinaloa (rural)", "Nayarit (rural)", "Durango (rural)", "Quintana Roo (rural jungle areas)"],
+    "malaria_prophylaxis_info": "Chloroquine recommended for at-risk rural areas. Consult CDC guidelines before travel to endemic regions.",
+    "dengue_risk": "Moderate to high — present across most of Mexico, especially in tropical coastal states and during rainy season (June-October). Outbreaks in Oaxaca, Guerrero, Veracruz, and Yucatán.",
+    "altitude_sickness_risk": "Moderate to high in central highlands. Mexico City at 2,240m. Puebla at 2,135m. Some highland towns above 2,500m. Acclimatize before strenuous activity.",
+    "food_water_safety": "Tap water not safe to drink anywhere in Mexico. Use bottled or purified water. Street food is generally safe at busy, reputable stalls — the locals-only rule applies. Avoid raw shellfish from unrefrigerated vendors.",
+    "air_quality_concerns": "Mexico City has poor air quality especially in dry season (Nov-May). Guadalajara and Monterrey also have pollution issues. Valle de México basin traps smog.",
+    "common_travel_illnesses": ["Traveler's diarrhea (Montezuma's Revenge)", "Dengue fever", "Altitude sickness in highlands", "Sunburn", "Mosquito-borne illness in tropics"],
+    "pharmacy_access": "Pharmacies (farmacias) extremely common nationwide. Many medications available OTC without prescription. Farmacias del Ahorro and Benavides are major chains. Attached clinics (consultorios) offer cheap doctor visits.",
+    "tap_water_safe": false,
+    "travel_insurance_recommended": true,
+    "medical_care_quality": "Excellent private hospitals in Mexico City, Guadalajara, Monterrey, and Cancún. Public hospitals variable. Rural areas have very limited care. Medical tourism destination for dental and cosmetic work.",
+    "emergency_medical_number": "911"
+  },
+  "safety": {
+    "travel_advisory_level_us": 3,
+    "travel_advisory_level_label": "Reconsider Travel (overall country) — varies heavily by state",
+    "travel_advisory_updated": "2025",
+    "risk_indicators": [
+      "Organized crime and cartel activity in multiple states",
+      "Petty theft in tourist areas",
+      "Express kidnapping in some cities",
+      "Road travel dangerous in certain states at night",
+      "Some states at Level 4 Do Not Travel (Colima, Guerrero, Michoacán, Tamaulipas, Zacatecas)"
+    ],
+    "crime_risk": "Highly variable by state. Tourist areas (Cancún hotel zone, Los Cabos, Puerto Vallarta, Oaxaca city, Mexico City tourist districts) generally safe. Cartel violence concentrated in specific corridors — Guerrero (Acapulco), Sinaloa, Colima, Tamaulipas, and Zacatecas are high-risk. Always check state-level advisory before travel.",
+    "scam_risk": "Moderate — taxi overcharging, timeshare pressure sales, counterfeit currency, ATM skimming, police extortion in some areas",
+    "transport_safety": "Avoid driving at night in Guerrero, Sinaloa, Michoacán, and Tamaulipas. Use reputable bus companies (ADO, ETN, Primera Plus) for intercity travel. Use Uber or authorized airport taxis over street taxis in Mexico City.",
+    "solo_female_travel_notes": "Use caution in cities at night. Stick to populated areas and use Uber over street taxis. Catcalling common. Solo female travelers generally fine in major tourist areas with standard precautions. Avoid isolated areas.",
+    "lgbtq_notes": "Same-sex marriage legal nationwide. Mexico City, Puerto Vallarta, and Guadalajara are very LGBTQ+ friendly. More conservative in rural and southern states. Puerto Vallarta is one of Latin America's top LGBTQ+ destinations.",
+    "night_safety": "Stick to tourist zones at night. Avoid walking alone after midnight in unfamiliar neighborhoods. Use Uber for nighttime transport. Areas like Reforma, Polanco, Condesa, and Roma in CDMX are safe late into the night.",
+    "safe_areas": ["Cancún hotel zone", "Los Cabos", "Puerto Vallarta hotel zone", "Playa del Carmen", "Oaxaca city", "San Cristóbal de las Casas", "Polanco/Condesa/Roma (Mexico City)", "Mérida", "Tulum", "Guanajuato city", "San Miguel de Allende"],
+    "areas_to_avoid": ["Acapulco (Guerrero)", "Culiacán (Sinaloa)", "Reynosa/Nuevo Laredo (Tamaulipas)", "Zacatecas state", "Colima state", "Rural Michoacán", "Ciudad Juárez border areas"],
+    "natural_disaster_risks": ["Earthquakes (frequent, especially central and Pacific coast)", "Hurricanes (Atlantic/Gulf: June-November; Pacific: May-November)", "Volcanic activity (Popocatépetl near CDMX)", "Flooding in rainy season", "Tsunamis on Pacific coast"],
+    "political_stability_notes": "Democratic government but significant institutional challenges with organized crime. Protests can occur in Mexico City. Elections can bring temporary disruptions.",
+    "common_scams": [
+      "Timeshare pressure sales — aggressive salespeople at airports and beaches",
+      "Taxi overcharging — always use Uber or negotiate fare upfront",
+      "ATM skimming — use bank-attached ATMs only, cover keypad",
+      "Fake police officers asking to inspect belongings or wallet",
+      "Distraction theft in crowded markets and transit",
+      "Counterfeit pesos in change — check bills",
+      "Express kidnapping — forced ATM withdrawals, more common in CDMX outskirts"
+    ],
+    "police_reliability": "Variable. Tourist police in major destinations generally helpful. Federal police (Guardia Nacional) more reliable. Do not pay bribes (mordida) — say you want a formal ticket.",
+    "emergency_numbers": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911",
+      "general_emergency": "911",
+      "tourist_assistance": "078"
+    },
+    "embassy_contact_info": {
+      "us_embassy_city": "Mexico City",
+      "us_embassy_phone": "+52-55-5080-2000",
+      "us_embassy_website": "https://mx.usembassy.gov/"
+    }
+  },
+  "weather_and_seasonality": {
+    "best_time_to_visit": "November to April for most of Mexico — dry season, mild temperatures. December-March best for Pacific coast surf. June-August for Baja California (dry, warm). Year-round for Yucatán.",
+    "climate_zones": [
+      "Central highlands (CDMX, Puebla, Guadalajara) — temperate, 15-25°C year-round, rainy June-October",
+      "Pacific coast (Puerto Vallarta, Oaxaca coast, Guerrero) — tropical, hot and humid, hurricane risk May-November",
+      "Caribbean coast (Cancún, Tulum, Playa del Carmen) — tropical, warm year-round, hurricane risk June-November",
+      "Baja California — desert and Mediterranean, dry and sunny, cooler in winter",
+      "Yucatán Peninsula — hot and humid year-round, brief rainy season June-October",
+      "Northern Mexico (Chihuahua, Sonora) — desert, extreme heat in summer, cold in winter",
+      "Southern highlands (Oaxaca, Chiapas) — mild and pleasant year-round, rainy May-October"
+    ],
+    "dry_season": "November to May (most regions); year-round in Baja",
+    "rainy_season": "June to October (most regions); heaviest July-September",
+    "hurricane_typhoon_season": "Atlantic/Gulf: June 1 - November 30. Pacific: May 15 - November 30. Peak: August-October.",
+    "surf_season": "November to April for Pacific coast (NW groundswells). June-September for hurricane swells on Caribbean side and south Pacific.",
+    "trekking_best_months": ["November", "December", "January", "February", "March"],
+    "average_temp_by_month": {
+      "Mexico City": "12-26°C (cooler Dec-Feb, warmest Mar-May, rainy Jun-Sep)",
+      "Cancún": "24-32°C year-round (warmest Jun-Sep)",
+      "Puerto Vallarta": "20-32°C (coolest Dec-Feb, hottest Aug-Sep)",
+      "Los Cabos": "18-33°C (coolest Jan, hottest Aug-Sep)",
+      "Oaxaca city": "13-28°C year-round (pleasant highland climate)"
+    },
+    "daylight_hours_by_season": "11-13 hours depending on latitude and season"
+  },
+  "transport": {
+    "major_airports": [
+      "Benito Juárez International Airport (MEX) — Mexico City (main hub)",
+      "Felipe Ángeles International Airport (NLU) — Mexico City (new, 2022)",
+      "Cancún International Airport (CUN) — Caribbean coast",
+      "Los Cabos International Airport (SJD) — Baja California Sur",
+      "Puerto Vallarta Airport (PVR) — Jalisco coast",
+      "Guadalajara International Airport (GDL) — second largest city",
+      "Monterrey Airport (MTY) — northern Mexico hub",
+      "Oaxaca Airport (OAX) — southern highlands"
+    ],
+    "main_airlines": ["Aeroméxico", "Volaris", "VivaAerobus", "Interjet (limited)", "American", "United", "Delta"],
+    "airport_to_city_options": ["Authorized airport taxi (fixed rate booths)", "Uber (from MEX — may need to exit terminal)", "Metro Line 5 from MEX (cheap but not recommended with luggage at night)", "Pre-booked shuttle"],
+    "public_transit_quality": "Mexico City has extensive Metro (12 lines, very cheap at $6 MXN), Metrobús BRT, and Trolebús. Guadalajara has Tren Ligero. Most other cities rely on buses and taxis. Cancún and resort areas have limited public transit.",
+    "intercity_bus_quality": "Excellent — ADO, ETN, Primera Plus offer comfortable first-class buses with A/C, Wi-Fi, and assigned seats. Very affordable. TAPO, Terminal Norte, and Terminal Sur in CDMX are main hubs.",
+    "train_network_quality": "Very limited — El Chepe (Copper Canyon Railway) is the main scenic tourist train. Tren Maya (Yucatán Peninsula) opened 2023, connecting Cancún-Palenque. No national rail network for general travel.",
+    "domestic_flights_useful": true,
+    "car_rental_recommended": true,
+    "road_conditions": "Highways (cuotas/toll roads) are excellent and well-maintained. Secondary roads variable. Avoid driving at night in Guerrero, Sinaloa, Michoacán, and Tamaulipas. Topes (speed bumps) everywhere.",
+    "four_x_four_needed_regions": ["Copper Canyon (Chihuahua)", "Remote Oaxacan coast", "Baja California off-road routes", "Rural Chiapas"],
+    "ride_hailing_apps": ["Uber", "DiDi", "Cabify", "inDriver"],
+    "taxi_safety_notes": "Use Uber or DiDi in all major cities — far safer than street taxis. If using a taxi, only use sitio taxis (from official stands) or hotel taxis. Never hail taxis off the street in Mexico City.",
+    "ferry_routes": [
+      "Playa del Carmen to Cozumel (45 min, Winjet/Ultramar)",
+      "Cancún to Isla Mujeres (20 min, multiple operators)",
+      "Puerto Juárez to Isla Mujeres (15 min)",
+      "La Paz to Mazatlán (Baja Ferries, 12 hrs)",
+      "Santa Rosalía to Guaymas (Baja Ferries, 8 hrs)"
+    ],
+    "border_crossing_notes": "Main US crossings: Tijuana-San Diego (busiest in world), Mexicali, Nogales, Ciudad Juárez-El Paso, Nuevo Laredo-Laredo, Reynosa-McAllen. Allow 1-3 hours. Carry passport. Check CBP wait times before crossing."
+  },
+  "budget": {
+    "daily_budget_backpacker": "$35-55 USD/day",
+    "daily_budget_midrange": "$80-130 USD/day",
+    "daily_budget_comfort": "$180-300 USD/day",
+    "hostel_avg": "$12-22 USD/night",
+    "hotel_avg": "$50-100 USD/night",
+    "meal_avg": "$3-8 USD (street tacos $0.50-1.50 each, sit-down $8-18)",
+    "coffee_avg": "$1.50-3 USD",
+    "beer_avg": "$2-4 USD (local cerveza)",
+    "local_transport_avg": "$0.30 USD (Metro), $3-6 USD (Uber short trip)",
+    "sim_card_avg": "$10-15 USD for 10-20GB (Telcel or AT&T México)",
+    "coworking_day_pass_avg": "$10-20 USD",
+    "surfboard_rental_avg": "$10-20 USD/day",
+    "value_for_money": "Excellent — one of the world's great value destinations with incredible food, culture, and nature. Resort areas (Cancún, Los Cabos) are significantly more expensive."
+  },
+  "connectivity": {
+    "sim_card_providers": ["Telcel", "AT&T México", "Movistar", "Virgin Mobile México"],
+    "esim_available": true,
+    "mobile_data_quality": "Good 4G LTE in cities and tourist areas. Telcel has best rural coverage. Spotty in remote Oaxacan coast, deep Chiapas, and Copper Canyon. 5G in major cities.",
+    "wifi_quality": "Available in most hostels, cafes, restaurants, and hotels. Quality varies (5-50 Mbps typical). Mexico City and Guadalajara have excellent speeds. Beach towns more variable.",
+    "coworking_available": true,
+    "best_remote_work_cities": ["Mexico City (Condesa/Roma/Polanco)", "Guadalajara", "Oaxaca city", "Playa del Carmen", "Mérida"],
+    "power_outlet_types": ["A", "B"],
+    "voltage": "127V, 60Hz",
+    "plug_adapter_needed_for_us": false,
+    "power_reliability": "Reliable in cities. Outages possible in rural areas and during storms. Surges possible — use a surge protector for electronics."
+  },
+  "accommodation": {
+    "best_areas_to_stay": [
+      "Condesa/Roma Norte, Mexico City — hip, walkable, safe, excellent food scene",
+      "Polanco, Mexico City — upscale, luxury hotels, top restaurants",
+      "Historic Centro, Oaxaca — colonial charm, walkable, great food",
+      "Zona Romántica, Puerto Vallarta — LGBTQ+ hub, walkable beach area",
+      "Hotel Zone (Zona Hotelera), Cancún — beach access, resorts, safe",
+      "Tulum Pueblo — more affordable than beach road, local feel",
+      "San José del Cabo, Los Cabos — colonial town feel over resort strip",
+      "Centro Histórico, Mérida — safe, beautiful colonial architecture"
+    ],
+    "budget_areas": ["Tepito (avoid at night, CDMX)", "Centro Histórico CDMX (budget but busy)", "Oaxaca city center", "Playa del Carmen 5th Ave area"],
+    "family_friendly_areas": ["Cancún hotel zone", "Los Cabos", "Puerto Vallarta", "Mérida", "San Miguel de Allende"],
+    "nightlife_areas": ["Zona Rosa and Condesa (CDMX)", "Zona Romántica (Puerto Vallarta)", "Hotel Zone (Cancún)", "5th Ave (Playa del Carmen)", "Mercado 28 area (Cancún)"],
+    "surf_towns": ["Puerto Escondido", "Sayulita", "Punta de Mita", "Todos Santos", "Troncones", "Barra de la Cruz", "Mazunte", "Zipolite"],
+    "eco_lodges_available": true,
+    "peak_booking_season": "December-January (Christmas/New Year), Semana Santa (March-April), July-August (domestic summer)",
+    "accommodation_notes": "Los Cabos and Cancún hotel zones are some of the priciest in Latin America. All-inclusive resorts dominant in these areas. Tulum beach road accommodation is very expensive — Tulum Pueblo is 50% cheaper."
+  },
+  "culture": {
+    "local_customs": [
+      "Greet with a single kiss on the right cheek (once introduced)",
+      "Family is paramount — Sunday family gatherings (comidas familiares) are sacred",
+      "Respect for elders — use 'usted' form until invited to use 'tú'",
+      "Mexicans are warm and hospitable — declining offered food/drink can be impolite",
+      "Machismo culture exists but is declining in cities; be respectful and patient"
+    ],
+    "dress_expectations": "Casual and comfortable in beach areas. Business casual in cities. Cover shoulders and knees when entering churches. Indigenous communities appreciate conservative dress.",
+    "religious_sensitivity": "Predominantly Catholic (85%). Religious festivals are deeply important cultural events. Día de los Muertos is sacred — attend as a respectful observer, not a costume party.",
+    "social_norms": [
+      "Mexican time (hora mexicana) — 30+ minutes late is socially normal",
+      "Bargaining expected at markets (mercados) but not in malls or shops",
+      "Never rush a meal — dining is a social event",
+      "Address people by title (Señor, Señora, Licenciado) until invited otherwise"
+    ],
+    "greeting_style": "Warm cheek kiss for women and close male friends; handshake for new male acquaintances. Always greet on arrival and departure.",
+    "public_behavior_notes": "PDA acceptable in cities. Avoid political discussions with strangers. Don't discuss drug cartel issues or the narco world — can be dangerous in wrong company.",
+    "photography_etiquette": "Always ask permission before photographing indigenous people, especially in Chiapas and Oaxaca. Some Mayan communities charge a fee. No photos in some ceremonial areas.",
+    "bargaining_expected": true,
+    "important_holidays": [
+      "Día de los Muertos (Nov 1-2) — most important and unique Mexican cultural event",
+      "Semana Santa (Easter week) — beaches and resorts packed, prices surge",
+      "Independence Day (Sep 15-16) — El Grito de Independencia, massive celebrations",
+      "Día de la Virgen de Guadalupe (Dec 12) — massive pilgrimage to Basilica in CDMX",
+      "Christmas and New Year (Dec 24 - Jan 1) — family gatherings, fireworks",
+      "Cinco de Mayo (May 5) — bigger deal in the US; celebrated modestly in Mexico",
+      "Carnival (Feb-Mar) — Veracruz has Mexico's best Carnaval celebrations"
+    ],
+    "legal_restrictions_tourists_often_miss": [
+      "Firearms strictly prohibited — even a single bullet can result in imprisonment",
+      "Drone permits required — register with AFAC, prohibited near airports and sensitive sites",
+      "Topless sunbathing illegal on public beaches (though tolerated in some resort areas)",
+      "Nudity on public beaches technically illegal (Zipolite is a de facto exception)"
+    ]
+  },
+  "food": {
+    "signature_dishes": [
+      "Tacos al pastor — spit-grilled pork with pineapple and cilantro on a corn tortilla",
+      "Mole negro — complex Oaxacan sauce with 30+ ingredients including chocolate and chilis",
+      "Chiles en nogada — stuffed poblano peppers with walnut cream sauce and pomegranate (seasonal, Aug-Sep)",
+      "Cochinita pibil — Yucatecan slow-roasted pork marinated in achiote",
+      "Tamales — masa dough stuffed with meat, cheese, or chilis, wrapped in corn husks or banana leaf",
+      "Enchiladas — corn tortillas stuffed and smothered in red, green, or mole sauce",
+      "Pozole — hominy and pork soup, red or green broth",
+      "Tlayuda — large crispy Oaxacan tortilla with beans, chapulines (grasshoppers), and toppings",
+      "Birria — braised goat or beef stew, now famous globally as birria tacos",
+      "Huaraches — thick oval corn masa base topped like a pizza with beans, meat, and salsa",
+      "Elote — grilled corn on the cob with mayo, cheese, chili powder, and lime",
+      "Ceviche — lime-marinated fish or shrimp, especially on the coasts"
+    ],
+    "street_food_safety": "Generally safe at busy stands with high turnover. Tacos on a busy corner are usually fine. Avoid pre-cut fruit from vendors with poor hygiene. Best street food cities: Mexico City, Oaxaca, and Puebla.",
+    "vegetarian_friendliness": "Moderate to good — beans, rice, quesadillas, tlayudas, and many antojitos are naturally vegetarian. Growing vegan/vegetarian scene in CDMX, Oaxaca, and Tulum. Lard (manteca) used in many traditional dishes — ask explicitly.",
+    "vegan_friendliness": "Growing — excellent options in Mexico City (Condesa, Roma), Oaxaca, and Tulum. Challenging in rural areas and traditional restaurants.",
+    "must_try_drinks": [
+      "Mezcal — smoky agave spirit from Oaxaca, best sipped neat with orange and worm salt",
+      "Tequila — must try high-quality añejo in Jalisco, the origin region",
+      "Michelada — beer with lime, hot sauce, and spices in a salt-rimmed glass",
+      "Agua fresca — hibiscus (jamaica), horchata, or tamarind water",
+      "Pulque — fermented agave sap, ancient pre-Hispanic drink with thick texture",
+      "Tepache — fermented pineapple rind drink, mildly alcoholic and sweet",
+      "Café de olla — cinnamon-spiced coffee brewed in a clay pot",
+      "Atole — warm masa-based drink, often chocolate or fruit-flavored"
+    ],
+    "regional_specialties": [
+      "Oaxaca: tlayudas, mole negro, chapulines (grasshoppers), Oaxacan cheese, mezcal",
+      "Yucatán: cochinita pibil, sopa de lima, panuchos, papadzules, habanero salsas",
+      "Jalisco: birria, torta ahogada, tequila, pozole rojo",
+      "Puebla: mole poblano, chiles en nogada, chalupas, cemita sandwich",
+      "Veracruz: huachinango a la veracruzana (red snapper), pescado a la talla, coffee",
+      "Baja California: fish tacos, clamato cocktails, Baja Med cuisine, wine from Valle de Guadalupe",
+      "Mexico City: tacos al pastor, tlacoyos, chilaquiles, tortas"
+    ],
+    "drinking_water_notes": "Never drink tap water anywhere in Mexico. Use bottled water ($10-15 MXN). Most hotels and hostels provide garrafones (large water jugs). Ask restaurants if ice is purified (hecho con agua purificada).",
+    "alcohol_rules": "Legal drinking age 18. Ley seca (dry law) applies day before and day of elections — alcohol sales prohibited. Some municipalities are dry. Public drunkenness can result in a night in the drunk tank (el torito)."
+  },
+  "outdoors": {
+    "top_national_parks": [
+      "Sumidero Canyon National Park (Chiapas) — dramatic 1,000m canyon walls, boat tours, crocodiles",
+      "Copper Canyon (Barrancas del Cobre, Chihuahua) — deeper than Grand Canyon, Rarámuri indigenous culture, El Chepe train",
+      "Sierra Gorda Biosphere Reserve (Querétaro) — cloud forest, waterfalls, semi-arid desert",
+      "Calakmul Biosphere Reserve (Campeche) — remote Mayan ruins in jungle, jaguar habitat",
+      "Izta-Popo National Park — twin volcanic peaks Iztaccíhuatl and Popocatépetl near CDMX",
+      "Lagunas de Montebello National Park (Chiapas) — 59 multicolored lakes in pine forest",
+      "Tehuacán-Cuicatlán Biosphere Reserve (Oaxaca/Puebla) — UNESCO, world's largest cactus forest",
+      "Reserva de la Biosfera El Vizcaíno (Baja California Sur) — gray whale breeding lagoon, UNESCO"
+    ],
+    "top_day_hikes": [
+      {
+        "name": "Iztaccíhuatl (Izta) via Paso de Cortés",
+        "difficulty": "Hard",
+        "duration": "8-12 hours round trip to La Rodilla (The Knee)",
+        "region": "Mexico State / Puebla",
+        "description": "Hike up the sleeping woman volcano to the Rodilla del Diablo (4,750m). Full summit at 5,230m requires technical gear. Stunning views of Popocatépetl across the pass. Acclimatize in CDMX first.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 5230,
+        "notes": "Start early — weather deteriorates in afternoon. Bring layers and crampons for higher sections. Register at the refuge. Popocatépetl is active and access varies."
+      },
+      {
+        "name": "Monte Albán",
+        "difficulty": "Easy",
+        "duration": "2-4 hours",
+        "region": "Oaxaca",
+        "description": "Explore one of Mesoamerica's first great cities built atop a leveled mountain at 1,940m. Zapotec pyramids, ball courts, and observatory with panoramic valley views. More cultural than physical hike.",
+        "best_months": ["November", "December", "January", "February", "March", "October"],
+        "elevation_m": 1940,
+        "notes": "Visit early morning to avoid heat. Combined with Oaxaca city easily. $90 MXN entry fee."
+      },
+      {
+        "name": "Hierve el Agua",
+        "difficulty": "Easy to Moderate",
+        "duration": "3-5 hours",
+        "region": "Oaxaca",
+        "description": "Petrified waterfalls and mineral spring pools perched on a cliff edge at 1,700m with sweeping valley views. Swimming in the turquoise mineral pools is the highlight.",
+        "best_months": ["October", "November", "December", "January", "February", "March"],
+        "elevation_m": 1700,
+        "notes": "2 hours from Oaxaca city. Entry fee applies. Go early to avoid crowds. Can be combined with mezcal palenques on the route."
+      },
+      {
+        "name": "Nevado de Toluca (Xinantécatl)",
+        "difficulty": "Moderate",
+        "duration": "4-6 hours round trip",
+        "region": "Mexico State",
+        "description": "Drive to 4,200m then hike the rim and descend to twin crater lakes (del Sol and de la Luna) inside an extinct volcano. Otherworldly lunar landscape with alpine lakes.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 4680,
+        "notes": "2.5 hours from CDMX. Drive to base at 4,200m reduces hiking effort. Very cold and windy — dress accordingly. No technical gear needed for crater lakes."
+      },
+      {
+        "name": "Cañón del Sumidero",
+        "difficulty": "Easy (boat) / Moderate (rim trails)",
+        "duration": "Half day to full day",
+        "region": "Chiapas",
+        "description": "Boat tour through 1,000m sheer canyon walls on the Grijalva River. Crocodiles, spider monkeys, and birds visible from the water. Rim viewpoints accessible by road for hiking.",
+        "best_months": ["November", "December", "January", "February", "March", "April"],
+        "elevation_m": 1000,
+        "notes": "Boat tours depart from Chiapa de Corzo ($200 MXN). Accessible from San Cristóbal de las Casas. Watch for plastic waste in the river — serious environmental issue."
+      },
+      {
+        "name": "Palenque Ruins and Jungle Trails",
+        "difficulty": "Easy to Moderate",
+        "duration": "Full day",
+        "region": "Chiapas",
+        "description": "Mayan ruins emerging from jungle with cascading waterfalls inside the site. Hike jungle trails beyond the main monuments to remote temples. Howler monkeys audible throughout.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 150,
+        "notes": "Visit early morning for wildlife and cooler temps. Entry $90 MXN. Combine with Roberto Barrios waterfalls nearby."
+      },
+      {
+        "name": "Chichen Itza and Cenote Circuit",
+        "difficulty": "Easy",
+        "duration": "Full day",
+        "region": "Yucatán",
+        "description": "Iconic Mayan archaeological site with El Castillo pyramid. Combine with nearby cenote swimming (Ik Kil, Hubiku). More of a cultural/swimming day than a hardcore hike.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 30,
+        "notes": "Arrive before 9am to beat tour buses. $600 MXN entry. Hot by midday. Hire a local guide for historical context."
+      }
+    ],
+    "multi_day_treks": [
+      {
+        "name": "Copper Canyon Rim to Rim (El Chepe + hiking)",
+        "difficulty": "Moderate to Hard",
+        "duration": "4-7 days",
+        "region": "Chihuahua",
+        "description": "Combine El Chepe train stops with canyon rim hikes. Descend to the canyon floor and Rarámuri (Tarahumara) villages. Multiple routes through pine-forested canyon systems deeper than the Grand Canyon.",
+        "best_months": ["October", "November", "December", "March", "April"],
+        "elevation_m": 2400,
+        "notes": "Plan around El Chepe schedule (2x/week). Creel is the main base town. Hire a local Rarámuri guide. Altitude varies from 2,400m (rim) to 500m (canyon floor)."
+      },
+      {
+        "name": "Volcán Pico de Orizaba (Citlaltépetl) Summit",
+        "difficulty": "Very Hard",
+        "duration": "2-3 days",
+        "region": "Veracruz / Puebla",
+        "description": "Third highest peak in North America at 5,636m. Technical glaciated summit requiring crampons, ice axe, and rope. Stunning views from the glacier. One of Mexico's crown jewels for mountaineers.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 5636,
+        "notes": "Must go with licensed guide and proper mountaineering equipment. Base camp at Piedra Grande refuge (4,260m). Acclimatize at Tlachichuca beforehand. Permits required."
+      },
+      {
+        "name": "Calakmul Biosphere Trek",
+        "difficulty": "Moderate",
+        "duration": "2-4 days",
+        "region": "Campeche",
+        "description": "Remote Mayan ruins (largest in Mexico by area) surrounded by untouched jungle. Night wildlife walks, jaguar habitat, and over 300 bird species. One of Mexico's most isolated major archaeological sites.",
+        "best_months": ["November", "December", "January", "February"],
+        "elevation_m": 300,
+        "notes": "Access from Escárcega or Chetumal. Very remote — bring supplies. Guides essential. Mosquito protection critical. Jaguars present but rarely seen."
+      },
+      {
+        "name": "Sierra Norte of Oaxaca (Pueblos Mancomunados)",
+        "difficulty": "Moderate",
+        "duration": "3-5 days",
+        "region": "Oaxaca",
+        "description": "Trek between eight Zapotec indigenous communities (Comunalidad) through cloud forest, pine-oak forest, and mountain meadows. Community-run eco-tourism with overnight stays in local guesthouses.",
+        "best_months": ["October", "November", "December", "January", "February", "March"],
+        "elevation_m": 3100,
+        "notes": "Self-guided or guided options. Book accommodation in advance through community networks. Supported by local guides and infrastructure. 2 hours from Oaxaca city."
+      },
+      {
+        "name": "Malinche National Park Summit",
+        "difficulty": "Hard",
+        "duration": "1-2 days",
+        "region": "Tlaxcala / Puebla",
+        "description": "Hike to summit of La Malinche (4,461m), an inactive volcano with pine-fir forest and high-altitude views of Popocatépetl, Iztaccíhuatl, and Pico de Orizaba. Good acclimatization peak.",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "elevation_m": 4461,
+        "notes": "2.5 hours from CDMX. Trail starts at 3,000m — most difficult section is 4,000-4,461m. No technical gear needed. Hut available at 4,000m."
+      }
+    ],
+    "volcanoes": [
+      "Popocatépetl (5,452m) — active, currently restricted, visible from CDMX and Puebla",
+      "Iztaccíhuatl (5,230m) — dormant, hikeable with guide, flanks Popo across the pass",
+      "Pico de Orizaba / Citlaltépetl (5,636m) — highest in Mexico, 3rd in North America, technical summit",
+      "Nevado de Toluca / Xinantécatl (4,680m) — extinct, crater lakes accessible by car + hike",
+      "La Malinche (4,461m) — inactive, hikeable, good acclimatization peak",
+      "El Chichón (1,150m) — active, Chiapas, erupted 1982",
+      "Paricutín (2,800m) — cinder cone that grew from a cornfield in 1943, Michoacán, hikeable"
+    ],
+    "waterfalls": [
+      "Agua Azul — turquoise cascades in jungle, Chiapas (near Palenque)",
+      "Misol-Ha — 35m single-drop waterfall, Chiapas, swim at base",
+      "Cascadas de Basaseachi — 246m drop, Copper Canyon, Chihuahua",
+      "Tamul Waterfall — widest in Mexico (105m), Huasteca Potosina, San Luis Potosí",
+      "Hierve el Agua — petrified 'frozen' waterfalls, mineral pools, Oaxaca",
+      "El Salto del Nogal — 105m waterfall in Durango pine forest"
+    ],
+    "hot_springs": [
+      "Grutas Tolantongo — hot spring canyon pools carved into rock, Hidalgo (most spectacular)",
+      "Devanádero Hot Springs — San Luis Potosí, Huasteca region",
+      "La Caldera Hot Springs — Michoacán, near Paricutín volcano",
+      "Atotonilco — colonial-era mineral baths, Guanajuato"
+    ],
+    "lakes": [
+      "Lago de Chapala — Mexico's largest natural lake, Jalisco/Michoacán",
+      "Lagunas de Montebello — 59 multicolored lakes, Chiapas",
+      "Lago de Pátzcuaro — Day of the Dead traditions, Michoacán",
+      "Laguna Bacalar — 'Lake of Seven Colors', Quintana Roo",
+      "Lago de Catemaco — volcanic crater lake with wildlife, Veracruz"
+    ],
+    "rivers": [
+      "Grijalva River — Sumidero Canyon boat tours",
+      "Usumacinta River — border with Guatemala, jungle wildlife",
+      "Huasteca Potosina rivers — kayaking and swimming, San Luis Potosí",
+      "Antigua River — whitewater rafting, Veracruz"
+    ],
+    "wildlife": [
+      "Monarch butterfly (Michoacán — Nov-Mar migration)",
+      "Gray whale (Baja California lagoons — Jan-Mar)",
+      "Jaguar (Calakmul, Lacandon Jungle)",
+      "Leatherback and loggerhead sea turtle (Pacific and Caribbean coasts)",
+      "Quetzal (Chiapas cloud forest)",
+      "Whale shark (Isla Holbox and La Paz — Jun-Sep)",
+      "Manta ray (Socorro Islands, Baja)",
+      "Spider and howler monkey (Chiapas, Yucatán jungle)",
+      "Ocelot (southern Mexico)",
+      "American crocodile (Sumidero Canyon, coastal lagoons)",
+      "Flamingo (Celestún and Río Lagartos, Yucatán)"
+    ],
+    "birdwatching_hotspots": [
+      "Calakmul Biosphere Reserve — 300+ species including ocellated turkey",
+      "Celestún Biosphere Reserve — flamingo flocks, spoonbills, herons",
+      "El Triunfo Biosphere Reserve (Chiapas) — horned guan, quetzal, Azure-rumped Tanager",
+      "San Blas (Nayarit) — over 300 species, crocodiles, black-throated magpie-jay",
+      "Cozumel Island — Cozumel Emerald hummingbird endemic",
+      "Huasteca Potosina — cloud forest endemics"
+    ],
+    "stargazing_spots": [
+      "Sierra Negra Observatory (Puebla) — 4,600m, home of Mexico's largest telescope",
+      "Copper Canyon (Chihuahua) — zero light pollution",
+      "Baja California desert — exceptional dark skies",
+      "Oaxacan highlands — 2,000m+ altitude, dry clear nights"
+    ],
+    "scenic_drives": [
+      "Baja California Highway 1 (La Paz to Tijuana) — 1,700km Pacific coast and desert",
+      "Copper Canyon via El Chepe train — Los Mochis to Chihuahua",
+      "Highway 200 Pacific Coast (Puerto Vallarta to Puerto Escondido) — surf towns and jungle",
+      "Ruta de los Cenotes (Yucatán) — jungle highway with cenote stops",
+      "Valle de Guadalupe wine route (Baja California) — Mexico's Napa Valley"
+    ],
+    "surf_spots": [
+      {
+        "name": "Puerto Escondido (Zicatela Beach)",
+        "region": "Oaxaca Coast",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Advanced",
+        "best_months": ["June", "July", "August", "September", "October"],
+        "typical_wave_size": {
+          "peak_season": "8–20+ ft (Jun-Oct Mexican Pipeline season)",
+          "off_season": "3–6 ft (Nov-Apr)"
+        },
+        "description": "One of the most powerful beach breaks on the planet — the 'Mexican Pipeline'. Huge, hollow, fast-breaking waves that detonate on a shallow sand bar. Holds massive swell (20ft+). Not for the faint-hearted. When big, only experienced big wave surfers should paddle out. World-class spectator spot when it's maxing.",
+        "crowd_level": "Moderate (thins out dramatically when big)",
+        "notes": "Shorebreak is extremely dangerous — never dive in headfirst. Rescues are frequent. La Punta (river mouth end) is a mellower left for intermediate surfers. Surf season opposite to California — peaks June-October due to south and SW swells."
+      },
+      {
+        "name": "La Punta (Puerto Escondido)",
+        "region": "Oaxaca Coast",
+        "break_type": "Point / river mouth break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["May", "June", "July", "August", "September", "October"],
+        "typical_wave_size": {
+          "peak_season": "4–8 ft",
+          "off_season": "2–4 ft"
+        },
+        "description": "Mellow left-hander at the river mouth end of Zicatela Bay. Long, workable walls ideal for longboarding and intermediate surfers. Protected from the worst of the Puerto Escondido swell. Small, tight-knit surf community.",
+        "crowd_level": "Low to medium",
+        "notes": "Gets busy at lower tides. Watch for river current during rainy season (Aug-Oct). Chill local vibe."
+      },
+      {
+        "name": "Sayulita",
+        "region": "Nayarit",
+        "break_type": "Point break and beach break",
+        "wave_direction": "Right (main point), left (beach)",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["June", "July", "August", "September", "October"],
+        "typical_wave_size": {
+          "peak_season": "3–6 ft",
+          "off_season": "1–3 ft"
+        },
+        "description": "Mexico's most famous 'surf town' for beginners and intermediates. The main right-hand point break delivers long, consistent, fun waves. Very learner-friendly infrastructure with dozens of surf schools. Bohemian beach town vibe with excellent food and nightlife.",
+        "crowd_level": "Very high (extremely popular)",
+        "notes": "Can get very crowded on the point. Best surfed on early morning sessions. Water quality has been an issue — check advisories before surfing. 40 min from Puerto Vallarta."
+      },
+      {
+        "name": "Punta de Mita",
+        "region": "Nayarit",
+        "break_type": "Reef point break",
+        "wave_direction": "Right",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["June", "July", "August", "September", "October"],
+        "typical_wave_size": {
+          "peak_season": "4–10 ft",
+          "off_season": "2–4 ft"
+        },
+        "description": "A world-class right-hand point break over a coral/rock reef. Long, powerful walls with multiple sections. Holds overhead-plus swell well. Access to the main break (La Lancha) requires a boat ride — keeps crowds in check. One of the best breaks in western Mexico.",
+        "crowd_level": "Low to medium (boat access limits crowds)",
+        "notes": "La Lancha is the premier break. Burros is an inside section. Boat taxis from the beach (~$200 MXN round trip). Luxury resort area — expensive accommodation nearby."
+      },
+      {
+        "name": "Troncones",
+        "region": "Guerrero",
+        "break_type": "Beach break and point",
+        "wave_direction": "Left (main point)",
+        "difficulty": "Beginner to advanced",
+        "best_months": ["June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "4–8 ft",
+          "off_season": "1–3 ft"
+        },
+        "description": "Laid-back surf town two hours from Zihuatanejo with multiple breaks. The main point (El Burro) delivers long, fast lefts. Beach break section great for beginners. Quiet, expat-flavored village with excellent seafood. Far fewer crowds than Sayulita.",
+        "crowd_level": "Low",
+        "notes": "Check Guerrero state travel advisory before visiting. The town itself has a good safety record but the state has high-risk areas. Worth the effort for the uncrowded waves."
+      },
+      {
+        "name": "Barra de la Cruz",
+        "region": "Oaxaca Coast (Isthmus region)",
+        "break_type": "Point break",
+        "wave_direction": "Right",
+        "difficulty": "Advanced",
+        "best_months": ["April", "May", "June", "July", "August"],
+        "typical_wave_size": {
+          "peak_season": "5–12 ft",
+          "off_season": "2–4 ft"
+        },
+        "description": "A world-class right-hand point break that was the site of the 2006 WCT event. Long, rifling rights peeling over a rock bottom. Consistent SW swells funnel perfectly into the point. Remote fishing village with minimal tourist infrastructure. One of Mexico's best waves.",
+        "crowd_level": "Low (remoteness limits access)",
+        "notes": "3 hours from Puerto Escondido on rough roads. The local community charges a daily surfing fee (~$5-10 USD) which funds village infrastructure. Respect local rules. Strong offshore winds common in afternoons."
+      },
+      {
+        "name": "Mazunte / Punta Cometa",
+        "region": "Oaxaca Coast",
+        "break_type": "Point break and beach break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate",
+        "best_months": ["May", "June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "3–7 ft",
+          "off_season": "1–3 ft"
+        },
+        "description": "Small eco-village with a lefty point break off Punta Cometa (Mexico's southernmost point). Consistent, peeling lefts with a beautiful backdrop. Mellow local vibe, clothing-optional Zipolite beach nearby. Good for intermediate surfers.",
+        "crowd_level": "Low to medium",
+        "notes": "Mazunte has a thriving eco-cooperative (body care products) and is smoke/meat-free by local custom. Combine with Zipolite and San Agustinillo."
+      },
+      {
+        "name": "Zipolite",
+        "region": "Oaxaca Coast",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "4–8 ft",
+          "off_season": "2–4 ft"
+        },
+        "description": "Famous nude beach with powerful, punchy beach break. Fast, hollow waves that are deceptively strong. Notorious for its shore break and rip currents — multiple drownings occur annually. For experienced ocean swimmers and surfers only. Unique clothing-optional and hippie culture.",
+        "crowd_level": "Low (surf-wise)",
+        "notes": "Rip currents are serious — red flags must be respected. Volunteer lifeguard brigade active on beach. The town is very relaxed and tolerant — backpacker and countercultural crowd."
+      },
+      {
+        "name": "Todos Santos",
+        "region": "Baja California Sur",
+        "break_type": "Beach break and point",
+        "wave_direction": "Left and right",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["November", "December", "January", "February", "March"],
+        "typical_wave_size": {
+          "peak_season": "4–10 ft (NW winter swells)",
+          "off_season": "1–3 ft"
+        },
+        "description": "Artsy Baja surf town with powerful Pacific beach breaks and occasional point break. Consistent NW winter groundswells create powerful, hollow waves. The famous Hotel California is here. Strong currents and shore break mean this is not a beginner beach.",
+        "crowd_level": "Low to medium",
+        "notes": "1 hour north of Cabo San Lucas. Water is significantly colder than mainland Mexico (wetsuit needed Nov-Mar). Town has excellent art galleries, restaurants, and farmers markets."
+      },
+      {
+        "name": "Los Cerritos (Todos Santos area)",
+        "region": "Baja California Sur",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Beginner to intermediate",
+        "best_months": ["October", "November", "December", "January", "February", "March"],
+        "typical_wave_size": {
+          "peak_season": "3–6 ft",
+          "off_season": "1–3 ft"
+        },
+        "description": "Baja's most beginner-friendly surf beach — wide, sandy, with consistent and forgiving waves. Multiple surf schools operate here. Protected bay shape means waves are cleaner and less powerful than Todos Santos main breaks. Beautiful white sand beach.",
+        "crowd_level": "Medium",
+        "notes": "20 min south of Todos Santos. Best surfed in the mornings before wind picks up. Full surf rental and lesson infrastructure. Good camping nearby."
+      },
+      {
+        "name": "Petacalco / Nexpa",
+        "region": "Guerrero / Michoacán border",
+        "break_type": "River mouth point break",
+        "wave_direction": "Left",
+        "difficulty": "Advanced",
+        "best_months": ["June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "5–12 ft",
+          "off_season": "2–4 ft"
+        },
+        "description": "A legendary long left-hand river mouth break, one of Mexico's premier point breaks. Exceptionally long rides (150m+) when conditions align. Remote fishing community setting. Strong south swells light it up in summer months.",
+        "crowd_level": "Very low",
+        "notes": "Check Guerrero security conditions before visiting. Remote access. Bring supplies. The wave quality makes the effort worthwhile for experienced surfers."
+      },
+      {
+        "name": "Isla Holbox (Punta Mosquito)",
+        "region": "Quintana Roo",
+        "break_type": "Beach break (rare conditions)",
+        "wave_direction": "Right",
+        "difficulty": "Beginner",
+        "best_months": ["September", "October", "November"],
+        "typical_wave_size": {
+          "peak_season": "2–4 ft (hurricane swell)",
+          "off_season": "Flat"
+        },
+        "description": "Holbox is mostly flat but hurricane swells occasionally push surf to the northern tip. More of a curiosity than a serious surf spot. Known for whale shark snorkeling and flamingos. Include for completeness — the rare surf is a bonus on a beautiful island.",
+        "crowd_level": "Very low",
+        "notes": "No surf infrastructure. Bring your own board. The main draw is wildlife — whale sharks June-September, flamingos year-round."
+      },
+      {
+        "name": "La Ticla",
+        "region": "Michoacán",
+        "break_type": "Point break and beach break",
+        "wave_direction": "Left",
+        "difficulty": "Intermediate to advanced",
+        "best_months": ["June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "4–9 ft",
+          "off_season": "1–3 ft"
+        },
+        "description": "Classic Mexican left-hand point break in a remote, undeveloped setting. Long, walling lefts over a rocky point with a beach break backup. Camping in the coconut grove. One of Mexico's most unspoiled surf destinations.",
+        "crowd_level": "Very low",
+        "notes": "Basic camping and a few palapas for accommodation. Bring food supplies. Check Michoacán security conditions for coastal access route. Turtle nesting area — respect beach closures at night."
+      },
+      {
+        "name": "Pascuales",
+        "region": "Colima",
+        "break_type": "Beach break",
+        "wave_direction": "Left and right",
+        "difficulty": "Advanced",
+        "best_months": ["June", "July", "August", "September"],
+        "typical_wave_size": {
+          "peak_season": "6–15 ft",
+          "off_season": "2–5 ft"
+        },
+        "description": "One of Mexico's heaviest and most powerful beach breaks. Thick, barreling waves that slam onto a steep sand bank. Frequently produces massive, unmakeable closeouts when big — attracts big wave surfers during peak season. Not for beginners under any conditions.",
+        "crowd_level": "Low (self-selects for advanced surfers)",
+        "notes": "Colima state is at Level 4 Do Not Travel advisory — carefully evaluate security conditions before visiting. The wave is world-class when it's on."
+      }
+    ],
+    "wildlife_zones": [
+      {
+        "name": "Monarch Butterfly Biosphere Reserve",
+        "region": "Michoacán / Mexico State",
+        "key_species": ["Monarch butterfly (100+ million)", "Oyamel fir forest ecosystem"],
+        "best_months": ["November", "December", "January", "February", "March"],
+        "notes": "UNESCO World Heritage. The most spectacular butterfly migration on Earth. Orange clouds of monarchs cover the forest canopy. Visit November-March. Access from Morelia or Mexico City."
+      },
+      {
+        "name": "Reserva de la Biosfera El Vizcaíno (Ojo de Liebre / San Ignacio Lagoon)",
+        "region": "Baja California Sur",
+        "key_species": ["Gray whale (breeding and calving)", "California sea lion", "Elephant seal", "Blue whale (offshore)"],
+        "best_months": ["January", "February", "March"],
+        "notes": "UNESCO World Heritage. Gray whales come here to breed and give birth. 'Friendly whale' encounters — whales approach pangas voluntarily. San Ignacio Lagoon is the most pristine."
+      },
+      {
+        "name": "Calakmul and Lacandon Jungle",
+        "region": "Campeche / Chiapas",
+        "key_species": ["Jaguar", "Tapir", "Spider monkey", "Scarlet macaw", "Ocellated turkey", "Black-handed spider monkey"],
+        "best_months": ["November", "December", "January", "February"],
+        "notes": "Largest contiguous tropical forest in North America. Jaguar population significant. Remote — access from Escárcega. Combine with Palenque ruins."
+      },
+      {
+        "name": "Celestún Biosphere Reserve",
+        "region": "Yucatán",
+        "key_species": ["American flamingo (thousands)", "Roseate spoonbill", "Wood stork", "Crocodile", "Manatee"],
+        "best_months": ["November", "December", "January", "February", "March"],
+        "notes": "Boat tours through mangrove channels to flamingo feeding flats. Dawn visits best for flamingo flocks. 2 hours from Mérida."
+      },
+      {
+        "name": "Isla Holbox / Yum Balam",
+        "region": "Quintana Roo",
+        "key_species": ["Whale shark (largest aggregation in world)", "Manta ray", "Flamingo", "Bottlenose dolphin", "Sea turtle"],
+        "best_months": ["June", "July", "August", "September"],
+        "notes": "World's largest known whale shark aggregation offshore (June-September). No cars on the island. Snorkel with whale sharks on day tours from Holbox."
+      },
+      {
+        "name": "Socorro Island (Revillagigedo Archipelago)",
+        "region": "Pacific Ocean (Colima, liveaboard access)",
+        "key_species": ["Giant manta ray", "Humpback whale", "Whale shark", "Silky and Galapagos shark", "Tiger shark", "Bottlenose dolphin"],
+        "best_months": ["November", "December", "January", "February", "March", "April"],
+        "notes": "UNESCO World Heritage. One of the world's top dive and snorkel destinations. Access via liveaboard from Cabo San Lucas or Manzanillo (36-hour sail). Mantas famously interact with divers."
+      }
+    ]
+  },
+  "sports_and_activities": [
+    {
+      "name": "Surfing",
+      "popularity": "High",
+      "best_regions": ["Puerto Escondido (Oaxaca)", "Sayulita (Nayarit)", "Todos Santos (Baja)", "Barra de la Cruz (Oaxaca)", "Punta de Mita (Nayarit)"],
+      "best_months": ["June", "July", "August", "September", "October"],
+      "skill_levels": ["Beginner", "Intermediate", "Advanced"],
+      "notes": "Pacific coast peaks June-October (south/SW swells). Baja peaks November-March (NW swells). Board rentals $10-20 USD/day. Lessons $30-60 USD."
+    },
+    {
+      "name": "Cenote Diving and Snorkeling",
+      "popularity": "Very High",
+      "best_regions": ["Riviera Maya (Tulum, Playa del Carmen)", "Valladolid area", "Mérida area"],
+      "best_months": ["Year-round (underground — no weather dependency)"],
+      "skill_levels": ["Beginner (snorkel)", "Advanced (cave diving)"],
+      "notes": "World's most extensive underwater cave system (Sistema Ox Bel Ha, 270km). Cenote snorkeling from $15 USD. Cave diving requires cave certification. Top cenotes: Dos Ojos, Gran Cenote, Cenote Azul."
+    },
+    {
+      "name": "Scuba Diving",
+      "popularity": "Very High",
+      "best_regions": ["Cozumel (world-class reef)", "Isla Mujeres", "Cabo Pulmo (Baja)", "Socorro Islands (liveaboard)"],
+      "best_months": ["Year-round; November-April best visibility"],
+      "skill_levels": ["Beginner", "Intermediate", "Advanced"],
+      "notes": "Cozumel's Palancar Reef is one of the world's top dive sites. Cabo Pulmo is a UNESCO marine park with incredible fish biomass. Socorro for advanced open-water and sharks."
+    },
+    {
+      "name": "Mountaineering",
+      "popularity": "Moderate",
+      "best_regions": ["Pico de Orizaba", "Iztaccíhuatl", "Nevado de Toluca", "La Malinche"],
+      "best_months": ["November", "December", "January", "February", "March"],
+      "skill_levels": ["Intermediate", "Advanced"],
+      "notes": "Pico de Orizaba (5,636m) is North America's 3rd highest peak. Requires technical glaciated skills. Iztaccíhuatl hikeable without technical gear to La Rodilla. Licensed guides available in Tlachichuca and Amecameca."
+    },
+    {
+      "name": "Whale Watching",
+      "popularity": "High",
+      "best_regions": ["Baja California lagoons (gray whales)", "La Paz (blue and humpback)", "Isla Holbox (whale sharks)"],
+      "best_months": ["January", "February", "March (gray whale); November-March (humpback); June-September (whale shark)"],
+      "skill_levels": ["Beginner"],
+      "notes": "Gray whale calving in Baja lagoons is one of nature's greatest wildlife spectacles. 'Friendly' whale encounters in San Ignacio Lagoon. Blue whales visible from La Paz in winter."
+    },
+    {
+      "name": "Birdwatching",
+      "popularity": "Moderate to High",
+      "best_regions": ["Celestún (flamingos)", "San Blas (300+ species)", "El Triunfo (quetzal, cloud forest)", "Calakmul"],
+      "best_months": ["November", "December", "January", "February", "March"],
+      "skill_levels": ["Beginner", "Expert"],
+      "notes": "Mexico has 1,100+ bird species. El Triunfo (Chiapas) is world-class for rare endemics. San Blas known for dawn boat tours into mangroves."
+    },
+    {
+      "name": "Mountain Biking",
+      "popularity": "Moderate",
+      "best_regions": ["Real de Catorce (San Luis Potosí)", "Sierra Norte (Oaxaca)", "Copper Canyon", "Valle de Bravo"],
+      "best_months": ["November", "December", "January", "February", "March"],
+      "skill_levels": ["Intermediate", "Advanced"],
+      "notes": "Growing mountain bike scene. Sierra Norte Pueblos Mancomunados has 100km+ of community bike trails. Rentals $20-40 USD/day."
+    },
+    {
+      "name": "Kitesurfing",
+      "popularity": "Moderate",
+      "best_regions": ["La Ventana (Baja California Sur)", "Los Barriles (Baja)", "Holbox", "El Cuyo (Yucatán)"],
+      "best_months": ["November", "December", "January", "February", "March"],
+      "skill_levels": ["Intermediate", "Advanced"],
+      "notes": "La Ventana near La Paz is one of world's top kite destinations — consistent El Norte winds. El Cuyo on Yucatán is a flat-water paradise for freestyle kiters."
+    },
+    {
+      "name": "Whitewater Rafting",
+      "popularity": "Moderate",
+      "best_regions": ["Veracruz (Filobobos, Bobos rivers)", "Chiapas (Jataté River)", "Jalisco (Verde River)"],
+      "best_months": ["June", "July", "August", "September", "October"],
+      "skill_levels": ["Beginner", "Intermediate", "Advanced"],
+      "notes": "Filobobos River in Veracruz is Mexico's rafting hub — Class III-IV. Multi-day expeditions available. Tours from $50-100 USD/day."
+    },
+    {
+      "name": "Archaeological Exploration",
+      "popularity": "Very High",
+      "best_regions": ["Yucatán (Chichen Itza, Uxmal, Tulum)", "Oaxaca (Monte Albán, Mitla)", "Chiapas (Palenque, Yaxchilán)", "Mexico State (Teotihuacán)"],
+      "best_months": ["November", "December", "January", "February", "March"],
+      "skill_levels": ["Beginner"],
+      "notes": "Mexico has 35,000+ known archaeological sites. INAH manages sites — entry $50-600 MXN. Hire licensed guides for context. Teotihuacán best visited before 10am."
+    }
+  ],
+  "trip_styles": {
+    "good_for_backpacking": true,
+    "good_for_luxury": true,
+    "good_for_families": true,
+    "good_for_couples": true,
+    "good_for_solo_travel": true,
+    "good_for_digital_nomads": true,
+    "good_for_adventure_travel": true,
+    "good_for_food_travel": true,
+    "good_for_road_trips": true,
+    "good_for_short_trips": true,
+    "good_for_long_stays": true
+  },
+  "destinations": {
+    "top_cities": ["Mexico City (CDMX)", "Oaxaca City", "Guadalajara", "Mérida", "San Cristóbal de las Casas"],
+    "top_towns": ["San Miguel de Allende", "Guanajuato", "Tulum", "Puerto Escondido", "Sayulita", "Todos Santos", "Bacalar", "Real de Catorce"],
+    "top_regions": ["Oaxaca Coast", "Yucatán Peninsula", "Baja California", "Copper Canyon", "Riviera Maya"],
+    "top_islands": ["Cozumel", "Isla Mujeres", "Isla Holbox", "Isla Espíritu Santo (Baja)"],
+    "sample_itineraries": {
+      "one_week": "Mexico City (3 days: Teotihuacán, tacos al pastor, Frida Kahlo Museum) → Oaxaca city (2 days: Monte Albán, mezcal, tlayudas) → Oaxaca coast/Puerto Escondido (2 days)",
+      "two_week": "Mexico City (2 days) → Oaxaca (3 days) → Puerto Escondido surf (3 days) → fly to Cancún → Bacalar (2 days) → Tulum (2 days) → Mérida (2 days)",
+      "classic_route": "CDMX → Teotihuacán → Guanajuato → San Miguel de Allende → Oaxaca → Yucatán (Mérida, Chichen Itza, Tulum, Bacalar)",
+      "surf_route": "Sayulita (Nayarit) → Troncones (Guerrero) → Mazunte/Zipolite (Oaxaca) → Puerto Escondido → Barra de la Cruz",
+      "baja_route": "Tijuana → Valle de Guadalupe (wine) → Ensenada → Guerrero Negro (gray whales) → San Ignacio → Mulegé → Loreto → La Paz → Todos Santos → Los Cabos"
+    }
+  },
+  "practical_info": {
+    "arrival_tips": "MEX airport has two terminals — T1 (most international flights) and T2 (Aeroméxico hub). NLU (Felipe Ángeles) is 50km north — verify your terminal. Use Uber or official taxi booths. Register with STEP before travel.",
+    "airport_scam_notes": "Use only authorized taxi booths inside the terminal — never accept offers from people approaching you in the arrivals hall. Uber works from MEX but driver may ask you to meet outside.",
+    "local_sim_where_to_buy": "Telcel SIM at airport kiosks or OXXO convenience stores nationwide. Bring passport. $150-200 MXN for a data plan with 10-20GB.",
+    "money_exchange_notes": "Get pesos at ATMs rather than exchange bureaus — better rates. BBVA and Banamex ATMs most reliable. Avoid dynamic currency conversion (DCC) — always choose to pay in MXN. Small bills ($20-50 MXN) essential for street food and local markets.",
+    "language_helpful_phrases": {
+      "hello": "Hola",
+      "thank_you": "Gracias",
+      "how_much": "¿Cuánto cuesta?",
+      "where_is": "¿Dónde está...?",
+      "i_dont_speak_spanish": "No hablo español",
+      "the_bill_please": "La cuenta, por favor",
+      "help": "¡Auxilio! / ¡Ayuda!",
+      "cheers": "¡Salud!",
+      "spicy": "¿Pica mucho? (Is it very spicy?)",
+      "no_meat": "Sin carne, por favor",
+      "purified_water": "¿El agua es purificada?"
+    },
+    "offline_maps_recommended": ["Maps.me", "Google Maps (offline)", "iOverlander (for road trips and camping)"],
+    "apps_useful_locally": ["Uber (essential for safe transport)", "DiDi (cheaper than Uber)", "WhatsApp (universal communication)", "OXXO Pay (payments)", "Maps.me (offline maps)", "Rappi (food delivery)", "iOverlander (camping and road trip spots)"]
+  },
+    "laws": {
+    "drug_laws_strictness": "Strict for trafficking — severe prison sentences. Personal use amounts decriminalized (5g cannabis, 0.5g cocaine, 50mg heroin, 40mg methamphetamine). Do NOT carry drugs near borders or in states with heavy military presence.",
+    "alcohol_laws": "Legal drinking age 18. Ley seca during elections — alcohol sales prohibited day before and day of vote. Some municipalities are completely dry. Public intoxication can result in detention.",
+    "drone_rules": "Registration required with AFAC (Agencia Federal de Aviación Civil). Prohibited within 9km of airports, over populated areas, archaeological zones, national parks, and military installations without permit. Max altitude 120m. Fines up to $50,000 MXN for violations.",
+    "wild_camping_rules": "Generally permitted on public land with landowner permission in rural areas. Prohibited in national parks without designated camping zones. Ejido (communal) land requires permission from the community.",
+    "protected_area_rules": "INAH manages archaeological sites — no removing artifacts (federal crime). CONANP manages biosphere reserves and national parks. Fees and permits required in most protected areas. No collection of coral, shells, or wildlife.",
+    "fishing_license_required": true,
+    "photography_restricted_sites": ["Military installations", "Border crossing facilities", "Some indigenous communities without permission", "Archaeological sites (commercial photography requires INAH permit)"],
+    "lgbtq_legal_status": "Same-sex marriage legal nationwide since 2022 (Supreme Court ruling). Anti-discrimination laws exist federally. Attitudes vary widely — very accepting in CDMX, Puerto Vallarta, Guadalajara; conservative in rural areas.",
+    "marijuana_legality": "Personal use decriminalized up to 5g. Recreational use legalization stalled in Congress. Medical cannabis legal. Sale and cultivation remain illegal without license.",
+    "prescription_medication_rules": "Bring prescriptions in original packaging with doctor's letter in Spanish if possible. Opioids and some controlled substances require special permits — check with Mexican consulate before travel. Pharmacies widely available for common medications."
+  },
+  "family_travel": {
+    "kid_friendly": true,
+    "stroller_friendly": false,
+    "car_seat_rules": "Required for children under 12 and under 1.5m tall. Enforcement inconsistent. Bring your own — rental car companies rarely have adequate seats.",
+    "family_activities": [
+      "Teotihuacán pyramids — climbable with kids, accessible from CDMX",
+      "Xcaret and Xel-Há eco-parks (Riviera Maya) — swimming, snorkeling, cultural shows",
+      "Chichen Itza — awe-inspiring for all ages",
+      "Cenote swimming — safe, calm, magical for families",
+      "Monarch butterfly reserve (Nov-Mar) — unforgettable experience for children",
+      "Cancún hotel zone — calm Caribbean water, all-inclusive resorts, safe",
+      "Museo Nacional de Antropología (CDMX) — world-class, engaging for older kids",
+      "Copper Canyon El Chepe train — adventure rail journey across stunning canyon"
+    ]
+  },
+  "accessibility": {
+    "wheelchair_accessibility": "Limited overall — uneven cobblestone streets in colonial towns (Oaxaca, Guanajuato, San Miguel de Allende) are very difficult. Mexico City and Cancún hotel zone have better infrastructure. Metro has some accessible stations. Most archaeological sites have very limited accessibility.",
+    "accessible_transport": "Mexico City Metro has accessible stations and elevators (inconsistent maintenance). Uber accessible vehicles available in CDMX. Most intercity buses not wheelchair accessible. Private transfers recommended.",
+    "accessible_attractions": ["Cancún hotel zone beaches (some with beach wheelchairs)", "Museo Nacional de Antropología (CDMX — elevator access)", "Teotihuacán (partial — paved paths to some pyramids)", "Major resort hotel pools and facilities"]
+  },
+  "gear": {
+    "bring_wetsuit": true,
+    "bring_hiking_boots": true,
+    "bring_layers": true,
+    "bring_bug_spray": true,
+    "bring_sunscreen": true,
+    "cold_weather_gear_needed": true,
+    "rental_gear_easy_to_find": true,
+    "outdoor_gear_shops": [
+      "Decathlon (nationwide chain — CDMX, Guadalajara, Monterrey, Cancún)",
+      "Martí (sporting goods nationwide)",
+      "Puerto Escondido surf shops — local board rentals and wax",
+      "Sayulita surf shops — lessons, boards, accessories",
+      "Todos Santos Surf Shop — Baja gear",
+      "Tatoo Adventure Gear (CDMX — mountaineering and trekking)",
+      "High Sierra (CDMX — outdoor and camping gear)"
+    ],
+    "wetsuit_notes": "3/2mm wetsuit recommended for Baja Pacific coast November-March (water 18-22°C). Not needed on mainland Pacific or Caribbean coasts — water 26-30°C year-round."
+  }
+}
