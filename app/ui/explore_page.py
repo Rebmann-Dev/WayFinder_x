@@ -22,6 +22,52 @@ _CONTINENT_FOLDERS = [
     "southeast_asia",
 ]
 
+# ── Static lookup tables ──────────────────────────────────────────────────────
+
+_COUNTRY_CODE_MAP: dict[str, str] = {
+    "Ecuador":   "EC", "Peru":      "PE", "Argentina": "AR",
+    "Bolivia":   "BO", "Brazil":    "BR", "Chile":     "CL",
+    "Colombia":  "CO", "Guyana":    "GY", "Paraguay":  "PY",
+    "Suriname":  "SR", "Uruguay":   "UY", "Venezuela": "VE",
+    "Costa Rica":    "CR", "Panama":        "PA", "Guatemala":  "GT",
+    "Belize":        "BZ", "Honduras":      "HN", "Nicaragua":  "NI",
+    "El Salvador":   "SV",
+    "Mexico":    "MX", "United States": "US", "Canada": "CA",
+}
+
+_FLAGS: dict[str, str] = {
+    "EC": "🇪🇨", "PE": "🇵🇪", "AR": "🇦🇷", "BO": "🇧🇴",
+    "BR": "🇧🇷", "CL": "🇨🇱", "CO": "🇨🇴", "GY": "🇬🇾",
+    "PY": "🇵🇾", "SR": "🇸🇷", "UY": "🇺🇾", "VE": "🇻🇪",
+    "CR": "🇨🇷", "PA": "🇵🇦", "GT": "🇬🇹", "BZ": "🇧🇿",
+    "HN": "🇭🇳", "NI": "🇳🇮", "SV": "🇸🇻",
+    "MX": "🇲🇽", "US": "🇺🇸", "CA": "🇨🇦",
+}
+
+_COUNTRY_CENTROIDS: dict[str, tuple[float, float]] = {
+    "EC": (-1.8, -78.2),  "PE": (-9.2, -75.0),  "AR": (-38.4, -63.6),
+    "BO": (-16.3, -63.6), "BR": (-14.2, -51.9),  "CL": (-35.7, -71.5),
+    "CO": (4.6, -74.3),   "GY": (4.9, -58.9),    "PY": (-23.4, -58.4),
+    "SR": (3.9, -56.0),   "UY": (-32.5, -55.8),  "VE": (8.0, -66.6),
+    "CR": (9.7, -83.8),   "PA": (8.5, -80.8),    "GT": (15.8, -90.2),
+    "BZ": (17.2, -88.5),  "HN": (15.2, -86.2),   "NI": (12.9, -85.2),
+    "SV": (13.8, -88.9),
+    "MX": (23.6, -102.6), "US": (37.1, -95.7),   "CA": (56.1, -106.3),
+}
+
+country_centers: dict[str, tuple[list[float], int]] = {
+    "Ecuador":   ([-1.5, -78.0],  7),  "Peru":      ([-9.2, -75.0],  6),
+    "Argentina": ([-38.4, -63.6], 5),  "Bolivia":   ([-16.3, -63.6], 6),
+    "Brazil":    ([-14.2, -51.9], 5),  "Chile":     ([-35.7, -71.5], 5),
+    "Colombia":  ([4.6, -74.3],   6),  "Guyana":    ([4.9, -58.9],   7),
+    "Paraguay":  ([-23.4, -58.4], 6),  "Suriname":  ([3.9, -56.0],   7),
+    "Uruguay":   ([-32.5, -55.8], 7),  "Venezuela": ([8.0, -66.6],   6),
+    "Costa Rica":  ([9.7, -83.8],  8), "Panama":    ([8.5, -80.8],   8),
+    "Guatemala":   ([15.8, -90.2], 7), "Belize":    ([17.2, -88.5],  8),
+    "Honduras":    ([15.2, -86.2], 7), "Nicaragua": ([12.9, -85.2],  7),
+    "El Salvador": ([13.8, -88.9], 8),
+}
+
 @st.cache_data(ttl=600)
 def _discover_countries() -> dict:
     """
@@ -62,6 +108,38 @@ def _discover_countries() -> dict:
                 "iso2": (identity.get("code") or "").upper(),
             }
     return registry
+# ── Derived lookups (built from registry at import time) ─────────────────────
+_COUNTRY_CENTER_FALLBACKS = {
+    "Mexico":      (23.634, -102.553, 5),
+    "Belize":      (17.189, -88.497,  7),
+    "Costa Rica":  (9.748,  -83.753,  7),
+    "El Salvador": (13.794, -88.896,  8),
+    "Guatemala":   (15.783, -90.230,  7),
+    "Honduras":    (15.200, -86.242,  7),
+    "Nicaragua":   (12.865, -85.207,  7),
+    "Panama":      (8.538,  -80.782,  7),
+}
+
+def _build_derived_maps():
+    registry = _discover_countries()
+    country_centers = {}
+    centroids = {}
+    code_map = {}
+    for name, entry in registry.items():
+        c = entry.get("centroid")
+        iso2 = entry.get("iso2", "")
+        if c:
+            country_centers[name] = (list(c), 6)
+            centroids[iso2] = c
+        elif name in _COUNTRY_CENTER_FALLBACKS:
+            lat, lon, zoom = _COUNTRY_CENTER_FALLBACKS[name]
+            country_centers[name] = ([lat, lon], zoom)
+            centroids[iso2] = (lat, lon)
+        if iso2:
+            code_map[iso2] = name
+    return country_centers, centroids, code_map
+
+country_centers, _COUNTRY_CENTROIDS, _COUNTRY_CODE_MAP = _build_derived_maps()
 
 # City → country mapping for auto-detection from destination_city
 _CITY_COUNTRY_MAP = {
@@ -81,6 +159,67 @@ _CITY_COUNTRY_MAP = {
     "paramaribo": "Suriname",
     "montevideo": "Uruguay", "punta del este": "Uruguay", "colonia del sacramento": "Uruguay",
     "caracas": "Venezuela", "mérida": "Venezuela", "merida": "Venezuela", "maracaibo": "Venezuela",
+        # Costa Rica
+    "san josé": "Costa Rica", "san jose": "Costa Rica", "la fortuna": "Costa Rica",
+    "tamarindo": "Costa Rica", "manuel antonio": "Costa Rica", "monteverde": "Costa Rica",
+    "jacó": "Costa Rica", "jaco": "Costa Rica", "puerto viejo": "Costa Rica",
+    # Panama
+    "panama city": "Panama", "ciudad de panamá": "Panama", "bocas del toro": "Panama",
+    "boquete": "Panama", "colón": "Panama", "colon": "Panama",
+    # Guatemala
+    "guatemala city": "Guatemala", "antigua": "Guatemala", "flores": "Guatemala",
+    "quetzaltenango": "Guatemala", "xela": "Guatemala",
+    # Belize
+    "belize city": "Belize", "san ignacio": "Belize", "placencia": "Belize",
+    "ambergris caye": "Belize", "caye caulker": "Belize",
+    # Honduras
+    "tegucigalpa": "Honduras", "san pedro sula": "Honduras", "roatán": "Honduras",
+    "roatan": "Honduras", "copán": "Honduras", "copan": "Honduras",
+    # Nicaragua
+    "managua": "Nicaragua", "granada": "Nicaragua", "león": "Nicaragua",
+    "leon": "Nicaragua", "san juan del sur": "Nicaragua",
+    # El Salvador
+    "san salvador": "El Salvador", "santa ana": "El Salvador", "suchitoto": "El Salvador",
+    "el tunco": "El Salvador",
+
+    # Mexico
+    "mexico city": "Mexico", "cdmx": "Mexico", "cancún": "Mexico", "cancun": "Mexico",
+    "oaxaca": "Mexico", "guadalajara": "Mexico", "playa del carmen": "Mexico",
+    "tulum": "Mexico", "san cristóbal de las casas": "Mexico", "puerto escondido": "Mexico",
+    "cabo san lucas": "Mexico", "san miguel de allende": "Mexico", "mérida": "Mexico",
+    "monterrey": "Mexico", "puebla": "Mexico", "mazatlán": "Mexico", "mazatlan": "Mexico",
+    "puerto vallarta": "Mexico", "palenque": "Mexico", "chihuahua": "Mexico",
+
+    # Costa Rica
+    "san josé": "Costa Rica", "san jose": "Costa Rica", "liberia": "Costa Rica",
+    "tamarindo": "Costa Rica", "manuel antonio": "Costa Rica", "la fortuna": "Costa Rica",
+    "monteverde": "Costa Rica", "jacó": "Costa Rica", "jaco": "Costa Rica",
+    "puerto viejo": "Costa Rica", "nosara": "Costa Rica", "santa teresa": "Costa Rica",
+
+    # Guatemala
+    "guatemala city": "Guatemala", "antigua": "Guatemala", "flores": "Guatemala",
+    "quetzaltenango": "Guatemala", "xela": "Guatemala", "panajachel": "Guatemala",
+    "semuc champey": "Guatemala", "lanquín": "Guatemala",
+
+    # Belize
+    "belize city": "Belize", "san ignacio": "Belize", "placencia": "Belize",
+    "caye caulker": "Belize", "ambergris caye": "Belize", "dangriga": "Belize",
+
+    # Honduras
+    "tegucigalpa": "Honduras", "san pedro sula": "Honduras", "roatán": "Honduras",
+    "roatan": "Honduras", "copán": "Honduras", "copan": "Honduras", "la ceiba": "Honduras",
+
+    # Nicaragua
+    "managua": "Nicaragua", "granada": "Nicaragua", "león": "Nicaragua", "leon": "Nicaragua",
+    "san juan del sur": "Nicaragua", "ometepe": "Nicaragua", "matagalpa": "Nicaragua",
+
+    # El Salvador
+    "san salvador": "El Salvador", "santa ana": "El Salvador", "el tunco": "El Salvador",
+    "suchitoto": "El Salvador", "la libertad": "El Salvador",
+
+    # Panama
+    "panama city": "Panama", "bocas del toro": "Panama", "boquete": "Panama",
+    "santa catalina": "Panama", "colón": "Panama", "colon": "Panama", "el valle": "Panama",
 }
 
 
@@ -326,6 +465,99 @@ HIKE_MARKERS = {
         ("Angel Falls Trekking Route", 5.968, -62.534),
         ("Los Nevados Trek, Merida", 8.530, -71.050),
     ],
+    "Costa Rica": [
+    ("Cerro Chato (Arenal)", 10.463, -84.703),
+    ("Manuel Antonio Park Trails", 9.390, -84.136),
+    ("Monteverde Cloud Forest Hanging Bridges", 10.300, -84.812),
+    ("Rincón de la Vieja Geothermal Trail", 10.831, -85.324),
+    ("Corcovado — San Pedrillo to Sirena", 8.574, -83.706),
+    ("Poás Volcano Crater", 10.200, -84.231),
+    ("Cerro Chirripó Summit", 9.485, -83.489),
+    ("Corcovado Multi-Day Traverse", 8.540, -83.580),
+    ("Río Celeste and Tenorio Volcano Trail", 10.719, -85.017),
+    ],
+    "Panama": [
+        ("Pipeline Road (Camino del Oleoducto) — Soberanía NP", 9.131, -79.714),
+        ("Volcán Barú Summit", 8.808, -82.543),
+        ("Quetzal Trail (Sendero Los Quetzales)", 8.836, -82.496),
+        ("Isla Bastimentos — Red Frog Beach and Nivida Cave", 9.295, -82.157),
+        ("Boquete Waterfall Circuit", 8.778, -82.443),
+        ("Camino de Cruces Historic Trail", 9.050, -79.630),
+        ("Darién Gap Expedition (La Palma / Emberá communities)", 7.930, -77.730),
+        ("Coiba Island Diving and Exploration", 7.455, -81.738),
+        ("Guna Yala Island Hopping", 9.555, -78.983),
+    ],
+    "Guatemala": [
+        ("Volcán Acatenango Overnight (summit hike)", 14.501, -90.876),
+        ("Volcán Pacaya Active Lava Fields", 14.381, -90.601),
+        ("Volcán San Pedro (Lake Atitlán)", 14.650, -91.268),
+        ("Indian Nose (Nariz del Indio) Sunrise Hike", 14.741, -91.246),
+        ("Tikal Temple Circuit and Jungle Hike", 17.222, -89.624),
+        ("Semuc Champey Pools and Caves", 15.533, -89.960),
+        ("Chichicastenango Market Walk", 14.947, -91.112),
+        ("Río Dulce to Livingston Boat Journey", 15.831, -88.757),
+        ("El Mirador Jungle Trek", 17.757, -89.921),
+        ("Quetzaltenango to Lake Atitlán Hike (Xela-Atitlán)", 14.833, -91.518),
+        ("Cuchumatanes Highlands Trek", 15.417, -91.500),
+    ],
+    "Belize": [
+        ("ATM Cave (Actun Tunichil Muknal)", 17.183, -88.933),
+        ("Caracol Maya Ruins", 16.756, -89.119),
+        ("Xunantunich Maya Ruins", 17.091, -89.136),
+        ("Cockscomb Basin Jaguar Preserve Hike", 16.760, -88.530),
+        ("Inland Blue Hole and St. Herman's Cave", 17.165, -88.680),
+        ("Cave Tubing (Nohoch Che'en / Caves Branch)", 17.212, -88.665),
+        ("Great Blue Hole Dive / Snorkel", 17.316, -87.535),
+        ("Crooked Tree Wildlife Sanctuary Boat Tour", 17.736, -88.532),
+        ("Toledo Maya Village Experience", 16.100, -88.900),
+        ("Lamanai Archaeological Reserve and River Journey", 17.765, -88.657),
+    ],
+    "Honduras": [
+        ("Copán Archaeological Site Trails", 14.839, -89.141),
+        ("Pico Bonito Lower Trails", 15.641, -86.921),
+        ("Celaque National Park — Las Minas Summit", 14.549, -88.659),
+        ("Lago de Yojoa Birding Walk", 14.894, -87.979),
+        ("Macaw Mountain Bird Park Trails (Copán)", 14.845, -89.152),
+        ("Cuero y Salado Manatee Boat Tour", 15.820, -86.990),
+        ("Río Plátano Biosphere Reserve Expedition", 15.600, -84.900),
+        ("Celaque Cloud Forest Multi-Day", 14.530, -88.670),
+    ],
+    "Nicaragua": [
+        ("Masaya Volcano — Lava Lake Viewpoint", 11.984, -86.161),
+        ("Cerro Negro Volcano Boarding", 12.506, -86.702),
+        ("Mombacho Volcano Cloud Forest", 11.828, -85.966),
+        ("Concepción Volcano (Isla de Ometepe)", 11.538, -85.622),
+        ("Maderas Volcano (Isla de Ometepe)", 11.453, -85.553),
+        ("Las Isletas Kayaking (Granada)", 11.900, -85.930),
+        ("Bosawás Biosphere Reserve Expedition", 13.700, -85.100),
+        ("Río San Juan Jungle Route", 11.100, -84.600),
+    ],
+    "El Salvador": [
+        ("Santa Ana Volcano (Ilamatepec) Summit", 13.853, -89.630),
+        ("Izalco Volcano Hike", 13.814, -89.634),
+        ("El Imposible National Park Trails", 13.830, -89.970),
+        ("Ruta de las Flores Waterfall Walk", 13.877, -89.680),
+        ("Montecristo Cloud Forest", 14.414, -89.374),
+        ("Lago de Coatepeque Kayak Circuit", 13.866, -89.547),
+        ("Tazumal and Joya de Cerén Archaeological Walks", 13.982, -89.676),
+        ("Ruta de las Flores Hiking Circuit", 13.870, -89.690),
+        ("Northern Mountains (Morazán) Circuit", 13.767, -88.100),
+    ],
+    "Mexico": [
+    ("Iztaccíhuatl (Izta) via Paso de Cortés", 19.179, -98.642),
+    ("Monte Albán", 17.043, -96.768),
+    ("Hierve el Agua", 16.865, -96.275),
+    ("Nevado de Toluca (Xinantécatl)", 19.108, -99.758),
+    ("Cañón del Sumidero", 16.851, -93.075),
+    ("Palenque Ruins and Jungle Trails", 17.484, -92.046),
+    ("Chichen Itza and Cenote Circuit", 20.683, -88.569),
+    ("Copper Canyon Rim to Rim (El Chepe + hiking)", 27.317, -107.683),
+    ("Volcán Pico de Orizaba (Citlaltépetl) Summit", 19.030, -97.268),
+    ("Calakmul Biosphere Trek", 18.113, -89.805),
+    ("Sierra Norte of Oaxaca (Pueblos Mancomunados)", 17.217, -96.417),
+    ("Malinche National Park Summit", 19.229, -98.034),
+],
+
 }
 
 SURF_MARKERS = {
@@ -392,6 +624,55 @@ SURF_MARKERS = {
     "Suriname": [
         ("Galibi Beach", 5.849, -57.065),
     ],
+    "Costa Rica": [
+    ("Playa Tamarindo", 10.299, -85.837),
+    ("Playa Santa Teresa", 9.647, -85.167),
+    ("Playa Dominical", 9.252, -83.855),
+    ("Pavones", 8.428, -83.148),
+    ("Salsa Brava (Puerto Viejo)", 9.659, -82.752),
+    ("Witch's Rock (Roca Bruja)", 10.916, -85.748),
+    ("Playa Jacó", 9.616, -84.627),
+    ],
+    "El Salvador": [
+        ("Punta Roca", 13.495, -89.290),
+        ("El Tunco", 13.498, -89.374),
+        ("El Zonte (Bitcoin Beach)", 13.493, -89.432),
+        ("Las Flores", 13.286, -88.224),
+        ("El Cuco", 13.192, -88.238),
+        ("El Sunzal", 13.501, -89.397),
+    ],
+    "Guatemala": [
+        ("El Paredón", 13.927, -91.191),
+        ("Sipacate", 13.930, -91.148),
+    ],
+    "Nicaragua": [
+        ("Playa Maderas", 11.388, -85.871),
+        ("Popoyo", 11.320, -86.010),
+        ("Playa Gigante", 11.363, -85.994),
+        ("San Juan del Sur — Main Beach", 11.254, -85.872),
+        ("Playa Colorado (Rancho Santana area)", 11.332, -86.003),
+    ],
+    "Panama": [
+        ("Santa Catalina", 7.867, -81.259),
+        ("Playa Venao", 7.530, -80.189),
+        ("Silverbacks (Isla Bastimentos)", 9.302, -82.133),
+        ("Bluff Beach (Isla Colón)", 9.368, -82.262),
+    ],
+    "Mexico": [
+    ("Puerto Escondido (Zicatela Beach)", 15.857, -97.062),
+    ("La Punta (Puerto Escondido)", 15.862, -97.073),
+    ("Sayulita", 20.868, -105.438),
+    ("Punta de Mita", 20.773, -105.531),
+    ("Troncones", 17.961, -101.868),
+    ("Barra de la Cruz", 15.720, -96.031),
+    ("Mazunte / Punta Cometa", 15.666, -96.572),
+    ("Zipolite", 15.672, -96.527),
+    ("Todos Santos", 23.447, -110.228),
+    ("Los Cerritos (Todos Santos area)", 23.376, -110.204),
+    ("Petacalco / Nexpa", 17.963, -101.869),
+    ("La Ticla", 18.255, -103.204),
+    ("Pascuales", 18.910, -103.849),
+],
 }
 
 PARK_MARKERS = {
@@ -474,6 +755,66 @@ PARK_MARKERS = {
         ("Medanos de Coro NP", 11.540, -69.960),
         ("Sierra Nevada de Merida NP", 8.530, -71.050),
     ],
+    "Costa Rica": [
+    ("Corcovado NP", 8.540, -83.580),
+    ("Manuel Antonio NP", 9.390, -84.136),
+    ("Tortuguero NP", 10.560, -83.504),
+    ("Arenal Volcano NP", 10.463, -84.703),
+    ("Monteverde Cloud Forest Reserve", 10.300, -84.812),
+    ("Rincón de la Vieja NP", 10.831, -85.324),
+    ("Chirripó NP", 9.485, -83.489),
+    ],
+    "Panama": [
+        ("Soberanía NP", 9.131, -79.714),
+        ("Coiba NP", 7.455, -81.738),
+        ("Darién NP", 7.930, -77.730),
+        ("La Amistad NP", 8.900, -82.800),
+        ("Boquete / Volcán Barú NP", 8.808, -82.543),
+    ],
+    "Guatemala": [
+        ("Tikal NP", 17.222, -89.624),
+        ("Semuc Champey NM", 15.533, -89.960),
+        ("Volcán Acatenango", 14.501, -90.876),
+        ("Sierra de las Minas BR", 15.150, -89.850),
+        ("Laguna del Tigre NP", 17.500, -90.900),
+    ],
+    "Belize": [
+        ("Cockscomb Basin Wildlife Sanctuary", 16.760, -88.530),
+        ("Blue Hole NM", 17.316, -87.535),
+        ("Caracol Archaeological Reserve", 16.756, -89.119),
+        ("Lamanai Archaeological Reserve", 17.765, -88.657),
+        ("Crooked Tree Wildlife Sanctuary", 17.736, -88.532),
+    ],
+    "Honduras": [
+        ("Copán Archaeological Site", 14.839, -89.141),
+        ("Pico Bonito NP", 15.641, -86.921),
+        ("Celaque NP", 14.549, -88.659),
+        ("Río Plátano BR", 15.600, -84.900),
+        ("Cusuco NP", 15.483, -88.249),
+    ],
+    "Nicaragua": [
+        ("Masaya Volcano NP", 11.984, -86.161),
+        ("Mombacho Volcano NR", 11.828, -85.966),
+        ("Isla de Ometepe BR", 11.495, -85.590),
+        ("Bosawás BR", 13.700, -85.100),
+        ("Indio Maíz BR", 11.050, -84.200),
+    ],
+    "El Salvador": [
+        ("El Imposible NP", 13.830, -89.970),
+        ("Montecristo NP", 14.414, -89.374),
+        ("Walter Thilo Deininger NP", 13.550, -89.380),
+        ("Cerro Verde NP", 13.866, -89.629),
+        ("El Jocotal Lagoon NR", 13.390, -88.300),
+    ],
+    "Mexico": [
+    ("Iztaccíhuatl–Popocatépetl NP", 19.179, -98.642),
+    ("Copper Canyon (Barrancas del Cobre)", 27.317, -107.683),
+    ("Calakmul BR", 18.113, -89.805),
+    ("Palenque NP", 17.484, -92.046),
+    ("Sumidero Canyon NP", 16.851, -93.075),
+    ("Nevado de Toluca NP", 19.108, -99.758),
+    ("Sian Ka'an BR", 19.800, -87.650),
+],
 }
 
 DANGER_MARKERS = {
@@ -531,6 +872,44 @@ DANGER_MARKERS = {
         ("Maiquetia Airport route", 10.601, -66.991),
         ("Caracas city center", 10.480, -66.903),
     ],
+    "Costa Rica": [
+    ("Rip currents — Playa Dominical", 9.252, -83.855),
+    ("Crocodile zone — Tárcoles River mouth", 9.690, -84.628),
+    ],
+    "Panama": [
+        ("Darién Gap — No Travel Zone", 8.000, -77.500),
+        ("Colón city center", 9.359, -79.900),
+    ],
+    "Guatemala": [
+        ("Zone 18, Guatemala City", 14.669, -90.497),
+        ("El Petén border zone — Mexico", 17.500, -90.200),
+        ("Acatenango summit — altitude sickness zone", 14.501, -90.876),
+    ],
+    "Belize": [
+        ("South Side Belize City", 17.247, -88.765),
+        ("Southern Highway at night", 16.500, -88.500),
+    ],
+    "Honduras": [
+        ("San Pedro Sula city center", 15.504, -88.025),
+        ("Tegucigalpa — Kennedy/Villa Nueva", 14.093, -87.206),
+        ("Caribbean coast at night — La Ceiba", 15.758, -86.793),
+    ],
+    "Nicaragua": [
+        ("Managua city center at night", 12.136, -86.313),
+        ("Northern border zone — Honduras", 13.500, -86.500),
+    ],
+    "El Salvador": [
+        ("San Salvador — Soyapango district", 13.701, -89.144),
+        ("La Libertad port area at night", 13.486, -89.320),
+    ],
+    "Mexico": [
+    ("Sinaloa / Culiacán — cartel activity", 24.809, -107.394),
+    ("Guerrero State — Acapulco", 16.853, -99.823),
+    ("Tamaulipas border — Nuevo Laredo", 27.476, -99.512),
+    ("Colima State", 19.245, -103.725),
+    ("Tepito district — Mexico City", 19.445, -99.128),
+],
+
 }
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
@@ -547,54 +926,55 @@ def _load_country_json(country_name: str) -> dict | None:
     except (json.JSONDecodeError, OSError) as e:
         log.error("Failed to load country JSON %s: %s", path, e)
         return None
+    
 def _get_hike_markers(country_name: str) -> list[tuple]:
-    """Extract (name, lat, lon) from outdoors.top_day_hikes + multi_day_treks."""
     data = _load_country_json(country_name)
-    if not data:
-        return []
     markers = []
-    for section in ["top_day_hikes", "multi_day_treks"]:
-        for h in (data.get("outdoors", {}).get(section) or []):
-            if isinstance(h, dict) and h.get("lat") and h.get("lon"):
-                markers.append((h["name"], float(h["lat"]), float(h["lon"])))
+    if data:
+        for section in ["top_day_hikes", "multi_day_treks"]:
+            for h in (data.get("outdoors", {}).get(section) or []):
+                if isinstance(h, dict) and h.get("lat") and h.get("lon"):
+                    markers.append((h["name"], float(h["lat"]), float(h["lon"])))
+    if not markers:
+        markers = HIKE_MARKERS.get(country_name, [])
     return markers
 
 
 def _get_surf_markers(country_name: str) -> list[tuple]:
-    """Extract (name, lat, lon) from outdoors.surf_spots."""
     data = _load_country_json(country_name)
-    if not data:
-        return []
     markers = []
-    for s in (data.get("outdoors", {}).get("surf_spots") or []):
-        if isinstance(s, dict) and s.get("lat") and s.get("lon"):
-            markers.append((s["name"], float(s["lat"]), float(s["lon"])))
+    if data:
+        for s in (data.get("outdoors", {}).get("surf_spots") or []):
+            if isinstance(s, dict) and s.get("lat") and s.get("lon"):
+                markers.append((s["name"], float(s["lat"]), float(s["lon"])))
+    if not markers:
+        markers = SURF_MARKERS.get(country_name, [])
     return markers
 
 
 def _get_park_markers(country_name: str) -> list[tuple]:
-    """Extract (name, lat, lon) from outdoors.top_national_parks or outdoors.national_parks."""
     data = _load_country_json(country_name)
-    if not data:
-        return []
     markers = []
-    outdoors = data.get("outdoors", {})
-    parks = outdoors.get("top_national_parks") or outdoors.get("national_parks") or []
-    for p in parks:
-        if isinstance(p, dict) and p.get("lat") and p.get("lon"):
-            markers.append((p["name"], float(p["lat"]), float(p["lon"])))
+    if data:
+        outdoors = data.get("outdoors", {})
+        parks = outdoors.get("top_national_parks") or outdoors.get("national_parks") or []
+        for p in parks:
+            if isinstance(p, dict) and p.get("lat") and p.get("lon"):
+                markers.append((p["name"], float(p["lat"]), float(p["lon"])))
+    if not markers:
+        markers = PARK_MARKERS.get(country_name, [])
     return markers
 
 
 def _get_danger_markers(country_name: str) -> list[tuple]:
-    """Extract (name, lat, lon) from safety.danger_zones."""
     data = _load_country_json(country_name)
-    if not data:
-        return []
     markers = []
-    for d in (data.get("safety", {}).get("danger_zones") or []):
-        if isinstance(d, dict) and d.get("lat") and d.get("lon"):
-            markers.append((d["name"], float(d["lat"]), float(d["lon"])))
+    if data:
+        for d in (data.get("safety", {}).get("danger_zones") or []):
+            if isinstance(d, dict) and d.get("lat") and d.get("lon"):
+                markers.append((d["name"], float(d["lat"]), float(d["lon"])))
+    if not markers:
+        markers = DANGER_MARKERS.get(country_name, [])
     return markers
 
 def _get(data, dotpath, default=None):
@@ -753,7 +1133,7 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
         ).add_to(m)
 
     # Wildlife zones
-    if show_wildlife:
+    if show_wildlife and active_country in ("Ecuador", "Peru"):
         _wt = []
         _threat_centers = {}
         try:
@@ -1685,20 +2065,33 @@ def render_explore_page() -> None:
         value=st.session_state.get("explore_auto_country_snap", False),
         key="explore_auto_country_snap",
     )
-    active_country = _detect_country()
+    registry = _discover_countries()
+    all_countries = sorted(registry.keys())
+
+    default_country = _detect_country()  # auto-detect from chat/session
+    # Only use auto-detect as default if user hasn't manually selected
+    if "explore_country_manual" not in st.session_state:
+        st.session_state["explore_country_manual"] = default_country
+
+    selected = st.selectbox(
+        "🌍 Country",
+        options=all_countries,
+        index=all_countries.index(st.session_state["explore_country_manual"])
+            if st.session_state["explore_country_manual"] in all_countries else 0,
+        key="explore_country_manual",
+        label_visibility="collapsed",
+    )
+    active_country = selected
     st.session_state["explore_country"] = active_country
 
-    country_code = active_country.lower()
+        
+    data = _load_country_json(active_country)      # pass the display name directly
+    cc = _COUNTRY_CODE_MAP.get(active_country, active_country[:2].upper())
 
-    # Load country JSON for data tabs
-    data = _load_country_json(country_code)
-
-    # Header
-    cc = _COUNTRY_CODE_MAP.get(active_country, country_code[:2])
     flag = _FLAGS.get(cc, "\U0001f30d")
     if data:
         flag = _get(data, "identity.flag_emoji") or flag
-    st.markdown(f"# {flag} Explore: {active_country}")
+        st.markdown(f"# {flag} Explore: {active_country}")
 
     # Tab navigation
     tab_map, tab_hikes, tab_wildlife, tab_food, tab_history, \
