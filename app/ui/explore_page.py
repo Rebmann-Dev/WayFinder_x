@@ -1111,15 +1111,15 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
     ##### added below this 4/14 -- trying to combat the lat lon out of bounds & location picker reverting to SA country (snapping back)
     
     m = folium.Map(
-    location=[-15, -60], # starts on SA which is are intial target
-    zoom_start=3,
-    tiles=None,
-    min_zoom=2,
-    max_bounds=True,
-    min_lat=-85,
-    max_lat=85,
-    min_lon=-180,
-    max_lon=180,
+        location=center,   #  use the computed center
+        zoom_start=zoom,   #  use the computed zoom
+        tiles=None,
+        min_zoom=2,
+        max_bounds=True,
+        min_lat=-85,
+        max_lat=85,
+        min_lon=-180,
+        max_lon=180,
     )
 
     folium.TileLayer(
@@ -1305,7 +1305,8 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
             ).add_to(m)
 
 
-    map_data = st_folium(m, use_container_width=True, height=900, key="explore_main_map")
+    map_key = f"explore_map_{active_country}_{show_hikes}_{show_surf}_{show_parks}_{show_danger}"
+    map_data = st_folium(m, use_container_width=True, height=900, key=map_key)
 
 
     # Capture map click and reverse-geocode
