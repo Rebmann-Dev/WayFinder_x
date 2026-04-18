@@ -65,6 +65,16 @@ In the chat UI these outputs are rendered as a conversational markdown response 
 | Data | Pandas, NumPy |
 | Flight API | Docker container (scraper service), Requests |
 | Environment | Conda (Python 3.12.8) |
+## v2-scale roadmap:
+
+Phase	Status
+Phase 0 — branch + scaffolding	✅ Done
+Phase 1 — feature flags + config	✅ Done
+Phase 2 — flight service abstraction	✅ Done
+Phase 3 — knowledge base split + index	⬅️ Next
+Phase 4 — memory logging	Scaffolded (logs exist, nothing writes yet)
+Phase 5 — input pipeline	Flagged off, not started
+Phase 6 — mobile API	Flagged off, not started
 
 ## Project Structure
 
