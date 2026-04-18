@@ -11,55 +11,57 @@ log = logging.getLogger("wayfinder.explore")
 
 _COUNTRIES_DIR = Path(__file__).resolve().parent.parent / "data" / "countries"
 
-_COUNTRY_CODE_MAP = {
-    "Ecuador": "ec",
-    "Peru": "pe",
-    "Argentina": "ar",
-    "Bolivia": "bo",
-    "Brazil": "br",
-    "Chile": "cl",
-    "Colombia": "co",
-    "Guyana": "gy",
-    "Paraguay": "py",
-    "Suriname": "sr",
-    "Uruguay": "uy",
-    "Venezuela": "ve",
-}
+_CONTINENT_FOLDERS = [
+    "south_america",
+    "central_america",
+    "north_america",
+    "europe",
+    "asia",
+    "africa",
+    "oceania",
+    "southeast_asia",
+]
 
-# Continent subfolders to search (parallel subagent may move JSONs here)
-_CONTINENT_FOLDERS = ["south_america", "north_america", "europe", "asia", "africa", "oceania"]
-
-# Flag emojis
-_FLAGS = {
-    "ec": "\U0001f1ea\U0001f1e8",
-    "pe": "\U0001f1f5\U0001f1ea",
-    "ar": "\U0001f1e6\U0001f1f7",
-    "bo": "\U0001f1e7\U0001f1f4",
-    "br": "\U0001f1e7\U0001f1f7",
-    "cl": "\U0001f1e8\U0001f1f1",
-    "co": "\U0001f1e8\U0001f1f4",
-    "gy": "\U0001f1ec\U0001f1fe",
-    "py": "\U0001f1f5\U0001f1fe",
-    "sr": "\U0001f1f8\U0001f1f7",
-    "uy": "\U0001f1fa\U0001f1fe",
-    "ve": "\U0001f1fb\U0001f1ea",
-}
-
-# Country centroids for map markers
-_COUNTRY_CENTROIDS = {
-    "ec": (-1.8312, -78.1834),
-    "pe": (-9.19, -75.0152),
-    "ar": (-38.4161, -63.6167),
-    "bo": (-16.2902, -63.5887),
-    "br": (-14.235, -51.9253),
-    "cl": (-35.6751, -71.543),
-    "co": (4.5709, -74.2973),
-    "gy": (4.8604, -58.9302),
-    "py": (-23.4425, -58.4438),
-    "sr": (3.9193, -56.0278),
-    "uy": (-32.5228, -55.7658),
-    "ve": (6.4238, -66.5897),
-}
+@st.cache_data(ttl=600)
+def _discover_countries() -> dict:
+    """
+    Scan all continent folders and build a registry from JSON identity fields.
+    Returns dict keyed by display name (e.g. 'Costa Rica') with:
+        {
+            'file_stem': 'costarica',
+            'continent': 'central_america',
+            'flag': '🇨🇷',
+            'centroid': (9.7489, -83.7534),
+            'iso2': 'CR',
+        }
+    """
+    registry = {}
+    for continent in _CONTINENT_FOLDERS:
+        folder = _COUNTRIES_DIR / continent
+        if not folder.is_dir():
+            continue
+        for json_file in sorted(folder.glob("*.json")):
+            if json_file.stem.startswith("."):
+                continue
+            try:
+                data = json.loads(json_file.read_text(encoding="utf-8"))
+            except (json.JSONDecodeError, OSError):
+                continue
+            identity = data.get("identity", {})
+            name = identity.get("name")
+            if not name:
+                continue
+            # centroid: prefer identity fields, fall back to None
+            lat = identity.get("latitude") or identity.get("lat")
+            lon = identity.get("longitude") or identity.get("lon")
+            registry[name] = {
+                "file_stem": json_file.stem,
+                "continent": continent,
+                "flag": identity.get("flag_emoji", ""),
+                "centroid": (float(lat), float(lon)) if lat and lon else None,
+                "iso2": (identity.get("code") or "").upper(),
+            }
+    return registry
 
 # City → country mapping for auto-detection from destination_city
 _CITY_COUNTRY_MAP = {
@@ -91,10 +93,7 @@ def _load_profile(country_name: str) -> dict | None:
 
     Returns a flat dict that all render tabs use, or None if no JSON found.
     """
-    cc = _COUNTRY_CODE_MAP.get(country_name)
-    if not cc:
-        return None
-    data = _load_country_json(cc)
+    data = _load_country_json(country_name)
     if not data:
         return None
 
@@ -536,48 +535,67 @@ DANGER_MARKERS = {
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
-def _load_country_json(country_code: str) -> dict | None:
-    """Load country JSON, checking continent subfolders then root."""
-    cc = country_code.lower().strip()
-    base = _COUNTRIES_DIR
+def _load_country_json(country_name: str) -> dict | None:
+    """Load country JSON by display name using the discovered registry."""
+    registry = _discover_countries()
+    entry = registry.get(country_name)
+    if not entry:
+        return None
+    path = _COUNTRIES_DIR / entry["continent"] / f"{entry['file_stem']}.json"
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as e:
+        log.error("Failed to load country JSON %s: %s", path, e)
+        return None
+def _get_hike_markers(country_name: str) -> list[tuple]:
+    """Extract (name, lat, lon) from outdoors.top_day_hikes + multi_day_treks."""
+    data = _load_country_json(country_name)
+    if not data:
+        return []
+    markers = []
+    for section in ["top_day_hikes", "multi_day_treks"]:
+        for h in (data.get("outdoors", {}).get(section) or []):
+            if isinstance(h, dict) and h.get("lat") and h.get("lon"):
+                markers.append((h["name"], float(h["lat"]), float(h["lon"])))
+    return markers
 
-    for continent in _CONTINENT_FOLDERS:
-        path = base / continent / f"{cc}.json"
-        if path.exists():
-            try:
-                return json.loads(path.read_text(encoding="utf-8"))
-            except (json.JSONDecodeError, OSError) as e:
-                log.error("Failed to load country JSON %s: %s", path, e)
-                return None
 
-    path = base / f"{cc}.json"
-    if path.exists():
-        try:
-            return json.loads(path.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, OSError) as e:
-            log.error("Failed to load country JSON %s: %s", path, e)
-            return None
+def _get_surf_markers(country_name: str) -> list[tuple]:
+    """Extract (name, lat, lon) from outdoors.surf_spots."""
+    data = _load_country_json(country_name)
+    if not data:
+        return []
+    markers = []
+    for s in (data.get("outdoors", {}).get("surf_spots") or []):
+        if isinstance(s, dict) and s.get("lat") and s.get("lon"):
+            markers.append((s["name"], float(s["lat"]), float(s["lon"])))
+    return markers
 
-    for p in base.glob("*.json"):
-        if p.stem.lower().startswith(cc):
-            try:
-                return json.loads(p.read_text(encoding="utf-8"))
-            except (json.JSONDecodeError, OSError) as e:
-                log.error("Failed to load country JSON %s: %s", p, e)
-                return None
-    for continent in _CONTINENT_FOLDERS:
-        continent_dir = base / continent
-        if continent_dir.is_dir():
-            for p in continent_dir.glob("*.json"):
-                if p.stem.lower().startswith(cc):
-                    try:
-                        return json.loads(p.read_text(encoding="utf-8"))
-                    except (json.JSONDecodeError, OSError) as e:
-                        log.error("Failed to load country JSON %s: %s", p, e)
-                        return None
 
-    return None
+def _get_park_markers(country_name: str) -> list[tuple]:
+    """Extract (name, lat, lon) from outdoors.top_national_parks or outdoors.national_parks."""
+    data = _load_country_json(country_name)
+    if not data:
+        return []
+    markers = []
+    outdoors = data.get("outdoors", {})
+    parks = outdoors.get("top_national_parks") or outdoors.get("national_parks") or []
+    for p in parks:
+        if isinstance(p, dict) and p.get("lat") and p.get("lon"):
+            markers.append((p["name"], float(p["lat"]), float(p["lon"])))
+    return markers
 
+
+def _get_danger_markers(country_name: str) -> list[tuple]:
+    """Extract (name, lat, lon) from safety.danger_zones."""
+    data = _load_country_json(country_name)
+    if not data:
+        return []
+    markers = []
+    for d in (data.get("safety", {}).get("danger_zones") or []):
+        if isinstance(d, dict) and d.get("lat") and d.get("lon"):
+            markers.append((d["name"], float(d["lat"]), float(d["lon"])))
+    return markers
 
 def _get(data, dotpath, default=None):
     """Resolve a dot-separated path into nested dicts."""
@@ -598,46 +616,40 @@ def _no_data():
 
 
 def _detect_country() -> str:
-    """Detect country from session state, return country name (e.g. 'Ecuador', 'Argentina')."""
-    # Build dynamic lookups
-    _valid_countries = set(_COUNTRY_CODE_MAP.keys())
-    _code_to_name = {v.upper(): k for k, v in _COUNTRY_CODE_MAP.items()}
-    _name_lower_to_name = {k.lower(): k for k in _COUNTRY_CODE_MAP}
+    """Detect country from session state. Falls back to first available country."""
+    registry = _discover_countries()
+    valid_countries = set(registry.keys())
+    name_lower_map = {k.lower(): k for k in registry}
+    iso2_map = {v["iso2"]: k for k, v in registry.items() if v["iso2"]}
 
     explore_country = st.session_state.get("explore_country", "")
-    if explore_country in _valid_countries:
+    if explore_country in valid_countries:
         return explore_country
 
     sel = st.session_state.get("selected_location")
-    if isinstance(sel, dict):
-        country = sel.get("country", "")
-        if country:
-            cl = country.lower()
-            for name_lower, name in _name_lower_to_name.items():
-                if name_lower in cl:
-                    return name
+    if isinstance(sel, dict) and sel.get("country"):
+        cl = sel["country"].lower()
+        for name_lower, name in name_lower_map.items():
+            if name_lower in cl:
+                return name
 
     dest = st.session_state.get("destination_airport", {})
     if isinstance(dest, dict):
-        cc = dest.get("country_code", "") or dest.get("country", "")
-        cc_upper = cc.upper().strip()
-        # Check ISO code
-        if cc_upper in _code_to_name:
-            return _code_to_name[cc_upper]
-        # Check full name
-        if cc_upper in {n.upper() for n in _valid_countries}:
-            return _name_lower_to_name.get(cc.lower(), "Ecuador")
+        cc = (dest.get("country_code") or dest.get("country") or "").upper().strip()
+        if cc in iso2_map:
+            return iso2_map[cc]
+        matched = name_lower_map.get(cc.lower())
+        if matched:
+            return matched
 
     dest_city = st.session_state.get("destination_city", "")
     if dest_city:
         city_lower = dest_city.lower().strip()
-        # Exact match first
         matched = _CITY_COUNTRY_MAP.get(city_lower)
-        if matched:
+        if matched and matched in valid_countries:
             return matched
-        # Substring match
         for city_key, country_name in _CITY_COUNTRY_MAP.items():
-            if city_key in city_lower:
+            if city_key in city_lower and country_name in valid_countries:
                 return country_name
 
     return "Ecuador"
@@ -669,20 +681,13 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
         st.warning("Install `folium` and `streamlit-folium` to see the interactive map.")
         return
 
-    country_centers = {
-        "Ecuador": ([-1.5, -78.0], 7),
-        "Peru": ([-9.0, -75.0], 6),
-        "Argentina": ([-38.4, -63.6], 4),
-        "Bolivia": ([-16.3, -63.6], 6),
-        "Brazil": ([-14.2, -51.9], 4),
-        "Chile": ([-35.7, -71.5], 4),
-        "Colombia": ([4.6, -74.3], 6),
-        "Guyana": ([4.9, -58.9], 7),
-        "Paraguay": ([-23.4, -58.4], 6),
-        "Suriname": ([3.9, -56.0], 7),
-        "Uruguay": ([-32.5, -55.8], 7),
-        "Venezuela": ([6.4, -66.6], 6),
-    }
+    registry = _discover_countries()
+    entry = registry.get(active_country, {})
+    centroid = entry.get("centroid")
+    if centroid:
+        center, zoom = list(centroid), 6
+    else:
+        center, zoom = [-15.0, -60.0], 3
     center, zoom = country_centers.get(active_country, ([-1.5, -78.0], 7))
 
     # Map controls row 1
@@ -803,7 +808,7 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
 
     # Hike markers — use HIKE_MARKERS lookup (lat/lon hardcoded per hike)
     if show_hikes:
-        hike_pins = HIKE_MARKERS.get(active_country, [])
+        hike_pins = _get_hike_markers(active_country)
         # Build a quick name→detail lookup from profile for popup enrichment
         profile = _load_profile(active_country)
         hike_detail = {}
@@ -830,7 +835,7 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
 
     # Surf spot markers — use hardcoded for Ecuador/Peru, JSON for others
     if show_surf:
-        surf_hardcoded = SURF_MARKERS.get(active_country, [])
+        surf_hardcoded = _get_surf_markers(active_country)
         if surf_hardcoded:
             # Build name→detail lookup from JSON profile
             surf_detail = {}
@@ -864,7 +869,7 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
 
     # National park markers — use hardcoded for Ecuador/Peru, JSON for others
     if show_parks:
-        parks_hardcoded = PARK_MARKERS.get(active_country, [])
+        parks_hardcoded = _get_park_markers(active_country)
         if parks_hardcoded:
             # Build name→detail lookup from JSON profile
             park_detail = {}
@@ -903,13 +908,13 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
 
     # Fix 3: Dangerous area markers
     if show_danger:
-        for danger_name, dlat, dlon in DANGER_MARKERS.get(active_country, []):
-            folium.Marker(
-                [dlat, dlon],
-                popup=folium.Popup(f"<b>\u26a0\ufe0f {danger_name}</b><br>Exercise caution", max_width=200),
-                tooltip=f"\u26a0\ufe0f {danger_name}",
-                icon=folium.Icon(color="red", icon="warning-sign", prefix="glyphicon"),
-            ).add_to(m)
+            for danger_name, dlat, dlon in _get_danger_markers(active_country):
+                folium.Marker(
+                    [dlat, dlon],
+                    popup=folium.Popup(f"<b>\u26a0\ufe0f {danger_name}</b><br>Exercise caution", max_width=200),
+                    tooltip=f"\u26a0\ufe0f {danger_name}",
+                    icon=folium.Icon(color="red", icon="warning-sign", prefix="glyphicon"),
+                ).add_to(m)
 
     map_data = st_folium(m, use_container_width=True, height=900, key="explore_main_map")
 
