@@ -1002,10 +1002,18 @@ def _detect_country() -> str:
     name_lower_map = {k.lower(): k for k in registry}
     iso2_map = {v["iso2"]: k for k, v in registry.items() if v["iso2"]}
 
+    # ── Manual user pick always wins ──────────────────────────────────────────
+    # The selectbox writes to "explore_country"; once the user picks manually,
+    # we set "explore_country_locked" so auto-detection never clobbers it.
+    locked = st.session_state.get("explore_country_locked", "")
+    if locked in valid_countries:
+        return locked
+
     explore_country = st.session_state.get("explore_country", "")
     if explore_country in valid_countries:
         return explore_country
 
+    # ── Auto-detection fallbacks (only reached if no manual pick) ─────────────
     sel = st.session_state.get("selected_location")
     if isinstance(sel, dict) and sel.get("country"):
         cl = sel["country"].lower()
@@ -2067,7 +2075,16 @@ def render_explore_page() -> None:
     )
     registry = _discover_countries()
     all_countries = sorted(registry.keys())
+    def _on_country_change():
+        st.session_state["explore_country_locked"] = st.session_state["explore_country"]
 
+        st.selectbox(
+            "Country",
+            options=sorted(registry.keys()),
+            index=sorted(registry.keys()).index(active_country),
+            key="explore_country",
+            on_change=_on_country_change,
+        )
     default_country = _detect_country()  # auto-detect from chat/session
     # Only use auto-detect as default if user hasn't manually selected
     if "explore_country_manual" not in st.session_state:
