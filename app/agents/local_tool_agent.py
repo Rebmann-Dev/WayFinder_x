@@ -35,7 +35,8 @@ from agents.tool_definitions import TOOLS
 from agents.tool_executor import ToolExecutor
 from core.config import settings
 from services.model_service import ModelService
-from services.tavily_service import TavilyService
+from services.tavily_service import TavilyService, _find_country_json
+from services.knowledge_service import KnowledgeService
 
 log = logging.getLogger("wayfinder.agent")
 
@@ -879,89 +880,101 @@ class LocalToolAgent:
 
     @staticmethod
     def _load_full_country_json(country_code: str) -> dict | None:
-        """Load and return the full country JSON for a given country code."""
-        from services.tavily_service import _find_country_json
-        json_path = _find_country_json(country_code)
-        if json_path is None:
-            return None
-        try:
-            return json.loads(json_path.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, OSError):
-            return None
+        return KnowledgeService.load_country(country_code)
 
-    @staticmethod
-    def _resolve_country_code(query: str = "") -> tuple[str | None, str]:
-        """Resolve country code and name from query text then session state.
 
-        Returns (country_code, country_name) or (None, "").
+    def _resolve_country_code(self, query: str = "") -> tuple[str | None, str]:
         """
-        code_to_name = {
-            "ec": "Ecuador",
-            "pe": "Peru",
-            "jp": "Japan",
-        }
-        country_code = None
+        Resolve (country_id, display_name) from query + session state.
 
-        # 1. Try to detect country directly from the query text
-        if query:
-            query_lower = query.lower()
-            if any(w in query_lower for w in [
-                "ecuador", "ecuadorian", "galapagos", "quito",
-                "guayaquil", "cuenca", "manta",
-            ]):
-                country_code = "ec"
-            elif any(w in query_lower for w in [
-                "peru", "peruvian", "lima", "cusco", "machu picchu",
-                "arequipa", "mancora", "huanchaco",
-            ]):
-                country_code = "pe"
-            elif any(w in query_lower for w in [
-                "japan", "japanese", "tokyo", "kyoto",
-                "osaka", "sapporo", "hokkaido", "nagano",
-            ]):
-                country_code = "jp"
-        # 2. Fall back to session state if query text didn't match
-        if not country_code:
-            country_map = {
-            "ecuador": "ec",
-            "peru": "pe",
-            "japan": "jp",
-            "Ecuador": "ec",
-            "Peru": "pe",
-            "Japan": "jp",
-        }
-            # Check selected_location FIRST (destination_airport is never written)
-            selected = st.session_state.get("selected_location") or {}
-            sel_country = selected.get("country", "").lower()
-            country_code = country_map.get(sel_country)
-            if not country_code:
-                sel_city = (selected.get("city") or "").lower()
-                if any(c in sel_city for c in ["quito", "guayaquil", "cuenca", "manta"]):
-                    country_code = "ec"
-                elif any(c in sel_city for c in ["lima", "cusco", "arequipa", "mancora", "huanchaco"]):
-                    country_code = "pe"
-                elif any(c in sel_city for c in ["tokyo", "kyoto", "osaka", "sapporo", "hokkaido", "nagano"]):
-                    country_code = "jp"
-            if not country_code:
-                destination = st.session_state.get("destination_airport", {})
-                country_name = ""
-                if isinstance(destination, dict):
-                    country_name = destination.get("country", "").lower()
-                country_code = country_map.get(country_name)
+        country_id is used for JSON lookup and as the country_code passed to Tavily.
+        It MUST match the filename stem (e.g. 'chile' -> chile.json).
+        """
+        # 1) Try session-selected location first
+        selected = st.session_state.get("selected_location") or {}
+        if selected.get("country"):
+            country_name = str(selected["country"]).strip()
+        else:
+            country_name = ""
 
-            if not country_code:
-                dest_city = st.session_state.get("destination_city", "").lower()
-                if any(c in dest_city for c in ["quito", "guayaquil", "cuenca", "manta"]):
-                    country_code = "ec"
-                elif any(c in dest_city for c in ["lima", "cusco", "arequipa", "mancora", "huanchaco"]):
-                    country_code = "pe"
-                elif any(c in dest_city for c in ["tokyo", "kyoto", "osaka", "sapporo", "hokkaido", "nagano"]):
-                    country_code = "jp"
+        # 2) If no session country, geocode the query once
+        if not country_name and query:
+            result = None
+            try:
+                result = self._executor._safety.geocode_place(query)
+            except Exception:
+                result = None
+            if result is not None:
+                _lat, _lon, geocoded_country = result
+                country_name = str(geocoded_country).strip()
+        if not country_name and query:
+            q_lower = query.lower()
 
-        if not country_code:
+            # e.g. "tell me about the food in chile" -> "chile"
+            m = re.search(r"\bin\s+([a-zA-Z\s]+)$", q_lower)
+            candidate = None
+            if m:
+                candidate = m.group(1).strip(" ?!.,")
+
+            # Fallback: last word of the query
+            if not candidate:
+                tokens_q = [t for t in re.split(r"[,\s]+", q_lower) if t]
+                if tokens_q:
+                    candidate = tokens_q[-1].strip(" ?!.,")
+
+            if candidate:
+                json_path_guess = _find_country_json(candidate)
+                if json_path_guess is not None:
+                    # Treat this as our country name so step 3 can use it
+                    country_name = candidate.title()
+
+        if not country_name:
             return None, ""
 
-        return country_code, code_to_name.get(country_code, country_code.upper())
+        # 3) Try to map that country_name to a local JSON file
+        #    Handle cases like "Republic of Chile" → "chile.json"
+        lower_name = country_name.lower()
+
+        # Try both the full name and the last token as candidates
+        tokens = [t for t in re.split(r"[,\s]+", lower_name) if t]
+        candidates: list[str] = []
+        if lower_name:
+            candidates.append(lower_name)
+        if tokens:
+            last = tokens[-1]
+            if last and last not in candidates:
+                candidates.append(last)
+
+        json_path = None
+        for cand in candidates:
+            json_path = _find_country_json(cand)
+            if json_path is not None:
+                break
+
+        if json_path is None:
+            # No local JSON yet — use the country name itself as ID.
+            return lower_name, country_name
+
+        # 4) We have local JSON: use the filename stem as the canonical ID
+        try:
+            data = json.loads(json_path.read_text(encoding="utf-8"))
+        except Exception:
+            country_id = json_path.stem.lower()
+            return country_id, country_id.title()
+
+        identity = data.get("identity") or {}
+        country_id = json_path.stem.lower()
+        name = str(identity.get("name") or country_name or country_id.upper()).strip()
+        
+        log.info(
+        "AGENT country_resolve  query=%r country_name=%r candidates_id=%r display_name=%r",
+        query,
+        country_name,
+        country_id,
+        name,
+    )
+        
+        return country_id, name
 
     def _check_country_json(self, query: str) -> str | None:
         """Check country JSON for an answer before calling LLM.
@@ -1109,6 +1122,21 @@ class LocalToolAgent:
             user_wants_flights,
             user_wants_safety,
         )
+
+        # NEW: if flight finder is disabled, bail out with a clear message. will circle around when we want flight finding function back
+        if (
+            user_wants_flights
+            and getattr(settings, "flight_scraper_mode", "off") == "off"
+        ):
+            msg = (
+                "Right now my flight finder is disabled so I can't look up live "
+                "flights. I can still help you choose explore destinations, dates, and "
+                "routes based on safety and trip goals."
+            )
+            yield AgentStreamEvent("done", msg)
+            messages.append({"role": "assistant", "content": msg})
+            log.info("AGENT DONE  flight finder disabled short-circuit")
+            return
 
         thread: list[dict[str, Any]] = list(messages)
         date_str: str | None = None

@@ -1,3 +1,5 @@
+# app/tools/flight_search.py
+
 from models.flight_search import FlightSearchRequest
 from services.flight import get_flight_provider
 
@@ -7,42 +9,46 @@ class FlightSearchTool:
         self.provider = get_flight_provider()
 
     def run(self, request: FlightSearchRequest):
-        if not request.is_ready():
-            missing = []
-            if not request.origin:
-                missing.append("origin")
-            if not request.destination:
-                missing.append("destination")
-            if not request.departure_date:
-                missing.append("departure date")
-
+        # If the request is complete, call the provider directly
+        if request.is_ready():
+            flights = self.provider.search_flights(
+                origin=request.origin,
+                destination=request.destination,
+                departure_date=request.departure_date,
+                return_date=request.return_date,
+                max_stops=request.max_stops,
+                max_price=request.max_price,
+                adults=request.adults,
+                children=request.children,
+            )
             return {
-                "success": False,
-                "missing_fields": missing,
-                "data": {
-                    "success": False,
-                    "error": (
-                        "I need "
-                        + ", ".join(missing)
-                        + ". Use 3-letter airport codes (e.g. SEA, JFK) and a date as YYYY-MM-DD."
-                    ),
-                    "flights": [],
-                },
+                "success": True,
+                "missing_fields": [],
+                "data": flights,
             }
 
-        flights = self.provider.search_flights(
-            origin=request.origin,
-            destination=request.destination,
-            departure_date=request.departure_date,
-            return_date=request.return_date,
-            max_stops=request.max_stops,
-            max_price=request.max_price,
-            adults=request.adults,
-            children=request.children,
+        # Otherwise, build a helpful clarification message
+        missing = []
+        if not request.origin:
+            missing.append("origin airport")
+        if not request.destination:
+            missing.append("destination airport")
+        if not request.departure_date:
+            missing.append("departure date (YYYY-MM-DD)")
+
+        msg = (
+            "To search flights I need "
+            + ", ".join(missing)
+            + ". Use 3-letter airport codes (e.g. SAN, UIO) "
+            "and a date like 2026-05-10."
         )
 
         return {
-            "success": True,
-            "missing_fields": [],
-            "data": flights,
+            "success": False,
+            "missing_fields": missing,
+            "data": {
+                "success": False,
+                "error": msg,
+                "flights": [],
+            },
         }

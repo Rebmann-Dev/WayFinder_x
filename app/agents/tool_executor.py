@@ -6,7 +6,7 @@ from typing import Any
 import streamlit as st
 
 from services.airport_search_service import search_airports
-from services.flight_api import FlightAPIService
+from services.flight.factory import get_flight_provider
 from services.safety_service import SafetyService
 
 
@@ -117,7 +117,8 @@ def _compact_flight(raw: dict[str, Any]) -> dict[str, str]:
 
 class ToolExecutor:
     def __init__(self) -> None:
-        self._flights = FlightAPIService()
+        # Uses flight_scraper_mode: "off" | "stub" | "live"
+        self._flights = get_flight_provider()
         self._safety = SafetyService()
 
     def run(self, name: str, arguments: dict[str, Any]) -> str:

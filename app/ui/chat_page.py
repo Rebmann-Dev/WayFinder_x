@@ -13,6 +13,7 @@ from ui.explore_page import render_explore_page
 from components.location_picker import location_picker
 from models.safety.schemas import SafetyRequest
 from ui.safety_display import render_safety_panel
+from ui.dev_tools import render_dev_tools 
 
 @st.cache_resource
 def get_model_service(_cache_version: str = "v6-mps-eager-attn") -> ModelService:
@@ -335,6 +336,10 @@ def _render_sidebar(safety_service: SafetyService) -> None:
         # ── Dev Tools ────────────────────────────────────────────────────
         st.divider()
         with st.expander("⚙️ Dev Tools", expanded=False):
+            render_dev_tools()
+'''
+        st.divider()
+        with st.expander("⚙️ Dev Tools", expanded=False):
             tavily_on = st.toggle(
                 "🌐 Enable Web Search (Tavily)",
                 value=st.session_state.get("tavily_enabled", False),
@@ -350,7 +355,7 @@ def _render_sidebar(safety_service: SafetyService) -> None:
 
 
 
-'''
+
 def _render_safety_results_panel(result: dict, label: str = "") -> None:
     """Render all safety scoring outputs as a clean tabbed panel."""
     import datetime as _dt
