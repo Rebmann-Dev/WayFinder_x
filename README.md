@@ -122,6 +122,139 @@ WayFinder/
 ├── environment.yml                      # Conda dependencies
 └── docker-compose.yml                   # Flight API scraper service
 ```
+### The Key New Layer: pipeline/
+This is the biggest improvement. Right now chat_orchestrator.py is just 30 lines of keyword matching . The new pipeline handles everything that happens before the agent sees the query:
+
+#### User Input
+    ↓
+input_processor.py       ← spell check, typo fix, NER (extracts country/city names)
+    ↓                       asks clarification if country is ambiguous or missing
+intent_classifier.py     ← classifies: safety / flight / explore / translate / general
+    ↓
+orchestrator.py          ← routes to: FlightAgent | LocalToolAgent | SafetyService | Tavily
+    ↓
+response_builder.py      ← assembles answer + sources + confidence + memory write
+    ↓
+API route OR Streamlit UI
+
+
+### LLM handeling Diagram
+
+flowchart TD
+    A[User message enters chat UI] --> B[LocalToolAgent.run(messages)]
+    B --> C[Emit status: Preparing your response]
+    C --> D[Intent detection<br/>is_flight_search_intent(messages)<br/>is_safety_intent(messages)]
+
+    D --> E{Flight intent?}
+    E -- Yes --> F{settings.flight_scraper_mode == off?}
+    F -- Yes --> G[Short-circuit done<br/>Return disabled-flight message]
+    F -- No --> H[Flight pre-resolution]
+
+    H --> H1[_update_destination_from_chat(messages)]
+    H1 --> H2[_pre_resolve_destination(thread)]
+    H2 --> H3[_pre_resolve_origin(thread)]
+    H3 --> H4[_pre_inject_date(thread, messages)]
+    H4 --> I[thread prepared with airport/date context]
+
+    E -- No --> J{Safety intent?}
+    J -- Yes --> K[_run_safety_short_circuit(messages)]
+    K --> K1{Location resolved?}
+    K1 -- Yes --> K2[ToolExecutor.run get_safety_assessment]
+    K2 --> K3[render_safety_result(result)]
+    K3 --> K4[Return done]
+    K1 -- No --> L[Fall through to model path]
+
+    J -- No --> M{Destination knowledge query?}
+    M -- Yes --> N[_check_country_json(latest_q)]
+    N --> N1{Mode = specific?}
+    N1 -- Yes --> N2[Return formatted JSON answer directly]
+    N1 -- No --> N3{Mode = broad or followup?}
+    N3 -- Yes --> N4[Set _json_context in session_state]
+    N4 --> O[Insert JSON context into thread as system message]
+    N3 -- No --> L
+    M -- No --> L
+
+    I --> P[Agent loop for step in range(agent_max_steps)]
+    O --> P
+    L --> P
+
+    P --> Q[Compute loop state<br/>grounded_codes = user_explicit_iata_codes + airport_codes_from_tool_results<br/>explicit_dates = user_explicit_dates<br/>already_searched = searched_since_last_user_message]
+
+    Q --> R{Flight short-circuit eligible?}
+    R -- Yes --> S[_run_short_circuit(thread, messages, grounded_codes, explicit_dates, date_str)]
+    S --> S1[Iterate ranked_destination_candidates(thread)]
+    S1 --> S2[ToolExecutor.run search_flights for each candidate]
+    S2 --> S3[_airport_safety_brief(candidate, cache)]
+    S3 --> S4[render_multi_airport_results(all_results)]
+    S4 --> S5[Return done]
+    R -- No --> T[Trim thread<br/>_trim_thread_to_fit(...)]
+
+    T --> U[LLM generation<br/>ModelService.stream_agent_turn(thread, tools=TOOLS)]
+    U --> V[Collect full_text]
+    V --> W[parse_tool_calls(full_text)]
+    W --> X[visible = strip_tool_blocks(full_text)]
+
+    X --> Y{Narration only and not last step?}
+    Y -- Yes --> P
+    Y -- No --> Z{Flight hallucination guard triggered?}
+    Z -- Yes --> P
+    Z -- No --> AA{Tool calls found?}
+
+    AA -- No --> AB[Final response path<br/>append assistant text to thread/messages<br/>yield done visible]
+    AA -- Yes --> AC[Append assistant tool-call text to thread]
+    AC --> AD[_check_tool_call_args(calls, thread)]
+
+    AD --> AE{Clarification needed?}
+    AE -- Yes --> AF[Return clarification done]
+    AE -- No --> AG[_execute_tool_calls(calls, thread, messages)]
+
+    AG --> AG1[For each call:<br/>normalize_arguments(call.arguments)]
+    AG1 --> AG2{Call name}
+    AG2 -- search_airports --> AG3[ToolExecutor.run search_airports]
+    AG2 -- search_flights --> AG4[ToolExecutor.run search_flights]
+    AG2 -- get_safety_assessment --> AG5[ToolExecutor.run get_safety_assessment]
+    AG2 -- other --> AG6[ToolExecutor.run name,args]
+
+    AG3 --> AH[Append tool result to thread/messages]
+    AG4 --> AI[render_search_flights_result(result)]
+    AG5 --> AJ[render_safety_result(result)]
+    AG6 --> AH
+
+    AI --> AK{Rendered final text?}
+    AJ --> AL{Rendered final text?}
+    AK -- Yes --> AM[Return done]
+    AK -- No --> AN[Continue loop]
+    AL -- Yes --> AM
+    AL -- No --> AN
+    AH --> AN
+    AN --> P
+
+    P --> AO{Max steps reached?}
+    AO -- Yes --> AP[Return fallback asking for airport codes and date]
+
+### Main stages
+The pipeline starts with LocalToolAgent.run(messages), which emits an initial status event, determines flight and safety intent, and then routes the request into one of four paths: disabled-flight short-circuit, flight pre-resolution, safety short-circuit, or general/model handling. For non-flight/non-safety destination questions, it also checks a JSON-first country knowledge path before invoking the model, using _check_country_json() and optionally injecting _json_context as a synthetic system message.
+
+### Flight path (if active)
+For flight requests, the agent first tries to ground missing context before the LLM does anything expensive: _update_destination_from_chat(), _pre_resolve_destination(), _pre_resolve_origin(), and _pre_inject_date() enrich the thread with airport and date context derived from session state and chat. If enough information is grounded—at least two airport codes, at least one explicit date, and no prior search since the last user turn—the agent bypasses the model with _run_short_circuit(), calls search_flights across ranked destination candidates, optionally attaches per-airport safety briefs, and returns rendered multi-airport results.
+
+### Safety path
+For safety-only questions, the agent avoids the LLM entirely if it can resolve a location. It uses _run_safety_short_circuit(), prefers session-state destination values, falls back to _extract_safety_location() from the raw user message, then calls ToolExecutor.run("get_safety_assessment", ...) and formats the answer with render_safety_result(). If no location can be resolved, it falls through into the normal model path rather than failing immediately.
+
+### Country JSON path
+For destination knowledge queries like food, weather, surf, budget, safety, or broad country overviews, the agent checks _DESTINATION_KNOWLEDGE_RE and runs _check_country_json(latest_q) before model generation. That method uses _resolve_country_code() and _classify_query() to split requests into specific, broad, or followup: specific queries return a formatted JSON-backed answer immediately, while broad/follow-up queries store compact overview context in st.session_state["_json_context"] and inject it into the LLM thread as a system message.
+
+### LLM loop
+If no deterministic short-circuit finishes the turn, the request enters the bounded multi-step agent loop for step in range(settings.agent_max_steps). Each iteration recomputes grounded_codes, explicit_dates, and already_searched, optionally re-checks eligibility for flight short-circuiting, trims the thread with _trim_thread_to_fit(...), then calls self._model.stream_agent_turn(thread, tools=TOOLS) to generate the next assistant turn. The raw model output is split into full_text, parsed with parse_tool_calls(full_text), and cleaned for visible user text using strip_tool_blocks(full_text).
+
+### Guards and tools
+After each LLM turn, two guardrails can force another loop iteration instead of trusting the output: is_narration(visible) catches useless “I’m searching…” style text, and _FLIGHT_HALLUCINATION_RE catches fabricated flight results if no actual search_flights tool result exists yet. If the LLM emitted tool calls, the agent validates them with _check_tool_call_args(), which can trigger strict_airport_clarification() or strict_date_clarification(), and otherwise executes them through _execute_tool_calls().
+
+### Tool execution
+Inside _execute_tool_calls(), each tool call is normalized and run via ToolExecutor.run(name, args), with special-case handling for search_airports, search_flights, and get_safety_assessment. Tool results are appended to both thread and messages, and certain tool outputs can become final user-visible answers immediately through render_search_flights_result(result_str) or render_safety_result(result_str); if not, control returns to the loop for another LLM step.
+
+### End conditions
+The run ends in one of five ways: an early deterministic short-circuit, a JSON-specific answer, a rendered tool result, a plain final LLM response with no tool calls, or a max-step fallback asking for more specific airport/date details. The convenience wrapper run_collect(messages) simply consumes the event stream and returns the last "done" text.
 
 ### Project Elements
 
