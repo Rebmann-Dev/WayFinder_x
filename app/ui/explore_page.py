@@ -1296,21 +1296,23 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
 
     # Fix 3: Dangerous area markers
     if show_danger:
-            for danger_name, dlat, dlon in _get_danger_markers(active_country):
-                folium.Marker(
-                    [dlat, dlon],
-                    popup=folium.Popup(f"<b>\u26a0\ufe0f {danger_name}</b><br>Exercise caution", max_width=200),
-                    tooltip=f"\u26a0\ufe0f {danger_name}",
-                    icon=folium.Icon(color="red", icon="warning-sign", prefix="glyphicon"),
-                ).add_to(m)
+        for danger_name, dlat, dlon in _get_danger_markers(active_country):
+            folium.Marker(
+                [dlat, dlon],
+                popup=folium.Popup(f"<b>\u26a0\ufe0f {danger_name}</b><br>Exercise caution", max_width=200),
+                tooltip=f"\u26a0\ufe0f {danger_name}",
+                icon=folium.Icon(color="red", icon="warning-sign", prefix="glyphicon"),
+            ).add_to(m)
+
 
     map_data = st_folium(m, use_container_width=True, height=900, key="explore_main_map")
+
 
     # Capture map click and reverse-geocode
     clicked = map_data.get("last_clicked") if map_data else None
     if clicked and clicked.get("lat") is not None and clicked.get("lng") is not None:
         c_lat, c_lng = clicked["lat"], clicked["lng"]
-        c_lng = ((c_lng + 180) % 360) - 180                          ###### added above this 4/14 -- trying to combat the lat lon out of bounds & location picker reverting to SA country (snapping back)
+        c_lng = ((c_lng + 180) % 360) - 180  # combat lat/lon out of bounds snapping back (4/14)
 
         if (c_lat != st.session_state.get("explore_click_lat")
                 or c_lng != st.session_state.get("explore_click_lon")):
@@ -1332,7 +1334,8 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
             except Exception:
                 st.session_state["explore_click_name"] = f"{c_lat:.4f}, {c_lng:.4f}"
 
-            # Fix 2: detect country from click coordinates and switch if different Fix 3: adding toggle can come off when we find new solution or have every single country maped with code
+            # Fix 2: detect country from click coordinates and switch if different
+            # Fix 3: toggle can be removed once every country is mapped with a code
             if st.session_state.get("explore_auto_country_snap", False):
                 detected_cc = _detect_country_from_coords(c_lat, c_lng)
                 if detected_cc:
@@ -1340,6 +1343,7 @@ def _render_map_tab(active_country: str, data: dict | None) -> None:
                     detected_name = cc_to_country.get(detected_cc)
                     if detected_name and detected_name != st.session_state.get("explore_country"):
                         st.session_state["explore_country"] = detected_name
+                        st.session_state["explore_country_locked"] = detected_name  # ← FIX: unlock locked key so _detect_country respects the click
 
             st.rerun()
 
@@ -1444,170 +1448,6 @@ def _run_safety_score(explore_dest: str, active_country: str, sel_month: int) ->
         except Exception as e:
             st.error(f"Scoring failed: {e}")
 
-'''
-def _render_safety_results_panel(result: dict, label: str = "") -> None:
-    """Render safety scoring outputs as a tabbed panel (Fix 1: restored sub-tabs)."""
-    score = result.get("safety_score")
-    band = result.get("risk_band", "---")
-    model_version = result.get("model_version", "---")
-
-    if label:
-        st.markdown(f"**{label}**")
-
-    m_col1, m_col2, m_col3 = st.columns(3)
-    m_col1.metric("Safety Score", f"{score:.1f}/100" if score is not None else "---")
-    m_col2.metric("Risk Band", f"{band}")
-    m_col3.metric("Model", model_version)
-
-    details = result.get("details", {})
-    weather = result.get("weather_risk", {})
-    ecuador = result.get("ecuador_risk", {})
-    peru_r = result.get("peru_risk", {})
-    lgbt = result.get("lgbt_safety") or (result.get("details", {}) or {}).get("lgbt_safety", {})
-
-    tab_labels = ["Score Details"]
-    if isinstance(weather, dict) and weather and not weather.get("error"):
-        tab_labels.append("Weather")
-    if isinstance(ecuador, dict) and ecuador.get("applicable"):
-        tab_labels.append("Ecuador")
-    if isinstance(peru_r, dict) and peru_r.get("applicable"):
-        tab_labels.append("Peru")
-    if isinstance(lgbt, dict) and "lgbt_safety_score" in lgbt:
-        tab_labels.append("LGBT")
-
-    tabs = st.tabs(tab_labels)
-    tab_idx = 0
-
-    # ── Score Details tab ────────────────────────────────────────────
-    with tabs[tab_idx]:
-        tab_idx += 1
-        d_col1, d_col2 = st.columns(2)
-        with d_col1:
-            st.markdown("**Model breakdown**")
-            if isinstance(details, dict):
-                mlp = details.get("mlp_score_v6")
-                rf = details.get("rf_score_v6")
-                v9b = details.get("v9b_score")
-                if mlp is not None:
-                    st.metric("MLP v6", f"{mlp:.1f}")
-                if rf is not None:
-                    st.metric("Random Forest v6", f"{rf:.1f}")
-                if v9b is not None:
-                    st.metric("v9b MLP", f"{v9b:.1f}")
-        with d_col2:
-            st.markdown("**Location**")
-            r_lat = result.get("latitude")
-            r_lon = result.get("longitude")
-            r_country = result.get("country", "---")
-            if r_lat and r_lon:
-                st.caption(f"{r_lat:.4f}, {r_lon:.4f}")
-            st.caption(f"{r_country}")
-            if isinstance(details, dict):
-                feat_count = details.get("feature_count")
-                if feat_count:
-                    st.caption(f"Features used: {feat_count}")
-
-    # ── Weather tab (Fix 1) ──────────────────────────────────────────
-    if isinstance(weather, dict) and weather and not weather.get("error") and tab_idx <= len(tabs) - 1:
-        with tabs[tab_idx]:
-            tab_idx += 1
-            st.markdown("### Weather Risk")
-            w_score = weather.get("weather_risk_score", "---")
-            w_label = weather.get("weather_risk_label", "---")
-            st.markdown(f"## {w_score}/5 -- {w_label}")
-            assessment = weather.get("travel_month_assessment", "")
-            if assessment:
-                st.info(assessment)
-            active_risks = weather.get("active_risks") or weather.get("risks", [])
-            if active_risks:
-                st.markdown("**Active risks this month:**")
-                for risk in active_risks:
-                    if isinstance(risk, dict):
-                        risk_name = risk.get("name") or risk.get("risk", "Unknown")
-                        severity = risk.get("severity", 0)
-                        dots = "\U0001f534" * severity if severity else ""
-                        desc = risk.get("description") or risk.get("notes", "")
-                        with st.expander(f"{dots} {risk_name}"):
-                            if desc:
-                                st.write(desc)
-                    elif isinstance(risk, str):
-                        with st.expander(f"\U0001f534 {risk}"):
-                            st.write(risk)
-
-    # ── Ecuador tab (Fix 1) ──────────────────────────────────────────
-    if isinstance(ecuador, dict) and ecuador.get("applicable") and tab_idx <= len(tabs) - 1:
-        with tabs[tab_idx]:
-            tab_idx += 1
-            e_col1, e_col2, e_col3 = st.columns(3)
-            e_col1.metric("Overall Risk", f"{ecuador.get('overall_risk', '---')}/5")
-            e_col2.metric("Crime Risk", f"{ecuador.get('crime_risk', '---')}/5")
-            e_col3.metric("Wildlife Risk", f"{ecuador.get('wildlife_risk', '---')}/5")
-            province = ecuador.get("province") or ecuador.get("region", "")
-            homicide_rate = ecuador.get("homicide_rate")
-            if province or homicide_rate:
-                parts = []
-                if province:
-                    parts.append(f"Province: {province}")
-                if homicide_rate is not None:
-                    parts.append(f"Homicide rate: {homicide_rate}/100k")
-                st.markdown(" \u00b7 ".join(parts))
-            note = ecuador.get("note") or ecuador.get("summary", "")
-            if note:
-                if ecuador.get("overall_risk", 0) >= 4:
-                    st.warning(note)
-                else:
-                    st.info(note)
-
-    # ── Peru tab (Fix 1) ─────────────────────────────────────────────
-    if isinstance(peru_r, dict) and peru_r.get("applicable") and tab_idx <= len(tabs) - 1:
-        with tabs[tab_idx]:
-            tab_idx += 1
-            p_col1, p_col2, p_col3 = st.columns(3)
-            p_col1.metric("Overall Risk", f"{peru_r.get('overall_risk', '---')}/5")
-            p_col2.metric("Crime Risk", f"{peru_r.get('crime_risk', '---')}/5")
-            p_col3.metric("Wildlife Risk", f"{peru_r.get('wildlife_risk', '---')}/5")
-            province = peru_r.get("province") or peru_r.get("region", "")
-            homicide_rate = peru_r.get("homicide_rate")
-            if province or homicide_rate:
-                parts = []
-                if province:
-                    parts.append(f"Province: {province}")
-                if homicide_rate is not None:
-                    parts.append(f"Homicide rate: {homicide_rate}/100k")
-                st.markdown(" \u00b7 ".join(parts))
-            note = peru_r.get("note") or peru_r.get("summary", "")
-            if note:
-                if peru_r.get("overall_risk", 0) >= 4:
-                    st.warning(note)
-                else:
-                    st.info(note)
-
-    # ── LGBT tab (Fix 1) ─────────────────────────────────────────────
-    if isinstance(lgbt, dict) and "lgbt_safety_score" in lgbt and tab_idx <= len(tabs) - 1:
-        with tabs[tab_idx]:
-            tab_idx += 1
-            labels_map = {
-                1: "Criminalized",
-                2: "Hostile",
-                3: "Neutral",
-                4: "Accepting",
-                5: "Very Safe",
-            }
-            score_l = lgbt.get("lgbt_safety_score")
-            legal_idx = lgbt.get("lgbt_legal_index")
-            l_col1, l_col2 = st.columns(2)
-            l_col1.metric("LGBT Safety Score", f"{score_l}/5" if score_l else "---")
-            if legal_idx is not None:
-                l_col2.metric("Legal Index", f"{legal_idx:.1f}/100")
-            verdict_label = labels_map.get(score_l, "---")
-            if score_l == 5:
-                st.markdown(f"**Very Safe -- full legal equality**")
-            elif score_l:
-                st.markdown(f"**{verdict_label}**")
-            confidence = lgbt.get("confidence") or "high"
-            st.markdown(f"Data confidence: {confidence}")
-            st.caption("Source: ILGA World, Rainbow Map, and WayFinder LGBT classifier (1 = Criminalized \u2192 5 = Very Safe)")
-'''
 
 def _render_hikes_tab(active_country: str) -> None:
     """Render the Hikes tab with hike info cards loaded from JSON."""
