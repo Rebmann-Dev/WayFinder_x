@@ -22,6 +22,7 @@ from app.models.safety.predictor import SafetyPredictor
 
 logger = logging.getLogger(__name__)
 
+# ── Single FastAPI instance ────────────────────────────────────────────────────
 app = FastAPI(
     title="WayFinder Location Picker",
     description="Location capture API — milestone 1 of WayFinder safety prediction pipeline.",
@@ -51,23 +52,6 @@ def load_predictor():
     except Exception as e:
         logger.error("Failed to load SafetyPredictor: %s", e)
         _predictor = None
-##### added above this 4/14 -- trying to combat the lat lon out of bounds & location picker reverting to SA country
-app = FastAPI(
-    title="WayFinder Location Picker",
-    description="Location capture API — milestone 1 of WayFinder safety prediction pipeline.",
-    version="0.2.0",
-)
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
-        "http://localhost:8080",
-        "http://127.0.0.1:8080",
-        "http://localhost:3000",
-    ],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 
 class CoordinatesRequest(BaseModel):
@@ -136,7 +120,7 @@ def echo_coordinates(payload: CoordinatesRequest):
         message=f"Coordinates received: ({payload.lat:.5f}, {payload.lon:.5f})",
     )
 
-##### replaced this 4/14 -- trying to combat the lat lon out of bounds & location picker reverting to SA country
+
 @app.post("/api/v1/predict", response_model=PredictionResponse)
 def predict_safety(payload: CoordinatesRequest):
     if _predictor is None:
@@ -151,7 +135,7 @@ def predict_safety(payload: CoordinatesRequest):
         result = _predictor.predict_full(
             latitude=payload.lat,
             longitude=payload.lon,
-            country=payload.country,          # passes country name string
+            country=payload.country,
         )
         score = result.get("safety_score")
         model_ver = result.get("model_version", "unknown")
