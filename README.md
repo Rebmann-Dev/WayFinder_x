@@ -71,56 +71,91 @@ In the chat UI these outputs are rendered as a conversational markdown response 
 ```
 WayFinder/
 ├── app/
-│   ├── main.py                          # Streamlit entry point
+│   ├── main.py                                 # Streamlit entry point; bootstraps app UI
 │   ├── core/
-│   │   └── config.py                    # App settings (model name, tokens, temperature)
+│   │   └── config.py                           # Global settings: model config, agent_max_steps, feature toggles, flight_scraper_mode
+│   │
 │   ├── ui/
-│   │   ├── chat_page.py                 # Main page: map, safety panel, chat
-│   │   ├── chat_handlers.py             # User/assistant message handling
-│   │   ├── renderers.py                 # Streaming response rendering
-│   │   ├── styles.py                    # Global CSS
-│   │   └── translate_widget.py          # Floating live-translate widget
+│   │   ├── chat_page.py                        # Main chat screen: map, safety panel, destination picker, chat layout
+│   │   ├── chat_handlers.py                    # Handles user submit flow and streams AgentStreamEvent responses into UI
+│   │   ├── renderers.py                        # Renders streaming assistant text, status events, tool results
+│   │   ├── styles.py                           # Global Streamlit CSS/theme overrides
+│   │   └── translate_widget.py                 # Floating live translation widget
+│   │
 │   ├── agents/
-│   │   ├── local_tool_agent.py          # Agent orchestrator (tool loop + streaming)
-│   │   ├── tool_executor.py             # Executes tools (flights, airports, safety)
-│   │   ├── tool_call_parser.py          # Parses Qwen <tool_call> blocks
-│   │   ├── tool_definitions.py          # OpenAI-style tool schemas
-│   │   └── utils/                       # Intent, grounding, clarification helpers
-│   ├── models/
-│   │   ├── chat.py                      # ChatMessage dataclass
-│   │   └── safety/
-│   │       ├── schemas.py               # SafetyRequest / SafetyResult
-│   │       ├── predictor.py             # Ensemble predictor (MLP + RF)
-│   │       ├── v6_features.py           # Feature engineering (45 features)
-│   │       ├── v6_config.py             # Model paths and constants
-│   │       ├── v6_train.py              # Training script (MLP + RF)
-│   │       ├── v6_data_loading.py       # Data loading and splits
-│   │       ├── feature_pipeline.py      # Feature column loading and scaling
-│   │       └── artifacts/               # Trained model weights & scaler
+│   │   ├── local_tool_agent.py                 # Core orchestration engine:
+│   │   │                                       # - intent detection
+│   │   │                                       # - flight-disabled guard
+│   │   │                                       # - flight pre-resolution
+│   │   │                                       # - safety short-circuit
+│   │   │                                       # - JSON-first country lookup
+│   │   │                                       # - bounded LLM + tool loop
+│   │   │                                       # - narration / hallucination guards
+│   │   │                                       # - final response / fallback handling
+│   │   ├── tool_executor.py                    # Executes validated tool calls (search_flights, search_airports, get_safety_assessment, etc.)
+│   │   ├── tool_call_parser.py                 # Parses model-emitted <tool_call> blocks into structured calls
+│   │   ├── tool_definitions.py                 # OpenAI-style tool schema definitions exposed to the LLM
+│   │   └── utils/
+│   │       ├── intent.py                       # Intent routing helpers (flight vs safety vs non-flight)
+│   │       ├── thread.py                       # Latest-user-message utilities, thread slicing, search-state helpers
+│   │       ├── grounding.py                    # Airport/date grounding helpers from tool results + user text
+│   │       ├── clarification.py                # Strict airport/date clarification rules before flight execution
+│   │       ├── rendering.py                    # Tool-result render helpers for flights and safety responses
+│   │       └── ...                             # Additional parsing / extraction helpers used inside LocalToolAgent
+│   │
+│   ├── tools/
+│   │   └── flight_search.py                    # FlightSearchTool facade; delegates to provider selected by get_flight_provider()
+│   │
 │   ├── services/
-│   │   ├── model_service.py             # LLM loading & streaming inference
-│   │   ├── memory_service.py            # Session state management
-│   │   ├── flight_api.py                # Flight search API client
-│   │   ├── airport_search_service.py    # Airport lookup from CSV
-│   │   ├── safety_service.py            # Safety scoring service
-│   │   └── tavily_service.py            # Web search with JSON caching
+│   │   ├── model_service.py                    # Local LLM loading, token counting, stream_agent_turn(), inference loop
+│   │   ├── memory_service.py                   # Session-state / conversation memory helpers
+│   │   ├── airport_search_service.py           # Airport lookup from local dataset/CSV
+│   │   ├── safety_service.py                   # Safety geocoding + model scoring interface
+│   │   ├── tavily_service.py                   # Web search fallback plus JSON cache checks for destination knowledge
+│   │   ├── knowledge_service.py                # Loads full local country JSON files via load_country()
+│   │   └── flight/
+│   │       ├── __init__.py                     # Exports get_flight_provider()
+│   │       ├── base.py                         # FlightProvider interface / abstract contract
+│   │       ├── factory.py                      # Provider selection by settings.flight_scraper_mode
+│   │       ├── disabled.py                     # Safe no-op provider; returns disabled-flight response
+│   │       ├── stub.py                         # Deterministic mock flight provider for testing/dev
+│   │       └── docker_scraper.py               # Live provider wrapping Go scraper API on localhost:8080
+│   │
 │   ├── prompts/
-│   │   ├── system_prompts.py            # Travel agent system prompt
-│   │   └── prompt_builder.py            # Chat message formatting
+│   │   ├── system_prompts.py                   # System behavior instructions for travel assistant persona
+│   │   └── prompt_builder.py                   # Message formatting / prompt construction for model input
+│   │
+│   ├── models/
+│   │   ├── chat.py                             # ChatMessage dataclass / chat model types
+│   │   ├── flight_search.py                    # FlightSearchRequest schema and request validation helpers
+│   │   └── safety/
+│   │       ├── schemas.py                      # SafetyRequest / SafetyResult models
+│   │       ├── predictor.py                    # Ensemble predictor (MLP + RF)
+│   │       ├── v6_features.py                  # Feature engineering pipeline
+│   │       ├── v6_config.py                    # Model paths / constants
+│   │       ├── v6_train.py                     # Training code
+│   │       ├── v6_data_loading.py              # Data loading + train/val/test splits
+│   │       ├── feature_pipeline.py             # Scaling / column loading / inference pipeline
+│   │       └── artifacts/                      # Saved model weights, encoders, scaler
+│   │
 │   ├── components/
-│   │   └── location_picker/             # Custom Streamlit Leaflet component
+│   │   └── location_picker/                    # Custom Streamlit map/location picker component
+│   │
 │   └── data/
-│       ├── compiled_model_ready/        # City-level safety/demographic data
-│       └── global_data/                 # Country-level macro indicators
-├── notebooks/                           # Research notebooks (see Project Elements)
-│   ├── 01_data_cleaning/                # Data merging, normalization, imputation
-│   ├── 02_exploratory_data_analysis/    # Visualizations, distributions, maps
-│   ├── 03_model_design_and_training/    # Feature engineering, MLP, GB, RF training
-│   ├── 04_model_optimization/           # Inference pipeline tuning
-│   └── 05_model_analysis_and_evaluation/# Metrics, error analysis, comparisons
-├── Makefile                             # Build automation
-├── environment.yml                      # Conda dependencies
-└── docker-compose.yml                   # Flight API scraper service
+│       ├── compiled_model_ready/               # City-level safety / demographic / feature-engineering inputs
+│       ├── global_data/                        # Country-level macro indicators
+│       └── countries/                          # Local country knowledge JSON files used by JSON-first lookup
+│
+├── notebooks/
+│   ├── 01_data_cleaning/                       # Data merging, cleaning, normalization, imputation
+│   ├── 02_exploratory_data_analysis/           # Visualizations, distributions, maps
+│   ├── 03_model_design_and_training/           # Feature engineering + model training experiments
+│   ├── 04_model_optimization/                  # Inference / optimization work
+│   └── 05_model_analysis_and_evaluation/       # Metrics, comparisons, error analysis
+│
+├── Makefile                                    # Dev shortcuts / app run commands
+├── environment.yml                             # Conda dependencies
+└── docker-compose.yml                          # Local scraper / supporting services
 ```
 ### The Key New Layer: pipeline/
 This is the biggest improvement. Right now chat_orchestrator.py is just 30 lines of keyword matching . The new pipeline handles everything that happens before the agent sees the query:
