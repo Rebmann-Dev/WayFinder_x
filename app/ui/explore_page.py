@@ -2078,13 +2078,6 @@ def render_explore_page() -> None:
     def _on_country_change():
         st.session_state["explore_country_locked"] = st.session_state["explore_country"]
 
-        st.selectbox(
-            "Country",
-            options=sorted(registry.keys()),
-            index=sorted(registry.keys()).index(active_country),
-            key="explore_country",
-            on_change=_on_country_change,
-        )
     default_country = _detect_country()  # auto-detect from chat/session
     # Only use auto-detect as default if user hasn't manually selected
     if "explore_country_manual" not in st.session_state:
@@ -2103,7 +2096,7 @@ def render_explore_page() -> None:
 
         
     data = _load_country_json(active_country)      # pass the display name directly
-    cc = _COUNTRY_CODE_MAP.get(active_country, active_country[:2].upper())
+    cc = (registry.get(active_country) or {}).get("iso2") or active_country[:2].upper()
 
     flag = _FLAGS.get(cc, "\U0001f30d")
     if data:
